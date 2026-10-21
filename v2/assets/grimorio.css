@@ -414,3 +414,22 @@ main .cmp-facts dt { font-size: 13.5px; font-weight: 700; color: var(--fg); }
 main .cmp-facts dt::before { content: "⟡ "; color: var(--gold-hi); }
 main .cmp-facts dd { margin: 0 0 4px 18px; font-size: 13px; color: var(--muted); line-height: 1.55; }
 main .cmp-actions { margin: 16px 0 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+
+
+/* ---- P11: griglia directory risorse (root-cause layout rotto) ---- */
+main .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+main .card-grid .resource-card { margin-bottom: 0; height: 100%; box-sizing: border-box; }
+@media (max-width: 700px) { main .card-grid { grid-template-columns: 1fr; } }
+
+/* ---- P5/P8/P9: leggibilità globale (dimensioni e contrasto) ---- */
+main p, main li, main td, main dd { font-size: 14.5px; line-height: 1.7; }
+main .tv-meta, main .map-note { font-size: 13px; color: var(--muted); }
+main ul, main ol { padding-left: 22px; margin: 8px 0; }
+main li { margin-bottom: 6px; }
+main li::marker { color: var(--gold-hi); }
+:root { --dim: #b9bcc4; --muted: #cfd2d8; }
