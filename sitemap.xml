@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/robots.txt</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/sitemap.xml</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/index.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/lookup.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/mappa.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/tavolo.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/widgets.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/lfg.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/personaggi.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/risorse.html</loc></url>
-  <url><loc>https://grimorio-dei-reami.serveousercontent.com/v2/stats.html</loc></url>
+  <url><loc>https://banesoulless.github.io/</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/index.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/lookup.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/mappa.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/tavolo.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/widgets.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/lfg.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/personaggi.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/risorse.html</loc></url>
+  <url><loc>https://banesoulless.github.io/v2/stats.html</loc></url>
 </urlset>

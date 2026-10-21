@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /data/_
 
-Sitemap: https://award-waters-arrivals-subjective.trycloudflare.com/sitemap.xml
+Sitemap: https://banesoulless.github.io/sitemap.xml
