@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabrizio Marzano — Master Technical Operator & Systems Architect</title>
+<meta name="description" content="Sito personale di Fabrizio Marzano: architettura di sistema, automazione agentica e infrastruttura self-hosted, serviti direttamente dal PC dell'host.">
+<meta name="theme-color" content="#0b0e14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0e14'/%3E%3Cpath d='M9 22V10h4.2c2.6 0 4.3 1.5 4.3 3.9s-1.7 3.9-4.3 3.9H11v4.2H9z' fill='%235eead4'/%3E%3C/svg%3E">
+<meta property="og:title" content="Fabrizio Marzano — Master Technical Operator & Systems Architect">
+<meta property="og:description" content="Architettura di sistema, automazione agentica e infrastruttura self-hosted, serviti direttamente dal PC dell'host.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --bg: #0b0e14;
+    --card: #12161f;
+    --border: #232a36;
+    --fg: #e6e9ef;
+    --muted: #8b94a3;
+    --accent: #5eead4;
+    --accent-dim: #2dd4bf;
+    --radius-card: 14px;
+    --radius-chip: 999px;
+    --radius-code: 6px;
+    --dur: 180ms;
+    --ease: ease-out;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, Consolas, monospace;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 64px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--border); border-radius: var(--radius-chip);
+    padding: 8px 16px; font-size: 13px; color: var(--muted);
+    background: var(--card); margin-bottom: 32px;
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    box-shadow: 0 0 8px var(--accent); animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.45; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .dot { animation: none; }
+  }
+  h1 {
+    font-size: clamp(30px, 5vw, 46px); font-weight: 700; letter-spacing: -0.03em;
+    line-height: 1.15; margin-bottom: 16px; text-wrap: balance;
+  }
+  h1 .grad { color: var(--accent); }
+  .lead { color: var(--muted); font-size: 16px; max-width: 60ch; margin-bottom: 40px; text-wrap: pretty; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: var(--radius-card); padding: 24px;
+    transition-property: border-color, transform, box-shadow;
+    transition-duration: var(--dur);
+    transition-timing-function: var(--ease);
+  }
+  .card:hover {
+    border-color: var(--accent-dim);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(45, 212, 191, 0.08);
+  }
+  .card:active { transform: translateY(0); }
+  .card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
+  .card p { color: var(--muted); font-size: 15px; }
+  .card code { color: var(--fg); background: #1a2130; padding: 2px 6px; border-radius: var(--radius-code); font-size: 13px; }
+  footer {
+    margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  #clock { font-variant-numeric: tabular-nums; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Fabrizio Marzano",
+  "jobTitle": "Master Technical Operator & Systems Architect",
+  "address": { "@type": "PostalAddress", "addressLocality": "Roma", "addressCountry": "IT" },
+  "knowsAbout": ["system architecture", "AI automation", "self-hosted infrastructure", "design systems", "trading systems"]
+}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge"><span class="dot"></span> Server online — servito direttamente dal PC dell'host</div>
+  <main>
+    <h1>Fabrizio Marzano<br><span class="grad">Master Technical Operator & Systems Architect</span></h1>
+  <p class="lead">Roma, Italia. Multi-vertical: hospitality, AI/automation, community/gaming, design, trading.</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Architettura</h2>
+      <p>Origine statica su <code>127.0.0.1:8777</code> esposta via reverse tunnel SSH su porta 443. Nessun dato lascia la rete di origine se non il traffico HTTP verso questa pagina.</p>
+    </div>
+    <div class="card">
+      <h2>Stack</h2>
+      <p><code>python http.server</code> (stdlib, zero dipendenze) + <code>OpenSSH</code> + Pinggy. Tutto gratuito, nessun account, nessun servizio cloud a pagamento.</p>
+    </div>
+    <div class="card">
+      <h2>Stato</h2>
+      <p id="status">Connessione attiva. La sessione è viva finché il tunnel resta aperto.</p>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <span>© 2026 Fabrizio Marzano</span>
+    <span id="clock"></span>
+  </footer>
+</div>
+<script>
+  function tick() {
+    document.getElementById('clock').textContent =
+      new Date().toLocaleString('it-IT', { timeZone: 'Europe/Rome' }) + ' CEST';
+  }
+  tick(); setInterval(tick, 1000);
+</script>
+</body>
+</html>

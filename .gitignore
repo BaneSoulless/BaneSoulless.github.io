@@ -1,0 +1,7 @@
+.hermes/
+tools/
+_ocr/
+bin/
+node_modules/
+pdf/levels/
+*.log

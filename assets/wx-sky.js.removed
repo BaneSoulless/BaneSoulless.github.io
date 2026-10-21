@@ -1,0 +1,288 @@
+/* ==========================================================================
+   wx-sky.js — "Il gemello di Faerûn": abbina il meteo reale alla città dei Reami
+   con il profilo climatico più vicino, e rifinisce la lettura del widget.
+
+   Inlinato in widgets.html DOPO widgets-wx.js (progressive enhancement: legge i
+   valori già resi dal widget, non li duplica). Fonti:
+   - data/faerun-cities.json: 19 città con profilo (temp_center °C, wetness 0-4),
+     lore sintetico e fatti verificati sulla Forgotten Realms Wiki.
+   - i valori reali vengono letti dal DOM del widget (temperatura, umidità,
+     condizione, località), quindi funzionano anche in modalità offline.
+   Nessun innerHTML con dati esterni non trusted: lore/fatti provengono dal JSON
+   locale, i numeri sono interi; l'escaping è comunque applicato.
+   ========================================================================== */
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+
+  // Piovosità (0 arido … 4 monsonico) dedotta dal testo della condizione resa dal widget
+  var WET_BY_TEXT = [
+    [/temporale|grandine/i, 4],
+    [/pioggia|rovesci|pioviggine/i, 3],
+    [/neve|granelli|bufere/i, 2],
+    [/coperto|nuvoloso|nebbia|gelida/i, 1.5],
+    [/sereno|poche nubi/i, 0.5]
+  ];
+
+  var CITIES = null, CUR = null, UNIT = "C";
+
+  function parseWidget() {
+    var now = $("wx-now");
+    if (!now) return null;
+    var txt = now.textContent || "";
+    var t = txt.match(/(-?\d+(?:[.,]\d+)?)\s*°/);
+    if (!t) return null;
+    var temp = parseFloat(t[1].replace(",", "."));
+    var cond = "";
+    var desc = now.querySelector(".wx-desc");
+    if (desc) {
+      var parts = (desc.textContent || "").split("·");
+      cond = (parts[0] || "").trim();
+      var place = (parts[1] || "").trim();
+      CUR = { place: place || "la tua posizione" };
+    }
+    var meta = now.querySelector(".wx-meta");
+    var mtxt = meta ? meta.textContent || "" : "";
+    var hum = mtxt.match(/umidità\s*(\d+)\s*%/);
+    var wind = mtxt.match(/vento\s*(\d+)\s*km\/h/);
+    var faerunDate = mtxt.split("—")[0] ? mtxt.split("—")[0].trim() : "";
+    CUR = CUR || { place: "la tua posizione" };
+    CUR.temp = temp;
+    CUR.cond = cond;
+    CUR.hum = hum ? parseInt(hum[1], 10) : null;
+    CUR.wind = wind ? parseInt(wind[1], 10) : null;
+    CUR.faerunDate = faerunDate;
+
+    var wet = 2;
+    for (var i = 0; i < WET_BY_TEXT.length; i++) {
+      if (WET_BY_TEXT[i][0].test(cond)) { wet = WET_BY_TEXT[i][1]; break; }
+    }
+    // correzione per umidità misurata
+    if (CUR.hum != null) {
+      if (CUR.hum >= 85 && wet < 3) wet += 0.5;
+      else if (CUR.hum <= 45 && wet > 0) wet -= 0.5;
+    }
+    CUR.wetness = Math.max(0, Math.min(4, wet));
+    return CUR;
+  }
+
+  function score(city) {
+    var dt = Math.abs(city.temp_center - CUR.temp);       // °C di scarto dalla media annua
+    var dw = Math.abs(city.wetness - CUR.wetness);        // gradini di piovosità
+    var s = 100 - 2.2 * dt - 12 * dw;
+    if (city.name === "Waterdeep") s += 1.5;              // stabilità: il riferimento non cambia per un soffio
+    return Math.max(0, Math.min(100, s));
+  }
+
+  function best(list) {
+    return list.slice().sort(function (a, b) { return score(b) - score(a); })[0];
+  }
+
+  function bar(label, valueText, ratio, cls) {
+    var pct = Math.max(4, Math.min(100, Math.round(ratio * 100)));
+    return '<div class="sk-bar' + (cls ? " " + cls : "") + '">' +
+      '<span class="sk-bar-l">' + esc(label) + '</span>' +
+      '<span class="sk-bar-track"><span class="sk-bar-fill" style="width:' + pct + '%"></span></span>' +
+      '<span class="sk-bar-v">' + esc(valueText) + '</span></div>';
+  }
+
+  function render(city) {
+    var host = $("wx-twin");
+    if (!host) {
+      // crea il contenitore dentro la card del meteo, dopo la riga dei comandi:
+      // così non serve modificare il markup generato dal build.
+      var anchor = document.querySelector(".wx-actions") || $("wx-now");
+      var card = anchor ? anchor.closest(".cal-card") : null;
+      if (!card) return;
+      host = document.createElement("div");
+      host.id = "wx-twin";
+      host.className = "sk-twin";
+      if (anchor && anchor.classList.contains("wx-actions")) {
+        anchor.insertAdjacentElement("afterend", host);
+      } else {
+        card.appendChild(host);
+      }
+    }
+    if (!CITY_OK(city)) return;
+    var aff = Math.round(score(city));
+    var cls = aff >= 80 ? "hi" : (aff >= 60 ? "mid" : "lo");
+    var dt = Math.abs(city.temp_center - CUR.temp);
+
+    var why;
+    if (dt <= 2) {
+      why = "La media annua di " + city.name + " (" + city.temp_center + " °C) è a " + dt.toFixed(1) +
+            " °C dalla temperatura misurata qui (" + CUR.temp + " °C) e la piovosità è " +
+            (Math.abs(city.wetness - CUR.wetness) <= 0.5 ? "equivalente" : "vicina") + ".";
+    } else {
+      why = "Città scelta per il profilo più vicino disponibile: " +
+            city.temp_center + " °C di media annua a fronte dei " + CUR.temp + " °C misurati (" +
+            dt.toFixed(1) + " °C di scarto) e piovosità " + city.wetness.toFixed(1) + " su 4.";
+    }
+
+    host.innerHTML =
+      '<div class="sk-twin-head">' +
+        '<span class="sk-twin-kicker">Il gemello di Faerûn</span>' +
+        '<span class="sk-aff ' + cls + '">affinità climatica ' + aff + '%</span>' +
+      '</div>' +
+      '<div class="sk-pair">' +
+        '<span class="sk-real">' + esc(CUR.place) + '</span>' +
+        '<span class="sk-link">&harr;</span>' +
+        '<span class="sk-faerun">' + esc(city.name) + '</span>' +
+        '<span class="sk-region">' + esc(city.region) + '</span>' +
+      '</div>' +
+      (city.alias ? '<div class="sk-alias">' + esc(city.alias) + '</div>' : "") +
+      '<div class="sk-bars">' +
+        bar("Temperatura", city.temp_center + " °C vs " + CUR.temp + " °C", 1 - Math.min(1, dt / 25)) +
+        bar("Piovosità", city.wetness.toFixed(1) + " vs " + CUR.wetness.toFixed(1) + " / 4", 1 - Math.min(1, Math.abs(city.wetness - CUR.wetness) / 4)) +
+        bar("Affinità", aff + "%", aff / 100) +
+      '</div>' +
+      '<p class="sk-why">' + esc(why) + '</p>' +
+      '<p class="sk-lore">' + esc(city.lore) + '</p>' +
+      (city.fact ? '<p class="sk-fact"><strong>Fonte verificata (Forgotten Realms Wiki):</strong> ' + esc(city.fact) + '</p>' : "") +
+      '<div class="sk-pick">' +
+        '<label for="wx-city-pick">Cambia riferimento</label>' +
+        '<select id="wx-city-pick" aria-label="Scegli la città di Faerûn da usare come riferimento"></select>' +
+      '</div>' +
+      '<p class="sk-note">Abbinamento calcolato su distanza termica e piovosità dichiarata; ' +
+      'il profilo delle città è una valutazione dell\'autore, i fatti citati sono verificati sulla wiki.</p>';
+
+    var sel = $("wx-city-pick");
+    if (sel) {
+      sel.innerHTML = CITIES.map(function (c) {
+        return '<option value="' + esc(c.name) + '"' + (c.name === city.name ? " selected" : "") + ">" +
+          esc(c.name + " — " + c.region) + "</option>";
+      }).join("");
+      sel.addEventListener("change", function () {
+        var pick = null;
+        for (var i = 0; i < CITIES.length; i++) if (CITIES[i].name === sel.value) pick = CITIES[i];
+        if (pick) render(pick);
+      });
+    }
+    var tw = host.closest(".wx-twin") || host;
+    tw.classList.add("wx-anim");
+  }
+
+  function CITY_OK(c) { return c && typeof c.temp_center === "number" && c.name; }
+
+  // ---- barre di range nelle card dei 3 giorni (min/max già resi dal widget) ----
+  function rangeBars() {
+    var days = document.querySelectorAll("#wx-days .wx-day");
+    if (!days.length) return;
+    var vals = [];
+    Array.prototype.forEach.call(days, function (d) {
+      var m = (d.textContent || "").match(/(-?\d+)\s*°?\s*\/\s*(-?\d+)/);
+      vals.push(m ? [parseInt(m[1], 10), parseInt(m[2], 10)] : null);
+    });
+    var all = [];
+    vals.forEach(function (v) { if (v) { all.push(v[0], v[1]); } });
+    if (!all.length) return;
+    var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all);
+    var span = (hi - lo) || 1;
+    Array.prototype.forEach.call(days, function (d, i) {
+      if (!vals[i] || d.querySelector(".wd-range")) return;
+      var t = d.querySelector(".wd-t") || d.querySelector(".wd-temps");
+      if (!t) return;
+      var el = document.createElement("span");
+      el.className = "wd-range";
+      var inner = document.createElement("i");
+      var left = ((vals[i][1] - lo) / span) * 100;
+      var width = ((vals[i][0] - vals[i][1]) / span) * 100;
+      inner.style.left = Math.max(0, Math.min(100, left)) + "%";
+      inner.style.width = Math.max(6, Math.min(100, width)) + "%";
+      el.appendChild(inner);
+      t.insertAdjacentElement("afterend", el);
+    });
+  }
+
+  // ---- toggle °C / °F: riscrive i numeri letti, con memoria dell'originale ----
+  function convertAll(to) {
+    var nodes = document.querySelectorAll("#wx-now, #wx-days, .sk-twin");
+    Array.prototype.forEach.call(nodes, function (root) {
+      var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
+      var n;
+      while ((n = walker.nextNode())) {
+        var s = n.nodeValue;
+        if (!s || s.indexOf("°") === -1) continue;
+        if (!n.__origText) n.__origText = s;
+        n.nodeValue = (to === "F")
+          ? n.__origText.replace(/(-?\d+(?:[.,]\d+)?)\s*°/g, function (_m, v) {
+              return Math.round(parseFloat(String(v).replace(",", ".")) * 9 / 5 + 32) + "°";
+            })
+          : n.__origText;
+      }
+    });
+  }
+
+  function addUnitToggle() {
+    if ($("wx-units")) return;
+    // il markup del widget usa .wx-actions (non .wx-tools): si accetta entrambi
+    var tools = document.querySelector(".wx-tools") || document.querySelector(".wx-actions");
+    if (!tools) return;
+    var box = document.createElement("div");
+    box.className = "wx-units";
+    box.id = "wx-units";
+    box.setAttribute("role", "group");
+    box.setAttribute("aria-label", "Unità di temperatura");
+    box.innerHTML = '<button type="button" class="wx-unit is-on" data-u="C">°C</button>' +
+                    '<button type="button" class="wx-unit" data-u="F">°F</button>';
+    tools.insertBefore(box, tools.firstChild);
+    box.addEventListener("click", function (ev) {
+      var b = ev.target.closest(".wx-unit");
+      if (!b) return;
+      UNIT = b.dataset.u;
+      Array.prototype.forEach.call(box.querySelectorAll(".wx-unit"), function (x) {
+        x.classList.toggle("is-on", x === b);
+      });
+      convertAll(UNIT);
+    });
+  }
+
+  function build() {
+    if (!CUR || !CITIES) return;
+    var pick = best(CITIES);
+    render(pick);
+    rangeBars();
+    addUnitToggle();
+    watchDays();
+  }
+
+  function watchDays() {
+    // Il widget ri-renderizza #wx-days quando arriva la risposta di Open-Meteo:
+    // senza observer le barre di range iniettate verrebbero cancellate (e la
+    // conversione °F andrebbe persa).
+    var days = $("wx-days");
+    if (!days || days.__skObserved) return;
+    days.__skObserved = true;
+    var mo = new MutationObserver(function () {
+      rangeBars();
+      if (UNIT === "F") convertAll("F");
+    });
+    mo.observe(days, { childList: true });
+  }
+
+  function init() {
+    if (!$("wx-now")) return;                 // pagina diversa da widgets.html
+    fetch("data/faerun-cities.json", { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("cities " + r.status); return r.json(); })
+      .then(function (j) {
+        CITIES = (j && j.cities) || [];
+        if (!CITIES.length) return;
+        // il widget popola i valori in modo asincrono: attende che compaia una temperatura
+        var tries = 0;
+        var t = setInterval(function () {
+          tries++;
+          if (parseWidget()) { clearInterval(t); build(); }
+          else if (tries > 24) { clearInterval(t); }   // ~12 s: nessun dato, esce
+        }, 500);
+      })
+      .catch(function () { /* senza dati città il blocco non compare: nessun errore in pagina */ });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+  else init();
+})();

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Widget del Reame — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/widgets.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Widget del Reame — Il Grimorio dei Reami">
+<meta property="og:description" content="Calendario di Harptos, fase di Selûne, meteo narrativo e orologio di Faerûn: widget vivi per il tavolo.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/widgets.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Widget del Reame — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Calendario di Harptos, fase di Selûne, meteo narrativo e orologio di Faerûn.">
+<meta name="description" content="Widget vivi per il tavolo: calendario di Harptos con festività, fase lunare di Selûne, meteo narrativo per stagione e orologio di Faerûn.">
+<link rel="stylesheet" href="assets/grimorio.css">
+<style>
+/* ============ widget del reame — Vetro Arcano ============ */
+.wg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start; }
+.wg-card {
+  background: var(--glass); border: 1px solid var(--line); border-radius: 18px;
+  padding: 22px 24px; overflow: hidden; position: relative;
+  transition: border-color .2s, box-shadow .2s;
+}
+.wg-card:hover { border-color: rgba(201,162,39,.45); box-shadow: 0 10px 34px rgba(0,0,0,.4), 0 0 22px rgba(201,162,39,.08); }
+.wg-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.wg-rune {
+  display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px;
+  color: var(--gold-hi); font-size: 16px; background: rgba(201,162,39,.08); border: 1px solid rgba(201,162,39,.3);
+}
+.wg-title { font-size: 17px; font-weight: 800; letter-spacing: .02em; }
+.wg-sub { color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+/* calendario */
+.cal-nav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.cal-nav button {
+  border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--fg);
+  border-radius: 10px; min-height: 34px; min-width: 34px; cursor: pointer; font: inherit; font-size: 15px;
+}
+.cal-nav button:hover { border-color: rgba(201,162,39,.5); color: var(--gold-hi); }
+.cal-mese { font-family: 'Castellar', Georgia, serif; font-size: 19px; color: var(--gold-hi); letter-spacing: .04em; text-align: center; }
+.cal-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; }
+.cal-cella {
+  aspect-ratio: 1; display: grid; place-items: center; font-size: 12px; border-radius: 8px;
+  border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--fg);
+  font-variant-numeric: tabular-nums; cursor: pointer; transition: border-color .15s, background .15s, transform .15s;
+}
+.cal-cella:hover { border-color: rgba(201,162,39,.5); transform: translateY(-2px); }
+.cal-cella.oggi { border-color: var(--gold-hi); background: rgba(201,162,39,.14); color: var(--gold-hi); font-weight: 700; box-shadow: 0 0 12px rgba(201,162,39,.25); }
+.cal-cella.fest { border-color: rgba(138,107,255,.55); background: rgba(138,107,255,.1); color: #c7baff; }
+.cal-fest-nome { margin-top: 10px; font-size: 12.5px; color: #b9a5ff; min-height: 18px; }
+.cal-anno { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 13px; color: var(--muted); }
+.cal-anno input { width: 84px; min-height: 34px; background: rgba(255,255,255,.04); border: 1px solid var(--line); color: var(--fg); border-radius: 9px; padding: 4px 10px; font: inherit; }
+
+/* Selune */
+.luna-wrap { display: flex; gap: 20px; align-items: center; }
+.luna-svg { flex: 0 0 auto; filter: drop-shadow(0 0 18px rgba(201,162,39,.25)); }
+.luna-info { flex: 1; }
+.luna-fase { font-family: 'Castellar', Georgia, serif; font-size: 20px; color: var(--gold-hi); margin-bottom: 4px; }
+.luna-det { font-size: 13px; color: var(--muted); line-height: 1.55; }
+.luna-bar { height: 6px; border-radius: 6px; background: rgba(255,255,255,.1); margin-top: 10px; overflow: hidden; }
+.luna-bar > i { display: block; height: 100%; background: linear-gradient(90deg, #2a2416, #c9a227); border-radius: 6px; }
+
+/* meteo */
+.wx-stagione { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.wx-stagione button {
+  border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--muted);
+  border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 12.5px; cursor: pointer;
+}
+.wx-stagione button.on { color: var(--gold-hi); border-color: rgba(201,162,39,.55); background: rgba(201,162,39,.1); }
+.wx-out { min-height: 70px; }
+.wx-titolo { font-size: 16.5px; font-weight: 700; color: var(--fg); }
+.wx-desc { font-size: 13.5px; color: var(--muted); line-height: 1.6; margin-top: 4px; }
+.wx-tiro { font-size: 11.5px; color: var(--dim); font-family: 'JetBrains Mono', monospace; margin-top: 8px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* orologio */
+.ora-big {
+  font-family: 'Castellar', Georgia, serif; font-size: 44px; color: var(--gold-hi);
+  text-align: center; text-shadow: 0 0 22px rgba(201,162,39,.35); font-variant-numeric: tabular-nums;
+  line-height: 1.1; margin: 4px 0 2px;
+}
+.ora-campana { text-align: center; font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+.ora-ctrl { display: flex; justify-content: center; gap: 8px; }
+.ora-ctrl button {
+  border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--fg);
+  border-radius: 10px; min-height: 36px; padding: 0 14px; cursor: pointer; font: inherit; font-size: 13px;
+}
+.ora-ctrl button:hover { border-color: rgba(201,162,39,.5); color: var(--gold-hi); }
+/* L: lore del calendario */
+.cal-lore { margin-top: 14px; padding: 14px 16px; border-top: 1px solid var(--line); min-height: 40px; }
+.cl-tit { font-family: 'Castellar', Georgia, serif; font-size: 15.5px; color: var(--gold-hi); margin: 0 0 6px; }
+.cl-stag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; vertical-align: 2px; }
+.cl-txt { font-size: 13.5px; color: var(--fg); line-height: 1.6; margin: 0 0 10px; }
+.cl-fest { font-size: 13px; color: #c7baff; background: rgba(138,107,255,.08); border: 1px solid rgba(138,107,255,.35); border-radius: 10px; padding: 10px 12px; line-height: 1.55; }
+.cl-fest b { color: #b9a5ff; }
+.cl-fest-oggi { border-color: rgba(201,162,39,.55); background: rgba(201,162,39,.1); color: var(--fg); }
+.cl-fest-oggi b { color: var(--gold-hi); }
+/* M: meteo del giorno */
+.wx-det { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; font-size: 12.5px; color: var(--muted); }
+.wx-det span::before { content: "⟡ "; color: var(--gold-hi); }
+/* N: orologio flusso */
+.ora-ctrl button.on { color: var(--gold-hi); border-color: rgba(201,162,39,.6); background: rgba(201,162,39,.1); }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html" class="on">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+    <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero" style="padding-bottom:10px;">
+    <div class="kicker">Widget · Tempi del reame</div>
+    <h1>Widget del <em>Reame</em>.</h1>
+    <p class="sub">Il tempo di Faerûn sul tuo tavolo: calendario di Harptos con festività,
+    fase di Selûne, meteo narrativo per stagione e orologio di campagna. Tutto offline.</p>
+  </div>
+
+  <div class="wg-grid">
+    <div class="wg-card" id="wg-calendario">
+      <div class="wg-head"><span class="wg-rune" aria-hidden="true">ᚲ</span>
+        <div><div class="wg-title">Calendario di Harptos</div><div class="wg-sub">12 mesi da 30 giorni · 5 festività</div></div>
+      </div>
+      <div class="cal-nav">
+        <button type="button" id="cal-prev" aria-label="Mese precedente">‹</button>
+        <div class="cal-mese" id="cal-mese">Hammer</div>
+        <button type="button" id="cal-next" aria-label="Mese successivo">›</button>
+      </div>
+      <div class="cal-grid" id="cal-grid" role="grid" aria-label="Giorni del mese"></div>
+      <div class="cal-fest-nome" id="cal-fest"></div>
+      <div class="cal-anno">
+        <label for="cal-anno-in">Anno della Valle</label>
+        <input id="cal-anno-in" type="number" min="1" max="9999" value="1496">
+        <span id="cal-festa-anno" style="flex:1"></span>
+      </div>
+      <div id="cal-lore" class="cal-lore"></div>
+    </div>
+
+    <div class="wg-card" id="wg-luna">
+      <div class="wg-head"><span class="wg-rune" aria-hidden="true">ᛗ</span>
+        <div><div class="wg-title">Selûne, la Signora della Luna</div><div class="wg-sub">ciclo di 30 giorni · guardato dai licanantropi</div></div>
+      </div>
+      <div class="luna-wrap">
+        <svg class="luna-svg" id="luna-svg" width="110" height="110" viewBox="0 0 110 110" aria-hidden="true"></svg>
+        <div class="luna-info">
+          <div class="luna-fase" id="luna-fase">—</div>
+          <div class="luna-det" id="luna-det"></div>
+          <div class="luna-bar"><i id="luna-fill" style="width:0%"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wg-card" id="wg-meteo">
+      <div class="wg-head"><span class="wg-rune" aria-hidden="true">ᚼ</span>
+        <div><div class="wg-title">Meteo narrativo</div><div class="wg-sub">tiro per stagione · tabelle dichiarate</div></div>
+      </div>
+      <div class="wx-stagione" id="wx-stagioni">
+        <button type="button" data-s="inverno" class="on">Inverno</button>
+        <button type="button" data-s="primavera">Primavera</button>
+        <button type="button" data-s="estate">Estate</button>
+        <button type="button" data-s="autunno">Autunno</button>
+      </div>
+      <div class="wx-out" id="wx-out" aria-live="polite"></div>
+    </div>
+
+    <div class="wg-card" id="wg-ora">
+      <div class="wg-head"><span class="wg-rune" aria-hidden="true">ᛟ</span>
+        <div><div class="wg-title">Orologio di Faerûn</div><div class="wg-sub">l'ora della campagna, campane e riposi</div></div>
+      </div>
+      <div class="ora-big" id="ora-big">08:00</div>
+      <div class="ora-campana" id="ora-campana">Mattino — le campane della città battono il terzo.</div>
+      <div class="ora-ctrl">
+        <button type="button" id="ora-plus1">+1 ora</button>
+        <button type="button" id="ora-plus8">+8 ore</button>
+        <button type="button" id="ora-reset">Ora del PC</button>
+        <button type="button" id="ora-auto" title="Avanza da solo: 1 game-ora ogni 30 secondi">Tempo reale ×1</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — widget offline-first per il tavolo
+</footer>
+
+<script src="i18n-bi.js"></script>
+<script src="../assets/i18n-auto.js"></script>
+<script>/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
+window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="assets/lang-menu.js"></script>
+<script src="assets/calendar-data.js"></script>
+<script src="assets/widget-app.js"></script>
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* tavolo.css — stile degli strumenti da tavolo (iniziativa, tesori, nomi, oracolo). */
+
+.tv-sec { font-size: 18px; font-weight: 800; margin-bottom: 12px; }
+
+.tv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+.tv-card { margin-bottom: 0; }
+
+.tv-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.tv-form input[type="text"],
+.tv-form input[type="number"],
+.tv-form select {
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13.5px;
+}
+.tv-form input[type="text"] { flex: 1 1 140px; }
+.tv-form select { flex: 0 1 auto; }
+.tv-form input:focus-visible,
+.tv-form select:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+
+.tv-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.tv-chip {
+  min-height: 30px;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.tv-chip:hover { border-color: var(--border-hover); color: var(--fg); }
+
+.tv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; }
+.tv-meta { font-size: 11.5px; color: var(--fg-dim); }
+
+/* ---- iniziativa ---- */
+.ini-list { list-style: none; margin: 0; padding: 0; }
+.ini-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 6px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.ini-row.att { border-color: var(--accent); background: var(--accent-glow, rgba(212, 175, 55, 0.08)); }
+.ini-num {
+  min-width: 38px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+}
+.ini-name { flex: 1; font-size: 14px; }
+.ini-mod { font-size: 12px; color: var(--fg-muted); font-variant-numeric: tabular-nums; }
+.ini-dado { font-size: 11.5px; color: var(--fg-dim); font-variant-numeric: tabular-nums; }
+.ini-del {
+  border: 0;
+  background: transparent;
+  color: var(--fg-dim);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+.ini-del:hover { color: var(--fg); }
+
+/* ---- tesoro ---- */
+.tre-coins { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0; }
+.tre-coin {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 13px;
+  color: var(--fg-muted);
+}
+.tre-coin strong { color: var(--fg); font-size: 16px; font-variant-numeric: tabular-nums; }
+.tre-item { font-size: 13.5px; color: var(--fg); margin: 8px 0 4px; }
+.tre-out { min-height: 30px; }
+
+/* -- tesoro due colonne (Homebrewery, 2026-10-15) -- */
+.tre-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 12px; }
+@media (max-width: 640px) { .tre-2col { grid-template-columns: 1fr; } }
+.tre-col { border: 1.5px solid var(--border); border-radius: 12px; padding: 14px 16px; background: rgba(255,255,255,.02); }
+.tre-col-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--gold); margin: 0 0 10px;
+  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+}
+.tre-col table { width: 100%; border-collapse: collapse; }
+.tre-col td { padding: 5px 6px; font-size: 14px; border-bottom: 1px dotted var(--border); }
+.tre-col td:last-child { text-align: right; font-variant-numeric: tabular-nums; color: var(--fg); }
+.tre-col td:first-child { color: var(--fg-muted); }
+.tre-col .tre-coins { flex-direction: column; gap: 0; }
+.tre-col .tre-coin { display: flex; justify-content: space-between; width: 100%; border: none; border-radius: 0; background: none; padding: 6px 4px; border-bottom: 1px dotted var(--border); }
+.tre-col .tre-coin strong { font-size: 15px; }
+.tre-item-name {
+  font-family: Georgia, serif; font-size: 16px; font-weight: 700;
+  color: var(--gold); margin: 0 0 3px; letter-spacing: .01em;
+}
+.tre-item-kind { font-size: 12px; color: var(--fg-muted); font-style: italic; margin: 0 0 8px; }
+.tre-item-desc { font-size: 13.5px; color: var(--fg); line-height: 1.6; margin: 6px 0 0; }
+.tre-item-link { display: inline-block; margin-top: 8px; font-size: 12.5px; color: var(--accent); }
+.tre-total {
+  margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--fg-muted); text-align: right; font-variant-numeric: tabular-nums;
+}
+
+/* -- probabilita' dadi (Anydice-like, 2026-10-15) -- */
+.dice-prob { margin-top: 12px; padding: 10px 0 0; border-top: 1px solid var(--border); }
+.dice-prob-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--fg-muted); margin: 0 0 8px;
+}
+.dice-prob svg { display: block; width: 100%; height: auto; }
+.dice-prob-meta {
+  display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px;
+  font-size: 12px; color: var(--fg-muted); font-variant-numeric: tabular-nums;
+}
+.dice-prob-meta strong { color: var(--fg); font-weight: 600; }
+
+/* -- probabilita' dadi (Anydice-like) -- */
+.dice-prob { margin-top: 12px; padding: 10px 0 0; border-top: 1px solid var(--border); }
+.dice-prob-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--fg-muted); margin: 0 0 8px;
+}
+.dice-prob svg { display: block; width: 100%; height: auto; }
+.dice-prob-meta {
+  display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px;
+  font-size: 12px; color: var(--fg-muted); font-variant-numeric: tabular-nums;
+}
+.dice-prob-meta strong { color: var(--fg); font-weight: 600; }
+
+/* ---- nomi / PNG ---- */
+.tv-out { min-height: 24px; }
+.tv-names { font-size: 15px; color: var(--fg); line-height: 1.7; }
+.tv-npc-name { font-size: 17px; font-weight: 700; color: var(--fg); margin: 6px 0; }
+.tv-npc-list { margin: 0 0 8px; padding-left: 18px; font-size: 13.5px; color: var(--fg-muted); }
+.tv-npc-list li { margin-bottom: 3px; }
+
+/* ---- oracolo ---- */
+.ora-esito {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin: 6px 0 8px;
+}
+.ora-esito.si { color: var(--success, #58c07a); }
+.ora-esito.no { color: var(--danger, #c9808a); }
+
+/* ---- timer ---- */
+.tim-out {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+  min-width: 92px;
+}
+
+@media (max-width: 767px) {
+  .tv-grid { grid-template-columns: 1fr; }
+  .tv-form input[type="text"] { flex: 1 1 100%; }
+}

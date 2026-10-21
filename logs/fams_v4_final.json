@@ -1,0 +1,99 @@
+{
+ "fmea": [
+  {
+   "id": "FM-01",
+   "modo": "Talenti scelti senza verificare i prerequisiti",
+   "S": 8,
+   "O": 9,
+   "D": 2,
+   "RPN": 144,
+   "O_post": 2,
+   "D_post": 1,
+   "RPN_post": 16
+  },
+  {
+   "id": "FM-08",
+   "modo": "Payload scritto inline e stale",
+   "S": 7,
+   "O": 3,
+   "D": 5,
+   "RPN": 105,
+   "O_post": 1,
+   "D_post": 4,
+   "RPN_post": 28
+  },
+  {
+   "id": "FM-03",
+   "modo": "Campo `level` assente -> default 1 nel solver",
+   "S": 6,
+   "O": 8,
+   "D": 2,
+   "RPN": 96,
+   "O_post": 1,
+   "D_post": 1,
+   "RPN_post": 6
+  },
+  {
+   "id": "FM-04",
+   "modo": "check_subclass boccia sottoclassi non censite",
+   "S": 5,
+   "O": 9,
+   "D": 2,
+   "RPN": 90,
+   "O_post": 2,
+   "D_post": 1,
+   "RPN_post": 10
+  },
+  {
+   "id": "FM-02",
+   "modo": "Classe presa dalla famiglia, non dalla sottoclasse",
+   "S": 7,
+   "O": 4,
+   "D": 3,
+   "RPN": 84,
+   "O_post": 1,
+   "D_post": 2,
+   "RPN_post": 14
+  },
+  {
+   "id": "FM-06",
+   "modo": "Multiclasse su punteggi non dichiarati",
+   "S": 4,
+   "O": 6,
+   "D": 3,
+   "RPN": 72,
+   "O_post": 1,
+   "D_post": 2,
+   "RPN_post": 8
+  },
+  {
+   "id": "FM-05",
+   "modo": "spellcasting come flag dichiarato, non derivato",
+   "S": 5,
+   "O": 7,
+   "D": 2,
+   "RPN": 70,
+   "O_post": 1,
+   "D_post": 1,
+   "RPN_post": 5
+  },
+  {
+   "id": "FM-07",
+   "modo": "Parametro run_codex = livelli vs build",
+   "S": 3,
+   "O": 5,
+   "D": 4,
+   "RPN": 60,
+   "O_post": 1,
+   "D_post": 3,
+   "RPN_post": 9
+  }
+ ],
+ "rpn_pre": 721,
+ "rpn_post": 96,
+ "eci": 92.7,
+ "pareto": [
+  "B1 filtro talenti col solver",
+  "B3 livello derivato dalle classi"
+ ]
+}

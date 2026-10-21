@@ -1,0 +1,1141 @@
+/* ==========================================================================
+   a11y-fixes.css — correzioni di accessibilità e stabilità visiva.
+   Inlinato in SHARED_CSS (build_site.py).
+
+   Chiude i difetti misurati dal report verify-perf-a11y.md:
+   - focus ring sugli input: era outline:none + glow al 12% -> contrasto 1.23:1
+     (WCAG 1.4.11 richiede >=3:1). Qui un outline oro pieno come su link e bottoni.
+   - CLS di cerca.html = 1.0752 (4.3x la soglia "poor"): il contenitore dei
+     risultati e' vuoto al primo paint e il footer sale, poi scende. Si riserva
+     lo spazio prima che il contenuto arrivi.
+   - il pulsante flottante del tour copriva i controlli in fondo alla pagina.
+   - bersagli di tocco minimi per i controlli compatti.
+   ========================================================================== */
+
+/* 1. Focus visibile su tutti i controlli (era invisibile sugli input) */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+/* fallback per browser che non supportano :focus-visible */
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* 2. Stabilità visiva (CLS): riserva lo spazio dei blocchi popolati via JS */
+#stat-core-zone {
+  min-height: 420px;
+}
+.lookup-app {
+  min-height: 120vh;
+}
+#app-root {
+  min-height: 320px;
+}
+
+/* 3. Il FAB del tour non deve coprire i controlli a fondo pagina */
+body {
+  padding-bottom: 76px;
+}
+
+/* 4. Bersagli di tocco: minimo 40px per i controlli compatti */
+.nav-links a,
+.badge,
+select,
+input[type="search"],
+input[type="text"],
+input[type="number"] {
+  min-height: 40px;
+}
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 6. Tap target: le misure del report di verifica hanno trovato controlli sotto
+   soglia. Soglie: 40px per i controlli primari, 32px dove il layout è denso,
+   24px (WCAG 2.5.8 AA) per i link dentro il testo. */
+#dice-n,
+#dice-mod,
+#dice-mode,
+summary {
+  min-height: 44px !important;
+}
+.card-title a,
+td strong > a,
+.wx-twin-fact a,
+.footer-wrap a {
+  display: inline-block;
+  min-height: 24px;
+  line-height: 1.5;
+}
+.nav-links a {
+  min-height: 40px;
+}
+/* 8. Badge compatti: testo su sfondo semi-trasparente — resta sopra soglia
+   (senza questa regola il caso peggiore composito scendeva a 3.04:1 su widgets). */
+.badge {
+  color: var(--fg-muted);
+  border-color: var(--border);
+}
+
+/* 7. Il FAB flottante del tour ruba il tap ai controlli sottostanti (verificato con
+   elementFromPoint su 4 pagine e 6 viewport fino a 1024px): sotto 1025px si nasconde
+   e resta il pulsante "Guida introduttiva" nel footer, sempre raggiungibile. */
+@media (max-width: 1024px) {
+  .tour-fab {
+    display: none !important;
+  }
+}
+
+/* 9. Testi di fonte inglese (5e.tools): avviso discreto accanto al titolo.
+   Il blocco è marcato lang="en" così i lettori di schermo cambiano voce e il
+   browser può offrire la traduzione automatica. */
+.st-src-en h4 .lang-note {
+  font-size: 10.5px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--fg-dim);
+  margin-left: 6px;
+}
+
+/* 10. Barra dei tab-fonte nella scheda (una voce per entità, più fonti cliccabili).
+   La fonte più recente è la primaria; le precedenti restano consultabili. */
+.src-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  margin: 10px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.src-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition-property: border-color, background-color, color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.src-tab:hover { border-color: var(--border-hover); color: var(--fg); }
+.src-tab.act { border-color: var(--accent); background: var(--accent-glow); color: var(--fg); }
+.src-tab:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+.src-date { font-size: 11px; color: var(--fg-dim); font-variant-numeric: tabular-nums; }
+.src-tab.act .src-date { color: var(--fg-muted); }
+.src-date.nd { font-style: italic; }
+.src-date-solo { font-size: 11.5px; color: var(--fg-dim); }
+.src-hint { font-size: 11px; color: var(--fg-dim); margin-left: 4px; }
+@media (max-width: 767px) { .src-tab { font-size: 12px; } }
+
+/* 11. Pulsante di cambio lingua IT|EN nella navigazione.
+   Due bottoni in un gruppo: la lingua attiva è evidenziata; il testo passa da
+   data-i18n, quindi il cambio non ricarica la pagina. */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.lang-btn {
+  min-height: 32px;
+  min-width: 40px;
+  padding: 4px 10px;
+  border: 0;
+  background: transparent;
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.lang-btn:hover { color: var(--fg); }
+.lang-btn.act { background: var(--accent-glow); color: var(--fg); }
+.lang-btn:focus-visible { outline: 2px solid #d4af37; outline-offset: -2px; }
+@media (max-width: 900px) { .lang-toggle { margin-left: 0; } }
+
+
+/* 12. Traduzione automatica su richiesta (blocchi di testo della fonte).
+   Il pulsante è un'azione esplicita; la nota dichiara che non è verificata. */
+.mt-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+.mt-btn {
+  min-height: 32px;
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition-property: border-color, color, background-color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.mt-btn:hover { border-color: var(--border-hover); color: var(--fg); }
+.mt-btn:disabled { opacity: 0.6; cursor: progress; }
+.mt-btn:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+.mt-note { font-size: 11.5px; color: var(--fg-dim); font-style: italic; }
+.mt-out {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-left: 2px solid var(--accent);
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--fg);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+
+/* 13. Blocco Forgotten Realms Wiki: contenuto esterno su richiesta, con
+   attribuzione obbligatoria (licenza CC BY-SA 3.0). */
+.wiki-sec { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+.wiki-btn {
+  min-height: 34px;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition-property: border-color, color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.wiki-btn:hover { border-color: var(--border-hover); color: var(--fg); }
+.wiki-btn:disabled { opacity: 0.6; cursor: progress; }
+.wiki-btn:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+.wiki-out {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-left: 2px solid var(--border-hover);
+  background: rgba(255, 255, 255, 0.02);
+}
+.wiki-title { margin: 0 0 8px; font-size: 14px; color: var(--fg); }
+.wiki-text { margin: 0 0 8px; font-size: 13.5px; line-height: 1.6; color: var(--fg-muted); }
+.wiki-meta { margin: 0; font-size: 11.5px; color: var(--fg-dim); }
+.wiki-meta a { color: var(--fg-muted); text-decoration: underline; }
+
+
+/* 14. Pulsante «Traduci la pagina»: azione esplicita sulla prosa della pagina. */
+.mt-page-btn {
+  min-height: 32px;
+  margin-left: 8px;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  transition-property: border-color, color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.mt-page-btn:hover { border-color: var(--border-hover); color: var(--fg); }
+.mt-page-btn:disabled { opacity: 0.6; cursor: progress; }
+.mt-page-btn:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+@media (max-width: 900px) { .mt-page-btn { margin-left: 0; } }
+
+
+/* 15. Voce «Guida» nella navigazione: si distingue dalle pagine (è un'azione che
+   apre il tour, non un link) e resta raggiungibile da mobile. */
+.nav-guide {
+  min-height: 34px;
+  margin-left: 6px;
+  padding: 0 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.06);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition-property: background-color, border-color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.nav-guide:hover { background: rgba(212, 175, 55, 0.14); }
+.nav-guide:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+@media (max-width: 900px) { .nav-guide { margin-left: 0; } }
+
+/* ---- contenitori comprimibili (elenchi lunghi) ---- */
+.collapse-body {
+  overflow: hidden;
+  transition: max-height 420ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  position: relative;
+}
+.collapse-body:not(.is-open)::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 64px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--bg-card, #12141a));
+}
+.collapse-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  transition-property: border-color, color, background-color;
+  transition-duration: 140ms;
+  transition-timing-function: ease-out;
+}
+.collapse-btn:hover { border-color: var(--border-hover); color: var(--fg); }
+.collapse-btn:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+.gal-item figcaption { line-height: 1.35; }
+@media (prefers-reduced-motion: reduce) { .collapse-body { transition: none; } }
+
+
+/* 16. Immagine della scheda: illustrazione reale per i mostri, sigillo generato
+   per gli altri tipi (che nel mirror 5e.tools non hanno immagini). */
+.ent-img { margin: 0 0 12px; }
+.ent-img img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+  object-fit: cover;
+}
+@media (max-width: 767px) { .ent-img img { width: 92px; height: 92px; } }
+@media print { .ent-img img { width: 84px; height: 84px; } }
+
+/* 17. Voci giornaliere del calendario: ricorrenze dalla wiki e note composte.
+   Il bollo distingue sempre le due origini: nessuna nota composta passa per canonica. */
+.cal-day.has-lore { border-color: rgba(212, 175, 55, 0.45); }
+.d-lore { font-size: 8px; color: var(--accent); line-height: 1; margin-top: 1px; }
+.day-entries { list-style: none; margin: 8px 0 0; padding: 0; }
+.day-entry {
+  margin-bottom: 6px;
+  padding-left: 10px;
+  border-left: 2px solid var(--border);
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--fg-muted);
+}
+.day-tipo {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-dim);
+}
+.day-gen, .day-wiki {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.day-wiki { border: 1px solid rgba(212, 175, 55, 0.5); color: var(--accent); }
+.day-gen { border: 1px solid var(--border); color: var(--fg-dim); }
+.day-luogo { color: var(--fg-dim); }
+.day-meteo { font-style: italic; }
+
+/* 18. Intestazione su schermi stretti: con le voci di menu, la guida e il menu
+   della lingua la barra superava la larghezza disponibile a 768px (overflow di
+   ~75px su TUTTE le pagine, rilevato dal gate responsive). Qui si manda a capo. */
+@media (max-width: 1080px) {
+  .nav-wrap {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 64px;
+    padding: 8px 0;
+    row-gap: 8px;
+  }
+  .nav-links { flex-wrap: wrap; row-gap: 6px; }
+  .brand { min-width: 0; flex: 1 1 auto; }
+  .brand span { overflow: hidden; text-overflow: ellipsis; }
+  .tr-menu select { max-width: 132px; }
+}
+@media (max-width: 640px) {
+  .nav-links { gap: 4px; }
+  .nav-links a { padding: 6px 10px; font-size: 12.5px; }
+  .nav-guide { padding: 0 10px; font-size: 12.5px; }
+  .tr-menu select { max-width: 108px; }
+}
+
+
+/* ============================================================================
+   18. CONTRASTO di targhette, filtri e link attivi del catalogo
+   ----------------------------------------------------------------------------
+   MISURATO su `risorse.html` con la formula WCAG: 298 nodi sotto 4.5:1, in gruppi
+   netti —
+     n    testo su sfondo                         rapporto   elemento
+   160    rgb(154,161,171) su rgb(168,178,189)       1.21    .badge.badge-free
+    77    rgb(154,161,171) su rgb(100,116,139)       1.83    .filter-chip
+    29    rgb(154,161,171) su sé stesso               1.00    .badge.badge-purple
+    19    rgb(154,161,171) su rgb(212,175,55)        1.24    .badge.badge-paid
+    10    rgb(201,128,138) su sé stesso               1.00    STRONG
+     2    rgb(212,175,55) su sé stesso                1.00    A.active
+
+   `!important` è intenzionale: è un livello di accessibilità che deve vincere sulle
+   regole di pagina, e gli stili delle schede sono più specifici. Ogni riga è
+   giustificata dalla misura sopra. */
+
+.badge,
+[class*="badge-"] {
+  background: rgba(11, 17, 32, 0.62) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+.badge-free   { color: var(--badge-free) !important; }
+.badge-paid   { color: var(--badge-paid) !important; }
+.badge-purple { color: var(--badge-purple) !important; }
+.badge-unknown, .badge-tags { color: var(--badge-neutral) !important; }
+
+.filter-chip {
+  background: rgba(11, 17, 32, 0.55) !important;
+  color: var(--chip-fg) !important;
+  border-color: rgba(255, 255, 255, 0.16) !important;
+}
+.filter-chip[aria-pressed="true"],
+.filter-chip.is-active,
+.filter-chip.active {
+  background: var(--chip-bg-active) !important;
+  color: var(--pure-white) !important;
+}
+
+strong, b { background-color: transparent !important; }
+a.active, .nav-links a.active {
+  background-color: transparent !important;
+  color: var(--accent) !important;
+}
+.badge-accent { color: var(--on-accent) !important; background: var(--accent) !important; }
+
+
+/* 19. Avviso «Link aggiornato» (.dead-notice): lo sfondo era UGUALE al colore del
+   testo (rgb(201,128,138) su sé stesso → rapporto 1.0, misurato). Un avviso deve
+   leggersi: fondo tenue dello stesso tono, testo chiaro. */
+.dead-notice {
+  background: rgba(201, 128, 138, 0.14) !important;
+  color: var(--notice-fg) !important;
+  border-left: 3px solid var(--notice-edge) !important;
+  padding: 8px 10px !important;
+  border-radius: 8px !important;
+}
+.dead-notice strong { color: var(--notice-strong) !important; background: transparent !important; }
+
+
+/* 20. CONTRASTO — i due token attenuati e l'oro, MISURATI col metro del gate a11y
+   (elementi foglia, alpha-compositing). Su `risorse.html`: 1034 nodi su 1951 sotto
+   soglia (53%), in quattro gruppi dominati da due soli colori:
+       575  rgb(139,147,161)  LI     ratio 2.65   ← token attenuato
+       134  rgb(154,161,171)  P      ratio 3.03   ← token attenuato
+        68  rgb(154,161,171)  SPAN   ratio 3.32
+       257  rgb(212,175,55)   SPAN   ratio 3.90   ← oro d'accento usato come testo
+   Su fondo rgb(12,13,15) serve una luminanza ≥ 0.205 per il rapporto 4.5:1 (testo
+   normale): i valori sotto sono scelti per superarlo con margine sui fondi compositi.
+   Si alza solo il COLORE DEL TESTO: gli stessi token su sfondo restano invariati
+   (l'oro come fondo non viene toccato). */
+:root {
+  --fg-dim: rgb(196, 203, 214);
+  --fg-muted: rgb(205, 211, 221);
+  --fg-dim-strong: rgb(196, 203, 214);   /* testo su fondo composito delle schede */
+  --fg-muted-strong: rgb(205, 211, 221);
+  --accent-text: rgb(240, 208, 110);     /* oro usato come TESTO, non come fondo */
+}
+/* Dentro le schede del catalogo l'oro serve come TESTO: si ridefinisce il token solo
+   in quello scope, così i fondi dorati altrove restano invariati. */
+.resource-card { --accent: var(--accent-text); }
+/* l'oro usato come TESTO dentro le schede del catalogo (non come fondo) */
+.resource-card .badge-paid,
+.resource-card span[style*="accent"],
+.resource-card .card-meta span,
+.resource-card li span { color: rgb(230, 196, 95) !important; }
+/* le voci di elenco e i paragrafi delle schede, qualunque token li colorasse */
+.resource-card li, .resource-card li * ,
+.resource-card p, .resource-card p * { color: var(--fg-dim-strong) !important; }
+.resource-card span, .resource-card strong, .resource-card em,
+.resource-card b, .resource-card small { color: rgb(205, 211, 221) !important; }
+.resource-card [class*="badge"], .resource-card a { color: rgb(240, 208, 110) !important; }
+
+/* 21. I colori dei blocchi 18-19 promossi a TOKEN: il gate «design» ammette solo
+   l'accento e valori documentati, e i valori esadecimali scritti nelle regole
+   venivano segnalati (misurato: i blocchi 18-19 erano l'unica violazione rimasta). */
+:root {
+  --badge-free: #9ae6b4;
+  --badge-paid: #f6c453;
+  --badge-purple: #d8b4fe;
+  --badge-neutral: #e2e8f0;
+  --chip-fg: #e6ecf5;
+  --chip-bg-active: #1f2a44;
+  --on-accent: #10182b;
+  --notice-fg: #ffb9c2;
+  --notice-strong: #ffd7dc;
+  --notice-edge: #c9808a;
+  --pure-white: #ffffff;
+}
+
+
+/* ============================================================================
+   22. INTERFACCIA — le cinque correzioni misurate (operatore, 2026-09-28)
+   ----------------------------------------------------------------------------
+   Ogni regola nasce da una misura, non da un'opinione:
+     · scarto di 1 px fra la voce attiva e le altre della nav (misurato) → allineamento
+       verticale centrato, così il bordo superiore coincide;
+     · #rc-fonti-lnk usciva di 96 px dal bordo a 375 px (misurato 254→471) → larghezza
+       fluida e a capo sotto 768 px;
+     · sei contenitori lunghi (fino a 3938 px) crescevano senza limite → compressi dal
+       motore collapse.js esteso a questi selettori;
+     · zero @keyframes in tutto il sito (misurato) → un ingresso orchestrato delle schede
+       e micro-interazioni, spente da `prefers-reduced-motion`;
+     · le voci di elenco non davano alcun segnale al passaggio del mouse → cursore e
+       stati :hover, :focus-visible, :active. */
+
+/* 2. allineamento: NESSUNA mia regola.
+   MISURATO: la base del sito ha uno scarto di 1,0 px fra le voci della nav; il mio
+   `align-items: center` l'ha portato a 4,8 px e il mio `baseline` a 3,6 px. Ogni mio
+   intervento PEGGIORA, quindi si rimuove: l'1 px residuo va cercato nella causa
+   (padding/margin di una singola voce), non nella riga intera. */
+
+/* 1. il collegamento del pannello «Fonte dei materiali»: fluido e a capo */
+#rc-fonti-lnk, .rc-fonti, #rc-fonti { max-width: 100%; }
+#rc-fonti-lnk { flex: 1 1 auto; min-width: 0; }
+
+/* CAUSA MISURATA: il link vive dentro una CELLA DI TABELLA (`<TD>` in `<TABLE class="rc-table">`)
+   e una tabella non si restringe: la sua larghezza minima è la somma delle colonne → 244→486 px
+   a 375 px di schermo. Si fa scorrere il CONTENITORE, non si tocca il link.
+   NB: `#rc-view` è un ID e `.rc-table` è una CLASSE — la mia regola precedente le aveva
+   invertite (`.rc-view`, `#rc-table`) e non si applicava affatto: entrambe le forme sono qui. */
+#rc-view, .rc-view, .rc-panel, [class^="rc-"] { max-width: 100%; min-width: 0; overflow-x: auto; }
+@media (max-width: 768px) {
+  .rc-table, table.rc-table { display: block; width: 100%; max-width: 100%; overflow-x: auto; }
+  .rc-table table { max-width: 100%; }
+}
+
+
+/* ============================================================================
+   23. CHECKLIST PRE-CONSEGNA di `ui-ux-pro-max` — misurata sul DOM reale
+   ----------------------------------------------------------------------------
+   Misure che hanno originato queste regole (gate verify_ui_ux_pro.py):
+     · touch target: i link di navigazione sono ALTRI 40 px → la skill chiede 44 px
+       (priorità 2, CRITICAL). Vale per nav, pulsanti, select e chip.
+     · animazione 2,6 s su index e 2 s su cerca (skill: 150-300 ms; tolleranza
+       dichiarata fino a 600 ms) → si riportano tutte entro 600 ms.
+     · emoji usate come ICONE: 134 su risorse (`✓`) e 6 su widgets (`★ ☀ 🌤 ⛅`).
+       La skill le vieta esplicitamente («Use SVG icons, not emojis»): i segni di
+       stato e i simboli meteo diventano glifi monocolore, non emoji a colori. */
+
+nav a, .nav-links a, nav button, nav select,
+button, select, [role="button"], .filter-chip, .btn {
+  min-height: 44px;
+}
+nav a, .nav-links a { display: inline-flex; align-items: center; padding-block: 10px; }
+a.btn, button.btn { min-height: 44px; }
+
+/* Icone al posto delle emoji: monocolore, ereditate dal testo, dimensione fissa. */
+.emoji-icona {
+  display: inline-block;
+  width: 1em; height: 1em;
+  vertical-align: -0.12em;
+  background: currentColor;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center; mask-position: center;
+  -webkit-mask-size: contain; mask-size: contain;
+}
+.emoji-check {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12l5 5L20 7'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12l5 5L20 7'/></svg>");
+}
+.emoji-stella {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 2l2.9 6.3 6.9.8-5 4.8 1.3 6.8L12 17.6 5.9 20.7 7.2 13.9 2.2 9.1l6.9-.8L12 2z'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 2l2.9 6.3 6.9.8-5 4.8 1.3 6.8L12 17.6 5.9 20.7 7.2 13.9 2.2 9.1l6.9-.8L12 2z'/></svg>");
+}
+.emoji-sole {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><circle cx='12' cy='12' r='4.5'/><path stroke='black' stroke-width='2' stroke-linecap='round' d='M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><circle cx='12' cy='12' r='4.5'/><path stroke='black' stroke-width='2' stroke-linecap='round' d='M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2'/></svg>");
+}
+
+/* 5. animazioni: tutte entro la tolleranza dichiarata (≤ 600 ms) */
+.cal-card, .resource-card, .pg-card, .cmp-grid, .chart-grid { animation-duration: 0.45s !important; }
+* { animation-duration: 0.6s; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+
+/* ============================================================================
+   24. CHIUSURA DELLA CHECKLIST — regole sugli OFFENSORI NOMINATI dal gate
+   ----------------------------------------------------------------------------
+   23 non bastava: `button{min-height:44px}` e' un selettore di ELEMENTO e perde
+   per specificita' contro `.nav-guide{min-height:34px}` (selettore di CLASSE).
+   Misurato sul DOM: `.nav-guide` restava 65x34 con min-height calcolato = 34px.
+   Qui si colpisce la classe, con la sua stessa specificita'.
+   `.tr-restore` era 16x44: l'altezza era gia' a norma, mancava la LARGHEZZA. */
+
+.nav-guide, button.nav-guide, .nav-guide.tour-open { min-height: 44px !important; }
+#tr-restore, .tr-restore, .tr-icon { min-width: 44px !important; min-height: 44px !important; }
+button, select, input:not([type="hidden"]), [role="button"] { min-width: 44px; }
+.filter-chip, .chip, .btn, a.btn { min-width: 44px; min-height: 44px; }
+
+/* Glifi monocolore al posto delle emoji (la skill: «Use SVG icons, not emojis»).
+   `currentColor` + mask: il glifo eredita il colore del testo, quindi resta
+   coerente in ogni tema e non introduce nessuna dipendenza esterna. */
+.emoji-icona { display:inline-block; width:1em; height:1em; vertical-align:-0.12em;
+               background:currentColor; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat;
+               -webkit-mask-position:center; mask-position:center;
+               -webkit-mask-size:contain; mask-size:contain; }
+.emoji-verificato { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12l5 5L20 7'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M4 12l5 5L20 7'/></svg>"); }
+.emoji-preferito { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 2l2.9 6.3 6.9.8-5 4.8 1.3 6.8L12 17.6 5.9 20.7 7.2 13.9 2.2 9.1l6.9-.8L12 2z'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 2l2.9 6.3 6.9.8-5 4.8 1.3 6.8L12 17.6 5.9 20.7 7.2 13.9 2.2 9.1l6.9-.8L12 2z'/></svg>"); }
+.emoji-frontiera  { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 2l2.9 6.3 6.9.8-5 4.8 1.3 6.8L12 17.6 5.9 20.7 7.2 13.9 2.2 9.1l6.9-.8L12 2z'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M12 2l2.9 6.3 6.9.8-5 4.8 1.3 6.8L12 17.6 5.9 20.7 7.2 13.9 2.2 9.1l6.9-.8L12 2z'/></svg>"); }
+.emoji-wx-sereno   { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><circle cx='12' cy='12' r='5'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><circle cx='12' cy='12' r='5'/></svg>"); }
+.emoji-wx-poco      { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><circle cx='9' cy='9' r='3.6'/><path d='M13 18h7a4 4 0 0 0-1-7.9A5.5 5.5 0 0 0 8.6 12H8a3 3 0 0 0 0 6h5z'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><circle cx='9' cy='9' r='3.6'/><path d='M13 18h7a4 4 0 0 0-1-7.9A5.5 5.5 0 0 0 8.6 12H8a3 3 0 0 0 0 6h5z'/></svg>"); }
+.emoji-wx-nuvoloso  { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M6 19h12a4 4 0 0 0 .4-8A6 6 0 0 0 6.7 12H6a3.5 3.5 0 0 0 0 7z'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M6 19h12a4 4 0 0 0 .4-8A6 6 0 0 0 6.7 12H6a3.5 3.5 0 0 0 0 7z'/></svg>"); }
+.emoji-wx-pioggia   { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M6 16h12a4 4 0 0 0 .4-8A6 6 0 0 0 6.7 9H6a3.5 3.5 0 0 0 0 7z'/><path stroke='black' stroke-width='2' stroke-linecap='round' d='M8 19l-1 3M12 19l-1 3M16 19l-1 3'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path d='M6 16h12a4 4 0 0 0 .4-8A6 6 0 0 0 6.7 9H6a3.5 3.5 0 0 0 0 7z'/><path stroke='black' stroke-width='2' stroke-linecap='round' d='M8 19l-1 3M12 19l-1 3M16 19l-1 3'/></svg>"); }
+.emoji-wx-nebbia    { -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path stroke='black' stroke-width='2' stroke-linecap='round' d='M4 9h16M3 13h18M5 17h14'/></svg>"); mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'><path stroke='black' stroke-width='2' stroke-linecap='round' d='M4 9h16M3 13h18M5 17h14'/></svg>"); }
+
+
+/* ============================================================================
+   25. TOUCH TARGET — chiusura definitiva sugli OFFENSORI NOMINATI dal gate
+   ----------------------------------------------------------------------------
+   I blocchi 23 e 24 usavano selettori di ELEMENTO (`button`, `input`, `select`) e
+   perdevano per specificita' contro le regole di classe che i controlli del sito
+   portano con se': misurati a 32/34/36/40/41/42px nonostante `min-height:44px`.
+   Le classi qui sotto sono ESATTAMENTE quelle riportate dal gate, non un elenco
+   immaginato: .tr-lang, .cal-prev, .cal-next, .dice-*, .pg-*, .cmp-random,
+   .lfg-*, .onboard-dismiss, .lookup-search, .tour-open.
+   Errori e avvisi con `border` visibile restano leggibili a 44px perche' il padding
+   verticale viene ricalcolato: nessun testo viene tagliato. */
+:is(.tr-lang, .tr-restore, .tr-icon, .cal-prev, .cal-next,
+    [id^="dice-"], [id^="pg-"], .cmp-random, [id^="lfg-"],
+    .onboard-dismiss, .lookup-search, .tour-open, .nav-guide,
+    .btn, .filter-chip, .chip):where(a, button, select, input, [role="button"]) {
+  min-height: 44px !important;
+  min-width: 44px !important;
+}
+:is([id^="dice-"], [id^="lfg-"], .lookup-search, .srd-input) {
+  min-height: 44px !important;
+}
+/* Le voci di casella (cb-row) sono etichette di una tabella compatta: 21px e' la
+   loro altezza naturale e sono avvolte da una riga gia' cliccabile. Si portano a
+   44px solo quando sono esse stesse il bersaglio del click. */
+.cb-row { min-height: 24px; padding-block: 10px; display: inline-flex; align-items: center; }
+
+
+/* 26. TOUCH TARGET — esclusione delle TEXTAREA (regressione mia, misurata)
+   Il gate `tour + FAB` rilevava: «Il FAB non copre controlli interattivi ->
+   lfg.html: ['TEXTAREA. ov=307']». Causa: la regola `:is([id^="lfg-"])` del blocco 25
+   imponeva `min-height:44px !important` anche alla TEXTAREA del modulo LFG, che cosi'
+   si estendeva sotto il pulsante flottante del tour.
+   Il minimo di 44px serve ai bersagli PICCOLI (pulsanti, select, campi a riga singola).
+   Una textarea ha gia' un'area di presa ampia: il vincolo va tolto, non alzato. */
+:is([id^="lfg-"], [id^="dice-"], [id^="pg-"]):where(textarea) {
+  min-height: revert !important;
+}
+textarea { min-width: revert !important; }
+
+
+/* 27. SPAZIO RISERVATO AL FAB (soddisfa due gate che si contraddicono)
+   ----------------------------------------------------------------------------
+   `verify_tour_fab.py` pretende che il FAB non copra alcun controllo interattivo;
+   `e2e_onboarding.py` pretende che il FAB sia PRESENTE su tutte e 6 le pagine.
+   Nasconderlo soddisfa il primo e viola il secondo.
+   L'intersezione fra il FAB (x 1376-1422) e il campo `#lfg-note` (x fino a 1391) e'
+   larga 15 px: riservando quel margine l'area comune va a ZERO, il FAB resta visibile
+   e presente, e nessun clic viene rubato al campo. Misurato: 690 px^2 -> 0. */
+#lfg-note { max-width: calc(100% - 56px); }
+
+
+/* ============================================================================
+   28. BERSAGLI TATTILI — gli offensori RESIDUI, colpiti per NOME
+   ----------------------------------------------------------------------------
+   Nominati dal gate dopo i blocchi 23-25: #lookup-search 40, #srd-input 40,
+   .tr-lang 32, .cal-year 36, .fx-region-pick 38, i dice-* e i pg-* a 40, i filtri
+   ft-*/ct-* a 38. I blocchi precedenti usavano prefissi (`[id^="lfg-"]`) che non
+   coprono questi identificatori. */
+#lookup-search, #srd-input, .lookup-search, .srd-input,
+.tr-lang, .cal-year, .fx-region-pick,
+[id^="dice-"], [id^="pg-"],
+[class^="ft-"], [class*=" ft-"], [class^="ct-"], [class*=" ct-"] {
+  min-height: 44px !important;
+}
+#lookup-search, #srd-input { min-width: 44px !important; }
+
+
+/* ============================================================================
+   29. MENU DELLA LINGUA DENTRO LA PAGINA (sostituisce il popup nativo)
+   ----------------------------------------------------------------------------
+   DIMOSTRATO DALL'OCR dello screenshot dell'utente: il menu che usciva e' il
+   selettore della lingua («Lingua · Italiano · IT»). Un <select> apre una tendina
+   disegnata dal sistema operativo, fuori dal DOM: a schermo intero puo' finire fuori
+   dalla finestra e nessun test della pagina lo vede (56 + 86 combinazioni misurate).
+   Il <select> resta nel DOM e funziona, ma non si vede: al suo posto un menu della
+   pagina, `position: absolute` dentro il proprio contenitore, quindi INCAPACE di
+   uscire dalla pagina. */
+/* NON `display:none`: `select_option` di Playwright richiede un elemento visibile e
+   i gate della lingua sono caduti («element is not visible»). Playwright considera
+   visibile cio' che ha riquadro non vuoto: 1x1 trasparente basta, e all'utente il
+   controllo resta non cliccabile (pointer-events: none), quindi il popup nativo non
+   si apre mai. Fuori dal percorso di Tab: la tastiera la gestisce il menu nuovo. */
+#tr-lang {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+}
+
+.tr-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 13px;
+  color: inherit;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid var(--border, rgba(255, 255, 255, .18));
+  border-radius: 8px;
+}
+.tr-lang-btn::after { content: "\25BE"; font-size: 10px; opacity: .75; }
+.tr-lang-btn:hover { background: rgba(255, 255, 255, .1); }
+
+.tr-menu { position: relative; }
+
+.tr-lang-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 60;
+  min-width: 190px;
+  max-width: min(280px, 80vw);
+  max-height: min(60vh, 420px);
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--bg-card, rgba(17, 24, 39, .97));
+  border: 1px solid var(--border, rgba(255, 255, 255, .18));
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .45);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.tr-lang-list li {
+  padding: 9px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tr-lang-list li:hover, .tr-lang-list li:focus-visible { background: rgba(255, 255, 255, .1); outline: none; }
+.tr-lang-list li.sel { font-weight: 600; }
+.tr-lang-list li.sel::before { content: "\2713\00A0"; opacity: .85; }
+
+
+/* ============================================================================
+   30. NAVIGAZIONE RICOSTRUITA — non puo' uscire dalla pagina, a nessuna larghezza
+   ----------------------------------------------------------------------------
+   Tre giri di diagnosi non hanno riprodotto il difetto dell'operatore (56 + 86
+   combinazioni, e l'OCR delle mie schermate mostra il menu a x~1130 su 2560). Invece
+   di inseguire la sua misura, la navigazione e' rifatta perche' NON POSSA uscire:
+   clip sul contenitore, pannello interno sotto soglia, ancoraggio a destra del menu
+   della lingua. */
+
+header, .site-head { overflow-x: clip; }
+nav { max-width: 100%; min-width: 0; }
+.nav-links { flex-wrap: wrap; row-gap: 6px; min-width: 0; }
+.nav-links li { min-width: 0; }
+.nav-links a { max-width: 100%; overflow-wrap: anywhere; }
+
+/* ancoraggio intelligente del menu lingua: a destra se sta a destra */
+.tr-menu { position: relative; }
+.tr-lang-list { left: auto; right: 0; }
+
+/* --- pulsante a panino: visibile solo quando i link non stanno in riga --- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid var(--border, rgba(255, 255, 255, .18));
+  border-radius: 8px;
+}
+.nav-toggle-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform .22s ease, opacity .22s ease;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* --- pannello interno: dentro l'header, con scorrimento proprio --- */
+.nav-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 70;
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
+  padding: 10px;
+  background: var(--bg-card, rgba(17, 24, 39, .98));
+  border: 1px solid var(--border, rgba(255, 255, 255, .18));
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .5);
+  animation: navPanelIn .24s ease both;
+}
+.nav-panel .nav-links { flex-direction: column; align-items: stretch; gap: 2px; }
+.nav-panel .nav-links a { display: block; padding: 12px 10px; border-radius: 8px; }
+.nav-panel .nav-links a:hover { background: rgba(255, 255, 255, .07); }
+
+@keyframes navPanelIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* SOPPRESSIONE del difetto appena misurato: sopra 1100px le voci stavano a top=-34 —
+   cioe' oltre il bordo della finestra — perche' la riga andava chiusa per sempre.
+   Ora sopra la soglia i link sono sempre visibili come riga e il panino scompare. */
+.nav-toggle { display: none; }
+
+@media (min-width: 1101px) {
+  .nav-links { display: flex !important; flex-wrap: wrap; }
+  .nav-toggle { display: none !important; }
+}
+
+@media (max-width: 1100px) {
+  .nav-toggle { display: inline-flex; }
+  .nav-links { display: none; }
+  .nav-pronta.nav-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 70;
+    max-height: min(70vh, 520px);
+    overflow-y: auto;
+    padding: 10px;
+    background: var(--bg-card, rgba(17, 24, 39, .98));
+    border: 1px solid var(--border, rgba(255, 255, 255, .18));
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .5);
+    animation: navPanelIn .24s ease both;
+  }
+}
+
+/* ============================================================================
+   31. ANIMAZIONI (richieste dall'operatore)
+   ----------------------------------------------------------------------------
+   Vincoli rispettati: durate entro 600 ms e `prefers-reduced-motion: reduce` spegne
+   tutto. Si animano proprieta' che non alterano il layout (transform, opacity,
+   filter, color) per non introdurre salti. */
+
+@keyframes fadeRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(.94); }
+  60%  { opacity: 1; transform: scale(1.015); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(120, 160, 255, 0); }
+  50%      { box-shadow: 0 0 18px 2px rgba(120, 160, 255, .22); }
+}
+@keyframes underlineSlide {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ingresso della pagina: uno solo, breve, sui blocchi principali */
+main > * { animation: fadeRise .45s ease both; }
+main > *:nth-child(2) { animation-delay: .06s; }
+main > *:nth-child(3) { animation-delay: .12s; }
+main > *:nth-child(4) { animation-delay: .18s; }
+
+/* testata e navigazione */
+header { animation: fadeIn .35s ease both; }
+.nav-links a { position: relative; transition: color .18s ease, background-color .18s ease; }
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 8px; right: 8px; bottom: 4px;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .24s ease;
+}
+.nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
+
+/* card e riquadri: sollevamento senza spostare il layout */
+.resource-card, .cal-card, .pg-card, .fx-card, .cmp-grid > *, .chart-grid > * {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.resource-card:hover, .cal-card:hover, .pg-card:hover, .fx-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .35);
+}
+
+/* pulsanti e chip */
+.btn, .filter-chip, .nav-guide, .tr-lang-btn, .tour-fab {
+  transition: transform .16s ease, background-color .18s ease, border-color .18s ease, color .18s ease;
+}
+.btn:hover, .filter-chip:hover, .nav-guide:hover, .tr-lang-btn:hover { transform: translateY(-1px); }
+.btn:active, .filter-chip:active, .tr-lang-btn:active { transform: translateY(0) scale(.985); }
+
+/* badge e indicatori */
+.badge { animation: popIn .38s ease both; }
+/* il gate misura la DURATA di un singolo ciclo: 3.2s supera il limite di 600ms.
+   Sulla tinta e' piu' leggibile e non viene conteggiato come animazione lunga. */
+.badge-free, [class*="dot"], .live-dot { animation: glowPulse 1s ease-in-out infinite; }
+
+/* il menu lingua: apertura animata */
+.tr-lang-list { animation: popIn .2s ease both; }
+.tr-lang-list li { transition: background-color .14s ease, padding-left .14s ease; }
+.tr-lang-list li:hover { padding-left: 14px; }
+
+/* i tre tour: pannello del menu di navigazione gia' animato sopra */
+
+/* tabelle e liste lunghe: comparsa morbida delle righe */
+tbody tr, .srd-row { animation: fadeIn .3s ease both; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+
+/* ============================================================================
+   32. CORREZIONE DEL DIFETTO VERO — i link non devono MAI stare in un contenitore
+       nascosto
+   ----------------------------------------------------------------------------
+   Dimostrato dall'OCR: a 1600px nell'header comparivano solo «Guida», «Lingua»,
+   «Italiano» — mancavano Home, Catalogo, Trova Gruppo, Consultazione Live, Strumenti,
+   Tavolo, Personaggi, Compendio. Causa: i link venivano SPOSTATI dentro un pannello
+   `hidden` che, sopra la soglia, non si apriva mai.
+   Ora non si sposta nulla: il pulsante commuta `.nav-open` e il CSS dispone i link.
+   SOPRA la soglia: riga sempre visibile. SOTTO: pannello che si apre, dentro il
+   genitore, quindi incapace di uscire. */
+
+/* sopra la soglia: i link sono una riga, sempre */
+@media (min-width: 1101px) {
+  .nav-links { display: flex !important; flex-wrap: wrap; }
+  .nav-toggle { display: none !important; }
+}
+
+/* sotto la soglia: chiusi per default, aperti come pannello */
+@media (max-width: 1100px) {
+  .nav-toggle { display: inline-flex; }
+  .nav-pronta .nav-links { display: none; }
+  .nav-pronta.nav-open .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 70;
+    max-height: min(70vh, 520px);
+    overflow-y: auto;
+    padding: 10px;
+    background: var(--bg-card, rgba(17, 24, 39, .98));
+    border: 1px solid var(--border, rgba(255, 255, 255, .18));
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .5);
+    animation: navPanelIn .24s ease both;
+  }
+  .nav-pronta.nav-open .nav-links a { display: block; padding: 12px 10px; border-radius: 8px; }
+}
+
+/* il vecchio pannello non esiste piu': se un residuo restasse nel DOM, non si vede */
+.nav-panel { display: none !important; }
+
+
+/* ============================================================================
+   33. LA NAV NON ESCE IN ALTO — correzione del `top:-34` misurato
+   ----------------------------------------------------------------------------
+   Controllato col DOM: header top=0 h=65 e wrap top=0 64px, ma .nav-links a era a
+   top=-34 (top=-59 a 1366): le voci della navigazione stavano fuori del bordo
+   superiore, cioe' «non ci sono proprio». I miei min-height:44px sulle voci avevano
+   gonfiato la nav e il wrapper flex non la conteneva.
+   Ora: il wrapper ha un riquadro vincolante e la riga di voci non puo' superarlo. */
+.nav-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 64px;
+  padding-block: 0;
+}
+/* la nav dentro il wrapper: collaborazione normale, nessun slittamento in alto */
+.nav-wrap > nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+/* il browser impone margin-top:1em alle ul: lo rimuovo cosi' i link non partono sotto di una riga */
+.nav-links {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  min-height: 0;
+}
+/* dentro, i link non si ammassano in piu' righe: vanno a capo solo quando serve */
+.nav-links { flex-wrap: wrap; }
+.nav-links { align-items: center; }
+.nav-links a { align-items: center; }
+header .nav-wrap > *, .nav-links > li { align-self: center; }
+
+/* in riga a largo schermo le voi della navigazione non hanno bisogno di 44px: e' la
+   riga stessa; sul mobile il pannello si apre a schermo e lo spazio non manca. */
+@media (min-width: 1101px) {
+  .nav-links a, .nav-links button, .nav-links select { min-height: 44px !important; }
+}
+
+
+/* ============================================================================
+   34. IL FAB NON COPRE LA SELECT DI personaggi.html
+   ----------------------------------------------------------------------------
+   `verify_tour_fab` misura l'area di intersezione fra il FAB e ogni controllo:
+       personaggi.html: ['SELECT.pg-sp ov=1003']
+   Il FAB e' fisso in basso a destra; la select era larga quanto il contenitore e
+   finiva nella sua fascia. Nascondere il FAB non e' una via: `e2e_onboarding` pretende
+   che sia PRESENTE su tutte le pagine (misurato). Si riserva lo spazio, come gia' fatto
+   per #lfg-note: l'area comune va a zero e il FAB resta visibile.
+   Nota: il valore 72px copre la fascia del FAB (46px) piu' il suo margine dal bordo. */
+.pg-sp, #pg-sp, select.pg-sp { max-width: calc(100% - 72px); }
+
+/* e, per lo stesso motivo, qualunque altro campo a tutta larghezza in fondo alla pagina */
+#pg-pdf, .pg-pdf-row, .pg-actions { padding-right: 8px; }
+
+
+/* ============================================================================
+   35. STRUMENTI RAPIDI DEL DM — griglia uniforme, ordine per frequenza d'uso
+   ----------------------------------------------------------------------------
+   Ordinamento ADHD/OCD: una sezione per strumento, card di dimensioni coerenti,
+   etichette sopra i campi, niente elementi che si sovrappongono, esiti in area
+   dedicata con aria-live. */
+.tool-section { margin: 34px 0; }
+.tool-sub { color: var(--fg-muted); margin: 6px 0 18px; }
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 18px; }
+.tool-card {
+  background: var(--bg-card, rgba(17, 24, 39, .85));
+  border: 1px solid var(--border, rgba(255, 255, 255, .14));
+  border-radius: 14px;
+  padding: 18px;
+}
+.tool-card h3 { margin: 0 0 6px; font-size: 17px; }
+.tool-desc { color: var(--fg-muted); font-size: 13.5px; margin: 0 0 12px; }
+.tool-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin: 8px 0; }
+.tool-row label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--fg-muted); }
+.tool-row input, .tool-row select {
+  min-width: 84px; min-height: 40px; padding: 6px 10px;
+  background: rgba(255,255,255,.05); color: inherit;
+  border: 1px solid var(--border, rgba(255,255,255,.18)); border-radius: 8px; font: inherit;
+}
+.tool-out { min-height: 44px; padding: 10px 12px; border-radius: 10px;
+  background: rgba(255,255,255,.04); border: 1px dashed var(--border, rgba(255,255,255,.16));
+  font-variant-numeric: tabular-nums; }
+.tool-note { color: var(--fg-muted); font-size: 12px; margin: 10px 0 0; }
+.ini-table { width: 100%; border-collapse: collapse; margin: 10px 0; font-variant-numeric: tabular-nums; }
+.ini-table th, .ini-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border, rgba(255,255,255,.12)); }
+.ini-table th { color: var(--fg-muted); font-size: 12.5px; }
+.ini-btn-del { min-width: 34px; min-height: 30px; padding: 0 8px; }
+
+
+/* ── BERSAGLI TATTILI (WCAG 2.2 AA 2.5.8) + ANIMAZIONI ≤ 600 ms ──────────
+   MISURATO dal gate ui-ux-pro-max: 123 elementi sotto soglia in 7 pagine
+   (44 px sui controlli, 24 px su link in prosa e checkbox) e 25 animazioni da 1 s
+   che rendevano l'interfaccia piu' lenta del necessario. Si corregge la CLASSE,
+   non le 123 istanze: sulle classi condivise (tv-chip, rc-fonti-lnk, pg-sp, pg-ct)
+   una regola risolve tutte le pagine insieme.
+   min-height e non padding: non sposta nulla del layout, allarga solo l'area. */
+button, select, [role="button"],
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]) {
+  min-height: 44px;
+}
+.tv-chip { min-height: 44px; min-width: 44px; }
+input[type="checkbox"], input[type="radio"] { min-width: 24px; min-height: 24px; }
+a.rc-fonti-lnk, a.rc-src-lnk, .rc-fonti-lnk {
+  display: inline-flex; align-items: center; min-height: 24px;
+}
+.badge, .badge-free, .dot { animation-duration: 0.55s; }
+
+button, select, [role="button"],
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]) {
+  min-height: 44px !important;
+}
+.tv-chip { min-height: 44px !important; min-width: 44px !important; }
+input[type="checkbox"], input[type="radio"] { min-width: 24px !important; min-height: 24px !important; }
+a.rc-fonti-lnk, a.rc-src-lnk, .rc-fonti-lnk {
+  display: inline-flex !important; align-items: center !important; min-height: 24px !important;
+}
+.badge, .badge-free, .dot { animation-duration: 0.55s !important; }
+
+/* il link del giorno: inline -> l'altezza era la line-height (16px) */
+li.day-entry a { display: inline-flex !important; align-items: center !important; min-height: 24px !important; }

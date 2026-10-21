@@ -1,0 +1,570 @@
+{
+ "index.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "personaggi.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "cerca.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "risorse.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 2,
+   "worst": {
+    "tag": "P",
+    "cls": "",
+    "sw": 3254,
+    "cw": 300
+   },
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "tavolo.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "stats.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "widgets.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ },
+ "lfg.html": {
+  "320x480": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "375x667": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "414x896": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "768x1024": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1024x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1366x768": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "1920x1080": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  },
+  "3840x2160": {
+   "overflowX": 0,
+   "parasitic": false,
+   "clipped": 0,
+   "worst": null,
+   "vw": 1249,
+   "vh": 950
+  }
+ }
+}

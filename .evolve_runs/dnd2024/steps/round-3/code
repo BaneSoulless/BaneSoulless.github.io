@@ -1,0 +1,266 @@
+"""role_axes.py — tassonomie ad assi per i ruoli, misurate sul TESTO reale del manuale.
+
+PERCHE': la categoria «Taunter» conteneva solo build sull'asse A (svantaggio), che e' la
+versione debole del ruolo: 120 sottoclassi toccavano il controllo, 10 lo facevano davvero.
+Lo stesso difetto — una categoria popolata con la sola meccanica piu' ovvia — e' probabile
+negli altri ruoli. Qui ogni ruolo ha i SUOI assi e una REGOLA DI AMMISSIONE, cosi' la
+categoria contiene chi copre il ruolo, non chi lo sfiora.
+
+Fonti scandite (tre contenitori, non uno: un rilevatore che ne legge due su tre classifica
+male un terzo delle build): privilegi di sottoclasse risolti, talenti, incantesimi.
+
+Output: data/role-axes.json
+"""
+from __future__ import annotations
+
+import json
+import re
+from pathlib import Path
+
+SITE = Path(r"C:\Users\Fabrizio\workspace\public-site")
+DATA = SITE / "data"
+OUT = DATA / "role-axes.json"
+
+RUOLI: dict[str, dict] = {
+    "healer": {
+        "nome": "Guaritore",
+        "assi": {
+            "H1 cura diretta": ["regain hit points", "restore hit points", "heals", "healing",
+                                "regains", "hit points equal"],
+            # 'prevent' da solo matcha testo di sapore: un ladro risultava «Guaritore» per H2.
+            "H2 prevenzione": ["temporary hit points", "resistance to", "reduce the damage",
+                               "halves the damage"],
+            "H3 rianimazione": ["revivify", "raise dead", "resurrection", "return to life",
+                                "back from the dead", "resurrect", "dying"],
+            "H4 condizioni": ["remove", "ends the condition", "no longer", "cured", "cure",
+                              "removes one level of exhaustion", "ends one"],
+            # 'bonus action' da solo matcha OGNI classe (Cunning Action, Second Wind, ...):
+            # serve il verbo di cura accanto all'economia.
+            "H5 economia": ["bonus action to restore", "bonus action to heal",
+                            "as a bonus action, you can restore", "as a bonus action, you can heal",
+                            "as a reaction when", "without using an action"],
+        },
+        # La versione DEBOLE e' la cura grezza (H1) da sola: costa l'azione e arriva dopo il
+        # danno. Un guaritore vero previene, rianima o toglie condizioni.
+        "ammissione": ["*due_di_H1H2H3H4H5"],
+        "regola": "almeno un asse fra prevenzione (H2), rianimazione (H3) o rimozione di condizioni (H4): la cura grezza da sola e' la versione debole",
+    },
+    "summoner": {
+        "nome": "Evocatore",
+        "assi": {
+            "S1 evocazione": ["summon", "conjure", "you summon", "appears in an unoccupied",
+                              "animate dead", "create undead", "familiar"],
+            "S2 comando": ["no action required", "command it", "you command", "obeys your",
+                           "takes its turn", "you can use a bonus action to command"],
+            "S3 potenziamento": ["the summon", "your summon", "its attacks", "adds your",
+                                 "increases by", "gains temporary hit points"],
+            "S4 quantita": ["each of your", "number of", "two creatures", "multiple", "swarm",
+                            "as many as"],
+            "S5 persistenza": ["until dispelled", "24 hours", "permanently", "reassert",
+                               "lasts until", "no concentration"],
+        },
+        # Evocare senza poter COMANDARE (S2) significa spendere azioni ogni turno: la versione
+        # debole. Serve comando, potenziamento o persistenza.
+        "ammissione": ["S2", "S3", "S5"],
+        "regola": "evocazione (S1) piu' almeno un asse fra comando (S2), potenziamento (S3) o persistenza (S5): un summon che costa l'azione ogni turno e' la versione debole",
+    },
+    "dps": {
+        "nome": "Danno",
+        "assi": {
+            "D1 singolo": ["one creature", "a creature you can see", "target", "single",
+                           "against that creature"],
+            "D2 area": ["each creature", "in a", "sphere", "cone", "line", "radius", "cube"],
+            "D3 critico": ["critical", "crit", "score a critical hit", "critical range",
+                           "19-20", "18-20"],
+            "D4 ripetibile": ["at will", "each of your turns", "on each of your turns",
+                              "whenever you", "no action required", "you can use"],
+            "D5 esplosivo": ["extra damage", "additional damage", "per level", "increases by",
+                             "extra 1d", "extra 2d", "double"],
+            "D6 multiattacco": ["attack twice", "extra attack", "two attacks", "three attacks",
+                                "number of attacks"],
+        },
+        # Un DPS che sa fare SOLO danno singolo e' la versione stretta: non regge contro gruppi
+        # ne' scala. Serve area o ripetibilita' o scala per livello.
+        "ammissione": ["*tre_di_D2D3D4D5D6"],
+        "regola": "almeno due fra area (D2), ripetibilita' (D4), scala (D5); oppure critico (D3) o multiattacco (D6): il solo danno singolo e' la versione stretta",
+    },
+    "face": {
+        "nome": "Volto sociale",
+        "assi": {
+            "F1 persuasione": ["persuasion", "persuade", "friendly", "attitude"],
+            "F2 inganno": ["deception", "deceive", "disguise", "false", "impersonate"],
+            "F3 intimidazione": ["intimidation", "intimidate", "frightened of you", "menac"],
+            "F4 lettura": ["insight", "read", "detect thoughts", "sense", "know if", "learn one"],
+            # 'proficiency bonus times' e' troppo generico: quasi ogni classe 2024 lo usa.
+            "F5 economia sociale": ["at will", "without expending a use", "no action required",
+                                    "you can reroll", "regain the use"],
+            "F6 fuori dal combattimento": ["outside of combat", "1 hour", "10 minutes", "8 hours",
+                                           "during a short rest", "social interaction"],
+        },
+        # Un volto che sa fare UNA sola cosa e' uno specialista, non un face: serve coprire
+        # almeno due delle tre vie sociali, oppure una via piu' lettura/economia.
+        "ammissione": ["*due_di_F1F2F3", "F4", "F5"],
+        "regola": "almeno due fra persuasione/inganno/intimidazione, oppure una via sociale piu' lettura (F4) o economia sociale (F5): una sola via e' specialismo, non presenza sociale",
+    },
+}
+
+
+def testo(v) -> str:
+    out: list[str] = []
+    if v is None:
+        return ""
+    if isinstance(v, str):
+        s = v.strip()
+        if s[:1] in "[{" and len(s) > 2:
+            try:
+                return testo(json.loads(s))
+            except Exception:
+                pass
+        out.append(v)
+    elif isinstance(v, list):
+        for x in v:
+            out.append(testo(x))
+    elif isinstance(v, dict):
+        for k in ("name", "n", "entry"):
+            if isinstance(v.get(k), str):
+                out.append(v[k])
+        for k in ("entries", "entry", "items", "rows", "d", "short"):
+            if k in v:
+                out.append(testo(v[k]))
+    return " ".join(out)
+
+
+def attiva(t: str, frasi: list[str]) -> list[str]:
+    low = re.sub(r"\{@\w+([^}]*)\}", r"\1", (t or "").lower())
+    low = re.sub(r"\s+", " ", low)
+    return [f for f in frasi if f in low]
+
+
+def assi_di(t: str, assi: dict[str, list[str]]) -> dict[str, list[str]]:
+    out: dict[str, list[str]] = {}
+    for k, frasi in assi.items():
+        hit = attiva(t, frasi)
+        if hit:
+            out[k.split()[0]] = hit
+    return out
+
+
+def ammissibile(a: dict, regola: list[str]) -> tuple[bool, str]:
+    """Applica la regola di ammissione. Ritorna (esito, motivo).
+
+    SEMANTICA: la lista `regola` contiene ALTERNATIVE (OR), non requisiti cumulativi (AND).
+    Un matcher generico messo in cima intercettava «face» prima del suo blocco specifico e
+    lo faceva crollare a 1 ammissibile su 102: la regola va valutata per intero, provando
+    ogni alternativa, non fermandosi alla prima che non scatta.
+    """
+    chiavi = set(a)
+    import re as _re
+    # RAMO DEDICATO «face»: due vie sociali su tre, oppure una via + lettura/economia.
+    # Va valutato PRIMA delle alternative generiche: F5 da solo («at will») matcha quasi
+    # tutto e porterebbe il volto all'80%, che e' il difetto opposto.
+    if "*due_di_F1F2F3" in regola:
+        sociali = chiavi & {"F1", "F2", "F3"}
+        if len(sociali) >= 2:
+            return True, "due vie sociali su tre"
+        if sociali and (chiavi & {"F4", "F5"}):
+            return True, "una via sociale + lettura/economia"
+        return False, ("una sola via sociale senza lettura/economia: specialismo, non presenza sociale"
+                       if sociali else "nessuna via sociale")
+    for r in regola:
+        m = _re.match(r"\*(due|tre)_di_([A-Z0-9]+)$", r)
+        if not m:
+            continue
+        soglia = 2 if m.group(1) == "due" else 3
+        gruppo = {m.group(2)[k:k + 2] for k in range(0, len(m.group(2)), 2)}
+        if len(chiavi & gruppo) >= soglia:
+            return True, f"almeno {m.group(1)} fra {', '.join(sorted(gruppo))}"
+    # regole puntuali (non raggruppate): bastano da sole
+    for r in regola:
+        if not r.startswith("*") and r in chiavi:
+            return True, f"copre {r}"
+    # casi specifici con logica dedicata
+    if "*due_di_D2D4D5" in regola:
+        if chiavi & {"D3", "D6"}:
+            return True, f"copre {', '.join(sorted(chiavi & {'D3', 'D6'}))}"
+    return False, (f"nessuna alternativa soddisfatta fra {', '.join(regola)}: "
+                   f"la meccanica piu' ovvia da sola e' la versione stretta del ruolo")
+
+
+def main() -> int:
+    sf = json.loads((DATA / "subclass-features.json").read_text(encoding="utf-8"))["sottoclassi"]
+    D = json.loads((DATA / "character-data.json").read_text(encoding="utf-8"))
+    man = D["manuali"]
+
+    # testi dai tre contenitori
+    # IL NOME VA INCLUSO: il segnale d'asse spesso sta solo li'. «Summon Aberration» ha S1
+    # nel nome e non lo ripete nelle entries (che dicono «you call forth an aberrant spirit»):
+    # scandendo il solo testo, l'evocatore risultava 0 ammissibili su 136.
+    testi_sub = {}
+    for chiave, voci in sf.items():
+        nome, _, src = chiave.partition("|")
+        testi_sub[(nome, src)] = nome + " " + " ".join(x.get("testo") or "" for x in voci if isinstance(x, dict))
+    testi_feat = {}
+    for f in D.get("feats", []):
+        if isinstance(f, dict) and f.get("n"):
+            testi_feat[(f["n"], f.get("s"))] = testo(f.get("n")) + " " + testo(f.get("d"))
+    testi_inc = {}
+    sp = DATA / "5etools" / "spells"
+    for g in (sorted(sp.glob("spells-*.json")) if sp.is_dir() else []):
+        try:
+            d = json.loads(g.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for e in ((d.get("spell") if isinstance(d, dict) else d) or []):
+            if isinstance(e, dict) and e.get("name"):
+                testi_inc[(e["name"], e.get("source"))] = str(e["name"]) + " " + testo(e.get("entries"))
+
+    out: dict[str, dict] = {}
+    for rk, r in RUOLI.items():
+        per_sub, per_feat, per_inc = [], [], []
+        for (nome, src), txt in testi_sub.items():
+            a = assi_di(txt, r["assi"])
+            if a:
+                ok, perche = ammissibile(a, r["ammissione"])
+                per_sub.append({"nome": nome, "s": src, "manuale": man.get(src, {}).get("libro", src),
+                                "assi": sorted(a), "ammissibile": ok, "perche": perche})
+        for (nome, src), txt in testi_feat.items():
+            a = assi_di(txt, r["assi"])
+            if a:
+                ok, perche = ammissibile(a, r["ammissione"])
+                per_feat.append({"nome": nome, "s": src, "assi": sorted(a), "ammissibile": ok, "perche": perche})
+        for (nome, src), txt in testi_inc.items():
+            a = assi_di(txt, r["assi"])
+            if a:
+                ok, perche = ammissibile(a, r["ammissione"])
+                per_inc.append({"nome": nome, "s": src, "assi": sorted(a), "ammissibile": ok, "perche": perche})
+        for lst in (per_sub, per_feat, per_inc):
+            lst.sort(key=lambda x: (-len(x["assi"]), x["nome"]))
+        out[rk] = {"nome": r["nome"], "assi": {k: k for k in r["assi"]}, "regola": r["regola"],
+                   "sottoclassi": {"con_assi": len(per_sub),
+                                   "ammissibili": sum(1 for x in per_sub if x["ammissibile"]),
+                                   "migliori": [x for x in per_sub if x["ammissibile"]][:20]},
+                   "talenti": {"con_assi": len(per_feat),
+                               "ammissibili": sum(1 for x in per_feat if x["ammissibile"]),
+                               "migliori": [x for x in per_feat if x["ammissibile"]][:15]},
+                   "incantesimi": {"con_assi": len(per_inc),
+                                   "ammissibili": sum(1 for x in per_inc if x["ammissibile"]),
+                                   "migliori": [x for x in per_inc if x["ammissibile"]][:15]}}
+
+    OUT.write_text(json.dumps({"nota": ("Assi di ruolo misurati sul testo reale da TRE contenitori "
+                                        "(sottoclassi, talenti, incantesimi). Ogni ruolo ha una regola di "
+                                        "ammissione: contiene chi copre il ruolo, non chi lo sfiora."),
+                               "ruoli": out}, ensure_ascii=False, indent=1), encoding="utf-8")
+    for rk, v in out.items():
+        s, f, i = v["sottoclassi"], v["talenti"], v["incantesimi"]
+        print(f"\n=== {v['nome'].upper()} ===")
+        print(f"  regola: {v['regola']}")
+        print(f"  sottoclassi: {s['con_assi']} con assi -> {s['ammissibili']} AMMISSIBILI")
+        print(f"  talenti:     {f['con_assi']} con assi -> {f['ammissibili']} ammissibili")
+        print(f"  incantesimi: {i['con_assi']} con assi -> {i['ammissibili']} ammissibili")
+        for x in s["migliori"][:5]:
+            print(f"     {x['nome'][:28]:28s} [{x['s']:6s}] {','.join(x['assi'])}  ({x['perche'][:44]})")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

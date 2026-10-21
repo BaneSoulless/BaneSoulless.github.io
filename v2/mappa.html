@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mappa di Faerûn — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/mappa.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mappa di Faerûn — Il Grimorio dei Reami">
+<meta property="og:description" content="Mappa interattiva di Faerûn: città, porti, capitali e luoghi dei Forgotten Realms.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/mappa.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mappa di Faerûn — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Mappa interattiva di Faerûn: città, porti, capitali e luoghi dei Forgotten Realms.">
+
+<meta name="description" content="Mappa interattiva di Faerûn: città, porti, capitali, rovine e luoghi dei Forgotten Realms con schede informative, ricerca e livelli attivabili.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/vendor/leaflet.css">
+<link rel="stylesheet" href="assets/grimorio.css">
+<style>
+/* mappa v2 — tema Vetro Arcano */
+#faerun-map {
+  aspect-ratio: 4763 / 3185;   /* proporzioni esatte dell'immagine: zero bande */
+  width: 100%; max-height: 82vh; min-height: 380px;
+  border-radius: 18px; border: 1px solid var(--line-hi, rgba(255,255,255,.14));
+  background: #0b0d11; overflow: hidden;
+  box-shadow: 0 18px 44px rgba(0,0,0,.5), 0 0 24px rgba(232,201,90,.06);
+  outline: none;
+}
+.map-tools { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin: 18px 0 14px; }
+.map-search { flex: 1 1 280px; display: flex; gap: 8px; }
+.map-search input {
+  flex: 1; background: var(--glass); border: 1px solid var(--line); color: var(--fg);
+  border-radius: 13px; padding: 12px 16px; font-size: 15px; font-family: inherit;
+}
+.map-search input:focus { outline: 2px solid rgba(201,162,39,.5); outline-offset: 1px; }
+.map-search button {
+  background: linear-gradient(145deg, #e8c95a, var(--gold-hi, #c9a227) 55%, #8a6d18);
+  color: #14110a; border: none; border-radius: 13px; padding: 12px 20px;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+}
+.layers {
+  display: flex; flex-wrap: wrap; gap: 8px 14px; padding: 12px 16px; margin-top: 14px;
+  background: var(--glass); border: 1px solid var(--line); border-radius: 13px;
+  font-size: 13.5px;
+}
+.layers label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; color: var(--muted); }
+.layers input { accent-color: var(--gold-hi, #c9a227); width: 15px; height: 15px; }
+.layers .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.map-note { color: var(--muted); font-size: 13px; line-height: 1.55; margin-top: 14px; }
+.map-note a { color: var(--gold-hi); }
+.leaflet-container { font-family: inherit; background: #0b0d11; }
+.leaflet-popup-content-wrapper {
+  background: #12141a; color: #ece7dd; border-radius: 14px;
+  border: 1px solid rgba(201,162,39,.35); box-shadow: 0 12px 32px rgba(0,0,0,.55);
+}
+.leaflet-popup-tip { background: #12141a; border: 1px solid rgba(201,162,39,.35); }
+.leaflet-popup-content { margin: 14px 16px; min-width: 210px; }
+.mp-name { font-weight: 700; font-size: 16px; color: var(--gold-hi, #c9a227); margin-bottom: 4px; font-family: 'Castellar', serif; letter-spacing: .04em; }
+.mp-region { font-size: 12px; color: #9aa1ab; margin-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+.mp-lore { font-size: 13.5px; line-height: 1.5; color: #c9ccc9; }
+.mp-link { display: inline-block; margin-top: 8px; color: var(--gold-hi, #c9a227); font-size: 13px; font-weight: 600; }
+.mp-sum { margin-top: 8px; padding-top: 8px; border-top: 1px dotted rgba(201,162,39,.3); font-size: 13px; line-height: 1.55; color: #b9bdb6; }
+.leaflet-control-attribution { background: rgba(11,13,17,.82) !important; color: #94a3b8; font-size: 11px; }
+.leaflet-control-attribution a { color: var(--gold-hi, #c9a227); }
+.leaflet-bar a { background: #12141a; color: #ece7dd; border-color: rgba(255,255,255,.12); }
+.leaflet-bar a:hover { background: #1c2029; }
+#map-fallback { display: none; padding: 26px; color: var(--muted); }
+
+/* skip-link a11y (visibile solo in focus da tastiera) */
+.skip-link { position: absolute; left: -9999px; top: 8px; z-index: 100;
+  background: var(--gold-hi, #c9a227); color: #14110a; font-weight: 700;
+  padding: 10px 18px; border-radius: 0 0 10px 0; }
+.skip-link:focus { left: 8px; }
+main[id="main"] { scroll-margin-top: 90px; }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html" class="on">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+    <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero" style="padding-bottom: 10px;">
+    <div class="kicker">166 città · 297 luoghi · 8 livelli attivabili</div>
+    <h1>Mappa di <em>Faerûn</em>.</h1>
+    <p class="sub">Città, porti, capitali, rovine e luoghi dei Forgotten Realms. Ogni città del dataset
+    ha la sua scheda con lore e link alla consultazione.</p>
+  </div>
+
+  <section>
+    <div class="map-tools">
+      <div class="map-search">
+        <label for="map-q" style="position:absolute;left:-9999px">Cerca un luogo</label>
+        <input id="map-q" type="search" placeholder="Cerca una città (es. Waterdeep, Athkatla...)" autocomplete="off">
+        <button id="map-go" type="button">Vai</button>
+      </div>
+    </div>
+    <div id="faerun-map" role="application" aria-label="Mappa interattiva di Faerûn" tabindex="0"></div>
+    <p id="map-fallback">La mappa richiede Leaflet (vendor locale). Se la vedi vuota, ricarica la pagina.</p>
+    <div class="layers" id="map-layers" aria-label="Livelli della mappa"></div>
+    <p class="map-note">Cartografia: <a href="https://loremaps.net" rel="noopener">LoreMaps</a> ·
+    Map data <a href="http://www.pocketplane.net/" rel="noopener">Pocket Plane Group</a> ·
+    Info <a href="https://forgottenrealms.fandom.com" rel="noopener">Forgotten Realms Wiki</a> ·
+    Posizioni derivate dai dataset aperti di LoreMaps; schede città del Grimorio dei Reami.</p>
+  </section>
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — cartografia LoreMaps (uso non commerciale) · tiles servite in locale
+</footer>
+
+<script>/* salva l'helper i18n L() PRIMA che Leaflet (vendor) sovrascriva window.L */
+window.__I18N_L = (typeof window.L === 'function') ? window.L : null;</script>
+<script src="../assets/vendor/leaflet.js"></script>
+<script>/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
+window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script>
+(function () {
+  var LM = (typeof window.L !== 'undefined' && typeof window.L.map === 'function') ? window.L : null;
+  window.L = window.__I18N_L || function (k) { return k; };
+  if (!LM) {
+    document.getElementById('faerun-map').style.display = 'none';
+    document.getElementById('map-fallback').style.display = 'block';
+    return;
+  }
+  var IMG = { w: 4763, h: 3185, tiles: '../assets/vendor/tiles', mpp: 1287.473 };
+  var map = LM.map('faerun-map', { zoomControl: false, minZoom: 0 });
+  var NZ = Math.ceil(Math.log2(Math.max(IMG.w, IMG.h) / 256));
+  var un = function (p) { return map.unproject(p, NZ); };
+  var bounds = LM.latLngBounds(un([0, 0]), un([IMG.w, IMG.h]));
+  map.setMaxZoom(NZ + 1);
+  map.setMaxBounds(bounds.pad(0.1));
+  map.fitBounds(bounds);
+  LM.control.zoom({ position: 'bottomright' }).addTo(map);
+  LM.tileLayer(IMG.tiles + '/{z}/{x}/{y}.png', {
+    noWrap: true, bounds: bounds, maxNativeZoom: NZ, maxZoom: NZ + 1,
+    attribution: '<a href="https://loremaps.net">LoreMaps</a> &middot; <a href="http://www.pocketplane.net/">Pocket Plane Group</a>'
+  }).addTo(map);
+
+  var COLORI = { cities: '#4fa3c7', ports: '#e5a83b', portcapitals: '#5bc0a8', capitals: '#e0563f',
+                  temples: '#9a7bc8', sites: '#d96fa4', fortresses: '#8a9a5b', ruins: '#b3907a' };
+  var LABEL = { cities: 'Citt&agrave;', ports: 'Porti', portcapitals: 'Porti/Capitali', capitals: 'Capitali',
+                 temples: 'Templi', sites: 'Siti', fortresses: 'Fortezze', ruins: 'Rovine' };
+  /* FIX 3: ogni categoria ha la propria forma SVG, non solo un colore */
+  var GLYPHS = {
+    cities: '<path d="M8 19v-6h3v6M15 19v-9h3v9M6 19h14" stroke="#1a1510" stroke-width="1.6" fill="none"/>',
+    ports: '<path d="M13 6v10M13 8c-3 0-5 2-6 4 2 .6 4 .4 6-1M13 8c3 0 5 2 6 4-2 .6-4 .4-6-1M8 18h10" stroke="#1a1510" stroke-width="1.6" fill="none"/>',
+    portcapitals: '<path d="M13 6v10M13 8c-3 0-5 2-6 4 2 .6 4 .4 6-1M13 8c3 0 5 2 6 4-2 .6-4 .4-6-1" stroke="#1a1510" stroke-width="1.5" fill="none"/><path d="M9 5l2-2 2 2 2-2 2 2" stroke="#1a1510" stroke-width="1.4" fill="none"/>',
+    capitals: '<path d="M8 17l1-6 4-3 4 3 1 6z" stroke="#1a1510" stroke-width="1.6" fill="none"/><path d="M9 11l2-2 2 2 2-2 2 2" stroke="#1a1510" stroke-width="1.3" fill="none"/>',
+    temples: '<path d="M13 5l7 5H6zM8 10v7M13 10v7M18 10v7M6 19h14" stroke="#1a1510" stroke-width="1.5" fill="none"/>',
+    sites: '<path d="M13 6l1.8 4.2L19 11l-3.2 3 .8 4.6L13 16.4 9.4 18.6l.8-4.6L7 11l4.2-.8z" stroke="#1a1510" stroke-width="1.4" fill="none"/>',
+    fortresses: '<path d="M6 8h12v11H6zM9 8V5M13 8V5M17 8V5M13 19v-5" stroke="#1a1510" stroke-width="1.5" fill="none"/>',
+    ruins: '<path d="M9 19V8M13 19V5M17 19V10M9 8l2-1M17 10l2-1" stroke="#1a1510" stroke-width="1.6" fill="none"/>',
+    ours: '<path d="M13 8l1 2.2 2.4.3-1.8 1.7.5 2.4-2.1-1.2-2.1 1.2.5-2.4-1.8-1.7 2.4-.3z" fill="#fff8dc"/>'
+  };
+  /* punto D: il PUNTATORE stesso cambia forma per categoria */
+  var SHAPES = {
+    ours: 'M13 1C6.4 1 1 6.4 1 13c0 9 12 20 12 20s12-11 12-20C25 6.4 19.6 1 13 1z',
+    cities: 'M13 2a11 11 0 1 1 0 22 11 11 0 0 1 0-22z',
+    ports: 'M13 1C6.4 1 1 6.4 1 13c0 9 12 20 12 20s12-11 12-20C25 6.4 19.6 1 13 1z',
+    portcapitals: 'M13 1C6.4 1 1 6.4 1 13c0 9 12 20 12 20s12-11 12-20C25 6.4 19.6 1 13 1z',
+    capitals: 'M4 2h18v14H4z M13 16v16 M6 16l7 5 7-5',
+    temples: 'M13 1l12 13-12 19L1 14z',
+    sites: 'M13 1l3.2 8.5L25 13l-8.8 3.5L13 26l-3.2-9.5L1 13l8.8-3.5z',
+    fortresses: 'M3 3h20v20H3z',
+    ruins: 'M2 6h22L13 33z'
+  };
+  function pin(color, glyph, size) {
+    var S = size || 26;
+    var shape = SHAPES[glyph] || SHAPES.ours;
+    var w = S, h = S * 34 / 26;
+    var body = '<path d="' + shape + '" fill="' + color + '" stroke="#1a1510" stroke-width="1.5" stroke-linejoin="round"/>';
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '" viewBox="0 0 26 34">' + body
+      + (GLYPHS[glyph] || '') + '</svg>';
+    return LM.divIcon({ className: 'lm-pin', html: svg, iconSize: [w, h], iconAnchor: [S / 2, S * 33 / 26], tooltipAnchor: [0, -S * 30 / 26] });
+  }
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+
+  var nostri = LM.layerGroup().addTo(map);
+  var extraLayers = {};
+  var idxNostri = [];
+
+  /* FIX 4: riassunto enciclopedico nella scheda (API MediaWiki extracts, cache localStorage).
+     Parte solo al click: zero fetch al load. */
+  var OFFLINE_LORE = {};
+  fetch('../data/map-lore.json').then(function (r) { return r.json(); })
+    .then(function (j) { OFFLINE_LORE = j || {}; })
+    .catch(function () {});
+  var WIKI_SUM = {
+    get: function (name, cb) {
+      var key = 'gdr-wsum-' + name.toLowerCase();
+      try { var c = localStorage.getItem(key); if (c) { cb(c); return; } } catch (e) {}
+      /* punto F: prima la cache offline del sito (map-lore.json), poi la wiki live */
+      var off = OFFLINE_LORE[name.toLowerCase().trim()];
+      if (off) { cb(off); return; }
+      var url = 'https://forgottenrealms.fandom.com/api.php?action=parse&format=json&origin=*&prop=wikitext&redirects=1&page=' + encodeURIComponent(name);
+      fetch(url).then(function (r) { return r.json(); }).then(function (j) {
+        var wt = (j.parse && j.parse.wikitext) ? j.parse.wikitext['*'] : '';
+        /* pulizia wikitext: ref, markup, template mono-riga, tabelle */
+        var t = wt
+          .replace(/<ref[^>]*>[\s\S]*?<\/ref>/gi, ' ')
+          .replace(/<ref[^>]*\/>/gi, ' ')
+          .replace(/<!--[^]*?-->/g, ' ')
+          .replace(/\{\{[^{}]*\}\}/g, ' ')
+          .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, '$1')
+          .replace(/\[\[([^\]]*)\]\]/g, '$1')
+          .replace(/'{2,3}([^']+)'{2,3}/g, '$1')
+          .replace(/={2,}[^=]*={2,}/g, ' ')
+          .replace(/^\s*[|}].*$/gm, ' ')
+          .replace(/<[^>]+>/g, ' ')
+          .replace(/\s{2,}/g, ' ');
+        var par = '';
+        t.split('.').some(function (fr) {
+          var cand = (par + fr).trim();
+          if (cand.length >= 90) { par = cand; return true; }
+          par = cand;
+          return false;
+        });
+        var txt = par.slice(0, 320).trim();
+        if (txt) { try { localStorage.setItem(key, txt); } catch (e2) {} }
+        cb(txt);
+      }).catch(function () { cb(''); });
+    }
+  };
+  function popConRiassunto(html, name) {
+    var wrap = document.createElement('div');
+    wrap.innerHTML = html + '<div class="mp-sum" data-sum="1">Carico il riassunto&hellip;</div>';
+    var slot = wrap.querySelector('.mp-sum');
+    WIKI_SUM.get(name, function (txt) {
+      slot.textContent = txt || 'Riassunto non disponibile (offline): apri il wiki per la voce completa.';
+    });
+    return wrap;
+  }
+
+  fetch('../data/faerun-map-markers.json').then(function (r) { return r.json(); }).then(function (d) {
+    (d.markers || []).forEach(function (m) {
+      var ll = un([m.x, m.y]);
+      var lore = (m.lore || m.fact || '').toString().slice(0, 260);
+      var pop = '<div class="mp-name">' + esc(m.name) + '</div>'
+        + '<div class="mp-region">' + esc(m.region) + (m.verified ? ' &middot; verificata' : '') + '</div>'
+        + (lore ? '<div class="mp-lore">' + esc(lore) + '</div>' : '')
+        + '<a class="mp-link" href="lookup.html?q=' + encodeURIComponent(m.name) + '">Apri nella consultazione &rarr;</a>';
+      var mk = LM.marker(ll, { icon: pin('#d4af37', 'ours', 30), title: m.name, alt: m.name, riseOnHover: true }).bindPopup(popConRiassunto(pop, m.name));
+      mk.addTo(nostri);
+      idxNostri.push({ name: m.name.toLowerCase(), marker: mk });
+    });
+  }).catch(function () {});
+
+  fetch('../data/faerun-map-layers.json').then(function (r) { return r.json(); }).then(function (d) {
+    var panel = document.getElementById('map-layers');
+    var html = '<label style="font-weight:700;color:var(--gold-hi,#c9a227)"><input type="checkbox" id="ly-nostre" checked> <span class="dot" style="background:#d4af37"></span> Le nostre citt&agrave; (con scheda)</label> ';
+    Object.keys(d.layers || {}).forEach(function (k) {
+      var lg = LM.layerGroup();
+      (d.layers[k] || []).forEach(function (pt) {
+        LM.marker(un([pt.x, pt.y]), { icon: pin(COLORI[k] || '#888', k, 24), title: pt.name, alt: pt.name })
+          .bindPopup(popConRiassunto('<div class="mp-name">' + esc(pt.name) + '</div><div class="mp-region">' + (LABEL[k] || esc(k)) + '</div>'
+            + '<a class="mp-link" href="https://forgottenrealms.fandom.com/wiki/Special:Search?query=' + encodeURIComponent(pt.name) + '" target="_blank" rel="noopener">Voci completa nel wiki &rarr;</a>', pt.name))
+          .addTo(lg);
+      });
+      extraLayers[k] = lg;
+      lg.addTo(map); /* tutti i livelli attivi di default: la mappa mostra tutto */
+      html += '<label><input type="checkbox" data-ly="' + k + '" checked> <span class="dot" style="background:' + (COLORI[k] || '#888') + '"></span> ' + (LABEL[k] || esc(k)) + '</label> ';
+    });
+    panel.innerHTML = html;
+    panel.addEventListener('change', function (ev) {
+      var t = ev.target;
+      if (t.id === 'ly-nostre') { t.checked ? nostri.addTo(map) : map.removeLayer(nostri); return; }
+      var lg = extraLayers[t.getAttribute('data-ly')];
+      if (lg) { t.checked ? lg.addTo(map) : map.removeLayer(lg); }
+    });
+  }).catch(function () {});
+
+  function cerca() {
+    var q = (document.getElementById('map-q').value || '').trim().toLowerCase();
+    if (!q) return;
+    var hit = null;
+    for (var i = 0; i < idxNostri.length; i++) {
+      if (idxNostri[i].name.indexOf(q) !== -1) { hit = idxNostri[i]; break; }
+    }
+    if (!hit) return;
+    map.flyTo(hit.marker.getLatLng(), NZ + 1, { duration: .8 });
+    setTimeout(function () { hit.marker.openPopup(); }, 850);
+  }
+  document.getElementById('map-go').addEventListener('click', cerca);
+  document.getElementById('map-q').addEventListener('keydown', function (e) { if (e.key === 'Enter') cerca(); });
+
+  /* deep link: mappa.html?q=Waterdeep apre direttamente la città */
+  var q0 = new URLSearchParams(location.search).get('q');
+  if (q0) document.getElementById('map-q').value = q0;
+  window.addEventListener('load', function () { map.invalidateSize(); setTimeout(cerca, 400); });
+  window.addEventListener('resize', function () { map.invalidateSize(); });
+  if (window.ResizeObserver) {
+    var ro = new ResizeObserver(function () { map.invalidateSize(); });
+    ro.observe(document.getElementById('faerun-map'));
+  }
+  setTimeout(function () { map.invalidateSize(); }, 300);
+  setTimeout(function () { map.invalidateSize(); }, 900);
+})();
+</script>
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

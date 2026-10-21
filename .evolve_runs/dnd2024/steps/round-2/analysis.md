@@ -1,0 +1,1 @@
+Il matcher delle famiglie nuove e' GIA' corretto (continue, non return): il punto della riduzione del tasso medio e' che le regole OR sparse generano falsi positivi proporzionali alle frasi. Lo scenario non e' una correzione ma una decisione: le metriche sonde sono piene e l'unico margine reale e' nelle regole.

@@ -1,0 +1,737 @@
+{
+ "nota": "T1 rimpiazzo: campo reprintedAs del mirror 5e.tools. T2 esistenza: la voce esiste nel compendio? T3 aggiornabile: esiste una versione 2024+ della stessa voce.",
+ "fonti_registrate": 165,
+ "fonti_2024piu": 34,
+ "build": [
+  {
+   "id": "B01",
+   "nome": "Ombra della Selva",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 9
+  },
+  {
+   "id": "B02",
+   "nome": "Araldo delle Due Voci",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B03",
+   "nome": "Il Carapace che Ride",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "B04",
+   "nome": "La Mano che non Molla",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B05",
+   "nome": "Il Primo Sangue",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B06",
+   "nome": "Il Congegno che Corregge",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B07",
+   "nome": "Il Terrore che non Corre",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "B08",
+   "nome": "Colui che non Cade",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "B09",
+   "nome": "La Voce che Convince",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B10",
+   "nome": "Paladino Zhentarim",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "B11",
+   "nome": "Il Duellante che non Ti Molla",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B12",
+   "nome": "Il Sogno che Cura",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "B13",
+   "nome": "Il Cavaliere del Drago",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "B14",
+   "nome": "L'Incendio che Cammina",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "B15",
+   "nome": "Il Sigillo di Drow",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B16",
+   "nome": "Il Libro che Cambia Pelle",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B17",
+   "nome": "Il Fuoco che non si Resiste",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B18",
+   "nome": "Il Gigante che Lancia Raggi",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B19",
+   "nome": "L'Occhio che Deduce",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B20",
+   "nome": "Il Passo di Fey",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "B21",
+   "nome": "Il Critico dell'Alleanza",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 8
+  },
+  {
+   "id": "T01",
+   "nome": "Il Custode che non Lascia Andare",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "T02",
+   "nome": "La Marea che Tira Dentro",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "T03",
+   "nome": "Le Mani che Chiudono il Cerchio",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "GA87201",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA87202",
+   "nome": "Armorer — DPS — danno a bersaglio singolo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA87203",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA48601",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA48602",
+   "nome": "Armorer — Blaster ad area (AOE)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA48603",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA13901",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA13902",
+   "nome": "Armorer — Tiratore (ranged)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA13903",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA37101",
+   "nome": "Battle Smith — Combattente in mischia",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA37102",
+   "nome": "Armorer — Combattente in mischia",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA37103",
+   "nome": "Battle Smith — Combattente in mischia",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA43501",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA43502",
+   "nome": "Armorer — Duellante (uno contro uno)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA43503",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA67501",
+   "nome": "School of Transmutation — Supporto e potenziamenti",
+   "verdetto": "DA_CORREGGERE",
+   "problemi": [
+    {
+     "nome": "School of Transmutation",
+     "tipo": "sottoclasse",
+     "fonti": [
+      "PHB"
+     ],
+     "T1": "RIMPIAZZATA",
+     "rimpiazzo": [
+      "Wizard|XPHB|AU"
+     ]
+    }
+   ],
+   "voci": 3
+  },
+  {
+   "id": "GA67502",
+   "nome": "Grave Domain — Supporto e potenziamenti",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA67503",
+   "nome": "Order of the Immortal — Supporto e potenziamenti",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA54601",
+   "nome": "School of Transmutation — Protettore del gruppo",
+   "verdetto": "DA_CORREGGERE",
+   "problemi": [
+    {
+     "nome": "School of Transmutation",
+     "tipo": "sottoclasse",
+     "fonti": [
+      "PHB"
+     ],
+     "T1": "RIMPIAZZATA",
+     "rimpiazzo": [
+      "Wizard|XPHB|AU"
+     ]
+    }
+   ],
+   "voci": 3
+  },
+  {
+   "id": "GA54602",
+   "nome": "Grave Domain — Protettore del gruppo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA54603",
+   "nome": "Order of the Immortal — Protettore del gruppo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA10001",
+   "nome": "College of Whispers — Indebolimento (debuff)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA10002",
+   "nome": "Circle of Dreams — Indebolimento (debuff)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA10003",
+   "nome": "Circle of Spores — Indebolimento (debuff)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA55001",
+   "nome": "College of Whispers — Illusionista",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA55002",
+   "nome": "Circle of Dreams — Illusionista",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA55003",
+   "nome": "Circle of Spores — Illusionista",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA85001",
+   "nome": "College of Whispers — Ammaliatore e manipolatore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA85002",
+   "nome": "Circle of Dreams — Ammaliatore e manipolatore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA85003",
+   "nome": "Circle of Spores — Ammaliatore e manipolatore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA14501",
+   "nome": "Circle of the Shepherd — Negromante",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA14502",
+   "nome": "Clockwork Sorcery — Negromante",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA14503",
+   "nome": "Conjurer — Negromante",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA14801",
+   "nome": "Way of the Astral Self — Esperto di abilità",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA14802",
+   "nome": "College of Whispers — Esperto di abilità",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA14803",
+   "nome": "College of Creation — Esperto di abilità",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA27401",
+   "nome": "Circle of Dreams — Esploratore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA27402",
+   "nome": "Way of the Ascendant Dragon — Esploratore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA27403",
+   "nome": "Path of the World Tree — Esploratore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA79501",
+   "nome": "Circle of Dreams — Combattente a cavallo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA79502",
+   "nome": "Way of the Ascendant Dragon — Combattente a cavallo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA79503",
+   "nome": "Path of the World Tree — Combattente a cavallo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA69601",
+   "nome": "Armorer — Gish — lama e magia",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA69602",
+   "nome": "Oath of the Watchers — Gish — lama e magia",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA69603",
+   "nome": "Bladesinging — Gish — lama e magia",
+   "verdetto": "DA_CORREGGERE",
+   "problemi": [
+    {
+     "nome": "Bladesinging",
+     "tipo": "sottoclasse",
+     "fonti": [
+      "TCE"
+     ],
+     "T1": "RIMPIAZZATA",
+     "rimpiazzo": [
+      "Wizard|XPHB|FRHoF"
+     ]
+    }
+   ],
+   "voci": 3
+  },
+  {
+   "id": "GA29601",
+   "nome": "Armorer — Supporto tecnico (utility)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA29602",
+   "nome": "Oath of the Watchers — Supporto tecnico (utility)",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA29603",
+   "nome": "Bladesinging — Supporto tecnico (utility)",
+   "verdetto": "DA_CORREGGERE",
+   "problemi": [
+    {
+     "nome": "Bladesinging",
+     "tipo": "sottoclasse",
+     "fonti": [
+      "TCE"
+     ],
+     "T1": "RIMPIAZZATA",
+     "rimpiazzo": [
+      "Wizard|XPHB|FRHoF"
+     ]
+    }
+   ],
+   "voci": 3
+  },
+  {
+   "id": "GA89401",
+   "nome": "Armorer — Specialista multiclasse",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA89402",
+   "nome": "Oath of the Watchers — Specialista multiclasse",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "GA89403",
+   "nome": "Bladesinging — Specialista multiclasse",
+   "verdetto": "DA_CORREGGERE",
+   "problemi": [
+    {
+     "nome": "Bladesinging",
+     "tipo": "sottoclasse",
+     "fonti": [
+      "TCE"
+     ],
+     "T1": "RIMPIAZZATA",
+     "rimpiazzo": [
+      "Wizard|XPHB|FRHoF"
+     ]
+    }
+   ],
+   "voci": 3
+  },
+  {
+   "id": "HEA01",
+   "nome": "School of Transmutation — Guaritore",
+   "verdetto": "DA_CORREGGERE",
+   "problemi": [
+    {
+     "nome": "School of Transmutation",
+     "tipo": "sottoclasse",
+     "fonti": [
+      "PHB"
+     ],
+     "T1": "RIMPIAZZATA",
+     "rimpiazzo": [
+      "Wizard|XPHB|AU"
+     ]
+    }
+   ],
+   "voci": 6
+  },
+  {
+   "id": "HEA02",
+   "nome": "Grave Domain — Guaritore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "HEA03",
+   "nome": "Order of the Immortal — Guaritore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "SUA01",
+   "nome": "Circle of the Shepherd — Evocatore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "SUA02",
+   "nome": "Clockwork Sorcery — Evocatore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "SUA03",
+   "nome": "Conjurer — Evocatore",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "FAA01",
+   "nome": "Way of the Astral Self — Volto sociale",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "FAA02",
+   "nome": "College of Creation — Volto sociale",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "FAA03",
+   "nome": "College of Eloquence — Volto sociale",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "DPA01",
+   "nome": "Battle Smith — Danno",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "DPA02",
+   "nome": "Battle Smith — Danno",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "DPA03",
+   "nome": "Way of the Astral Self — Danno",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 6
+  },
+  {
+   "id": "COA01",
+   "nome": "College of Whispers — Controllo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "COA02",
+   "nome": "Circle of Dreams — Controllo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "COA03",
+   "nome": "Circle of Spores — Controllo",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 7
+  },
+  {
+   "id": "SCA01",
+   "nome": "Circle of Dreams — Esplorazione",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 4
+  },
+  {
+   "id": "SCA02",
+   "nome": "Way of the Ascendant Dragon — Esplorazione",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 4
+  },
+  {
+   "id": "SCA03",
+   "nome": "Path of the World Tree — Esplorazione",
+   "verdetto": "OK",
+   "problemi": [],
+   "voci": 5
+  }
+ ],
+ "riepilogo": {
+  "ok_2024": 486,
+  "ok_2014": 94,
+  "build_ok": 87,
+  "rimpiazzata": 6,
+  "build_ko": 6
+ }
+}

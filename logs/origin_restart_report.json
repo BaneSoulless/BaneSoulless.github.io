@@ -1,0 +1,18 @@
+{
+ "port": 8777,
+ "up_before": true,
+ "old_pids": [
+  11260
+ ],
+ "new_pids": [
+  20772
+ ],
+ "switch_ms": 935.5,
+ "readiness_ms": 729.4,
+ "downtime_ms": [
+  474.3
+ ],
+ "max_downtime_ms": 474.3,
+ "launcher": "pythonw.exe + CREATE_NO_WINDOW|DETACHED_PROCESS + SW_HIDE",
+ "alive_after": true
+}

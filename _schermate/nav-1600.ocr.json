@@ -1,0 +1,140 @@
+[
+ {
+  "t": "Guida",
+  "s": 0.998,
+  "x": 1420,
+  "y": 2
+ },
+ {
+  "t": "Il Grimorio dei Reami |Consultazione, datie strumenti per D&D 5e",
+  "s": 0.936,
+  "x": 65,
+  "y": 20
+ },
+ {
+  "t": "Lingua",
+  "s": 0.992,
+  "x": 1398,
+  "y": 43
+ },
+ {
+  "t": "Italiano",
+  "s": 0.963,
+  "x": 1503,
+  "y": 46
+ },
+ {
+  "t": "IT",
+  "s": 0.693,
+  "x": 1464,
+  "y": 48
+ },
+ {
+  "t": "Server Locale Operativo·Tunnel Crittografato Attivo",
+  "s": 0.975,
+  "x": 34,
+  "y": 137
+ },
+ {
+  "t": "Il Grimorio dei Reami",
+  "s": 0.918,
+  "x": 30,
+  "y": 192
+ },
+ {
+  "t": "Consultazione, dati e strumenti per D&D 5e",
+  "s": 0.997,
+  "x": 27,
+  "y": 245
+ },
+ {
+  "t": "Control plane operativo su workstation locale: 228 risorse D&D verificate, lookup SRD live",
+  "s": 0.985,
+  "x": 21,
+  "y": 309
+ },
+ {
+  "t": "e dashboard analytics,serviti via tunnel crittografato.",
+  "s": 0.972,
+  "x": 22,
+  "y": 341
+ },
+ {
+  "t": "Come funziona questo sito",
+  "s": 0.969,
+  "x": 41,
+  "y": 408
+ },
+ {
+  "t": "Percorso guidato in pochi passi: dati, lookup, strumenti e ricerca gruppi.",
+  "s": 0.982,
+  "x": 251,
+  "y": 409
+ },
+ {
+  "t": "Esplora 228 Risorse D&D →",
+  "s": 0.938,
+  "x": 42,
+  "y": 466
+ },
+ {
+  "t": "Lookup Magie & Mostri",
+  "s": 0.948,
+  "x": 270,
+  "y": 469
+ },
+ {
+  "t": "Guida Sessioni (LFG)",
+  "s": 0.991,
+  "x": 475,
+  "y": 469
+ },
+ {
+  "t": "Ricerca Global nel Database(13219 entita)",
+  "s": 0.961,
+  "x": 68,
+  "y": 606
+ },
+ {
+  "t": "Cerca un mostro, incantesimo, classe, oggetto magic.. (es. Ancient Red Dragon, Fireball, Wizard)",
+  "s": 0.985,
+  "x": 66,
+  "y": 650
+ },
+ {
+  "t": "Cerca-",
+  "s": 0.968,
+  "x": 1466,
+  "y": 650
+ },
+ {
+  "t": "Come Funziona Questo Sito",
+  "s": 0.999,
+  "x": 52,
+  "y": 802
+ },
+ {
+  "t": "database di13219 entita ufficialie open mostri, incantesimi,classi,oggetti,razze,background,",
+  "s": 0.897,
+  "x": 50,
+  "y": 868
+ },
+ {
+  "t": "divinita, regole) indicizzato da 228 fonti verificate, servito senza dipendenze esterne e con fallback",
+  "s": 0.965,
+  "x": 51,
+  "y": 893
+ },
+ {
+  "t": "APl live. La ricerca e istantanea e fuzzy (tolleranza ai typo), con filtri per categoria, statblock",
+  "s": 0.969,
+  "x": 51,
+  "y": 918
+ },
+ {
+  "t": "completi e hyperlink incrociati tra le schede.",
+  "s": 0.975,
+  "x": 51,
+  "y": 944
+ }
+]

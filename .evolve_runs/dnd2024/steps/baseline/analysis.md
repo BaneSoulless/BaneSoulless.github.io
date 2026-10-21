@@ -1,0 +1,1 @@
+Stato iniziale: 26/26 categorie, 93 build, QA 18/18, idempotenza OK. Margini: calibrazione 0.799, indice 1449/1500.

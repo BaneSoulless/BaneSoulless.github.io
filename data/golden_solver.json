@@ -1,0 +1,721 @@
+{
+ "n": 179,
+ "esiti": {
+  "B01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B05": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B06": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B07": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B08": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B09": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B10": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B11": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B12": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B13": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B14": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B15": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B16": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B17": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B18": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B19": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B20": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "B21": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "T01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "T02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "T03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "TP01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "TP02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "MT01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD001": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD002": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD003": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD004": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD005": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD006": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD007": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD008": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD009": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD010": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD011": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD012": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD013": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD014": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD015": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD016": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD017": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD018": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD019": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD020": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD021": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD022": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD023": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD024": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD025": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD026": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD027": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD028": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD029": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD030": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD031": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD032": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD033": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD034": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD035": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD036": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD037": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD038": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD039": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD040": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD041": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD042": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD043": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD044": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD045": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD046": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD047": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD048": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD049": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD050": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD051": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD052": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD053": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD054": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD055": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD056": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD057": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD058": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD059": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD060": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD061": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD062": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD063": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD064": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD065": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD066": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD067": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD068": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD069": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD070": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD071": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD072": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD073": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD074": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD075": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD076": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD077": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD078": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD079": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DD080": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA814A1C01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA814A1C02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA814A1C03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5308F601": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5308F602": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5308F603": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA78B13301": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA78B13302": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA78B13303": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GABADF7701": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GABADF7702": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GABADF7703": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5BA7F901": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5BA7F902": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5BA7F903": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAF3CF0301": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAF3CF0302": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAF3CF0303": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA8D352A01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA8D352A02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA8D352A03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAAB808001": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAAB808002": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAAB808003": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA124FF701": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA124FF702": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA124FF703": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA79826301": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA79826302": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA79826303": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAF50E1E01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAF50E1E02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GAF50E1E03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GACA75F501": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GACA75F502": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GACA75F503": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5244B501": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5244B502": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA5244B503": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA98469401": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA98469402": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA98469403": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA4B28BB01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA4B28BB02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA4B28BB03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA66FC4C01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA66FC4C02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "GA66FC4C03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "HEA01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "HEA02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "HEA03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "HEA04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SUA01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SUA02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SUA03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SUA04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "FAA01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "FAA02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "FAA03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "FAA04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DPA01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DPA02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DPA03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "DPA04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "COA01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "COA02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "COA03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "COA04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SCA01": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SCA02": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SCA03": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  },
+  "SCA04": {
+   "valid": true,
+   "h": "da39a3ee5e6b"
+  }
+ }
+}

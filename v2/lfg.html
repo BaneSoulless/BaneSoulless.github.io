@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trova Gruppo — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/lfg.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trova Gruppo — Il Grimorio dei Reami">
+<meta property="og:description" content="Piattaforme per trovare gruppo D&D online: filtri per lingua, prezzo e piattaforma.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/lfg.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Trova Gruppo — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Piattaforme per trovare gruppo D&D online: filtri per lingua, prezzo e piattaforma.">
+
+<meta name="description" content="Piattaforme per trovare gruppo D&D online: filtri per lingua, prezzo e piattaforma, con schede dettagliate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grimorio.css">
+<link rel="stylesheet" href="tavolo-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+  </nav>
+</header>
+
+<main id="main">
+
+
+  <div class="hero">
+<div class="kicker">Trova Gruppo · 10 piattaforme analizzate</div>
+<h1>Trova il tuo <em>tavolo</em>.</h1>
+</div>
+
+  <div class="lfg-form-card" id="lfg-card">
+    <h2 style="font-size:20px; font-weight:800; margin-bottom:6px;">Candidatura per una sessione</h2>
+    <p style="color:var(--fg-muted); font-size:14px; margin-bottom:18px;">
+      Compila la scheda per proporti a un tavolo. <strong>I dati restano in questo browser</strong>
+      (nessun invio automatico): puoi copiare il riepilogo o aprirlo nel tuo client di posta.
+    </p>
+    <div class="at-summary" id="lfg-errors" hidden role="alert" aria-live="assertive"></div>
+    <form id="lfg-form" novalidate>
+      <div class="at-grid">
+        <div class="at-field">
+          <label for="lfg-nome">Nome o handle <span class="at-req">*</span></label>
+          <input type="text" id="lfg-nome" name="nome" maxlength="40" autocomplete="nickname">
+          <span class="at-error" data-for="lfg-nome"></span>
+        </div>
+        <div class="at-field">
+          <label for="lfg-contatto">Email o Discord <span class="at-req">*</span></label>
+          <input type="text" id="lfg-contatto" name="contatto" maxlength="60" autocomplete="email">
+          <span class="hint">Un&#39;email valida oppure un handle Discord (es. nome#1234)</span>
+          <span class="at-error" data-for="lfg-contatto"></span>
+        </div>
+        <div class="at-field">
+          <label for="lfg-esperienza">Esperienza <span class="at-req">*</span></label>
+          <select id="lfg-esperienza" name="esperienza">
+            <option value="">— scegli —</option>
+            <option>Mai giocato</option>
+            <option>Principiante (meno di 10 sessioni)</option>
+            <option>Intermedio (1-3 anni)</option>
+            <option>Veterano (3+ anni)</option>
+            <option>Dungeon Master esperto</option>
+          </select>
+          <span class="at-error" data-for="lfg-esperienza"></span>
+        </div>
+        <div class="at-field">
+          <label for="lfg-ruolo">Ruolo <span class="at-req">*</span></label>
+          <select id="lfg-ruolo" name="ruolo">
+            <option value="">— scegli —</option>
+            <option>Giocatore</option>
+            <option>Dungeon Master</option>
+            <option>Entrambi</option>
+          </select>
+          <span class="at-error" data-for="lfg-ruolo"></span>
+        </div>
+        <div class="at-field">
+          <label for="lfg-frequenza">Frequenza cercata <span class="at-req">*</span></label>
+          <select id="lfg-frequenza" name="frequenza">
+            <option value="">— scegli —</option>
+            <option>Settimanale</option>
+            <option>Quindicinale</option>
+            <option>Mensile</option>
+            <option>One-shot / saltuario</option>
+          </select>
+          <span class="at-error" data-for="lfg-frequenza"></span>
+        </div>
+        <div class="at-field">
+          <label for="lfg-citta">Città o zona <span class="at-req" data-req-for="lfg-citta"></span></label>
+          <input type="text" id="lfg-citta" name="citta" maxlength="60" autocomplete="address-level2">
+          <span class="hint" id="lfg-citta-hint">facoltativa</span>
+          <span class="at-error" data-for="lfg-citta"></span>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <label id="lfg-sistemi-label" style="font-size:12.5px;color:var(--fg-muted);font-weight:600;display:block;margin-bottom:6px;">Sistemi di gioco <span class="at-req">*</span></label>
+        <div class="at-checks" role="group" aria-labelledby="lfg-sistemi-label">
+          <label><input type="checkbox" name="sistemi" value="D&amp;D 5e (2014)"> D&amp;D 5e (2014)</label>
+          <label><input type="checkbox" name="sistemi" value="D&amp;D 5e (2024)"> D&amp;D 5e (2024)</label>
+          <label><input type="checkbox" name="sistemi" value="OSR / retrocloni"> OSR / retrocloni</label>
+          <label><input type="checkbox" name="sistemi" value="Pathfinder 2e"> Pathfinder 2e</label>
+          <label><input type="checkbox" name="sistemi" value="Altro"> Altro</label>
+        </div>
+        <span class="at-error" data-for="lfg-sistemi"></span>
+      </div>
+
+      <div style="margin-top:16px;">
+        <label id="lfg-formato-label" style="font-size:12.5px;color:var(--fg-muted);font-weight:600;display:block;margin-bottom:6px;">Formato <span class="at-req">*</span></label>
+        <div class="at-checks" role="group" aria-labelledby="lfg-formato-label">
+          <label><input type="radio" name="formato" value="online"> Online</label>
+          <label><input type="radio" name="formato" value="presenza"> In presenza</label>
+          <label><input type="radio" name="formato" value="entrambi"> Entrambi</label>
+        </div>
+        <span class="at-error" data-for="lfg-formato"></span>
+      </div>
+
+      <div class="at-field" style="margin-top:16px;">
+        <label for="lfg-note">Note per il tavolo</label>
+        <textarea id="lfg-note" name="note" maxlength="600" placeholder="Stile di gioco, giorni disponibili, contenuti da evitare…"></textarea>
+        <span class="at-error" data-for="lfg-note"></span>
+      </div>
+
+      <div class="at-field" style="margin-top:12px;">
+        <label style="display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:var(--fg-muted);">
+          <input type="checkbox" id="lfg-consenso" name="consenso" style="width:18px;height:18px;margin-top:2px;">
+          <span>Ho capito che i dati restano <strong>solo in questo browser</strong> e che nessun invio è automatico.</span>
+        </label>
+        <span class="at-error" data-for="lfg-consenso"></span>
+      </div>
+
+      <div class="at-actions">
+        <button type="submit" class="btn btn-primary" style="min-height:44px;">Salva la candidatura</button>
+        <button type="button" class="btn" id="lfg-copy" style="min-height:44px;">Copia riepilogo</button>
+        <button type="button" class="btn" id="lfg-mail" style="min-height:44px;">Apri nell&#39;email</button>
+        <button type="button" class="btn" id="lfg-reset" style="min-height:44px;">Azzera</button>
+      </div>
+      <p class="at-saved" id="lfg-ok" hidden aria-live="polite"></p>
+    </form>
+    <div class="at-out" id="lfg-out" hidden></div>
+    <div class="at-saved" id="lfg-saved" aria-live="polite"></div>
+  </div>
+
+  <div class="guide-box">
+    <h2 style="color:var(--accent); font-size:18px; margin-bottom:10px;">Come Scegliere la Piattaforma Ideale</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; font-size:14px; color:var(--fg-muted);">
+      <div>
+        <strong style="color:var(--fg);">Sessioni a Pagamento (Paid GM):</strong><br>
+        <strong>StartPlaying</strong> è il leader assoluto con oltre 1.000 GM professionisti recensiti, pagamenti garantiti e filtri per fascia oraria/sistema ($5&ndash;$25 a sessione).
+      </div>
+      <div>
+        <strong style="color:var(--fg);">Eventi Organizzati Gratuiti:</strong><br>
+        <strong>Warhorn</strong> gestisce registrazioni ufficiali D&D Adventurers League e convention, ideale per one-shot strutturate a costo zero.
+      </div>
+      <div>
+        <strong style="color:var(--fg);">Community & In-Person:</strong><br>
+        <strong>Meetup</strong> e i server Discord dedicati (D&D Commons, D&D Beyond) per tavoli locali dal vivo o campagne continuative tra appassionati.
+      </div>
+    </div>
+  </div>
+
+  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;">Matrice Comparativa Piattaforme LFG</h2>
+  <table class="comparison-table lfg-matrix">
+    <thead>
+      <tr>
+        <th>Piattaforma</th>
+        <th>Modello / Prezzo</th>
+        <th>Tipo Sessioni</th>
+        <th>Punti di Forza</th>
+        <th>Frizioni Rilevate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong><a href="https://startplaying.games/" target="_blank" rel="noopener">StartPlaying</a></strong></td>
+        <td><span class="badge badge-paid">A Pagamento ($5-$25/sess)</span></td>
+        <td>Campagne &amp; One-Shot VTT</td>
+        <td>1000+ GM verificati, safety tools integrati, recensioni reali</td>
+        <td>Costo per sessione continuativa elevato</td>
+      </tr>
+      <tr>
+        <td><strong><a href="https://warhorn.net/" target="_blank" rel="noopener">Warhorn</a></strong></td>
+        <td><span class="badge badge-free">Gratuito</span></td>
+        <td>Adventurers League &amp; Con</td>
+        <td>Calendario rigoroso, sincronizzazione tavoli AL ufficiale</td>
+        <td>Interfaccia legacy, poco intuitiva per neofiti</td>
+      </tr>
+      <tr>
+        <td><strong><a href="https://dnd.wizards.com/adventurers-league" target="_blank" rel="noopener">D&D Adventurers League</a></strong></td>
+        <td><span class="badge badge-free">Gratuito / Store Play</span></td>
+        <td>Organized Play Ufficiale</td>
+        <td>Personaggio portatile tra tavoli diversi, regole standardizzate</td>
+        <td>Dipendenza da store fisici o eventi registrati</td>
+      </tr>
+      <tr>
+        <td><strong><a href="https://www.meetup.com/topics/dnd/" target="_blank" rel="noopener">Meetup D&D</a></strong></td>
+        <td><span class="badge badge-free">Gratuito (Community)</span></td>
+        <td>In Presenza / Locali</td>
+        <td>Gruppi geolocalizzati per città, eventi in pub/negozi</td>
+        <td>Copertura disomogenea fuori dai grandi capoluoghi</td>
+      </tr>
+      <tr>
+        <td><strong><a href="https://rpgsessions.com/" target="_blank" rel="noopener">RPG Sessions</a></strong></td>
+        <td><span class="badge badge-purple">Freemium</span></td>
+        <td>Virtual Tabletop / Discord</td>
+        <td>Integrazione bot Discord, character sheet interattivi</td>
+        <td>Focalizzato principalmente su sistemi non-5e</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;">Scena GDR Italiana &amp; Risorse in Lingua IT</h2>
+  <div class="card-grid" style="margin-bottom:48px;">
+    <div class="card" style="border-color: rgba(201,162,39,.45);"><div class="badge badge-free" style="margin-bottom:10px;">Locale Fisico · Roma (verificato)</div><h3><a href="https://www.odinludopub.it/" target="_blank" rel="noopener">Odin Ludopub — Via Laurentina 62A</a></h3><p style="color:var(--fg-muted); font-size:14px;">Il ludopub romano dedicato a giochi di ruolo, da tavolo, di carte e simulazione: tavoli con prenotazione (tel. 333 8077899 o DM), serate D&D settimanali e parcheggio gratuito. Il modo più diretto per sedersi a un tavolo D&D dal vivo a Roma.</p></div><div class="card">
+      <div class="badge badge-free" style="margin-bottom:10px;">Festival &amp; Eventi Ufficiali</div>
+      <h3><a href="https://www.luccacomicsandgames.com/" target="_blank" rel="noopener">Lucca Comics &amp; Games</a></h3>
+      <p style="color:var(--fg-muted); font-size:14px;">
+        Il principale riferimento italiano per giochi di ruolo. Ospita il prestigioso premio <em>Gioco di Ruolo dell'Anno</em>, tornei ufficiali D&D 5e e centinaia di tavoli dimostrativi in italiano.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="badge badge-purple" style="margin-bottom:10px;">Associazioni &amp; Community</div>
+      <h3><a href="https://www.contessi.net/" target="_blank" rel="noopener">ConTessi RPG Italia</a></h3>
+      <p style="color:var(--fg-muted); font-size:14px;">
+        Portale associativo con supporto bilingue (IT/EN) dedicato alla divulgazione del gioco di ruolo e al supporto delle associazioni ludiche sul territorio.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="badge badge-dim" style="margin-bottom:10px;">Bacheca Giocatori</div>
+      <h3>GDR Online &amp; Canali Discord IT</h3>
+      <p style="color:var(--fg-muted); font-size:14px;">
+        I canali storici di reclutamento italiano (bacheca <em>GDR Online</em> e server <em>D&D Italia Discord</em>) rimangono il punto di ritrovo principale per campagne voice/text in lingua italiana.
+      </p>
+    </div>
+  </div>
+  </div><!-- /dettagli tecnici -->
+
+
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · offline-first
+</footer>
+
+<script src="i18n-bi.js"></script>
+<script src="../assets/i18n-auto.js"></script>
+<script src="assets/lang-menu.js"></script>
+<script>/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
+window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="assets/lfg-form.js"></script>
+<script src="assets/collapse.js"></script>
+<script src="assets/helpers.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://grimorio-dei-reami.serveousercontent.com/#website", "name": "Il Grimorio dei Reami — Consultazione, dati e strumenti per D&D 5e", "url": "https://grimorio-dei-reami.serveousercontent.com/", "inLanguage": "it", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://grimorio-dei-reami.serveousercontent.com/cerca.html?q={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@type": "WebPage", "name": "Trova Gruppo — sessioni e tavoli — Il Grimorio dei Reami", "description": "Guida e comparativa tecnica alle piattaforme LFG (StartPlaying, Warhorn, Meetup, AL) con focus sulla Scena GDR Italiana.", "url": "https://grimorio-dei-reami.serveousercontent.com/lfg.html", "inLanguage": "it", "isPartOf": {"@id": "https://grimorio-dei-reami.serveousercontent.com/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://grimorio-dei-reami.serveousercontent.com/"}, {"@type": "ListItem", "position": 2, "name": "LFG & Matchmaking", "item": "https://grimorio-dei-reami.serveousercontent.com/lfg.html"}]}]}</script>
+
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

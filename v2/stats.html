@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistiche e Compendio — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/stats.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Statistiche — Il Grimorio dei Reami">
+<meta property="og:description" content="Compendio dei Reami: numeri del database, statistiche e qualità dei dati.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/stats.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Statistiche — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Compendio dei Reami: numeri del database, statistiche e qualità dei dati.">
+
+<meta name="description" content="Compendio dei Reami: i numeri del database, statistiche e qualità dei dati, aggiornate alla build corrente.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grimorio.css">
+<link rel="stylesheet" href="tavolo-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+  </nav>
+</header>
+
+<main id="main">
+
+
+  <div class="hero">
+<div class="kicker">Compendio · I numeri del database</div>
+<h1>Compendio dei <em>Reami</em>.</h1>
+<p style="color:var(--fg-muted); max-width:78ch; margin-bottom:18px;">
+    I numeri del database, per chi gioca: quanti mostri per Grado di Sfida, quali scuole di magia
+    sono più affollate, come si distribuiscono le rarità, quanto pesa ogni manuale. Ogni barra è
+    cliccabile e porta alla consultazione già filtrata; «Sorprendimi» apre una scheda a caso.
+  </p>
+</div>
+  
+
+  <div class="cmp-actions">
+    <button type="button" id="cmp-random" class="btn btn-primary" style="min-height:40px;">Sorprendimi: apri una scheda a caso</button>
+    <span id="cmp-random-out" class="tv-meta" aria-live="polite"></span>
+  </div>
+
+  <div class="cmp-grid">
+    <section class="cal-card cmp-card"><div id="cmp-tipi"></div></section>
+    <section class="cal-card cmp-card"><div id="cmp-cr"></div></section>
+    <section class="cal-card cmp-card"><div id="cmp-scuole"></div></section>
+    <section class="cal-card cmp-card"><div id="cmp-rarita"></div></section>
+    <section class="cal-card cmp-card"><div id="cmp-fonti"></div></section>
+    <section class="cal-card cmp-card"><div id="cmp-fatti"></div></section>
+  </div>
+
+  <h2 class="section-title" style="margin-top:34px;">Dettagli tecnici del sito</h2>
+  <p style="color:var(--fg-dim); font-size:12.5px; max-width:78ch; margin-bottom:10px;">
+    Disponibilità delle risorse esterne, punteggi di verifica e metriche FAMS: servono alla
+    manutenzione del sito, non al tavolo. Sono qui sotto, chiusi.
+  </p>
+  <div id="det-tecnici" data-collapse="420"
+       data-collapse-label="Mostra i dettagli tecnici" data-collapse-label-open="Comprimi i dettagli tecnici">
+  <p style="color:var(--fg-muted); font-size:16px; margin-bottom:32px;">
+    Rappresentazione grafica e verifica formale dei 228 siti D&D analizzati su 11 batch distribuiti. Grafici renderizzati in SVG puro (zero dipendenze JS esterne).
+  </p>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h2>Distribuzione Risorse per Categoria (OK / Totale)</h2>
+      <svg width="100%" height="320" viewBox="0 0 640 320" style="overflow:visible;">
+        
+        <text x="10" y="34" fill="#94a3b8" font-size="12" font-family="sans-serif">LFG / Iscrizione Sessioni</text>
+        <rect x="220" y="20" width="328" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="20" width="120" height="18" rx="4" fill="#d4af37" />
+        <text x="558" y="34" fill="#f1f5f9" font-size="12" font-family="sans-serif">15/41</text>
+        
+        <text x="10" y="66" fill="#94a3b8" font-size="12" font-family="sans-serif">Scena Italiana</text>
+        <rect x="220" y="52" width="32" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="52" width="16" height="18" rx="4" fill="#d4af37" />
+        <text x="262" y="66" fill="#f1f5f9" font-size="12" font-family="sans-serif">2/4</text>
+        
+        <text x="10" y="98" fill="#94a3b8" font-size="12" font-family="sans-serif">Dati 5e / SRD / Reference</text>
+        <rect x="220" y="84" width="360" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="84" width="152" height="18" rx="4" fill="#d4af37" />
+        <text x="590" y="98" fill="#f1f5f9" font-size="12" font-family="sans-serif">19/45</text>
+        
+        <text x="10" y="130" fill="#94a3b8" font-size="12" font-family="sans-serif">VTT / Tool di Gioco</text>
+        <rect x="220" y="116" width="280" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="116" width="232" height="18" rx="4" fill="#d4af37" />
+        <text x="510" y="130" fill="#f1f5f9" font-size="12" font-family="sans-serif">29/35</text>
+        
+        <text x="10" y="162" fill="#94a3b8" font-size="12" font-family="sans-serif">Worldbuilding / Homebrew</text>
+        <rect x="220" y="148" width="280" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="148" width="207" height="18" rx="4" fill="#d4af37" />
+        <text x="510" y="162" fill="#f1f5f9" font-size="12" font-family="sans-serif">26/35</text>
+        
+        <text x="10" y="194" fill="#94a3b8" font-size="12" font-family="sans-serif">Asset / Mappe / Audio</text>
+        <rect x="220" y="180" width="160" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="180" width="112" height="18" rx="4" fill="#d4af37" />
+        <text x="390" y="194" fill="#f1f5f9" font-size="12" font-family="sans-serif">14/20</text>
+        
+        <text x="10" y="226" fill="#94a3b8" font-size="12" font-family="sans-serif">News / Media</text>
+        <rect x="220" y="212" width="160" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="212" width="112" height="18" rx="4" fill="#d4af37" />
+        <text x="390" y="226" fill="#f1f5f9" font-size="12" font-family="sans-serif">14/20</text>
+        
+        <text x="10" y="258" fill="#94a3b8" font-size="12" font-family="sans-serif">Marketplace / Miniature</text>
+        <rect x="220" y="244" width="120" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="244" width="72" height="18" rx="4" fill="#d4af37" />
+        <text x="350" y="258" fill="#f1f5f9" font-size="12" font-family="sans-serif">9/15</text>
+        
+        <text x="10" y="290" fill="#94a3b8" font-size="12" font-family="sans-serif">Tool Tecnici / API</text>
+        <rect x="220" y="276" width="103" height="18" rx="4" fill="#1e293b" />
+        <rect x="220" y="276" width="48" height="18" rx="4" fill="#d4af37" />
+        <text x="333" y="290" fill="#f1f5f9" font-size="12" font-family="sans-serif">6/13</text>
+        
+      </svg>
+      <div style="font-size:12px; color:var(--fg-dim); margin-top:8px;">Barra ciano = Risorse con fetch verificato (OK). Barra scura = Totale scansionato.</div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Ripartizione dello Stato Operativo (228 Siti)</h3>
+      <div style="display:flex; align-items:center; justify-content:center; padding:20px 0;">
+        <svg width="200" height="200" viewBox="0 0 42 42" style="transform: rotate(-90deg);">
+          <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1e293b" stroke-width="6"></circle>
+          <!-- OK Segment (59%) -->
+          <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d4af37" stroke-width="6" stroke-dasharray="58.77 41.23" stroke-dashoffset="0"></circle>
+          <!-- Failed Segment (24%) -->
+          <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#c9808a" stroke-width="6" stroke-dasharray="23.68 76.32" stroke-dashoffset="-58.77"></circle>
+          <!-- JS Shell Segment (9%) -->
+          <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d4af37" stroke-width="6" stroke-dasharray="9.21 90.79" stroke-dashoffset="-82.45"></circle>
+          <!-- Dead Segment (8%) -->
+          <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#9aa1ab" stroke-width="6" stroke-dasharray="7.89 92.11" stroke-dashoffset="-91.66"></circle>
+        </svg>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:8px; font-size:13px;">
+        <div><span style="color:#d4af37;">■</span> <strong>134 OK (59%)</strong> &mdash; Verificate</div>
+        <div><span style="color:#c9808a;">■</span> <strong>54 Failed (24%)</strong> &mdash; Blocco/Rate-limit</div>
+        <div><span style="color:#d4af37;">■</span> <strong>21 JS-Shell (9%)</strong> &mdash; SPA Live</div>
+        <div><span style="color:#9aa1ab;">■</span> <strong>18 Dead (8%)</strong> &mdash; 404/Dismessi</div>
+        <div><span style="color:#8b93a1;">■</span> <strong>1 Login-wall (0%)</strong> &mdash; Dietro autenticazione</div>
+        <div style="grid-column:1/-1; margin-top:4px; color:var(--fg-dim); font-size:12px;">Totale: <strong>228</strong> record (59+24+9+8+0 = 100%)</div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Modelli di Prezzo Dichiarati (228 Siti)</h3>
+      <svg width="100%" height="240" viewBox="0 0 640 240" style="overflow:visible;">
+        
+        <text x="10" y="34" fill="#94a3b8" font-size="12" font-family="sans-serif">Gratuito</text>
+        <rect x="220" y="20" width="54" height="18" rx="4" fill="#d4af37"></rect>
+        <text x="286" y="34" fill="#e6edf3" font-size="12" font-family="sans-serif">24 (10%)</text>
+        
+        <text x="10" y="66" fill="#94a3b8" font-size="12" font-family="sans-serif">A Pagamento</text>
+        <rect x="220" y="52" width="43" height="18" rx="4" fill="#d4af37"></rect>
+        <text x="275" y="66" fill="#e6edf3" font-size="12" font-family="sans-serif">19 (8%)</text>
+        
+        <text x="10" y="98" fill="#94a3b8" font-size="12" font-family="sans-serif">Open Source / MIT</text>
+        <rect x="220" y="84" width="18" height="18" rx="4" fill="#9aa1ab"></rect>
+        <text x="250" y="98" fill="#e6edf3" font-size="12" font-family="sans-serif">8 (3%)</text>
+        
+        <text x="10" y="130" fill="#94a3b8" font-size="12" font-family="sans-serif">Altro / Ibrido</text>
+        <rect x="220" y="116" width="43" height="18" rx="4" fill="#9aa1ab"></rect>
+        <text x="275" y="130" fill="#e6edf3" font-size="12" font-family="sans-serif">19 (8%)</text>
+        
+        <text x="10" y="162" fill="#94a3b8" font-size="12" font-family="sans-serif">Non dichiarato</text>
+        <rect x="220" y="148" width="360" height="18" rx="4" fill="#475569"></rect>
+        <text x="592" y="162" fill="#e6edf3" font-size="12" font-family="sans-serif">158 (69%)</text>
+        
+      </svg>
+      <div style="font-size:12px; color:var(--fg-dim); margin-top:8px;">Classificazione dai pricing dichiarati sulle pagine dei siti (109 dichiarazioni testuali + derivazioni: open-source, MIT, freemium, Patreon).</div>
+    </div>
+  </div>
+
+  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;">Risultati Analisi FAMS-v4 &amp; Mitigazioni Ingegneristiche</h2>
+  <table class="audit-table" style="margin-bottom:48px;">
+    <thead>
+      <tr>
+        <th>Codice FM</th>
+        <th>Modalità di Guasto Mitigata</th>
+        <th>RPN Pre</th>
+        <th>RPN Post</th>
+        <th>Soluzione Implementata sul Sito</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>FM-01 / FM-02</strong></td>
+        <td>Downtime origine o scadenza quick tunnel</td>
+        <td>192</td>
+        <td><span class="badge badge-free">24</span></td>
+        <td>Cron Watchdog 15m autonomo (<code>site-watchdog.py</code>) su loop continuo</td>
+      </tr>
+      <tr>
+        <td><strong>FM-03</strong></td>
+        <td>Screening page "Caution" di Pinggy</td>
+        <td>120</td>
+        <td><span class="badge badge-free">0</span></td>
+        <td>Migrazione a Cloudflare Quick Tunnel (nessun interstitial browser)</td>
+      </tr>
+      <tr>
+        <td><strong>FM-04</strong></td>
+        <td>URL effimero non rintracciabile</td>
+        <td>126</td>
+        <td><span class="badge badge-free">18</span></td>
+        <td>Persistenza atomica su <code>current-url.json</code> via watchdog</td>
+      </tr>
+      <tr>
+        <td><strong>FM-05</strong></td>
+        <td>Degrado interfaccia con JavaScript disabilitato</td>
+        <td>90</td>
+        <td><span class="badge badge-free">12</span></td>
+        <td>Blocco <code>&lt;noscript&gt;</code> statico con tutte le 134 risorse iniettate al build</td>
+      </tr>
+      <tr>
+        <td><strong>FM-08</strong></td>
+        <td>Blocco I/O con richieste simultanee</td>
+        <td>80</td>
+        <td><span class="badge badge-free">8</span></td>
+        <td>Server multi-thread dedicato <code>ThreadingHTTPServer</code> su porta 8777</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="chart-card" style="margin-top:24px;">
+    <h3>FAMS-v4 — Pareto &amp; Indice di Confidenza Epistemica</h3>
+    <p style="color:var(--fg-muted); font-size:13.5px; margin-bottom:16px;">
+      Sintesi della verifica sistemica del sito (report <code>fams-v4-report.md</code>): modi di
+      guasto quantificati, frontiera di Pareto sulle azioni residue e confidenza epistemica
+      calcolata sulle variabili di sistema dichiarate.
+    </p>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap:12px;">
+      <div class="stat-box">
+        <div class="num">90.0%</div>
+        <div class="lbl">ECI (4 variabili ignote su 40)</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">11</div>
+        <div class="lbl">Modi di guasto (FMEA)</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">4</div>
+        <div class="lbl">Azioni non dominate (Pareto)</div>
+      </div>
+      <div class="stat-box">
+        <div class="num">288 &rarr; 2</div>
+        <div class="lbl">RPN peggiore, prima &rarr; dopo</div>
+      </div>
+    </div>
+    <p style="color:var(--fg-dim); font-size:12.5px; margin-top:14px;">
+      Frontiera di Pareto (impatto massimo, costo e rischio minimi): <strong>A · C · D · G</strong>.
+      Criterio formale: una soluzione è dominata se un'altra è pari su tutti i criteri e superiore
+      su almeno uno. Le variabili epistemiche ignote (rendering su dispositivi fisici, stabilità
+      dell'URL pubblico, screen reader reali, Core Web Vitals con throttling) sono dichiarate, non stimate.
+    </p>
+  </div>
+<script>/* compendio.js — Compendio dei Reami: i numeri del database, per chi gioca.
+ *
+ * REQUISITO: la pagina delle statistiche deve diventare interessante e interattiva
+ * per i giocatori, «non con info che non gli interessano minimamente». Quindi via i
+ * tassi di disponibilità dei siti (roba da manutenzione, spostati in fondo e chiusi)
+ * e dentro i numeri che servono al tavolo: quanti mostri per Grado di Sfida, quali
+ * scuole di magia sono più affollate, come si distribuiscono le rarità, quanto pesa
+ * ogni manuale.
+ *
+ * TUTTO È CALCOLATO dai campi dell'indice (`cr`, `sch`, `r`, `s`, `t`, `p`), nessun
+ * numero scritto a mano: se il database cambia, i grafici cambiano con lui.
+ *
+ * INTERATTIVITÀ: ogni barra è cliccabile e porta alla consultazione già filtrata; il
+ * pulsante «Sorprendimi» apre una scheda a caso. I grafici hanno ruolo e descrizione
+ * accessibili: barra visiva + valore numerico scritto.
+ */
+(function () {
+  "use strict";
+
+  var idx = null;
+  var ids = ["cmp-tipi", "cmp-cr", "cmp-scuole", "cmp-rarita", "cmp-fonti", "cmp-fatti"];
+  var schoolName = { A: "Abiurazione", C: "Evocazione", D: "Divinazione", E: "Ammaliamento",
+                     V: "Invocazione", I: "Illusione", N: "Necromanzia", T: "Trasmutazione" };
+  var crBands = [
+    { label: "0 – 1/8", test: function (v) { return v <= 0.125; } },
+    { label: "1/4 – 1/2", test: function (v) { return v > 0.125 && v <= 0.5; } },
+    { label: "1 – 4", test: function (v) { return v > 0.5 && v <= 4; } },
+    { label: "5 – 10", test: function (v) { return v > 4 && v <= 10; } },
+    { label: "11 – 16", test: function (v) { return v > 10 && v <= 16; } },
+    { label: "17 – 20", test: function (v) { return v > 16 && v <= 20; } },
+    { label: "21+", test: function (v) { return v > 20; } },
+  ];
+
+  function el(id) { return document.getElementById(id); }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function num(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
+
+  /* cr può essere numero o frazione testuale ("1/2"): va interpretato. */
+  function crValue(v) {
+    if (v == null) return null;
+    if (typeof v === "number") return v;
+    var s = String(v).trim();
+    var m = s.match(/^(\d+)\s*\/\s*(\d+)$/);
+    if (m) return parseInt(m[1], 10) / parseInt(m[2], 10);
+    var f = parseFloat(s);
+    return isNaN(f) ? null : f;
+  }
+
+  /* Riga di un grafico: barra proporzionale + etichetta + valore, tutto cliccabile. */
+  function bar(label, value, max, href, tone) {
+    var pct = max ? Math.round(value * 100 / max) : 0;
+    var inner = '<span class="cb-label">' + esc(label) + "</span>" +
+      '<span class="cb-bar"><span class="cb-fill' + (tone ? " " + tone : "") +
+      '" style="width:' + Math.max(2, pct) + '%"></span></span>' +
+      '<span class="cb-num">' + num(value) + "</span>";
+    return href
+      ? '<li><a class="cb-row" href="' + esc(href) + '">' + inner + "</a></li>"
+      : '<li><span class="cb-row">' + inner + "</span></li>";
+  }
+
+  function chart(containerId, title, rows, nota) {
+    var box = el(containerId);
+    if (!box) return;
+    var max = rows.reduce(function (m, r) { return Math.max(m, r.value); }, 0);
+    box.innerHTML = '<h2 class="cmp-h3">' + esc(title) + "</h2>" +
+      '<ul class="cmp-chart" role="list">' +
+      rows.map(function (r) { return bar(r.label, r.value, max, r.href, r.tone); }).join("") +
+      "</ul>" + (nota ? '<p class="tv-meta">' + esc(nota) + "</p>" : "");
+  }
+
+  function render() {
+    var e = idx.entries || [];
+    var vis = e.filter(function (x) { return !x.sup; });
+
+    /* --- entità per tipo (cliccabile: filtra la consultazione) --- */
+    var perTipo = {};
+    vis.forEach(function (x) { perTipo[x.t] = (perTipo[x.t] || 0) + 1; });
+    var tipi = Object.keys(perTipo).map(function (k) {
+      return { label: (idx.types && idx.types[k] && idx.types[k].label) || k, value: perTipo[k],
+               href: "cerca.html?cat=" + encodeURIComponent(k) };
+    }).sort(function (a, b) { return b.value - a.value; }).slice(0, 14);
+
+    /* --- mostri per fascia di Grado di Sfida --- */
+    var mostri = vis.filter(function (x) { return x.t === "monster" && !x.sup; });
+    var bande = crBands.map(function (b) {
+      return { label: b.label, value: 0, href: "", tone: "" };
+    });
+    var crCount = 0;
+    mostri.forEach(function (m) {
+      var v = crValue(m.cr);
+      if (v === null) return;
+      crCount++;
+      for (var i = 0; i < crBands.length; i++) {
+        if (crBands[i].test(v)) { bande[i].value++; break; }
+      }
+    });
+
+    /* --- incantesimi per scuola --- */
+    var perScuola = {};
+    vis.forEach(function (x) {
+      if (x.t !== "spell" || !x.sch) return;
+      perScuola[x.sch] = (perScuola[x.sch] || 0) + 1;
+    });
+    var scuole = Object.keys(perScuola).map(function (k) {
+      return { label: schoolName[k] || k, value: perScuola[k] };
+    }).sort(function (a, b) { return b.value - a.value; });
+
+    /* --- oggetti per rarità --- */
+    var perRarita = {};
+    vis.forEach(function (x) {
+      if (x.t !== "item" || !x.r) return;
+      perRarita[x.r] = (perRarita[x.r] || 0) + 1;
+    });
+    var ORDINE = ["common", "uncommon", "rare", "very rare", "legendary", "artifact", "varies"];
+    var rarita = Object.keys(perRarita).map(function (k) {
+      return { label: k, value: perRarita[k] };
+    }).sort(function (a, b) {
+      var ia = ORDINE.indexOf(a.label), ib = ORDINE.indexOf(b.label);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
+
+    /* --- fonti più rappresentate, con l'anno --- */
+    var perFonte = {};
+    vis.forEach(function (x) { perFonte[x.s] = (perFonte[x.s] || 0) + 1; });
+    var fonti = Object.keys(perFonte).map(function (k) {
+      var conData = vis.filter(function (x) { return x.s === k && x.p; })[0];
+      var anno = conData && conData.p ? conData.p.slice(0, 4) : "";
+      return { label: k + (anno ? " (" + anno + ")" : ""), value: perFonte[k] };
+    }).sort(function (a, b) { return b.value - a.value; }).slice(0, 12);
+
+    chart("cmp-tipi", "Entità per tipo (clicca per consultarle)", tipi, null);
+    chart("cmp-cr", "Mostri per Grado di Sfida", bande,
+          crCount + " mostri su " + mostri.length + " hanno un Grado di Sfida dichiarato.");
+    chart("cmp-scuole", "Incantesimi per scuola di magia", scuole, null);
+    chart("cmp-rarita", "Oggetti magici per rarità", rarita, null);
+    chart("cmp-fonti", "Fonti più rappresentate (con anno di pubblicazione)", fonti,
+          "Le ristampe sono già raggruppate: qui si conta la voce visibile, cioè la più recente.");
+
+    /* --- curiosità calcolate --- */
+    var draghi = vis.filter(function (x) { return x.t === "monster" && /dragon/i.test(x.n); }).length;
+    var leggendari = vis.filter(function (x) { return x.t === "item" && x.r === "legendary"; }).length;
+    var artefatti = vis.filter(function (x) { return x.t === "item" && x.r === "artifact"; }).length;
+    var trucchetti = 0, alti = 0;
+    vis.forEach(function (x) {
+      if (x.t !== "spell") return;
+      var lv = x.lv;
+      if (lv === 0) trucchetti++;
+      if (typeof lv === "number" && lv >= 8) alti++;
+    });
+    var piuComune = tipi.length ? tipi[0] : { label: "—", value: 0 };
+    var banda = bande.slice().sort(function (a, b) { return b.value - a.value; })[0] || { label: "—", value: 0 };
+    var scuolaTop = scuole.length ? scuole[0] : { label: "—", value: 0 };
+    var raritaTop = rarita.length ? rarita[0] : { label: "—", value: 0 };
+
+    var fatti = el("cmp-fatti");
+    if (fatti) {
+      var righe = [
+        ["Entità consultabili", num(vis.length) + " (su " + num(e.length) + " incluse le ristampe)"],
+        ["Tipo più rappresentato", piuComune.label + " — " + num(piuComune.value)],
+        ["Fascia di Grado di Sfida più affollata", banda.label + " — " + num(banda.value) + " mostri"],
+        ["Scuola di magia più ricca", scuolaTop.label + " — " + num(scuolaTop.value) + " incantesimi"],
+        ["Rarità più diffusa", raritaTop.label + " — " + num(raritaTop.value) + " oggetti"],
+        ["Draghi nel database", num(draghi)],
+        ["Oggetti leggendari", num(leggendari)],
+        ["Artefatti", num(artefatti)],
+        ["Incantesimi di 8° e 9° livello", num(alti)],
+      ];
+      fatti.innerHTML = '<h2 class="cmp-h3">Curiosità dal database</h2><dl class="cmp-facts">' +
+        righe.map(function (r) {
+          return "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>";
+        }).join("") + "</dl>";
+    }
+  }
+
+  /* «Sorprendimi»: apre una scheda a caso nella consultazione. */
+  function initSorprendi() {
+    var b = el("cmp-random");
+    if (!b) return;
+    b.addEventListener("click", function () {
+      if (!idx) return;
+      var vis = (idx.entries || []).filter(function (x) { return !x.sup; });
+      if (!vis.length) return;
+      var x = vis[Math.floor(Math.random() * vis.length)];
+      var out = el("cmp-random-out");
+      if (out) {
+        out.innerHTML = 'Scheda estratta: <a href="lookup.html?cat=' + esc(x.t) + "&q=" +
+          encodeURIComponent(x.n) + '"><strong>' + esc(x.n) + "</strong></a> " +
+          '<span class="tv-meta">(' + esc((idx.types && idx.types[x.t] && idx.types[x.t].label) || x.t) +
+          " · " + esc(x.s || "") + ")</span>";
+      }
+      window.open("cerca.html?cat=" + encodeURIComponent(x.t) + "&q=" + encodeURIComponent(x.n), "_blank");
+    });
+  }
+
+  function boot() {
+    if (!el("cmp-tipi")) return;
+    var x = new XMLHttpRequest();
+    x.open("GET", "../data/lookup-index.json", true);
+    x.onreadystatechange = function () {
+      if (x.readyState !== 4) return;
+      if (x.status !== 200) {
+        var box = el("cmp-fatti");
+        if (box) box.innerHTML = '<p class="tv-meta">Dati non disponibili: il compendio si popola quando l\'indice è raggiungibile.</p>';
+        return;
+      }
+      try { idx = JSON.parse(x.responseText); } catch (e) { idx = null; }
+      if (idx) { render(); initSorprendi(); }
+    };
+    x.send();
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
+})();
+</script>
+
+
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · offline-first
+</footer>
+
+<script src="i18n-bi.js"></script>
+<script src="../assets/i18n-auto.js"></script>
+<script src="assets/lang-menu.js"></script>
+<script>/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
+window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="assets/compendio-app.js"></script>
+<script src="assets/collapse.js"></script>
+<script src="assets/helpers.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://grimorio-dei-reami.serveousercontent.com/#website", "name": "Il Grimorio dei Reami — Consultazione, dati e strumenti per D&D 5e", "url": "https://grimorio-dei-reami.serveousercontent.com/", "inLanguage": "it", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://grimorio-dei-reami.serveousercontent.com/cerca.html?q={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@type": "WebPage", "name": "Compendio dei Reami — numeri e curiosità — Il Grimorio dei Reami", "description": "Dashboard analitica del sito: tassi di disponibilità, ripartizione pricing, analisi di Pareto e indice ECI.", "url": "https://grimorio-dei-reami.serveousercontent.com/stats.html", "inLanguage": "it", "isPartOf": {"@id": "https://grimorio-dei-reami.serveousercontent.com/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://grimorio-dei-reami.serveousercontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Dashboard Analytics", "item": "https://grimorio-dei-reami.serveousercontent.com/stats.html"}]}]}</script>
+
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

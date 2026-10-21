@@ -1,0 +1,356 @@
+[
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Years&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 20538,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Years&cmlimit=500&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"cmcontinue\":\"page|207b7b235041443a33353530307c357c307c4c4546547d7d0a353030204452|8502\",\"continue\":\"-||\"},\"query\":{\"categorymembers\":[{\"pageid\":23577,\"ns\":0,\"title\":\"0 DR\"},{\"pageid\":38957,\"ns\":0,\"title\":\"1 DR\"},{\"pageid\":24011,\"ns\":0,\"title\":\"2 DR\"},{\"pageid\":38958,\""
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Events&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 26187,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Events&cmlimit=500&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"cmcontinue\":\"page|574152204f4620474f4c4420414e4420474c4f4f4d|35756\",\"continue\":\"-||\"},\"query\":{\"categorymembers\":[{\"pageid\":8811,\"ns\":0,\"title\":\"Abraxus affair\"},{\"pageid\":160292,\"ns\":0,\"title\":\"Absolute crisis\"},{\"pageid\":34776,\"ns\":0,\"title\":\"Abyssal Plague\"},{\"pag"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Holidays&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 2902,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Holidays&cmlimit=500&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":84948,\"ns\":0,\"title\":\"Ahghairon's Day\"},{\"pageid\":60689,\"ns\":0,\"title\":\"Ascension Day\"},{\"pageid\":103132,\"ns\":0,\"title\":\"Auril's Blesstide\"},{\"pageid\":106607,\"ns\":0,\"title\":\"Brightswords\"},{\"pageid\":4376,\"ns\":0,\"title\":\"Crowning Day\"},{\"pagei"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Battles&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 4553,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Battles&cmlimit=500&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":181977,\"ns\":0,\"title\":\"Ambril's Bane\"},{\"pageid\":116677,\"ns\":0,\"title\":\"Assault on Myth Nantar\"},{\"pageid\":145024,\"ns\":0,\"title\":\"Banedeath\"},{\"pageid\":70928,\"ns\":0,\"title\":\"Battle at the Bar\"},{\"pageid\":173822,\"ns\":0,\"title\":\"Battle for Even"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Treaties&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 595,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Treaties&cmlimit=500&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":136952,\"ns\":0,\"title\":\"Articles of the Compact\"},{\"pageid\":132804,\"ns\":0,\"title\":\"Compact of Yuireshanyaar\"},{\"pageid\":191263,\"ns\":0,\"title\":\"Dales Compact\"},{\"pageid\":132859,\"ns\":0,\"title\":\"Final Pact of Apoapsis\"},{\"pageid\":179159,\"ns\":0,\"t"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=insource%3A%22DR%22%20insource%3A%2FMarp\\weth/&srlimit=50&format=json",
+  "status": 200,
+  "bytes": 42,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=insource%3A%22DR%22%20insource%3A%2FMarp\\weth/&srlimit=50&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"search\":[]}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Calendar_of_Harptos&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 5710,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Calendar_of_Harptos&prop=wikitext&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"Calendar of Harptos\",\"pageid\":1837,\"wikitext\":{\"*\":\"[[File:Harptos-4e.jpg|thumb|right|250px|''The Calendar of Harptos with holidays and seasonal depictions.'']]\\nThe '''Calendar of Harptos''' was the calendar used across most of [[Faer\\u00fbn]]. It was created by the wizard [[Harp"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1508_DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 472,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1508_DR&prop=wikitext&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"1508 DR\",\"pageid\":30679,\"wikitext\":{\"*\":\"{{Roll of years|1508|the Legend Reborn}}\\n\\n{{Yearbox\\n| year = 1508\\n| age = Present Age\\n}}\\n{{LunarCalendarBox}}\\n==Appendix==\\n===References===\\n{{refs}}\\n__NOTOC__\\n[[de:{{#replace:{{PAGENAME}}|DR|TZ}}]]\\n\\n[[Category:The Present Age| "
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&prop=revisions&titles=1358%20DR&rvprop=content&rvslots=main&format=json",
+  "status": 200,
+  "bytes": 20327,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&prop=revisions&titles=1358%20DR&rvprop=content&rvslots=main&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"pages\":{\"2415\":{\"pageid\":2415,\"ns\":0,\"title\":\"1358 DR\",\"revisions\":[{\"slots\":{\"main\":{\"contentmodel\":\"wikitext\",\"contentformat\":\"text/x-wiki\",\"*\":\"{{Roll of years|1358|Shadows}}\\n\\n{{Yearbox\\n| age  = Era of Upheaval\\n| year = 1358\\n}}\\n\\n{{LunarCalendarBox}}\\n\\n<div st"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apfrom=Category&format=json",
+  "status": 200,
+  "bytes": 578,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apfrom=Category&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"apcontinue\":\"Cathala's_compulsion\",\"continue\":\"-||\"},\"query\":{\"allpages\":[{\"pageid\":169770,\"ns\":0,\"title\":\"Catelys Gulchbreul\"},{\"pageid\":107358,\"ns\":0,\"title\":\"Catfall\"},{\"pageid\":104256,\"ns\":0,\"title\":\"Catfeet\"},{\"pageid\":173622,\"ns\":0,\"title\":\"Catfish\"},{\"pageid\":"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Timeline&cmlimit=100&format=json",
+  "status": 200,
+  "bytes": 51,
+  "final": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Timeline&cmlimit=100&format=json",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[]}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Calendar_of_Harptos",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Marking_the_years",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Roll_of_Years",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Category:Roll_of_Years",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/1358_DR",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/1385_DR",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/1487_DR",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Time_of_Troubles",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Spellplague",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Second_Sundering",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Era_of_Upheaval",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Portal:History",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Category:Years",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Category:Events",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Category:Holidays",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Category:Battles",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Ahghairon%27s_Day",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Auril%27s_Blesstide",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Brightswords",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Midwinter",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Greengrass",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Midsummer",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Highharvestide",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Feast_of_the_Moon",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Shieldmeet",
+  "status": 403,
+  "bytes": 0,
+  "error": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "http://ws-forgottenrealms.wikidot.com/roll-of-years",
+  "status": 200,
+  "bytes": 119322,
+  "final": "https://ws-forgottenrealms.wikidot.com/roll-of-years",
+  "ctype": "text/html; charset=utf-8",
+  "head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"> <html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">  <head>     <title>Roll of Years - Forgotten Realms</title>                    <script type=\"text/javascript\" "
+ },
+ {
+  "url": "https://www.realmshelps.net/faerun/history/faerun.shtml",
+  "status": 200,
+  "bytes": 53575,
+  "final": "https://www.realmshelps.net/faerun/history/faerun.shtml",
+  "ctype": "text/html",
+  "head": "<!DOCTYPE html> <html lang='en'> <head>     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />     <title>Abbreviated Timeline of Faer&ucirc;n</title>     <link rel='stylesheet' type=\"text/css\" href='../../re"
+ },
+ {
+  "url": "https://www.realmshelps.net/faerun/lore/life/time.shtml",
+  "status": 200,
+  "bytes": 207881,
+  "final": "https://www.realmshelps.net/faerun/lore/life/time.shtml",
+  "ctype": "text/html",
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <head>     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />     <title>Life in the Realms - Time and Seasons</title>     <link rel=\"stylesheet\" type=\"text/css\" href=\"../../."
+ },
+ {
+  "url": "https://alphastream.org/index.php/2020/04/09/the-official-timeline-for-the-forgotten-realms-and-its-adventures/",
+  "status": 200,
+  "bytes": 400000,
+  "final": "https://alphastream.org/index.php/2020/04/09/the-official-timeline-for-the-forgotten-realms-and-its-adventures/",
+  "ctype": "text/html; charset=UTF-8",
+  "head": "<!DOCTYPE html> <!--[if IE 8]> <html id=\"ie8\" lang=\"en-US\"> <![endif]--> <!--[if !(IE 8)]><!--> <html lang=\"en-US\"> <!--<![endif]--> <head> <meta charset=\"UTF-8\" /> <link rel=\"profile\" href=\"http://gmpg.org/xfn/11\" /> <link rel=\"pingback\" href=\"https://alphastream.org/xmlrpc.php\" /> <title>The Offic"
+ },
+ {
+  "url": "https://web.archive.org/web/2023/https://forgottenrealms.fandom.com/wiki/1358_DR",
+  "status": 200,
+  "bytes": 380159,
+  "final": "https://web.archive.org/web/20240109140503/https://forgottenrealms.fandom.com/wiki/1358_DR",
+  "ctype": "text/html; charset=UTF-8",
+  "head": "<!DOCTYPE html> <html class=\"client-nojs\" lang=\"en\" dir=\"ltr\"> <head><script type=\"text/javascript\" src=\"https://web-static.archive.org/_static/js/bundle-playback.js?v=lGQTDXxZ\" charset=\"utf-8\"></script> <script type=\"text/javascript\" src=\"https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1"
+ },
+ {
+  "url": "https://archive.org/details/forgotten-realms-campaign-setting",
+  "status": 200,
+  "bytes": 213920,
+  "final": "https://archive.org/details/forgotten-realms-campaign-setting",
+  "ctype": "text/html; charset=UTF-8",
+  "head": "<!DOCTYPE html> <html lang=\"en\"> <!-- __ _ _ _ __| |_ (_)__ _____     / _` | '_/ _| ' \\| |\\ V / -_)     \\__,_|_| \\__|_||_|_| \\_/\\___| -->   <head data-release=253a0d46 data-node=\"www10.us.archive.org\">     <title>Forgotten Realms Campaign Setting : Free Download, Borrow, and Streaming : Internet Arc"
+ },
+ {
+  "url": "https://archive.org/advancedsearch.php?q=forgotten+realms&fl%5B%5D=identifier&rows=50&page=1&output=json",
+  "status": 200,
+  "bytes": 2831,
+  "final": "https://archive.org/advancedsearch.php?q=forgotten+realms&fl%5B%5D=identifier&rows=50&page=1&output=json",
+  "ctype": "application/json",
+  "head": "{\"responseHeader\":{\"status\":0,\"QTime\":51,\"params\":{\"query\":\"((text:forgotten OR text:forgotten OR text__reviews:forgotten)(text:realms OR text:realms OR text__reviews:realms)) OR (text:&quot;forgotten realms&quot; OR text:&quot;forgotten realms&quot; OR text__reviews:&quot;forgotten realms&quot;)\",\""
+ },
+ {
+  "url": "https://dumps.wikimedia.org/other/static/images/",
+  "status": 404,
+  "bytes": 0,
+  "error": "HTTP 404 Not Found"
+ },
+ {
+  "url": "https://archive.org/wayback/available?url=forgottenrealms.fandom.com/wiki/1358_DR",
+  "status": 200,
+  "bytes": 254,
+  "final": "https://archive.org/wayback/available?url=forgottenrealms.fandom.com/wiki/1358_DR",
+  "ctype": "application/json",
+  "head": "{\"url\": \"forgottenrealms.fandom.com/wiki/1358_DR\", \"archived_snapshots\": {\"closest\": {\"status\": \"200\", \"available\": true, \"url\": \"http://web.archive.org/web/20251214020140/https://forgottenrealms.fandom.com/wiki/1358_DR\", \"timestamp\": \"20251214020140\"}}}"
+ },
+ {
+  "url": "https://api.github.com/search/repositories?q=forgotten+realms+timeline&per_page=20",
+  "status": 200,
+  "bytes": 73,
+  "final": "https://api.github.com/search/repositories?q=forgotten+realms+timeline&per_page=20",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{   \"total_count\": 0,   \"incomplete_results\": false,   \"items\": [    ] } "
+ },
+ {
+  "url": "https://api.github.com/search/repositories?q=faerun&per_page=20",
+  "status": 200,
+  "bytes": 129752,
+  "final": "https://api.github.com/search/repositories?q=faerun&per_page=20",
+  "ctype": "application/json; charset=utf-8",
+  "head": "{   \"total_count\": 143,   \"incomplete_results\": false,   \"items\": [     {       \"id\": 124270535,       \"node_id\": \"MDEwOlJlcG9zaXRvcnkxMjQyNzA1MzU=\",       \"name\": \"Faerun\",       \"full_name\": \"ProjectFaerun/Faerun\",       \"private\": false,       \"owner\": {         \"login\": \"ProjectFaerun\",         "
+ },
+ {
+  "url": "https://api.github.com/search/code?q=harptos+calendar",
+  "status": 401,
+  "bytes": 0,
+  "error": "HTTP 401 Unauthorized"
+ },
+ {
+  "url": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/v2.35.1/data/adventures.json",
+  "status": 200,
+  "bytes": 400000,
+  "final": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/v2.35.1/data/adventures.json",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "{ \t\"adventure\": [ \t\t{ \t\t\t\"name\": \"Lost Mine of Phandelver\", \t\t\t\"id\": \"LMoP\", \t\t\t\"source\": \"LMoP\", \t\t\t\"group\": \"supplement\", \t\t\t\"cover\": { \t\t\t\t\"type\": \"internal\", \t\t\t\t\"path\": \"covers/LMoP.webp\" \t\t\t}, \t\t\t\"published\": \"2014-07-15\", \t\t\t\"author\": \"Wizards RPG Team\", \t\t\t\"storyline\": \"Starter Set\", \t\t\t\"lev"
+ },
+ {
+  "url": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/v2.35.1/data/books.json",
+  "status": 200,
+  "bytes": 283815,
+  "final": "https://raw.githubusercontent.com/5etools-mirror-3/5etools-src/v2.35.1/data/books.json",
+  "ctype": "text/plain; charset=utf-8",
+  "head": "{ \t\"book\": [ \t\t{ \t\t\t\"name\": \"Player's Handbook (2014)\", \t\t\t\"id\": \"PHB\", \t\t\t\"source\": \"PHB\", \t\t\t\"group\": \"core\", \t\t\t\"cover\": { \t\t\t\t\"type\": \"internal\", \t\t\t\t\"path\": \"covers/PHB.webp\" \t\t\t}, \t\t\t\"coverCredit\": \"Tyler Jacobson\", \t\t\t\"published\": \"2014-08-19\", \t\t\t\"author\": \"Wizards RPG Team\", \t\t\t\"contents\": "
+ },
+ {
+  "url": "https://5e.tools/adventures.html",
+  "status": 200,
+  "bytes": 8919,
+  "final": "https://5e.tools/adventures.html",
+  "ctype": "text/html",
+  "head": "<!DOCTYPE html> <html lang=\"en\">  <head> \t \t<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-120603467-1\"></script><script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag(\"js\", new Date()); gtag(\"config\", \"UA-120603467-1\");</script><script>wi"
+ }
+]

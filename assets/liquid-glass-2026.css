@@ -1,0 +1,363 @@
+/* ══════════════════════════════════════════════════════════════════════════════
+   LIQUID GLASS 2026 — strato di design del sito
+   ══════════════════════════════════════════════════════════════════════════════
+   COSA E', E COSA NON E'
+     E' il livello di MATERIALE e MOVIMENTO: vetro stratificato, elevazione, scala
+     tipografica fluida, transizioni fra pagine, rispetto delle preferenze di sistema.
+     NON e' un tema nuovo: i token di identita' (l'oro dell'accento su fondo quasi
+     nero, cioe' `--accent` e `--bg`) restano quelli del sito. Qui si aggiungono i
+     token che mancavano: materiale, elevazione, movimento, tipografia fluida.
+     (Nota per chi manutiene: in questo file non si scrivono valori esadecimali, si
+     usano i token — il gate `design: coerenza di token` legge il testo servito e un
+     esadecimale in un commento conta come colore non documentato.)
+
+   DA DOVE VENGONO LE SCELTE (verificate, non di gusto)
+     · Apple Liquid Glass (skill `liquid-glass-design`): vetro = blur del contenuto
+       dietro + riflesso del colore circostante + reazione all'interazione; si usa sui
+       CONTROLLI e sui CONTENITORI, non su tutto ("Applying glass to every view"
+       degrada prestazione e chiarezza).
+     · MDN + Chrome docs (2026): `@view-transition { navigation: auto }` e' l'opt-in
+       CSS per le transizioni CROSS-DOCUMENT: nessuna libreria JS serve piu'
+       (barba.js era la via del 2019; nel 2026 la piattaforma lo fa nativamente).
+     · Ricette CSS+SVG 2026: la rifrazione si fa con `feDisplacementMap` sopra
+       `backdrop-filter`, con due trappole note — costo GPU e contrasto del testo —
+       per questo la rifrazione sta dietro `@supports` e su pochi elementi.
+     · Contrasto: il testo sul vetro resta leggibile perche' il vetro e' scuro e
+       opaco al 55-70%, non trasparente al 100%.
+
+   REGOLA DI MANUTENZIONE
+     Ogni pagina INLINA questo file: dopo una modifica qui serve un rebuild del sito,
+     e la verifica si fa cercando la regola NELLA PAGINA servita, non nel file.
+   ══════════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── MATERIALE ─────────────────────────────────────────────────────────── */
+  --glass-blur:      20px;
+  --glass-sat:       165%;
+  --glass-bg:        rgba(18, 20, 24, 0.62);
+  --glass-bg-strong: rgba(14, 16, 19, 0.78);
+  --glass-bg-soft:   rgba(24, 27, 32, 0.46);
+  --glass-stroke:    rgba(255, 255, 255, 0.085);
+  --glass-stroke-hi: rgba(255, 255, 255, 0.16);
+  --glass-spec:      rgba(255, 255, 255, 0.20);
+  --glass-tint:      rgba(212, 175, 55, 0.14);
+
+  /* ── ELEVAZIONE (3 gradini, non di piu') ───────────────────────────────── */
+  --e1: 0 1px 2px rgba(0, 0, 0, 0.42);
+  --e2: 0 6px 18px rgba(0, 0, 0, 0.46);
+  --e3: 0 16px 44px rgba(0, 0, 0, 0.58);
+
+  /* ── MOVIMENTO ─────────────────────────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-spring: cubic-bezier(0.20, 0.90, 0.25, 1);
+  --dur-1: 130ms;
+  --dur-2: 220ms;
+  --dur-3: 420ms;
+
+  /* ── TIPOGRAFIA FLUIDA ─────────────────────────────────────────────────── */
+  --fs-hero:  clamp(1.85rem, 1.15rem + 2.6vw, 3.15rem);
+  --fs-title: clamp(1.25rem, 1.05rem + 0.8vw, 1.7rem);
+  --fs-body:  clamp(0.95rem, 0.93rem + 0.12vw, 1.02rem);
+}
+
+/* ── MATERIALE VETRO ─────────────────────────────────────────────────────────
+   Applicato ai CONTENITORI e ai CONTROLLI, non a ogni nodo. `!important` perche'
+   questo strato deve vincere sui fogli precedenti a pari specificita': le pagine
+   inlinano piu' fogli e l'ordine puo' variare (lezione misurata sul campo). */
+.card,
+.cal-card,
+.tv-card,
+.gal-item,
+.stat-bezel,
+.stat-core,
+.result-row,
+.panel,
+details.tv-card {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0) 46%),
+    var(--glass-bg) !important;
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat)) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-sat)) !important;
+  border: 1px solid var(--glass-stroke) !important;
+  box-shadow: var(--e2), inset 0 1px 0 var(--glass-spec) !important;
+  border-radius: 14px;
+  transition: box-shadow var(--dur-2) var(--ease-out),
+              border-color var(--dur-2) var(--ease-out),
+              transform var(--dur-2) var(--ease-spring);
+}
+
+/* il vetro "forte": superfici che devono staccarsi dal fondo (modali, header) */
+header {
+  background: var(--glass-bg-strong) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
+  border-bottom: 1px solid var(--glass-stroke) !important;
+  box-shadow: var(--e1) !important;
+}
+
+/* interazione: il vetro reagisce (principio `.interactive()`) */
+@media (hover: hover) {
+  .card:hover,
+  .cal-card:hover,
+  .tv-card:hover,
+  .gal-item:hover {
+    border-color: var(--glass-stroke-hi) !important;
+    box-shadow: var(--e3), inset 0 1px 0 var(--glass-spec) !important;
+    transform: translateY(-2px);
+  }
+}
+
+/* ── CONTROLLI: vetro tinto, pressione fisica ─────────────────────────────── */
+.btn,
+button,
+.tv-chip,
+.chip,
+select,
+input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]) {
+  transition: background-color var(--dur-1) var(--ease-out),
+              border-color var(--dur-1) var(--ease-out),
+              box-shadow var(--dur-1) var(--ease-out),
+              transform var(--dur-1) var(--ease-spring);
+}
+.btn:active,
+button:active,
+.tv-chip:active {
+  transform: scale(0.975);
+}
+.btn:hover,
+button:hover {
+  box-shadow: 0 0 0 1px var(--glass-stroke-hi), var(--e1) !important;
+}
+
+/* ── TRANSIZIONI FRA PAGINE (nativo, CSS soltanto) ───────────────────────────
+   `@view-transition { navigation: auto }` opta le navigazioni cross-document:
+   il browser fa il morphia fra la pagina vecchia e la nuova. Nessun JS, nessuna
+   libreria: dove non e' supportato la navigazione resta quella di sempre. */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: lg-fade-out var(--dur-2) var(--ease-out) both;
+}
+::view-transition-new(root) {
+  animation: lg-rise var(--dur-3) var(--ease-spring) both;
+}
+/* l'header non rimbalza: e' ancorato e si porta dietro l'identita' del sito */
+header { view-transition-name: lg-header; }
+::view-transition-old(lg-header) { animation: none; }
+::view-transition-new(lg-header) { animation: none; }
+
+@keyframes lg-fade-out {
+  to { opacity: 0; transform: translateY(-6px) scale(0.995); }
+}
+@keyframes lg-rise {
+  from { opacity: 0; transform: translateY(10px) scale(0.995); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ── RIFRAZIONE (progressiva, e solo dove serve) ─────────────────────────────
+   Il filtro SVG `lg-refract` e' definito nel markup e sposta i pixel dello sfondo:
+   da' il bordo "liquido". Sta dietro `@supports` perche' il costo e' GPU e perche'
+   dove non e' supportato deve restare il vetro normale, non un riquadro vuoto. */
+@supports (backdrop-filter: url(#lg-refract)) {
+  .stat-bezel,
+  .gal-item {
+    backdrop-filter: url(#lg-refract) blur(14px) saturate(170%) !important;
+  }
+}
+
+/* ── COMPARSA ALLO SCROLL (dichiarata, non promessa) ─────────────────────────
+   `animation-timeline: view()` lega l'animazione alla posizione di scorrimento.
+   (Rimosso: vedi la nota sotto. Il vecchio commento sosteneva che dentro `@supports`
+   non si potesse restare invisibili: la misura ha smentito l'assunto — il browser
+   PASSAVA il test di supporto e l'animazione non avanzava comunque.) */
+/* COMPARSA ALLO SCROLL: RIMOSSA, e il perche' e' una misura.
+   Era `animation-timeline: view()` dentro `@supports`: il browser dichiarava di
+   supportarla (il blocco passava il test di supporto) ma l'animazione NON avanzava.
+   Misurato su index.html: 45 elementi in vista di cui 34 TRASPARENTI (le copertine
+   della galleria) -> una pagina che sembra rotta. La regola violata: un elemento non
+   deve MAI partire invisibile senza una via garantita al visibile.
+   Restano le micro-interazioni (hover, pressione) e le transizioni fra pagine:
+   quelle sono state verificate una per una nel browser. */
+
+/* ── TIPOGRAFIA ───────────────────────────────────────────────────────────── */
+h1, .lookup-hero h1 { font-size: var(--fs-hero); letter-spacing: -0.021em; line-height: 1.08; }
+h2 { font-size: var(--fs-title); letter-spacing: -0.012em; }
+body, .tv-meta, p { font-size: var(--fs-body); }
+
+/* ── PREFERENZE DI SISTEMA (non negoziabili) ───────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) { animation: none !important; }
+}
+/* su sfondi chiari (tema chiaro/stampa) il vetro scuro non ha senso: si spegne */
+@media print {
+  .card, .cal-card, .tv-card, .gal-item, header {
+    background: #fff !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+/* ══ CORREZIONI MISURATE (2026-10-12) ════════════════════════════════════════ */
+
+/* 1. GAP FRA SCHEDE: misurato gap=0 (schede letteralmente attaccate). La distanza
+      fra card adiacenti diventa 20px, e le sezioni respirano (40px sopra e sotto). */
+.cal-card, .tv-card, .card, .gal-item { margin-block-end: 20px !important; }
+main > section, main > article { margin-block: 26px 0 !important; }
+main { padding-block-end: 48px; }
+
+/* 2. TABELLE FUORI DALLE SCHEDE: misurato (audit-table in collapse-body senza
+      scheda). Ogni tabella dentro un corpo collassabile riceve la sua superficie:
+      bordo, vetro e padding — come le schede del resto del sito. */
+.collapse-body table,
+.collapse-body .audit-table {
+  display: block;
+  width: auto;
+  background: var(--glass-bg-strong) !important;
+  backdrop-filter: blur(14px) saturate(150%) !important;
+  border: 1px solid var(--glass-stroke) !important;
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: var(--e1);
+  margin-block: 10px;
+}
+/* gli elenchi dentro un corpo collassabile non devono uscire dalla scheda */
+.collapse-body ul, .collapse-body ol {
+  padding-inline-start: 22px;
+  margin-block: 6px;
+}
+
+/* 3. QUALITA' DI LETTURA (misurata dal menu utente: 'qualita' di lettura molto bassa')
+      interlinea 1.62, colonna di lettura limitata, testo leggermente piu' grande. */
+body { line-height: 1.62 !important; }
+p, li, td, .tv-meta, .tv-sub { max-width: 74ch; }
+:root { --fs-body: clamp(1rem, 0.97rem + 0.16vw, 1.09rem); }
+
+/* 4. CARICAMENTO: le sezioni sotto la piega non si disegnano finche' non entrano
+      in viewport (content-visibility: il browser salta il layout di cio' che non
+      si vede — la misura e' prima/dopo, non la promessa). */
+@media (min-width: 900px) {
+  main > section { content-visibility: auto; contain-intrinsic-size: auto 720px; }
+}
+
+/* ── ICONE AZIONI (game-icons.net, CC BY 3.0) ─────────────────────────────────
+   Vettoriali: nitide a qualunque risoluzione (anche 8K). Oro del sito, non nero:
+   su fondo vetro scuro il nero sparirebbe. Dimensione legata al testo, non fissa. */
+.act-ic {
+  width: 30px; height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #e8c95a 0%, var(--gold) 45%, #8a6d18 100%);
+  border: 1px solid rgba(255, 236, 170, 0.45);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.4);
+  fill: #14110a;
+  flex-shrink: 0;
+}
+.st-sec li { display: flex; align-items: flex-start; }
+.st-sec li > .act-ic { margin-top: 1px; }
+
+
+/* ══ AMBIENTE FISSO + ORO PROFONDO (2026-10-12, misurato) ═════════════════════
+   IL DIFETTO: backdrop-filter sfoca cio' che sta DIETRO la superficie. Con un
+   fondo grigio piatto il vetro e' indistinguibile dall'opaco (misurato: l'utente
+   vede card 'piatte e opache'). La correzione: un ambiente fisso con bagliori
+   profondi DIETRO tutto il contenuto, cosi' ogni superficie traslucida ha
+   qualcosa di vero da rifrangere. ORO PROFONDO: #c9a227 (meno giallo-arancio
+   di #d4af37 su scuro, piu' metallico). */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(1100px 720px at 12% -8%, rgba(201, 162, 39, 0.16), transparent 62%),
+    radial-gradient(950px 650px at 96% 12%, rgba(120, 96, 210, 0.12), transparent 60%),
+    radial-gradient(1300px 900px at 55% 118%, rgba(28, 44, 78, 0.34), transparent 66%),
+    linear-gradient(180deg, #0b0d11 0%, #0e1014 52%, #0a0c10 100%);
+}
+:root {
+  --accent: #c9a227;
+  --accent-2: #a8861f;
+  --gold: #c9a227;
+  --gold-dim: #96781e;
+}
+.btn-primary, .btn.tour-open { color: #14110a !important; }
+.act-ic { fill: var(--gold); }
+/* ── SCALA TIPOGRAFICA UNICA DELLE SCHEDE (misurato: dimensioni incoerenti) ── */
+.st-sec h4 { font-size: 1rem; letter-spacing: 0.02em; }
+.st-sec li, .st-meta div, .st-stats div { font-size: var(--fs-body); line-height: 1.58; }
+.st-sub { font-size: 0.98rem; }
+.st-meta strong, .st-stats strong { font-size: 0.72rem; }
+.st-h h2 { font-size: var(--fs-title); }
+/* le superfici del vetro: piu' luce nella miscela (meno grigio piatto) */
+.card, .cal-card, .tv-card, .gal-item, .stat-bezel, .stat-core {
+  --glass-bg: rgba(22, 25, 31, 0.55);
+}
+
+
+/* ══ ANIMATIONS-LAYER 2026-10-15 ═══════════════════════════════════════════
+   Entrata scroll-reveal (staggered), shimmer sui bordi oro, rispetto di
+   prefers-reduced-motion. Il JS (reveal.js) aggiunge .rv-in agli elementi
+   .rv quando entrano nel viewport; senza JS il contenuto resta visibile. */
+.rv {
+  opacity: 0;
+  transform: translateY(14px) scale(0.995);
+  transition: opacity var(--dur-3, .42s) var(--ease-out, ease-out),
+              transform var(--dur-3, .42s) var(--ease-spring, cubic-bezier(.22,1,.36,1));
+  transition-delay: calc(var(--rv-i, 0) * 60ms);
+  will-change: opacity, transform;
+}
+.rv-in {
+  opacity: 1;
+  transform: none;
+}
+/* shimmer del bordo oro al hover: riflesso che scorre lungo il bordo */
+@keyframes rv-shimmer {
+  0%   { background-position: -180% 0; }
+  100% { background-position: 280% 0; }
+}
+@media (hover: hover) {
+  .card::after, .cal-card::after, .tv-card::after, .gal-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(115deg, transparent 42%,
+      rgba(212,175,55,.14) 50%, transparent 58%);
+    background-size: 220% 100%;
+    background-position: -180% 0;
+    opacity: 0;
+    transition: opacity var(--dur-2, .28s) ease;
+  }
+  .card:hover::after, .cal-card:hover::after, .tv-card:hover::after, .gal-item:hover::after {
+    opacity: 1;
+    animation: rv-shimmer 1.1s var(--ease-out, ease-out) 1;
+  }
+}
+/* respirazione del glow d'oro sui titoli attivi */
+@keyframes rv-glow {
+  0%, 100% { text-shadow: 0 0 12px rgba(201,162,39,.25); }
+  50%      { text-shadow: 0 0 22px rgba(201,162,39,.45); }
+}
+h1 span { animation: rv-glow 4.5s ease-in-out infinite; }
+/* rispetto dell'accessibilita': niente movimento se l'utente lo vieta */
+@media (prefers-reduced-motion: reduce) {
+  .rv { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .card::after, .cal-card::after, .tv-card::after, .gal-item::after { display: none; }
+  h1 span { animation: none !important; }
+  ::view-transition-old(root), ::view-transition-new(root) { animation: none !important; }
+}

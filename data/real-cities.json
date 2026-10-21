@@ -1,0 +1,448 @@
+{
+ "version": "1.0",
+ "generated": "2026-09-23",
+ "method": "Norme climatiche calcolate dai dati giornalieri Open-Meteo Archive API (temperature_2m_mean media annua, precipitation_sum totale annuo) sull'anno 2024. Nessun valore è stimato a mano.",
+ "source": "https://archive-api.open-meteo.com/v1/archive (Open-Meteo, licenza CC BY 4.0)",
+ "wetness_scale": {
+  "0": "arido <200 mm",
+  "1": "secco 200-450",
+  "2": "moderato 450-800",
+  "3": "umido 800-1400",
+  "4": "monsonico >1400"
+ },
+ "count": 48,
+ "cities": [
+  {
+   "name": "Reykjavík",
+   "country": "Islanda",
+   "lat": 64.15,
+   "lon": -21.94,
+   "temp_center": 3.9,
+   "precip_mm": 1594.0,
+   "wetness": 4
+  },
+  {
+   "name": "Tromsø",
+   "country": "Norvegia",
+   "lat": 69.65,
+   "lon": 18.96,
+   "temp_center": 3.9,
+   "precip_mm": 1532.0,
+   "wetness": 4
+  },
+  {
+   "name": "Murmansk",
+   "country": "Russia",
+   "lat": 68.97,
+   "lon": 33.09,
+   "temp_center": 1.9,
+   "precip_mm": 611.0,
+   "wetness": 2
+  },
+  {
+   "name": "Yakutsk",
+   "country": "Russia",
+   "lat": 62.03,
+   "lon": 129.73,
+   "temp_center": -6.7,
+   "precip_mm": 167.0,
+   "wetness": 0
+  },
+  {
+   "name": "Ulaanbaatar",
+   "country": "Mongolia",
+   "lat": 47.89,
+   "lon": 106.91,
+   "temp_center": 1.2,
+   "precip_mm": 458.0,
+   "wetness": 2
+  },
+  {
+   "name": "Helsinki",
+   "country": "Finlandia",
+   "lat": 60.17,
+   "lon": 24.94,
+   "temp_center": 7.1,
+   "precip_mm": 804.0,
+   "wetness": 3
+  },
+  {
+   "name": "Oslo",
+   "country": "Norvegia",
+   "lat": 59.91,
+   "lon": 10.75,
+   "temp_center": 7.3,
+   "precip_mm": 1108.0,
+   "wetness": 3
+  },
+  {
+   "name": "Mosca",
+   "country": "Russia",
+   "lat": 55.75,
+   "lon": 37.62,
+   "temp_center": 6.9,
+   "precip_mm": 601.0,
+   "wetness": 2
+  },
+  {
+   "name": "Londra",
+   "country": "Regno Unito",
+   "lat": 51.51,
+   "lon": -0.13,
+   "temp_center": 11.7,
+   "precip_mm": 894.0,
+   "wetness": 3
+  },
+  {
+   "name": "Dublino",
+   "country": "Irlanda",
+   "lat": 53.35,
+   "lon": -6.26,
+   "temp_center": 11.1,
+   "precip_mm": 976.0,
+   "wetness": 3
+  },
+  {
+   "name": "Parigi",
+   "country": "Francia",
+   "lat": 48.86,
+   "lon": 2.35,
+   "temp_center": 12.3,
+   "precip_mm": 1152.0,
+   "wetness": 3
+  },
+  {
+   "name": "Amsterdam",
+   "country": "Paesi Bassi",
+   "lat": 52.37,
+   "lon": 4.9,
+   "temp_center": 11.6,
+   "precip_mm": 1154.0,
+   "wetness": 3
+  },
+  {
+   "name": "Seattle",
+   "country": "USA",
+   "lat": 47.61,
+   "lon": -122.33,
+   "temp_center": 11.3,
+   "precip_mm": 1162.0,
+   "wetness": 3
+  },
+  {
+   "name": "Vancouver",
+   "country": "Canada",
+   "lat": 49.28,
+   "lon": -123.12,
+   "temp_center": 10.2,
+   "precip_mm": 2019.0,
+   "wetness": 4
+  },
+  {
+   "name": "Berlino",
+   "country": "Germania",
+   "lat": 52.52,
+   "lon": 13.4,
+   "temp_center": 11.7,
+   "precip_mm": 647.0,
+   "wetness": 2
+  },
+  {
+   "name": "Chicago",
+   "country": "USA",
+   "lat": 41.88,
+   "lon": -87.63,
+   "temp_center": 11.8,
+   "precip_mm": 1031.0,
+   "wetness": 3
+  },
+  {
+   "name": "Toronto",
+   "country": "Canada",
+   "lat": 43.65,
+   "lon": -79.38,
+   "temp_center": 10.3,
+   "precip_mm": 949.0,
+   "wetness": 3
+  },
+  {
+   "name": "New York",
+   "country": "USA",
+   "lat": 40.71,
+   "lon": -74.01,
+   "temp_center": 13.0,
+   "precip_mm": 1286.0,
+   "wetness": 3
+  },
+  {
+   "name": "Pechino",
+   "country": "Cina",
+   "lat": 39.9,
+   "lon": 116.41,
+   "temp_center": 13.8,
+   "precip_mm": 726.0,
+   "wetness": 2
+  },
+  {
+   "name": "Roma",
+   "country": "Italia",
+   "lat": 41.9,
+   "lon": 12.5,
+   "temp_center": 17.2,
+   "precip_mm": 876.0,
+   "wetness": 3
+  },
+  {
+   "name": "Madrid",
+   "country": "Spagna",
+   "lat": 40.42,
+   "lon": -3.7,
+   "temp_center": 15.8,
+   "precip_mm": 491.0,
+   "wetness": 2
+  },
+  {
+   "name": "Lisbona",
+   "country": "Portogallo",
+   "lat": 38.72,
+   "lon": -9.14,
+   "temp_center": 17.3,
+   "precip_mm": 596.0,
+   "wetness": 2
+  },
+  {
+   "name": "Atene",
+   "country": "Grecia",
+   "lat": 37.98,
+   "lon": 23.73,
+   "temp_center": 19.2,
+   "precip_mm": 486.0,
+   "wetness": 2
+  },
+  {
+   "name": "Barcellona",
+   "country": "Spagna",
+   "lat": 41.39,
+   "lon": 2.17,
+   "temp_center": 16.7,
+   "precip_mm": 808.0,
+   "wetness": 3
+  },
+  {
+   "name": "Il Cairo",
+   "country": "Egitto",
+   "lat": 30.04,
+   "lon": 31.24,
+   "temp_center": 24.2,
+   "precip_mm": 15.0,
+   "wetness": 0
+  },
+  {
+   "name": "Marrakech",
+   "country": "Marocco",
+   "lat": 31.63,
+   "lon": -7.99,
+   "temp_center": 21.4,
+   "precip_mm": 176.0,
+   "wetness": 0
+  },
+  {
+   "name": "Riad",
+   "country": "Arabia Saudita",
+   "lat": 24.71,
+   "lon": 46.68,
+   "temp_center": 27.4,
+   "precip_mm": 51.0,
+   "wetness": 0
+  },
+  {
+   "name": "Dubai",
+   "country": "EAU",
+   "lat": 25.2,
+   "lon": 55.27,
+   "temp_center": 28.2,
+   "precip_mm": 259.0,
+   "wetness": 1
+  },
+  {
+   "name": "Phoenix",
+   "country": "USA",
+   "lat": 33.45,
+   "lon": -112.07,
+   "temp_center": 24.0,
+   "precip_mm": 176.0,
+   "wetness": 0
+  },
+  {
+   "name": "Denver",
+   "country": "USA",
+   "lat": 39.74,
+   "lon": -104.99,
+   "temp_center": 10.6,
+   "precip_mm": 385.0,
+   "wetness": 1
+  },
+  {
+   "name": "Teheran",
+   "country": "Iran",
+   "lat": 35.69,
+   "lon": 51.39,
+   "temp_center": 18.4,
+   "precip_mm": 293.0,
+   "wetness": 1
+  },
+  {
+   "name": "Città del Messico",
+   "country": "Messico",
+   "lat": 19.43,
+   "lon": -99.13,
+   "temp_center": 17.7,
+   "precip_mm": 1254.0,
+   "wetness": 3
+  },
+  {
+   "name": "Mumbai",
+   "country": "India",
+   "lat": 19.08,
+   "lon": 72.88,
+   "temp_center": 27.1,
+   "precip_mm": 2524.0,
+   "wetness": 4
+  },
+  {
+   "name": "Bangkok",
+   "country": "Thailandia",
+   "lat": 13.76,
+   "lon": 100.5,
+   "temp_center": 28.8,
+   "precip_mm": 1637.0,
+   "wetness": 4
+  },
+  {
+   "name": "Singapore",
+   "country": "Singapore",
+   "lat": 1.35,
+   "lon": 103.82,
+   "temp_center": 26.8,
+   "precip_mm": 3854.0,
+   "wetness": 4
+  },
+  {
+   "name": "Hong Kong",
+   "country": "Cina",
+   "lat": 22.32,
+   "lon": 114.17,
+   "temp_center": 22.8,
+   "precip_mm": 2845.0,
+   "wetness": 4
+  },
+  {
+   "name": "Manila",
+   "country": "Filippine",
+   "lat": 14.6,
+   "lon": 120.98,
+   "temp_center": 28.0,
+   "precip_mm": 2309.0,
+   "wetness": 4
+  },
+  {
+   "name": "Lagos",
+   "country": "Nigeria",
+   "lat": 6.52,
+   "lon": 3.38,
+   "temp_center": 27.5,
+   "precip_mm": 1262.0,
+   "wetness": 3
+  },
+  {
+   "name": "Darwin",
+   "country": "Australia",
+   "lat": -12.46,
+   "lon": 130.84,
+   "temp_center": 27.7,
+   "precip_mm": 1962.0,
+   "wetness": 4
+  },
+  {
+   "name": "Tokyo",
+   "country": "Giappone",
+   "lat": 35.68,
+   "lon": 139.69,
+   "temp_center": 16.7,
+   "precip_mm": 1721.0,
+   "wetness": 4
+  },
+  {
+   "name": "Seul",
+   "country": "Corea del Sud",
+   "lat": 37.57,
+   "lon": 126.98,
+   "temp_center": 12.9,
+   "precip_mm": 1444.0,
+   "wetness": 4
+  },
+  {
+   "name": "Shanghai",
+   "country": "Cina",
+   "lat": 31.23,
+   "lon": 121.47,
+   "temp_center": 17.6,
+   "precip_mm": 1564.0,
+   "wetness": 4
+  },
+  {
+   "name": "Atlanta",
+   "country": "USA",
+   "lat": 33.75,
+   "lon": -84.39,
+   "temp_center": 17.3,
+   "precip_mm": 1384.0,
+   "wetness": 3
+  },
+  {
+   "name": "Sydney",
+   "country": "Australia",
+   "lat": -33.87,
+   "lon": 151.21,
+   "temp_center": 17.8,
+   "precip_mm": 1067.0,
+   "wetness": 3
+  },
+  {
+   "name": "Buenos Aires",
+   "country": "Argentina",
+   "lat": -34.6,
+   "lon": -58.38,
+   "temp_center": 17.7,
+   "precip_mm": 1097.0,
+   "wetness": 3
+  },
+  {
+   "name": "Città del Capo",
+   "country": "Sudafrica",
+   "lat": -33.92,
+   "lon": 18.42,
+   "temp_center": 16.9,
+   "precip_mm": 710.0,
+   "wetness": 2
+  },
+  {
+   "name": "Nairobi",
+   "country": "Kenya",
+   "lat": -1.29,
+   "lon": 36.82,
+   "temp_center": 19.4,
+   "precip_mm": 755.0,
+   "wetness": 2
+  },
+  {
+   "name": "Rio de Janeiro",
+   "country": "Brasile",
+   "lat": -22.91,
+   "lon": -43.17,
+   "temp_center": 24.4,
+   "precip_mm": 1090.0,
+   "wetness": 3
+  }
+ ]
+}

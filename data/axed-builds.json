@@ -1,0 +1,5526 @@
+{
+ "nota": "Build generate dagli assi misurati + RI-ASSEGNAZIONE di tutte le build alla categoria che i loro assi coprono. Prima l'assegnazione era l'etichetta scritta a mano: build con soli assi generici finivano in categorie che non coprivano.",
+ "nuove_build": [
+  {
+   "id": "GA814A1C01",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "fonti_assi": "Battle Smith [TCE]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «DPS — danno a bersaglio singolo» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «DPS — danno a bersaglio singolo» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA814A1C02",
+   "nome": "Armorer — DPS — danno a bersaglio singolo",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "fonti_assi": "Armorer [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Armorer scelta per coprire «DPS — danno a bersaglio singolo» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «DPS — danno a bersaglio singolo» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA814A1C03",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "fonti_assi": "Battle Smith [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «DPS — danno a bersaglio singolo» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «DPS — danno a bersaglio singolo» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5308F601",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "categoria": "Blaster ad area (AOE)",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Blaster ad area (AOE)",
+   "fonti_assi": "Battle Smith [TCE]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Blaster ad area (AOE)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Blaster ad area (AOE)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5308F602",
+   "nome": "Armorer — Blaster ad area (AOE)",
+   "categoria": "Blaster ad area (AOE)",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Blaster ad area (AOE)",
+   "fonti_assi": "Armorer [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Armorer scelta per coprire «Blaster ad area (AOE)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Blaster ad area (AOE)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5308F603",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "categoria": "Blaster ad area (AOE)",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Blaster ad area (AOE)",
+   "fonti_assi": "Battle Smith [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Blaster ad area (AOE)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Blaster ad area (AOE)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA78B13301",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "categoria": "Tiratore (ranged)",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Tiratore (ranged)",
+   "fonti_assi": "Battle Smith [TCE]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Tiratore (ranged)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Tiratore (ranged)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA78B13302",
+   "nome": "Armorer — Tiratore (ranged)",
+   "categoria": "Tiratore (ranged)",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Tiratore (ranged)",
+   "fonti_assi": "Armorer [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Armorer scelta per coprire «Tiratore (ranged)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Tiratore (ranged)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA78B13303",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "categoria": "Tiratore (ranged)",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Tiratore (ranged)",
+   "fonti_assi": "Battle Smith [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Tiratore (ranged)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Tiratore (ranged)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GABADF7701",
+   "nome": "Battle Smith — Combattente in mischia",
+   "categoria": "Combattente in mischia",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Combattente in mischia",
+   "fonti_assi": "Battle Smith [TCE]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Combattente in mischia» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Combattente in mischia» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GABADF7702",
+   "nome": "Armorer — Combattente in mischia",
+   "categoria": "Combattente in mischia",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Combattente in mischia",
+   "fonti_assi": "Armorer [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Armorer scelta per coprire «Combattente in mischia» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Combattente in mischia» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GABADF7703",
+   "nome": "Battle Smith — Combattente in mischia",
+   "categoria": "Combattente in mischia",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Combattente in mischia",
+   "fonti_assi": "Battle Smith [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Combattente in mischia» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Combattente in mischia» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5BA7F901",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "categoria": "Duellante (uno contro uno)",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Duellante (uno contro uno)",
+   "fonti_assi": "Battle Smith [TCE]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Duellante (uno contro uno)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Duellante (uno contro uno)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5BA7F902",
+   "nome": "Armorer — Duellante (uno contro uno)",
+   "categoria": "Duellante (uno contro uno)",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Duellante (uno contro uno)",
+   "fonti_assi": "Armorer [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Armorer scelta per coprire «Duellante (uno contro uno)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Duellante (uno contro uno)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5BA7F903",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "categoria": "Duellante (uno contro uno)",
+   "tipo": "copertura",
+   "classes": {
+    "Battle": 20
+   },
+   "classi": "Battle 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Battle": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Piercer",
+    "Piercer"
+   ],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "categoria_assi": "Duellante (uno contro uno)",
+   "fonti_assi": "Battle Smith [EFA]: D1,D2,D4,D5,D6",
+   "nucleo": "Battle Smith scelta per coprire «Duellante (uno contro uno)» (famiglia dps); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Duellante (uno contro uno)» con la famiglia dps. famiglia dps dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAF3CF0301",
+   "nome": "School of Transmutation — Supporto e potenziamenti",
+   "categoria": "Supporto e potenziamenti",
+   "tipo": "copertura",
+   "classes": {
+    "School": 20
+   },
+   "classi": "School 20 (School of Transmutation)",
+   "subclass_by_class": {
+    "School": "School of Transmutation"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+   ],
+   "categoria_assi": "Supporto e potenziamenti",
+   "fonti_assi": "School of Transmutation [PHB]: H1,H2,H3,H4",
+   "nucleo": "School of Transmutation scelta per coprire «Supporto e potenziamenti» (famiglia healer); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Supporto e potenziamenti» con la famiglia healer. famiglia healer dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAF3CF0302",
+   "nome": "Grave Domain — Supporto e potenziamenti",
+   "categoria": "Supporto e potenziamenti",
+   "tipo": "copertura",
+   "classes": {
+    "Grave": 20
+   },
+   "classi": "Grave 20 (Grave Domain)",
+   "subclass_by_class": {
+    "Grave": "Grave Domain"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Chef",
+    "Chef"
+   ],
+   "assi": [
+    "H1",
+    "H3",
+    "H5"
+   ],
+   "categoria_assi": "Supporto e potenziamenti",
+   "fonti_assi": "Grave Domain [RHW]: H1,H3,H5",
+   "nucleo": "Grave Domain scelta per coprire «Supporto e potenziamenti» (famiglia healer); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Supporto e potenziamenti» con la famiglia healer. famiglia healer dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAF3CF0303",
+   "nome": "Order of the Immortal — Supporto e potenziamenti",
+   "categoria": "Supporto e potenziamenti",
+   "tipo": "copertura",
+   "classes": {
+    "Order": 20
+   },
+   "classi": "Order 20 (Order of the Immortal)",
+   "subclass_by_class": {
+    "Order": "Order of the Immortal"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Chef",
+    "Chef"
+   ],
+   "assi": [
+    "H1",
+    "H2",
+    "H5"
+   ],
+   "categoria_assi": "Supporto e potenziamenti",
+   "fonti_assi": "Order of the Immortal [UATheMysticClass]: H1,H2,H5",
+   "nucleo": "Order of the Immortal scelta per coprire «Supporto e potenziamenti» (famiglia healer); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Supporto e potenziamenti» con la famiglia healer. famiglia healer dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA8D352A01",
+   "nome": "School of Transmutation — Protettore del gruppo",
+   "categoria": "Protettore del gruppo",
+   "tipo": "copertura",
+   "classes": {
+    "School": 20
+   },
+   "classi": "School 20 (School of Transmutation)",
+   "subclass_by_class": {
+    "School": "School of Transmutation"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+   ],
+   "categoria_assi": "Protettore del gruppo",
+   "fonti_assi": "School of Transmutation [PHB]: H1,H2,H3,H4",
+   "nucleo": "School of Transmutation scelta per coprire «Protettore del gruppo» (famiglia healer); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Protettore del gruppo» con la famiglia healer. famiglia healer dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA8D352A02",
+   "nome": "Grave Domain — Protettore del gruppo",
+   "categoria": "Protettore del gruppo",
+   "tipo": "copertura",
+   "classes": {
+    "Grave": 20
+   },
+   "classi": "Grave 20 (Grave Domain)",
+   "subclass_by_class": {
+    "Grave": "Grave Domain"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Chef",
+    "Chef"
+   ],
+   "assi": [
+    "H1",
+    "H3",
+    "H5"
+   ],
+   "categoria_assi": "Protettore del gruppo",
+   "fonti_assi": "Grave Domain [RHW]: H1,H3,H5",
+   "nucleo": "Grave Domain scelta per coprire «Protettore del gruppo» (famiglia healer); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Protettore del gruppo» con la famiglia healer. famiglia healer dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA8D352A03",
+   "nome": "Order of the Immortal — Protettore del gruppo",
+   "categoria": "Protettore del gruppo",
+   "tipo": "copertura",
+   "classes": {
+    "Order": 20
+   },
+   "classi": "Order 20 (Order of the Immortal)",
+   "subclass_by_class": {
+    "Order": "Order of the Immortal"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Chef",
+    "Chef"
+   ],
+   "assi": [
+    "H1",
+    "H2",
+    "H5"
+   ],
+   "categoria_assi": "Protettore del gruppo",
+   "fonti_assi": "Order of the Immortal [UATheMysticClass]: H1,H2,H5",
+   "nucleo": "Order of the Immortal scelta per coprire «Protettore del gruppo» (famiglia healer); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Protettore del gruppo» con la famiglia healer. famiglia healer dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAAB808001",
+   "nome": "College of Whispers — Indebolimento (debuff)",
+   "categoria": "Indebolimento (debuff)",
+   "tipo": "copertura",
+   "classes": {
+    "College": 20
+   },
+   "classi": "College 20 (College of Whispers)",
+   "subclass_by_class": {
+    "College": "College of Whispers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Night Spirit"
+   ],
+   "assi": [
+    "K2",
+    "K3",
+    "K5",
+    "K6"
+   ],
+   "categoria_assi": "Indebolimento (debuff)",
+   "fonti_assi": "College of Whispers [XGE]: K2,K3,K5,K6",
+   "nucleo": "College of Whispers scelta per coprire «Indebolimento (debuff)» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Indebolimento (debuff)» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAAB808002",
+   "nome": "Circle of Dreams — Indebolimento (debuff)",
+   "categoria": "Indebolimento (debuff)",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Circle": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Symbiotic Being",
+    "Boon of Revelry"
+   ],
+   "assi": [
+    "K2",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "categoria_assi": "Indebolimento (debuff)",
+   "fonti_assi": "Circle of Dreams [XGE]: K2,K4,K5,K6",
+   "nucleo": "Circle of Dreams scelta per coprire «Indebolimento (debuff)» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Indebolimento (debuff)» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAAB808003",
+   "nome": "Circle of Spores — Indebolimento (debuff)",
+   "categoria": "Indebolimento (debuff)",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Spores)",
+   "subclass_by_class": {
+    "Circle": "Circle of Spores"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Night Spirit",
+    "Symbiotic Being"
+   ],
+   "assi": [
+    "K1",
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "categoria_assi": "Indebolimento (debuff)",
+   "fonti_assi": "Circle of Spores [TCE]: K1,K3,K4,K6",
+   "nucleo": "Circle of Spores scelta per coprire «Indebolimento (debuff)» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Indebolimento (debuff)» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA124FF701",
+   "nome": "College of Whispers — Illusionista",
+   "categoria": "Illusionista",
+   "tipo": "copertura",
+   "classes": {
+    "College": 20
+   },
+   "classi": "College 20 (College of Whispers)",
+   "subclass_by_class": {
+    "College": "College of Whispers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Night Spirit"
+   ],
+   "assi": [
+    "K2",
+    "K3",
+    "K5",
+    "K6"
+   ],
+   "categoria_assi": "Illusionista",
+   "fonti_assi": "College of Whispers [XGE]: K2,K3,K5,K6",
+   "nucleo": "College of Whispers scelta per coprire «Illusionista» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Illusionista» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA124FF702",
+   "nome": "Circle of Dreams — Illusionista",
+   "categoria": "Illusionista",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Circle": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Symbiotic Being",
+    "Boon of Revelry"
+   ],
+   "assi": [
+    "K2",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "categoria_assi": "Illusionista",
+   "fonti_assi": "Circle of Dreams [XGE]: K2,K4,K5,K6",
+   "nucleo": "Circle of Dreams scelta per coprire «Illusionista» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Illusionista» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA124FF703",
+   "nome": "Circle of Spores — Illusionista",
+   "categoria": "Illusionista",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Spores)",
+   "subclass_by_class": {
+    "Circle": "Circle of Spores"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Night Spirit",
+    "Symbiotic Being"
+   ],
+   "assi": [
+    "K1",
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "categoria_assi": "Illusionista",
+   "fonti_assi": "Circle of Spores [TCE]: K1,K3,K4,K6",
+   "nucleo": "Circle of Spores scelta per coprire «Illusionista» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Illusionista» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA79826301",
+   "nome": "College of Whispers — Ammaliatore e manipolatore",
+   "categoria": "Ammaliatore e manipolatore",
+   "tipo": "copertura",
+   "classes": {
+    "College": 20
+   },
+   "classi": "College 20 (College of Whispers)",
+   "subclass_by_class": {
+    "College": "College of Whispers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Night Spirit"
+   ],
+   "assi": [
+    "K2",
+    "K3",
+    "K5",
+    "K6"
+   ],
+   "categoria_assi": "Ammaliatore e manipolatore",
+   "fonti_assi": "College of Whispers [XGE]: K2,K3,K5,K6",
+   "nucleo": "College of Whispers scelta per coprire «Ammaliatore e manipolatore» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Ammaliatore e manipolatore» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA79826302",
+   "nome": "Circle of Dreams — Ammaliatore e manipolatore",
+   "categoria": "Ammaliatore e manipolatore",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Circle": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Symbiotic Being",
+    "Boon of Revelry"
+   ],
+   "assi": [
+    "K2",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "categoria_assi": "Ammaliatore e manipolatore",
+   "fonti_assi": "Circle of Dreams [XGE]: K2,K4,K5,K6",
+   "nucleo": "Circle of Dreams scelta per coprire «Ammaliatore e manipolatore» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Ammaliatore e manipolatore» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA79826303",
+   "nome": "Circle of Spores — Ammaliatore e manipolatore",
+   "categoria": "Ammaliatore e manipolatore",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Spores)",
+   "subclass_by_class": {
+    "Circle": "Circle of Spores"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Night Spirit",
+    "Symbiotic Being"
+   ],
+   "assi": [
+    "K1",
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "categoria_assi": "Ammaliatore e manipolatore",
+   "fonti_assi": "Circle of Spores [TCE]: K1,K3,K4,K6",
+   "nucleo": "Circle of Spores scelta per coprire «Ammaliatore e manipolatore» (famiglia control); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Ammaliatore e manipolatore» con la famiglia control. famiglia control dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAF50E1E01",
+   "nome": "Circle of the Shepherd — Negromante",
+   "categoria": "Negromante",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of the Shepherd)",
+   "subclass_by_class": {
+    "Circle": "Circle of the Shepherd"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Charger"
+   ],
+   "assi": [
+    "S1",
+    "S2",
+    "S4",
+    "S5"
+   ],
+   "categoria_assi": "Negromante",
+   "fonti_assi": "Circle of the Shepherd [XGE]: S1,S2,S4,S5",
+   "nucleo": "Circle of the Shepherd scelta per coprire «Negromante» (famiglia summoner); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Negromante» con la famiglia summoner. famiglia summoner dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAF50E1E02",
+   "nome": "Clockwork Sorcery — Negromante",
+   "categoria": "Negromante",
+   "tipo": "copertura",
+   "classes": {
+    "Clockwork": 20
+   },
+   "classi": "Clockwork 20 (Clockwork Sorcery)",
+   "subclass_by_class": {
+    "Clockwork": "Clockwork Sorcery"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Charger"
+   ],
+   "assi": [
+    "S1",
+    "S2",
+    "S4",
+    "S5"
+   ],
+   "categoria_assi": "Negromante",
+   "fonti_assi": "Clockwork Sorcery [XPHB]: S1,S2,S4,S5",
+   "nucleo": "Clockwork Sorcery scelta per coprire «Negromante» (famiglia summoner); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Negromante» con la famiglia summoner. famiglia summoner dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GAF50E1E03",
+   "nome": "Conjurer — Negromante",
+   "categoria": "Negromante",
+   "tipo": "copertura",
+   "classes": {
+    "Conjurer": 20
+   },
+   "classi": "Conjurer 20 (Conjurer)",
+   "subclass_by_class": {
+    "Conjurer": "Conjurer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Bright Sun",
+    "Aberrant Dragonmark"
+   ],
+   "assi": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "categoria_assi": "Negromante",
+   "fonti_assi": "Conjurer [AU]: S1,S2,S3,S4",
+   "nucleo": "Conjurer scelta per coprire «Negromante» (famiglia summoner); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Negromante» con la famiglia summoner. famiglia summoner dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GACA75F501",
+   "nome": "Way of the Astral Self — Esperto di abilità",
+   "categoria": "Esperto di abilità",
+   "tipo": "copertura",
+   "classes": {
+    "Way": 20
+   },
+   "classi": "Way 20 (Way of the Astral Self)",
+   "subclass_by_class": {
+    "Way": "Way of the Astral Self"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Symbiotic Being",
+    "Arcane Eloquence"
+   ],
+   "assi": [
+    "F3",
+    "F4",
+    "F5",
+    "F6"
+   ],
+   "categoria_assi": "Esperto di abilità",
+   "fonti_assi": "Way of the Astral Self [TCE]: F3,F4,F5,F6",
+   "nucleo": "Way of the Astral Self scelta per coprire «Esperto di abilità» (famiglia face); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Esperto di abilità» con la famiglia face. famiglia face dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GACA75F502",
+   "nome": "College of Whispers — Esperto di abilità",
+   "categoria": "Esperto di abilità",
+   "tipo": "copertura",
+   "classes": {
+    "College": 20
+   },
+   "classi": "College 20 (College of Whispers)",
+   "subclass_by_class": {
+    "College": "College of Whispers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Symbiotic Being",
+    "Arcane Eloquence",
+    "Boon of Terror"
+   ],
+   "assi": [
+    "F2",
+    "F4",
+    "F6"
+   ],
+   "categoria_assi": "Esperto di abilità",
+   "fonti_assi": "College of Whispers [XGE]: F2,F4,F6",
+   "nucleo": "College of Whispers scelta per coprire «Esperto di abilità» (famiglia face); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Esperto di abilità» con la famiglia face. famiglia face dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GACA75F503",
+   "nome": "College of Creation — Esperto di abilità",
+   "categoria": "Esperto di abilità",
+   "tipo": "copertura",
+   "classes": {
+    "College": 20
+   },
+   "classi": "College 20 (College of Creation)",
+   "subclass_by_class": {
+    "College": "College of Creation"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Symbiotic Being",
+    "Arcane Eloquence"
+   ],
+   "assi": [
+    "F1",
+    "F4",
+    "F6"
+   ],
+   "categoria_assi": "Esperto di abilità",
+   "fonti_assi": "College of Creation [TCE]: F1,F4,F6",
+   "nucleo": "College of Creation scelta per coprire «Esperto di abilità» (famiglia face); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Esperto di abilità» con la famiglia face. famiglia face dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5244B501",
+   "nome": "Circle of Dreams — Esploratore",
+   "categoria": "Esploratore",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Circle": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mark of Detection"
+   ],
+   "assi": [
+    "M1",
+    "M2",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "categoria_assi": "Esploratore",
+   "fonti_assi": "Circle of Dreams [XGE]: M1,M2,M4,M5,M6",
+   "nucleo": "Circle of Dreams scelta per coprire «Esploratore» (famiglia scout); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Esploratore» con la famiglia scout. famiglia scout dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5244B502",
+   "nome": "Way of the Ascendant Dragon — Esploratore",
+   "categoria": "Esploratore",
+   "tipo": "copertura",
+   "classes": {
+    "Way": 20
+   },
+   "classi": "Way 20 (Way of the Ascendant Dragon)",
+   "subclass_by_class": {
+    "Way": "Way of the Ascendant Dragon"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mark of Shadow",
+    "Mark of Hospitality",
+    "Skulker"
+   ],
+   "assi": [
+    "M1",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "categoria_assi": "Esploratore",
+   "fonti_assi": "Way of the Ascendant Dragon [FTD]: M1,M3,M4,M5,M6",
+   "nucleo": "Way of the Ascendant Dragon scelta per coprire «Esploratore» (famiglia scout); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Esploratore» con la famiglia scout. famiglia scout dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA5244B503",
+   "nome": "Path of the World Tree — Esploratore",
+   "categoria": "Esploratore",
+   "tipo": "copertura",
+   "classes": {
+    "Path": 20
+   },
+   "classi": "Path 20 (Path of the World Tree)",
+   "subclass_by_class": {
+    "Path": "Path of the World Tree"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mark of Shadow"
+   ],
+   "assi": [
+    "M1",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "categoria_assi": "Esploratore",
+   "fonti_assi": "Path of the World Tree [XPHB]: M1,M4,M5,M6",
+   "nucleo": "Path of the World Tree scelta per coprire «Esploratore» (famiglia scout); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Esploratore» con la famiglia scout. famiglia scout dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA98469401",
+   "nome": "Circle of Dreams — Combattente a cavallo",
+   "categoria": "Combattente a cavallo",
+   "tipo": "copertura",
+   "classes": {
+    "Circle": 20
+   },
+   "classi": "Circle 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Circle": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mark of Detection"
+   ],
+   "assi": [
+    "M1",
+    "M2",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "categoria_assi": "Combattente a cavallo",
+   "fonti_assi": "Circle of Dreams [XGE]: M1,M2,M4,M5,M6",
+   "nucleo": "Circle of Dreams scelta per coprire «Combattente a cavallo» (famiglia scout); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Combattente a cavallo» con la famiglia scout. famiglia scout dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA98469402",
+   "nome": "Way of the Ascendant Dragon — Combattente a cavallo",
+   "categoria": "Combattente a cavallo",
+   "tipo": "copertura",
+   "classes": {
+    "Way": 20
+   },
+   "classi": "Way 20 (Way of the Ascendant Dragon)",
+   "subclass_by_class": {
+    "Way": "Way of the Ascendant Dragon"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mark of Shadow",
+    "Mark of Hospitality",
+    "Skulker"
+   ],
+   "assi": [
+    "M1",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "categoria_assi": "Combattente a cavallo",
+   "fonti_assi": "Way of the Ascendant Dragon [FTD]: M1,M3,M4,M5,M6",
+   "nucleo": "Way of the Ascendant Dragon scelta per coprire «Combattente a cavallo» (famiglia scout); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Combattente a cavallo» con la famiglia scout. famiglia scout dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA98469403",
+   "nome": "Path of the World Tree — Combattente a cavallo",
+   "categoria": "Combattente a cavallo",
+   "tipo": "copertura",
+   "classes": {
+    "Path": 20
+   },
+   "classi": "Path 20 (Path of the World Tree)",
+   "subclass_by_class": {
+    "Path": "Path of the World Tree"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mark of Shadow"
+   ],
+   "assi": [
+    "M1",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "categoria_assi": "Combattente a cavallo",
+   "fonti_assi": "Path of the World Tree [XPHB]: M1,M4,M5,M6",
+   "nucleo": "Path of the World Tree scelta per coprire «Combattente a cavallo» (famiglia scout); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Combattente a cavallo» con la famiglia scout. famiglia scout dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA4B28BB01",
+   "nome": "Armorer — Supporto tecnico (utility)",
+   "categoria": "Supporto tecnico (utility)",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Aberrant Dragonmark",
+    "Arcane Safeguard"
+   ],
+   "assi": [
+    "G1",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+   ],
+   "categoria_assi": "Supporto tecnico (utility)",
+   "fonti_assi": "Armorer [EFA]: G1,G3,G4,G5,G6",
+   "nucleo": "Armorer scelta per coprire «Supporto tecnico (utility)» (famiglia gish); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Supporto tecnico (utility)» con la famiglia gish. famiglia gish dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA4B28BB02",
+   "nome": "Oath of the Watchers — Supporto tecnico (utility)",
+   "categoria": "Supporto tecnico (utility)",
+   "tipo": "copertura",
+   "classes": {
+    "Oath": 20
+   },
+   "classi": "Oath 20 (Oath of the Watchers)",
+   "subclass_by_class": {
+    "Oath": "Oath of the Watchers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mythal Touched"
+   ],
+   "assi": [
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+   ],
+   "categoria_assi": "Supporto tecnico (utility)",
+   "fonti_assi": "Oath of the Watchers [TCE]: G2,G3,G4,G5,G6",
+   "nucleo": "Oath of the Watchers scelta per coprire «Supporto tecnico (utility)» (famiglia gish); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Supporto tecnico (utility)» con la famiglia gish. famiglia gish dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA4B28BB03",
+   "nome": "Bladesinging — Supporto tecnico (utility)",
+   "categoria": "Supporto tecnico (utility)",
+   "tipo": "copertura",
+   "classes": {
+    "Bladesinging": 20
+   },
+   "classi": "Bladesinging 20 (Bladesinging)",
+   "subclass_by_class": {
+    "Bladesinging": "Bladesinging"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "G1",
+    "G2",
+    "G3",
+    "G5",
+    "G6"
+   ],
+   "categoria_assi": "Supporto tecnico (utility)",
+   "fonti_assi": "Bladesinging [TCE]: G1,G2,G3,G5,G6",
+   "nucleo": "Bladesinging scelta per coprire «Supporto tecnico (utility)» (famiglia gish); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Supporto tecnico (utility)» con la famiglia gish. famiglia gish dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA66FC4C01",
+   "nome": "Armorer — Specialista multiclasse",
+   "categoria": "Specialista multiclasse",
+   "tipo": "copertura",
+   "classes": {
+    "Armorer": 20
+   },
+   "classi": "Armorer 20 (Armorer)",
+   "subclass_by_class": {
+    "Armorer": "Armorer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Aberrant Dragonmark",
+    "Arcane Safeguard"
+   ],
+   "assi": [
+    "G1",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+   ],
+   "categoria_assi": "Specialista multiclasse",
+   "fonti_assi": "Armorer [EFA]: G1,G3,G4,G5,G6",
+   "nucleo": "Armorer scelta per coprire «Specialista multiclasse» (famiglia gish); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Specialista multiclasse» con la famiglia gish. famiglia gish dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA66FC4C02",
+   "nome": "Oath of the Watchers — Specialista multiclasse",
+   "categoria": "Specialista multiclasse",
+   "tipo": "copertura",
+   "classes": {
+    "Oath": 20
+   },
+   "classi": "Oath 20 (Oath of the Watchers)",
+   "subclass_by_class": {
+    "Oath": "Oath of the Watchers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Mythal Touched"
+   ],
+   "assi": [
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6"
+   ],
+   "categoria_assi": "Specialista multiclasse",
+   "fonti_assi": "Oath of the Watchers [TCE]: G2,G3,G4,G5,G6",
+   "nucleo": "Oath of the Watchers scelta per coprire «Specialista multiclasse» (famiglia gish); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Specialista multiclasse» con la famiglia gish. famiglia gish dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "GA66FC4C03",
+   "nome": "Bladesinging — Specialista multiclasse",
+   "categoria": "Specialista multiclasse",
+   "tipo": "copertura",
+   "classes": {
+    "Bladesinging": 20
+   },
+   "classi": "Bladesinging 20 (Bladesinging)",
+   "subclass_by_class": {
+    "Bladesinging": "Bladesinging"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "G1",
+    "G2",
+    "G3",
+    "G5",
+    "G6"
+   ],
+   "categoria_assi": "Specialista multiclasse",
+   "fonti_assi": "Bladesinging [TCE]: G1,G2,G3,G5,G6",
+   "nucleo": "Bladesinging scelta per coprire «Specialista multiclasse» (famiglia gish); talenti complementari sugli assi mancanti",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la categoria «Specialista multiclasse» con la famiglia gish. famiglia gish dal testo",
+   "nota_provenienza": "Generata per COPERTURA DI CATEGORIA: la famiglia e' del ruolo, la categoria e' il bersaglio.",
+   "novita_docs": 0,
+   "novita_status": "copertura di categoria",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "copertura",
+   "features": []
+  },
+  {
+   "id": "HEA01",
+   "nome": "School of Transmutation — Guaritore",
+   "categoria": "Guaritore",
+   "tipo": "assi",
+   "classes": {
+    "Wizard": 20
+   },
+   "classi": "Wizard 20 (School of Transmutation)",
+   "subclass_by_class": {
+    "Wizard": "School of Transmutation"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Abjuration Adept",
+    "Chef",
+    "Chef"
+   ],
+   "assi": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+   ],
+   "fonti_assi": "School of Transmutation [PHB]: H1,H2,H3,H4 | talenti: Abjuration Adept[AU], Chef[TCE], Chef[XPHB]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno due fra H1, H2, H3, H4, H5. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "HEA02",
+   "nome": "Grave Domain — Guaritore",
+   "categoria": "Guaritore",
+   "tipo": "assi",
+   "classes": {
+    "Cleric": 20
+   },
+   "classi": "Cleric 20 (Grave Domain)",
+   "subclass_by_class": {
+    "Cleric": "Grave Domain"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5"
+   ],
+   "fonti_assi": "Grave Domain [RHW]: H1,H3,H5 | talenti: Abjuration Adept[AU], Chef[TCE], Chef[XPHB], Aberrant Dragonmark[EFA]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno due fra H1, H2, H3, H4, H5. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "HEA03",
+   "nome": "Order of the Immortal — Guaritore",
+   "categoria": "Guaritore",
+   "tipo": "assi",
+   "classes": {
+    "Wizard": 20
+   },
+   "classi": "Wizard 20 (Order of the Immortal)",
+   "subclass_by_class": {
+    "Wizard": "Order of the Immortal"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Abjuration Adept",
+    "Chef",
+    "Chef",
+    "Gift of the Metallic Dragon"
+   ],
+   "assi": [
+    "H1",
+    "H2",
+    "H4",
+    "H5"
+   ],
+   "fonti_assi": "Order of the Immortal [UATheMysticClass]: H1,H2,H5 | talenti: Abjuration Adept[AU], Chef[TCE], Chef[XPHB], Gift of the Metallic Dragon[FTD]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno due fra H1, H2, H3, H4, H5. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "HEA04",
+   "nome": "Shadow Magic — Guaritore",
+   "categoria": "Guaritore",
+   "tipo": "assi",
+   "classes": {
+    "Wizard": 20
+   },
+   "classi": "Wizard 20 (Shadow Magic)",
+   "subclass_by_class": {
+    "Wizard": "Shadow Magic"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Healer"
+   ],
+   "assi": [
+    "H1",
+    "H2",
+    "H3",
+    "H4"
+   ],
+   "fonti_assi": "Shadow Magic [XGE]: H1,H2,H4 | talenti: Healer[PHB]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno due fra H1, H2, H3, H4, H5. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SUA01",
+   "nome": "Circle of the Shepherd — Evocatore",
+   "categoria": "Evocatore (summoner)",
+   "tipo": "assi",
+   "classes": {
+    "Druid": 20
+   },
+   "classi": "Druid 20 (Circle of the Shepherd)",
+   "subclass_by_class": {
+    "Druid": "Circle of the Shepherd"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "fonti_assi": "Circle of the Shepherd [XGE]: S1,S2,S4,S5 | talenti: Transmutation Adept[AU], Adept of the Black Robes[DSotDQ], Charger[XPHB], Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: copre S2. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SUA02",
+   "nome": "Clockwork Sorcery — Evocatore",
+   "categoria": "Evocatore (summoner)",
+   "tipo": "assi",
+   "classes": {
+    "Sorcerer": 20
+   },
+   "classi": "Sorcerer 20 (Clockwork Sorcery)",
+   "subclass_by_class": {
+    "Sorcerer": "Clockwork Sorcery"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "fonti_assi": "Clockwork Sorcery [XPHB]: S1,S2,S4,S5 | talenti: Transmutation Adept[AU], Adept of the Black Robes[DSotDQ], Charger[XPHB], Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: copre S2. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SUA03",
+   "nome": "Conjurer — Evocatore",
+   "categoria": "Evocatore (summoner)",
+   "tipo": "assi",
+   "classes": {
+    "Wizard": 20
+   },
+   "classi": "Wizard 20 (Conjurer)",
+   "subclass_by_class": {
+    "Wizard": "Conjurer"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [
+    "Boon of the Bright Sun",
+    "Transmutation Adept",
+    "Aberrant Dragonmark"
+   ],
+   "assi": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "fonti_assi": "Conjurer [AU]: S1,S2,S3,S4 | talenti: Boon of the Bright Sun[FRHoF], Transmutation Adept[AU], Aberrant Dragonmark[ERLW], Otherworldly Familiar[AU]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: copre S2. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SUA04",
+   "nome": "Clockwork Soul — Evocatore",
+   "categoria": "Evocatore (summoner)",
+   "tipo": "assi",
+   "classes": {
+    "Sorcerer": 20
+   },
+   "classi": "Sorcerer 20 (Clockwork Soul)",
+   "subclass_by_class": {
+    "Sorcerer": "Clockwork Soul"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "fonti_assi": "Clockwork Soul [TCE]: S1,S4,S5 | talenti: Boon of the Bright Sun[FRHoF], Transmutation Adept[AU], Adept of the Black Robes[DSotDQ], Boon of Misty Escape[ABH]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: copre S5. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "FAA01",
+   "nome": "Way of the Astral Self — Volto sociale",
+   "categoria": "Volto sociale (negoziatore)",
+   "tipo": "assi",
+   "classes": {
+    "Monk": 20
+   },
+   "classi": "Monk 20 (Way of the Astral Self)",
+   "subclass_by_class": {
+    "Monk": "Way of the Astral Self"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6"
+   ],
+   "fonti_assi": "Way of the Astral Self [TCE]: F3,F4,F5,F6 | talenti: Symbiotic Being[RHW], Arcane Eloquence[AU], Actor[PHB], Actor[XPHB]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: una via sociale + lettura/economia. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "FAA02",
+   "nome": "College of Creation — Volto sociale",
+   "categoria": "Volto sociale (negoziatore)",
+   "tipo": "assi",
+   "classes": {
+    "Bard": 20
+   },
+   "classi": "Bard 20 (College of Creation)",
+   "subclass_by_class": {
+    "Bard": "College of Creation"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F6"
+   ],
+   "fonti_assi": "College of Creation [TCE]: F1,F4,F6 | talenti: Symbiotic Being[RHW], Arcane Eloquence[AU], Actor[PHB], Actor[XPHB]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: una via sociale + lettura/economia. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "FAA03",
+   "nome": "College of Eloquence — Volto sociale",
+   "categoria": "Volto sociale (negoziatore)",
+   "tipo": "assi",
+   "classes": {
+    "Bard": 20
+   },
+   "classi": "Bard 20 (College of Eloquence)",
+   "subclass_by_class": {
+    "Bard": "College of Eloquence"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F6"
+   ],
+   "fonti_assi": "College of Eloquence [TCE]: F1,F4,F6 | talenti: Symbiotic Being[RHW], Arcane Eloquence[AU], Actor[PHB], Actor[XPHB]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: una via sociale + lettura/economia. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "FAA04",
+   "nome": "College of Whispers — Volto sociale",
+   "categoria": "Volto sociale (negoziatore)",
+   "tipo": "assi",
+   "classes": {
+    "Bard": 20
+   },
+   "classi": "Bard 20 (College of Whispers)",
+   "subclass_by_class": {
+    "Bard": "College of Whispers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F6"
+   ],
+   "fonti_assi": "College of Whispers [XGE]: F2,F4,F6 | talenti: Symbiotic Being[RHW], Arcane Eloquence[AU], Boon of Terror[FRHoF], Purple Dragon Rook[FRHoF]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: una via sociale + lettura/economia. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "DPA01",
+   "nome": "Battle Smith — Danno",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "assi",
+   "classes": {
+    "Artificer": 20
+   },
+   "classi": "Artificer 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Artificer": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "fonti_assi": "Battle Smith [TCE]: D1,D2,D4,D5,D6 | talenti: Agent of Order[SatO], Charger[XPHB], Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno tre fra D2, D3, D4, D5, D6. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "DPA02",
+   "nome": "Battle Smith — Danno",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "assi",
+   "classes": {
+    "Artificer": 20
+   },
+   "classi": "Artificer 20 (Battle Smith)",
+   "subclass_by_class": {
+    "Artificer": "Battle Smith"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "fonti_assi": "Battle Smith [EFA]: D1,D2,D4,D5,D6 | talenti: Agent of Order[SatO], Charger[XPHB], Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno tre fra D2, D3, D4, D5, D6. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "DPA03",
+   "nome": "Way of the Astral Self — Danno",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "assi",
+   "classes": {
+    "Monk": 20
+   },
+   "classi": "Monk 20 (Way of the Astral Self)",
+   "subclass_by_class": {
+    "Monk": "Way of the Astral Self"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "fonti_assi": "Way of the Astral Self [TCE]: D1,D2,D4,D5,D6 | talenti: Agent of Order[SatO], Charger[XPHB], Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno tre fra D2, D3, D4, D5, D6. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "DPA04",
+   "nome": "Beast Master — Danno",
+   "categoria": "DPS — danno a bersaglio singolo",
+   "tipo": "assi",
+   "classes": {
+    "Ranger": 20
+   },
+   "classi": "Ranger 20 (Beast Master)",
+   "subclass_by_class": {
+    "Ranger": "Beast Master"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "D6"
+   ],
+   "fonti_assi": "Beast Master [PHB]: D1,D2,D4,D6 | talenti: Agent of Order[SatO], Charger[XPHB], Keenness of the Stone Giant[BGG], Quicksmithing[PSK]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: almeno tre fra D2, D3, D4, D5, D6. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "COA01",
+   "nome": "College of Whispers — Controllo",
+   "categoria": "Battlefield Controller",
+   "tipo": "assi",
+   "classes": {
+    "Bard": 20
+   },
+   "classi": "Bard 20 (College of Whispers)",
+   "subclass_by_class": {
+    "Bard": "College of Whispers"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "fonti_assi": "College of Whispers [XGE]: K2,K3,K5,K6 | talenti: Boon of the Night Spirit[XPHB], Lordly Resolve[FRHoF], Rune Shaper[BGG], Boon of the Bright Sun[FRHoF]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia control confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "COA02",
+   "nome": "Circle of Dreams — Controllo",
+   "categoria": "Battlefield Controller",
+   "tipo": "assi",
+   "classes": {
+    "Druid": 20
+   },
+   "classi": "Druid 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Druid": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "fonti_assi": "Circle of Dreams [XGE]: K2,K4,K5,K6 | talenti: Lordly Resolve[FRHoF], Symbiotic Being[RHW], Boon of Revelry[FRHoF], Boon of the Bright Sun[FRHoF]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia control confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "COA03",
+   "nome": "Circle of Spores — Controllo",
+   "categoria": "Battlefield Controller",
+   "tipo": "assi",
+   "classes": {
+    "Druid": 20
+   },
+   "classi": "Druid 20 (Circle of Spores)",
+   "subclass_by_class": {
+    "Druid": "Circle of Spores"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "fonti_assi": "Circle of Spores [TCE]: K1,K3,K4,K6 | talenti: Boon of the Night Spirit[XPHB], Rune Shaper[BGG], Symbiotic Being[RHW], Actor[XPHB]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia control confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "COA04",
+   "nome": "Way of the Astral Self — Controllo",
+   "categoria": "Battlefield Controller",
+   "tipo": "assi",
+   "classes": {
+    "Monk": 20
+   },
+   "classi": "Monk 20 (Way of the Astral Self)",
+   "subclass_by_class": {
+    "Monk": "Way of the Astral Self"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "fonti_assi": "Way of the Astral Self [TCE]: K1,K2,K4,K6 | talenti: Lordly Resolve[FRHoF], Symbiotic Being[RHW], Boon of Magic School Mastery[AU], Boon of Revelry[FRHoF]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia control confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SCA01",
+   "nome": "Circle of Dreams — Esplorazione",
+   "categoria": "Esploratore",
+   "tipo": "assi",
+   "classes": {
+    "Druid": 20
+   },
+   "classi": "Druid 20 (Circle of Dreams)",
+   "subclass_by_class": {
+    "Druid": "Circle of Dreams"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "fonti_assi": "Circle of Dreams [XGE]: M1,M2,M4,M5,M6 | talenti: Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia scout confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SCA02",
+   "nome": "Way of the Ascendant Dragon — Esplorazione",
+   "categoria": "Esploratore",
+   "tipo": "assi",
+   "classes": {
+    "Monk": 20
+   },
+   "classi": "Monk 20 (Way of the Ascendant Dragon)",
+   "subclass_by_class": {
+    "Monk": "Way of the Ascendant Dragon"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "fonti_assi": "Way of the Ascendant Dragon [FTD]: M1,M3,M4,M5,M6 | talenti: Mark of Shadow[EFA]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia scout confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SCA03",
+   "nome": "Path of the World Tree — Esplorazione",
+   "categoria": "Esploratore",
+   "tipo": "assi",
+   "classes": {
+    "Barbarian": 20
+   },
+   "classi": "Barbarian 20 (Path of the World Tree)",
+   "subclass_by_class": {
+    "Barbarian": "Path of the World Tree"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "fonti_assi": "Path of the World Tree [XPHB]: M1,M4,M5,M6 | talenti: Keenness of the Stone Giant[BGG], Mark of Shadow[EFA]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia scout confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  },
+  {
+   "id": "SCA04",
+   "nome": "Trickery Domain — Esplorazione",
+   "categoria": "Esploratore",
+   "tipo": "assi",
+   "classes": {
+    "Cleric": 20
+   },
+   "classi": "Cleric 20 (Trickery Domain)",
+   "subclass_by_class": {
+    "Cleric": "Trickery Domain"
+   },
+   "specie": "Human",
+   "race": "Human",
+   "background": "Sage",
+   "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 16,
+    "cha": 12
+   },
+   "feats": [],
+   "assi": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+   ],
+   "fonti_assi": "Trickery Domain [XPHB]: M1,M2,M5,M6 | talenti: Fairy Trickster[FRHoF], Mist Walker[RHW], Boon of Siberys[EFA], Keenness of the Stone Giant[BGG]",
+   "nucleo": "",
+   "non_concentrazione": "da verificare per incantesimo (dichiarato)",
+   "strategia": "Copre la meccanica di ruolo oltre a quella piu' ovvia: famiglia scout confermata dal testo. Talenti scelti per complementarita' sugli assi mancanti, non per ripetizione.",
+   "nota_provenienza": "Generata dagli assi misurati (tools/role_axes.py): le sorgenti sono AMMISSIBILI per il ruolo, la complementarita' degli assi e' dichiarata.",
+   "novita_docs": 0,
+   "novita_status": "generata dagli assi",
+   "novita_esterna": "",
+   "novita_originaria": 0,
+   "novita_ricorpus": 0,
+   "piazzamento": "asse-based",
+   "features": []
+  }
+ ],
+ "riassegnazione": [
+  {
+   "id": "B01",
+   "nome": "Ombra della Selva",
+   "categoria_originale": "Scout/stealth",
+   "categoria_assi": "Scout/stealth",
+   "ruolo_assi": "furtivita",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "7 famiglie ammissibili dal testo: control, dps, face, gish, healer, scout, summoner",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B02",
+   "nome": "Araldo delle Due Voci",
+   "categoria_originale": "Leader di gruppo",
+   "categoria_assi": "Volto sociale (negoziatore)",
+   "ruolo_assi": "face",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "famiglia dichiarata face confermata dal testo",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B03",
+   "nome": "Il Carapace che Ride",
+   "categoria_originale": "Tank (EHP per giornata)",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "taunter",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "7 famiglie ammissibili dal testo: control, dps, face, gish, healer, scout, summoner",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B04",
+   "nome": "La Mano che non Molla",
+   "categoria_originale": "Grappler/lockdown",
+   "categoria_assi": "Lottatore e controllo fisico",
+   "ruolo_assi": "esplicita",
+   "famiglie": [],
+   "motivo": "assegnazione esplicita (rispettata)",
+   "disaccordo": "",
+   "cambiata": true,
+   "esplicita": true
+  },
+  {
+   "id": "B05",
+   "nome": "Il Primo Sangue",
+   "categoria_originale": "Reattivita/velocita",
+   "categoria_assi": "Furtività e infiltrazione",
+   "ruolo_assi": "esplicita",
+   "famiglie": [],
+   "motivo": "assegnazione esplicita (rispettata)",
+   "disaccordo": "",
+   "cambiata": true,
+   "esplicita": true
+  },
+  {
+   "id": "B06",
+   "nome": "Il Congegno che Corregge",
+   "categoria_originale": "Support (buff di gruppo)",
+   "categoria_assi": "Guaritore",
+   "ruolo_assi": "healer",
+   "famiglie": [
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "famiglia dichiarata healer confermata dal testo",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B07",
+   "nome": "Il Terrore che non Corre",
+   "categoria_originale": "Battlefield controller",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "taunter",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout"
+   ],
+   "motivo": "6 famiglie ammissibili dal testo: control, dps, face, gish, healer, scout",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B08",
+   "nome": "Colui che non Cade",
+   "categoria_originale": "Survivor (senza risorse)",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "taunter",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "7 famiglie ammissibili dal testo: control, dps, face, gish, healer, scout, summoner",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B09",
+   "nome": "La Voce che Convince",
+   "categoria_originale": "Face (sociale)",
+   "categoria_assi": "Volto sociale (negoziatore)",
+   "ruolo_assi": "face",
+   "famiglie": [
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "famiglia dichiarata face confermata dal testo",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B10",
+   "nome": "Paladino Zhentarim",
+   "categoria_originale": "Danno (DPR) - NON top-5",
+   "categoria_assi": "Danno (DPR) - NON top-5",
+   "ruolo_assi": "danno",
+   "famiglie": [
+    "dps",
+    "gish",
+    "scout"
+   ],
+   "motivo": "3 famiglie ammissibili dal testo: dps, gish, scout",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B11",
+   "nome": "Il Duellante che non Ti Molla",
+   "categoria_originale": "Taunter (aggro forzata)",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "taunter",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "scout"
+   ],
+   "motivo": "5 famiglie ammissibili dal testo: control, dps, face, gish, scout",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B12",
+   "nome": "Il Sogno che Cura",
+   "categoria_originale": "Healer (PF ripristinati)",
+   "categoria_assi": "Guaritore",
+   "ruolo_assi": "healer",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "famiglia dichiarata healer confermata dal testo",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B13",
+   "nome": "Il Cavaliere del Drago",
+   "categoria_originale": "Summoner (corpi controllati)",
+   "categoria_assi": "Evocatore (summoner)",
+   "ruolo_assi": "summoner",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "famiglia dichiarata summoner confermata dal testo",
+   "disaccordo": "",
+   "cambiata": true
+  },
+  {
+   "id": "B14",
+   "nome": "L'Incendio che Cammina",
+   "categoria_originale": "Piu distruttivo AoE",
+   "categoria_assi": "Piu distruttivo AoE",
+   "ruolo_assi": "danno",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "healer",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "7 famiglie ammissibili dal testo: control, dps, face, gish, healer, scout, summoner",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B15",
+   "nome": "Il Sigillo di Drow",
+   "categoria_originale": "Anti-caster",
+   "categoria_assi": "Battlefield Controller",
+   "ruolo_assi": "esplicita",
+   "famiglie": [],
+   "motivo": "assegnazione esplicita (rispettata)",
+   "disaccordo": "",
+   "cambiata": true,
+   "esplicita": true
+  },
+  {
+   "id": "B16",
+   "nome": "Il Libro che Cambia Pelle",
+   "categoria_originale": "Ritual / utility caster",
+   "categoria_assi": "Ritual / utility caster",
+   "ruolo_assi": "utility",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "6 famiglie ammissibili dal testo: control, dps, face, gish, scout, summoner",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B17",
+   "nome": "Il Fuoco che non si Resiste",
+   "categoria_originale": "Efficienza risorse (danno/slot)",
+   "categoria_assi": "Efficienza risorse (danno/slot)",
+   "ruolo_assi": "danno",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "6 famiglie ammissibili dal testo: control, dps, face, gish, scout, summoner",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B18",
+   "nome": "Il Gigante che Lancia Raggi",
+   "categoria_originale": "Danno (DPR sostenuto)",
+   "categoria_assi": "Danno (DPR sostenuto)",
+   "ruolo_assi": "danno",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "6 famiglie ammissibili dal testo: control, dps, face, gish, scout, summoner",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B19",
+   "nome": "L'Occhio che Deduce",
+   "categoria_originale": "Skill monkey",
+   "categoria_assi": "Skill monkey",
+   "ruolo_assi": "utility",
+   "famiglie": [
+    "control",
+    "dps",
+    "face",
+    "gish",
+    "scout",
+    "summoner"
+   ],
+   "motivo": "6 famiglie ammissibili dal testo: control, dps, face, gish, scout, summoner",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "B20",
+   "nome": "Il Passo di Fey",
+   "categoria_originale": "Piu mobilita (tattica)",
+   "categoria_assi": "Schermagliatore mobile",
+   "ruolo_assi": "esplicita",
+   "famiglie": [],
+   "motivo": "assegnazione esplicita (rispettata)",
+   "disaccordo": "",
+   "cambiata": true,
+   "esplicita": true
+  },
+  {
+   "id": "B21",
+   "nome": "Il Critico dell'Alleanza",
+   "categoria_originale": "One-shotter (colpo singolo)",
+   "categoria_assi": "Danno esplosivo (nova)",
+   "ruolo_assi": "esplicita",
+   "famiglie": [],
+   "motivo": "assegnazione esplicita (rispettata)",
+   "disaccordo": "",
+   "cambiata": true,
+   "esplicita": true
+  },
+  {
+   "id": "T01",
+   "nome": "Il Custode che non Lascia Andare",
+   "categoria_originale": "Tank — difensore",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "T02",
+   "nome": "La Marea che Tira Dentro",
+   "categoria_originale": "Battlefield Controller",
+   "categoria_assi": "Battlefield Controller",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "T03",
+   "nome": "Le Mani che Chiudono il Cerchio",
+   "categoria_originale": "Lottatore e controllo fisico",
+   "categoria_assi": "Lottatore e controllo fisico",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "TP01",
+   "nome": "Il Paracolpo — Taunter puro rediretto",
+   "categoria_originale": "Tank — difensore",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "TP02",
+   "nome": "L'Ultimate Taunter — il Paracolpo Assoluto",
+   "categoria_originale": "Tank — difensore",
+   "categoria_assi": "Tank — difensore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "MT01",
+   "nome": "Il Fabbro della Carne — Trasmutatore da mischia",
+   "categoria_originale": "Gish — lama e magia",
+   "categoria_assi": "Gish — lama e magia",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "DD001",
+   "nome": "Bard Class Guide for Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD002",
+   "nome": "2024 Paladin Subclass Tier Ranking for D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD003",
+   "nome": "The Best Paladin Spells in Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD004",
+   "nome": "How to Build a Paladin Sorcerer Multiclass in Dungeons and D (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD005",
+   "nome": "Sorcerer Class Guide D&D 5.5 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD006",
+   "nome": "Paladin Subclass Tier Ranking (Part 2) In Dungeons and Drago (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD007",
+   "nome": "Our Top Warlock Spells in Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD008",
+   "nome": "Wizard Subclass Tier Rankings (Part 4) in Dungeons and Drago (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD009",
+   "nome": "Sorcerer Subclass Tier Ranking (Part 2) In Dungeons and Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD010",
+   "nome": "How to Build a Battle Master Fighter (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD011",
+   "nome": "Cleric Subclass Tier Ranking (Part 3) in Dungeons and Dragon (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD012",
+   "nome": "Bard Subclass tier Ranking (Part 2) In Dungeons and Dragons  (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD013",
+   "nome": "Paladin Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD014",
+   "nome": "Wizard Subclass Tier Ranking in D&D 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD015",
+   "nome": "The Best Battlemaster Fighter Maneuvers in Dungeons and Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD016",
+   "nome": "It Took Us 2 HOURS to Pick the Best DRUID Spells in D&D 5.5 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD017",
+   "nome": "Our Top Sorcerer Spells in Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD018",
+   "nome": "Fighter Subclass Tier Ranking (Part 1) for Dungeons and Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD019",
+   "nome": "Ranger Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD020",
+   "nome": "Rogue Subclass Tier Ranking (Part 2) in Dungeons and Dragons (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD021",
+   "nome": "Barbarian Subclass Tier Ranking (Part 2) in Dungeons and Dra (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD022",
+   "nome": "Druid Subclass Tier Ranking in Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD023",
+   "nome": "Fighter Subclass Tier Rankings (Part 3) In Dungeons and Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD024",
+   "nome": "Barbarian Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD025",
+   "nome": "Barbarian Subclass Tier Ranking for D&D 5e 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD026",
+   "nome": "Our Top 10 Warlock Invocations in Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD027",
+   "nome": "2024 Warlock Subclass Tier Ranking in D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD028",
+   "nome": "Fighter Subclass Tier Ranking (Part 2) for Dungeons And Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD029",
+   "nome": "Rogue Subclass Tier Ranking (Part 1) in Dungeons and Dragons (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD030",
+   "nome": "Wizard Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD031",
+   "nome": "Fiendish Fury! Barbarian - Warlock Multiclass Build Guide. (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD032",
+   "nome": "2024 Sorcerer Subclass Tier Ranking for D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD033",
+   "nome": "Monk Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD034",
+   "nome": "Druid Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD035",
+   "nome": "Ranger Subclass Tier Rankings for Dungeons and Dragons 5e (P (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD036",
+   "nome": "The Most Underrated Wizard Spells in D&D 5.5 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD037",
+   "nome": "Barbarian Subclass Tier Rankings in Dungeons & Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD038",
+   "nome": "Cleric Subclass Tier Ranking (Part 2 of 2) In Dungeons and D (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD039",
+   "nome": "Our Top Artificer Spells in Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD040",
+   "nome": "Monk Subclass Tier Ranking (Part 1) in Dungeons and Dragons  (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD041",
+   "nome": "Druid Class Guide for Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD042",
+   "nome": "2024 Ranger Subclass tier Ranking in D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD043",
+   "nome": "The Strongest Sorcerer Spells For Every Level (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD044",
+   "nome": "Sorcerer Subclass Tier Ranking in D&D 5e (Part 1) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD045",
+   "nome": "Paladin Subclass Tier Ranking (Part 3) in D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD046",
+   "nome": "Rogue Subclass tier Ranking for D&D 5e 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD047",
+   "nome": "Warlock Class Guide for Dungeons and Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD048",
+   "nome": "Fighter Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD049",
+   "nome": "2024 Druid Subclass Tier Rankings for D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD050",
+   "nome": "Cleric Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD051",
+   "nome": "Rogue Subclass Tier Ranking (Part 3) In Dungeons and Dragons (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD052",
+   "nome": "How To Build a Bladesinger Wizard (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD053",
+   "nome": "Artificer Subclass Tier Rankings in D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD054",
+   "nome": "Fighter Subclass Tier Rankings for the PHB 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD055",
+   "nome": "2024 Bard Subclass Tier Ranking for D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD056",
+   "nome": "Artificer Class Guide for Dungeons & Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD057",
+   "nome": "Sorcerer Subclass tier Ranking (Part 3) in Dungeons and Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD058",
+   "nome": "The Best Ranger Spells In D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD059",
+   "nome": "Ranger Subclass Tier Ranking (Part 3) In D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD060",
+   "nome": "Artificer Subclass Tier Ranking for D&D 5e 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD061",
+   "nome": "Bard Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD062",
+   "nome": "The Best Druid Wild Shapes in D&D 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD063",
+   "nome": "Ranger Subclass Tier Ranking (Part 2) In Dungeons and Dragon (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD064",
+   "nome": "Monk Subclass Tier Ranking (Part 3) in Dungeons and Dragons  (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD065",
+   "nome": "Wizard Subclass Tier Ranking (Part 2) for Dungeons and Drago (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD066",
+   "nome": "Warlock Subclass Tier Ranking (Part 3) In Dungeons & Dragons (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD067",
+   "nome": "Cleric Subclass Tier Ranking (Part 1 of 2) in Dungeons & Dra (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD068",
+   "nome": "Bard Subclass Tier Ranking in Dungeons & Dragons 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD069",
+   "nome": "2024 Monk Subclass tier Ranking in D&D 5e (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD070",
+   "nome": "Monk Subclass Tier Ranking (Part 2) In Dungeons And Dragons  (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD071",
+   "nome": "Warlock Subclass Tier Rankings (Part 2) In Dungeons and Drag (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD072",
+   "nome": "Wizard Subclass Tier Ranking (Part 3) in Dungeons and Dragon (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD073",
+   "nome": "Druid Subclass Tier Ranking (Part 2) In Dungeons and Dragons (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD074",
+   "nome": "Paladin Subclass Tier Ranking (Part 1) In Dungeons and Drago (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD075",
+   "nome": "Rogue Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD076",
+   "nome": "Artificer Class Guide (D&D 5.5) (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD077",
+   "nome": "Cleric Subclass Tier Ranking in D&D 2024 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD078",
+   "nome": "Warlock Class Guide D&D 5.5 (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD079",
+   "nome": "Wizard Subclass Tier Ranking (Part 1) In Dungeons and Dragon (dungeondudes)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "DD080",
+   "nome": "This is the Worst Bard Subclass (so I fixed it) (pointyhat)",
+   "categoria_originale": "build del canale",
+   "categoria_assi": "build del canale",
+   "ruolo_assi": null,
+   "famiglie": [],
+   "motivo": "",
+   "disaccordo": "",
+   "cambiata": false
+  },
+  {
+   "id": "GA814A1C01",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA814A1C02",
+   "nome": "Armorer — DPS — danno a bersaglio singolo",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA814A1C03",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5308F601",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "categoria_originale": "Blaster ad area (AOE)",
+   "categoria_assi": "Blaster ad area (AOE)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5308F602",
+   "nome": "Armorer — Blaster ad area (AOE)",
+   "categoria_originale": "Blaster ad area (AOE)",
+   "categoria_assi": "Blaster ad area (AOE)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5308F603",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "categoria_originale": "Blaster ad area (AOE)",
+   "categoria_assi": "Blaster ad area (AOE)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA78B13301",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "categoria_originale": "Tiratore (ranged)",
+   "categoria_assi": "Tiratore (ranged)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA78B13302",
+   "nome": "Armorer — Tiratore (ranged)",
+   "categoria_originale": "Tiratore (ranged)",
+   "categoria_assi": "Tiratore (ranged)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA78B13303",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "categoria_originale": "Tiratore (ranged)",
+   "categoria_assi": "Tiratore (ranged)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GABADF7701",
+   "nome": "Battle Smith — Combattente in mischia",
+   "categoria_originale": "Combattente in mischia",
+   "categoria_assi": "Combattente in mischia",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GABADF7702",
+   "nome": "Armorer — Combattente in mischia",
+   "categoria_originale": "Combattente in mischia",
+   "categoria_assi": "Combattente in mischia",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GABADF7703",
+   "nome": "Battle Smith — Combattente in mischia",
+   "categoria_originale": "Combattente in mischia",
+   "categoria_assi": "Combattente in mischia",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5BA7F901",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "categoria_originale": "Duellante (uno contro uno)",
+   "categoria_assi": "Duellante (uno contro uno)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5BA7F902",
+   "nome": "Armorer — Duellante (uno contro uno)",
+   "categoria_originale": "Duellante (uno contro uno)",
+   "categoria_assi": "Duellante (uno contro uno)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5BA7F903",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "categoria_originale": "Duellante (uno contro uno)",
+   "categoria_assi": "Duellante (uno contro uno)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAF3CF0301",
+   "nome": "School of Transmutation — Supporto e potenziamenti",
+   "categoria_originale": "Supporto e potenziamenti",
+   "categoria_assi": "Supporto e potenziamenti",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAF3CF0302",
+   "nome": "Grave Domain — Supporto e potenziamenti",
+   "categoria_originale": "Supporto e potenziamenti",
+   "categoria_assi": "Supporto e potenziamenti",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAF3CF0303",
+   "nome": "Order of the Immortal — Supporto e potenziamenti",
+   "categoria_originale": "Supporto e potenziamenti",
+   "categoria_assi": "Supporto e potenziamenti",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA8D352A01",
+   "nome": "School of Transmutation — Protettore del gruppo",
+   "categoria_originale": "Protettore del gruppo",
+   "categoria_assi": "Protettore del gruppo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA8D352A02",
+   "nome": "Grave Domain — Protettore del gruppo",
+   "categoria_originale": "Protettore del gruppo",
+   "categoria_assi": "Protettore del gruppo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA8D352A03",
+   "nome": "Order of the Immortal — Protettore del gruppo",
+   "categoria_originale": "Protettore del gruppo",
+   "categoria_assi": "Protettore del gruppo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAAB808001",
+   "nome": "College of Whispers — Indebolimento (debuff)",
+   "categoria_originale": "Indebolimento (debuff)",
+   "categoria_assi": "Indebolimento (debuff)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAAB808002",
+   "nome": "Circle of Dreams — Indebolimento (debuff)",
+   "categoria_originale": "Indebolimento (debuff)",
+   "categoria_assi": "Indebolimento (debuff)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAAB808003",
+   "nome": "Circle of Spores — Indebolimento (debuff)",
+   "categoria_originale": "Indebolimento (debuff)",
+   "categoria_assi": "Indebolimento (debuff)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA124FF701",
+   "nome": "College of Whispers — Illusionista",
+   "categoria_originale": "Illusionista",
+   "categoria_assi": "Illusionista",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA124FF702",
+   "nome": "Circle of Dreams — Illusionista",
+   "categoria_originale": "Illusionista",
+   "categoria_assi": "Illusionista",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA124FF703",
+   "nome": "Circle of Spores — Illusionista",
+   "categoria_originale": "Illusionista",
+   "categoria_assi": "Illusionista",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA79826301",
+   "nome": "College of Whispers — Ammaliatore e manipolatore",
+   "categoria_originale": "Ammaliatore e manipolatore",
+   "categoria_assi": "Ammaliatore e manipolatore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA79826302",
+   "nome": "Circle of Dreams — Ammaliatore e manipolatore",
+   "categoria_originale": "Ammaliatore e manipolatore",
+   "categoria_assi": "Ammaliatore e manipolatore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA79826303",
+   "nome": "Circle of Spores — Ammaliatore e manipolatore",
+   "categoria_originale": "Ammaliatore e manipolatore",
+   "categoria_assi": "Ammaliatore e manipolatore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAF50E1E01",
+   "nome": "Circle of the Shepherd — Negromante",
+   "categoria_originale": "Negromante",
+   "categoria_assi": "Negromante",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAF50E1E02",
+   "nome": "Clockwork Sorcery — Negromante",
+   "categoria_originale": "Negromante",
+   "categoria_assi": "Negromante",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GAF50E1E03",
+   "nome": "Conjurer — Negromante",
+   "categoria_originale": "Negromante",
+   "categoria_assi": "Negromante",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GACA75F501",
+   "nome": "Way of the Astral Self — Esperto di abilità",
+   "categoria_originale": "Esperto di abilità",
+   "categoria_assi": "Esperto di abilità",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GACA75F502",
+   "nome": "College of Whispers — Esperto di abilità",
+   "categoria_originale": "Esperto di abilità",
+   "categoria_assi": "Esperto di abilità",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GACA75F503",
+   "nome": "College of Creation — Esperto di abilità",
+   "categoria_originale": "Esperto di abilità",
+   "categoria_assi": "Esperto di abilità",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5244B501",
+   "nome": "Circle of Dreams — Esploratore",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5244B502",
+   "nome": "Way of the Ascendant Dragon — Esploratore",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA5244B503",
+   "nome": "Path of the World Tree — Esploratore",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA98469401",
+   "nome": "Circle of Dreams — Combattente a cavallo",
+   "categoria_originale": "Combattente a cavallo",
+   "categoria_assi": "Combattente a cavallo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA98469402",
+   "nome": "Way of the Ascendant Dragon — Combattente a cavallo",
+   "categoria_originale": "Combattente a cavallo",
+   "categoria_assi": "Combattente a cavallo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA98469403",
+   "nome": "Path of the World Tree — Combattente a cavallo",
+   "categoria_originale": "Combattente a cavallo",
+   "categoria_assi": "Combattente a cavallo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA4B28BB01",
+   "nome": "Armorer — Supporto tecnico (utility)",
+   "categoria_originale": "Supporto tecnico (utility)",
+   "categoria_assi": "Supporto tecnico (utility)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA4B28BB02",
+   "nome": "Oath of the Watchers — Supporto tecnico (utility)",
+   "categoria_originale": "Supporto tecnico (utility)",
+   "categoria_assi": "Supporto tecnico (utility)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA4B28BB03",
+   "nome": "Bladesinging — Supporto tecnico (utility)",
+   "categoria_originale": "Supporto tecnico (utility)",
+   "categoria_assi": "Supporto tecnico (utility)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA66FC4C01",
+   "nome": "Armorer — Specialista multiclasse",
+   "categoria_originale": "Specialista multiclasse",
+   "categoria_assi": "Specialista multiclasse",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA66FC4C02",
+   "nome": "Oath of the Watchers — Specialista multiclasse",
+   "categoria_originale": "Specialista multiclasse",
+   "categoria_assi": "Specialista multiclasse",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "GA66FC4C03",
+   "nome": "Bladesinging — Specialista multiclasse",
+   "categoria_originale": "Specialista multiclasse",
+   "categoria_assi": "Specialista multiclasse",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "HEA01",
+   "nome": "School of Transmutation — Guaritore",
+   "categoria_originale": "Guaritore",
+   "categoria_assi": "Guaritore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "HEA02",
+   "nome": "Grave Domain — Guaritore",
+   "categoria_originale": "Guaritore",
+   "categoria_assi": "Guaritore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "HEA03",
+   "nome": "Order of the Immortal — Guaritore",
+   "categoria_originale": "Guaritore",
+   "categoria_assi": "Guaritore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "HEA04",
+   "nome": "Shadow Magic — Guaritore",
+   "categoria_originale": "Guaritore",
+   "categoria_assi": "Guaritore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SUA01",
+   "nome": "Circle of the Shepherd — Evocatore",
+   "categoria_originale": "Evocatore (summoner)",
+   "categoria_assi": "Evocatore (summoner)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SUA02",
+   "nome": "Clockwork Sorcery — Evocatore",
+   "categoria_originale": "Evocatore (summoner)",
+   "categoria_assi": "Evocatore (summoner)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SUA03",
+   "nome": "Conjurer — Evocatore",
+   "categoria_originale": "Evocatore (summoner)",
+   "categoria_assi": "Evocatore (summoner)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SUA04",
+   "nome": "Clockwork Soul — Evocatore",
+   "categoria_originale": "Evocatore (summoner)",
+   "categoria_assi": "Evocatore (summoner)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "FAA01",
+   "nome": "Way of the Astral Self — Volto sociale",
+   "categoria_originale": "Volto sociale (negoziatore)",
+   "categoria_assi": "Volto sociale (negoziatore)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "FAA02",
+   "nome": "College of Creation — Volto sociale",
+   "categoria_originale": "Volto sociale (negoziatore)",
+   "categoria_assi": "Volto sociale (negoziatore)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "FAA03",
+   "nome": "College of Eloquence — Volto sociale",
+   "categoria_originale": "Volto sociale (negoziatore)",
+   "categoria_assi": "Volto sociale (negoziatore)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "FAA04",
+   "nome": "College of Whispers — Volto sociale",
+   "categoria_originale": "Volto sociale (negoziatore)",
+   "categoria_assi": "Volto sociale (negoziatore)",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "DPA01",
+   "nome": "Battle Smith — Danno",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "DPA02",
+   "nome": "Battle Smith — Danno",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "DPA03",
+   "nome": "Way of the Astral Self — Danno",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "DPA04",
+   "nome": "Beast Master — Danno",
+   "categoria_originale": "DPS — danno a bersaglio singolo",
+   "categoria_assi": "DPS — danno a bersaglio singolo",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "COA01",
+   "nome": "College of Whispers — Controllo",
+   "categoria_originale": "Battlefield Controller",
+   "categoria_assi": "Battlefield Controller",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "COA02",
+   "nome": "Circle of Dreams — Controllo",
+   "categoria_originale": "Battlefield Controller",
+   "categoria_assi": "Battlefield Controller",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "COA03",
+   "nome": "Circle of Spores — Controllo",
+   "categoria_originale": "Battlefield Controller",
+   "categoria_assi": "Battlefield Controller",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "COA04",
+   "nome": "Way of the Astral Self — Controllo",
+   "categoria_originale": "Battlefield Controller",
+   "categoria_assi": "Battlefield Controller",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SCA01",
+   "nome": "Circle of Dreams — Esplorazione",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SCA02",
+   "nome": "Way of the Ascendant Dragon — Esplorazione",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SCA03",
+   "nome": "Path of the World Tree — Esplorazione",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  },
+  {
+   "id": "SCA04",
+   "nome": "Trickery Domain — Esplorazione",
+   "categoria_originale": "Esploratore",
+   "categoria_assi": "Esploratore",
+   "ruolo_assi": "dichiarata",
+   "famiglie": [],
+   "motivo": "categoria dichiarata (una delle 26 del sito)",
+   "disaccordo": "",
+   "cambiata": false,
+   "esplicita": true
+  }
+ ],
+ "conteggi": {
+  "build_totali": 179,
+  "nuove": 72,
+  "con_famiglia": 16,
+  "disaccordi_assi": 0,
+  "categoria_cambiata": 14,
+  "senza_assi": 163,
+  "per_ruolo": {
+   "furtivita": 1,
+   "face": 2,
+   "taunter": 4,
+   "esplicita": 5,
+   "healer": 2,
+   "danno": 4,
+   "summoner": 1,
+   "utility": 2,
+   "dichiarata": 78,
+   "nessuno": 80
+  }
+ }
+}

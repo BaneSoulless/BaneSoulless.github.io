@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /data/_
+
+Sitemap: https://grimorio-dei-reami.serveousercontent.com/sitemap.xml

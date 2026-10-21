@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bozza B — Arcane Codex</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+:root { --bg:#080a10; --bg-card:#0d1118; --bg-hover:#111724; --accent:#00d4aa; --accent2:#7b61ff; --fg:#e0e6ee; --muted:#7a8595; --border:#1a2432; --glow:rgba(0,212,170,.25); }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--fg); font-family:'IBM Plex Sans',sans-serif; line-height:1.6; min-height:100vh; }
+header { background:rgba(8,10,16,.92); backdrop-filter:blur(12px); padding:12px 28px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:10; }
+header .brand { font-family:'Space Grotesk',sans-serif; font-size:17px; font-weight:700; color:var(--accent); }
+header nav { display:flex; gap:4px; flex-wrap:wrap; }
+header nav a { color:var(--muted); text-decoration:none; font-size:13px; font-weight:500; padding:6px 12px; border-radius:6px; transition:all .15s; border:1px solid transparent; }
+header nav a:hover { color:var(--fg); background:rgba(0,212,170,.06); }
+header nav a.active { color:var(--accent); background:rgba(0,212,170,.08); border-color:var(--glow); }
+.hero { max-width:1080px; margin:0 auto; padding:64px 28px 40px; }
+.hero .eyebrow { display:inline-flex; align-items:center; gap:8px; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:600; color:var(--accent); letter-spacing:.1em; text-transform:uppercase; margin-bottom:16px; padding:6px 14px; border:1px solid var(--glow); border-radius:20px; background:rgba(0,212,170,.06); }
+.hero .eyebrow::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); box-shadow:0 0 8px var(--accent); }
+.hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(32px,5vw,48px); font-weight:700; color:var(--fg); line-height:1.12; letter-spacing:-.02em; max-width:620px; }
+.hero h1 .hl { color:var(--accent); }
+.hero p.sub { margin-top:16px; color:var(--muted); font-size:16.5px; max-width:52ch; }
+.grid { max-width:1080px; margin:0 auto; padding:20px 28px 64px; display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+.card { background:var(--bg-card); border:1px solid var(--border); border-radius:10px; padding:22px 20px; position:relative; overflow:hidden; transition:border-color .2s, background .2s, transform .2s; }
+.card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--accent),var(--accent2),transparent); opacity:0; transition:opacity .25s; }
+.card:hover { border-color:var(--glow); background:var(--bg-hover); transform:translateY(-3px); }
+.card:hover::before { opacity:1; }
+.card .icon { width:38px; height:38px; border-radius:8px; background:linear-gradient(135deg,rgba(0,212,170,.12),rgba(123,97,255,.12)); border:1px solid var(--glow); display:flex; align-items:center; justify-content:center; margin-bottom:14px; font-size:18px; }
+.card h3 { font-family:'Space Grotesk',sans-serif; font-size:16.5px; font-weight:600; color:var(--fg); margin-bottom:6px; }
+.card p { font-size:13.5px; color:var(--muted); }
+.card .card-link { display:inline-block; margin-top:14px; font-size:13px; color:var(--accent); text-decoration:none; font-weight:500; }
+.stats { max-width:1080px; margin:0 auto; padding:0 28px 48px; display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; }
+.stat { padding:16px 14px; border-radius:8px; background:var(--bg-card); border:1px solid var(--border); display:flex; align-items:baseline; gap:10px; }
+.stat strong { font-family:'Space Grotesk',sans-serif; font-size:24px; font-weight:700; color:var(--accent); }
+.stat span { font-size:12.5px; color:var(--muted); }
+footer { border-top:1px solid var(--border); padding:20px 28px; text-align:center; color:var(--muted); font-size:12px; }
+</style>
+</head>
+<body>
+<header><div class="brand">Grimorio</div><nav><a href="#" class="active">Home</a><a href="#">Catalogo</a><a href="#">Trova Gruppo</a><a href="#">Consultazione</a><a href="#">Mappa</a><a href="#">Strumenti</a><a href="#">Personaggi</a><a href="#">Compendio</a></nav></header>
+<div class="hero"><div class="eyebrow">Sito D&D completo e offline</div><h1>Tutto il tuo <span class="hl">tavolo</span>. Zero dipendenze.</h1><p class="sub">Lookup di 13.219 entit&agrave; 5e.tools, mappa interattiva di Faer&ucirc;n con 297 luoghi, calendario Harptos, generatore personaggi. Tutto funziona senza rete.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">&#9876;</div><h3>Consultazione Live</h3><p>Mostri, incantesimi, oggetti. Ricerca istantanea con schede complete e icone dorate.</p><a class="card-link" href="#">Apri il lookup &rarr;</a></div>
+<div class="card"><div class="icon">&#128506;</div><h3>Mappa di Faer&ucirc;n</h3><p>Mappa interattiva con 297 luoghi, 8 livelli attivabili e schede collegate al lookup.</p><a class="card-link" href="#">Esplora la mappa &rarr;</a></div>
+<div class="card"><div class="icon">&#127922;</div><h3>Strumenti del Tavolo</h3><p>Dadi con probabilit&agrave; esatte, bilanciamento incontri, tesori, oracolo s&igrave;/no, timer turni.</p><a class="card-link" href="#">Apri gli strumenti &rarr;</a></div>
+<div class="card"><div class="icon">&#128197;</div><h3>Calendario Harptos</h3><p>Calendario interattivo con 12 mesi, fasi lunari di Sel&ucirc;ne, meteo per regione ed eventi.</p><a class="card-link" href="#">Apri il calendario &rarr;</a></div>
+</div>
+<div class="stats">
+<div class="stat"><strong>13.219</strong><span>entit&agrave; 5e</span></div>
+<div class="stat"><strong>423</strong><span>citt&agrave;</span></div>
+<div class="stat"><strong>297</strong><span>luoghi</span></div>
+<div class="stat"><strong>48</strong><span>azioni</span></div>
+</div>
+<footer>Grimorio &mdash; Fan Content, non ufficiale Wizards of the Coast</footer>
+</body>
+</html>

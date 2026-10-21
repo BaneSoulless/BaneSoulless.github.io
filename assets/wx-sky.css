@@ -1,0 +1,128 @@
+/* ==========================================================================
+   wx-sky.css — Rifinitura visiva del meteo + blocco "gemello di Faerûn".
+   Inlinato in widgets.html DOPO widgets-wx.css (override additivi: la sorgente
+   precedente resta intatta). Classi nuove: prefisso `sk-`.
+
+   Direzione visiva (skill make-interfaces-feel-better + liquid-glass-design):
+   - gerarchia: temperatura > condizione > contesto > dettagli
+   - raggi concentrici (card 18 / pannelli 14 / chip 10), ombre stratificate
+   - text-wrap bilanciato, tabular-nums su tutti i numeri che cambiano
+   - transition esplicite, press scale, focus-visible oro, reduced-motion
+   ========================================================================== */
+
+/* ---- rifinitura della card esistente ------------------------------------ */
+.wx-sky {
+  border-radius: 18px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18), 0 18px 40px -18px rgba(0, 0, 0, 0.6);
+}
+.wx-temp { font-size: 62px; letter-spacing: -0.035em; }
+.wx-cur { gap: 20px; }
+.wx-icon-xl {
+  border-radius: 18px;
+  background: radial-gradient(120% 120% at 30% 20%, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.03));
+}
+.wx-stat { border-radius: 12px; }
+.wx-stat-v { font-size: 16px; }
+.wx-narr { border-radius: 0 14px 14px 0; }
+.wx-days { gap: 14px; }
+.wx-day { border-radius: 14px; }
+.wx-day.act { box-shadow: 0 0 0 1px var(--accent) inset, 0 10px 24px -14px rgba(212, 175, 55, 0.55); }
+
+/* barra range nella card giorno (nuova, iniettata da wx-sky.js) */
+.wd-range { display: block; width: 100%; height: 4px; border-radius: 999px; background: rgba(255, 255, 255, 0.08); position: relative; }
+.wd-range > i { position: absolute; top: 0; bottom: 0; border-radius: 999px; background: linear-gradient(90deg, #38bdf8, var(--accent)); }
+
+/* ---- blocco "gemello di Faerûn" ----------------------------------------- */
+.sk-twin {
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.028);
+}
+.sk-twin-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.sk-twin-kicker {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-weight: 700;
+  color: var(--accent);
+}
+.sk-aff {
+  font-size: 11.5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--fg-muted);
+  font-variant-numeric: tabular-nums;
+}
+.sk-aff.hi { border-color: rgba(120, 200, 140, 0.5); color: var(--success); }
+.sk-aff.mid { border-color: rgba(212, 175, 55, 0.45); color: var(--accent); }
+.sk-aff.lo { border-color: rgba(201, 138, 138, 0.45); color: var(--danger); }
+
+.sk-pair {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.sk-pair .sk-real { color: var(--fg); }
+.sk-pair .sk-link { color: var(--fg-dim); font-weight: 400; }
+.sk-pair .sk-faerun { color: var(--accent); }
+.sk-region { font-size: 12.5px; color: var(--fg-muted); font-weight: 500; }
+.sk-alias { font-size: 12px; color: var(--fg-dim); font-style: italic; }
+
+.sk-bars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 10px; margin-top: 14px; }
+.sk-bar { display: flex; flex-direction: column; gap: 4px; }
+.sk-bar-l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--fg-dim); }
+.sk-bar-track { height: 6px; border-radius: 999px; background: rgba(255, 255, 255, 0.07); position: relative; overflow: hidden; }
+.sk-bar-fill { position: absolute; inset: 0 auto 0 0; border-radius: 999px; background: linear-gradient(90deg, #38bdf8, var(--accent)); }
+.sk-bar-v { font-size: 12.5px; color: var(--fg-muted); font-variant-numeric: tabular-nums; }
+
+.sk-why {
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: var(--fg-muted);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.sk-lore {
+  margin-top: 10px;
+  padding-left: 12px;
+  border-left: 2px solid rgba(212, 175, 55, 0.45);
+  font-size: 13.5px;
+  font-style: italic;
+  color: var(--fg-muted);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+.sk-fact {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  font-size: 12px;
+  color: var(--fg-dim);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.sk-fact strong { color: var(--fg-muted); }
+.sk-pick { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.sk-pick label { font-size: 12px; color: var(--fg-dim); }
+.sk-pick select { min-height: 40px; padding: 0 10px; max-width: 100%; }
+
+/* legenda dei criteri, discreta */
+.sk-note { margin-top: 10px; font-size: 11.5px; color: var(--fg-dim); line-height: 1.6; }
+
+@media (max-width: 767px) {
+  .wx-temp { font-size: 48px; }
+  .sk-pair { font-size: 16px; }
+  .sk-twin { padding: 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wx-day, .wx-day:hover { transform: none; }
+}

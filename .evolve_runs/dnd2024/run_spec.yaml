@@ -1,0 +1,49 @@
+objective: 'Massimizzare la copertura corretta e misurata delle build D&D 2024: copertura
+  delle
+
+  26 categorie, calibrazione delle regole (banda 10-60%), completezza delle schede,
+  QA
+
+  verde, idempotenza, ricchezza dell''indice degli assi. Miglioramento = delta misurabile.
+
+  '
+evaluation:
+  core_score: core_score
+  secondary_metrics:
+  - copertura_categorie
+  - calibrazione
+  - completezza_build
+  - qa_ratio
+  - idempotenza
+  - sorgenti_indice
+  command_or_script: py -u C:/Users/Fabrizio/workspace/public-site/tools/evolve_eval_cmd.py
+  timeout_secs: 600
+  success_criteria:
+  - core_score >= 97.5 con nessuna metrica in regressione
+budget:
+  max_rounds: 8
+  patience: 4
+stop_conditions:
+- nessun miglioramento su 4 round consecutivi
+- il miglioramento residuo e' sotto il rumore misurato
+mutation_scope:
+  writable_paths:
+  - C:/Users/Fabrizio/workspace/public-site/tools/role_axes.py
+  - C:/Users/Fabrizio/workspace/public-site/tools/taunt_taxonomy.py
+  - C:/Users/Fabrizio/workspace/public-site/tools/all_role_axes.py
+  - C:/Users/Fabrizio/workspace/public-site/tools/axed_builds.py
+  primary_targets:
+  - C:/Users/Fabrizio/workspace/public-site/tools/role_axes.py
+sampling:
+  algorithm: ucb1
+  sample_n: 3
+  feature_dimensions:
+  - complexity
+  - diversity
+  feature_bins: 10
+cognition:
+  source_mode: local
+approval:
+  confirmed: true
+  notes: Autorizzazione piena esplicita, registrata prima dell'esecuzione. Esecuzione
+    non presidiata. 2026-10-02.

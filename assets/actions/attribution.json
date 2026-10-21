@@ -1,0 +1,18 @@
+{
+ "fonte": "game-icons.net (CC BY 3.0)",
+ "repo": "game-icons/icons",
+ "mapping": {
+  "attack": "lorc/crossed-swords",
+  "cast_a_spell": "lorc/magic-swirl",
+  "dash": "lorc/run",
+  "hide": "lorc/hood",
+  "ready": "lorc/hourglass",
+  "search": "lorc/magnifying-glass",
+  "study": "lorc/book-cover",
+  "utilize": "lorc/lever",
+  "influence": "delapouite/convince",
+  "improvise": "delapouite/idea",
+  "shove": "delapouite/push",
+  "escape": "lorc/doorway"
+ }
+}

@@ -1,0 +1,278 @@
+[
+ {
+  "t": "Il Grimorio dei Reami | Consultazione, dati e strumenti per D&D 5e",
+  "s": 0.934,
+  "x": 461,
+  "y": 19
+ },
+ {
+  "t": "Guida",
+  "s": 0.999,
+  "x": 1136,
+  "y": 21
+ },
+ {
+  "t": "Lingua",
+  "s": 0.991,
+  "x": 1116,
+  "y": 64
+ },
+ {
+  "t": "Italiano ",
+  "s": 0.941,
+  "x": 1219,
+  "y": 66
+ },
+ {
+  "t": "√ Italiano",
+  "s": 0.947,
+  "x": 1134,
+  "y": 120
+ },
+ {
+  "t": "Server Locale Operativo • Tunnel Crittografato Attivo",
+  "s": 0.985,
+  "x": 430,
+  "y": 136
+ },
+ {
+  "t": "English",
+  "s": 0.924,
+  "x": 1132,
+  "y": 159
+ },
+ {
+  "t": "Il Grimorio dei Reami",
+  "s": 0.988,
+  "x": 423,
+  "y": 187
+ },
+ {
+  "t": "Deutsch",
+  "s": 1.0,
+  "x": 1132,
+  "y": 199
+ },
+ {
+  "t": "Francais",
+  "s": 0.997,
+  "x": 1132,
+  "y": 239
+ },
+ {
+  "t": "D 5e",
+  "s": 0.99,
+  "x": 1304,
+  "y": 240
+ },
+ {
+  "t": "Consultazione, dati e strument",
+  "s": 0.989,
+  "x": 424,
+  "y": 244
+ },
+ {
+  "t": "Espaniol",
+  "s": 0.969,
+  "x": 1132,
+  "y": 273
+ },
+ {
+  "t": "Control plane operativo su workstation locale: 228 risorse D&D verificate, lookup SRD li portugues",
+  "s": 0.966,
+  "x": 418,
+  "y": 303
+ },
+ {
+  "t": "e dashboard analytics, serviti via tunnel crittografato.",
+  "s": 0.97,
+  "x": 419,
+  "y": 336
+ },
+ {
+  "t": " Nederlands",
+  "s": 0.968,
+  "x": 1132,
+  "y": 353
+ },
+ {
+  "t": "Svenska",
+  "s": 1.0,
+  "x": 1131,
+  "y": 393
+ },
+ {
+  "t": "Come funziona questo sito",
+  "s": 0.988,
+  "x": 440,
+  "y": 405
+ },
+ {
+  "t": "ddnb eaou a guauns dnp nep ssed ypod u ojepin osooed",
+  "s": 0.718,
+  "x": 651,
+  "y": 410
+ },
+ {
+  "t": "Dansk",
+  "s": 0.999,
+  "x": 1134,
+  "y": 433
+ },
+ {
+  "t": "Guida Sessioni (LFG)",
+  "s": 0.998,
+  "x": 870,
+  "y": 465
+ },
+ {
+  "t": "Esplora 228 Risorse D&D ",
+  "s": 0.978,
+  "x": 442,
+  "y": 466
+ },
+ {
+  "t": "Lookup Magie & Mostri",
+  "s": 0.999,
+  "x": 668,
+  "y": 466
+ },
+ {
+  "t": "Norsk",
+  "s": 0.999,
+  "x": 1132,
+  "y": 469
+ },
+ {
+  "t": "Suomi",
+  "s": 0.991,
+  "x": 1130,
+  "y": 506
+ },
+ {
+  "t": "·Ricerca Global nel Database (13219 entita)",
+  "s": 0.94,
+  "x": 450,
+  "y": 604
+ },
+ {
+  "t": "Cerca un mostro, incantesimo, classe, oggetto magico... es. Ancient Red Dragon, Fireball, Wizard)",
+  "s": 0.977,
+  "x": 467,
+  "y": 650
+ },
+ {
+  "t": "Cerca →",
+  "s": 0.936,
+  "x": 2027,
+  "y": 651
+ },
+ {
+  "t": "a as Idxele + euoae ad  + (od ezuea) zzn eao",
+  "s": 0.688,
+  "x": 450,
+  "y": 695
+ },
+ {
+  "t": "Come Funziona Questo Sito",
+  "s": 0.964,
+  "x": 452,
+  "y": 803
+ },
+ {
+  "t": "database di 13219 entita ufficiali e open (mostri, incantesimi, classi, oggetti, razze, background,",
+  "s": 0.966,
+  "x": 449,
+  "y": 866
+ },
+ {
+  "t": "divinita,regole) indicizzato da 228fonti verificate, servito senza dipendenze esterne e con fallback",
+  "s": 0.937,
+  "x": 447,
+  "y": 889
+ },
+ {
+  "t": "APl live. La ricerca e istantanea e fuzzy (tolleranza ai typo), con fitri per categoria, statblock",
+  "s": 0.955,
+  "x": 449,
+  "y": 915
+ },
+ {
+  "t": "completi e hyperlink incrociati tra le schede.",
+  "s": 0.974,
+  "x": 450,
+  "y": 943
+ },
+ {
+  "t": "ARCHITETTURA DEL SISTEMA",
+  "s": 0.971,
+  "x": 470,
+  "y": 1005
+ },
+ {
+  "t": "Browser",
+  "s": 1.0,
+  "x": 575,
+  "y": 1176
+ },
+ {
+  "t": "Lookup Engine",
+  "s": 0.999,
+  "x": 878,
+  "y": 1176
+ },
+ {
+  "t": "Indice 13219",
+  "s": 0.961,
+  "x": 1251,
+  "y": 1177
+ },
+ {
+  "t": "Statblock",
+  "s": 0.999,
+  "x": 1914,
+  "y": 1179
+ },
+ {
+  "t": "Dataset5e.tools",
+  "s": 0.999,
+  "x": 1583,
+  "y": 1180
+ },
+ {
+  "t": "JSON on-demand",
+  "s": 0.996,
+  "x": 1590,
+  "y": 1209
+ },
+ {
+  "t": "ricerca fuzzy",
+  "s": 0.99,
+  "x": 565,
+  "y": 1211
+ },
+ {
+  "t": "filtri + scoring",
+  "s": 0.951,
+  "x": 903,
+  "y": 1211
+ },
+ {
+  "t": "rendering",
+  "s": 0.995,
+  "x": 1922,
+  "y": 1211
+ },
+ {
+  "t": "lookup-index.json",
+  "s": 0.98,
+  "x": 1246,
+  "y": 1213
+ },
+ {
+  "t": "fallback API SRD live (dnd5eapi.co)",
+  "s": 0.956,
+  "x": 1308,
+  "y": 1350
+ }
+]

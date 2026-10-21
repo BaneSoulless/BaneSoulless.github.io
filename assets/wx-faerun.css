@@ -1,0 +1,244 @@
+/* wx-faerun.css — meteo in gioco del Faerûn (direzione: città dei Reami -> dati).
+   Palette e variabili coerenti con il resto del sito; niente colori nuovi. */
+
+.fx-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+.fx-picker select {
+  min-height: 38px;
+  min-width: 220px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13.5px;
+}
+.fx-picker select:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+
+.fx-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.fx-city { display: flex; flex-direction: column; gap: 2px; }
+.fx-name { font-size: 22px; font-weight: 800; color: var(--fg); letter-spacing: -0.01em; }
+.fx-region { font-size: 12.5px; color: var(--fg-dim); }
+.fx-temp { display: inline-flex; align-items: center; gap: 10px; }
+.fx-sym { font-size: 26px; line-height: 1; }
+.fx-deg { font-size: 30px; font-weight: 800; color: var(--fg); font-variant-numeric: tabular-nums; }
+.fx-cond { margin: 0 0 6px; font-size: 14px; color: var(--fg-muted); }
+.fx-when { margin: 0 0 10px; font-size: 12.5px; color: var(--fg-dim); }
+.fx-sep { opacity: 0.5; margin: 0 4px; }
+.fx-lore {
+  margin: 0 0 8px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--fg-muted);
+  border-left: 2px solid var(--border-hover);
+  padding-left: 10px;
+}
+.fx-fact {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  color: var(--fg-muted);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.fx-day {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.fx-day-name { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-dim); }
+.fx-day-sym { font-size: 20px; }
+.fx-day-t { font-size: 15px; font-weight: 700; color: var(--fg); font-variant-numeric: tabular-nums; }
+.fx-day-d { font-size: 12px; color: var(--fg-muted); }
+.fx-meta { font-size: 12px; color: var(--fg-dim); }
+.fx-badge-off { opacity: 0.85; }
+
+.fx-region-card {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.fx-region-card h4 { margin: 0 0 6px; font-size: 15px; color: var(--fg); }
+.fx-region-card p { margin: 0 0 6px; font-size: 13px; line-height: 1.55; color: var(--fg-muted); }
+.fx-region-stats { font-size: 12px !important; color: var(--fg-dim) !important; font-variant-numeric: tabular-nums; }
+.fx-region-cities { font-size: 12px !important; color: var(--fg-dim) !important; }
+@media (max-width: 767px) {
+  .fx-name { font-size: 19px; }
+  .fx-deg { font-size: 25px; }
+  .fx-picker select { min-width: 100%; }
+}
+
+
+/* ---- calendario di Harptos: anno DR, oggi, tenday ---- */
+.cal-head { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.cal-season { font-size: 12.5px; color: var(--fg-dim); letter-spacing: 0.02em; }
+.cal-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+.cal-controls select {
+  min-height: 36px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13.5px;
+}
+.cal-hint { font-size: 11.5px; color: var(--fg-dim); }
+.cal-day.today { border-color: var(--accent); background: var(--accent-glow); }
+.cal-day.tenday-start { box-shadow: inset 2px 0 0 var(--border-hover); }
+.d-today {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-top: 2px;
+}
+@media (max-width: 767px) {
+  .cal-controls { flex-direction: column; align-items: stretch; }
+  .cal-controls select { width: 100%; }
+}
+
+
+/* ---- prospetto delle fonti dei dati (pagina analytics) ---- */
+.src-summary { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 16px; }
+.src-stat {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 12px 16px; border: 1px solid var(--border); border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02); min-width: 150px;
+}
+.src-stat-n { font-size: 22px; font-weight: 800; color: var(--fg); font-variant-numeric: tabular-nums; }
+.src-stat span:last-child { font-size: 12px; color: var(--fg-dim); }
+.src-table-wrap { overflow-x: auto; margin-bottom: 10px; }
+.src-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.src-table th {
+  text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border);
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-dim);
+}
+.src-table td { padding: 7px 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.04); color: var(--fg-muted); }
+.src-code { color: var(--fg); font-weight: 700; }
+.src-n, .src-date { font-variant-numeric: tabular-nums; }
+.src-era {
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em;
+  border: 1px solid var(--border); border-radius: 999px; padding: 1px 7px; color: var(--fg-dim);
+}
+.src-more details summary { cursor: pointer; color: var(--fg-muted); padding: 8px 0; font-size: 13px; }
+.src-layers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.src-layer {
+  padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.src-layer h3 { margin: 0 0 8px; font-size: 14px; color: var(--fg); }
+.src-layer p { margin: 0 0 8px; font-size: 12.5px; line-height: 1.55; color: var(--fg-muted); }
+.src-lic { font-size: 11.5px !important; color: var(--fg-dim) !important; font-style: italic; }
+
+
+/* ---- menu della lingua: un solo controllo per tutto il sito ---- */
+.tr-menu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+.tr-label { font-size: 11.5px; color: var(--fg-dim); text-transform: uppercase; letter-spacing: 0.06em; }
+.tr-menu select {
+  min-height: 32px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg);
+  font: inherit;
+  font-size: 12.5px;
+}
+.tr-menu select:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+.tr-restore {
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.tr-restore:hover { border-color: var(--border-hover); color: var(--fg); }
+.tr-active .tr-label { color: var(--accent); }
+.tr-progress {
+  font-size: 11.5px;
+  color: var(--fg-muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 900px) { .tr-menu { margin-left: 0; } .tr-label { display: none; } }
+
+
+/* ---- Compendio: grafici a barre cliccabili e curiosità ---- */
+.cmp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 18px; }
+.cmp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 18px;
+}
+.cmp-card { margin-bottom: 0; }
+.cmp-h3 { font-size: 15px; font-weight: 700; margin: 0 0 12px; color: var(--fg); }
+.cmp-chart { list-style: none; margin: 0; padding: 0; }
+.cmp-chart li { margin-bottom: 7px; }
+.cb-row {
+  display: grid;
+  grid-template-columns: minmax(96px, 40%) 1fr auto;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+a.cb-row:hover .cb-label { color: var(--accent); }
+.cb-label { font-size: 12.5px; color: var(--fg-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cb-bar {
+  display: block;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+.cb-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.85), rgba(212, 175, 55, 0.35));
+  transition: width 380ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.cb-num { font-size: 12.5px; color: var(--fg); font-variant-numeric: tabular-nums; }
+.cmp-facts { display: grid; grid-template-columns: 1fr auto; gap: 6px 14px; margin: 0; }
+.cmp-facts dt { font-size: 12.5px; color: var(--fg-muted); }
+.cmp-facts dd { margin: 0; font-size: 13px; color: var(--fg); font-weight: 600; text-align: right; }
+@media (max-width: 767px) {
+  .cmp-grid { grid-template-columns: 1fr; }
+  .cb-row { grid-template-columns: minmax(80px, 46%) 1fr auto; }
+}

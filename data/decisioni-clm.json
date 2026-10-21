@@ -1,0 +1,48 @@
+{
+ "decisioni": [
+  {
+   "data": "20260930152929",
+   "decisione": null,
+   "rischio": null,
+   "probabilita": {},
+   "sito_exit": 0,
+   "clm_exit": 0,
+   "sito_totale": "TOTALE                                           431     0   431",
+   "clm_totale": "",
+   "fonte": "clm ask (decisione presa dal modello, non dall'agente)"
+  },
+  {
+   "data": "20260930160106",
+   "decisione": null,
+   "rischio": null,
+   "probabilita": {},
+   "sito_exit": 0,
+   "clm_exit": 2,
+   "sito_totale": "TOTALE                                           431     0   431",
+   "clm_totale": "",
+   "fonte": "clm ask (decisione presa dal modello, non dall'agente)"
+  },
+  {
+   "data": "20260930162727",
+   "decisione": null,
+   "rischio": null,
+   "probabilita": {},
+   "sito_exit": 0,
+   "clm_exit": 2,
+   "sito_totale": "TOTALE                                           431     0   431",
+   "clm_totale": "",
+   "fonte": "clm ask (decisione presa dal modello, non dall'agente)"
+  },
+  {
+   "data": "20260930172650",
+   "decisione": null,
+   "rischio": null,
+   "probabilita": {},
+   "sito_exit": 0,
+   "clm_exit": 2,
+   "sito_totale": "TOTALE                                           431     0   431",
+   "clm_totale": "",
+   "fonte": "clm ask (decisione presa dal modello, non dall'agente)"
+  }
+ ]
+}

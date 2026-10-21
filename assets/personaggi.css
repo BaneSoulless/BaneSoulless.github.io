@@ -1,0 +1,190 @@
+/* personaggi.css — Generatore di Personaggi (creazione guidata + categorie).
+   Usa solo i token condivisi del sito: nessun colore o font proprio. */
+
+.pg-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px 14px;
+  align-items: end;
+  margin: 4px 0 14px;
+}
+.pg-form > div { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.pg-form .dl { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--fg-dim); }
+.pg-form select, .pg-form input {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13px;
+}
+.pg-form select:focus-visible, .pg-form input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.pg-form select:disabled { opacity: 0.55; }
+
+.pg-out { margin-top: 14px; }
+
+/* riquadri di scelta (talenti e incantesimi) */
+.pg-scelte { margin-top: 16px; }
+.pg-gruppo { margin-bottom: 14px; }
+.pg-gruppo h3 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-dim);
+}
+.pg-gruppo .pg-righe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+}
+.pg-righe label { display: block; font-size: 11.5px; color: var(--fg-muted); margin-bottom: 4px; }
+.pg-righe select {
+  width: 100%;
+  min-height: 38px;
+  padding: 7px 9px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--fg);
+  font: inherit;
+  font-size: 12.5px;
+}
+.pg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.pg-card {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.pg-card h3 { margin: 6px 0 6px; font-size: 15.5px; line-height: 1.35; }
+.pg-real {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pg-real.pg-gen { color: var(--fg-dim); text-transform: none; letter-spacing: 0; }
+.pg-real a { color: var(--accent); text-decoration: underline; }
+.pg-meta { margin: 4px 0; font-size: 12.5px; line-height: 1.55; color: var(--fg-muted); }
+.pg-stats { margin: 8px 0 6px; font-size: 13.5px; color: var(--fg); }
+.pg-stats b { color: var(--accent); font-weight: 700; }
+.pg-abline { display: flex; flex-wrap: wrap; gap: 6px 10px; margin: 6px 0; }
+.pg-ab { font-size: 12px; color: var(--fg-muted); }
+.pg-ab b { color: var(--fg); }
+.pg-ab i { color: var(--fg-dim); font-style: normal; }
+.pg-seed {
+  margin: 10px 0 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border);
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--fg-dim);
+}
+.pg-dettaglio { margin-top: 18px; }
+.pg-list {
+  margin: 6px 0 14px;
+  padding-left: 18px;
+  columns: 2;
+  column-gap: 26px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--fg-muted);
+}
+.pg-list li { break-inside: avoid; }
+@media (max-width: 640px) { .pg-list { columns: 1; } }
+
+/* elenco delle build reali del canale che rientrano nella categoria */
+.pg-builde {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  background: var(--bg-card);
+}
+.pg-builde h3 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-dim);
+}
+.pg-builde ul { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.pg-builde li { font-size: 12.5px; line-height: 1.6; color: var(--fg-muted); break-inside: avoid; }
+.pg-builde a { color: var(--accent); text-decoration: none; }
+.pg-builde a:hover { text-decoration: underline; }
+.pg-data { color: var(--fg-dim); font-size: 11px; }
+@media (max-width: 640px) { .pg-builde ul { columns: 1; } }
+
+/* P3 (2026-09-27): badge con il numero per ogni build reale del canale */
+.pg-num{display:inline-block;font-size:.7rem;padding:1px 7px;border-radius:7px;border:1px solid var(--border,#3a3a44);
+  color:var(--fg-muted,#a9a9b6);margin-left:6px;white-space:nowrap}
+.pg-num.calc{border-color:var(--accent,#c9a227);color:var(--accent,#c9a227);font-weight:600}
+
+/* Q2 (2026-09-27): confronto dichiarato ↔ calcolato dentro la lista delle build del canale */
+.pg-cmp{margin:4px 0 2px 0;font-size:.74rem;color:var(--fg-muted,#a9a9b6)}
+.pg-cmp summary{cursor:pointer}
+.pg-cmp p{margin:4px 0 0 0;line-height:1.45}
+
+
+/* ---------------------------------------------------------------- ACCORDION BUILD
+   Richiesta UI: ogni build si apre e si chiude. Il summary porta l'identita' della
+   build; il corpo il pacchetto completo. Usa i <details> nativi: funziona anche
+   senza JS e con la tastiera, senza inventare un componente a mano. */
+.rc-acc { display: flex; flex-direction: column; gap: .4rem; margin: .6rem 0 1rem; }
+.rc-acc-item { border: 1px solid var(--border, #2a2a33); border-radius: .5rem; overflow: hidden; }
+.rc-acc-item > summary {
+  cursor: pointer; padding: .5rem .7rem; display: flex; flex-wrap: wrap; gap: .5rem;
+  align-items: baseline; background: rgba(255, 255, 255, .02); list-style: none;
+}
+.rc-acc-item > summary::-webkit-details-marker { display: none; }
+.rc-acc-item > summary::before { content: "\25B8"; margin-right: .35rem; opacity: .7; }
+.rc-acc-item[open] > summary::before { content: "\25BE"; }
+.rc-acc-item > summary:hover { background: rgba(255, 255, 255, .05); }
+.rc-acc-id { font-variant-numeric: tabular-nums; opacity: .75; font-size: .85em; min-width: 2.6em; }
+.rc-acc-nome { font-weight: 600; }
+.rc-acc-cat { font-size: .85em; opacity: .8; }
+.rc-acc-piaz { font-size: .82em; margin-left: auto; opacity: .85; }
+.rc-acc-body { padding: .6rem .8rem .8rem; border-top: 1px solid var(--border, #2a2a33); }
+.rc-acc-list { margin: 0 0 .6rem; padding-left: 1.1rem; }
+.rc-acc-list li { margin: .18rem 0; line-height: 1.45; }
+.rc-acc-act { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+/* Il blocco "Build reali del canale" era sempre aperto: ora e' un <details>. */
+details.pg-builde { margin: .6rem 0; }
+details.pg-builde > summary { cursor: pointer; font-weight: 600; padding: .35rem 0; }
+details.pg-builde > ul { margin-top: .4rem; }
+
+
+/* ---------------------------------------------------- SCHEDA COMPLETA DEL GENERATORE
+   Sezioni apribili: la scheda porta TUTTO (statistiche con formula, 18 abilità,
+   privilegi con descrizione, sottoclasse, specie, incantesimi, provenienza) senza
+   diventare un muro di testo. <details> nativo: accessibile da tastiera. */
+.pg-sez { border: 1px solid var(--border, #2a2a33); border-radius: .5rem; margin: .45rem 0; }
+.pg-sez > summary { cursor: pointer; padding: .45rem .7rem; font-weight: 600; list-style: none; }
+.pg-sez > summary::-webkit-details-marker { display: none; }
+.pg-sez > summary::before { content: "\25B8"; margin-right: .4rem; opacity: .7; }
+.pg-sez[open] > summary::before { content: "\25BE"; }
+.pg-sez-body { padding: .2rem .8rem .8rem; border-top: 1px solid var(--border, #2a2a33); }
+table.pg-tab { width: 100%; border-collapse: collapse; margin: .4rem 0; }
+table.pg-tab th { text-align: left; font-weight: 600; padding: .25rem .5rem .25rem 0; width: 34%; vertical-align: top; }
+table.pg-tab td { padding: .25rem .4rem; vertical-align: top; }
+table.pg-tab tr + tr th, table.pg-tab tr + tr td { border-top: 1px solid rgba(128,128,128,.18); }
+.pg-formula { opacity: .72; font-size: .88em; }
+.pg-desc { opacity: .82; font-size: .92em; line-height: 1.45; display: inline-block; margin-top: .15rem; }

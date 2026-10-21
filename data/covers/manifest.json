@@ -1,0 +1,464 @@
+{
+ "source": "mirror immagini 5e.tools (https://5e.tools/img/covers/)",
+ "note": "ordinato per data di pubblicazione (decrescente) da data/5etools/books.json",
+ "count": 65,
+ "available": 64,
+ "missing": 1,
+ "books": [
+  {
+   "code": "AU",
+   "name": "Arcana Unleashed",
+   "published": "2026-09-15",
+   "file": "data/covers/AU.webp",
+   "bytes": 361348
+  },
+  {
+   "code": "XScreenRHW",
+   "name": "Dungeon Master's Screen; Ravenloft: The Horrors Within",
+   "published": "2026-06-16",
+   "file": "data/covers/XScreenRHW.webp",
+   "bytes": 442256
+  },
+  {
+   "code": "RHW",
+   "name": "Ravenloft: The Horrors Within",
+   "published": "2026-06-16",
+   "file": "data/covers/RHW.webp",
+   "bytes": 405818
+  },
+  {
+   "code": "CaBoMP",
+   "name": "Crochet: A Book of Many Patterns",
+   "published": "2026-03-31",
+   "file": "data/covers/CaBoMP.webp",
+   "bytes": 120286
+  },
+  {
+   "code": "EFA",
+   "name": "Eberron: Forge of the Artificer",
+   "published": "2025-12-09",
+   "file": "data/covers/EFA.webp",
+   "bytes": 339906
+  },
+  {
+   "code": "LFL",
+   "name": "Lorwyn: First Light",
+   "published": "2025-11-18",
+   "file": "data/covers/LFL.webp",
+   "bytes": 482468
+  },
+  {
+   "code": "ABH",
+   "name": "Astarion's Book of Hungers",
+   "published": "2025-11-11",
+   "file": "data/covers/ABH.webp",
+   "bytes": 293146
+  },
+  {
+   "code": "FRAiF",
+   "name": "Forgotten Realms: Adventures in Faerûn",
+   "published": "2025-11-11",
+   "file": "data/covers/FRAiF.webp",
+   "bytes": 398060
+  },
+  {
+   "code": "FRHoF",
+   "name": "Forgotten Realms: Heroes of Faerûn",
+   "published": "2025-11-11",
+   "file": "data/covers/FRHoF.webp",
+   "bytes": 414762
+  },
+  {
+   "code": "NF",
+   "name": "Netheril's Fall",
+   "published": "2025-11-11",
+   "file": "data/covers/NF.webp",
+   "bytes": 429166
+  },
+  {
+   "code": "XSAC",
+   "name": "Sage Advice Compendium (2025)",
+   "published": "2025-04-30",
+   "file": "data/covers/XSAC.webp",
+   "bytes": 449872
+  },
+  {
+   "code": "XMM",
+   "name": "Monster Manual (2025)",
+   "published": "2025-02-18",
+   "file": "data/covers/XMM.webp",
+   "bytes": 334256
+  },
+  {
+   "code": "XDMG",
+   "name": "Dungeon Master's Guide (2024)",
+   "published": "2024-11-12",
+   "file": "data/covers/XDMG.webp",
+   "bytes": 336768
+  },
+  {
+   "code": "XScreen",
+   "name": "Dungeon Master's Screen (2024)",
+   "published": "2024-11-12",
+   "file": "data/covers/XScreen.webp",
+   "bytes": 119678
+  },
+  {
+   "code": "XPHB",
+   "name": "Player's Handbook (2024)",
+   "published": "2024-09-17",
+   "file": "data/covers/XPHB.webp",
+   "bytes": 387676
+  },
+  {
+   "code": "PaF",
+   "name": "Puncheons and Flagons",
+   "published": "2024-08-27",
+   "file": "data/covers/PaF.webp",
+   "bytes": 34388
+  },
+  {
+   "code": "BMT",
+   "name": "The Book of Many Things",
+   "published": "2023-11-14",
+   "file": "data/covers/BMT.webp",
+   "bytes": 371764
+  },
+  {
+   "code": "DMTCRG",
+   "name": "The Deck of Many Things: Card Reference Guide",
+   "published": "2023-11-14",
+   "file": "data/covers/DMTCRG.webp",
+   "bytes": 20524
+  },
+  {
+   "code": "HFFotM",
+   "name": "Heroes' Feast Flavors of the Multiverse",
+   "published": "2023-11-07",
+   "file": "data/covers/HFFotM.webp",
+   "bytes": 48698
+  },
+  {
+   "code": "AATM",
+   "name": "Adventure Atlas: The Mortuary",
+   "published": "2023-10-17",
+   "file": "data/covers/AATM.webp",
+   "bytes": 20168
+  },
+  {
+   "code": "MPP",
+   "name": "Morte's Planar Parade",
+   "published": "2023-10-07",
+   "file": "data/covers/MPP.webp",
+   "bytes": 403676
+  },
+  {
+   "code": "SatO",
+   "name": "Sigil and the Outlands",
+   "published": "2023-10-07",
+   "file": "data/covers/SatO.webp",
+   "bytes": 366278
+  },
+  {
+   "code": "MCV4EC",
+   "name": "Monstrous Compendium Volume 4: Eldraine Creatures",
+   "published": "2023-09-21",
+   "file": "data/covers/MCV4EC.webp",
+   "bytes": 15536
+  },
+  {
+   "code": "BGG",
+   "name": "Bigby Presents: Glory of the Giants",
+   "published": "2023-08-15",
+   "file": "data/covers/BGG.webp",
+   "bytes": 329574
+  },
+  {
+   "code": "HAT-TG",
+   "name": "Thieves' Gallery",
+   "published": "2023-03-06",
+   "file": null,
+   "bytes": 0
+  },
+  {
+   "code": "ScreenSpelljammer",
+   "name": "Dungeon Master's Screen: Spelljammer",
+   "published": "2022-08-16",
+   "file": "data/covers/ScreenSpelljammer.webp",
+   "bytes": 12294
+  },
+  {
+   "code": "AAG",
+   "name": "Astral Adventurer's Guide",
+   "published": "2022-08-16",
+   "file": "data/covers/AAG.webp",
+   "bytes": 402202
+  },
+  {
+   "code": "BAM",
+   "name": "Boo's Astral Menagerie",
+   "published": "2022-08-16",
+   "file": "data/covers/BAM.webp",
+   "bytes": 475564
+  },
+  {
+   "code": "TD",
+   "name": "Tarot Deck",
+   "published": "2022-05-24",
+   "file": "data/covers/TD.webp",
+   "bytes": 13998
+  },
+  {
+   "code": "MCV1SC",
+   "name": "Monstrous Compendium Volume 1: Spelljammer Creatures",
+   "published": "2022-04-21",
+   "file": "data/covers/MCV1SC.webp",
+   "bytes": 254286
+  },
+  {
+   "code": "MPMM",
+   "name": "Mordenkainen Presents: Monsters of the Multiverse",
+   "published": "2022-01-25",
+   "file": "data/covers/MPMM.webp",
+   "bytes": 344760
+  },
+  {
+   "code": "SCC",
+   "name": "Strixhaven: A Curriculum of Chaos",
+   "published": "2021-12-07",
+   "file": "data/covers/SCC.webp",
+   "bytes": 365410
+  },
+  {
+   "code": "FTD",
+   "name": "Fizban's Treasury of Dragons",
+   "published": "2021-10-26",
+   "file": "data/covers/FTD.webp",
+   "bytes": 385262
+  },
+  {
+   "code": "MaBJoV",
+   "name": "Minsc and Boo's Journal of Villainy",
+   "published": "2021-10-05",
+   "file": "data/covers/MaBJoV.webp",
+   "bytes": 321538
+  },
+  {
+   "code": "DoD",
+   "name": "Domains of Delight",
+   "published": "2021-09-21",
+   "file": "data/covers/DoD.webp",
+   "bytes": 10564
+  },
+  {
+   "code": "VRGR",
+   "name": "Van Richten's Guide to Ravenloft",
+   "published": "2021-05-18",
+   "file": "data/covers/VRGR.webp",
+   "bytes": 343912
+  },
+  {
+   "code": "MGELFT",
+   "name": "Muk's Guide to Everything He Learned From Tasha",
+   "published": "2020-12-01",
+   "file": "data/covers/MGELFT.webp",
+   "bytes": 62518
+  },
+  {
+   "code": "ScreenWildernessKit",
+   "name": "Dungeon Master's Screen: Wilderness Kit",
+   "published": "2020-11-17",
+   "file": "data/covers/ScreenWildernessKit.webp",
+   "bytes": 18568
+  },
+  {
+   "code": "TCE",
+   "name": "Tasha's Cauldron of Everything",
+   "published": "2020-11-17",
+   "file": "data/covers/TCE.webp",
+   "bytes": 324720
+  },
+  {
+   "code": "HF",
+   "name": "Heroes' Feast",
+   "published": "2020-10-27",
+   "file": "data/covers/HF.webp",
+   "bytes": 476958
+  },
+  {
+   "code": "ScreenDungeonKit",
+   "name": "Dungeon Master's Screen: Dungeon Kit",
+   "published": "2020-09-21",
+   "file": "data/covers/ScreenDungeonKit.webp",
+   "bytes": 34940
+  },
+  {
+   "code": "MOT",
+   "name": "Mythic Odysseys of Theros",
+   "published": "2020-06-02",
+   "file": "data/covers/MOT.webp",
+   "bytes": 409152
+  },
+  {
+   "code": "EGW",
+   "name": "Explorer's Guide to Wildemount",
+   "published": "2020-03-17",
+   "file": "data/covers/EGW.webp",
+   "bytes": 351306
+  },
+  {
+   "code": "RMR",
+   "name": "Dungeons & Dragons vs. Rick and Morty: Basic Rules",
+   "published": "2019-11-19",
+   "file": "data/covers/RMR.webp",
+   "bytes": 28218
+  },
+  {
+   "code": "ERLW",
+   "name": "Eberron: Rising from the Last War",
+   "published": "2019-11-19",
+   "file": "data/covers/ERLW.webp",
+   "bytes": 359548
+  },
+  {
+   "code": "AWM",
+   "name": "Adventure with Muk",
+   "published": "2019-11-12",
+   "file": "data/covers/AWM.webp",
+   "bytes": 39910
+  },
+  {
+   "code": "AI",
+   "name": "Acquisitions Incorporated",
+   "published": "2019-06-18",
+   "file": "data/covers/AI.webp",
+   "bytes": 296964
+  },
+  {
+   "code": "SAC",
+   "name": "Sage Advice Compendium (2014)",
+   "published": "2019-01-31",
+   "file": "data/covers/SAC.webp",
+   "bytes": 13420
+  },
+  {
+   "code": "GGR",
+   "name": "Guildmasters' Guide to Ravnica",
+   "published": "2018-11-20",
+   "file": "data/covers/GGR.webp",
+   "bytes": 371292
+  },
+  {
+   "code": "PSD",
+   "name": "Plane Shift: Dominaria",
+   "published": "2018-07-31",
+   "file": "data/covers/PSD.webp",
+   "bytes": 14902
+  },
+  {
+   "code": "MTF",
+   "name": "Mordenkainen's Tome of Foes",
+   "published": "2018-05-29",
+   "file": "data/covers/MTF.webp",
+   "bytes": 411774
+  },
+  {
+   "code": "PSX",
+   "name": "Plane Shift: Ixalan",
+   "published": "2018-01-09",
+   "file": "data/covers/PSX.webp",
+   "bytes": 16886
+  },
+  {
+   "code": "XGE",
+   "name": "Xanathar's Guide to Everything",
+   "published": "2017-11-21",
+   "file": "data/covers/XGE.webp",
+   "bytes": 384350
+  },
+  {
+   "code": "OGA",
+   "name": "One Grung Above",
+   "published": "2017-10-11",
+   "file": "data/covers/OGA.webp",
+   "bytes": 9382
+  },
+  {
+   "code": "PSA",
+   "name": "Plane Shift: Amonkhet",
+   "published": "2017-07-06",
+   "file": "data/covers/PSA.webp",
+   "bytes": 13044
+  },
+  {
+   "code": "PSK",
+   "name": "Plane Shift: Kaladesh",
+   "published": "2017-02-16",
+   "file": "data/covers/PSK.webp",
+   "bytes": 18782
+  },
+  {
+   "code": "VGM",
+   "name": "Volo's Guide to Monsters",
+   "published": "2016-11-15",
+   "file": "data/covers/VGM.webp",
+   "bytes": 342708
+  },
+  {
+   "code": "AL",
+   "name": "Adventurers League",
+   "published": "2016-08-26",
+   "file": "data/covers/AL.webp",
+   "bytes": 6420
+  },
+  {
+   "code": "PSI",
+   "name": "Plane Shift: Innistrad",
+   "published": "2016-07-12",
+   "file": "data/covers/PSI.webp",
+   "bytes": 11558
+  },
+  {
+   "code": "PSZ",
+   "name": "Plane Shift: Zendikar",
+   "published": "2016-04-27",
+   "file": "data/covers/PSZ.webp",
+   "bytes": 18176
+  },
+  {
+   "code": "SCAG",
+   "name": "Sword Coast Adventurer's Guide",
+   "published": "2015-11-03",
+   "file": "data/covers/SCAG.webp",
+   "bytes": 402982
+  },
+  {
+   "code": "Screen",
+   "name": "Dungeon Master's Screen",
+   "published": "2015-01-20",
+   "file": "data/covers/Screen.webp",
+   "bytes": 21654
+  },
+  {
+   "code": "DMG",
+   "name": "Dungeon Master's Guide (2014)",
+   "published": "2014-12-09",
+   "file": "data/covers/DMG.webp",
+   "bytes": 298806
+  },
+  {
+   "code": "MM",
+   "name": "Monster Manual (2014)",
+   "published": "2014-09-30",
+   "file": "data/covers/MM.webp",
+   "bytes": 111934
+  },
+  {
+   "code": "PHB",
+   "name": "Player's Handbook (2014)",
+   "published": "2014-08-19",
+   "file": "data/covers/PHB.webp",
+   "bytes": 391686
+  }
+ ]
+}

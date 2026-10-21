@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personaggi — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/personaggi.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Personaggi — Il Grimorio dei Reami">
+<meta property="og:description" content="Generatore di personaggi D&D 5e: schede pronte, ricerca ottimizzata, PDF.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/personaggi.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Personaggi — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Generatore di personaggi D&D 5e: schede pronte, ricerca ottimizzata, PDF.">
+<meta name="description" content="Generatore di personaggi D&D 5e: schede pronte, ricerca ottimizzata, PDF per il tavolo.">
+<link rel="stylesheet" href="assets/grimorio.css">
+<style>
+/* ============ personaggi v2 — Vetro Arcano ============ */
+#pg-app .cal-card { margin-bottom: 22px; }
+#pg-app .cmp-h3 { display: flex; align-items: center; gap: 10px; font-size: 19px; margin-bottom: 16px; }
+#pg-app .cmp-h3 .tv-rune {
+  display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px;
+  color: var(--gold-hi); font-size: 16px; background: rgba(201,162,39,.08); border: 1px solid rgba(201,162,39,.3);
+}
+/* 13a: form a griglia con gap sistematico */
+.pg-form {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px 18px; margin-bottom: 18px;
+}
+.pg-form > div { display: flex; flex-direction: column; gap: 6px; }
+.pg-form label.dl { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+.pg-form input, .pg-form select {
+  min-height: 42px; padding: 8px 12px; font: inherit; font-size: 14px;
+  color: var(--fg); background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 10px;
+}
+.pg-form input:focus, .pg-form select:focus { outline: 2px solid rgba(201,162,39,.5); outline-offset: 1px; }
+.pg-azioni { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin: 6px 0 14px; }
+.pg-azioni .btn { min-height: 44px; padding: 0 22px; }
+
+/* 13b: card grafica */
+.pg-card-v2 {
+  background: var(--glass); border: 1px solid var(--line); border-radius: 18px;
+  padding: 22px 24px; position: relative; overflow: hidden;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.pg-card-v2::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(201,162,39,.65), rgba(138,107,255,.5), transparent);
+}
+.pg-card-v2:hover { border-color: rgba(201,162,39,.45); box-shadow: 0 12px 36px rgba(0,0,0,.4); transform: translateY(-2px); }
+.pg-real { font-size: 12px; color: #b9a5ff; margin-bottom: 6px; letter-spacing: .03em; }
+.pg-real.pg-gen { color: var(--muted); }
+.pg-real a { color: #b9a5ff; text-decoration: underline; }
+.pg-nome { font-family: 'Castellar', Georgia, serif; font-size: 22px; color: var(--gold-hi); margin: 2px 0 4px; letter-spacing: .03em; }
+.pg-sub-nome { color: #b9a5ff; font-size: 17px; font-weight: 400; }
+.pg-liv {
+  display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; vertical-align: 4px; margin-left: 8px;
+}
+.pg-meta { font-size: 12.5px; color: var(--muted); margin: 4px 0 10px; }
+.pg-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0 14px; }
+.pg-badge {
+  display: inline-flex; align-items: baseline; gap: 6px; padding: 9px 15px;
+  background: linear-gradient(150deg, rgba(201,162,39,.12), rgba(138,107,255,.07));
+  border: 1px solid rgba(201,162,39,.4); border-radius: 12px;
+  font-size: 12px; color: var(--muted); letter-spacing: .06em;
+}
+.pg-badge b { font-size: 19px; color: var(--gold-hi); font-variant-numeric: tabular-nums; }
+.pg-badge-magic { border-color: rgba(138,107,255,.5); background: linear-gradient(150deg, rgba(138,107,255,.13), rgba(201,162,39,.06)); }
+.pg-badge-magic b { color: #b9a5ff; }
+.pg-badge-dim { border-color: var(--line); background: rgba(255,255,255,.04); }
+.pg-badge-dim b { color: var(--fg); }
+.pg-ab-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 9px; margin: 12px 0; }
+@media (max-width: 700px) { .pg-ab-grid { grid-template-columns: repeat(3, 1fr); } }
+.pg-ab {
+  display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 9px 4px 7px;
+  background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 11px;
+}
+.pg-ab-nome { font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.pg-ab-val { font-size: 21px; font-weight: 800; color: var(--fg); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.pg-ab-mod {
+  font-size: 11.5px; font-weight: 700; color: var(--gold-hi);
+  background: rgba(201,162,39,.12); border-radius: 999px; padding: 1px 9px; font-variant-numeric: tabular-nums;
+}
+.pg-salvezze { margin: 8px 0 4px; }
+.pg-chips-row { display: grid; grid-template-columns: 92px 1fr; gap: 10px; align-items: start; margin-top: 8px; }
+@media (max-width: 560px) { .pg-chips-row { grid-template-columns: 1fr; gap: 4px; } }
+.pg-chips-label { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); padding-top: 5px; font-family: 'JetBrains Mono', monospace; }
+.pg-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.pg-chip {
+  font-size: 12px; color: var(--fg); padding: 4px 11px; border-radius: 999px;
+  border: 1px solid var(--line); background: rgba(255,255,255,.04);
+}
+.pg-chip-spell { border-color: rgba(138,107,255,.45); color: #cfc4ff; background: rgba(138,107,255,.08); }
+.pg-chip-cantrip { border-color: rgba(201,162,39,.4); color: var(--gold-hi); background: rgba(201,162,39,.07); }
+.pg-seed { font-size: 10.5px; color: var(--dim); font-family: 'JetBrains Mono', monospace; letter-spacing: .08em; margin-top: 12px; }
+.pg-export { margin-top: 12px; }
+#pg-app .pg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+
+/* scheda completa: sezioni details */
+.pg-sez { border: 1px solid var(--line); border-radius: 12px; margin-top: 10px; background: rgba(255,255,255,.02); }
+.pg-sez summary {
+  cursor: pointer; padding: 11px 16px; font-weight: 700; font-size: 14px; color: var(--gold-hi);
+  list-style: none; display: flex; align-items: center; gap: 8px;
+}
+.pg-sez summary::before { content: "▸"; color: var(--muted); transition: transform .2s; }
+.pg-sez[open] summary::before { transform: rotate(90deg); }
+.pg-sez-body { padding: 4px 18px 14px; font-size: 13.5px; line-height: 1.65; color: var(--fg); }
+.pg-sez-body table { width: 100%; border-collapse: collapse; }
+.pg-sez-body th { text-align: left; color: var(--muted); font-weight: 600; padding: 6px 10px 6px 0; width: 180px; vertical-align: top; border-bottom: 1px dotted var(--line); }
+.pg-sez-body td { padding: 6px 0; border-bottom: 1px dotted var(--line); }
+.pg-scelte .pg-gruppo { border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-top: 12px; background: rgba(255,255,255,.02); }
+.pg-scelte h3 { font-size: 14px; color: var(--gold-hi); margin: 0 0 10px; }
+.pg-righe { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px 14px; }
+.pg-righe label { font-size: 11.5px; color: var(--muted); display: block; margin-bottom: 3px; }
+.pg-righe select { width: 100%; min-height: 36px; background: rgba(255,255,255,.04); border: 1px solid var(--line); color: var(--fg); border-radius: 9px; padding: 4px 10px; font: inherit; font-size: 13px; }
+
+/* ricerca ottimizzata */
+.rc-searchbar { display: flex; align-items: center; gap: 12px; margin-top: 14px; }
+.rc-searchbar input {
+  flex: 1 1 320px; min-height: 44px; padding: 10px 16px; font: inherit; font-size: 14px;
+  color: var(--fg); background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 12px;
+}
+.rc-searchbar input:focus { outline: 2px solid rgba(201,162,39,.5); outline-offset: 1px; }
+.rc-count { font-size: 12.5px; color: var(--muted); white-space: nowrap; font-family: 'JetBrains Mono', monospace; }
+.rc-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 16px; }
+.rc-tab {
+  border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--muted);
+  border-radius: 999px; padding: 8px 18px; font: inherit; font-size: 13px; cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.rc-tab:hover { color: var(--fg); border-color: rgba(201,162,39,.4); }
+.rc-tab.on { color: var(--gold-hi); border-color: rgba(201,162,39,.55); background: rgba(201,162,39,.1); }
+#rc-view table { width: 100%; border-collapse: collapse; font-size: 13px; }
+#rc-view th { text-align: left; color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 1px solid rgba(201,162,39,.3); letter-spacing: .04em; }
+#rc-view td { padding: 8px 10px; border-bottom: 1px dotted var(--line); color: var(--fg); }
+#rc-view tr:hover td { background: rgba(201,162,39,.05); }
+.rc-pdf-ok { color: #6ec98a; font-weight: 700; }
+.rc-pdf-ok::before { content: "✔ "; }
+.rc-pdf-vuoto { color: var(--muted); }
+.rc-pdf-vuoto::before { content: "▢ "; }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#pg-app">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html" class="on">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+    <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+  </nav>
+</header>
+
+<main id="pg-app">
+
+  <div class="hero" style="padding-bottom:10px;">
+    <div class="kicker">Forgia · Guidato, per categorie, con numeri</div>
+    <h1>Forgia il tuo <em>personaggio</em>.</h1>
+    <p class="sub">
+      Tre modi per arrivare al tavolo. <strong>Guidato</strong>: scegli edizione, classe, livello,
+      sottoclasse, razza, talenti e incantesimi dai menu e leggi la scheda con i valori calcolati.
+      <strong>Per categorie</strong>: 26 ruoli popolati con build pronte, dove possibile con il nome
+      delle build reali del canale d4: D&D Deep Dive. <strong>Ricerca</strong>: classifiche con
+      metrica dichiarata, numeri calcolati e non opinioni.
+    </p>
+  </div>
+
+  <section class="cal-card">
+    <h2 class="cmp-h3"><span class="tv-rune" aria-hidden="true">ᚠ</span>1 · Creazione guidata</h2>
+    <div class="pg-form">
+      <div><label class="dl" for="pg-ed">Edizione</label>
+        <select id="pg-ed"><option value="2014">2014 (PHB, XGE…)</option><option value="2024">2024 (XPHB…)</option></select></div>
+      <div><label class="dl" for="pg-classe">Classe</label><select id="pg-classe"></select></div>
+      <div><label class="dl" for="pg-liv">Livello</label>
+        <input id="pg-liv" type="number" min="1" max="20" value="5"></div>
+      <div><label class="dl" for="pg-sottoclasse">Sottoclasse</label><select id="pg-sottoclasse"></select></div>
+      <div><label class="dl" for="pg-razza">Razza / Specie</label><select id="pg-razza"></select></div>
+      <div><label class="dl" for="pg-bg">Background</label><select id="pg-bg"></select></div>
+      <div><label class="dl" for="pg-fonte">Fonte dei materiali</label><select id="pg-fonte"></select></div>
+      <div><label class="dl" for="pg-seed">Seme</label>
+        <input id="pg-seed" type="number" min="1" value="1"></div>
+    </div>
+    <div class="pg-azioni">
+      <button type="button" id="pg-dado" class="btn">Seme casuale</button>
+      <button type="button" id="pg-pdf" class="btn-pdf">Salva scheda PDF</button>
+      <span id="pg-pdf-esito" class="tv-meta"></span>
+    </div>
+    <p class="tv-meta">Talenti: un menu per ogni livello che ne concede uno (4-8-12-16, più 19 nel
+      2014). Incantesimi: trucchetti e incantesimi per ogni livello accessibile. Le scelte si possono
+      cambiare in qualsiasi momento; il seme rende riproducibile ciò che non si sceglie a mano.</p>
+    <div id="pg-scelte" class="pg-scelte"></div>
+    <div id="pg-out" class="pg-out" aria-live="polite"></div>
+    <div id="pg-dettaglio" class="pg-dettaglio"></div>
+  </section>
+
+  <section class="cal-card">
+    <h2 class="cmp-h3"><span class="tv-rune" aria-hidden="true">ᛚ</span>2 · Generatore per categorie</h2>
+    <div class="pg-form">
+      <div><label class="dl" for="pg-cat">Categoria di ruolo</label><select id="pg-cat"></select></div>
+      <div><label class="dl" for="pg-cat-ed">Edizione</label>
+        <select id="pg-cat-ed"><option value="">entrambe</option><option value="2014">2014</option><option value="2024">2024</option></select></div>
+      <div><label class="dl" for="pg-cat-n">Quanti</label>
+        <input id="pg-cat-n" type="number" min="1" max="8" value="3"></div>
+      <div><label class="dl" for="pg-cat-sort">Ordine build</label>
+        <select id="pg-cat-sort">
+          <option value="cronologia">cronologico</option>
+          <option value="numero">per numero (decrescente)</option>
+        </select></div>
+    </div>
+    <div class="pg-azioni">
+      <button type="button" id="pg-cat-btn" class="btn btn-primary">Genera personaggi</button>
+    </div>
+    <p class="tv-meta">26 categorie: DPS, danno esplosivo, blaster ad area, guaritore, tank,
+      battlefield controller, supporto, indebolimento, evocatore, negromante, illusionista,
+      ammaliatore, tiratore, mischia, furtività, volto sociale, esperto di abilità, esploratore,
+      gish, lottatore, cavaliere, protettore, supporto tecnico, multiclasse, duellante, schermagliatore.</p>
+    <div id="pg-cat-out" aria-live="polite"></div>
+  </section>
+
+  <section class="cal-card" id="ricerca">
+    <h2 class="cmp-h3"><span class="tv-rune" aria-hidden="true">ᚦ</span>3 · Ricerca ottimizzata</h2>
+    <p class="tv-meta">15 build e 71 combinazioni verificate sul testo delle regole (PHB/DMG 2024, Heroes of Faer&ucirc;n,
+      Ravenloft, Arcana Unleashed) pi&ugrave; 20 classifiche di ruolo con metrica dichiarata. Ogni numero viene da un
+      motore deterministico rieseguibile, non da una stima.</p>
+    <div class="rc-searchbar">
+      <input id="rc-search" type="search" placeholder="Cerca una build per nome, classe o sottoclasse (es. Pyromancer, Legion, oathbreaker…)" autocomplete="off">
+      <span class="rc-count" id="rc-count"></span>
+    </div>
+    <div class="rc-tabs">
+      <button type="button" class="rc-tab on" data-tab="build">Build (DPR 5-20)</button>
+      <button type="button" class="rc-tab" data-tab="ruoli">Ruoli (20 &times; Top 5)</button>
+      <button type="button" class="rc-tab" data-tab="combo">Combo (71)</button>
+      <button type="button" class="rc-tab" data-tab="oneshot">Colpo singolo</button>
+    </div>
+    <div id="rc-view" aria-live="polite"></div>
+    <script>window.__PDF_COMPILED_JSON__ = null;window.__RESEARCH_PDF_JSON__ = null;fetch("../data/pdf-compiled.json").then(function(r){return r.json();}).then(function(j){window.__PDF_COMPILED_JSON__=j;}).catch(function(){});fetch("../data/research-pdf.json").then(function(r){return r.json();}).then(function(j){window.__RESEARCH_PDF_JSON__=j;}).catch(function(){});</script>
+  </section>
+
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · offline-first
+</footer>
+
+<script src="i18n-bi.js"></script>
+<script src="../assets/i18n-auto.js"></script>
+<script src="assets/lang-menu.js"></script>
+<script>/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
+window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="assets/personaggi-app.js"></script>
+<script src="assets/personaggi-pdf.js"></script>
+<script src="assets/personaggi-ricerca.js"></script>
+<script src="assets/collapse.js"></script>
+<script src="assets/helpers.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://grimorio-dei-reami.serveousercontent.com/#website", "name": "Il Grimorio dei Reami — Consultazione, dati e strumenti per D&D 5e", "url": "https://grimorio-dei-reami.serveousercontent.com/", "inLanguage": "it", "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://grimorio-dei-reami.serveousercontent.com/v2/cerca.html?q={search_term_string}"}, "query-input": "required name=search_term_string"}}, {"@type": "WebPage", "name": "Generatore di Personaggi — creazione guidata e per categorie — Il Grimorio dei Reami", "description": "Crea un personaggio D&D 5e passo per passo (edizione, classe, livello, sottoclasse, razza, talenti, incantesimi) oppure genera personaggi casuali per 26 categorie di ruolo.", "url": "https://grimorio-dei-reami.serveousercontent.com/v2/personaggi.html", "inLanguage": "it", "isPartOf": {"@id": "https://grimorio-dei-reami.serveousercontent.com/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://grimorio-dei-reami.serveousercontent.com/"}, {"@type": "ListItem", "position": 2, "name": "Personaggi", "item": "https://grimorio-dei-reami.serveousercontent.com/v2/personaggi.html"}]}]}</script>
+
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

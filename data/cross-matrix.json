@@ -1,0 +1,2343 @@
+{
+ "nota": "Copertura e incroci su TUTTO il materiale 2024+ (34 fonti). Una sottoclasse si applica solo alla sua classe: la colonna «applicabili» conta le scelte reali, non teoriche. Gli incroci sono coppie di talenti che condividono >=2 leve meccaniche, dichiarate: la leva e' la prova della sinergia, non un giudizio a occhio.",
+ "inventario": {
+  "sottoclassi": 76,
+  "specie": 26,
+  "talenti": 197,
+  "background": 70,
+  "di_cui_fuori_xphb": {
+   "sottoclassi": 28,
+   "specie": 16,
+   "talenti": 120,
+   "background": 54
+  }
+ },
+ "copertura": {
+  "sottoclassi": {
+   "totale": 76,
+   "usate": 9,
+   "non_usate": 67,
+   "pct": 11.8,
+   "non_usate_elenco": [
+    {
+     "nome": "Alchemist",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Armorer",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Artillerist",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Battle Smith",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Cartographer",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Reanimator",
+     "classe": "Artificer",
+     "s": "RHW"
+    },
+    {
+     "nome": "Path of the Berserker",
+     "classe": "Barbarian",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Path of the World Tree",
+     "classe": "Barbarian",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Path of the Zealot",
+     "classe": "Barbarian",
+     "s": "XPHB"
+    },
+    {
+     "nome": "College of the Moon",
+     "classe": "Bard",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "College of Spirits",
+     "classe": "Bard",
+     "s": "RHW"
+    },
+    {
+     "nome": "College of Dance",
+     "classe": "Bard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "College of Valor",
+     "classe": "Bard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Arcana Domain",
+     "classe": "Cleric",
+     "s": "AU"
+    },
+    {
+     "nome": "Knowledge Domain",
+     "classe": "Cleric",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Grave Domain",
+     "classe": "Cleric",
+     "s": "RHW"
+    },
+    {
+     "nome": "Life Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Light Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Trickery Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "War Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Land",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Moon",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Sea",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Stars",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Arcane Archer",
+     "classe": "Fighter",
+     "s": "AU"
+    },
+    {
+     "nome": "Banneret",
+     "classe": "Fighter",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Battle Master",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Champion",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Eldritch Knight",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Psi Warrior",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warrior of the Mystic Arts",
+     "classe": "Monk",
+     "s": "AU"
+    },
+    {
+     "nome": "Warrior of Mercy",
+     "classe": "Monk",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warrior of Shadow",
+     "classe": "Monk",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warrior of the Elements",
+     "classe": "Monk",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Oath of the Noble Genies",
+     "classe": "Paladin",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Oath of Devotion",
+     "classe": "Paladin",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Oath of Glory",
+     "classe": "Paladin",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Oath of the Ancients",
+     "classe": "Paladin",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Winter Walker",
+     "classe": "Ranger",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Hollow Warden",
+     "classe": "Ranger",
+     "s": "RHW"
+    },
+    {
+     "nome": "Beast Master",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Fey Wanderer",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gloom Stalker",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Hunter",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Scion of the Three",
+     "classe": "Rogue",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Phantom",
+     "classe": "Rogue",
+     "s": "RHW"
+    },
+    {
+     "nome": "Arcane Trickster",
+     "classe": "Rogue",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Soulknife",
+     "classe": "Rogue",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Spellfire Sorcery",
+     "classe": "Sorcerer",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Shadow Sorcery",
+     "classe": "Sorcerer",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Clockwork Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Draconic Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Wild Magic Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Vestige Patron",
+     "classe": "Warlock",
+     "s": "AU"
+    },
+    {
+     "nome": "Undead Patron",
+     "classe": "Warlock",
+     "s": "RHW"
+    },
+    {
+     "nome": "Archfey Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Celestial Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Fiend Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Great Old One Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Conjurer",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Enchanter",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Necromancer",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Transmuter",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Diviner",
+     "classe": "Wizard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Evoker",
+     "classe": "Wizard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Illusionist",
+     "classe": "Wizard",
+     "s": "XPHB"
+    }
+   ]
+  },
+  "specie": {
+   "totale": 26,
+   "usate": 5,
+   "non_usate": 21,
+   "pct": 19.2,
+   "non_usate_elenco": [
+    {
+     "nome": "Aasimar",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boggart",
+     "s": "LFL"
+    },
+    {
+     "nome": "Changeling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Dhampir",
+     "s": "RHW"
+    },
+    {
+     "nome": "Dragonborn",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dwarf",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Faerie",
+     "s": "LFL"
+    },
+    {
+     "nome": "Flamekin",
+     "s": "LFL"
+    },
+    {
+     "nome": "Halfling",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Hexblood",
+     "s": "RHW"
+    },
+    {
+     "nome": "Kalashtar",
+     "s": "EFA"
+    },
+    {
+     "nome": "Khoravar",
+     "s": "EFA"
+    },
+    {
+     "nome": "Kithkin",
+     "s": "LFL"
+    },
+    {
+     "nome": "Lorwyn Changeling",
+     "s": "LFL"
+    },
+    {
+     "nome": "Lupin",
+     "s": "RHW"
+    },
+    {
+     "nome": "Orc",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Reborn",
+     "s": "RHW"
+    },
+    {
+     "nome": "Rimekin",
+     "s": "LFL"
+    },
+    {
+     "nome": "Shifter",
+     "s": "EFA"
+    },
+    {
+     "nome": "Tiefling",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warforged",
+     "s": "EFA"
+    }
+   ]
+  },
+  "talenti": {
+   "totale": 197,
+   "usate": 36,
+   "non_usate": 161,
+   "pct": 18.3,
+   "non_usate_elenco": [
+    {
+     "nome": "Aberrant Anatomy",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Ability Score Improvement",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Actor",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Arcane Artist",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Eloquence",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Infiltrator",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Omens",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Safeguard",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Undertaker",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Warrior",
+     "s": "AU"
+    },
+    {
+     "nome": "Archery",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Athlete",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Blessed Warrior",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Blind Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Bloodlust",
+     "s": "ABH"
+    },
+    {
+     "nome": "Bomber",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Blazing Dawn",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Bloodshed",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Bountiful Health",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Combat Prowess",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Communication",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Desperate Resilience",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Erupting Spellpower",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Exquisite Radiance",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Fluid Forms",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Fortune's Favor",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Looming Shadows",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Magic School Mastery",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Misty Escape",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Poison Mastery",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Recovery",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Siberys",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Terror",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Furious Storm",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Iron Mind",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of the Soul Drinker",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Truesight",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Charger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Chef",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    },
+    {
+     "nome": "Cloying Mists",
+     "s": "ABH"
+    },
+    {
+     "nome": "Cold Caster",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Conjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Crafter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Crossbow Expert",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Cult of the Dragon Initiate",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Defense",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Delicious Pain",
+     "s": "ABH"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Druidic Warrior",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dual Wielder",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dueling",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Echoing Soul",
+     "s": "RHW"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Emerald Enclave Fledgling",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Enchantment Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Evocation Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Fairy Trickster",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Fey-Touched",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Genie Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Great Weapon Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Greater Aberrant Mark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Finding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Healing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Making",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Passage",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Scribing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Sentinel",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Shadow",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Storm",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Warding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Harper Agent",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Harper Teamwork",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Heavily Armored",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Heavy Armor Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Illusion Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Interception",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Keen Mind",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Light Bringer",
+     "s": "ABH"
+    },
+    {
+     "nome": "Lightly Armored",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Living Shadow",
+     "s": "RHW"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Love Bites",
+     "s": "ABH"
+    },
+    {
+     "nome": "Lucky",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mage Slayer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Magic Connoisseur",
+     "s": "AU"
+    },
+    {
+     "nome": "Mark of Finding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Healing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Making",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Passage",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Scribing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Sentinel",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Shadow",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Storm",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Warding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Martial Weapon Training",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Medium Armor Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    },
+    {
+     "nome": "Moderately Armored",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mounted Combatant",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Musician",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mythal Touched",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Necromancy Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Observant",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Order's Resilience",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Otherworldly Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Piercer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Poisoner",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Polearm Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Portal Jumper",
+     "s": "AU"
+    },
+    {
+     "nome": "Potent Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Protection",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Purple Dragon Commandant",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Purple Dragon Rook",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Putrefy",
+     "s": "ABH"
+    },
+    {
+     "nome": "Rebuke",
+     "s": "ABH"
+    },
+    {
+     "nome": "Second Skin",
+     "s": "RHW"
+    },
+    {
+     "nome": "Sentinel",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Shadow-Touched",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Shadowmoor Hexer",
+     "s": "LFL"
+    },
+    {
+     "nome": "Sharp Eye",
+     "s": "RHW"
+    },
+    {
+     "nome": "Shield Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Slasher",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Soothing Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Spell Resistant",
+     "s": "AU"
+    },
+    {
+     "nome": "Spell Subterfuge",
+     "s": "AU"
+    },
+    {
+     "nome": "Spellfire Adept",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Spellfire Spark",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Street Justice",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Survivor",
+     "s": "RHW"
+    },
+    {
+     "nome": "Symbiotic Being",
+     "s": "RHW"
+    },
+    {
+     "nome": "Telekinetic",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Telepathic",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Thrown Weapon Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Tireless Reveler",
+     "s": "ABH"
+    },
+    {
+     "nome": "Touch of Death",
+     "s": "RHW"
+    },
+    {
+     "nome": "Transmutation Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Transmuted Anatomy",
+     "s": "AU"
+    },
+    {
+     "nome": "Treacherous Allure",
+     "s": "ABH"
+    },
+    {
+     "nome": "Two-Weapon Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Tyro of the Gauntlet",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Unarmed Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Vampire Hunter",
+     "s": "ABH"
+    },
+    {
+     "nome": "Vampire Touched",
+     "s": "ABH"
+    },
+    {
+     "nome": "Vampire's Plaything",
+     "s": "ABH"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Watchers",
+     "s": "RHW"
+    }
+   ]
+  },
+  "background": {
+   "totale": 70,
+   "usate": 8,
+   "non_usate": 62,
+   "pct": 11.4,
+   "non_usate_elenco": [
+    {
+     "nome": "Aberrant Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "Acolyte",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Agent of the Ninth Quill",
+     "s": "AU"
+    },
+    {
+     "nome": "Archaeologist",
+     "s": "EFA"
+    },
+    {
+     "nome": "Artisan",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Bejeweled Conclave Spy",
+     "s": "AU"
+    },
+    {
+     "nome": "Carouser",
+     "s": "ABH"
+    },
+    {
+     "nome": "Chondathan Freebooter",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Cosmic Dawn Experiment",
+     "s": "AU"
+    },
+    {
+     "nome": "Covenant of the Grave Recruit",
+     "s": "AU"
+    },
+    {
+     "nome": "Crucible Storm Chaser",
+     "s": "AU"
+    },
+    {
+     "nome": "Dead Magic Dweller",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Dragon Cultist",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Emerald Enclave Caretaker",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Entertainer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Familiar Trainer",
+     "s": "AU"
+    },
+    {
+     "nome": "Farmer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Flaming Fist Mercenary",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Genie Touched",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Guard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Guide",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Harper",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Haunted One",
+     "s": "RHW"
+    },
+    {
+     "nome": "Horizon Weaver Initiate",
+     "s": "AU"
+    },
+    {
+     "nome": "House Agent",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Cannith Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Deneith Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Ghallanda Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Jorasco Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Kundarak Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Lyrandar Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Medani Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Orien Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Phiarlan Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Sivis Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Tharashk Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Thuranni Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Vadalis Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "Ice Fisher",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Inquisitive",
+     "s": "EFA"
+    },
+    {
+     "nome": "Investigator",
+     "s": "RHW"
+    },
+    {
+     "nome": "Knight of the Gauntlet",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Lords' Alliance Vassal",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Lorwyn Expert",
+     "s": "LFL"
+    },
+    {
+     "nome": "Merchant",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mist Wanderer",
+     "s": "RHW"
+    },
+    {
+     "nome": "Moonwell Pilgrim",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mulhorandi Tomb Raider",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mythalkeeper",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Phantasmic Circus Trouper",
+     "s": "AU"
+    },
+    {
+     "nome": "Purple Dragon Squire",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Rashemi Wanderer",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Scribe",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Seer Apprentice",
+     "s": "AU"
+    },
+    {
+     "nome": "Shadowmasters Exile",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Shadowmoor Expert",
+     "s": "LFL"
+    },
+    {
+     "nome": "Spellfire Initiate",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Spirit Medium",
+     "s": "RHW"
+    },
+    {
+     "nome": "Vampire Devotee",
+     "s": "ABH"
+    },
+    {
+     "nome": "Vampire Survivor",
+     "s": "ABH"
+    },
+    {
+     "nome": "Ward of the Sheltering Hands",
+     "s": "AU"
+    },
+    {
+     "nome": "Wayfarer",
+     "s": "XPHB"
+    }
+   ]
+  }
+ },
+ "per_build": [
+  {
+   "id": "B01",
+   "nome": "Ombra della Selva",
+   "classi": [
+    "Rogue"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Rogue",
+     "nome": "Scion of the Three",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Rogue",
+     "nome": "Phantom",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "nome": "Araldo delle Due Voci",
+   "classi": [
+    "Bard",
+    "Paladin"
+   ],
+   "sottoclassi_applicabili": 11,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Bard",
+     "nome": "College of the Moon",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Bard",
+     "nome": "College of Spirits",
+     "s": "RHW"
+    },
+    {
+     "classe": "Paladin",
+     "nome": "Oath of the Noble Genies",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "nome": "Il Carapace che Ride",
+   "classi": [
+    "Barbarian"
+   ],
+   "sottoclassi_applicabili": 4,
+   "sottoclassi_2024_alternative": []
+  },
+  {
+   "id": "B04",
+   "nome": "La Mano che non Molla",
+   "classi": [
+    "Monk"
+   ],
+   "sottoclassi_applicabili": 5,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Monk",
+     "nome": "Warrior of the Mystic Arts",
+     "s": "AU"
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "nome": "Il Primo Sangue",
+   "classi": [
+    "Rogue"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Rogue",
+     "nome": "Scion of the Three",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Rogue",
+     "nome": "Phantom",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "nome": "Il Congegno che Corregge",
+   "classi": [
+    "Bard"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Bard",
+     "nome": "College of the Moon",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Bard",
+     "nome": "College of Spirits",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "nome": "Il Terrore che non Corre",
+   "classi": [
+    "Bard",
+    "Paladin",
+    "Warlock"
+   ],
+   "sottoclassi_applicabili": 17,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Bard",
+     "nome": "College of the Moon",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Bard",
+     "nome": "College of Spirits",
+     "s": "RHW"
+    },
+    {
+     "classe": "Paladin",
+     "nome": "Oath of the Noble Genies",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Warlock",
+     "nome": "Vestige Patron",
+     "s": "AU"
+    },
+    {
+     "classe": "Warlock",
+     "nome": "Undead Patron",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "nome": "Colui che non Cade",
+   "classi": [
+    "Barbarian",
+    "Cleric",
+    "Monk"
+   ],
+   "sottoclassi_applicabili": 16,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Cleric",
+     "nome": "Arcana Domain",
+     "s": "AU"
+    },
+    {
+     "classe": "Cleric",
+     "nome": "Knowledge Domain",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Cleric",
+     "nome": "Grave Domain",
+     "s": "RHW"
+    },
+    {
+     "classe": "Monk",
+     "nome": "Warrior of the Mystic Arts",
+     "s": "AU"
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "nome": "La Voce che Convince",
+   "classi": [
+    "Bard"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Bard",
+     "nome": "College of the Moon",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Bard",
+     "nome": "College of Spirits",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "nome": "Paladino Zhentarim",
+   "classi": [
+    "Paladin"
+   ],
+   "sottoclassi_applicabili": 5,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Paladin",
+     "nome": "Oath of the Noble Genies",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "nome": "Il Duellante che non Ti Molla",
+   "classi": [
+    "Rogue"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Rogue",
+     "nome": "Scion of the Three",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Rogue",
+     "nome": "Phantom",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "nome": "Il Sogno che Cura",
+   "classi": [
+    "Druid"
+   ],
+   "sottoclassi_applicabili": 4,
+   "sottoclassi_2024_alternative": []
+  },
+  {
+   "id": "B13",
+   "nome": "Il Cavaliere del Drago",
+   "classi": [
+    "Ranger"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Ranger",
+     "nome": "Winter Walker",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Ranger",
+     "nome": "Hollow Warden",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "nome": "L'Incendio che Cammina",
+   "classi": [
+    "Druid"
+   ],
+   "sottoclassi_applicabili": 4,
+   "sottoclassi_2024_alternative": []
+  },
+  {
+   "id": "B15",
+   "nome": "Il Sigillo di Drow",
+   "classi": [
+    "Wizard"
+   ],
+   "sottoclassi_applicabili": 9,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Wizard",
+     "nome": "Conjurer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Enchanter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Necromancer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Transmuter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Bladesinger",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "nome": "Il Libro che Cambia Pelle",
+   "classi": [
+    "Wizard"
+   ],
+   "sottoclassi_applicabili": 9,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Wizard",
+     "nome": "Conjurer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Enchanter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Necromancer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Transmuter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Bladesinger",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "nome": "Il Fuoco che non si Resiste",
+   "classi": [
+    "Wizard"
+   ],
+   "sottoclassi_applicabili": 9,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Wizard",
+     "nome": "Conjurer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Enchanter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Necromancer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Transmuter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Bladesinger",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "nome": "Il Gigante che Lancia Raggi",
+   "classi": [
+    "Fighter",
+    "Wizard"
+   ],
+   "sottoclassi_applicabili": 15,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Fighter",
+     "nome": "Arcane Archer",
+     "s": "AU"
+    },
+    {
+     "classe": "Fighter",
+     "nome": "Banneret",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Conjurer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Enchanter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Necromancer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Transmuter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Bladesinger",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "nome": "L'Occhio che Deduce",
+   "classi": [
+    "Rogue"
+   ],
+   "sottoclassi_applicabili": 6,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Rogue",
+     "nome": "Scion of the Three",
+     "s": "FRHoF"
+    },
+    {
+     "classe": "Rogue",
+     "nome": "Phantom",
+     "s": "RHW"
+    }
+   ]
+  },
+  {
+   "id": "B20",
+   "nome": "Il Passo di Fey",
+   "classi": [
+    "Wizard"
+   ],
+   "sottoclassi_applicabili": 9,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Wizard",
+     "nome": "Conjurer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Enchanter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Necromancer",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Transmuter",
+     "s": "AU"
+    },
+    {
+     "classe": "Wizard",
+     "nome": "Bladesinger",
+     "s": "FRHoF"
+    }
+   ]
+  },
+  {
+   "id": "B21",
+   "nome": "Il Critico dell'Alleanza",
+   "classi": [
+    "Paladin"
+   ],
+   "sottoclassi_applicabili": 5,
+   "sottoclassi_2024_alternative": [
+    {
+     "classe": "Paladin",
+     "nome": "Oath of the Noble Genies",
+     "s": "FRHoF"
+    }
+   ]
+  }
+ ],
+ "incroci": {
+  "totale": 1213,
+  "con_almeno_una_fonte_non_xphb": 1148,
+  "migliori": [
+   {
+    "a": "Elemental Familiar",
+    "b": "Mythal Touched",
+    "leve": [
+     "azione_bonus",
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Mist Walker",
+    "leve": [
+     "competenze",
+     "controllo",
+     "movimento",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Boon of Revelry",
+    "b": "Second Skin",
+    "leve": [
+     "concentrazione",
+     "controllo",
+     "slot_extra",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Elemental Familiar",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "AU"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Greater Mark of Handling",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "EFA"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Mist Walker",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Mythal Touched",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Shield Master",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "XPHB"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Survivor",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Boon of Terror",
+    "b": "Symbiotic Being",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Durable",
+    "b": "Lordly Resolve",
+    "leve": [
+     "azione_bonus",
+     "movimento",
+     "ts_impatti",
+     "vantaggio"
+    ],
+    "a_s": "XPHB",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Echoing Soul",
+    "b": "Greater Mark of Handling",
+    "leve": [
+     "competenze",
+     "controllo",
+     "movimento",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "EFA"
+   },
+   {
+    "a": "Echoing Soul",
+    "b": "Living Shadow",
+    "leve": [
+     "competenze",
+     "controllo",
+     "movimento",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Echoing Soul",
+    "b": "Mist Walker",
+    "leve": [
+     "competenze",
+     "controllo",
+     "movimento",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Greater Mark of Handling",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "EFA"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Living Shadow",
+    "leve": [
+     "azione_bonus",
+     "competenze",
+     "controllo",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Lordly Resolve",
+    "leve": [
+     "azione_bonus",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Mist Walker",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Shield Master",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "XPHB"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Survivor",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Elemental Familiar",
+    "b": "Symbiotic Being",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "AU",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Fairy Trickster",
+    "b": "Transmuted Anatomy",
+    "leve": [
+     "competenze",
+     "movimento",
+     "ts_impatti",
+     "vantaggio"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "AU"
+   },
+   {
+    "a": "Gathered Whispers",
+    "b": "Mythal Touched",
+    "leve": [
+     "competenze",
+     "reazione",
+     "slot_extra",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Gathered Whispers",
+    "b": "Transmuted Anatomy",
+    "leve": [
+     "competenze",
+     "reazione",
+     "ts_impatti",
+     "vantaggio"
+    ],
+    "a_s": "RHW",
+    "b_s": "AU"
+   },
+   {
+    "a": "Gathered Whispers",
+    "b": "Watchers",
+    "leve": [
+     "competenze",
+     "slot_extra",
+     "ts_impatti",
+     "vantaggio"
+    ],
+    "a_s": "RHW",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Living Shadow",
+    "leve": [
+     "competenze",
+     "controllo",
+     "movimento",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Lordly Resolve",
+    "leve": [
+     "controllo",
+     "movimento",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Mythal Touched",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Shield Master",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "XPHB"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Survivor",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Symbiotic Being",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Greater Mark of Handling",
+    "b": "Transmuted Anatomy",
+    "leve": [
+     "competenze",
+     "movimento",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "EFA",
+    "b_s": "AU"
+   },
+   {
+    "a": "Living Shadow",
+    "b": "Lordly Resolve",
+    "leve": [
+     "azione_bonus",
+     "controllo",
+     "movimento",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Living Shadow",
+    "b": "Mist Walker",
+    "leve": [
+     "competenze",
+     "controllo",
+     "movimento",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Living Shadow",
+    "b": "Mythal Touched",
+    "leve": [
+     "azione_bonus",
+     "competenze",
+     "controllo",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Lordly Resolve",
+    "b": "Mist Walker",
+    "leve": [
+     "controllo",
+     "movimento",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "RHW"
+   },
+   {
+    "a": "Lordly Resolve",
+    "b": "Mythal Touched",
+    "leve": [
+     "azione_bonus",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Lordly Resolve",
+    "b": "Order's Resilience",
+    "leve": [
+     "controllo",
+     "movimento",
+     "ts_impatti",
+     "vantaggio"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "FRHoF"
+   },
+   {
+    "a": "Lordly Resolve",
+    "b": "Transmuted Anatomy",
+    "leve": [
+     "movimento",
+     "reazione",
+     "ts_impatti",
+     "vantaggio"
+    ],
+    "a_s": "FRHoF",
+    "b_s": "AU"
+   },
+   {
+    "a": "Mist Walker",
+    "b": "Mythal Touched",
+    "leve": [
+     "competenze",
+     "controllo",
+     "reazione",
+     "ts_impatti"
+    ],
+    "a_s": "RHW",
+    "b_s": "FRHoF"
+   }
+  ]
+ }
+}

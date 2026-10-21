@@ -1,0 +1,154 @@
+{
+ "generato": "2026-09-29T16:55:32",
+ "target": "http://127.0.0.1:8777",
+ "totale_test_unici": 14,
+ "PASS": 14,
+ "FAIL": 0,
+ "BLOCKED": 0,
+ "bilancio_ok": true,
+ "p95_sequenziale_ms": 1.64,
+ "p95_concorrente_ms": 7.21,
+ "durata_s": 5.2,
+ "test": [
+  {
+   "id": "TEST-001",
+   "metodologia": "Unmocked Integration (HTTP reale)",
+   "target": "GET /{8 pagine} @ http://127.0.0.1:8777",
+   "azione": "8 richieste HTTP sequenziali sulle pagine scoperte su disco",
+   "strumentazione": "urllib.request",
+   "criterio": "tutte le pagine presenti su disco rispondono 200 con body >2 KB",
+   "esito": "PASS",
+   "note": "ok=8/8 "
+  },
+  {
+   "id": "TEST-002",
+   "metodologia": "API Contract & Schema",
+   "target": "/data/*.json (5 dataset)",
+   "azione": "GET + json.loads + verifica chiavi attese",
+   "strumentazione": "urllib.request + json",
+   "criterio": "HTTP 200, JSON parsabile, chiavi di contratto presenti",
+   "esito": "PASS",
+   "note": "5/5 conformi"
+  },
+  {
+   "id": "TEST-003",
+   "metodologia": "Property-Based Testing (invarianti)",
+   "target": "/data/faerun-days.json",
+   "azione": "4 invarianti: tipi, ordinale composto, identificatori, festival intercalari",
+   "strumentazione": "json + verifica esplicita",
+   "criterio": "0 violazioni di monotonicità, tipi, identificatori e intercalari",
+   "esito": "PASS",
+   "note": "invarianti=4 violazioni=nessuna"
+  },
+  {
+   "id": "TEST-004",
+   "metodologia": "Mutation Testing sintattico",
+   "target": "public-site/server.py",
+   "azione": "iniezione di 1 mutante valido (rename della prima funzione) + ast.parse",
+   "strumentazione": "ast.parse + py_compile",
+   "criterio": "il mutante resta sintatticamente valido e l'originale compila",
+   "esito": "PASS",
+   "note": "mutante_valido=True originale_compila=True"
+  },
+  {
+   "id": "TEST-005",
+   "metodologia": "Resource Profiling (baseline)",
+   "target": "endpoints HTTP @ 8777",
+   "azione": "32 richieste sequenziali, percentili calcolati",
+   "strumentazione": "urllib + statistics",
+   "criterio": "p95 sequenziale misurato e registrato",
+   "esito": "PASS",
+   "note": "n=32 p50=1.3ms p95=1.6ms max=21.2ms"
+  },
+  {
+   "id": "TEST-006",
+   "metodologia": "Concurrency & Thread-Safety",
+   "target": "12 worker × 96 richieste",
+   "azione": "ThreadPoolExecutor(max_workers=12) su 4 endpoint",
+   "strumentazione": "concurrent.futures + urllib",
+   "criterio": "0 errori di trasporto, nessun deadlock, p95 concorrente misurato",
+   "esito": "PASS",
+   "note": "errs=0 wall=531ms p50c=5.5 p95c=7.2"
+  },
+  {
+   "id": "TEST-007",
+   "metodologia": "Resource Profiling (heap Python)",
+   "target": "harness (non il server)",
+   "azione": "30 cicli GET+json.loads di un dataset da 1.9 MB, tracemalloc start/stop",
+   "strumentazione": "tracemalloc",
+   "criterio": "il delta di heap del harness resta < 8 MB (nessuna crescita patologica)",
+   "esito": "PASS",
+   "note": "delta_heap=+1.89 MB"
+  },
+  {
+   "id": "TEST-008",
+   "metodologia": "Resource Profiling (RSS processo)",
+   "target": "processi python dell'host",
+   "azione": "Get-CimInstance Win32_Process → WorkingSetSize aggregato",
+   "strumentazione": "PowerShell CIM",
+   "criterio": "RSS totale dei processi python leggibile e registrato",
+   "esito": "PASS",
+   "note": "proc=59 RSS_tot=2004 MB"
+  },
+  {
+   "id": "TEST-009",
+   "metodologia": "Unmocked Integration (fs ↔ http)",
+   "target": "data/ricerca-2024.json",
+   "azione": "sha256 del file su disco vs sha256 del body HTTP",
+   "strumentazione": "hashlib + urllib",
+   "criterio": "la risorsa servita coincide byte-per-byte col file su disco",
+   "esito": "PASS",
+   "note": "disk=e4af2e41123bf474 http=e4af2e41123bf474"
+  },
+  {
+   "id": "TEST-010",
+   "metodologia": "Chaos & Resilience (input malevolo)",
+   "target": "4 payload di path traversal",
+   "azione": "GET con sequenze ../ url-encoded e non",
+   "strumentazione": "urllib.request",
+   "criterio": "nessuna fuga di file fuori dalla doc-root",
+   "esito": "PASS",
+   "note": "0 fughe su 4 vettori"
+  },
+  {
+   "id": "TEST-011",
+   "metodologia": "Unmocked Integration (persistenza)",
+   "target": "public-site/logs/",
+   "azione": "write → read back → unlink",
+   "strumentazione": "pathlib",
+   "criterio": "ciclo di scrittura riuscito e file rimosso",
+   "esito": "PASS",
+   "note": "write/read/unlink ok"
+  },
+  {
+   "id": "TEST-012",
+   "metodologia": "API Contract (live)",
+   "target": "http://127.0.0.1:8420/health",
+   "azione": "GET /health",
+   "strumentazione": "urllib.request",
+   "criterio": "il gateway risponde con 2xx",
+   "esito": "PASS",
+   "note": "HTTP 200 body=b'{\"status\":\"ok\",\"version\":\"0.1.0\",\"uptime\":52615,\"stores\":{\"v'"
+  },
+  {
+   "id": "TEST-013",
+   "metodologia": "API Contract (live)",
+   "target": "http://127.0.0.1:8426/api/ops",
+   "azione": "GET + parsing JSON dei contatori pipeline",
+   "strumentazione": "urllib.request + json",
+   "criterio": "i 3 contatori gateway sono presenti e leggibili",
+   "esito": "PASS",
+   "note": "keys=['tasks_consumed', 'tasks_completed', 'tasks_failed'] values=[60, 60, 0]"
+  },
+  {
+   "id": "TEST-014",
+   "metodologia": "System Test (CLI)",
+   "target": "C:\\Users\\Fabrizio\\AppData\\Local\\hermes\\hermes-agent\\venv\\Scripts\\hermes.EXE",
+   "azione": "hermes --version",
+   "strumentazione": "subprocess (exit code)",
+   "criterio": "exit code 0",
+   "esito": "PASS",
+   "note": "rc=0 out='Hermes Agent v0.21.3 (2026.9.14) · upstr'"
+  }
+ ]
+}

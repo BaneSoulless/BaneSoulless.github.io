@@ -1,0 +1,906 @@
+{
+ "version": "1.0",
+ "generated": "2026-09-23",
+ "source": "Forgotten Realms Wiki (API MediaWiki, origin=*)",
+ "climate_note": "classe climatica = valutazione dichiarata per regione",
+ "count": 54,
+ "regions": [
+  {
+   "name": "Sword Coast North",
+   "climate_class": "temperate_oceanic",
+   "temp_center": 13,
+   "wetness": 3,
+   "wiki_page": "Sword Coast North",
+   "cities": [
+    "Amphail (village)",
+    "Auckney",
+    "Conyberry",
+    "Crossroad Keep",
+    "Ember",
+    "Fort Locke",
+    "Gauntlgrym",
+    "Helm's Hold",
+    "Highcliff",
+    "Ieirithymbul",
+    "Ironmaster",
+    "Kheldell",
+    "Leilon",
+    "Luskan",
+    "Mirabar",
+    "Neverwinter",
+    "Nightstone",
+    "Phandalin",
+    "Port Llast",
+    "Rassalantar",
+    "Red Larch",
+    "Skullport",
+    "Thundertree",
+    "Torzac",
+    "Triboar",
+    "Twilight Tor",
+    "Waterdeep"
+   ]
+  },
+  {
+   "name": "The North",
+   "climate_class": "cold_continental",
+   "temp_center": 6,
+   "wetness": 2,
+   "wiki_page": "The North",
+   "cities": []
+  },
+  {
+   "name": "Icewind Dale",
+   "climate_class": "subarctic",
+   "temp_center": 0,
+   "wetness": 1,
+   "wiki_page": "Icewind Dale",
+   "cities": [
+    "Bremen",
+    "Bryn Shander",
+    "Caer-Dineval",
+    "Caer-Konig",
+    "Dougan's Hole",
+    "Easthaven",
+    "Good Mead",
+    "Hundelstone",
+    "Illusk",
+    "Kuldahar",
+    "Lonelywood",
+    "Mithral Hall",
+    "Shaengarne Ford",
+    "Slow Cedric's Gallop",
+    "Targos",
+    "Termalaine"
+   ]
+  },
+  {
+   "name": "Western Heartlands",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "Western Heartlands",
+   "cities": [
+    "Asbravn",
+    "Baldur's Gate",
+    "Berdusk",
+    "Beregost",
+    "Boareskyr Bridge",
+    "Candlekeep",
+    "Corm Orp",
+    "Daggerford",
+    "Drawn Swords",
+    "Elturel",
+    "Evereska",
+    "Hardbuckler",
+    "Hill's Edge",
+    "Hluthvar",
+    "Iriaebor",
+    "Myth Drannor",
+    "Scornubel",
+    "Secomber",
+    "Soubar",
+    "Ss'khanaja",
+    "Ss'thar'tiss'ssun",
+    "Triel"
+   ]
+  },
+  {
+   "name": "Cormyr",
+   "climate_class": "temperate_oceanic",
+   "temp_center": 13,
+   "wetness": 3,
+   "wiki_page": "Cormyr",
+   "cities": [
+    "Arabel",
+    "Daerlun",
+    "Elversult",
+    "Marsember",
+    "Pros",
+    "Proskur",
+    "Suzail",
+    "Teziir",
+    "Thultanthar",
+    "Tilverton",
+    "Urmlaspyr"
+   ]
+  },
+  {
+   "name": "Sembia",
+   "climate_class": "temperate_oceanic",
+   "temp_center": 13,
+   "wetness": 3,
+   "wiki_page": "Sembia",
+   "cities": [
+    "Elven Court",
+    "Ordulin",
+    "Saerloon",
+    "Sakkors",
+    "Selgaunt"
+   ]
+  },
+  {
+   "name": "Amn",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Amn",
+   "cities": [
+    "Amnwater",
+    "Athkatla",
+    "Bormton",
+    "Coryllvol",
+    "Crimmor",
+    "Esford",
+    "Eshpurta",
+    "Esmeltaran",
+    "Gambiton",
+    "Imnescar",
+    "Keczulla",
+    "Minsor Vale",
+    "Murann",
+    "Nashkel",
+    "Orlsfall",
+    "Port Nyanzaru",
+    "Purskul",
+    "Riatavin",
+    "Shepherdston",
+    "St. Carwell's Vale",
+    "Trademeet"
+   ]
+  },
+  {
+   "name": "Tethyr",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Tethyr",
+   "cities": [
+    "Darromar",
+    "Mosstone",
+    "Myratma",
+    "Saradush",
+    "Velen"
+   ]
+  },
+  {
+   "name": "Calimshan",
+   "climate_class": "desert_coastal",
+   "temp_center": 25,
+   "wetness": 1,
+   "wiki_page": "Calimshan",
+   "cities": [
+    "Ajhuutal",
+    "Almraiven",
+    "Calimport",
+    "Iltkazar",
+    "Keltar",
+    "Memnon",
+    "Schamedar",
+    "Suldolphor",
+    "Volothamp"
+   ]
+  },
+  {
+   "name": "Anauroch",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Anauroch",
+   "cities": [
+    "Ascore",
+    "El Ma'ra",
+    "Hlaungadath",
+    "Olomaa",
+    "Oreme",
+    "Orofin",
+    "Rasilith",
+    "Sister of Rains",
+    "Tel Badir"
+   ]
+  },
+  {
+   "name": "Moonsea",
+   "climate_class": "cold_continental",
+   "temp_center": 6,
+   "wetness": 2,
+   "wiki_page": "Moonsea",
+   "cities": [
+    "Citadel of the Raven",
+    "Elmwood",
+    "Elventree",
+    "Hillsfar",
+    "Hulburg",
+    "Melvaunt",
+    "Mulmaster",
+    "Phlan",
+    "Shadowdale (town)",
+    "Sulasspryn",
+    "Teshwave",
+    "Thentia",
+    "Zhentil Keep"
+   ]
+  },
+  {
+   "name": "Dalelands",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "Dalelands",
+   "cities": [
+    "Ashabenford",
+    "Chandlerscross",
+    "Essembra",
+    "Scardale Town"
+   ]
+  },
+  {
+   "name": "Impiltur",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "Impiltur",
+   "cities": [
+    "Bay Town",
+    "Dilpur",
+    "Hlammach",
+    "Ilmwatch",
+    "Klandle",
+    "Lyrabar",
+    "Mistrenpost",
+    "New Sarshel",
+    "Ondle's Spur",
+    "Sarshel",
+    "Telflamm"
+   ]
+  },
+  {
+   "name": "The Vast",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "The Vast",
+   "cities": [
+    "Bambryn",
+    "Blanaer",
+    "Calaunt",
+    "Dark Hollow",
+    "Dead Tree Hollow",
+    "Dragon Falls (village)",
+    "Earthfast",
+    "Fallentree",
+    "High Haspur",
+    "Highbank Forest",
+    "Hlintar",
+    "King's Reach",
+    "Kurth (town)",
+    "Maerstar",
+    "Maskyr's Eye",
+    "Mossbridges",
+    "Orlimmin",
+    "Procampur",
+    "Ravens Bluff",
+    "Sarbreen",
+    "Sarbreenar",
+    "Sendrin",
+    "Sevenecho (hamlet)",
+    "Swords Pool (village)",
+    "Tantras",
+    "Tavilar",
+    "Thindilar",
+    "Tsurlagol",
+    "Westgate"
+   ]
+  },
+  {
+   "name": "Cormanthor",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "Cormanthyr",
+   "cities": [
+    "Tangled Trees"
+   ]
+  },
+  {
+   "name": "Thay",
+   "climate_class": "steppe",
+   "temp_center": 16,
+   "wetness": 1,
+   "wiki_page": "Thay",
+   "cities": [
+    "Amruthar",
+    "Bezantur",
+    "City of Brass",
+    "Delhumide",
+    "Eltabbar",
+    "Escalant",
+    "Murbant",
+    "Nethentir",
+    "Pyarados",
+    "Surthay",
+    "Thasselen",
+    "Tilbrand",
+    "Tradesport",
+    "Tyraturos"
+   ]
+  },
+  {
+   "name": "Aglarond",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Aglarond",
+   "cities": [
+    "Delthuntle",
+    "Findar",
+    "Furthinghome"
+   ]
+  },
+  {
+   "name": "Chessenta",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Chessenta",
+   "cities": [
+    "Akanax",
+    "Cimbar",
+    "City of the Werecrocodiles",
+    "Erebos",
+    "Heptios (city)",
+    "Luthcheq",
+    "Mordulkin",
+    "Soorenar",
+    "Toreus",
+    "Tulach"
+   ]
+  },
+  {
+   "name": "Mulhorand",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Mulhorand",
+   "cities": [
+    "Deep Imaskar",
+    "Gheldaneth",
+    "Mishtan",
+    "Neldorild",
+    "Skuld",
+    "Sultim"
+   ]
+  },
+  {
+   "name": "Unther",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Unther",
+   "cities": [
+    "Dalath",
+    "Djerad Kethendi",
+    "Djerad Thymar",
+    "Firetrees",
+    "Great Rift",
+    "Messemprar",
+    "Red Haven",
+    "Shussel",
+    "Ssintar",
+    "Unthalass"
+   ]
+  },
+  {
+   "name": "Chult",
+   "climate_class": "tropical_monsoon",
+   "temp_center": 27,
+   "wetness": 4,
+   "wiki_page": "Chult",
+   "cities": [
+    "Callidae",
+    "Fort Beluarian",
+    "Mezro"
+   ]
+  },
+  {
+   "name": "Lantan",
+   "climate_class": "tropical_maritime",
+   "temp_center": 26,
+   "wetness": 3,
+   "wiki_page": "Lantan",
+   "cities": [
+    "Anchoril",
+    "Illul",
+    "Sambar",
+    "Sundrah",
+    "Tsan"
+   ]
+  },
+  {
+   "name": "Evermeet",
+   "climate_class": "temperate_oceanic",
+   "temp_center": 13,
+   "wetness": 3,
+   "wiki_page": "Evermeet",
+   "cities": [
+    "Drelagara",
+    "Elion",
+    "Leuthilspar",
+    "Nimlith",
+    "Ruith",
+    "Taltempla"
+   ]
+  },
+  {
+   "name": "Nimbral",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Nimbral",
+   "cities": []
+  },
+  {
+   "name": "Maztica",
+   "climate_class": "tropical_monsoon",
+   "temp_center": 27,
+   "wetness": 4,
+   "wiki_page": "Maztica",
+   "cities": [
+    "Oaxaptupa"
+   ]
+  },
+  {
+   "name": "Zakhara",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Zakhara",
+   "cities": [
+    "Huzuz",
+    "Konigheim"
+   ]
+  },
+  {
+   "name": "Kara-Tur",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "Kara-Tur",
+   "cities": [
+    "Dojyu"
+   ]
+  },
+  {
+   "name": "Rashemen",
+   "climate_class": "cold_continental",
+   "temp_center": 6,
+   "wetness": 2,
+   "wiki_page": "Rashemen",
+   "cities": [
+    "Beacon Cairn",
+    "Citadel Rashemar",
+    "Immilmar",
+    "Mulptan",
+    "Mulsantir",
+    "Shevel",
+    "Taporan",
+    "Tethkel",
+    "Thasunta",
+    "Tinnir"
+   ]
+  },
+  {
+   "name": "Narfell",
+   "climate_class": "cold_continental",
+   "temp_center": 6,
+   "wetness": 2,
+   "wiki_page": "Narfell",
+   "cities": [
+    "Bildoobaris",
+    "Jiksidur",
+    "Jiyyd",
+    "N'Jast",
+    "Peltarch",
+    "Shandaular",
+    "Songfarla"
+   ]
+  },
+  {
+   "name": "Damara",
+   "climate_class": "cold_continental",
+   "temp_center": 6,
+   "wetness": 2,
+   "wiki_page": "Damara",
+   "cities": [
+    "Helgabal",
+    "Tellerth"
+   ]
+  },
+  {
+   "name": "Vaasa",
+   "climate_class": "subarctic",
+   "temp_center": 0,
+   "wetness": 1,
+   "wiki_page": "Vaasa",
+   "cities": [
+    "Avang",
+    "Bloodstone Village",
+    "Cedarleaf",
+    "Darmshall",
+    "Fugue (settlement)",
+    "Granite Tower",
+    "Hillsafar Hall",
+    "Ilinvur",
+    "Ishe",
+    "Kond",
+    "Maur-Eturo",
+    "Modurt",
+    "Moortown",
+    "Nesmé",
+    "Palischuk",
+    "Silverymoon",
+    "Telos (city)"
+   ]
+  },
+  {
+   "name": "The Silver Marches",
+   "climate_class": "cold_continental",
+   "temp_center": 6,
+   "wetness": 2,
+   "wiki_page": "Silver Marches",
+   "cities": []
+  },
+  {
+   "name": "High Forest",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "High Forest",
+   "cities": [
+    "Besilmer",
+    "Glaurachyndaar",
+    "Hellgate Keep",
+    "Karse",
+    "Lothen of the Silver Spires",
+    "Loudwater",
+    "Myth Adofhaer",
+    "Noanar's Hold",
+    "Nordahaeril",
+    "Olostin's Hold",
+    "Onthrilaenthor",
+    "Reitheillaethor",
+    "Teuveamanthaar"
+   ]
+  },
+  {
+   "name": "Netheril",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Netheril",
+   "cities": [
+    "Akintaer",
+    "Anauria",
+    "Aquessir",
+    "Asram",
+    "Dekanter",
+    "Delia",
+    "Eileanar",
+    "Jethaere",
+    "Jockteleg",
+    "Lathery",
+    "Lhaoda",
+    "Maunator",
+    "Nhalloth",
+    "Palter",
+    "Phylornel",
+    "Selûnarra",
+    "Spiel",
+    "Synod",
+    "Thyndlamdrivvar",
+    "Tith Tilendrothael",
+    "Tzindylspar"
+   ]
+  },
+  {
+   "name": "Halruaa",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Halruaa",
+   "cities": [
+    "Galdel",
+    "Halagard",
+    "Halarahh",
+    "Khaerbaal",
+    "Maeruhal",
+    "Ormpur",
+    "Talathgard"
+   ]
+  },
+  {
+   "name": "Luiren",
+   "climate_class": "temperate_oceanic",
+   "temp_center": 13,
+   "wetness": 3,
+   "wiki_page": "Luiren",
+   "cities": [
+    "Ammathluir",
+    "Beluir",
+    "Chethel",
+    "Crimel",
+    "Fasruil",
+    "Krenadir",
+    "Shoun",
+    "Thruldar",
+    "Underhome"
+   ]
+  },
+  {
+   "name": "Dambrath",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Dambrath",
+   "cities": [
+    "Ammathtar",
+    "Cathyr",
+    "Darmesh",
+    "Delzimmer",
+    "Dunfeld",
+    "Elveswatch",
+    "Guilmarl",
+    "Hazuth",
+    "Herath",
+    "Hethar",
+    "Ilimar",
+    "Luenath",
+    "Maarlith",
+    "Prastuil",
+    "Sulaziir",
+    "T'lindhet"
+   ]
+  },
+  {
+   "name": "The Shaar",
+   "climate_class": "semi_arid",
+   "temp_center": 20,
+   "wetness": 1,
+   "wiki_page": "The Shaar",
+   "cities": []
+  },
+  {
+   "name": "Lake of Steam",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Lake of Steam",
+   "cities": [
+    "Derlusk",
+    "Innarlith"
+   ]
+  },
+  {
+   "name": "Border Kingdoms",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Border Kingdoms",
+   "cities": [
+    "Alamontyr",
+    "Arnglar",
+    "Arthyn",
+    "Barrowhill",
+    "Beldargan",
+    "Blackalblade",
+    "Blackbarn",
+    "Bloutar",
+    "Dapplegate",
+    "Dunbridges",
+    "Emrys (town)",
+    "Irl",
+    "Luthbaern",
+    "Manywaters",
+    "Myrinjar",
+    "Oeble",
+    "Oparl",
+    "Yallasch"
+   ]
+  },
+  {
+   "name": "Erlkazar",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Erlkazar",
+   "cities": [
+    "Carradoon",
+    "Duhlnarim",
+    "Llorbauth",
+    "Shalane",
+    "Shoonach",
+    "Tibold"
+   ]
+  },
+  {
+   "name": "Iriaebor",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Iriaebor",
+   "cities": []
+  },
+  {
+   "name": "Turmish",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Turmish",
+   "cities": [
+    "Alaghôn",
+    "Centaur Bridge",
+    "Dauntshield",
+    "Gildenglade",
+    "Hlondeth",
+    "Holdensword",
+    "Ironcloak",
+    "Jathrin's Jump",
+    "Marikor",
+    "Morningstar Hollows",
+    "Myth Nantar",
+    "Nonthal",
+    "Ravilar's Cloak",
+    "Shaus",
+    "Starfall Stream Pool",
+    "Starmantle",
+    "Swordslake Creek"
+   ]
+  },
+  {
+   "name": "Thesk",
+   "climate_class": "temperate_continental",
+   "temp_center": 11,
+   "wetness": 2,
+   "wiki_page": "Thesk",
+   "cities": [
+    "Milvarune",
+    "Nethjet",
+    "Nyth",
+    "Phsant",
+    "Tammar"
+   ]
+  },
+  {
+   "name": "Murghôm",
+   "climate_class": "steppe",
+   "temp_center": 16,
+   "wetness": 1,
+   "wiki_page": "Murghom",
+   "cities": []
+  },
+  {
+   "name": "The Great Rift",
+   "climate_class": "highland",
+   "temp_center": 10,
+   "wetness": 2,
+   "wiki_page": "Great Rift",
+   "cities": [
+    "Bhaerynden",
+    "Khôltar"
+   ]
+  },
+  {
+   "name": "Cormyr South",
+   "climate_class": "temperate_oceanic",
+   "temp_center": 13,
+   "wetness": 3,
+   "wiki_page": "Cormyr",
+   "cities": []
+  },
+  {
+   "name": "Kalimshan Coast",
+   "climate_class": "desert_coastal",
+   "temp_center": 25,
+   "wetness": 1,
+   "wiki_page": "Calimshan",
+   "cities": []
+  },
+  {
+   "name": "Chondath",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Chondath",
+   "cities": [
+    "Arrabar",
+    "Hlath",
+    "Iljak",
+    "Mussum",
+    "Shamph"
+   ]
+  },
+  {
+   "name": "Sespech",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Sespech",
+   "cities": [
+    "Elbulder",
+    "Elupar",
+    "Fort Arran",
+    "Lheshayl",
+    "Mimph",
+    "Nimpeth",
+    "Ormpetarr",
+    "Surkh"
+   ]
+  },
+  {
+   "name": "Vilhon Reach",
+   "climate_class": "mediterranean",
+   "temp_center": 18,
+   "wetness": 2,
+   "wiki_page": "Vilhon Reach",
+   "cities": [
+    "Assam",
+    "Ormath",
+    "Reth",
+    "Sapra"
+   ]
+  },
+  {
+   "name": "Shaarwood",
+   "climate_class": "semi_arid",
+   "temp_center": 20,
+   "wetness": 1,
+   "wiki_page": "Shaar",
+   "cities": [
+    "Blaskaltar",
+    "Eartheart",
+    "Peleveran",
+    "Shaarmid"
+   ]
+  },
+  {
+   "name": "Raurin",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Raurin",
+   "cities": [
+    "Al Qahara",
+    "Solon",
+    "Terbakar"
+   ]
+  },
+  {
+   "name": "The Plains of Purple Dust",
+   "climate_class": "arid",
+   "temp_center": 26,
+   "wetness": 0,
+   "wiki_page": "Plains of Purple Dust",
+   "cities": []
+  }
+ ]
+}

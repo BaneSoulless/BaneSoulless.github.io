@@ -1,0 +1,82 @@
+/* v2/detail.css — CSS schede completo (tema Vetro Arcano).
+   Estratto dalla build v1 (motore schede validato) con alias variabili v2.
+   Generato da tools/build_v2_detail_css.py — NON modificare a mano. */
+#stat-core-zone {
+  --accent: var(--gold-hi, #c9a227);
+  --gold: #c9a227;
+  --silver: #c0c7d1;
+  --border: var(--line, rgba(255,255,255,.09));
+  --fg-dim: var(--muted, #9aa1ab);
+  --fg-muted: var(--muted, #9aa1ab);
+  --fg: #ece7dd;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --success: #6ec98a;
+  --danger: #c98a8a;
+}
+#stat-core-zone .stat-core { border-top-color: var(--gold-hi, #c9a227); }
+#stat-core-zone .st-img img { max-width: 190px; max-height: 190px; border-radius: 12px; display: block; margin: 0 auto 14px; filter: drop-shadow(0 6px 18px rgba(0,0,0,.5)); }
+#stat-core-zone .src-tabs { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0 4px; }
+#stat-core-zone .src-tab { font: inherit; font-size: 12.5px; font-weight: 600; color: var(--muted); background: rgba(255,255,255,.04); border: 1px solid var(--line); border-radius: 20px; padding: 5px 12px; cursor: pointer; transition: color .15s, border-color .15s, background .15s; }
+#stat-core-zone .src-tab:hover { color: #fff; border-color: rgba(201,162,39,.45); }
+#stat-core-zone .src-tab.act { color: #0d0d10; background: var(--gold-hi, #c9a227); border-color: var(--gold-hi, #c9a227); }
+#stat-core-zone .src-date { font-weight: 400; font-size: 11px; opacity: .75; margin-left: 4px; }
+#stat-core-zone .src-hint { font-size: 11px; color: var(--muted); }
+#stat-core-zone .st-skeleton { color: var(--muted); font-size: 13.5px; padding: 20px 4px; }
+
+    background: rgba(255, 255, 255, 0.045);
+    border-radius: 12px;
+    padding: 26px 28px;
+    border-top: 3px solid var(--accent);
+  }
+.st-h { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap; margin-bottom:14px; }
+.st-h h2 { font-family:'Outfit',sans-serif; font-size:26px; font-weight:800; letter-spacing:-.01em; }
+.st-sub { color:var(--accent); font-style:italic; font-size:14px; margin-top:4px; }
+.st-meta { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px 18px; font-size:13.5px; background:rgba(15,23,42,.5); border:1px solid var(--border); padding:14px 16px; border-radius:var(--radius-sm); margin-bottom:16px; }
+.st-meta div { line-height:1.5; }
+.st-meta strong { color:var(--fg-dim); font-size:11px; text-transform:uppercase; letter-spacing:.05em; display:block; }
+.st-stats { display:grid; grid-template-columns:repeat(6,1fr); gap:8px; margin:14px 0 18px; }
+.st-stat { background:rgba(56,189,248,.05); border:1px solid var(--border); border-radius:var(--radius-sm); padding:8px; text-align:center; }
+.st-stat strong { display:block; font-size:10px; color:var(--fg-dim); letter-spacing:.04em; }
+.st-stat span { font-family:'JetBrains Mono',monospace; font-weight:600; font-variant-numeric:tabular-nums; font-size:18px; }
+.st-sec { margin-top:16px; }
+.st-sec h4 { color:var(--accent); font-size:13px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; font-weight:700; }
+.st-sec p, .st-sec li { font-size:14px; color:var(--fg-muted); line-height:1.7; margin-bottom:8px; }
+.st-sec li { list-style:none; }
+.st-sec li strong { color:var(--fg); }
+.st-src { font-size:11px; color:var(--fg-dim); margin-top:16px; font-family:'JetBrains Mono',monospace; }
+.rendered-by { font-size:11px; color:var(--fg-dim); margin-top:8px; }
+.st-loading { display:flex; flex-direction:column; gap:12px; padding:20px; }
+.skel { height:14px; border-radius:6px; background:linear-gradient(90deg,var(--bg-card) 0%,#1a2233 50%,var(--bg-card) 100%); background-size:200% 100%; animation:shimLk 1.2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .skel,.lookup-glow .dot { animation:none; } }
+@keyframes shimLk { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+.db-badge { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--success); background:rgba(52,211,153,.1); border:1px solid rgba(212,175,55,.32); padding:4px 8px; border-radius:20px; font-weight:600; }
+.where { color:var(--fg-muted); font-size:14px; line-height:1.7; margin-top:8px; }
+.where code { font-family:'JetBrains Mono',monospace; background:rgba(56,189,248,.1); padding:2px 8px; border-radius:5px; font-size:12px; }
+
+/* Tag converter (5e.tools inline tags -> HTML) */
+.tag-link { color:var(--accent); text-decoration:none; border-bottom:1px dotted rgba(212,175,55,.5); cursor:pointer; transition:color .15s, border-color .15s; }
+.tag-link:hover { color:var(--gold); border-bottom-color:var(--gold); }
+.tag-link.tag-spell { font-style:italic; }
+.tag-link.tag-class { font-weight:700; border-bottom:1px solid rgba(212,175,55,.4); }
+.tag-link.tag-cond { color:var(--danger); border-bottom-color:rgba(201,128,138,.5); }
+.tag-link.tag-creature { font-weight:600; }
+.tag-link.tag-item { color:var(--silver); border-bottom-color:rgba(192,199,209,.5); }
+.tag-dc { font-family:'JetBrains Mono',monospace; font-weight:700; color:var(--fg); background:rgba(212,175,55,.12); padding:1px 6px; border-radius:5px; font-size:12.5px; white-space:nowrap; }
+.tag-hit { font-family:'JetBrains Mono',monospace; font-weight:600; color:var(--success); font-size:12.5px; }
+.tag-dice { font-family:'JetBrains Mono',monospace; font-weight:600; color:var(--gold); font-size:13px; }
+.tag-skill { color:var(--fg-muted); font-size:12.5px; }
+.st-links { display:flex; flex-wrap:wrap; gap:14px; margin-top:18px; padding-top:12px; border-top:1px dashed var(--border); font-size:12.5px; }
+.st-links .tag-link { border-bottom:none; background:rgba(255,255,255,.04); padding:4px 10px; border-radius:8px; border:1px solid var(--border); }
+.st-links .tag-link:hover { border-color:var(--accent); background:var(--accent-glow); }
+.st-spellcasting { background:rgba(212,175,55,.04); border:1px solid rgba(212,175,55,.18); border-radius:var(--radius-sm); padding:12px 16px; }
+.st-spellcasting h4 { margin-top:0; }
+
+/* Tabella classi (progressione per livello) */
+.class-table { width:100%; border-collapse:collapse; font-size:12px; margin-top:8px; }
+.class-table th, .class-table td { padding:4px 6px; text-align:center; border-bottom:1px solid var(--border); }
+.class-table th { color:var(--fg-muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.04em; }
+.class-table td:first-child { color:var(--accent); font-weight:700; }
+.class-table tr:hover td { background:rgba(212,175,55,.05); }
+

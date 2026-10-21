@@ -1,0 +1,124 @@
+{
+ "mesi": {
+  "Hammer": {
+   "tit": "Hammer (Alturiak del Gelto)",
+   "txt": "Primo mese dell'anno. Gelo profondo: le strade di montagna sono chiuse, le corte si tengono al coperto. A Waterdeep il Consiglio riprende dopo le feste; nelle campagne si ripara ciò che il gelo ha rotto.",
+   "stagione": "inverno"
+  },
+  "Alturiak": {
+   "tit": "Alturiak (la Catena del Gelo)",
+   "txt": "Mese delle nevi residue e dei fiumi ancora gelati. Le carovane riprendono a rischiare i passi; è il mese dei conti da saldare e dei debiti di gioco che si pagano.",
+   "stagione": "inverno"
+  },
+  "Ches": {
+   "tit": "Ches (il Sveglio)",
+   "txt": "Il disgelo: fiumi in piena, strade fangose, i primi mercati di primavera. I druidi celebrano il risveglio della terra; chi semina, semina presto.",
+   "stagione": "primavera"
+  },
+  "Tarsakh": {
+   "tit": "Tarsakh (le Mani della Pioggia)",
+   "txt": "Piogge costanti e crescita selvaggia. È il mese dei pellegrinaggi e delle semine tardive; nei boschi i pellerossa e i vecchi dicono che le voci si sentano più nitide.",
+   "stagione": "primavera"
+  },
+  "Mirtul": {
+   "tit": "Mirtul (il Sospiro)",
+   "txt": "Fioritura piena. Le strade sono buone, le taverne piene di mercenari in cerca di ingaggi per l'estate. I druidi della Moonshae lo chiamano il mese dei verdi matrimoni.",
+   "stagione": "primavera"
+  },
+  "Kythorn": {
+   "tit": "Kythorn (il Vento Svettato)",
+   "txt": "Venti forti e cieli aperti: il mese dei viaggi veloci e delle tempeste improvvise. Le flotte mercantili salpano; le torri dei maghi testano i propri sigilli.",
+   "stagione": "estate"
+  },
+  "Flamerule": {
+   "tit": "Flamerule (la Fiamma del Sole)",
+   "txt": "Il pieno dell'estate: afa, temporali a mezzogiorno, notti brevissime. È il mese delle dispute di confine e dei duelli ufficiali, che si tengono all'alba per evitare il caldo.",
+   "stagione": "estate"
+  },
+  "Eleasias": {
+   "tit": "Eleasias (l'Alba delle Messì)",
+   "txt": "Il grano matura. Lunghe giornate di lavoro nei campi; i briganti approfittano dei villaggi con gli uomini nei campi. Buon mese per ingaggiare braccia.",
+   "stagione": "estate"
+  },
+  "Eleint": {
+   "tit": "Eleint (la Fiamma Bassa)",
+   "txt": "Fine dell'estate, prime fredde notti. Le grandi fiere del raccolto si tengono in ogni città; è il mese dei matrimoni concordati e dei contratti che scadono.",
+   "stagione": "autunno"
+  },
+  "Marpenoth": {
+   "tit": "Marpenoth (la Foglia Che Cade)",
+   "txt": "Autunno pieno: foglie, nebbie mattutine, caccia. Le guarnigioni fanno le provviste per l'inverno; nelle paludi i vapori portano febbri.",
+   "stagione": "autunno"
+  },
+  "Uktar": {
+   "tit": "Uktar (il Raduno delle Radici)",
+   "txt": "Il mese della conservazione: salamoie, affumicature, cantine piene. Le notti sono fredde; i lupi si avvicinano ai villaggi. Chi viaggia, viaggia armato.",
+   "stagione": "autunno"
+  },
+  "Nightal": {
+   "tit": "Nightal (la Notte Che Discende)",
+   "txt": "L'ultimo mese: giorni corti, cielo grigio, preparativi di Midwinter. È tempo di storie al fuoco, di inventari e di vecchie promesse da mantenere prima dell'anno nuovo.",
+   "stagione": "inverno"
+  }
+ },
+ "festivita": {
+  "Midwinter": {
+   "nome_it": "Tramidinverno",
+   "txt": "Giorno fuori dal mese che chiude l'anno vecchio. In molte città si tengono i Mercati del Sussurro: si comprano e vendono segreti, si sciogliono giuramenti, si fa pace con i nemici — almeno fino a Greengrass."
+  },
+  "Greengrass": {
+   "nome_it": "Verdeprato",
+   "txt": "Festa del risveglio della terra: si decorano i pali con nastri, si benedicono i campi, si pianta un albero per ogni nato dell'anno. I druidi lo considerano il vero capodanno."
+  },
+  "Midsummer": {
+   "nome_it": "Mezzestate",
+   "txt": "Il giorno più lungo e festoso: mercati all'aperto, matrimoni (è il giorno preferito), giochi di forza e tornei minori. La notte seguente, Shieldmeet negli anni bisestili, i Grandi Consigli si riuniscono."
+  },
+  "Shieldmeet": {
+   "nome_it": "Giorno dello Scudo",
+   "txt": "Intercalare ogni 4 anni dopo Midsummer: giorno di patti, alleanze rinnovate e processi pubblici. Combattimenti vietati per usanza — chi lo viola perde ogni onore."
+  },
+  "Highharvestide": {
+   "nome_it": "Alto Raccolto",
+   "txt": "Festa del raccolto concluso: banchetti dove si paga a schiera, danze, e la tradizionale corsa dei carri pieni. È il momento in cui i mercenari si dividono i compensi dell'anno."
+  },
+  "Feast of the Moon": {
+   "nome_it": "Festa della Luna",
+   "txt": "Giorno degli antenati: si raccontano le storie dei morti, si accendono lanterne sui sepolcri, gli aruspici leggono l'anno che viene. Selûne lo guarda con particolare attenzione."
+  }
+ },
+ "luna": {
+  "0": {
+   "effetti": "Licantropi in forma umana; riti oscuri più forti; le porte delle città si chiudono presto.",
+   "tag": "pericolo latente"
+  },
+  "1": {
+   "effetti": "Le prime sentinelle si raddoppiano; i licantropi iniziano a inquietarsi.",
+   "tag": "cautela"
+  },
+  "2": {
+   "effetti": "Nessun effetto speciale; buona notte per viaggiare furtivamente.",
+   "tag": "neutro"
+  },
+  "3": {
+   "effetti": "Incantesimi di luce durano più a lungo (usanza); le carovane notturne riprendono.",
+   "tag": "favorevole"
+  },
+  "4": {
+   "effetti": "LICANTROPI IN FORMA BESTIA. I riti di Selûne sono al massimo; maledizioni lunari si manifestano.",
+   "tag": "critico"
+  },
+  "5": {
+   "effetti": "I licantropi tornano stanchi in forma umana; caccia di ringraziamento nei villaggi.",
+   "tag": "ripristino"
+  },
+  "6": {
+   "effetti": "Le streghe leggono i segni; le pozioni lunari si preparano meglio.",
+   "tag": "occulto"
+  },
+  "7": {
+   "effetti": "Ultima chiamata per i riti lunari; i nervosismi calano.",
+   "tag": "chiusura"
+  }
+ }
+}

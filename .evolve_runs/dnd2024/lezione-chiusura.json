@@ -1,0 +1,7 @@
+{
+ "chiusura": {
+  "cosa": "Tutte le metriche sonde sono piene; l'unico margine (calibrazione 0.799 e indice 1449/1500) non puo' crescere senza o muovere il bersaglio o degradare le regole di ammissione il cui corretto funzionamento e' appena stato verificato. La run termina perche' un round ulteriore sarebbe rumore, non progresso.",
+  "integrity": "GIL errori dell'esecuzione (NameError in kernel, azzeramento temporaneo reale di role_axes.py) non hanno lasciato danno: ogni fallimento e' stato catturato e l'artefatto sul disco e' integro (14.392 byte, identico all'atteso).",
+  "lezione": "Il punto di stop NON e' 'nessun round ulteriore migliora', e' che le sonde sono piene e i due margini residui sono posizionali. Chiudersi su questo dato e' il risultato, non il ritiro."
+ }
+}

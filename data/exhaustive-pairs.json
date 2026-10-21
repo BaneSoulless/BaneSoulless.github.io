@@ -1,0 +1,3117 @@
+{
+ "nota": "TUTTI gli incroci A COPPIE fra le entita' del compendio, con soglia di sinergia DICHIARATA per tipo. Lo spazio a 4 assi (~1,7e15) non e' enumerabile: qui si copre il livello a coppie, dove una sinergia si verifica leggendo due testi.",
+ "spazio_totale_4_assi": 1711449733593600,
+ "inventario": {
+  "sottoclassi": 168,
+  "talenti": 258,
+  "specie": 166,
+  "background": 155
+ },
+ "per_tipo": {
+  "talento_talento": {
+   "totale_coppie": 31675,
+   "con_sinergia": 19987,
+   "soglia": 2,
+   "pct": 63.1
+  },
+  "sottoclasse_talento": {
+   "totale_coppie": 43344,
+   "con_sinergia": 35490,
+   "soglia": 2,
+   "pct": 81.88
+  },
+  "sottoclasse_specie": {
+   "totale_coppie": 27888,
+   "con_sinergia": 13675,
+   "soglia": 1,
+   "pct": 49.04
+  },
+  "sottoclasse_background": {
+   "totale_coppie": 26040,
+   "con_sinergia": 19865,
+   "soglia": 1,
+   "pct": 76.29
+  }
+ },
+ "totali": {
+  "coppie_calcolate": 128947,
+  "con_sinergia": 89017,
+  "pct_sinergia": 69.03
+ },
+ "campioni": {
+  "talento_talento": [
+   {
+    "a": "boon of fluid forms",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "light bringer",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "abjuration adept",
+    "b": "adept of the white robes",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "abjuration adept",
+    "b": "boon of fluid forms",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "abjuration adept",
+    "b": "boon of the bright sun",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "abjuration adept",
+    "b": "chef",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "abjuration adept",
+    "b": "healer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "abjuration adept",
+    "b": "light bringer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "abjuration adept",
+    "b": "vampire's plaything",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "knight of the sword",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "mark of sentinel",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "mythal touched",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "rune shaper",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "symbiotic being",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "telekinetic",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the red robes",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the white robes",
+    "b": "boon of fluid forms",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the white robes",
+    "b": "boon of the bright sun",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the white robes",
+    "b": "chef",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the white robes",
+    "b": "healer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the white robes",
+    "b": "light bringer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "adept of the white robes",
+    "b": "vampire's plaything",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "chef",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "ember of the fire giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "guile of the cloud giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "healer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "knight of the sword",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "mark of sentinel",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "mythal touched",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "purple dragon commandant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "rune shaper",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "soul of the storm giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "symbiotic being",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of fluid forms",
+    "b": "telekinetic",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "chef",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "ember of the fire giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "guile of the cloud giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "healer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "knight of the sword",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "mark of sentinel",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "mythal touched",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "purple dragon commandant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "rune shaper",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "soul of the storm giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "symbiotic being",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "boon of the bright sun",
+    "b": "telekinetic",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "chef",
+    "b": "healer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "chef",
+    "b": "light bringer",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "chef",
+    "b": "vampire's plaything",
+    "leve": [
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "ember of the fire giant",
+    "b": "guile of the cloud giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "ember of the fire giant",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "ember of the fire giant",
+    "b": "purple dragon commandant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   },
+   {
+    "a": "ember of the fire giant",
+    "b": "soul of the storm giant",
+    "leve": [
+     "control",
+     "dps",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 6
+   }
+  ],
+  "sottoclasse_talento": [
+   {
+    "a": "aberrant mind",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "great old one patron",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "great old one patron",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "great old one patron",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "great old one patron",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "hollow warden",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "hollow warden",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "hollow warden",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "hollow warden",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "inquisitive",
+    "b": "boon of fluid forms",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "inquisitive",
+    "b": "boon of the bright sun",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "inquisitive",
+    "b": "light bringer",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "inquisitive",
+    "b": "vampire's plaything",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   }
+  ],
+  "sottoclasse_specie": [
+   {
+    "a": "aberrant mind",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "aberrant mind",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "aberrant mind",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "aberrant mind",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "aberrant sorcery",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "aberrant sorcery",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "aberrant sorcery",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "alchemist",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcana domain",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcana domain",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcana domain",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcana domain",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane archer",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane archer",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane archer",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane archer",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane trickster",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane trickster",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "arcane trickster",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "archfey patron",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "archfey patron",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "archfey patron",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "archfey patron",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "armorer",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "armorer",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "armorer",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "artillerist",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "assassin",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "assassin",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "assassin",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "assassin",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "battle master",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "battle master",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "battle master",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "battle smith",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "celestial patron",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "champion",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "champion",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "champion",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "champion",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of spores",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of spores",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of spores",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of spores",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of stars",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the land",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the land",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the land",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the moon",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the moon",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the moon",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "elf",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "orc",
+    "leve": [
+     "dps",
+     "face",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "shadar-kai",
+    "leve": [
+     "face",
+     "gish",
+     "scout"
+    ],
+    "n": 3
+   },
+   {
+    "a": "circle of wildfire",
+    "b": "aasimar",
+    "leve": [
+     "gish",
+     "healer",
+     "scout"
+    ],
+    "n": 3
+   }
+  ],
+  "sottoclasse_background": [
+   {
+    "a": "aberrant mind",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "aberrant mind",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "arcane archer",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "archfey patron",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "chronurgy magic",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of spores",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "circle of the shepherd",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "clockwork sorcery",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "conjurer",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "draconic bloodline",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "drakewarden",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "echo knight",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "acolyte",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "azorius functionary",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "golgari agent",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "orzhov representative",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   },
+   {
+    "a": "grave domain",
+    "b": "selesnya initiate",
+    "leve": [
+     "control",
+     "dps",
+     "face",
+     "gish",
+     "healer",
+     "scout",
+     "summoner"
+    ],
+    "n": 7
+   }
+  ]
+ }
+}

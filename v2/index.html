@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Il Grimorio dei Reami — Consultazione, dati e strumenti per D&D 5e</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Il Grimorio dei Reami — D&D 5e, compendio e strumenti">
+<meta property="og:description" content="Compendio D&D 5e offline-first: 13.219 entità, mappa di Faerûn, strumenti da tavolo, generatore di personaggi.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/index.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Il Grimorio dei Reami — D&D 5e, compendio e strumenti">
+<meta name="twitter:description" content="Compendio D&D 5e offline-first: 13.219 entità, mappa di Faerûn, strumenti da tavolo, generatore di personaggi.">
+
+<meta name="description" content="Compendio digitale D&D 5e: lookup su 13.219 entità 5e.tools, mappa di Faerûn, strumenti da tavolo, calendario Harptos. Offline-first, zero dipendenze.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grimorio.css">
+<script>
+/* rune Elder Futhark pre-calcolate (server-side nel generatore; qui costanti) */
+window.__RUNE_LEFT__ = "ᛁᛚᚷᚱᛁᛗᛟᚱᛁᛟ";
+window.__RUNE_RIGHT__ = "ᚠᚨᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᛁᛚᚷᚱᛁᛗᛟᚱᛁᛟᛞᛖᛁᚱᛖᚨᛗᛁ";
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html" class="on">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+    <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="kicker">Compendio vivente di Faerûn</div>
+    <h1>Consulta, genera, <em>gioca</em>.</h1>
+    <p class="sub">Lookup istantaneo su 13.219 entità 5e.tools, mappa interattiva di Faerûn,
+    calendario Harptos e strumenti da tavolo — tutto in un unico grimorio di vetro, offline-first.</p>
+    <div class="divider"><span>✦</span></div>
+  </div>
+
+  <section class="rv">
+    <h2 class="sec-title">Il grimorio in numeri</h2>
+    <p class="sec-sub">Ogni numero è misurato dal dataset locale, non dichiarato a mano.</p>
+    <div class="stats">
+      <div class="stat"><b>13.219</b><span>entità 5e</span></div>
+      <div class="stat"><b>10.158</b><span>voci uniche</span></div>
+      <div class="stat"><b>423</b><span>città</span></div>
+      <div class="stat"><b>297</b><span>luoghi mappati</span></div>
+      <div class="stat"><b>97%</b><span>con data verificata</span></div>
+    </div>
+  </section>
+
+  <section class="rv">
+    <h2 class="sec-title">Tutto il tavolo, un solo grimorio</h2>
+    <p class="sec-sub">Ogni strumento è una pagina vera: clicca ed entra.</p>
+    <div class="grid g3">
+      <div class="card rv">
+        <span class="notch n1"></span><span class="notch n2"></span>
+        <div class="ic">⚔️</div>
+        <h3>Consultazione Live</h3>
+        <p>Mostri, incantesimi, oggetti, classi e divinità: ricerca full-text con tolleranza ai
+        typo, filtri per categoria e statblock completi con fonte e data di pubblicazione.</p>
+        <a class="go" href="lookup.html">Apri il lookup</a>
+      </div>
+      <div class="card rv">
+        <span class="notch n1"></span><span class="notch n2"></span>
+        <div class="ic">🗺️</div>
+        <h3>Mappa di Faerûn</h3>
+        <p>Mappa interattiva con 297 luoghi su 8 livelli di categoria: città, porti, capitali,
+        templi, fortezze e rovine, con flyTo e schede collegate al lookup.</p>
+        <a class="go" href="mappa.html">Esplora la mappa</a>
+      </div>
+      <div class="card rv">
+        <span class="notch n1"></span><span class="notch n2"></span>
+        <div class="ic">🎲</div>
+        <h3>Strumenti del Tavolo</h3>
+        <p>Dadi con curve di probabilità esatte (stile Anydice), ordine di iniziativa,
+        tesori con bilanciamento, oracolo sì/no e contatore dei turni.</p>
+        <a class="go" href="tavolo.html">Apri gli strumenti</a>
+      </div>
+      <div class="card rv">
+        <span class="notch n1"></span><span class="notch n2"></span>
+        <div class="ic">🌙</div>
+        <h3>Widget di Faerûn</h3>
+        <p>Calendario Harptos con dodici mesi e fasi lunari di Selûne, meteo per regione
+        derivato da città reali con clima affine.</p>
+        <a class="go" href="widgets.html">Apri i widget</a>
+      </div>
+      <div class="card rv">
+        <span class="notch n1"></span><span class="notch n2"></span>
+        <div class="ic">🧝</div>
+        <h3>Personaggi</h3>
+        <p>Generatore di personaggi: razze e sottorazze, classi e sottoclassi, background,
+        talenti e equipaggiamento iniziale, sempre su dati canonici.</p>
+        <a class="go" href="personaggi.html">Crea un personaggio</a>
+      </div>
+      <div class="card rv">
+        <span class="notch n1"></span><span class="notch n2"></span>
+        <div class="ic">📖</div>
+        <h3>Risorse & Statistiche</h3>
+        <p>Prospetto completo delle 130 fonti con conteggi e date di pubblicazione,
+        più la dashboard statistica del dataset.</p>
+        <a class="go" href="risorse.html">Apri le risorse</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="rv">
+    <h2 class="sec-title">Offline-first, per davvero</h2>
+    <p class="sec-sub">Il grimorio gira interamente sulla workstation locale: nessun tracciamento,
+    nessuna dipendenza esterna obbligatoria. Le uniche chiamate in rete sono opzionali:
+    arricchimento wiki e fallback SRD quando un'entità non è nel dataset.</p>
+  </section>
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — fan content, non ufficiale Wizards of the Coast ·
+  dati 5e.tools (SRD 5.1, CC BY 4.0) · lore Forgotten Realms Wiki (CC BY-SA 3.0)
+</footer>
+
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

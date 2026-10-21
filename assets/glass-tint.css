@@ -1,0 +1,31 @@
+/* ── GLASS ADATTIVO ALL'ARTWORK (relazioni da SimpMusic, reimplementate per il web)
+   Sorgente: maxrave-dev/SimpMusic (GPL-3.0) — NESSUN codice copiato: estratte le
+   RELAZIONI quantitative e riunificate nel nostro Gold/Black:
+     · kmpalette       -> la tinta della superficie viene dall'ARTWORK (qui: campiono
+                          la copertina su canvas 8x8 e ne calcolo tinta+luce)
+     · GlassLuminance  -> la luminanza del contenuto dietro il vetro modula il blur:
+                          fondo chiaro -> blur piu' forte, fondo scuro -> piu' leggero
+     · colorControls   -> saturazione 1.5x sul vetro (gia' a 1.65 nel nostro strato ✓)
+     · onDrawSurface   -> l'oscuramento sta nello strato superiore, non nel filtro ✓
+   Il filo dorato del sito resta l'accento: le copertine danno a ogni card solo il
+   SUO alone, dentro la scala di luce del tema. */
+.gal-item {
+  --card-tint: var(--accent);
+  --card-tint-strength: 0.16;
+  --card-blur: var(--glass-blur);
+}
+.gal-item {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0) 46%),
+    color-mix(in srgb, var(--glass-bg) 82%, var(--card-tint) calc(var(--card-tint-strength) * 100%)) !important;
+  backdrop-filter: blur(var(--card-blur)) saturate(1.5) !important;
+  -webkit-backdrop-filter: blur(var(--card-blur)) saturate(1.5) !important;
+  box-shadow: var(--e2),
+              inset 0 1px 0 var(--glass-spec),
+              0 0 18px color-mix(in srgb, var(--card-tint) calc(var(--card-tint-strength) * 100%), transparent) !important;
+  border-color: color-mix(in srgb, var(--glass-stroke) 70%, var(--card-tint) 30%) !important;
+}
+.gal-item:hover {
+  box-shadow: var(--e3), inset 0 1px 0 var(--glass-spec),
+              0 0 26px color-mix(in srgb, var(--card-tint) calc(var(--card-tint-strength) * 150%), transparent) !important;
+}

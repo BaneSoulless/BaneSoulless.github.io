@@ -1,0 +1,2492 @@
+{
+ "nota": "Meccaniche pescate dal compendio locale 5e.tools. Ogni voce esiste nel compendio e porta la parola chiave che l'ha selezionata (`perche`) e il manuale di provenienza: il match e' verificabile, non e' un elenco scritto a mano.",
+ "categorie": {
+  "dps": {
+   "n_meccaniche": 15,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Sneak Attack",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«sneak attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«divine smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Improved Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«divine smite» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Shadowmoor Hexer",
+     "sorgente": "Lorwyn: First Light (2025-11-18)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«hex» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "divine smite",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Paladin",
+     "match": "nome",
+     "perche": "«divine smite» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "hex",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Warlock",
+     "match": "nome",
+     "perche": "«hex» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "hunter's mark",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "match": "nome",
+     "perche": "«hunter's mark» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Favored Enemy",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Ranger",
+     "livello": 1,
+     "match": "testo",
+     "perche": "«hunter's mark» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Paladin's Smite",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "testo",
+     "perche": "«divine smite» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Cunning Strike",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Rogue",
+     "livello": 5,
+     "match": "testo",
+     "perche": "«sneak attack» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Improved Cunning Strike",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Rogue",
+     "livello": 11,
+     "match": "testo",
+     "perche": "«sneak attack» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Relentless Hunter",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Ranger",
+     "livello": 13,
+     "match": "testo",
+     "perche": "«hunter's mark» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Devious Strikes",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Rogue",
+     "livello": 14,
+     "match": "testo",
+     "perche": "«sneak attack» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Precise Hunter",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Ranger",
+     "livello": 17,
+     "match": "testo",
+     "perche": "«hunter's mark» nella descrizione"
+    }
+   ]
+  },
+  "burst": {
+   "n_meccaniche": 24,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Paladin's Smite",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Improved Critical",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Warrior Sidekick",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«critical» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Metamagic",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«metamagic» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Metamagic Options",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«metamagic» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Quickened Healing",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Monk",
+     "livello": 4,
+     "match": "nome",
+     "perche": "«quickened» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Empowered Strikes",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Monk",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«empower» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Ki-Empowered Strikes",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Monk",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«empower» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Brutal Critical (1 die)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 9,
+     "match": "nome",
+     "perche": "«critical» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Heightened Focus",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Monk",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«heighten» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Improved Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Brutal Critical (2 dice)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 13,
+     "match": "nome",
+     "perche": "«critical» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Empowered Spells",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Spellcaster Sidekick",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«empower» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Brutal Critical (3 dice)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 17,
+     "match": "nome",
+     "perche": "«critical» nel nome"
+    }
+   ]
+  },
+  "aoe": {
+   "n_meccaniche": 12,
+   "mostrate": 12,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Psionic Disciplines and Talents",
+     "sorgente": "UATheMysticClass",
+     "classe": "Mystic",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«line» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Using a Discipline",
+     "sorgente": "UATheMysticClass",
+     "classe": "Mystic",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«line» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Disciplined Survivor",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Monk",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«line» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "cone of cold",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«cone» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "elminster's effulgent spheres",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«sphere» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "flaming sphere",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«sphere» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "otiluke's freezing sphere",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«sphere» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "otiluke's resilient sphere",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«sphere» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "sorcerous burst",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«burst» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "sunburst",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«burst» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "sword burst",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«burst» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "vitriolic sphere",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«sphere» nel nome"
+    }
+   ]
+  },
+  "healer": {
+   "n_meccaniche": 16,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Quickened Healing",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Monk",
+     "livello": 4,
+     "match": "nome",
+     "perche": "«healing» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Obscure (Cost: 3d6)",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Rogue",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«cure» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Greater Mark of Healing",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«healing» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mark of Healing",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«healing» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "cure wounds",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«cure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "healing word",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«healing» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "mass cure wounds",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«cure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "mass healing word",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Bard",
+     "match": "nome",
+     "perche": "«healing» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "prayer of healing",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "match": "nome",
+     "perche": "«healing» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "revivify",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "match": "nome",
+     "perche": "«revivify» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Second Wind",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Fighter",
+     "livello": 1,
+     "match": "testo",
+     "perche": "«regain hit points» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Mystical Recovery",
+     "sorgente": "UATheMysticClass",
+     "classe": "Mystic",
+     "livello": 2,
+     "match": "testo",
+     "perche": "«regain hit points» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Song of Rest (d6)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 2,
+     "match": "testo",
+     "perche": "«regain hit points» nella descrizione"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Bloodlust",
+     "sorgente": "Astarion's Book of Hungers (2025-11-11)",
+     "ed": "2024",
+     "match": "testo",
+     "perche": "«regain hit points» nella descrizione"
+    }
+   ]
+  },
+  "tank": {
+   "n_meccaniche": 21,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Rage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«rage» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Unarmored Defense",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«unarmored defense» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Aura of Courage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«rage» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Relentless Rage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«rage» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Persistent Rage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 15,
+     "match": "nome",
+     "perche": "«rage» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Boon of Energy Resistance",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«resistance» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Greater Mark of Sentinel",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«sentinel» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mark of Sentinel",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«sentinel» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Sentinel",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«sentinel» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Shield Master",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«shield» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "cacophonic shield",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«shield» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure barrage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "match": "nome",
+     "perche": "«rage» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "fire shield",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«shield» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "mirage arcane",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«rage» nel nome"
+    }
+   ]
+  },
+  "controller": {
+   "n_meccaniche": 7,
+   "mostrate": 7,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Countercharm",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«countercharm» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Fairy Trickster",
+     "sorgente": "Forgotten Realms: Heroes of Faerûn (2025-11-11)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«fairy trickster» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "charm monster",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«charm monster» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "charm person",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«charm person» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "hold person",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«hold person» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "hypnotic pattern",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«hypnotic pattern» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Treacherous Allure",
+     "sorgente": "Astarion's Book of Hungers (2025-11-11)",
+     "ed": "2024",
+     "match": "testo",
+     "perche": "«charm person» nella descrizione"
+    }
+   ]
+  },
+  "support": {
+   "n_meccaniche": 19,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bonus Proficiencies",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Expert Sidekick",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«bonus» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bonus Unarmed Strike",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Monk",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«bonus» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Helpful",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Expert Sidekick",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«help» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Magical Inspiration",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration (d8)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Font of Inspiration",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Magical Guidance",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«guidance» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Blessed Strikes",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Cleric",
+     "livello": 7,
+     "match": "nome",
+     "perche": "«bless» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration (d10)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Inspiring Help",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Expert Sidekick",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«help» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Improved Blessed Strikes",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Cleric",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«bless» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration (d12)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 15,
+     "match": "nome",
+     "perche": "«inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Inspiring Help Improvement",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Expert Sidekick",
+     "livello": 20,
+     "match": "nome",
+     "perche": "«help» nel nome"
+    }
+   ]
+  },
+  "debuff": {
+   "n_meccaniche": 4,
+   "mostrate": 4,
+   "voci": [
+    {
+     "tipo": "talento",
+     "nome": "Shadowmoor Hexer",
+     "sorgente": "Lorwyn: First Light (2025-11-18)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«hex» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "bestow curse",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«curse» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "hex",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Warlock",
+     "match": "nome",
+     "perche": "«hex» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "remove curse",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«curse» nel nome"
+    }
+   ]
+  },
+  "summoner": {
+   "n_meccaniche": 36,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "talento",
+     "nome": "Boon of the Night Spirit",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«spirit» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Elemental Familiar",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«familiar» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Familiar Friend",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«familiar» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Observant",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«servant» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Otherworldly Familiar",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«familiar» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Soothing Familiar",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«familiar» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Warlike Familiar",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«familiar» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "battle familiar",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«familiar» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure animals",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«conjure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure barrage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "match": "nome",
+     "perche": "«conjure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure celestial",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "match": "nome",
+     "perche": "«conjure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure constructs",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«conjure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure elemental",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«conjure» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "conjure fey",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«conjure» nel nome"
+    }
+   ]
+  },
+  "necromancer": {
+   "n_meccaniche": 17,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Channel Divinity: Turn Undead",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Turn Undead",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Cleric",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Destroy Undead (CR 1/2)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Sear Undead",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Cleric",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Destroy Undead (CR 1)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 8,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Destroy Undead (CR 2)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Destroy Undead (CR 3)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Diamond Soul",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Monk",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«soul» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Destroy Undead (CR 4)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 17,
+     "match": "nome",
+     "perche": "«undead» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Soul of Artifice",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 20,
+     "match": "nome",
+     "perche": "«soul» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Boon of the Soul Drinker",
+     "sorgente": "Forgotten Realms: Heroes of Faerûn (2025-11-11)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«soul» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Echoing Soul",
+     "sorgente": "Ravenloft: The Horrors Within (2026-06-16)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«soul» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Soul of the Storm Giant",
+     "sorgente": "Bigby Presents: Glory of the Giants (2023-08-15)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«soul» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "animate dead",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«animate dead» nel nome"
+    }
+   ]
+  },
+  "illusionist": {
+   "n_meccaniche": 9,
+   "mostrate": 9,
+   "voci": [
+    {
+     "tipo": "talento",
+     "nome": "Illusion Adept",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«illusion» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "disguise self",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«disguise» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "major image",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«image» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "minor illusion",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«illusion» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "mirage arcane",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«mirage» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "mirror image",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«image» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "programmed illusion",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«illusion» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "project image",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«image» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "silent image",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«image» nel nome"
+    }
+   ]
+  },
+  "enchanter": {
+   "n_meccaniche": 12,
+   "mostrate": 12,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Countercharm",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«charm» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Purple Dragon Commandant",
+     "sorgente": "Forgotten Realms: Heroes of Faerûn (2025-11-11)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«command» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "charm monster",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«charm» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "charm person",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«charm» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "command",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Bard",
+     "match": "nome",
+     "perche": "«command» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "compelled duel",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "match": "nome",
+     "perche": "«compel» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "dominate beast",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«dominate» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "dominate monster",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«dominate» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "dominate person",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«dominate» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "enthrall",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "match": "nome",
+     "perche": "«enthrall» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "mass suggestion",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«suggestion» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "suggestion",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«suggestion» nel nome"
+    }
+   ]
+  },
+  "archer": {
+   "n_meccaniche": 2,
+   "mostrate": 2,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Steady Aim",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«steady aim» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Crossbow Expert",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«crossbow» nel nome"
+    }
+   ]
+  },
+  "melee": {
+   "n_meccaniche": 10,
+   "mostrate": 10,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Extra Attack",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«extra attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Extra Attack (2)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Fighter",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«extra attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Two Extra Attacks",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Fighter",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«extra attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Extra Attack Improvement",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Warrior Sidekick",
+     "livello": 15,
+     "match": "nome",
+     "perche": "«extra attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Extra Attack (3)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Fighter",
+     "livello": 20,
+     "match": "nome",
+     "perche": "«extra attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Three Extra Attacks",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Fighter",
+     "livello": 20,
+     "match": "nome",
+     "perche": "«extra attack» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Great Weapon Fighting",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«great weapon» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Great Weapon Master",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«great weapon» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Dual Wielder",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "testo",
+     "perche": "«extra attack» nella descrizione"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Two-Weapon Fighting",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "testo",
+     "perche": "«extra attack» nella descrizione"
+    }
+   ]
+  },
+  "stealth": {
+   "n_meccaniche": 6,
+   "mostrate": 6,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Sneak Attack",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«sneak» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Cunning Action",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«cunning action» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Uncanny Dodge",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«uncanny dodge» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Hide in Plain Sight",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«hide» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Dragon Hide",
+     "sorgente": "Xanathar's Guide to Everything (2017-11-21)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«hide» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "tasha's hideous laughter",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«hide» nel nome"
+    }
+   ]
+  },
+  "face": {
+   "n_meccaniche": 16,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«bardic inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Expertise",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«expertise» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration (d8)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«bardic inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Font of Inspiration",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«font of inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Tool Expertise",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«expertise» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration (d10)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«bardic inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Inspiring Help",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Expert Sidekick",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«inspiring help» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Tongue of the Sun and Moon",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Monk",
+     "livello": 13,
+     "match": "nome",
+     "perche": "«tongue of the sun and moon» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Bardic Inspiration (d12)",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 15,
+     "match": "nome",
+     "perche": "«bardic inspiration» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Inspiring Help Improvement",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Expert Sidekick",
+     "livello": 20,
+     "match": "nome",
+     "perche": "«inspiring help» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Eloquence",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane eloquence» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Greater Mark of Hospitality",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«mark of hospitality» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mark of Hospitality",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«mark of hospitality» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Purple Dragon Commandant",
+     "sorgente": "Forgotten Realms: Heroes of Faerûn (2025-11-11)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«purple dragon commandant» nel nome"
+    }
+   ]
+  },
+  "skillmonkey": {
+   "n_meccaniche": 8,
+   "mostrate": 8,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Optional Rule: Firearm Proficiency",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«proficiency» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Jack of All Trades",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«jack of all trades» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Expertise",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Bard",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«expertise» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "The Right Tool for the Job",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«tool» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Tool Expertise",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«expertise» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Boon of Skill",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«skill» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Skill Expert",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«skill» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Skilled",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«skill» nel nome"
+    }
+   ]
+  },
+  "scout": {
+   "n_meccaniche": 14,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Deft Explorer",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«deft explorer» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Favored Enemy",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«favored enemy» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Natural Explorer",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«natural explorer» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Cunning Action",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«cunning action» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Primal Awareness",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«primal awareness» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Primeval Awareness",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«primeval awareness» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Deft Explorer Improvement",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«deft explorer» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Favored Enemy and Natural Explorer improvements",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«natural explorer» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Land's Stride",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 8,
+     "match": "nome",
+     "perche": "«land's stride» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Natural Explorer improvement",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«natural explorer» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Disciplined Survivor",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Monk",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«survivor» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Favored Enemy improvement",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 14,
+     "match": "nome",
+     "perche": "«favored enemy» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Survivor",
+     "sorgente": "Ravenloft: The Horrors Within (2026-06-16)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«survivor» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Favored Foe",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 1,
+     "match": "testo",
+     "perche": "«favored enemy» nella descrizione"
+    }
+   ]
+  },
+  "gish": {
+   "n_meccaniche": 30,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Arcane Recovery",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Arcane Tradition",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Paladin's Smite",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Arcane Tradition feature",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Improved Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 11,
+     "match": "nome",
+     "perche": "«smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Arcane Apotheosis",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Sorcerer",
+     "livello": 20,
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Artist",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Eloquence",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Infiltrator",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Omens",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Overload",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Safeguard",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Arcane Undertaker",
+     "sorgente": "Arcana Unleashed (2026-09-15)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«arcane» nel nome"
+    }
+   ]
+  },
+  "grappler": {
+   "n_meccaniche": 3,
+   "mostrate": 3,
+   "voci": [
+    {
+     "tipo": "talento",
+     "nome": "Grappler",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«grapple» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Rage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 1,
+     "match": "testo",
+     "perche": "«strength check» nella descrizione"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Indomitable Might",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Barbarian",
+     "livello": 18,
+     "match": "testo",
+     "perche": "«strength check» nella descrizione"
+    }
+   ]
+  },
+  "mounted": {
+   "n_meccaniche": 8,
+   "mostrate": 8,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Faithful Steed",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Paladin",
+     "livello": 5,
+     "match": "nome",
+     "perche": "«steed» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Land's Stride",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "livello": 8,
+     "match": "nome",
+     "perche": "«ride» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Charger",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«charge» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mounted Combatant",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«mount» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "find steed",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "match": "nome",
+     "perche": "«steed» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "longstrider",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«ride» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "phantom steed",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«steed» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "tree stride",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«ride» nel nome"
+    }
+   ]
+  },
+  "protector": {
+   "n_meccaniche": 28,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Arcane Recovery",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«cover» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Protector",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Cleric",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«protect» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Warden",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Druid",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«ward» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Mystical Recovery",
+     "sorgente": "UATheMysticClass",
+     "classe": "Mystic",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«cover» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Aura of Protection",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«protect» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Aura of Courage",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 10,
+     "match": "nome",
+     "perche": "«aura» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Aura Expansion",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Paladin",
+     "livello": 18,
+     "match": "nome",
+     "perche": "«aura» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Aura improvements",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 18,
+     "match": "nome",
+     "perche": "«aura» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Boon of Recovery",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«cover» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Greater Mark of Warding",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«ward» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Interception",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«intercept» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mark of Warding",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«ward» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Protection",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«protect» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "aura of evasion",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«aura» nel nome"
+    }
+   ]
+  },
+  "utility": {
+   "n_meccaniche": 17,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Ritual Adept",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Wizard",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«ritual» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Infusions Known",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«infusion» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "The Right Tool for the Job",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«tool» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Tool Expertise",
+     "sorgente": "Tasha's Cauldron of Everything (2020-11-17)",
+     "classe": "Artificer",
+     "livello": 6,
+     "match": "nome",
+     "perche": "«tool» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Fey Teleportation",
+     "sorgente": "Xanathar's Guide to Everything (2017-11-21)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«teleport» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Greater Mark of Detection",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mark of Detection",
+     "sorgente": "Eberron: Forge of the Artificer (2025-12-09)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Ritual Caster",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«ritual» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "detect evil and good",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "detect magic",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "detect poison and disease",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "detect thoughts",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "identify",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«identify» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "nondetection",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Ranger",
+     "match": "nome",
+     "perche": "«detect» nel nome"
+    }
+   ]
+  },
+  "multiclass": {
+   "n_meccaniche": 38,
+   "mostrate": 14,
+   "voci": [
+    {
+     "tipo": "privilegio",
+     "nome": "Arcane Recovery",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«arcane recovery» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Fighting Style",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Fighter",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«fighting style» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Pact Magic",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Warlock",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«pact magic» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Second Wind",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Fighter",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«second wind» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Sneak Attack",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Rogue",
+     "livello": 1,
+     "match": "nome",
+     "perche": "«sneak attack» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Action Surge",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Fighter",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«action surge» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Channel Divinity",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«channel divinity» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Channel Divinity: Harness Divine Power",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«channel divinity» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Channel Divinity: Turn Undead",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Cleric",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«channel divinity» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Divine Smite",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«divine smite» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Eldritch Invocations",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Warlock",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«eldritch invocations» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Wild Shape",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Druid",
+     "livello": 2,
+     "match": "nome",
+     "perche": "«wild shape» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Metamagic",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«metamagic» nel nome"
+    },
+    {
+     "tipo": "privilegio",
+     "nome": "Metamagic Options",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "livello": 3,
+     "match": "nome",
+     "perche": "«metamagic» nel nome"
+    }
+   ]
+  },
+  "duelist": {
+   "n_meccaniche": 4,
+   "mostrate": 4,
+   "voci": [
+    {
+     "tipo": "talento",
+     "nome": "Defensive Duelist",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«duel» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Dueling",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«duel» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "compelled duel",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Paladin",
+     "match": "nome",
+     "perche": "«duel» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "dueling ground",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "classe": "Druid",
+     "match": "nome",
+     "perche": "«duel» nel nome"
+    }
+   ]
+  },
+  "skirmisher": {
+   "n_meccaniche": 7,
+   "mostrate": 7,
+   "voci": [
+    {
+     "tipo": "talento",
+     "nome": "Boon of Speed",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«speed» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Fey Teleportation",
+     "sorgente": "Xanathar's Guide to Everything (2017-11-21)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«teleport» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Mobile",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "ed": "2014",
+     "match": "nome",
+     "perche": "«mobile» nel nome"
+    },
+    {
+     "tipo": "talento",
+     "nome": "Speedy",
+     "sorgente": "Player's Handbook (2024) (2024-09-17)",
+     "ed": "2024",
+     "match": "nome",
+     "perche": "«speed» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "galder's speedy courier",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Wizard",
+     "match": "nome",
+     "perche": "«speed» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "teleport",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«teleport» nel nome"
+    },
+    {
+     "tipo": "incantesimo",
+     "nome": "teleportation circle",
+     "sorgente": "Player's Handbook (2014) (2014-08-19)",
+     "classe": "Sorcerer",
+     "match": "nome",
+     "perche": "«teleport» nel nome"
+    }
+   ]
+  }
+ }
+}

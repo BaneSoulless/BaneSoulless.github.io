@@ -1,0 +1,128 @@
+{
+ "raw_1358DR": {
+  "url": "https://forgottenrealms.fandom.com/wiki/1358_DR?action=raw",
+  "status": 403,
+  "bytes": 0,
+  "ctype": "err",
+  "head": ""
+ },
+ "export_1358DR": {
+  "url": "https://forgottenrealms.fandom.com/wiki/Special:Export/1358_DR",
+  "status": 403,
+  "bytes": 0,
+  "ctype": "err",
+  "head": ""
+ },
+ "parse_marking": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Marking_the_years&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 8683,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"Marking the years\",\"pageid\":63,\"wikitext\":{\"*\":\"{{Roll of years|1|Sunrise|nocat=true}}\\n''Example conversion between the years for [[1 DR]]''\\n\\nYears (winters)<ref name=\\\"GTotR-p22\\\" /> are referred to by names, each name consiste"
+ },
+ "parse_roll": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Roll_of_Years&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 120,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"Roll of Years\",\"pageid\":49012,\"wikitext\":{\"*\":\"#REDIRECT [[Marking the years#Names_of_the_Years]]\"}}}"
+ },
+ "parse_1358": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1358_DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 20204,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"1358 DR\",\"pageid\":2415,\"wikitext\":{\"*\":\"{{Roll of years|1358|Shadows}}\\n\\n{{Yearbox\\n| age  = Era of Upheaval\\n| year = 1358\\n}}\\n\\n{{LunarCalendarBox}}\\n\\n<div style=\\\"font-size:large; font-weight:bold; text-align:center\\\">[[The T"
+ },
+ "parse_1385": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1385_DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 11601,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"1385 DR\",\"pageid\":12731,\"wikitext\":{\"*\":\"{{Roll of years|1385|Blue Fire}}\\n\\n{{Yearbox\\n|age=Era of Upheaval\\n|year=1385\\n}}\\n{{LunarCalendarBox}}\\n<div style=\\\"font-size:large; font-weight:bold; text-align:center\\\">[[Spellplague|T"
+ },
+ "parse_1487": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1487_DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 6603,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"1487 DR\",\"pageid\":25419,\"wikitext\":{\"*\":\"{{Roll of years|1487|the Rune Lords Triumphant}}\\n\\n{{Yearbox\\n| year = 1487\\n| age = Era of Upheaval\\n}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox/in-conflicts}}\\n* [[Hammer 10]]: The [[First Tyma"
+ },
+ "parse_harp": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Calendar_of_Harptos&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 5710,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"Calendar of Harptos\",\"pageid\":1837,\"wikitext\":{\"*\":\"[[File:Harptos-4e.jpg|thumb|right|250px|''The Calendar of Harptos with holidays and seasonal depictions.'']]\\nThe '''Calendar of Harptos''' was the calendar used across most of [["
+ },
+ "parse_ahghairon": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Ahghairon%27s_Day&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1822,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"parse\":{\"title\":\"Ahghairon's Day\",\"pageid\":84948,\"wikitext\":{\"*\":\"{{Event\\n| image       = \\n| caption     = \\n| name        = Ahghairon's Day\\n| partof      = \\n| othernames  = \\n| type        = Holiday\\n| deity       = \\n| location    = [[Waterde"
+ },
+ "search_plain": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=Midwinter%20festival&srlimit=20&format=json",
+  "status": 200,
+  "bytes": 2568,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":20,\"continue\":\"-||\"},\"query\":{\"search\":[{\"ns\":0,\"title\":\"Midwinter\",\"pageid\":2682,\"size\":6998,\"wordcount\":1011,\"snippet\":\"\",\"timestamp\":\"2022-01-20T16:06:59Z\"},{\"ns\":0,\"title\":\"Living Forgotten Realms/Cormyr"
+ },
+ "search_insource_DR": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=insource%3A%2F1385%20DR%2F&srlimit=20&format=json",
+  "status": 200,
+  "bytes": 42,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"search\":[]}}"
+ },
+ "search_hasdate": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=Eleasis%201&srlimit=20&format=json",
+  "status": 200,
+  "bytes": 2455,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":20,\"continue\":\"-||\"},\"query\":{\"search\":[{\"ns\":0,\"title\":\"Eleasis 1\",\"pageid\":40152,\"size\":923,\"wordcount\":129,\"snippet\":\"\",\"timestamp\":\"2020-07-25T18:13:06Z\"},{\"ns\":0,\"title\":\"Eleasis 3\",\"pageid\":40502,\"size"
+ },
+ "cat_events_all": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Events&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 26187,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"cmcontinue\":\"page|574152204f4620474f4c4420414e4420474c4f4f4d|35756\",\"continue\":\"-||\"},\"query\":{\"categorymembers\":[{\"pageid\":8811,\"ns\":0,\"title\":\"Abraxus affair\"},{\"pageid\":160292,\"ns\":0,\"title\":\"Absolute crisis\"},{\"pa"
+ },
+ "cat_years_more": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Years&cmlimit=500&cmsort=sortkey&format=json",
+  "status": 200,
+  "bytes": 20538,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"cmcontinue\":\"page|207b7b235041443a33353530307c357c307c4c4546547d7d0a353030204452|8502\",\"continue\":\"-||\"},\"query\":{\"categorymembers\":[{\"pageid\":23577,\"ns\":0,\"title\":\"0 DR\"},{\"pageid\":38957,\"ns\":0,\"title\":\"1 DR\"},{\"page"
+ },
+ "cat_holidays": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Holidays&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 2902,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":84948,\"ns\":0,\"title\":\"Ahghairon's Day\"},{\"pageid\":60689,\"ns\":0,\"title\":\"Ascension Day\"},{\"pageid\":103132,\"ns\":0,\"title\":\"Auril's Blesstide\"},{\"pageid\":106607,\"ns\":0,\"title\":\"Brightswords\"},{\"p"
+ },
+ "backlinks_harp": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=backlinks&bltitle=Calendar%20of%20Harptos&bllimit=200&format=json",
+  "status": 200,
+  "bytes": 9950,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"blcontinue\":\"0|40118\",\"continue\":\"-||\"},\"query\":{\"backlinks\":[{\"pageid\":63,\"ns\":0,\"title\":\"Marking the years\"},{\"pageid\":87,\"ns\":0,\"title\":\"Forgotten Realms Campaign Setting 3rd edition\"},{\"pageid\":1378,\"ns\":0,\"title\""
+ },
+ "transcl_event": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=embeddedin&eititle=Template%3AEvent&eilimit=100&format=json",
+  "status": 200,
+  "bytes": 5332,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"continue\":{\"eicontinue\":\"0|63471\",\"continue\":\"-||\"},\"query\":{\"embeddedin\":[{\"pageid\":1564,\"ns\":0,\"title\":\"Time of Troubles\"},{\"pageid\":1738,\"ns\":0,\"title\":\"Silence of Lolth\"},{\"pageid\":1852,\"ns\":0,\"title\":\"Goblin War\"},{\"pageid\":"
+ },
+ "allpages_DR": {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apprefix=14&aplimit=200&format=json",
+  "status": 200,
+  "bytes": 4731,
+  "ctype": "application/json; charset=utf-8",
+  "head": "{\"batchcomplete\":\"\",\"query\":{\"allpages\":[{\"pageid\":16039,\"ns\":0,\"title\":\"1400 DR\"},{\"pageid\":21954,\"ns\":0,\"title\":\"1401 DR\"},{\"pageid\":21953,\"ns\":0,\"title\":\"1402 DR\"},{\"pageid\":21955,\"ns\":0,\"title\":\"1403 DR\"},{\"pageid\":21952,\"ns\":0,\"title\":\"1404 DR\"}"
+ }
+}

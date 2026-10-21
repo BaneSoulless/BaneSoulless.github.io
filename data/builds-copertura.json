@@ -1,0 +1,6212 @@
+{
+ "nota": "Copertura del materiale 2024+. Le build «vetrina» esistono perche' OGNI opzione legale abbia chi la usa; mostrano l'opzione e la leva meccanica che la collega a specie, background e talenti. NON sono build ottimizzate e non vanno confuse con le 21 del codex: dichiararle equivalenti sarebbe disonesto.",
+ "inventario": {
+  "sottoclassi": 76,
+  "specie": 26,
+  "talenti": 197,
+  "background": 70,
+  "di_cui_fuori_xphb": {
+   "sottoclassi": 28,
+   "specie": 16,
+   "talenti": 120,
+   "background": 54
+  }
+ },
+ "copertura_prima": {
+  "sottoclassi": {
+   "totale": 76,
+   "usate": 9,
+   "non_usate": 67,
+   "pct": 11.8,
+   "non_usate_elenco": [
+    {
+     "nome": "Alchemist",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Armorer",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Artillerist",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Battle Smith",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Cartographer",
+     "classe": "Artificer",
+     "s": "EFA"
+    },
+    {
+     "nome": "Reanimator",
+     "classe": "Artificer",
+     "s": "RHW"
+    },
+    {
+     "nome": "Path of the Berserker",
+     "classe": "Barbarian",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Path of the World Tree",
+     "classe": "Barbarian",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Path of the Zealot",
+     "classe": "Barbarian",
+     "s": "XPHB"
+    },
+    {
+     "nome": "College of the Moon",
+     "classe": "Bard",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "College of Spirits",
+     "classe": "Bard",
+     "s": "RHW"
+    },
+    {
+     "nome": "College of Dance",
+     "classe": "Bard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "College of Valor",
+     "classe": "Bard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Arcana Domain",
+     "classe": "Cleric",
+     "s": "AU"
+    },
+    {
+     "nome": "Knowledge Domain",
+     "classe": "Cleric",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Grave Domain",
+     "classe": "Cleric",
+     "s": "RHW"
+    },
+    {
+     "nome": "Life Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Light Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Trickery Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "War Domain",
+     "classe": "Cleric",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Land",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Moon",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Sea",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Circle of the Stars",
+     "classe": "Druid",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Arcane Archer",
+     "classe": "Fighter",
+     "s": "AU"
+    },
+    {
+     "nome": "Banneret",
+     "classe": "Fighter",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Battle Master",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Champion",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Eldritch Knight",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Psi Warrior",
+     "classe": "Fighter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warrior of the Mystic Arts",
+     "classe": "Monk",
+     "s": "AU"
+    },
+    {
+     "nome": "Warrior of Mercy",
+     "classe": "Monk",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warrior of Shadow",
+     "classe": "Monk",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warrior of the Elements",
+     "classe": "Monk",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Oath of the Noble Genies",
+     "classe": "Paladin",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Oath of Devotion",
+     "classe": "Paladin",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Oath of Glory",
+     "classe": "Paladin",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Oath of the Ancients",
+     "classe": "Paladin",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Winter Walker",
+     "classe": "Ranger",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Hollow Warden",
+     "classe": "Ranger",
+     "s": "RHW"
+    },
+    {
+     "nome": "Beast Master",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Fey Wanderer",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gloom Stalker",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Hunter",
+     "classe": "Ranger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Scion of the Three",
+     "classe": "Rogue",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Phantom",
+     "classe": "Rogue",
+     "s": "RHW"
+    },
+    {
+     "nome": "Arcane Trickster",
+     "classe": "Rogue",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Soulknife",
+     "classe": "Rogue",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Spellfire Sorcery",
+     "classe": "Sorcerer",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Shadow Sorcery",
+     "classe": "Sorcerer",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Clockwork Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Draconic Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Wild Magic Sorcery",
+     "classe": "Sorcerer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Vestige Patron",
+     "classe": "Warlock",
+     "s": "AU"
+    },
+    {
+     "nome": "Undead Patron",
+     "classe": "Warlock",
+     "s": "RHW"
+    },
+    {
+     "nome": "Archfey Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Celestial Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Fiend Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Great Old One Patron",
+     "classe": "Warlock",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Conjurer",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Enchanter",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Necromancer",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Transmuter",
+     "classe": "Wizard",
+     "s": "AU"
+    },
+    {
+     "nome": "Diviner",
+     "classe": "Wizard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Evoker",
+     "classe": "Wizard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Illusionist",
+     "classe": "Wizard",
+     "s": "XPHB"
+    }
+   ]
+  },
+  "specie": {
+   "totale": 26,
+   "usate": 5,
+   "non_usate": 21,
+   "pct": 19.2,
+   "non_usate_elenco": [
+    {
+     "nome": "Aasimar",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boggart",
+     "s": "LFL"
+    },
+    {
+     "nome": "Changeling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Dhampir",
+     "s": "RHW"
+    },
+    {
+     "nome": "Dragonborn",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dwarf",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Faerie",
+     "s": "LFL"
+    },
+    {
+     "nome": "Flamekin",
+     "s": "LFL"
+    },
+    {
+     "nome": "Halfling",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Hexblood",
+     "s": "RHW"
+    },
+    {
+     "nome": "Kalashtar",
+     "s": "EFA"
+    },
+    {
+     "nome": "Khoravar",
+     "s": "EFA"
+    },
+    {
+     "nome": "Kithkin",
+     "s": "LFL"
+    },
+    {
+     "nome": "Lorwyn Changeling",
+     "s": "LFL"
+    },
+    {
+     "nome": "Lupin",
+     "s": "RHW"
+    },
+    {
+     "nome": "Orc",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Reborn",
+     "s": "RHW"
+    },
+    {
+     "nome": "Rimekin",
+     "s": "LFL"
+    },
+    {
+     "nome": "Shifter",
+     "s": "EFA"
+    },
+    {
+     "nome": "Tiefling",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Warforged",
+     "s": "EFA"
+    }
+   ]
+  },
+  "talenti": {
+   "totale": 197,
+   "usate": 36,
+   "non_usate": 161,
+   "pct": 18.3,
+   "non_usate_elenco": [
+    {
+     "nome": "Aberrant Anatomy",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Ability Score Improvement",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Actor",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Arcane Artist",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Eloquence",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Infiltrator",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Omens",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Safeguard",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Undertaker",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Warrior",
+     "s": "AU"
+    },
+    {
+     "nome": "Archery",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Athlete",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Blessed Warrior",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Blind Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Bloodlust",
+     "s": "ABH"
+    },
+    {
+     "nome": "Bomber",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Blazing Dawn",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Bloodshed",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Bountiful Health",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Combat Prowess",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Communication",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Desperate Resilience",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Erupting Spellpower",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Exquisite Radiance",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Fluid Forms",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Fortune's Favor",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Looming Shadows",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Magic School Mastery",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Misty Escape",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Poison Mastery",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Recovery",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Siberys",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Terror",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Furious Storm",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Iron Mind",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of the Soul Drinker",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Truesight",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Charger",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Chef",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    },
+    {
+     "nome": "Cloying Mists",
+     "s": "ABH"
+    },
+    {
+     "nome": "Cold Caster",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Conjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Crafter",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Crossbow Expert",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Cult of the Dragon Initiate",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Defense",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Delicious Pain",
+     "s": "ABH"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Druidic Warrior",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dual Wielder",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dueling",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Echoing Soul",
+     "s": "RHW"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Emerald Enclave Fledgling",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Enchantment Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Evocation Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Fairy Trickster",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Fey-Touched",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Genie Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Great Weapon Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Greater Aberrant Mark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Finding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Healing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Making",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Passage",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Scribing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Sentinel",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Shadow",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Storm",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Warding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Harper Agent",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Harper Teamwork",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Heavily Armored",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Heavy Armor Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Illusion Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Interception",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Keen Mind",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Light Bringer",
+     "s": "ABH"
+    },
+    {
+     "nome": "Lightly Armored",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Living Shadow",
+     "s": "RHW"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Love Bites",
+     "s": "ABH"
+    },
+    {
+     "nome": "Lucky",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mage Slayer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Magic Connoisseur",
+     "s": "AU"
+    },
+    {
+     "nome": "Mark of Finding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Healing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Making",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Passage",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Scribing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Sentinel",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Shadow",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Storm",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Warding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Martial Weapon Training",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Medium Armor Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    },
+    {
+     "nome": "Moderately Armored",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mounted Combatant",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Musician",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mythal Touched",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Necromancy Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Observant",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Order's Resilience",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Otherworldly Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Piercer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Poisoner",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Polearm Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Portal Jumper",
+     "s": "AU"
+    },
+    {
+     "nome": "Potent Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Protection",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Purple Dragon Commandant",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Purple Dragon Rook",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Putrefy",
+     "s": "ABH"
+    },
+    {
+     "nome": "Rebuke",
+     "s": "ABH"
+    },
+    {
+     "nome": "Second Skin",
+     "s": "RHW"
+    },
+    {
+     "nome": "Sentinel",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Shadow-Touched",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Shadowmoor Hexer",
+     "s": "LFL"
+    },
+    {
+     "nome": "Sharp Eye",
+     "s": "RHW"
+    },
+    {
+     "nome": "Shield Master",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Slasher",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Soothing Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Spell Resistant",
+     "s": "AU"
+    },
+    {
+     "nome": "Spell Subterfuge",
+     "s": "AU"
+    },
+    {
+     "nome": "Spellfire Adept",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Spellfire Spark",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Street Justice",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Survivor",
+     "s": "RHW"
+    },
+    {
+     "nome": "Symbiotic Being",
+     "s": "RHW"
+    },
+    {
+     "nome": "Telekinetic",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Telepathic",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Thrown Weapon Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Tireless Reveler",
+     "s": "ABH"
+    },
+    {
+     "nome": "Touch of Death",
+     "s": "RHW"
+    },
+    {
+     "nome": "Transmutation Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Transmuted Anatomy",
+     "s": "AU"
+    },
+    {
+     "nome": "Treacherous Allure",
+     "s": "ABH"
+    },
+    {
+     "nome": "Two-Weapon Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Tyro of the Gauntlet",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Unarmed Fighting",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Vampire Hunter",
+     "s": "ABH"
+    },
+    {
+     "nome": "Vampire Touched",
+     "s": "ABH"
+    },
+    {
+     "nome": "Vampire's Plaything",
+     "s": "ABH"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Watchers",
+     "s": "RHW"
+    }
+   ]
+  },
+  "background": {
+   "totale": 70,
+   "usate": 8,
+   "non_usate": 62,
+   "pct": 11.4,
+   "non_usate_elenco": [
+    {
+     "nome": "Aberrant Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "Acolyte",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Agent of the Ninth Quill",
+     "s": "AU"
+    },
+    {
+     "nome": "Archaeologist",
+     "s": "EFA"
+    },
+    {
+     "nome": "Artisan",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Bejeweled Conclave Spy",
+     "s": "AU"
+    },
+    {
+     "nome": "Carouser",
+     "s": "ABH"
+    },
+    {
+     "nome": "Chondathan Freebooter",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Cosmic Dawn Experiment",
+     "s": "AU"
+    },
+    {
+     "nome": "Covenant of the Grave Recruit",
+     "s": "AU"
+    },
+    {
+     "nome": "Crucible Storm Chaser",
+     "s": "AU"
+    },
+    {
+     "nome": "Dead Magic Dweller",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Dragon Cultist",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Emerald Enclave Caretaker",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Entertainer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Familiar Trainer",
+     "s": "AU"
+    },
+    {
+     "nome": "Farmer",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Flaming Fist Mercenary",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Genie Touched",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Guard",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Guide",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Harper",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Haunted One",
+     "s": "RHW"
+    },
+    {
+     "nome": "Horizon Weaver Initiate",
+     "s": "AU"
+    },
+    {
+     "nome": "House Agent",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Cannith Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Deneith Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Ghallanda Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Jorasco Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Kundarak Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Lyrandar Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Medani Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Orien Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Phiarlan Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Sivis Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Tharashk Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Thuranni Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "House Vadalis Heir",
+     "s": "EFA"
+    },
+    {
+     "nome": "Ice Fisher",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Inquisitive",
+     "s": "EFA"
+    },
+    {
+     "nome": "Investigator",
+     "s": "RHW"
+    },
+    {
+     "nome": "Knight of the Gauntlet",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Lords' Alliance Vassal",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Lorwyn Expert",
+     "s": "LFL"
+    },
+    {
+     "nome": "Merchant",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Mist Wanderer",
+     "s": "RHW"
+    },
+    {
+     "nome": "Moonwell Pilgrim",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mulhorandi Tomb Raider",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mythalkeeper",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Phantasmic Circus Trouper",
+     "s": "AU"
+    },
+    {
+     "nome": "Purple Dragon Squire",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Rashemi Wanderer",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Scribe",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Seer Apprentice",
+     "s": "AU"
+    },
+    {
+     "nome": "Shadowmasters Exile",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Shadowmoor Expert",
+     "s": "LFL"
+    },
+    {
+     "nome": "Spellfire Initiate",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Spirit Medium",
+     "s": "RHW"
+    },
+    {
+     "nome": "Vampire Devotee",
+     "s": "ABH"
+    },
+    {
+     "nome": "Vampire Survivor",
+     "s": "ABH"
+    },
+    {
+     "nome": "Ward of the Sheltering Hands",
+     "s": "AU"
+    },
+    {
+     "nome": "Wayfarer",
+     "s": "XPHB"
+    }
+   ]
+  }
+ },
+ "vetrina": [
+  {
+   "id": "C001",
+   "nome": "Alchemist",
+   "classe": "Artificer",
+   "sottoclasse": "Alchemist",
+   "fonte": "EFA",
+   "manuale": "Eberron: Forge of the Artificer",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Otherworldly Familiar",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "evocazione",
+    "fuoco",
+    "veleno"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C002",
+   "nome": "Armorer",
+   "classe": "Artificer",
+   "sottoclasse": "Armorer",
+   "fonte": "EFA",
+   "manuale": "Eberron: Forge of the Artificer",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Greater Mark of Warding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "reazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C003",
+   "nome": "Artillerist",
+   "classe": "Artificer",
+   "sottoclasse": "Artillerist",
+   "fonte": "EFA",
+   "manuale": "Eberron: Forge of the Artificer",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "difesa",
+    "fuoco",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C004",
+   "nome": "Battle Smith",
+   "classe": "Artificer",
+   "sottoclasse": "Battle Smith",
+   "fonte": "EFA",
+   "manuale": "Eberron: Forge of the Artificer",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Undertaker",
+     "s": "AU"
+    },
+    {
+     "nome": "Bloodlust",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Bloodshed",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "cura",
+    "danno_extra"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C005",
+   "nome": "Cartographer",
+   "classe": "Artificer",
+   "sottoclasse": "Cartographer",
+   "fonte": "EFA",
+   "manuale": "Eberron: Forge of the Artificer",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Cloying Mists",
+     "s": "ABH"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "concentrazione",
+    "danno_extra",
+    "fuoco",
+    "movimento",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C006",
+   "nome": "Reanimator",
+   "classe": "Artificer",
+   "sottoclasse": "Reanimator",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "competenze",
+    "controllo",
+    "danno_extra",
+    "difesa",
+    "nonmorti",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C007",
+   "nome": "Path of the Berserker",
+   "classe": "Barbarian",
+   "sottoclasse": "Path of the Berserker",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Terror",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "competenze",
+    "controllo",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C008",
+   "nome": "Path of the World Tree",
+   "classe": "Barbarian",
+   "sottoclasse": "Path of the World Tree",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "competenze",
+    "evocazione",
+    "movimento",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C009",
+   "nome": "Path of the Zealot",
+   "classe": "Barbarian",
+   "sottoclasse": "Path of the Zealot",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Portal Jumper",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of the Soul Drinker",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "difesa",
+    "movimento",
+    "nonmorti",
+    "psichico",
+    "reazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C010",
+   "nome": "College of the Moon",
+   "classe": "Bard",
+   "sottoclasse": "College of the Moon",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Passage",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "movimento",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C011",
+   "nome": "College of Spirits",
+   "classe": "Bard",
+   "sottoclasse": "College of Spirits",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    }
+   ],
+   "leva": [
+    "evocazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C012",
+   "nome": "College of Dance",
+   "classe": "Bard",
+   "sottoclasse": "College of Dance",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    },
+    {
+     "nome": "Athlete",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "movimento",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C013",
+   "nome": "College of Valor",
+   "classe": "Bard",
+   "sottoclasse": "College of Valor",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Spellfire Spark",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Arcane Infiltrator",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "fuoco"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C014",
+   "nome": "Arcana Domain",
+   "classe": "Cleric",
+   "sottoclasse": "Arcana Domain",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C015",
+   "nome": "Knowledge Domain",
+   "classe": "Cleric",
+   "sottoclasse": "Knowledge Domain",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Keen Mind",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "competenze",
+    "psichico",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C016",
+   "nome": "Grave Domain",
+   "classe": "Cleric",
+   "sottoclasse": "Grave Domain",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "evocazione",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C017",
+   "nome": "Life Domain",
+   "classe": "Cleric",
+   "sottoclasse": "Life Domain",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Greater Mark of Healing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mark of Healing",
+     "s": "EFA"
+    },
+    {
+     "nome": "Necromancy Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    }
+   ],
+   "leva": [
+    "cura",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C018",
+   "nome": "Light Domain",
+   "classe": "Cleric",
+   "sottoclasse": "Light Domain",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Furious Storm",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    },
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "fuoco",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C019",
+   "nome": "Trickery Domain",
+   "classe": "Cleric",
+   "sottoclasse": "Trickery Domain",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Vampire's Plaything",
+     "s": "ABH"
+    },
+    {
+     "nome": "Chef",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "cura",
+    "movimento",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C020",
+   "nome": "War Domain",
+   "classe": "Cleric",
+   "sottoclasse": "War Domain",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Second Skin",
+     "s": "RHW"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "concentrazione",
+    "controllo",
+    "difesa",
+    "evocazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C021",
+   "nome": "Circle of the Land",
+   "classe": "Druid",
+   "sottoclasse": "Circle of the Land",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "controllo",
+    "difesa",
+    "fuoco",
+    "veleno"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C022",
+   "nome": "Circle of the Moon",
+   "classe": "Druid",
+   "sottoclasse": "Circle of the Moon",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Spell Subterfuge",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "danno_extra",
+    "movimento",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C023",
+   "nome": "Circle of the Sea",
+   "classe": "Druid",
+   "sottoclasse": "Circle of the Sea",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Portal Jumper",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Safeguard",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "movimento"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C024",
+   "nome": "Circle of the Stars",
+   "classe": "Druid",
+   "sottoclasse": "Circle of the Stars",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Soul Drinker",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C025",
+   "nome": "Arcane Archer",
+   "classe": "Fighter",
+   "sottoclasse": "Arcane Archer",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Cloying Mists",
+     "s": "ABH"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "fuoco",
+    "movimento",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C026",
+   "nome": "Banneret",
+   "classe": "Fighter",
+   "sottoclasse": "Banneret",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    },
+    {
+     "nome": "Transmuted Anatomy",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "movimento",
+    "reazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C027",
+   "nome": "Battle Master",
+   "classe": "Fighter",
+   "sottoclasse": "Battle Master",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Arcane Safeguard",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Chef",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "difesa"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C028",
+   "nome": "Champion",
+   "classe": "Fighter",
+   "sottoclasse": "Champion",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Slasher",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Actor",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Bomber",
+     "s": "ABH"
+    },
+    {
+     "nome": "Boon of Bloodshed",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "critico",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C029",
+   "nome": "Eldritch Knight",
+   "classe": "Fighter",
+   "sottoclasse": "Eldritch Knight",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Slasher",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Transmuted Anatomy",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "movimento",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C030",
+   "nome": "Psi Warrior",
+   "classe": "Fighter",
+   "sottoclasse": "Psi Warrior",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "concentrazione",
+    "controllo",
+    "difesa",
+    "psichico",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C031",
+   "nome": "Warrior of the Mystic Arts",
+   "classe": "Monk",
+   "sottoclasse": "Warrior of the Mystic Arts",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C032",
+   "nome": "Warrior of Mercy",
+   "classe": "Monk",
+   "sottoclasse": "Warrior of Mercy",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Poison Mastery",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Anatomy",
+     "s": "RHW"
+    },
+    {
+     "nome": "Arcane Undertaker",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "cura",
+    "maestria",
+    "veleno"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C033",
+   "nome": "Warrior of Shadow",
+   "classe": "Monk",
+   "sottoclasse": "Warrior of Shadow",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Athlete",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "controllo",
+    "movimento",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C034",
+   "nome": "Warrior of the Elements",
+   "classe": "Monk",
+   "sottoclasse": "Warrior of the Elements",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Cloying Mists",
+     "s": "ABH"
+    },
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "danno_extra",
+    "difesa",
+    "fuoco",
+    "movimento"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C035",
+   "nome": "Oath of the Noble Genies",
+   "classe": "Paladin",
+   "sottoclasse": "Oath of the Noble Genies",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Cloying Mists",
+     "s": "ABH"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "difesa",
+    "fuoco",
+    "movimento",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C036",
+   "nome": "Oath of Devotion",
+   "classe": "Paladin",
+   "sottoclasse": "Oath of Devotion",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "competenze",
+    "controllo",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C037",
+   "nome": "Oath of Glory",
+   "classe": "Paladin",
+   "sottoclasse": "Oath of Glory",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "movimento",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C038",
+   "nome": "Oath of the Ancients",
+   "classe": "Paladin",
+   "sottoclasse": "Oath of the Ancients",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Otherworldly Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Portal Jumper",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "nonmorti",
+    "psichico",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C039",
+   "nome": "Winter Walker",
+   "classe": "Ranger",
+   "sottoclasse": "Winter Walker",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "evocazione",
+    "movimento",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C040",
+   "nome": "Hollow Warden",
+   "classe": "Ranger",
+   "sottoclasse": "Hollow Warden",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Erupting Spellpower",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Magic School Mastery",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "danno_extra",
+    "maestria",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C041",
+   "nome": "Beast Master",
+   "classe": "Ranger",
+   "sottoclasse": "Beast Master",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Spell Subterfuge",
+     "s": "AU"
+    },
+    {
+     "nome": "Vampire's Plaything",
+     "s": "ABH"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "movimento"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C042",
+   "nome": "Fey Wanderer",
+   "classe": "Ranger",
+   "sottoclasse": "Fey Wanderer",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "concentrazione",
+    "controllo",
+    "evocazione",
+    "movimento",
+    "psichico",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C043",
+   "nome": "Gloom Stalker",
+   "classe": "Ranger",
+   "sottoclasse": "Gloom Stalker",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    },
+    {
+     "nome": "Symbiotic Being",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "competenze",
+    "controllo",
+    "movimento",
+    "psichico",
+    "reazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C044",
+   "nome": "Hunter",
+   "classe": "Ranger",
+   "sottoclasse": "Hunter",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Bloodshed",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "danno_extra",
+    "difesa",
+    "reazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C045",
+   "nome": "Scion of the Three",
+   "classe": "Rogue",
+   "sottoclasse": "Scion of the Three",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Athlete",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Furious Storm",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "difesa",
+    "movimento",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C046",
+   "nome": "Phantom",
+   "classe": "Rogue",
+   "sottoclasse": "Phantom",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "competenze",
+    "evocazione",
+    "movimento",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C047",
+   "nome": "Arcane Trickster",
+   "classe": "Rogue",
+   "sottoclasse": "Arcane Trickster",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Greater Mark of Warding",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "reazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C048",
+   "nome": "Soulknife",
+   "classe": "Rogue",
+   "sottoclasse": "Soulknife",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Symbiotic Being",
+     "s": "RHW"
+    },
+    {
+     "nome": "Aberrant Anatomy",
+     "s": "RHW"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Terror",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "competenze",
+    "controllo",
+    "psichico"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C049",
+   "nome": "Spellfire Sorcery",
+   "classe": "Sorcerer",
+   "sottoclasse": "Spellfire Sorcery",
+   "fonte": "FRHoF",
+   "manuale": "Forgotten Realms: Heroes of Faerûn",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    },
+    {
+     "nome": "Athlete",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Bountiful Health",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "cura",
+    "danno_extra",
+    "difesa",
+    "fuoco",
+    "movimento"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C050",
+   "nome": "Shadow Sorcery",
+   "classe": "Sorcerer",
+   "sottoclasse": "Shadow Sorcery",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "concentrazione",
+    "controllo",
+    "difesa",
+    "evocazione",
+    "movimento",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C051",
+   "nome": "Aberrant Sorcery",
+   "classe": "Sorcerer",
+   "sottoclasse": "Aberrant Sorcery",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "controllo",
+    "difesa",
+    "fuoco",
+    "movimento",
+    "psichico",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C052",
+   "nome": "Clockwork Sorcery",
+   "classe": "Sorcerer",
+   "sottoclasse": "Clockwork Sorcery",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Chef",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Durable",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "cura",
+    "evocazione",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C053",
+   "nome": "Draconic Sorcery",
+   "classe": "Sorcerer",
+   "sottoclasse": "Draconic Sorcery",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Dragonscarred",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "concentrazione",
+    "difesa",
+    "evocazione",
+    "fuoco",
+    "slot",
+    "veleno"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C054",
+   "nome": "Wild Magic Sorcery",
+   "classe": "Sorcerer",
+   "sottoclasse": "Wild Magic Sorcery",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": null,
+   "specie_fonte": null,
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Divination Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Greater Mark of Passage",
+     "s": "EFA"
+    }
+   ],
+   "leva": [
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C055",
+   "nome": "Vestige Patron",
+   "classe": "Warlock",
+   "sottoclasse": "Vestige Patron",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "difesa",
+    "evocazione",
+    "nonmorti",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C056",
+   "nome": "Undead Patron",
+   "classe": "Warlock",
+   "sottoclasse": "Undead Patron",
+   "fonte": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Soul Drinker",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Defensive Duelist",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Portal Jumper",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "danno_extra",
+    "difesa",
+    "movimento",
+    "nonmorti",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C057",
+   "nome": "Archfey Patron",
+   "classe": "Warlock",
+   "sottoclasse": "Archfey Patron",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Greater Mark of Handling",
+     "s": "EFA"
+    },
+    {
+     "nome": "Greater Mark of Passage",
+     "s": "EFA"
+    },
+    {
+     "nome": "Lordly Resolve",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Mist Walker",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "movimento",
+    "psichico",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C058",
+   "nome": "Celestial Patron",
+   "classe": "Warlock",
+   "sottoclasse": "Celestial Patron",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of the Bright Sun",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "danno_extra",
+    "difesa",
+    "fuoco"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C059",
+   "nome": "Fiend Patron",
+   "classe": "Warlock",
+   "sottoclasse": "Fiend Patron",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Desperate Resilience",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "psichico",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C060",
+   "nome": "Great Old One Patron",
+   "classe": "Warlock",
+   "sottoclasse": "Great Old One Patron",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Child of the Sun",
+     "s": "LFL"
+    },
+    {
+     "nome": "Familiar Friend",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "concentrazione",
+    "difesa",
+    "evocazione",
+    "psichico",
+    "slot",
+    "vantaggio"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C061",
+   "nome": "Conjurer",
+   "classe": "Wizard",
+   "sottoclasse": "Conjurer",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Revelry",
+     "s": "FRHoF"
+    }
+   ],
+   "leva": [
+    "concentrazione",
+    "difesa",
+    "evocazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C062",
+   "nome": "Enchanter",
+   "classe": "Wizard",
+   "sottoclasse": "Enchanter",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Symbiotic Being",
+     "s": "RHW"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Terror",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "controllo",
+    "psichico",
+    "reazione"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C063",
+   "nome": "Necromancer",
+   "classe": "Wizard",
+   "sottoclasse": "Necromancer",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "competenze",
+    "difesa",
+    "evocazione",
+    "nonmorti",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C064",
+   "nome": "Transmuter",
+   "classe": "Wizard",
+   "sottoclasse": "Transmuter",
+   "fonte": "AU",
+   "manuale": "Arcana Unleashed",
+   "tipo": "vetrina",
+   "specie": "Aasimar",
+   "specie_fonte": "XPHB",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Boon of Misty Escape",
+     "s": "ABH"
+    }
+   ],
+   "leva": [
+    "difesa",
+    "movimento",
+    "slot",
+    "veleno"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": true
+  },
+  {
+   "id": "C065",
+   "nome": "Diviner",
+   "classe": "Wizard",
+   "sottoclasse": "Diviner",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Enclave Magic",
+     "s": "FRHoF"
+    },
+    {
+     "nome": "Keen Mind",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Shadowmoor Hexer",
+     "s": "LFL"
+    },
+    {
+     "nome": "Spell Subterfuge",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "psichico",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C066",
+   "nome": "Evoker",
+   "classe": "Wizard",
+   "sottoclasse": "Evoker",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Rimekin",
+   "specie_fonte": "LFL",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Boon of Energy Resistance",
+     "s": "XPHB"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    },
+    {
+     "nome": "Abjuration Adept",
+     "s": "AU"
+    },
+    {
+     "nome": "Arcane Overload",
+     "s": "AU"
+    }
+   ],
+   "leva": [
+    "danno_extra",
+    "difesa",
+    "fuoco",
+    "nonmorti",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  },
+  {
+   "id": "C067",
+   "nome": "Illusionist",
+   "classe": "Wizard",
+   "sottoclasse": "Illusionist",
+   "fonte": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "tipo": "vetrina",
+   "specie": "Kalashtar",
+   "specie_fonte": "EFA",
+   "background": null,
+   "background_fonte": null,
+   "talenti": [
+    {
+     "nome": "Elemental Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Gathered Whispers",
+     "s": "RHW"
+    },
+    {
+     "nome": "Warlike Familiar",
+     "s": "AU"
+    },
+    {
+     "nome": "Aberrant Dragonmark",
+     "s": "EFA"
+    }
+   ],
+   "leva": [
+    "azione_bonus",
+    "evocazione",
+    "psichico",
+    "reazione",
+    "slot"
+   ],
+   "perche": "specie, background e talenti scelti per LEVA CONDIVISA con i privilegi della sottoclasse: la leva e' la prova della sinergia, non un giudizio a occhio.",
+   "fuori_xphb": false
+  }
+ ],
+ "per_talento": [
+  {
+   "talento": "Aberrant Anatomy",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "controllo"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Aberrant Dragonmark",
+   "s": "EFA",
+   "leve": [
+    "difesa",
+    "reazione",
+    "slot"
+   ],
+   "sottoclasse_affine": "Artillerist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "reazione",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Ability Score Improvement",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Abjuration Adept",
+   "s": "AU",
+   "leve": [
+    "difesa",
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Actor",
+   "s": "XPHB",
+   "leve": [
+    "competenze",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "competenze",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Arcane Artist",
+   "s": "AU",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Arcane Eloquence",
+   "s": "AU",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Arcane Infiltrator",
+   "s": "AU",
+   "leve": [
+    "azione_bonus",
+    "competenze"
+   ],
+   "sottoclasse_affine": "Path of the Berserker",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Arcane Omens",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Arcane Overload",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "danno_extra",
+    "fuoco"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "danno_extra",
+    "fuoco"
+   ]
+  },
+  {
+   "talento": "Arcane Safeguard",
+   "s": "AU",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "difesa"
+   ],
+   "sottoclasse_affine": "Necromancer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Arcane Undertaker",
+   "s": "AU",
+   "leve": [
+    "cura"
+   ],
+   "sottoclasse_affine": "Battle Smith",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "cura"
+   ]
+  },
+  {
+   "talento": "Arcane Warrior",
+   "s": "AU",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Archery",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Athlete",
+   "s": "XPHB",
+   "leve": [
+    "controllo",
+    "movimento"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "controllo",
+    "movimento"
+   ]
+  },
+  {
+   "talento": "Blessed Warrior",
+   "s": "XPHB",
+   "leve": [
+    "fuoco"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "fuoco"
+   ]
+  },
+  {
+   "talento": "Blind Fighting",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Bloodlust",
+   "s": "ABH",
+   "leve": [
+    "competenze",
+    "cura",
+    "nonmorti"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "nonmorti"
+   ]
+  },
+  {
+   "talento": "Bomber",
+   "s": "ABH",
+   "leve": [
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Armorer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Boon of Blazing Dawn",
+   "s": "ABH",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Boon of Bloodshed",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "danno_extra",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Abjurer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "competenze",
+    "danno_extra",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Boon of Bountiful Health",
+   "s": "FRHoF",
+   "leve": [
+    "cura",
+    "difesa"
+   ],
+   "sottoclasse_affine": "Spellfire Sorcery",
+   "classe": "Sorcerer",
+   "leva_condivisa": [
+    "cura",
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Boon of Combat Prowess",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Boon of Communication",
+   "s": "FRHoF",
+   "leve": [
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Armorer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Boon of Desperate Resilience",
+   "s": "FRHoF",
+   "leve": [
+    "difesa",
+    "psichico"
+   ],
+   "sottoclasse_affine": "Path of the Zealot",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "difesa",
+    "psichico"
+   ]
+  },
+  {
+   "talento": "Boon of Energy Resistance",
+   "s": "XPHB",
+   "leve": [
+    "competenze",
+    "difesa",
+    "fuoco",
+    "nonmorti",
+    "psichico",
+    "reazione",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "difesa",
+    "nonmorti",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Boon of Erupting Spellpower",
+   "s": "AU",
+   "leve": [
+    "controllo",
+    "slot"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "controllo",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Boon of Exquisite Radiance",
+   "s": "FRHoF",
+   "leve": [
+    "nonmorti"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "nonmorti"
+   ]
+  },
+  {
+   "talento": "Boon of Fluid Forms",
+   "s": "FRHoF",
+   "leve": [
+    "difesa"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Boon of Fortune's Favor",
+   "s": "FRHoF",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Boon of Looming Shadows",
+   "s": "ABH",
+   "leve": [
+    "azione_bonus"
+   ],
+   "sottoclasse_affine": "Artillerist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "azione_bonus"
+   ]
+  },
+  {
+   "talento": "Boon of Magic School Mastery",
+   "s": "AU",
+   "leve": [
+    "maestria",
+    "slot"
+   ],
+   "sottoclasse_affine": "Winter Walker",
+   "classe": "Ranger",
+   "leva_condivisa": [
+    "maestria",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Boon of Misty Escape",
+   "s": "ABH",
+   "leve": [
+    "movimento",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Boon of Poison Mastery",
+   "s": "FRHoF",
+   "leve": [
+    "maestria",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Warrior of Mercy",
+   "classe": "Monk",
+   "leva_condivisa": [
+    "maestria",
+    "veleno"
+   ]
+  },
+  {
+   "talento": "Boon of Recovery",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus"
+   ],
+   "sottoclasse_affine": "Artillerist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "azione_bonus"
+   ]
+  },
+  {
+   "talento": "Boon of Revelry",
+   "s": "FRHoF",
+   "leve": [
+    "concentrazione",
+    "controllo",
+    "slot"
+   ],
+   "sottoclasse_affine": "College of Glamour",
+   "classe": "Bard",
+   "leva_condivisa": [
+    "concentrazione",
+    "controllo",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Boon of Siberys",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Boon of Terror",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "controllo",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Boon of the Bright Sun",
+   "s": "FRHoF",
+   "leve": [
+    "azione_bonus",
+    "controllo",
+    "difesa"
+   ],
+   "sottoclasse_affine": "Circle of the Land",
+   "classe": "Druid",
+   "leva_condivisa": [
+    "azione_bonus",
+    "controllo",
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Boon of the Furious Storm",
+   "s": "FRHoF",
+   "leve": [
+    "difesa",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Path of the Zealot",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "difesa",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Boon of the Iron Mind",
+   "s": "AU",
+   "leve": [
+    "concentrazione",
+    "psichico"
+   ],
+   "sottoclasse_affine": "Psi Warrior",
+   "classe": "Fighter",
+   "leva_condivisa": [
+    "concentrazione",
+    "psichico"
+   ]
+  },
+  {
+   "talento": "Boon of the Soul Drinker",
+   "s": "FRHoF",
+   "leve": [
+    "difesa",
+    "nonmorti",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "nonmorti",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Boon of Truesight",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Charger",
+   "s": "XPHB",
+   "leve": [
+    "movimento"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento"
+   ]
+  },
+  {
+   "talento": "Chef",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "cura",
+    "difesa"
+   ],
+   "sottoclasse_affine": "Necromancer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Child of the Sun",
+   "s": "LFL",
+   "leve": [
+    "concentrazione",
+    "fuoco",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "concentrazione",
+    "fuoco",
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Cloying Mists",
+   "s": "ABH",
+   "leve": [
+    "fuoco",
+    "movimento",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "fuoco",
+    "movimento",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Cold Caster",
+   "s": "FRHoF",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Conjuration Adept",
+   "s": "AU",
+   "leve": [
+    "concentrazione",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "concentrazione",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Crafter",
+   "s": "XPHB",
+   "leve": [
+    "competenze"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Crossbow Expert",
+   "s": "XPHB",
+   "leve": [
+    "danno_extra",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "danno_extra",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Cult of the Dragon Initiate",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "controllo"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Defense",
+   "s": "XPHB",
+   "leve": [
+    "difesa"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Defensive Duelist",
+   "s": "XPHB",
+   "leve": [
+    "competenze",
+    "danno_extra",
+    "difesa",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "danno_extra",
+    "difesa",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Delicious Pain",
+   "s": "ABH",
+   "leve": [
+    "difesa",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Artillerist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Divination Adept",
+   "s": "AU",
+   "leve": [
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "reazione",
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Dragonscarred",
+   "s": "FRHoF",
+   "leve": [
+    "azione_bonus",
+    "difesa",
+    "fuoco",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Circle of the Land",
+   "classe": "Druid",
+   "leva_condivisa": [
+    "azione_bonus",
+    "difesa",
+    "fuoco",
+    "veleno"
+   ]
+  },
+  {
+   "talento": "Druidic Warrior",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Dual Wielder",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "danno_extra"
+   ],
+   "sottoclasse_affine": "Circle of the Moon",
+   "classe": "Druid",
+   "leva_condivisa": [
+    "azione_bonus",
+    "danno_extra"
+   ]
+  },
+  {
+   "talento": "Dueling",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Durable",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "movimento",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Path of the Zealot",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "movimento",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Echoing Soul",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "controllo",
+    "movimento"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "movimento"
+   ]
+  },
+  {
+   "talento": "Elemental Familiar",
+   "s": "AU",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "controllo",
+    "difesa",
+    "evocazione",
+    "fuoco",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Necromancer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "difesa",
+    "evocazione",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Emerald Enclave Fledgling",
+   "s": "FRHoF",
+   "leve": [
+    "controllo",
+    "slot"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "controllo",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Enchantment Adept",
+   "s": "AU",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Enclave Magic",
+   "s": "FRHoF",
+   "leve": [
+    "concentrazione",
+    "psichico",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Fey Wanderer",
+   "classe": "Ranger",
+   "leva_condivisa": [
+    "concentrazione",
+    "psichico",
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Evocation Adept",
+   "s": "AU",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Fairy Trickster",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "competenze",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Familiar Friend",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "evocazione",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Phantom",
+   "classe": "Rogue",
+   "leva_condivisa": [
+    "competenze",
+    "evocazione",
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Fey-Touched",
+   "s": "XPHB",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Gathered Whispers",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "danno_extra",
+    "evocazione",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Abjurer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "competenze",
+    "danno_extra",
+    "evocazione",
+    "reazione",
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Genie Magic",
+   "s": "FRHoF",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Great Weapon Fighting",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Greater Aberrant Mark",
+   "s": "EFA",
+   "leve": [
+    "competenze",
+    "difesa"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "difesa"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Finding",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Handling",
+   "s": "EFA",
+   "leve": [
+    "competenze",
+    "controllo",
+    "movimento",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "movimento",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Healing",
+   "s": "EFA",
+   "leve": [
+    "competenze",
+    "cura",
+    "slot"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Making",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Passage",
+   "s": "EFA",
+   "leve": [
+    "movimento",
+    "reazione",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento",
+    "reazione",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Scribing",
+   "s": "EFA",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Greater Mark of Sentinel",
+   "s": "EFA",
+   "leve": [
+    "reazione"
+   ],
+   "sottoclasse_affine": "Armorer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Shadow",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Storm",
+   "s": "EFA",
+   "leve": [
+    "movimento",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Greater Mark of Warding",
+   "s": "EFA",
+   "leve": [
+    "competenze",
+    "reazione",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Gloom Stalker",
+   "classe": "Ranger",
+   "leva_condivisa": [
+    "competenze",
+    "reazione",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Harper Agent",
+   "s": "FRHoF",
+   "leve": [
+    "competenze"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Harper Teamwork",
+   "s": "FRHoF",
+   "leve": [
+    "controllo",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Path of the Wild Heart",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "controllo",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Heavily Armored",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Heavy Armor Master",
+   "s": "XPHB",
+   "leve": [
+    "competenze"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Illusion Adept",
+   "s": "AU",
+   "leve": [
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Interception",
+   "s": "XPHB",
+   "leve": [
+    "competenze",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Keen Mind",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "psichico"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "psichico"
+   ]
+  },
+  {
+   "talento": "Light Bringer",
+   "s": "ABH",
+   "leve": [
+    "azione_bonus",
+    "cura"
+   ],
+   "sottoclasse_affine": "Trickery Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "azione_bonus",
+    "cura"
+   ]
+  },
+  {
+   "talento": "Lightly Armored",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Living Shadow",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "controllo"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Lordly Resolve",
+   "s": "FRHoF",
+   "leve": [
+    "azione_bonus",
+    "controllo",
+    "movimento",
+    "reazione",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Oath of Vengeance",
+   "classe": "Paladin",
+   "leva_condivisa": [
+    "azione_bonus",
+    "controllo",
+    "movimento",
+    "reazione",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Love Bites",
+   "s": "ABH",
+   "leve": [
+    "azione_bonus",
+    "controllo"
+   ],
+   "sottoclasse_affine": "Path of the Berserker",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Lucky",
+   "s": "XPHB",
+   "leve": [
+    "competenze",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "competenze",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Mage Slayer",
+   "s": "XPHB",
+   "leve": [
+    "concentrazione",
+    "psichico",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Fey Wanderer",
+   "classe": "Ranger",
+   "leva_condivisa": [
+    "concentrazione",
+    "psichico",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Magic Connoisseur",
+   "s": "AU",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Finding",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Handling",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Healing",
+   "s": "EFA",
+   "leve": [
+    "cura",
+    "slot"
+   ],
+   "sottoclasse_affine": "Life Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "cura",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Making",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Passage",
+   "s": "EFA",
+   "leve": [
+    "movimento",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Scribing",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Sentinel",
+   "s": "EFA",
+   "leve": [
+    "competenze",
+    "reazione",
+    "slot"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "reazione",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Shadow",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Storm",
+   "s": "EFA",
+   "leve": [
+    "difesa",
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Mark of Warding",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Martial Weapon Training",
+   "s": "XPHB",
+   "leve": [
+    "competenze"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Medium Armor Master",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Mist Walker",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "controllo",
+    "movimento",
+    "reazione",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "movimento",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Moderately Armored",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Mounted Combatant",
+   "s": "XPHB",
+   "leve": [
+    "controllo",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Path of the Wild Heart",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "controllo",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Musician",
+   "s": "XPHB",
+   "leve": [
+    "competenze"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Mythal Touched",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Necromancy Adept",
+   "s": "AU",
+   "leve": [
+    "cura",
+    "slot"
+   ],
+   "sottoclasse_affine": "Life Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "cura",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Observant",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "competenze"
+   ],
+   "sottoclasse_affine": "Path of the Berserker",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Order's Resilience",
+   "s": "FRHoF",
+   "leve": [
+    "controllo",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Path of the Wild Heart",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "controllo",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Otherworldly Familiar",
+   "s": "AU",
+   "leve": [
+    "difesa",
+    "evocazione",
+    "nonmorti",
+    "psichico",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "evocazione",
+    "veleno"
+   ]
+  },
+  {
+   "talento": "Piercer",
+   "s": "XPHB",
+   "leve": [
+    "critico",
+    "danno_extra"
+   ],
+   "sottoclasse_affine": "Battle Smith",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "danno_extra"
+   ]
+  },
+  {
+   "talento": "Poisoner",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "difesa",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Circle of the Land",
+   "classe": "Druid",
+   "leva_condivisa": [
+    "azione_bonus",
+    "difesa",
+    "veleno"
+   ]
+  },
+  {
+   "talento": "Polearm Master",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Artillerist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "azione_bonus",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Portal Jumper",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "difesa",
+    "movimento",
+    "nonmorti",
+    "psichico"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "difesa",
+    "movimento",
+    "nonmorti"
+   ]
+  },
+  {
+   "talento": "Potent Dragonmark",
+   "s": "EFA",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Protection",
+   "s": "XPHB",
+   "leve": [
+    "reazione",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Armorer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "reazione",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Purple Dragon Commandant",
+   "s": "FRHoF",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "difesa",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Abjurer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "difesa",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Purple Dragon Rook",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "controllo"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Putrefy",
+   "s": "ABH",
+   "leve": [
+    "nonmorti",
+    "veleno"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "veleno"
+   ]
+  },
+  {
+   "talento": "Rebuke",
+   "s": "ABH",
+   "leve": [
+    "controllo"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Second Skin",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "concentrazione",
+    "controllo",
+    "slot"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Sentinel",
+   "s": "XPHB",
+   "leve": [
+    "movimento"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento"
+   ]
+  },
+  {
+   "talento": "Shadow-Touched",
+   "s": "XPHB",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Shadowmoor Hexer",
+   "s": "LFL",
+   "leve": [
+    "competenze",
+    "psichico",
+    "slot"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "competenze",
+    "psichico",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Sharp Eye",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "competenze",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Shield Master",
+   "s": "XPHB",
+   "leve": [
+    "competenze",
+    "controllo",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Slasher",
+   "s": "XPHB",
+   "leve": [
+    "critico",
+    "movimento",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Soothing Familiar",
+   "s": "AU",
+   "leve": [
+    "cura",
+    "evocazione"
+   ],
+   "sottoclasse_affine": "Clockwork Sorcery",
+   "classe": "Sorcerer",
+   "leva_condivisa": [
+    "cura",
+    "evocazione"
+   ]
+  },
+  {
+   "talento": "Spell Resistant",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "difesa",
+    "nonmorti",
+    "psichico"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "difesa",
+    "nonmorti"
+   ]
+  },
+  {
+   "talento": "Spell Subterfuge",
+   "s": "AU",
+   "leve": [
+    "azione_bonus",
+    "movimento",
+    "slot"
+   ],
+   "sottoclasse_affine": "Circle of the Moon",
+   "classe": "Druid",
+   "leva_condivisa": [
+    "azione_bonus",
+    "movimento",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Spellfire Adept",
+   "s": "FRHoF",
+   "leve": [
+    "difesa",
+    "fuoco"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "difesa",
+    "fuoco"
+   ]
+  },
+  {
+   "talento": "Spellfire Spark",
+   "s": "FRHoF",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "controllo",
+    "fuoco"
+   ],
+   "sottoclasse_affine": "Path of the Berserker",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "controllo"
+   ]
+  },
+  {
+   "talento": "Street Justice",
+   "s": "FRHoF",
+   "leve": [
+    "competenze",
+    "danno_extra",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Abjurer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "competenze",
+    "danno_extra",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Survivor",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "controllo",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Symbiotic Being",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "controllo",
+    "psichico",
+    "reazione"
+   ],
+   "sottoclasse_affine": "Gloom Stalker",
+   "classe": "Ranger",
+   "leva_condivisa": [
+    "competenze",
+    "controllo",
+    "psichico",
+    "reazione"
+   ]
+  },
+  {
+   "talento": "Telekinetic",
+   "s": "XPHB",
+   "leve": [
+    "azione_bonus",
+    "competenze"
+   ],
+   "sottoclasse_affine": "Path of the Berserker",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Telepathic",
+   "s": "XPHB",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Thrown Weapon Fighting",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Tireless Reveler",
+   "s": "ABH",
+   "leve": [
+    "competenze"
+   ],
+   "sottoclasse_affine": "Reanimator",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "competenze"
+   ]
+  },
+  {
+   "talento": "Touch of Death",
+   "s": "RHW",
+   "leve": [
+    "difesa",
+    "nonmorti",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Path of the Zealot",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "difesa",
+    "nonmorti",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Transmutation Adept",
+   "s": "AU",
+   "leve": [
+    "movimento",
+    "slot"
+   ],
+   "sottoclasse_affine": "Cartographer",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "movimento",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Transmuted Anatomy",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "movimento",
+    "reazione",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Gloom Stalker",
+   "classe": "Ranger",
+   "leva_condivisa": [
+    "competenze",
+    "movimento",
+    "reazione",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Treacherous Allure",
+   "s": "ABH",
+   "leve": [
+    "controllo",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Oath of Devotion",
+   "classe": "Paladin",
+   "leva_condivisa": [
+    "controllo",
+    "slot",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Two-Weapon Fighting",
+   "s": "XPHB",
+   "leve": [
+    "danno_extra"
+   ],
+   "sottoclasse_affine": "Battle Smith",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "danno_extra"
+   ]
+  },
+  {
+   "talento": "Tyro of the Gauntlet",
+   "s": "FRHoF",
+   "leve": [
+    "controllo",
+    "reazione",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Banneret",
+   "classe": "Fighter",
+   "leva_condivisa": [
+    "controllo",
+    "reazione",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Unarmed Fighting",
+   "s": "XPHB",
+   "leve": [],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": []
+  },
+  {
+   "talento": "Vampire Hunter",
+   "s": "ABH",
+   "leve": [
+    "competenze",
+    "nonmorti",
+    "reazione",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Phantom",
+   "classe": "Rogue",
+   "leva_condivisa": [
+    "competenze",
+    "nonmorti",
+    "reazione",
+    "vantaggio"
+   ]
+  },
+  {
+   "talento": "Vampire Touched",
+   "s": "ABH",
+   "leve": [
+    "slot"
+   ],
+   "sottoclasse_affine": "Alchemist",
+   "classe": "Artificer",
+   "leva_condivisa": [
+    "slot"
+   ]
+  },
+  {
+   "talento": "Vampire's Plaything",
+   "s": "ABH",
+   "leve": [
+    "azione_bonus",
+    "competenze",
+    "cura",
+    "movimento"
+   ],
+   "sottoclasse_affine": "Path of the World Tree",
+   "classe": "Barbarian",
+   "leva_condivisa": [
+    "azione_bonus",
+    "competenze",
+    "movimento"
+   ]
+  },
+  {
+   "talento": "Warlike Familiar",
+   "s": "AU",
+   "leve": [
+    "competenze",
+    "difesa",
+    "evocazione",
+    "reazione",
+    "slot"
+   ],
+   "sottoclasse_affine": "Necromancer",
+   "classe": "Wizard",
+   "leva_condivisa": [
+    "competenze",
+    "difesa",
+    "evocazione",
+    "reazione",
+    "slot"
+   ]
+  },
+  {
+   "talento": "Watchers",
+   "s": "RHW",
+   "leve": [
+    "competenze",
+    "slot",
+    "vantaggio"
+   ],
+   "sottoclasse_affine": "Knowledge Domain",
+   "classe": "Cleric",
+   "leva_condivisa": [
+    "competenze",
+    "slot",
+    "vantaggio"
+   ]
+  }
+ ],
+ "conteggi": {
+  "vetrina": 67,
+  "di_cui_fuori_xphb": 27,
+  "talenti_da_coprire": 161
+ }
+}

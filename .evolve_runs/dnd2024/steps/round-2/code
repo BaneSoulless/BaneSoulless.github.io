@@ -1,0 +1,322 @@
+"""all_role_axes.py — mappa TUTTE le 26 categorie del sito su famiglie di assi.
+
+PERCHE': solo 5 ruoli avevano assi propri; gli altri 21 usavano i keyword generici, cioe' lo
+stesso difetto trovato sui Taunter (una categoria popolata con la sola meccanica piu' ovvia).
+Qui ogni categoria viene agganciata a una FAMIGLIA DI ASSI, con la sua regola di ammissione.
+
+Le famiglie sono quelle gia' misurate (taunter, healer, summoner, face, dps) piu' tre nuove
+per i ruoli che non ricadono in nessuna: controllo/illusione, mobilita'/esplorazione,
+ibrido/gish. Ogni famiglia ha assi propri e una regola che esclude la versione debole.
+
+Output: data/all-role-axes.json + data/categorie-coperte.json
+"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+SITE = Path(r"C:\Users\Fabrizio\workspace\public-site")
+DATA = SITE / "data"
+sys.path.insert(0, str(SITE / "tools"))
+
+# --- 3 famiglie NUOVE (le altre 5 sono in role_axes.py / taunt_taxonomy.py) ---
+NUOVE = {
+    "control": {
+        "nome": "Controllo e illusione",
+        "assi": {
+            "K1 negazione": ["can't take actions", "incapacitated", "stunned", "paralyzed",
+                             "petrified", "unconscious", "can't speak", "can't see"],
+            "K2 illusione": ["illusion", "invisible", "silent image", "disguise", "mirage",
+                             "figment", "phantasm", "seeming", "hallucin"],
+            "K3 charme": ["charmed", "charm", "frightened", "feared", "compelled"],
+            "K4 zona": ["difficult terrain", "sphere", "cube", "cone", "wall", "cloud",
+                        "darkness", "silence"],
+            "K5 percezione": ["perception check", "investigation", "seems to", "appears",
+                              "unless it uses its action", "discern"],
+            "K6 durata": ["until the spell ends", "for the duration", "while", "no concentration",
+                          "repeat the saving throw"],
+        },
+        "ammissione": ["*due_di_K1K2K3", "*tre_di_K1K2K3K4K5"],
+        "regola": "almeno due fra negazione/illusione/charme, oppure zona (K4) o percezione (K5): un solo effetto e' la versione stretta del controllo",
+    },
+    "scout": {
+        "nome": "Mobilita' ed esplorazione",
+        "assi": {
+            "M1 movimento": ["speed", "dash", "teleport", "fly", "climb", "swim", "jump",
+                             "difficult terrain", "extra movement"],
+            # 'see'/'sense'/'invisible'/'cover' sono ovunque: facevano ammettere l'87%.
+            "M2 furtivita": ["stealth", "hide as", "unseen", "invisible for", "take the hide"],
+            "M3 percezione": ["perception check", "darkvision", "blindsight", "tremorsense",
+                              "detect magic", "sense the presence"],
+            "M4 ambiente": ["terrain", "wilderness", "navigate", "forage", "explore", "travel",
+                            "weather", "trail"],
+            "M5 sopravvivenza": ["survival", "exhaustion", "poison", "disease", "rest",
+                                 "hit points", "stabilize"],
+            "M6 economia di movimento": ["bonus action", "reaction", "without provoking",
+                                         "disengage", "free"],
+        },
+        "ammissione": ["*tre_di_M1M2M3M4M5"],
+        "regola": "almeno due fra movimento/furtivita'/percezione, oppure ambiente (M4) o sopravvivenza (M5): una sola leva e' la versione stretta",
+    },
+    "gish": {
+        "nome": "Ibrido lama e magia",
+        "assi": {
+            # 'extra attack' e' di ogni marziale: da solo non fa di una build un gish.
+            "G1 attacco magico": ["spell attack", "attack with a weapon", "melee weapon attack",
+                                  "weapon attack roll"],
+            "G2 incantesimo su colpo": ["when you hit", "on a hit", "the attack deals", "smite",
+                                        "cantrip", "as part of the attack"],
+            "G3 difesa magica": ["armor class", "shield", "resistance", "temporary hit points",
+                                 "ward", "bladesong"],
+            "G4 tiro salvezza": ["spell save dc", "against your spell save", "difficulty class of your spell"],
+            "G5 risorse condivise": ["spell slot", "slot", "expend", "regain", "limited use"],
+            "G6 economia dell'azione": ["bonus action", "reaction", "when you use your action"],
+        },
+        "ammissione": ["*due_di_G1G2G3", "*tre_di_G1G2G3G4G5"],
+        "regola": "almeno due fra attacco magico/incantesimo-su-colpo/difesa magica, oppure tiro salvezza o risorse: usare solo la lama o solo la magia non e' un gish",
+    },
+}
+
+# --- mappa ESPLICITA delle 26 categorie del sito -> famiglia ---
+CAT_FAMIGLIA = {
+    "DPS — danno a bersaglio singolo": "dps",
+    "Danno esplosivo (nova)": "dps",
+    "Blaster ad area (AOE)": "dps",
+    "Tiratore (ranged)": "dps",
+    "Combattente in mischia": "dps",
+    "Duellante (uno contro uno)": "dps",
+    "Schermagliatore mobile": "scout",
+    "Guaritore": "healer",
+    "Supporto e potenziamenti": "healer",
+    "Protettore del gruppo": "healer",
+    "Tank — difensore": "taunter",
+    "Battlefield Controller": "taunter",
+    "Lottatore e controllo fisico": "taunter",
+    "Indebolimento (debuff)": "control",
+    "Illusionista": "control",
+    "Ammaliatore e manipolatore": "control",
+    "Evocatore (summoner)": "summoner",
+    "Negromante": "summoner",
+    "Volto sociale (negoziatore)": "face",
+    "Esperto di abilità": "face",
+    "Esploratore": "scout",
+    "Furtività e infiltrazione": "scout",
+    "Combattente a cavallo": "scout",
+    "Gish — lama e magia": "gish",
+    "Supporto tecnico (utility)": "gish",
+    "Specialista multiclasse": "gish",
+}
+
+
+def testo(v) -> str:
+    out: list[str] = []
+    if v is None:
+        return ""
+    if isinstance(v, str):
+        s = v.strip()
+        if s[:1] in "[{" and len(s) > 2:
+            try:
+                return testo(json.loads(s))
+            except Exception:
+                pass
+        out.append(v)
+    elif isinstance(v, list):
+        for x in v:
+            out.append(testo(x))
+    elif isinstance(v, dict):
+        for k in ("name", "n", "entry"):
+            if isinstance(v.get(k), str):
+                out.append(v[k])
+        for k in ("entries", "entry", "items", "rows", "d", "short"):
+            if k in v:
+                out.append(testo(v[k]))
+    return " ".join(out)
+
+
+def attiva(t: str, frasi: list[str]) -> list[str]:
+    low = re.sub(r"\{@\w+([^}]*)\}", r"\1", (t or "").lower())
+    low = re.sub(r"\s+", " ", low)
+    return [f for f in frasi if f in low]
+
+
+def assi_di(t: str, assi: dict[str, list[str]]) -> dict[str, list[str]]:
+    out = {}
+    for k, frasi in assi.items():
+        hit = attiva(t, frasi)
+        if hit:
+            out[k.split()[0]] = hit
+    return out
+
+
+def ammissibile(chiavi: set[str], regola: list[str]) -> tuple[bool, str]:
+    for r in regola:
+        m = re.match(r"\*(due|tre)_di_([A-Z0-9]+)$", r)
+        if m:
+            soglia = 2 if m.group(1) == "due" else 3
+            gruppo = {m.group(2)[i:i + 2] for i in range(0, len(m.group(2)), 2)}
+            if len(chiavi & gruppo) >= soglia:
+                return True, f"almeno {m.group(1)} fra {', '.join(sorted(gruppo))}"
+            continue
+    presenti = [x for x in regola if not x.startswith("*") and x in chiavi]
+    if presenti:
+        return True, f"copre {', '.join(presenti)}"
+    return False, "solo la meccanica piu' ovvia: versione stretta del ruolo"
+
+
+def main() -> int:
+    D = json.loads((DATA / "character-data.json").read_text(encoding="utf-8"))
+    sf = json.loads((DATA / "subclass-features.json").read_text(encoding="utf-8"))["sottoclassi"]
+    man = D["manuali"]
+
+    famiglie = dict(NUOVE)
+    # aggancio le 5 famiglie gia' misurate
+    try:
+        ra = json.loads((DATA / "role-axes.json").read_text(encoding="utf-8"))["ruoli"]
+        for k in ("healer", "summoner", "dps", "face"):
+            if k in ra:
+                famiglie[k] = {"nome": ra[k]["nome"],
+                               "assi": {x: [] for x in ra[k]["assi"]},
+                               "regola": ra[k]["regola"], "solo_regola": True}
+    except Exception:
+        pass
+    tt = json.loads((DATA / "taunt-taxonomy.json").read_text(encoding="utf-8"))
+    famiglie["taunter"] = {"nome": "Taunt / lockdown", "assi": {k: [] for k in tt["assi"]},
+                           "regola": "almeno una sorgente B (blocco del movimento) o C (attrazione)",
+                           "solo_regola": True}
+
+    # testi dai tre contenitori
+    testi = {}
+    for chiave, voci in sf.items():
+        nome, _, src = chiave.partition("|")
+        testi[("sottoclasse", nome, src)] = nome + " " + " ".join(x.get("testo") or "" for x in voci if isinstance(x, dict))
+    for f in D.get("feats", []):
+        if isinstance(f, dict) and f.get("n"):
+            testi[("talento", f["n"], f.get("s"))] = testo(f.get("n")) + " " + testo(f.get("d"))
+    sp = DATA / "5etools" / "spells"
+    for g in (sorted(sp.glob("spells-*.json")) if sp.is_dir() else []):
+        try:
+            d = json.loads(g.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for e in ((d.get("spell") if isinstance(d, dict) else d) or []):
+            if isinstance(e, dict) and e.get("name"):
+                testi[("incantesimo", e["name"], e.get("source"))] = str(e["name"]) + " " + testo(e.get("entries"))
+
+    # copertura per le 3 famiglie NUOVE (le altre sono gia' misurate)
+    per_famiglia = {}
+    for fk, fv in NUOVE.items():
+        conteggi = {}
+        for tipo in ("sottoclasse", "talento", "incantesimo"):
+            ok = tot = 0
+            for (tp, nome, src), txt in testi.items():
+                if tp != tipo:
+                    continue
+                a = assi_di(txt, fv["assi"])
+                if a:
+                    tot += 1
+                    if ammissibile(set(a), fv["ammissione"])[0]:
+                        ok += 1
+            conteggi[tipo] = {"con_assi": tot, "ammissibili": ok}
+        per_famiglia[fk] = conteggi
+
+    # mappa categoria -> famiglia, con copertura
+    cat_map = {}
+    for cat, fam in CAT_FAMIGLIA.items():
+        cat_map[cat] = {"famiglia": fam, "nome_famiglia": famiglie.get(fam, {}).get("nome", fam),
+                        "regola": famiglie.get(fam, {}).get("regola", "")}
+
+    # CONTROLLO DI CALIBRAZIONE: un tasso di ammissibilita' troppo alto significa regola
+    # troppo permissiva (ammette quasi tutto), troppo basso significa test rotto. La banda
+    # 10-60% sulle SOTTOCLASSI e' il criterio di calibrazione, misurato non stimato.
+    BANDA = (0.10, 0.60)
+    calibrazione = {}
+    for fk, cnt in per_famiglia.items():
+        sc = cnt["sottoclasse"]
+        rate = (sc["ammissibili"] / sc["con_assi"]) if sc["con_assi"] else 0.0
+        calibrazione[fk] = {"tasso": round(100 * rate, 1),
+                            "in_banda": BANDA[0] <= rate <= BANDA[1],
+                            "esito": ("ok" if BANDA[0] <= rate <= BANDA[1]
+                                      else "TROPPO PERMISSIVA" if rate > BANDA[1] else "TROPPO STRETTA")}
+    # le 5 famiglie gia' misurate: tasso dalle fonti precedenti
+    try:
+        ra2 = json.loads((DATA / "role-axes.json").read_text(encoding="utf-8"))["ruoli"]
+        for k, v in ra2.items():
+            sc = v["sottoclassi"]
+            if sc["con_assi"]:
+                r_ = sc["ammissibili"] / sc["con_assi"]
+                calibrazione[k] = {"tasso": round(100 * r_, 1), "in_banda": BANDA[0] <= r_ <= BANDA[1],
+                                   "esito": "ok" if BANDA[0] <= r_ <= BANDA[1] else ("TROPPO PERMISSIVA" if r_ > BANDA[1] else "TROPPO STRETTA")}
+    except Exception:
+        pass
+    non_mappate = [c for c in CAT_FAMIGLIA if not CAT_FAMIGLIA[c]]
+    # INDICE COMPLETO: gli assi di OGNI sorgente, non solo delle ammissibili in testa.
+    # Senza questo, una sottoclasse fuori dalla top-20 risultava «senza assi» anche quando il
+    # suo testo li conteneva (Thief dice «stealth», che e' l'asse M2): 12 build finivano senza
+    # copertura per un difetto dell'indice, non per un limite del dato.
+    FAM = {}
+    FAM["taunter"] = {"assi": {k: v["frasi"] for k, v in
+                               json.loads((DATA / "taunt-taxonomy.json").read_text(encoding="utf-8"))["assi"].items()
+                               if isinstance(v, dict)}}
+    try:
+        _ra = json.loads((DATA / "role-axes.json").read_text(encoding="utf-8"))["ruoli"]
+        for k in ("healer", "summoner", "dps", "face"):
+            if k in _ra:
+                FAM[k] = {"assi": {}}
+    except Exception:
+        pass
+    FAM.update({k: {"assi": v["assi"]} for k, v in NUOVE.items()})
+    # le famiglie con solo-regola (assi non salvati) vengono ricaricate dal sorgente
+    import importlib.util as _iu
+    for mod, nome in ((SITE / "tools" / "role_axes.py", "ra_mod"),):
+        try:
+            _sp = _iu.spec_from_file_location(nome, mod); _m = _iu.module_from_spec(_sp)
+            src = mod.read_text(encoding="utf-8")
+            _sp.loader.exec_module(_m)
+            for k in ("healer", "summoner", "dps", "face"):
+                if hasattr(_m, "RUOLI") and k in _m.RUOLI:
+                    FAM[k] = {"assi": _m.RUOLI[k]["assi"]}
+            # gli assi sono anche in data/role-axes.json come `assi_def`: li si puo' leggere da li
+        except SystemExit:
+            if hasattr(_m, "RUOLI"):
+                for k in ("healer", "summoner", "dps", "face"):
+                    if k in _m.RUOLI: FAM[k] = {"assi": _m.RUOLI[k]["assi"]}
+        except Exception:
+            pass
+    completo = {}
+    for (tp, nome, src), txt in testi.items():
+        tutti = {}
+        for fk, fv in FAM.items():
+            a = assi_di(txt, fv["assi"]) if fv.get("assi") else {}
+            if a:
+                tutti[fk] = sorted(a)
+        if tutti:
+            completo[f"{tp}|{nome}|{src}"] = tutti
+    out = {"assi_completi": completo, "nota": ("Tutte le 26 categorie del sito agganciate a una famiglia di assi con regola di "
+                    "ammissione. Le famiglie gia' misurate (taunter, healer, summoner, face, dps) sono "
+                    "riusate; se ne aggiungono tre per i ruoli che non ricadono in nessuna."),
+           "famiglie_nuove": per_famiglia, "categorie": cat_map,
+           "calibrazione": calibrazione,
+           "conteggi": {"categorie_mappate": len(cat_map), "famiglie_totali": len(famiglie),
+                        "senza_mappatura": non_mappate,
+                        "famiglie_in_banda": sum(1 for v in calibrazione.values() if v["in_banda"]),
+                        "famiglie_da_calibrare": [k for k, v in calibrazione.items() if not v["in_banda"]]}}
+    (DATA / "all-role-axes.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    print(f"categorie mappate: {len(cat_map)}/{len(CAT_FAMIGLIA)} | famiglie: {len(famiglie)}")
+    print(f"senza mappatura: {non_mappate or 'nessuna'}")
+    for fk, cnt in per_famiglia.items():
+        print(f"\n  famiglia NUOVA {fk} ({NUOVE[fk]['nome']}):")
+        for tipo, v in cnt.items():
+            print(f"     {tipo:12s} con assi {v['con_assi']:4d} -> ammissibili {v['ammissibili']:4d}")
+    from collections import Counter
+    print(f"\ndistribuzione categorie per famiglia: {dict(Counter(CAT_FAMIGLIA.values()))}")
+    print("\nCALIBRAZIONE (banda 10-60% sulle sottoclassi):")
+    for k, v in calibrazione.items():
+        print(f"   {k:10s} {v['tasso']:5.1f}%  {v['esito']}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

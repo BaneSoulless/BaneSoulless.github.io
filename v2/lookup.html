@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultazione Live — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/lookup.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Consultazione Live — Il Grimorio dei Reami">
+<meta property="og:description" content="Ricerca full-text su 13.219 entità D&D 5e: mostri, incantesimi, oggetti, classi, divinità.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/lookup.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Consultazione Live — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Ricerca full-text su 13.219 entità D&D 5e: mostri, incantesimi, oggetti, classi, divinità.">
+
+<meta name="description" content="Ricerca full-text su 13.219 entità D&D 5e: mostri, incantesimi, oggetti, classi, divinità. Filtro per categoria, tolleranza ai typo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/grimorio.css">
+<style>
+/* lookup-specific */
+.searchbar { display: flex; gap: 12px; align-items: center; }
+.searchbar input { flex: 1; font-size: 16px; padding: 14px 18px; border-radius: 13px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; justify-content: center; }
+.chip {
+  font-size: 12.5px; font-weight: 500; cursor: pointer; user-select: none;
+  color: var(--muted); background: var(--glass); border: 1px solid var(--line);
+  border-radius: 999px; padding: 7px 14px;
+  transition: color .18s, border-color .18s, background .18s, transform .18s;
+}
+.chip:hover { color: var(--fg); transform: translateY(-1px); }
+.chip.on { color: var(--gold-hi); border-color: rgba(201,162,39,.5); background: rgba(201,162,39,.1); }
+.chip small { color: var(--dim); margin-left: 5px; font-size: 11px; }
+.meta { display: flex; justify-content: space-between; color: var(--dim); font-size: 12.5px; margin: 22px 4px 10px; }
+.results { display: grid; gap: 10px; }
+.row {
+  display: flex; align-items: center; gap: 14px; cursor: pointer;
+  background: var(--glass); border: 1px solid var(--line); border-radius: 13px;
+  padding: 10px 18px;
+  transition: border-color .18s, background .18s, transform .18s;
+}
+.row .sig { flex: none; width: 46px; height: 46px; display: grid; place-items: center;
+  filter: drop-shadow(0 0 6px rgba(232,201,90,.25)); }
+.row .sig svg, .row .sig img { width: 44px; height: 44px; }
+.row .sig img { object-fit: contain; border-radius: 8px;
+  transition: transform .25s cubic-bezier(.22,.61,.36,1), box-shadow .25s; }
+.row:hover .sig img { transform: scale(1.6);
+  box-shadow: 0 6px 22px rgba(0,0,0,.5), 0 0 14px rgba(232,201,90,.3); z-index: 5; position: relative; }
+.row:hover { border-color: var(--line-hi); background: var(--glass-hi); transform: translateX(4px); }
+.row .tag {
+  flex: none; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--gold-hi); background: rgba(201,162,39,.12);
+  border: 1px solid rgba(201,162,39,.35); border-radius: 7px; padding: 4px 9px;
+}
+.row .nm { font-weight: 500; font-size: 15px; }
+.row .src { color: var(--dim); font-size: 12.5px; margin-left: auto; text-align: right; }
+.row .arrow { color: var(--gold); margin-left: 6px; }
+.empty { text-align: center; color: var(--muted); padding: 40px 0; }
+.detail {
+  margin-top: 26px; background: var(--glass); border: 1px solid var(--line-hi);
+  border-radius: var(--r-lg); padding: 26px; display: none;
+}
+.detail.show { display: block; }
+.detail .dt-img img, .detail .dt-img svg {
+  animation: dtZoom .5s cubic-bezier(.22,.61,.36,1);
+}
+@keyframes dtZoom { from { transform: scale(.72); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.detail .dt-img img { border-radius: 12px; cursor: zoom-in;
+  transition: transform .3s cubic-bezier(.22,.61,.36,1), box-shadow .3s; }
+.detail .dt-img img:hover { transform: scale(1.35);
+  box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+.wiki-lore { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.wiki-lore b { color: var(--fg); }
+.wiki-src { margin-top: 10px; font-size: 11.5px; color: var(--dim); }
+.wiki-src a { color: var(--gold-hi); text-decoration: none; border-bottom: 1px solid rgba(201,162,39,.4); }
+.wiki-src a:hover { color: #fff; }
+.detail h3 { font-family: 'Castellar', serif; letter-spacing: .05em; font-size: 22px; margin-bottom: 4px; }
+.detail .meta-row { color: var(--dim); font-size: 13px; margin-bottom: 16px; }
+.kv { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px 22px; margin-top: 8px; }
+.kv div b { color: var(--gold-hi); font-weight: 500; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; display: block; }
+.kv div span { font-size: 14px; }
+.status { text-align: center; color: var(--dim); font-size: 13px; padding: 30px 0; }
+
+/* skip-link a11y (visibile solo in focus da tastiera) */
+.skip-link { position: absolute; left: -9999px; top: 8px; z-index: 100;
+  background: var(--gold-hi, #c9a227); color: #14110a; font-weight: 700;
+  padding: 10px 18px; border-radius: 0 0 10px 0; }
+.skip-link:focus { left: 8px; }
+main[id="main"] { scroll-margin-top: 90px; }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html" class="on">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+    <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero" style="padding-bottom: 10px;">
+    <div class="kicker">Dataset locale 5e.tools v2.35.1</div>
+    <h1>Lookup <em>completo</em>.</h1>
+    <p class="sub">Motore di ricerca full-text con tolleranza ai typo su tutte le entità del compendio.
+    Clicca un risultato per aprire la scheda con fonte e pubblicazione.</p>
+  </div>
+
+  <section>
+    <div class="searchbar rv">
+      <input id="q" type="search" placeholder="Cerca un mostro, incantesimo, oggetto… (es. Fireball, Aboleth)"
+             autocomplete="off" aria-label="Cerca nel compendio">
+      <button class="btn" id="btnClear" type="button">Azzera</button>
+    </div>
+    <div class="chips rv" id="chips" role="group" aria-label="Filtro per categoria"></div>
+    <div class="meta rv">
+      <span id="count">—</span>
+      <span>13.219 entità · 30 categorie · 5e.tools v2.35.1</span>
+    </div>
+    <div class="results" id="results"></div>
+    <div class="status" id="status">Caricamento dataset…</div>
+
+    <div class="detail" id="detail" aria-live="polite" data-no-tr></div>
+  </section>
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · ricerca locale, offline-first
+</footer>
+
+<script>
+/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᛁᛚᚷᚱᛁᛗᛟᚱᛁᛟ";
+window.__RUNE_RIGHT__ = "ᚠᚨᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᛁᛚᚷᚱᛁᛗᛟᚱᛁᛟᛞᛖᛁᚱᛖᚨᛗᛁ";
+
+/* ---------- lookup: ricerca full-text con tolleranza typo ---------- */
+(function () {
+  'use strict';
+  var IT = { action:'Azione', spell:'Incantesimo', monster:'Mostro', item:'Oggetto',
+             baseitem:'Oggetto Base', race:'Razza', subrace:'Sottorazza', class:'Classe',
+             subclass:'Sottoclasse', classFeature:'Feature di Classe', subclassFeature:'Feature di Sottoclasse',
+             background:'Background', feat:'Talento', condition:'Condizione', deity:'Divinità',
+             language:'Lingua', rule:'Regola', table:'Tabella', vehicle:'Veicolo', trap:'Trappola',
+             hazard:'Pericolo', object:'Oggetto', cult:'Culto', boon:'Beneficio', psionic:'Psionica',
+             variantrule:'Regola Variante', recipe:'Ricetta', 'card':'Carta', adventure:'Avventura',
+             magicvariant:'Variante Magica', optionalfeature:'Opzione Facoltativa', sense:'Senso',
+             disease:'Malattia', reward:'Ricompensa',
+             book:'Libro', page:'Pagina' };
+  var TYPE_LABEL = function (t) { return IT[t] || t; };
+
+  var ALL = [], filtered = [], activeType = null, esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return {'&':'&','<':'<','>':'>','"':'"',"'":'&#39;'}[c];
+    });
+  };
+
+  /* tolleranza typo: ogni parola della query deve comparire come prefisso/contenuto
+     di una parola del titolo (word-based, non subsequenza globale che matchava tutto) */
+  var lev = function (a, b) {
+    if (a === b) return 0;
+    if (!a.length) return b.length;
+    if (!b.length) return a.length;
+    var prev = new Array(b.length + 1), curr = new Array(b.length + 1);
+    for (var j = 0; j <= b.length; j++) prev[j] = j;
+    for (var i = 1; i <= a.length; i++) {
+      curr[0] = i;
+      for (var j2 = 1; j2 <= b.length; j2++) {
+        var cost = a.charAt(i - 1) === b.charAt(j2 - 1) ? 0 : 1;
+        curr[j2] = Math.min(prev[j2] + 1, curr[j2 - 1] + 1, prev[j2 - 1] + cost);
+      }
+      var tmp = prev; prev = curr; curr = tmp;
+    }
+    return prev[b.length];
+  };
+  var fuzzy = function (q, t) {
+    q = q.toLowerCase().trim(); t = t.toLowerCase();
+    if (!q) return true;
+    if (t.indexOf(q) !== -1) return true;
+    var qw = q.split(/\s+/), tw = t.split(/\s+/);
+    var wordOk = qw.every(function (qw1) {
+      if (qw1.length < 3) return tw.some(function (w) { return w === qw1; });
+      return tw.some(function (w) { return w.indexOf(qw1) === 0; }) ||
+             tw.some(function (w) { return w.indexOf(qw1) !== -1 && qw1.length >= 4; });
+    });
+    if (wordOk) return true;
+    /* typo: query singola >= 4 char con distanza di Levenshtein <= 2 su una
+       parola del titolo (portato dal motore v1, matchScore) */
+    if (qw.length === 1 && q.length >= 4) {
+      return tw.some(function (w) { return lev(w, q) <= 2; });
+    }
+    return false;
+  };
+
+  var el = function (id) { return document.getElementById(id); };
+
+  /* ---------- immagini originali 5e.tools + fallback sigillo ----------
+     Pattern URL correnti (verificati live):
+     mostri  -> img/bestiary/tokens/{SOURCE}/{Nome}.webp
+     oggetti -> img/items/{SOURCE}/{Nome}.webp
+     Gli altri tipi non hanno arte ufficiale -> sigillo generato. */
+  var normName = function (n) {
+    return encodeURIComponent(
+      String(n).replace(/["':/\\]/g, '').replace(/–|‑/g, '-').trim()
+    );
+  };
+  /* pattern URL immagini ufficiali 5e.tools, verificati per HEAD (2026-10-18):
+     monster img/bestiary/tokens/{SRC}/{Nome}.webp   200
+     item    img/items/{SRC}/{Nome}.webp              200 (solo oggetti con artwork)
+     spell   img/spells/{SRC}/{Nome}.webp             200 (solo incantesimi con artwork)
+     race    img/races/{SRC}/{Nome}.webp              200
+     class   img/classes/{SRC}/{Nome}.webp            200
+     background img/backgrounds/{SRC}/{Nome}.webp     200
+     deity/feat/reward/subclass/baseitem/etc: nessuna immagine ufficiale su 5e.tools (404 sistematico)
+     -> per questi si genera il sigillo arcano custom. */
+  var TYPE_PATHS = {
+    monster: 'bestiary/tokens', item: 'items', spell: 'spells',
+    race: 'races', class: 'classes', background: 'backgrounds'
+  };
+  var origUrl = function (e) {
+    if (e.img !== 1) return null;                  /* img=1 <=> arte ufficiale presente */
+    var p = TYPE_PATHS[e.t];
+    var s = e.s || (e.alt && e.alt[0] && e.alt[0].s);
+    if (!p || !s) return null;
+    return 'https://5e.tools/img/' + p + '/' + s + '/' + normName(e.n) + '.webp';
+  };
+  /* proviamo anche le sorgenti alternative quando la primaria 404a */
+  var altUrls = function (e) {
+    var out = [];
+    if (e.alt) e.alt.forEach(function (a) {
+      var u = origUrl({ t: e.t, n: e.n, s: a.s });
+      if (u) out.push(u);
+    });
+    return out;
+  };
+
+  /* catena immagini: 5e.tools (fonti primaria+alt) -> thumb infobox della
+     Forgotten Realms Wiki (api pageimages, immagine principale della pagina
+     dell'entita') -> sigillo arcano custom. Cache localStorage per la wiki. */
+  var resolveImage = function (e, cb) {
+    var candidates = [];
+    var u = origUrl(e);
+    if (u) candidates.push(u);
+    candidates = candidates.concat(altUrls(e));
+    var i = 0;
+    var step = function () {
+      if (i < candidates.length) {
+        var im = new Image();
+        im.onload = function () { cb(im); };
+        im.onerror = function () { i++; step(); };
+        im.src = candidates[i];
+        return;
+      }
+      wikiThumb(e, function (wt) {
+        if (!wt) { cb(null); return; }
+        var im2 = new Image();
+        im2.onload = function () { cb(im2); };
+        im2.onerror = function () { cb(null); };
+        im2.src = wt;
+      });
+    };
+    step();
+  };
+  /* mappa immagini wiki precaricata (tools/wiki_img_map.py): zero API call
+     runtime per le entita' mappate; fallback API solo per i nomi assenti. */
+  var WIKI_MAP = null;
+  fetch('../data/wiki-img-map.json')
+    .then(function (r) { return r.json(); })
+    .then(function (m) { WIKI_MAP = m; })
+    .catch(function () { WIKI_MAP = null; });
+
+  var wikiThumb = function (e, cb) {
+    var m = WIKI_MAP ? WIKI_MAP[e.n] : undefined;
+    if (m !== undefined) {
+      /* simbolo sacro prima del ritratto per le divinita' */
+      if (e.t === 'deity' && m.s) {
+        loadWikiImg(m.s, cb, function () {
+          if (m.t) loadWikiImg(m.t, cb, function () { cb(null); });
+          else cb(null);
+        });
+        return;
+      }
+      if (m.t) { loadWikiImg(m.t, cb, function () { cb(null); }); return; }
+      cb(null); return;
+    }
+    /* nome non in mappa: API runtime (con cache) */
+    wikiThumbApi(e, cb);
+  };
+  var loadWikiImg = function (url, ok, fail) {
+    /* precarica (cache HTTP) e passa l'URL STRINGA al chiamante, che crea
+       la sua Image: la seconda load e' istantanea dalla cache */
+    var im = new Image();
+    im.onload = function () { ok(url); };
+    im.onerror = function () { fail(); };
+    im.src = url;
+  };
+  var wikiThumbApi = function (e, cb) {
+    var key = 'wt:' + e.n;
+    try {
+      var c = localStorage.getItem(key);
+      if (c) { cb(c === '0' ? null : c); return; }
+    } catch (err) { /* storage negato: prosegui con la fetch */ }
+    fetch('https://forgottenrealms.fandom.com/api.php?action=query&titles=' +
+        encodeURIComponent(e.n.replace(/ /g, '_')) +
+        '&prop=pageimages&pithumbsize=300&format=json&origin=*')
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        var thumb = null;
+        var pages = j.query && j.query.pages;
+        if (pages) {
+          var p = Object.keys(pages).map(function (k) { return pages[k]; })[0];
+          if (p && p.thumbnail && p.thumbnail.source) thumb = p.thumbnail.source;
+        }
+        try { localStorage.setItem(key, thumb || '0'); } catch (err2) {}
+        cb(thumb);
+      })
+      .catch(function () { cb(null); });
+  };
+
+  /* sostituzione sigillo -> immagine (5e.tools o wiki) quando carica */
+  var tryOriginal = function (el, e) {
+    resolveImage(e, function (img) {
+      if (!img || !el.isConnected) return;
+      el.classList.add('has-orig');
+      el.innerHTML = '';
+      img.decoding = 'async';
+      img.alt = e.n;
+      el.appendChild(img);
+    });
+  };
+
+  function renderChips() {
+    var counts = {};
+    ALL.forEach(function (e) { counts[e.t] = (counts[e.t] || 0) + 1; });
+    var keys = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
+    var box = el('chips');
+    var mk = function (label, key, n) {
+      var c = document.createElement('span');
+      c.className = 'chip' + (activeType === key ? ' on' : '');
+      c.innerHTML = esc(label) + (n != null ? ' <small>' + n + '</small>' : '');
+      c.onclick = function () {
+        activeType = (activeType === key) ? null : key;
+        apply(); renderChips();
+      };
+      box.appendChild(c);
+    };
+    box.innerHTML = '';
+    mk('Tutte', null, ALL.length);
+    keys.forEach(function (k) { mk(TYPE_LABEL(k), k, counts[k]); });
+  }
+
+  function apply() {
+    var q = el('q').value.trim();
+    filtered = ALL.filter(function (e) {
+      if (activeType && e.t !== activeType) return false;
+      if (!q) return true;
+      return fuzzy(q, e.n) || (e.ic && fuzzy(q, e.ic)) || (e.s && fuzzy(q, e.s));
+    });
+    render();
+  }
+
+  function render() {
+    var box = el('results'), q = el('q').value.trim();
+    el('count').textContent = 'Risultati: ' + (filtered.length > 999 ? '999+' : filtered.length);
+    el('status').style.display = 'none';
+    var top = filtered.slice(0, 120);
+    box.innerHTML = top.length ? top.map(function (e) {
+      return '<div class="row" data-i="' + e._i + '" role="button" tabindex="0">' +
+        '<span class="sig" data-i="' + e._i + '">' + window.Arcana.sigil(e.n, { size: 44, type: e.t }) + '</span>' +
+        '<span class="tag">' + esc(TYPE_LABEL(e.t)) + '</span>' +
+        '<span class="nm">' + esc(e.n) + '</span>' +
+        '<span class="src">' + esc(e.s || '—') + (e.p ? ' · ' + esc(e.p) : '') + '</span>' +
+        '<span class="arrow">→</span></div>';
+    }).join('') : '<div class="empty">Nessun risultato per «' + esc(q) + '». Prova con meno lettere.</div>';
+    if (filtered.length > 120) {
+      var more = document.createElement('div');
+      more.className = 'status';
+      more.textContent = '… e altri ' + (filtered.length - 120) + ': affina la ricerca per vederli tutti.';
+      box.appendChild(more);
+    }
+    /* immagini originali: avviate subito dopo il render (il browser mette in coda
+       le richieste da solo, ~6 concorrenti per host — nessun blocco) */
+    lazyOrig(box);
+  }
+
+  function lazyOrig(box) {
+    box.querySelectorAll('.row').forEach(function (row) {
+      var sig = row.querySelector('.sig');
+      var e = ALL[+row.dataset.i];
+      if (sig && e && !sig.classList.contains('has-orig')) tryOriginal(sig, e);
+    });
+  }
+
+  /* ---------- lore da Forgotten Realms Wiki (CC BY-SA 3.0) ---------- */
+  var WIKI_API = 'https://forgottenrealms.fandom.com/api.php?action=parse&page={P}&prop=wikitext&format=json&origin=*';
+  var cleanWiki = function (wt) {
+    return wt
+      .replace(/<ref[^>]*\/>/g, '').replace(/<ref[\s\S]*?<\/ref>/g, '')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/\{\{[^{}]*\}\}/g, '')
+      .replace(/\[\[([^\]|]*)\|([^\]]*)\]\]/g, '$2').replace(/\[\[([^\]]*)\]\]/g, '$1')
+      .replace(/'''([^']*)'''/g, '<b>$1</b>').replace(/''([^'']*)''/g, '<i>$1</i>')
+      .replace(/<(?![/]?[bi]>)[^>]+>/g, '')
+      .replace(/\n{2,}/g, '\n').trim();
+  };
+  var wikiSection = function (wt, name) {
+    var m = wt.match(/==+\s*Description\s*==+\s*([\s\S]*?)(?=\n==|\n\{\{)/i);
+    var body = m ? m[1] : wt.replace(/^[\s\S]*?\}\}\s*\n/, '');
+    var txt = cleanWiki(body).split('\n').filter(function (l) {
+      return l.trim() && !/^[=:*#]/.test(l.trim());
+    }).join(' ').slice(0, 900);
+    return txt.length > 80 ? txt : null;
+  };
+  var showWiki = function (e, d) {
+    var box = d.querySelector('.dt-wiki');
+    var key = 'wiki:' + e.n;
+    var put = function (txt) {
+      box.innerHTML =
+        '<div class="wiki-lore">' + txt + '</div>' +
+        '<div class="wiki-src">Fonte: Forgotten Realms Wiki — CC BY-SA 3.0 · ' +
+        '<a href="https://forgottenrealms.fandom.com/wiki/' + encodeURIComponent(e.n.replace(/ /g, '_')) +
+        '" target="_blank" rel="noopener">Apri l\'articolo completo</a></div>';
+    };
+    try {
+      var cached = localStorage.getItem(key);
+      if (cached) { put(JSON.parse(cached)); return; }
+    } catch (err) { /* storage negato: segui con la fetch */ }
+    box.innerHTML = '<div class="wiki-src">Arricchimento dalla wiki di Forgotten Realms…</div>';
+    fetch(WIKI_API.replace('{P}', encodeURIComponent(e.n.replace(/ /g, '_'))))
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        var wt = (j.parse && j.parse.wikitext) ? j.parse.wikitext['*'] : null;
+        var txt = wt ? wikiSection(wt, e.n) : null;
+        if (!txt) { box.innerHTML = ''; return; }
+        try { localStorage.setItem(key, JSON.stringify(txt)); } catch (err2) {}
+        put(txt);
+      })
+      .catch(function () { box.innerHTML = ''; });
+  };
+
+  /* scheda completa: motore V2Detail (statblock dal manuale, tab fonte, tag manuale).
+     L'immagine resta il token/artwork risolto dalla catena 5e.tools -> wiki -> sigillo. */
+  window.V2_WIKI_BLOCK = function (e) {
+    setTimeout(function () {
+      var zone = document.getElementById('stat-core-zone');
+      if (zone) showWiki(e, zone);
+    }, 60);
+    return '<div class="dt-wiki"></div>';
+  };
+
+  function openDetail(i) {
+    var e = ALL[i];
+    if (!e) return;
+    var d = el('detail');
+    d.innerHTML = '<div id="stat-core-zone"></div>';
+    d.classList.add('show');
+    resolveImage(e, function (img) {
+      var zone = document.getElementById('stat-core-zone');
+      if (!zone) return;
+      var imgEl = zone.querySelector('.st-img img');
+      if (!imgEl && img) {
+        img.alt = e.n;
+        img.classList.add('st-hero-img');
+      }
+      if (window.V2Detail) window.V2Detail.render(zone, e, img ? img.src : null);
+    });
+    d.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  /* eventi */
+  el('q').addEventListener('input', apply);
+  el('btnClear').addEventListener('click', function () { el('q').value = ''; activeType = null; apply(); renderChips(); });
+  el('results').addEventListener('click', function (e) {
+    var row = e.target.closest('.row');
+    if (row) openDetail(+row.dataset.i);
+  });
+  el('results').addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter') return;
+    var row = e.target.closest('.row');
+    if (row) openDetail(+row.dataset.i);
+  });
+
+  /* carica dataset */
+  fetch('../data/lookup-index.json')
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      ALL = d.entries.map(function (e, i) { e._i = i; return e; });
+      /* deep-link da compendio/mappa: lookup.html?q=Nome&cat=tipo */
+      try {
+        var __qp = new URLSearchParams(location.search);
+        var __q = __qp.get('q'), __cat = __qp.get('cat');
+        if (__q) el('q').value = __q;
+        if (__cat) { activeType = __cat; }
+        var __open = __qp.get('open') === '1';
+      } catch (e) { var __open = false; }
+      renderChips(); apply();
+      /* auto-apertura scheda: arrivo da cerca.html (scheda profonda v1) */
+      if (typeof __open !== 'undefined' && __open && filtered.length) {
+        try {
+          var __want = (__q || '').toLowerCase();
+          var __hit = filtered.filter(function (e) { return (e.n || '').toLowerCase() === __want; })[0] || filtered[0];
+          openDetail(__hit._i);
+        } catch (err) {}
+      }
+    })
+    .catch(function () {
+      el('status').textContent = 'Errore nel caricamento del dataset locale.';
+    });
+})();
+</script>
+
+<script src="i18n-bi.js"></script>
+<script src="../assets/i18n-auto.js"></script>
+<script src="assets/lang-menu.js"></script>
+<link rel="stylesheet" href="detail.css">
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="detail.js"></script>
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

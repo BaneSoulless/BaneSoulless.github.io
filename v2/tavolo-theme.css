@@ -1,0 +1,441 @@
+/* v2/tavolo-theme.css — tavolo.css v1 con alias variabili del tema Vetro Arcano v2.
+   Il tema v2 definisce già --fg/--gold/--muted/--dim: qui solo gli alias mancanti. */
+#tavolo-app {
+  --card: var(--glass);
+  --border: var(--line);
+  --fg-muted: var(--muted);
+  --fg-dim: var(--dim);
+  --accent: var(--gold-hi);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --bg-card: rgba(255,255,255,.04);
+}
+#tavolo-app .card, #tavolo-app .tv-box { background: var(--glass); border-color: var(--line); }
+/* tavolo.css — stile degli strumenti da tavolo (iniziativa, tesori, nomi, oracolo). */
+
+.tv-sec { font-size: 18px; font-weight: 800; margin-bottom: 12px; }
+
+.tv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+.tv-card { margin-bottom: 0; }
+
+.tv-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.tv-form input[type="text"],
+.tv-form input[type="number"],
+.tv-form select {
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--fg);
+  font: inherit;
+  font-size: 13.5px;
+}
+.tv-form input[type="text"] { flex: 1 1 140px; }
+.tv-form select { flex: 0 1 auto; }
+.tv-form input:focus-visible,
+.tv-form select:focus-visible { outline: 2px solid #d4af37; outline-offset: 2px; }
+
+.tv-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.tv-chip {
+  min-height: 30px;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg-muted);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.tv-chip:hover { border-color: var(--border-hover); color: var(--fg); }
+
+.tv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; }
+.tv-meta { font-size: 11.5px; color: var(--fg-dim); }
+
+/* ---- iniziativa ---- */
+.ini-list { list-style: none; margin: 0; padding: 0; }
+.ini-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 6px;
+  background: rgba(255, 255, 255, 0.02);
+}
+.ini-row.att { border-color: var(--accent); background: var(--accent-glow, rgba(212, 175, 55, 0.08)); }
+.ini-num {
+  min-width: 38px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+}
+.ini-name { flex: 1; font-size: 14px; }
+.ini-mod { font-size: 12px; color: var(--fg-muted); font-variant-numeric: tabular-nums; }
+.ini-dado { font-size: 11.5px; color: var(--fg-dim); font-variant-numeric: tabular-nums; }
+.ini-del {
+  border: 0;
+  background: transparent;
+  color: var(--fg-dim);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+.ini-del:hover { color: var(--fg); }
+
+/* ---- tesoro ---- */
+.tre-coins { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0; }
+.tre-coin {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 13px;
+  color: var(--fg-muted);
+}
+.tre-coin strong { color: var(--fg); font-size: 16px; font-variant-numeric: tabular-nums; }
+.tre-item { font-size: 13.5px; color: var(--fg); margin: 8px 0 4px; }
+.tre-out { min-height: 30px; }
+
+/* -- tesoro due colonne (Homebrewery, 2026-10-15) -- */
+.tre-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 12px; }
+@media (max-width: 640px) { .tre-2col { grid-template-columns: 1fr; } }
+.tre-col { border: 1.5px solid var(--border); border-radius: 12px; padding: 14px 16px; background: rgba(255,255,255,.02); }
+.tre-col-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--gold); margin: 0 0 10px;
+  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+}
+.tre-col table { width: 100%; border-collapse: collapse; }
+.tre-col td { padding: 5px 6px; font-size: 14px; border-bottom: 1px dotted var(--border); }
+.tre-col td:last-child { text-align: right; font-variant-numeric: tabular-nums; color: var(--fg); }
+.tre-col td:first-child { color: var(--fg-muted); }
+.tre-col .tre-coins { flex-direction: column; gap: 0; }
+.tre-col .tre-coin { display: flex; justify-content: space-between; width: 100%; border: none; border-radius: 0; background: none; padding: 6px 4px; border-bottom: 1px dotted var(--border); }
+.tre-col .tre-coin strong { font-size: 15px; }
+.tre-item-name {
+  font-family: Georgia, serif; font-size: 16px; font-weight: 700;
+  color: var(--gold); margin: 0 0 3px; letter-spacing: .01em;
+}
+.tre-item-kind { font-size: 12px; color: var(--fg-muted); font-style: italic; margin: 0 0 8px; }
+.tre-item-desc { font-size: 13.5px; color: var(--fg); line-height: 1.6; margin: 6px 0 0; }
+.tre-item-link { display: inline-block; margin-top: 8px; font-size: 12.5px; color: var(--accent); }
+.tre-total {
+  margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--border);
+  font-size: 13px; color: var(--fg-muted); text-align: right; font-variant-numeric: tabular-nums;
+}
+
+/* -- probabilita' dadi (Anydice-like, 2026-10-15) -- */
+.dice-prob { margin-top: 12px; padding: 10px 0 0; border-top: 1px solid var(--border); }
+.dice-prob-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--fg-muted); margin: 0 0 8px;
+}
+.dice-prob svg { display: block; width: 100%; height: auto; }
+.dice-prob-meta {
+  display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px;
+  font-size: 12px; color: var(--fg-muted); font-variant-numeric: tabular-nums;
+}
+.dice-prob-meta strong { color: var(--fg); font-weight: 600; }
+
+/* -- probabilita' dadi (Anydice-like) -- */
+.dice-prob { margin-top: 12px; padding: 10px 0 0; border-top: 1px solid var(--border); }
+.dice-prob-title {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--fg-muted); margin: 0 0 8px;
+}
+.dice-prob svg { display: block; width: 100%; height: auto; }
+.dice-prob-meta {
+  display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px;
+  font-size: 12px; color: var(--fg-muted); font-variant-numeric: tabular-nums;
+}
+.dice-prob-meta strong { color: var(--fg); font-weight: 600; }
+
+/* ---- nomi / PNG ---- */
+.tv-out { min-height: 24px; }
+.tv-names { font-size: 15px; color: var(--fg); line-height: 1.7; }
+.tv-npc-name { font-size: 17px; font-weight: 700; color: var(--fg); margin: 6px 0; }
+.tv-npc-list { margin: 0 0 8px; padding-left: 18px; font-size: 13.5px; color: var(--fg-muted); }
+.tv-npc-list li { margin-bottom: 3px; }
+
+/* ---- oracolo ---- */
+.ora-esito {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin: 6px 0 8px;
+}
+.ora-esito.si { color: var(--success, #58c07a); }
+.ora-esito.no { color: var(--danger, #c9808a); }
+
+/* ---- timer ---- */
+.tim-out {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+  min-width: 92px;
+}
+
+@media (max-width: 767px) {
+  .tv-grid { grid-template-columns: 1fr; }
+  .tv-form input[type="text"] { flex: 1 1 100%; }
+}
+
+/* ---------- directory risorse (v2/risorse.html) — tema Vetro Arcano ---------- */
+main .search-hero h1 { font-family: 'Castellar', serif; letter-spacing: .04em; color: var(--fg); }
+main .search-hero h1::after { content: ""; }
+main .controls-bar input,
+main .controls-bar select {
+  background: var(--glass); border: 1px solid var(--line); color: var(--fg);
+  border-radius: 12px; padding: 11px 15px; font: inherit; font-size: 14px;
+}
+main .controls-bar input:focus, main .controls-bar select:focus {
+  outline: 2px solid rgba(201,162,39,.5); outline-offset: 1px;
+}
+main .filter-chip {
+  display: inline-block; font-size: 12px; font-weight: 600; color: var(--muted);
+  background: var(--glass); border: 1px solid var(--line); border-radius: 999px;
+  padding: 5px 12px; cursor: pointer; user-select: none;
+  transition: color .15s, border-color .15s, background .15s;
+}
+main .filter-chip:hover { color: var(--fg); border-color: rgba(201,162,39,.4); }
+main .filter-chip.on { color: var(--gold-hi); border-color: rgba(201,162,39,.5); background: rgba(201,162,39,.1); }
+main .resource-card {
+  background: var(--glass); border: 1px solid var(--line); border-radius: 14px;
+  padding: 18px 22px; margin-bottom: 14px;
+  transition: border-color .18s, background .18s, transform .18s;
+}
+main .resource-card:hover {
+  border-color: var(--line-hi); background: var(--glass-hi); transform: translateY(-2px);
+}
+main .card-title { font-size: 16.5px; font-weight: 600; color: var(--fg); }
+main .card-title a { color: var(--gold-hi); text-decoration: none; }
+main .card-title a:hover { text-decoration: underline; }
+main .card-verdict { color: var(--muted); font-size: 13.5px; line-height: 1.6; margin-top: 6px; }
+main .feature-item { color: var(--muted); font-size: 13px; line-height: 1.55; }
+main .feature-item::marker { color: var(--gold-hi); }
+main .badge {
+  display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .05em;
+  border-radius: 999px; padding: 3px 10px; text-transform: uppercase;
+}
+main .badge-free { color: #6ec98a; background: rgba(110,201,138,.1); border: 1px solid rgba(110,201,138,.35); }
+main .badge-paid { color: #e8c95a; background: rgba(232,201,90,.08); border: 1px solid rgba(232,201,90,.35); }
+main .badge-purple { color: #b9a5ff; background: rgba(138,107,255,.1); border: 1px solid rgba(138,107,255,.35); }
+main .badge-dim { color: var(--muted); background: rgba(255,255,255,.04); border: 1px solid var(--line); }
+main .dead-notice { color: #d98a8a; font-size: 12.5px; }
+
+/* ================= M2 ristrutturazione tavolo (2026-10-19) ================= */
+
+/* header sezione con rune */
+.tv-rune {
+  display: inline-grid; place-items: center; width: 30px; height: 30px;
+  margin-right: 10px; border-radius: 9px; vertical-align: -6px;
+  color: var(--gold-hi); font-size: 16px; background: rgba(201,162,39,.08);
+  border: 1px solid rgba(201,162,39,.3);
+}
+
+/* griglia a due colonne: strumenti di calcolo sx, strumenti narrativi dx */
+.tv-grid2 { display: grid; grid-template-columns: 1.05fr 1fr; gap: 18px; align-items: start; }
+.tv-grid2 > div > .tv-card { margin-bottom: 18px; }
+@media (max-width: 960px) { .tv-grid2 { grid-template-columns: 1fr; } }
+
+/* --- stage dadi: dado visivo a sinistra, controlli a destra --- */
+.dice-stage { display: grid; grid-template-columns: 170px 1fr; gap: 24px; align-items: start; }
+@media (max-width: 760px) { .dice-stage { grid-template-columns: 1fr; } }
+
+.dice-visual-wrap { text-align: center; position: sticky; top: 90px; }
+.dice-visual {
+  width: 150px; height: 150px; margin: 0 auto; border-radius: 26px;
+  display: grid; place-items: center; cursor: pointer; user-select: none;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255,255,255,.16), transparent 45%),
+    linear-gradient(145deg, rgba(138,107,255,.28), rgba(201,162,39,.14) 55%, rgba(20,17,10,.6)),
+    var(--glass);
+  border: 1.5px solid rgba(201,162,39,.45);
+  box-shadow: 0 14px 40px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.12), 0 0 34px rgba(138,107,255,.14);
+  transition: transform .5s cubic-bezier(.2,.8,.25,1.15), box-shadow .3s;
+}
+.dice-visual:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 18px 46px rgba(0,0,0,.55), 0 0 44px rgba(138,107,255,.22); }
+.dice-visual .dv-face {
+  font-family: 'Castellar', Georgia, serif; font-size: 52px; font-weight: 700;
+  color: var(--gold-hi); text-shadow: 0 0 22px rgba(201,162,39,.45);
+}
+/* animazione di rotazione al tiro */
+.dice-visual.rolling { animation: diceRoll .62s cubic-bezier(.3,.9,.3,1); }
+@keyframes diceRoll {
+  0% { transform: rotate(0) scale(1); }
+  30% { transform: rotate(-14deg) scale(1.07); }
+  60% { transform: rotate(10deg) scale(1.04); }
+  80% { transform: rotate(-5deg) scale(1.02); }
+  100% { transform: rotate(0) scale(1); }
+}
+.dice-kind {
+  margin-top: 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--muted);
+}
+
+/* pannello controlli: pulsante Tira su riga propria, ben separato dal select (punto 6) */
+.dice-panel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 14px; }
+.dice-panel label.dl { display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; font-family: 'JetBrains Mono', monospace; }
+.dice-panel input, .dice-panel select {
+  width: 100%; min-height: 42px; padding: 8px 12px; font: inherit; font-size: 14px;
+  color: var(--fg); background: rgba(255,255,255,.04); border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.dice-panel input:focus, .dice-panel select:focus { outline: 2px solid rgba(201,162,39,.5); outline-offset: 1px; }
+.dice-roll-btn { width: 100%; min-height: 46px; font-size: 15px; font-weight: 700; letter-spacing: .06em; }
+
+/* risultato del tiro: testo arcano grande (punto 5) */
+.dice-out {
+  margin-top: 16px; text-align: center;
+  font-family: 'Castellar', Georgia, serif; font-size: 56px; font-weight: 700;
+  color: var(--gold-hi); text-shadow: 0 0 28px rgba(201,162,39,.4);
+  font-variant-numeric: tabular-nums; line-height: 1.15; min-height: 66px;
+}
+.dice-out.pop { animation: dicePop .32s cubic-bezier(.2,1.4,.4,1); }
+@keyframes dicePop { 0% { transform: scale(.82); opacity: .4; } 100% { transform: scale(1); opacity: 1; } }
+.dice-detail { text-align: center; color: var(--muted); font-size: 14px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.dice-log { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.dice-log > div {
+  font-size: 12px; color: var(--muted); padding: 4px 10px;
+  border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.03);
+}
+.dice-log .crit { color: #ffd76a; border-color: rgba(201,162,39,.55); background: rgba(201,162,39,.1); }
+.dice-log .fail { color: #d98a8a; border-color: rgba(217,138,138,.4); background: rgba(217,138,138,.08); }
+
+/* grid dei bottoni dado */
+.dice-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.dice-btn {
+  min-width: 52px; min-height: 42px; font-size: 14px; font-weight: 700;
+  border-radius: 12px; border: 1px solid var(--line); background: rgba(255,255,255,.04);
+  color: var(--fg); cursor: pointer; font-variant-numeric: tabular-nums;
+  transition: border-color .15s, background .15s, color .15s;
+}
+.dice-btn:hover { border-color: rgba(201,162,39,.45); color: var(--gold-hi); }
+.dice-btn.act {
+  color: var(--gold-hi); border-color: rgba(201,162,39,.6);
+  background: linear-gradient(145deg, rgba(201,162,39,.16), rgba(138,107,255,.1));
+  box-shadow: 0 0 18px rgba(201,162,39,.18);
+}
+
+/* --- oracolo restyled (punto 9) --- */
+.ora-out { min-height: 30px; }
+#ora-out .ora-esito {
+  font-family: 'Castellar', Georgia, serif;
+  font-size: 44px; font-weight: 700; letter-spacing: .06em;
+  text-align: center; margin: 14px 0 6px; padding: 18px 12px 16px;
+  border-radius: 16px; border: 1px solid;
+  animation: oracleFade .45s ease;
+}
+#ora-out .ora-esito.si {
+  color: var(--gold-hi); border-color: rgba(201,162,39,.5);
+  background: linear-gradient(160deg, rgba(201,162,39,.12), rgba(138,107,255,.06));
+  text-shadow: 0 0 24px rgba(201,162,39,.4);
+}
+#ora-out .ora-esito.no {
+  color: #b9a5ff; border-color: rgba(138,107,255,.5);
+  background: linear-gradient(160deg, rgba(138,107,255,.12), rgba(201,162,39,.05));
+  text-shadow: 0 0 24px rgba(138,107,255,.4);
+}
+#ora-out .ora-esito em { display: block; font-family: Georgia, serif; font-size: 14px; font-weight: 400; letter-spacing: .02em; color: var(--muted); margin-top: 8px; font-style: italic; }
+@keyframes oracleFade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+#ora-out .tv-meta { text-align: center; }
+#ora-storia { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+#ora-storia ul { margin: 6px 0 0; padding-left: 18px; }
+
+/* slot chips */
+.slot-row .slot-chip {
+  display: inline-block; margin: 0 8px 8px 0; padding: 7px 12px; font-size: 13px;
+  color: var(--fg); background: rgba(255,255,255,.04); border: 1px solid var(--line);
+  border-radius: 10px; font-variant-numeric: tabular-nums;
+}
+.slot-row .slot-chip b { color: var(--gold-hi); }
+
+/* enc-out in stile coerente ma compatto */
+.enc-out { font-size: 20px; font-family: 'JetBrains Mono', monospace; color: var(--fg); text-shadow: none; min-height: 30px; }
+
+/* PNG card */
+.npc-out .tv-npc-name {
+  font-family: 'Castellar', Georgia, serif; font-size: 22px; color: var(--gold-hi);
+  letter-spacing: .03em; text-align: center; margin: 12px 0 10px;
+  text-shadow: 0 0 18px rgba(201,162,39,.3);
+}
+
+/* ---- generatore profondo PNG (npc-deep, punto 8) ---- */
+.npc-card {
+  border: 1px solid rgba(201,162,39,.35); border-radius: 16px; padding: 16px 18px;
+  background: linear-gradient(160deg, rgba(201,162,39,.06), rgba(138,107,255,.05) 70%);
+  margin-top: 12px;
+}
+.npc-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(201,162,39,.25); }
+.npc-nome { font-family: 'Castellar', Georgia, serif; font-size: 21px; color: var(--gold-hi); letter-spacing: .03em; }
+.npc-identita { font-size: 12.5px; color: var(--muted); font-style: italic; }
+.npc-righe { display: grid; grid-template-columns: 1fr; gap: 5px; }
+.npc-riga {
+  display: grid; grid-template-columns: 96px 1fr 18px; gap: 8px; align-items: baseline;
+  padding: 6px 10px; border-radius: 9px; cursor: pointer; transition: background .15s, border-color .15s;
+  border: 1px solid transparent;
+}
+.npc-riga:hover { background: rgba(201,162,39,.07); border-color: rgba(201,162,39,.3); }
+.npc-lbl { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); font-family: 'JetBrains Mono', monospace; }
+.npc-val { font-size: 13.5px; color: var(--fg); line-height: 1.5; }
+.npc-dice { color: rgba(201,162,39,.5); font-size: 13px; opacity: 0; transition: opacity .15s; }
+.npc-riga:hover .npc-dice { opacity: 1; }
+.npc-azioni { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
+.tv-mini {
+  border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--fg);
+  border-radius: 8px; min-height: 30px; padding: 2px 12px; font: inherit; font-size: 12px; cursor: pointer;
+}
+.tv-mini:hover { border-color: rgba(201,162,39,.5); color: var(--gold-hi); }
+.npc-copied { font-size: 11.5px; color: #6ec98a; }
+
+/* ---- H: calcolatore incontro strutturato ---- */
+.enc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 4px; }
+@media (max-width: 760px) { .enc-grid { grid-template-columns: repeat(2, 1fr); } }
+.enc-cell {
+  display: flex; flex-direction: column; gap: 3px; padding: 10px 12px;
+  background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 11px;
+}
+.enc-cell .enc-k { font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--dim); font-family: 'JetBrains Mono', monospace; }
+.enc-cell b { font-size: 16px; color: var(--fg); font-variant-numeric: tabular-nums; }
+.enc-diff { border-color: rgba(201,162,39,.45); background: rgba(201,162,39,.08); }
+.enc-diff b { color: var(--gold-hi); }
+
+/* ---- J: oracolo potenziato ---- */
+.ora-mode { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.ora-tab {
+  border: 1px solid var(--line); background: rgba(255,255,255,.04); color: var(--muted);
+  border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 12.5px; cursor: pointer;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.ora-tab:hover { color: var(--fg); border-color: rgba(201,162,39,.4); }
+.ora-tab.on { color: var(--gold-hi); border-color: rgba(201,162,39,.55); background: rgba(201,162,39,.1); }
+.ora-prob-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 10px; }
+.ora-prob-row label.dl { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+.ora-prob-row select { min-height: 36px; background: rgba(255,255,255,.04); border: 1px solid var(--line); color: var(--fg); border-radius: 9px; padding: 4px 10px; font: inherit; font-size: 13px; }
+.ora-prob-row input[type=range] { flex: 1 1 140px; accent-color: var(--gold-hi); cursor: pointer; }
+.ora-pct { font-family: 'Castellar', Georgia, serif; font-size: 19px; color: var(--gold-hi); min-width: 52px; text-align: center; }
+.ora-out .ora-esito em { display: block; margin-top: 8px; }
+
+/* Matrice comparativa LFG (punto R) */
+main table.lfg-matrix { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+main table.lfg-matrix th { text-align: left; color: var(--muted); font-weight: 700; padding: 10px 12px; border-bottom: 1.5px solid rgba(201,162,39,.4); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
+main table.lfg-matrix td { padding: 10px 12px; border-bottom: 1px dotted var(--line); color: var(--fg); line-height: 1.5; vertical-align: top; }
+main table.lfg-matrix tr:hover td { background: rgba(201,162,39,.05); }
+main table.lfg-matrix td:first-child { font-weight: 700; color: var(--gold-hi); }

@@ -1,0 +1,1 @@
+Mutazione: salvato assi_def su data/role-axes.json cosi' l'indice completo li legge dal disco. Score invariato. Lezione: la mutazione e' meccanica, non cambia il punteggio.

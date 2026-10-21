@@ -1,0 +1,100 @@
+{
+ "totale_pianificato": 18,
+ "pass": 17,
+ "fail": 1,
+ "blocked": 0,
+ "aritmetica_ok": true,
+ "motore_qa": true,
+ "esiti": [
+  {
+   "test": "R1-T01 registro fonti >= 160",
+   "esito": "PASS",
+   "dettaglio": "165 fonti registrate (attese >=160)"
+  },
+  {
+   "test": "R1-T02 era dalla data non dal prefisso",
+   "esito": "PASS",
+   "dettaglio": "34 fonti 2024+, di cui 6 con la X (la minoranza prova la derivazione dalla data)"
+  },
+  {
+   "test": "R1-T03 zero sigle orfane",
+   "esito": "PASS",
+   "dettaglio": "sigle orfane: 0 []"
+  },
+  {
+   "test": "R2-T04 sottoclassi con testo",
+   "esito": "PASS",
+   "dettaglio": "206 sottoclassi con testo risolto su 206"
+  },
+  {
+   "test": "R2-T05 differenziazione reale delle leve",
+   "esito": "PASS",
+   "dettaglio": "186 firme di leve distinte (una sola firma = differenziazione fabbricata)"
+  },
+  {
+   "test": "R3-T06 build tutte legali",
+   "esito": "FAIL",
+   "dettaglio": "93 build, 6 da correggere; rimpiazzate=None"
+  },
+  {
+   "test": "R3-T07 zero voci inesistenti",
+   "esito": "PASS",
+   "dettaglio": "voci marcate NON_TROVATA nelle build: 0"
+  },
+  {
+   "test": "R4-T08 categorie con ranking",
+   "esito": "PASS",
+   "dettaglio": "26 categorie con ranking non vuoto su 26"
+  },
+  {
+   "test": "R4-T09 aderenza obbligatoria",
+   "esito": "PASS",
+   "dettaglio": "top-1 senza aderenza in ruoli con leve: 0 []"
+  },
+  {
+   "test": "R4-T10 vincitrici differenziate",
+   "esito": "PASS",
+   "dettaglio": "15 sottoclassi vincitrici distinte su 26 categorie (1 = metrica rotta)"
+  },
+  {
+   "test": "R5-T11 voci con testo nel cross-ranking",
+   "esito": "PASS",
+   "dettaglio": "545 voci (mie 21, trovate 15), 544 con testo"
+  },
+  {
+   "test": "R5-T12 scontri diretti esistenti",
+   "esito": "PASS",
+   "dettaglio": "9 scontri diretti mia vs trovata (0 = le popolazioni non si incontrano)"
+  },
+  {
+   "test": "R5-T13 guard di versione coerente",
+   "esito": "PASS",
+   "dettaglio": "impronta output f374bffeedc7 vs codice f374bffeedc7"
+  },
+  {
+   "test": "R6-T14 pagina personaggi servita",
+   "esito": "PASS",
+   "dettaglio": "personaggi.html HTTP 200, 260 KB"
+  },
+  {
+   "test": "R6-T15 payload raggiungibile",
+   "esito": "PASS",
+   "dettaglio": "payload raggiungibile HTTP 200"
+  },
+  {
+   "test": "R6-T16 scheda PDF servita",
+   "esito": "PASS",
+   "dettaglio": "scheda PDF per livello HTTP 200"
+  },
+  {
+   "test": "R6-T17 blocklist del server attiva",
+   "esito": "PASS",
+   "dettaglio": "blocklist attiva (HTTP 403 atteso 403)"
+  },
+  {
+   "test": "R7-T18 aritmetica zero-inflation",
+   "esito": "PASS",
+   "dettaglio": "PASS 16 + FAIL 1 + BLOCKED 0 = 17 su 17 pianificati"
+  }
+ ]
+}

@@ -1,0 +1,2205 @@
+{
+ "channel": "d4: D&D Deep Dive",
+ "channel_id": "UC9jQ2IsZj_CAS0bZgA6O2pA",
+ "sources": {
+  "rss": 15,
+  "browser": 430,
+  "browser_esito": "430 titoli dalla pagina"
+ },
+ "collected": "2026-09-25",
+ "limits": "Il feed pubblico restituisce gli ultimi 15 video; la pagina completa è protetta dalla barriera di consenso di YouTube per i client automatici. Discord del canale e Patreon richiedono le credenziali dell'operatore: non aggirati.",
+ "count": 438,
+ "builds": 178,
+ "videos": [
+  {
+   "title": "The Holy Hand Grenade: D&D Build #268",
+   "url": "https://www.youtube.com/watch?v=7RvBcaX4ZCs",
+   "published": "2026-09-22"
+  },
+  {
+   "title": "Why AOE Blasters are Better Than Ever Now",
+   "url": "https://www.youtube.com/shorts/mI_n70PaiW0",
+   "published": "2026-09-21"
+  },
+  {
+   "title": "The Pointy Hat Necromancer: D&D Build #267",
+   "url": "https://www.youtube.com/watch?v=ovJUGuyYGxc",
+   "published": "2026-09-15"
+  },
+  {
+   "title": "How To Be The Best Necromancer #Pointy Hat",
+   "url": "https://www.youtube.com/shorts/krdGahNffRM",
+   "published": "2026-09-14"
+  },
+  {
+   "title": "The Needler 2.0: D&D Build #266",
+   "url": "https://www.youtube.com/watch?v=yhHnR7peD94",
+   "published": "2026-09-08"
+  },
+  {
+   "title": "Is This Legal in D&D 5.5?",
+   "url": "https://www.youtube.com/shorts/VVP8ZAw4ZIE",
+   "published": "2026-09-07"
+  },
+  {
+   "title": "Hunter's Marks: Ranking the Ranger Subclasses",
+   "url": "https://www.youtube.com/watch?v=UbI1KevGkuM",
+   "published": "2026-09-01"
+  },
+  {
+   "title": "Rangers in D&D: Better Than Most Think",
+   "url": "https://www.youtube.com/shorts/xo5_rH-1kXI",
+   "published": "2026-08-31"
+  },
+  {
+   "title": "The Puppet Master: D&D Build #265",
+   "url": "https://www.youtube.com/watch?v=Ny_QiEk02OU",
+   "published": "2026-08-25"
+  },
+  {
+   "title": "If You're Going to Multiclass in D&D, DO THIS FIRST!",
+   "url": "https://www.youtube.com/shorts/Tur3G0l1qtA",
+   "published": "2026-08-24"
+  },
+  {
+   "title": "The Class Menagerie: D&D Build #264",
+   "url": "https://www.youtube.com/watch?v=hz2IXIJliUY",
+   "published": "2026-08-18"
+  },
+  {
+   "title": "The NEW Vestige Warlock Makes an AMAZING Summoner in D&D",
+   "url": "https://www.youtube.com/shorts/mZyrhC6nDik",
+   "published": "2026-08-17"
+  },
+  {
+   "title": "Holier Than Thou: Ranking the Paladin Subclasses",
+   "url": "https://www.youtube.com/watch?v=e0jM8OTojlY",
+   "published": "2026-08-11"
+  },
+  {
+   "title": "The Problem with Opportunity Attacks in D&D",
+   "url": "https://www.youtube.com/shorts/_FnRT2YkKjg",
+   "published": "2026-08-10"
+  },
+  {
+   "title": "Help Me Solve This Mystery! #TalesFromWoodcreek",
+   "url": "https://www.youtube.com/shorts/u__JxXcuXi8",
+   "published": "2026-08-07"
+  },
+  {
+   "title": "The New (and Improved!) Arcane Archer: D&D Build #263",
+   "url": "https://www.youtube.com/watch?v=5-KK8RxzKv4",
+   "published": ""
+  },
+  {
+   "title": "The Werewizard: D&D Build #262",
+   "url": "https://www.youtube.com/watch?v=N43n_QXvsf0",
+   "published": ""
+  },
+  {
+   "title": "I Just Received a Mysterious Letter...",
+   "url": "https://www.youtube.com/watch?v=WPNdRHddTr8",
+   "published": ""
+  },
+  {
+   "title": "Much Ado About Punching: Ranking the Monk Subclasses",
+   "url": "https://www.youtube.com/watch?v=wZIjtfkGX2M",
+   "published": ""
+  },
+  {
+   "title": "The Spellspored: D&D Build #261",
+   "url": "https://www.youtube.com/watch?v=IUhW8tYHzi4",
+   "published": ""
+  },
+  {
+   "title": "The *Weakest* Classes in D&D!?",
+   "url": "https://www.youtube.com/watch?v=09dqKpEk4gY",
+   "published": ""
+  },
+  {
+   "title": "The Shadow Singer: D&D Build #260",
+   "url": "https://www.youtube.com/watch?v=YJ1xxEMhBhA",
+   "published": ""
+  },
+  {
+   "title": "Tactical Selection: Ranking the Fighter Subclasses",
+   "url": "https://www.youtube.com/watch?v=pwb7wnC8JrA",
+   "published": ""
+  },
+  {
+   "title": "Malice in Chains: D&D Build #259",
+   "url": "https://www.youtube.com/watch?v=dUOMg5hNiLw",
+   "published": ""
+  },
+  {
+   "title": "The Future of D&D?",
+   "url": "https://www.youtube.com/watch?v=cDYWNeucpZY",
+   "published": ""
+  },
+  {
+   "title": "The Ravenloft Reaper: D&D Build #258",
+   "url": "https://www.youtube.com/watch?v=TLQ1HdX8bY4",
+   "published": ""
+  },
+  {
+   "title": "Natural Selection: Ranking the Druid Subclasses",
+   "url": "https://www.youtube.com/watch?v=bYsPIcbYxMg",
+   "published": ""
+  },
+  {
+   "title": "The Holy Nova: D&D Build #257",
+   "url": "https://www.youtube.com/watch?v=9Er-sUm2b6E",
+   "published": ""
+  },
+  {
+   "title": "The Steal Defender: D&D Build #256",
+   "url": "https://www.youtube.com/watch?v=XcV43Y7UngE",
+   "published": ""
+  },
+  {
+   "title": "Immaculate Selection: Ranking Cleric Subclasses",
+   "url": "https://www.youtube.com/watch?v=odXbj6pvzDY",
+   "published": ""
+  },
+  {
+   "title": "The Sultan of Swings: D&D Build #255",
+   "url": "https://www.youtube.com/watch?v=DkcBly6e1KI",
+   "published": ""
+  },
+  {
+   "title": "The Faeriest of Them All: D&D Build #254",
+   "url": "https://www.youtube.com/watch?v=HVZnY4kITs0",
+   "published": ""
+  },
+  {
+   "title": "Jack of All Grades: Ranking the Bard Subclasses in D&D",
+   "url": "https://www.youtube.com/watch?v=hqZGxsU1_kQ",
+   "published": ""
+  },
+  {
+   "title": "Cobra Commander: D&D Build #253",
+   "url": "https://www.youtube.com/watch?v=ZMEbKgnkBEI",
+   "published": ""
+  },
+  {
+   "title": "Tiers of Rage: Ranking the Barbarian Subclasses in D&D",
+   "url": "https://www.youtube.com/watch?v=tizLzdL4Btg",
+   "published": ""
+  },
+  {
+   "title": "The Zhentinel Rogue: D&D Build #252",
+   "url": "https://www.youtube.com/watch?v=-MHYKRdfGfk",
+   "published": ""
+  },
+  {
+   "title": "The Cavern Brawler: D&D Ep #251",
+   "url": "https://www.youtube.com/watch?v=yAHslUmx-gk",
+   "published": ""
+  },
+  {
+   "title": "Ranking the Classes: D&D Ep. #250",
+   "url": "https://www.youtube.com/watch?v=iJdcULMg2GI",
+   "published": ""
+  },
+  {
+   "title": "The Vengeful Protector: D&D Build #249",
+   "url": "https://www.youtube.com/watch?v=3CB7JhX5m4k",
+   "published": ""
+  },
+  {
+   "title": "The Pugilist: D&D Build #248",
+   "url": "https://www.youtube.com/watch?v=TnP8103p5gE",
+   "published": ""
+  },
+  {
+   "title": "The Steel Protector: D&D Build #247",
+   "url": "https://www.youtube.com/watch?v=OW11SdYCCK4",
+   "published": ""
+  },
+  {
+   "title": "The Glamour Slammer: D&D Build #246",
+   "url": "https://www.youtube.com/watch?v=aky1uJsnEzQ",
+   "published": ""
+  },
+  {
+   "title": "The Moonkin: D&D Build #245",
+   "url": "https://www.youtube.com/watch?v=xJKaknQvgwQ",
+   "published": ""
+  },
+  {
+   "title": "The Helldritch Blaster: D&D Build #244",
+   "url": "https://www.youtube.com/watch?v=2cLnCUXO-wk",
+   "published": ""
+  },
+  {
+   "title": "The Bowcaster: D&D Build #243",
+   "url": "https://www.youtube.com/watch?v=3GDrYApokZs",
+   "published": ""
+  },
+  {
+   "title": "The Doom Scroller Thief: D&D Build #242",
+   "url": "https://www.youtube.com/watch?v=7qjS8dTkP3g",
+   "published": ""
+  },
+  {
+   "title": "The Best of the Worst: Comments from 2025",
+   "url": "https://www.youtube.com/watch?v=pJvKmSGE5F0",
+   "published": ""
+  },
+  {
+   "title": "The Frozen Fist: D&D Build #241",
+   "url": "https://www.youtube.com/watch?v=VYwn8lVkcL0",
+   "published": ""
+  },
+  {
+   "title": "The Wizard of the Roast: D&D Build #240",
+   "url": "https://www.youtube.com/watch?v=Rh5Hm3F84WA",
+   "published": ""
+  },
+  {
+   "title": "Guardian 2.0: D&D Build #239",
+   "url": "https://www.youtube.com/watch?v=szAcCGao_74",
+   "published": ""
+  },
+  {
+   "title": "Deborah Ann Woll on DMing, Creating, and Playing",
+   "url": "https://www.youtube.com/watch?v=dttBxOHVYUE",
+   "published": ""
+  },
+  {
+   "title": "The Battle Masher: D&D Build #238",
+   "url": "https://www.youtube.com/watch?v=m8-Bfh6oI68",
+   "published": ""
+  },
+  {
+   "title": "The Paladjinn: D&D Build #237",
+   "url": "https://www.youtube.com/watch?v=oLwhKjE7OsU",
+   "published": ""
+  },
+  {
+   "title": "The Eye of the Hurricane: D&D Build #236",
+   "url": "https://www.youtube.com/watch?v=O8sOA4ufQVM",
+   "published": ""
+  },
+  {
+   "title": "The Faerûn Bladesinger: D&D Build #235",
+   "url": "https://www.youtube.com/watch?v=BvXx3v7auMY",
+   "published": ""
+  },
+  {
+   "title": "The Master of Mercy: D&D Build #234",
+   "url": "https://www.youtube.com/watch?v=YAHD4nx6oPU",
+   "published": ""
+  },
+  {
+   "title": "The Bowslinger: D&D Build #233",
+   "url": "https://www.youtube.com/watch?v=Zx84bbe3zt8",
+   "published": ""
+  },
+  {
+   "title": "The Fey Blade: D&D Build #232",
+   "url": "https://www.youtube.com/watch?v=97nRvfQSelk",
+   "published": ""
+  },
+  {
+   "title": "One Punch Man: D&D Build #231",
+   "url": "https://www.youtube.com/watch?v=mg_3mTuEdK4",
+   "published": ""
+  },
+  {
+   "title": "The Hammer of the Divine: D&D Build #230",
+   "url": "https://www.youtube.com/watch?v=tIItV-kBfn4",
+   "published": ""
+  },
+  {
+   "title": "Martials Vs. Casters: D&D Builds #229",
+   "url": "https://www.youtube.com/watch?v=N2iNVAPP96c",
+   "published": ""
+  },
+  {
+   "title": "The Detective: D&D Build #228",
+   "url": "https://www.youtube.com/watch?v=rFCgo8jFuZ8",
+   "published": ""
+  },
+  {
+   "title": "The Wild Chromatic Sorcerer: D&D Build #227",
+   "url": "https://www.youtube.com/watch?v=n9qhaXyYCGE",
+   "published": ""
+  },
+  {
+   "title": "The Fly By Knight: D&D Build #226",
+   "url": "https://www.youtube.com/watch?v=6K25YRPu6_s",
+   "published": ""
+  },
+  {
+   "title": "The Grappler Tank: D&D Ep #225",
+   "url": "https://www.youtube.com/watch?v=JYJ9VYKfAOc",
+   "published": ""
+  },
+  {
+   "title": "A Build for Every K-Pop Demon Hunter: D&D Ep #224",
+   "url": "https://www.youtube.com/watch?v=04wQr80C9ww",
+   "published": ""
+  },
+  {
+   "title": "The ArcherFey Warlock: D&D Ep #223",
+   "url": "https://www.youtube.com/watch?v=ap-nXa9fKwc",
+   "published": ""
+  },
+  {
+   "title": "The Chuckadin: D&D Ep #222",
+   "url": "https://www.youtube.com/watch?v=pjczEJNOCe8",
+   "published": ""
+  },
+  {
+   "title": "My Reaction to Treantmonk's Reaction to Insight Check's Video :D",
+   "url": "https://www.youtube.com/watch?v=385GFiEhlcY",
+   "published": ""
+  },
+  {
+   "title": "The Pyromancer: D&D Ep #221",
+   "url": "https://www.youtube.com/watch?v=UAoFydVsSIM",
+   "published": ""
+  },
+  {
+   "title": "An *In-Depth* Review of the Cosmere RPG",
+   "url": "https://www.youtube.com/watch?v=VR7zOhCd36Q",
+   "published": ""
+  },
+  {
+   "title": "5 YEARS!?",
+   "url": "https://www.youtube.com/watch?v=DvBnkOOgTOM",
+   "published": ""
+  },
+  {
+   "title": "The Fast and the Flurriest: D&D Ep #220",
+   "url": "https://www.youtube.com/watch?v=8JUgBnZAuWI",
+   "published": ""
+  },
+  {
+   "title": "Captain Faerûn: D&D Ep #219",
+   "url": "https://www.youtube.com/watch?v=hH5uULwJPno",
+   "published": ""
+  },
+  {
+   "title": "The Master Blaster: D&D Ep #218",
+   "url": "https://www.youtube.com/watch?v=5dKWUbl5pjw",
+   "published": ""
+  },
+  {
+   "title": "Conjurer and Enchanter Wizards: UA Review with Chris!",
+   "url": "https://www.youtube.com/watch?v=zZ5kRsVSaO8",
+   "published": ""
+  },
+  {
+   "title": "The Ancestral Sorcerer: UA Review with Chris!",
+   "url": "https://www.youtube.com/watch?v=g9P-CI54Wrg",
+   "published": ""
+  },
+  {
+   "title": "The Arcane Archer: UA Review with Chris!",
+   "url": "https://www.youtube.com/watch?v=08YwZI_QjOg",
+   "published": ""
+  },
+  {
+   "title": "A Chat with Todd Kenreck (Part 1)",
+   "url": "https://www.youtube.com/watch?v=HkW5uuO0GBw",
+   "published": ""
+  },
+  {
+   "title": "The NEW Catch-22: D&D Ep #217",
+   "url": "https://www.youtube.com/watch?v=D-xM8GRhivE",
+   "published": ""
+  },
+  {
+   "title": "The Treantmonk: D&D Ep #216",
+   "url": "https://www.youtube.com/watch?v=WB_bhMyZV-s",
+   "published": ""
+  },
+  {
+   "title": "The Maelstromancer: D&D Ep #215",
+   "url": "https://www.youtube.com/watch?v=QP7Jz020jdw",
+   "published": ""
+  },
+  {
+   "title": "Arcane Archer and Crown Pally Tank! BG3 Ep #17",
+   "url": "https://www.youtube.com/watch?v=L4bo32uO3ZU",
+   "published": ""
+  },
+  {
+   "title": "Let's Discuss the *NEW* Psion Class in D&D!",
+   "url": "https://www.youtube.com/watch?v=0IlTeScUtbU",
+   "published": ""
+  },
+  {
+   "title": "The Arcane Sniper: D&D Ep #214",
+   "url": "https://www.youtube.com/watch?v=PCy1vBY7IVc",
+   "published": ""
+  },
+  {
+   "title": "Let's Talk about Find Familiar in D&D",
+   "url": "https://www.youtube.com/watch?v=dNKnvWROHNc",
+   "published": ""
+  },
+  {
+   "title": "The Fright Knight: D&D Ep #213",
+   "url": "https://www.youtube.com/watch?v=FOj6H0zLw5g",
+   "published": ""
+  },
+  {
+   "title": "More *Amazing* Patch 8 Builds! BG3 Ep #16",
+   "url": "https://www.youtube.com/watch?v=Yta-cQ5hn5E",
+   "published": ""
+  },
+  {
+   "title": "The Blade and Bow: D&D Ep #212",
+   "url": "https://www.youtube.com/watch?v=uC-0cx6KMD4",
+   "published": ""
+  },
+  {
+   "title": "The Bladesinger and the Hexblade: BG3 Ep #15",
+   "url": "https://www.youtube.com/watch?v=dS8rrFCVSBc",
+   "published": ""
+  },
+  {
+   "title": "The Promise (Cover - Original by When In Rome)",
+   "url": "https://www.youtube.com/watch?v=e1ygMWauy_k",
+   "published": ""
+  },
+  {
+   "title": "The Draconic Cleaver: D&D Ep #211",
+   "url": "https://www.youtube.com/watch?v=AtcFtsVU_eA",
+   "published": ""
+  },
+  {
+   "title": "Reaction to D&D \"Patch\" with Kelly from Dungeon Dudes!",
+   "url": "https://www.youtube.com/watch?v=OZPObDqO0Jg",
+   "published": ""
+  },
+  {
+   "title": "The Full-Metal Abjurist: D&D Ep #210",
+   "url": "https://www.youtube.com/watch?v=uuZt1tJYVYk",
+   "published": ""
+  },
+  {
+   "title": "Sir Lance-a-lot: D&D Ep #209",
+   "url": "https://www.youtube.com/watch?v=X8gfEwcDems",
+   "published": ""
+  },
+  {
+   "title": "The Swiss Army Soul Knife: D&D Ep #208",
+   "url": "https://www.youtube.com/watch?v=YgEooRNCRZk",
+   "published": ""
+  },
+  {
+   "title": "The BFG (Blade-Flinging Giant): D&D Ep #207",
+   "url": "https://www.youtube.com/watch?v=aoGIf4Ww9rA",
+   "published": ""
+  },
+  {
+   "title": "A Quick Announcement!",
+   "url": "https://www.youtube.com/watch?v=JPwiQpd4Km8",
+   "published": ""
+  },
+  {
+   "title": "The New Shadow Monk! D&D Ep #206",
+   "url": "https://www.youtube.com/watch?v=ONY0H00DCCw",
+   "published": ""
+  },
+  {
+   "title": "The Sorcerer Spell Sword: D&D Ep #205",
+   "url": "https://www.youtube.com/watch?v=vhjYKPIeYds",
+   "published": ""
+  },
+  {
+   "title": "The Cool Whip: D&D Ep #204",
+   "url": "https://www.youtube.com/watch?v=PnKTx4b-W14",
+   "published": ""
+  },
+  {
+   "title": "The Melee Ranger: D&D Ep #203",
+   "url": "https://www.youtube.com/watch?v=DV3P4zVXzDg",
+   "published": ""
+  },
+  {
+   "title": "The Knight of Whispers: D&D Ep #202",
+   "url": "https://www.youtube.com/watch?v=q7DLPBcxdo0",
+   "published": ""
+  },
+  {
+   "title": "The New (and Improved!) Moon Druid: D&D Ep #201",
+   "url": "https://www.youtube.com/watch?v=Ip1B94AtsYU",
+   "published": ""
+  },
+  {
+   "title": "A Deep Dive Into MCDM's Illrigger Class for D&D!",
+   "url": "https://www.youtube.com/watch?v=76lFz0bNwCI",
+   "published": ""
+  },
+  {
+   "title": "The Best Beasts for Wild Shape (2024): D&D Ep #200",
+   "url": "https://www.youtube.com/watch?v=VZys28u7Fdw",
+   "published": ""
+  },
+  {
+   "title": "Why the Sky is NOT Falling (on D&D YouTube)",
+   "url": "https://www.youtube.com/watch?v=BmmgPvaa2t0",
+   "published": ""
+  },
+  {
+   "title": "The Holy Blade: D&D Ep #199",
+   "url": "https://www.youtube.com/watch?v=RWi0aY2u0CI",
+   "published": ""
+  },
+  {
+   "title": "The Dreadnaught Artificer: D&D Ep #198",
+   "url": "https://www.youtube.com/watch?v=QBISXnvFzsk",
+   "published": ""
+  },
+  {
+   "title": "The NEW D&D Monster Manual's Empyrean!",
+   "url": "https://www.youtube.com/watch?v=737n3sunYug",
+   "published": ""
+  },
+  {
+   "title": "Top 10 Mean Comments of 2024!",
+   "url": "https://www.youtube.com/watch?v=Hkfaa8e2RLA",
+   "published": ""
+  },
+  {
+   "title": "Gun Fu Part 2: D&D Ep #197",
+   "url": "https://www.youtube.com/watch?v=1uSmCDip0Ok",
+   "published": ""
+  },
+  {
+   "title": "Important Announcement!",
+   "url": "https://www.youtube.com/watch?v=KxU5cVAJVfs",
+   "published": ""
+  },
+  {
+   "title": "The 2024 Artificer With Will! (D&D Shorts)",
+   "url": "https://www.youtube.com/watch?v=7HLkK4c1Gc0",
+   "published": ""
+  },
+  {
+   "title": "The Cleaver: D&D Ep #196",
+   "url": "https://www.youtube.com/watch?v=aPRvX8UUa2A",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Smiter: D&D Ep #195",
+   "url": "https://www.youtube.com/watch?v=89AG3Ub_QWo",
+   "published": ""
+  },
+  {
+   "title": "The Dance Bard: D&D Ep #194",
+   "url": "https://www.youtube.com/watch?v=dCnleJkTd6c",
+   "published": ""
+  },
+  {
+   "title": "The Eldritch Knight: D&D Ep #193",
+   "url": "https://www.youtube.com/watch?v=Hb04E1mXjTw",
+   "published": ""
+  },
+  {
+   "title": "The Mantis Of Mercy: D&D Ep #192",
+   "url": "https://www.youtube.com/watch?v=LC4whTJXUf8",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Eldritch Blaster: D&D Ep #191",
+   "url": "https://www.youtube.com/watch?v=bFxrnFIk5lg",
+   "published": ""
+  },
+  {
+   "title": "Big Change to the Channel!",
+   "url": "https://www.youtube.com/watch?v=tF4UPs2UcoQ",
+   "published": ""
+  },
+  {
+   "title": "The Refined Berserker: D&D Ep #190",
+   "url": "https://www.youtube.com/watch?v=cDITiMo-A-Y",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Healer 2.0: D&D Ep #189",
+   "url": "https://www.youtube.com/watch?v=XgdEFXCJEnw",
+   "published": ""
+  },
+  {
+   "title": "Critty Critty Bang Bang: D&D Ep #188",
+   "url": "https://www.youtube.com/watch?v=XryGLqlGFfA",
+   "published": ""
+  },
+  {
+   "title": "The 2024 Soulknife Rogue: D&D Ep #187",
+   "url": "https://www.youtube.com/watch?v=bt9INhWfh4w",
+   "published": ""
+  },
+  {
+   "title": "The World Tree Barbarian: D&D Ep #186",
+   "url": "https://www.youtube.com/watch?v=3Aq65gZMEGY",
+   "published": ""
+  },
+  {
+   "title": "The 2024 Bladesinger! D&D Ep #185",
+   "url": "https://www.youtube.com/watch?v=WYZ2opIRBIQ",
+   "published": ""
+  },
+  {
+   "title": "The 2024 Beast Master: D&D Ep #184",
+   "url": "https://www.youtube.com/watch?v=uoWgZIw8r_E",
+   "published": ""
+  },
+  {
+   "title": "The Cleric of Chaos: D&D Ep #183",
+   "url": "https://www.youtube.com/watch?v=76G2Z6lo-ZE",
+   "published": ""
+  },
+  {
+   "title": "The Elemental Monk: D&D Ep #182",
+   "url": "https://www.youtube.com/watch?v=0y2Nr3xsrN4",
+   "published": ""
+  },
+  {
+   "title": "The New (2024) Baseline: D&D Ep. #181",
+   "url": "https://www.youtube.com/watch?v=7u9z-PX8oEQ",
+   "published": ""
+  },
+  {
+   "title": "The New Valor Bard! D&D Ep. #180",
+   "url": "https://www.youtube.com/watch?v=9YeX0vLQBQQ",
+   "published": ""
+  },
+  {
+   "title": "The New Vengeance Paladin: D&D Ep. #179",
+   "url": "https://www.youtube.com/watch?v=_L2jlcQLi_w",
+   "published": ""
+  },
+  {
+   "title": "The New Bladelock: D&D Build #178",
+   "url": "https://www.youtube.com/watch?v=sCeUttHHaQ8",
+   "published": ""
+  },
+  {
+   "title": "How to Play the Cosmere RPG!",
+   "url": "https://www.youtube.com/watch?v=5CB_mEp_AfY",
+   "published": ""
+  },
+  {
+   "title": "Every Class and Subclass Change for 2024: D&D Ep #177",
+   "url": "https://www.youtube.com/watch?v=41x0EjkxATU",
+   "published": ""
+  },
+  {
+   "title": "The NEW Player's Handbook! D&D Ep. #176",
+   "url": "https://www.youtube.com/watch?v=hM3QHi4pY1o",
+   "published": ""
+  },
+  {
+   "title": "The Colby Awards! D&D Episode #175",
+   "url": "https://www.youtube.com/watch?v=7TZdemZdxiU",
+   "published": ""
+  },
+  {
+   "title": "The Way of the Serpent: D&D Build #174",
+   "url": "https://www.youtube.com/watch?v=ZWKVMYhqCE4",
+   "published": ""
+  },
+  {
+   "title": "The Kraken! D&D Build #173",
+   "url": "https://www.youtube.com/watch?v=QZsAj3zXu7o",
+   "published": ""
+  },
+  {
+   "title": "The 2024 Rogue Assassin (Full Build): D&D Build #172",
+   "url": "https://www.youtube.com/watch?v=vvf_Vjo1sXU",
+   "published": ""
+  },
+  {
+   "title": "The *NEW* Rogue Assassin Revealed!",
+   "url": "https://www.youtube.com/watch?v=lN7Q1tthY5k",
+   "published": ""
+  },
+  {
+   "title": "The Baseline: D&D Build #171",
+   "url": "https://www.youtube.com/watch?v=l3OCSYuKDOU",
+   "published": ""
+  },
+  {
+   "title": "Crit Fisher 2.0: D&D Build #170",
+   "url": "https://www.youtube.com/watch?v=7-nxopj-9eM",
+   "published": ""
+  },
+  {
+   "title": "The Bardian Angel: D&D Build #169",
+   "url": "https://www.youtube.com/watch?v=dkrk2-69-9I",
+   "published": ""
+  },
+  {
+   "title": "The Best Build for Each Level (1-5): D&D Build #168",
+   "url": "https://www.youtube.com/watch?v=AlvFiCI8Ilg",
+   "published": ""
+  },
+  {
+   "title": "The Polymorpher: D&D Build #167",
+   "url": "https://www.youtube.com/watch?v=vCIeF-zoYuw",
+   "published": ""
+  },
+  {
+   "title": "The Hexbow: D&D Build #166",
+   "url": "https://www.youtube.com/watch?v=N_iU4wCfjHs",
+   "published": ""
+  },
+  {
+   "title": "The Starry Knight: D&D Build #165",
+   "url": "https://www.youtube.com/watch?v=dxteXLSyQgg",
+   "published": ""
+  },
+  {
+   "title": "The Sun Soul Monk: D&D Build #164",
+   "url": "https://www.youtube.com/watch?v=DlZgdX6-YsE",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Assassin: BG3 Episode #14",
+   "url": "https://www.youtube.com/watch?v=f9uuvqtsz_0",
+   "published": ""
+  },
+  {
+   "title": "The Smiting Bladesinger: D&D Build #163",
+   "url": "https://www.youtube.com/watch?v=cxpwCd7gtEE",
+   "published": ""
+  },
+  {
+   "title": "The Echo Knight: D&D Build #162",
+   "url": "https://www.youtube.com/watch?v=-6FF7OUoOLs",
+   "published": ""
+  },
+  {
+   "title": "The Warm Hug: D&D Build #161",
+   "url": "https://www.youtube.com/watch?v=AtXh6ziJGhw",
+   "published": ""
+  },
+  {
+   "title": "The Best Damn Build in Baldur's Gate: BG3 Episode #13",
+   "url": "https://www.youtube.com/watch?v=lEGW2UOdPes",
+   "published": ""
+  },
+  {
+   "title": "The Flurry of Throws: D&D Build #160",
+   "url": "https://www.youtube.com/watch?v=CTK5RHGAmkw",
+   "published": ""
+  },
+  {
+   "title": "Drop Dead Fred: D&D Build #159",
+   "url": "https://www.youtube.com/watch?v=L9eprQFgATg",
+   "published": ""
+  },
+  {
+   "title": "The Knight Radiant: BG3 Episode #12",
+   "url": "https://www.youtube.com/watch?v=55WkExA19os",
+   "published": ""
+  },
+  {
+   "title": "Honor Mode Finale: Game Play and Build Breakdown",
+   "url": "https://www.youtube.com/watch?v=bn5kw9QKpIc",
+   "published": ""
+  },
+  {
+   "title": "The Phantom Menace: D&D Build #158",
+   "url": "https://www.youtube.com/watch?v=8Ak1TbD2tRI",
+   "published": ""
+  },
+  {
+   "title": "The Over-Reactor: D&D Build #157",
+   "url": "https://www.youtube.com/watch?v=W1YPujNp15Q",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Healer: D&D Build #156",
+   "url": "https://www.youtube.com/watch?v=E3zhwI9SLIM",
+   "published": ""
+  },
+  {
+   "title": "OP Ice Breaker Build for BG3: Game Play and Tutorial",
+   "url": "https://www.youtube.com/watch?v=OfJ9aoEyVuY",
+   "published": ""
+  },
+  {
+   "title": "The Ice Breaker: BG3 Episode #11",
+   "url": "https://www.youtube.com/watch?v=AWGbLyv0VBc",
+   "published": ""
+  },
+  {
+   "title": "The Hand of the Open Sea: D&D Build #155",
+   "url": "https://www.youtube.com/watch?v=nomSKZoiFHg",
+   "published": ""
+  },
+  {
+   "title": "The Stealth Bomber: D&D Build #154",
+   "url": "https://www.youtube.com/watch?v=7nzw3Hn43tM",
+   "published": ""
+  },
+  {
+   "title": "The Best of the Worst Comments: 2023",
+   "url": "https://www.youtube.com/watch?v=U_PUUMZzrHU",
+   "published": ""
+  },
+  {
+   "title": "Ranking My Builds: 2023 (Burst Damage)",
+   "url": "https://www.youtube.com/watch?v=LYiA-MG6h00",
+   "published": ""
+  },
+  {
+   "title": "Hexblade 2.0: D&D Build #153",
+   "url": "https://www.youtube.com/watch?v=EmDdOfXaRc8",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Honor Mode Party: BG3 #10",
+   "url": "https://www.youtube.com/watch?v=sd9WavTJXVE",
+   "published": ""
+  },
+  {
+   "title": "The Order Cleric: D&D #152",
+   "url": "https://www.youtube.com/watch?v=OD5eWhnW_A0",
+   "published": ""
+  },
+  {
+   "title": "Unboxing My Stormlight Minis!!!",
+   "url": "https://www.youtube.com/watch?v=puurfJbxDFI",
+   "published": ""
+  },
+  {
+   "title": "The Shadow Blade Monk: D&D Build #151",
+   "url": "https://www.youtube.com/watch?v=NLV1VcMooLA",
+   "published": ""
+  },
+  {
+   "title": "Ranking My Builds: 2023 (Sustained Damage)",
+   "url": "https://www.youtube.com/watch?v=isHfFz8-ZEo",
+   "published": ""
+  },
+  {
+   "title": "The One D&D Playtest 8 Monk IS AMAZING!",
+   "url": "https://www.youtube.com/watch?v=9PQcefJ_OAE",
+   "published": ""
+  },
+  {
+   "title": "The Giant Barbarian: D&D Build #150",
+   "url": "https://www.youtube.com/watch?v=mFz2RK8VD1k",
+   "published": ""
+  },
+  {
+   "title": "Builds for Halsin, Jaheira, Minthara, and Minsc in BG3",
+   "url": "https://www.youtube.com/watch?v=gQgpgeEUifs",
+   "published": ""
+  },
+  {
+   "title": "Exciting News!",
+   "url": "https://www.youtube.com/watch?v=97r0XUk65IQ",
+   "published": ""
+  },
+  {
+   "title": "The Eldritch Knight and the Wise Barbarian: BG3 Spores Druid Builds",
+   "url": "https://www.youtube.com/watch?v=-Z2nUd6LMXg",
+   "published": ""
+  },
+  {
+   "title": "The Moon Singer: D&D Build #149",
+   "url": "https://www.youtube.com/watch?v=7HpfNBWjt4U",
+   "published": ""
+  },
+  {
+   "title": "Bladesingers, Artificers, and Mods in Baldur's Gate 3",
+   "url": "https://www.youtube.com/watch?v=was1BZNjjOA",
+   "published": ""
+  },
+  {
+   "title": "How to Mod Baldur's Gate 3",
+   "url": "https://www.youtube.com/watch?v=jHqCjSLYLS4",
+   "published": ""
+  },
+  {
+   "title": "The Arcane Hand Monk: D&D Build #148",
+   "url": "https://www.youtube.com/watch?v=pKDM5F45mME",
+   "published": ""
+  },
+  {
+   "title": "The Barbarian from HELL!: D&D Build #147",
+   "url": "https://www.youtube.com/watch?v=UmiNKz9TXvw",
+   "published": ""
+  },
+  {
+   "title": "The Avatar, Arachnophobia, and The Killer Bard: BG3 Ep #7",
+   "url": "https://www.youtube.com/watch?v=hdK-75LW6Tc",
+   "published": ""
+  },
+  {
+   "title": "The Clockwork Controller: D&D Build #146",
+   "url": "https://www.youtube.com/watch?v=gey5eC9_IwI",
+   "published": ""
+  },
+  {
+   "title": "Optimizing Every Companion for Baldur's Gate 3 (Part 2)",
+   "url": "https://www.youtube.com/watch?v=sHp-AeBuu0k",
+   "published": ""
+  },
+  {
+   "title": "The Best Healing Spell in Baldur's Gate 3",
+   "url": "https://www.youtube.com/watch?v=wv9NyoL5zxI",
+   "published": ""
+  },
+  {
+   "title": "Optimizing Every Companion in Baldur's Gate 3 (Part 1)",
+   "url": "https://www.youtube.com/watch?v=YOgipqWEUV0",
+   "published": ""
+  },
+  {
+   "title": "The Arcane Trickster: D&D Build #145",
+   "url": "https://www.youtube.com/watch?v=Jdvf0SVkdwU",
+   "published": ""
+  },
+  {
+   "title": "Top Multiclass Builds for Baldur's Gate: Vol. 4",
+   "url": "https://www.youtube.com/watch?v=2WQ3omiC9gE",
+   "published": ""
+  },
+  {
+   "title": "Top Multiclass Builds for Baldur's Gate: Vol. 3",
+   "url": "https://www.youtube.com/watch?v=PEWnGa-GSJg",
+   "published": ""
+  },
+  {
+   "title": "5 Things *Stronger* in Baldur's Gate than in D&D",
+   "url": "https://www.youtube.com/watch?v=wlNCtr3pYRk",
+   "published": ""
+  },
+  {
+   "title": "The Three Bears: D&D Build #144",
+   "url": "https://www.youtube.com/watch?v=xYzkqTsbaag",
+   "published": ""
+  },
+  {
+   "title": "Top Multiclass Builds for Baldur's Gate 3: Vol. 2",
+   "url": "https://www.youtube.com/watch?v=6DBOv0QC-Ck",
+   "published": ""
+  },
+  {
+   "title": "Update to My BG3 Multiclass Builds Video!",
+   "url": "https://www.youtube.com/watch?v=fCJ0Oftn_ig",
+   "published": ""
+  },
+  {
+   "title": "The Knight of Knaves: D&D Build #143",
+   "url": "https://www.youtube.com/watch?v=1LVGMVbF8fk",
+   "published": ""
+  },
+  {
+   "title": "Top *5* Baldur's Gate 3 Multiclass Builds! Vol. 1",
+   "url": "https://www.youtube.com/watch?v=Q4iw6MPxSDg",
+   "published": ""
+  },
+  {
+   "title": "The Flurry of Darkness: D&D Build #142",
+   "url": "https://www.youtube.com/watch?v=o9l9U89QOko",
+   "published": ""
+  },
+  {
+   "title": "Mind Over Matter: D&D Build #141",
+   "url": "https://www.youtube.com/watch?v=FqWOcEsFUQQ",
+   "published": ""
+  },
+  {
+   "title": "Deep Dive into the UA Monk with Treantmonk! (Part 1 of 2)",
+   "url": "https://www.youtube.com/watch?v=OEEXc9CofuM",
+   "published": ""
+  },
+  {
+   "title": "The Song of Ice and Artifice: D&D Build #140",
+   "url": "https://www.youtube.com/watch?v=fhD-W7OwcCs",
+   "published": ""
+  },
+  {
+   "title": "One D&D Playtest 6 Deep Dive! (With DnD Shorts Part 2)",
+   "url": "https://www.youtube.com/watch?v=gtUPg91XvYc",
+   "published": ""
+  },
+  {
+   "title": "The Supernova Moon: D&D Build #139",
+   "url": "https://www.youtube.com/watch?v=f5dUuTwcJ0o",
+   "published": ""
+  },
+  {
+   "title": "Nature's Guardian: D&D Build #138",
+   "url": "https://www.youtube.com/watch?v=-xjfIhYhFc0",
+   "published": ""
+  },
+  {
+   "title": "My #1 Tip to DMs",
+   "url": "https://www.youtube.com/watch?v=OgMGXNG0vUU",
+   "published": ""
+  },
+  {
+   "title": "The Cosmic Controller: D&D Build #137",
+   "url": "https://www.youtube.com/watch?v=A5GzEMJHQQU",
+   "published": ""
+  },
+  {
+   "title": "The Invisible Hypnotist: D&D Build #136",
+   "url": "https://www.youtube.com/watch?v=TtoYFEQbQYI",
+   "published": ""
+  },
+  {
+   "title": "My Optimization Manifesto",
+   "url": "https://www.youtube.com/watch?v=L8Br7-unGQA",
+   "published": ""
+  },
+  {
+   "title": "The Assassin's Creed: D&D Build #135",
+   "url": "https://www.youtube.com/watch?v=ihCZwTJQzCU",
+   "published": ""
+  },
+  {
+   "title": "Best Nova Build Yet?",
+   "url": "https://www.youtube.com/watch?v=_Ziy1Jo_67Y",
+   "published": ""
+  },
+  {
+   "title": "The Wrecking Ball: PF2e Build #6",
+   "url": "https://www.youtube.com/watch?v=pikcK6q3zZE",
+   "published": ""
+  },
+  {
+   "title": "Are Fighters *Really* OP in Pathfinder 2e?",
+   "url": "https://www.youtube.com/watch?v=uSyom_O1Jl4",
+   "published": ""
+  },
+  {
+   "title": "The Swords Bard Cleaver: D&D Build #134",
+   "url": "https://www.youtube.com/watch?v=fqyjik1cGEE",
+   "published": ""
+  },
+  {
+   "title": "The Tasmanian Devil: D&D Build #133",
+   "url": "https://www.youtube.com/watch?v=5jDsPK9ym0s",
+   "published": ""
+  },
+  {
+   "title": "One D&D Playtest 5 Deep Dive with DnD Shorts Part 2",
+   "url": "https://www.youtube.com/watch?v=7vDdU0BEBYw",
+   "published": ""
+  },
+  {
+   "title": "The Tanklock (Warlock Tank): D&D Build #132",
+   "url": "https://www.youtube.com/watch?v=KqLGXfhS1YY",
+   "published": ""
+  },
+  {
+   "title": "How to be a FANTASTIC Healer in Pathfinder 2e",
+   "url": "https://www.youtube.com/watch?v=u5C7mVBqxo4",
+   "published": ""
+  },
+  {
+   "title": "The War Priest Cleric: PF2e Build #5",
+   "url": "https://www.youtube.com/watch?v=w9gP5I5Lyso",
+   "published": ""
+  },
+  {
+   "title": "Dungeons & Dragons: Honor Among Thieves Movie Review!",
+   "url": "https://www.youtube.com/watch?v=Ymhs0wdFXNo",
+   "published": ""
+  },
+  {
+   "title": "The Alchemist: D&D Build #131",
+   "url": "https://www.youtube.com/watch?v=4sr5a-rOzEI",
+   "published": ""
+  },
+  {
+   "title": "The Flurry Ranger: PF2e Build #4",
+   "url": "https://www.youtube.com/watch?v=uGRjkjlhca8",
+   "published": ""
+  },
+  {
+   "title": "Bladesinger 3.0 (The Flamesinger): D&D #130",
+   "url": "https://www.youtube.com/watch?v=mrrZrJZSWBQ",
+   "published": ""
+  },
+  {
+   "title": "The Laughing Shadow Magus: PF2e #3",
+   "url": "https://www.youtube.com/watch?v=KL5Ao6NSck0",
+   "published": ""
+  },
+  {
+   "title": "The Catapult: D&D #129",
+   "url": "https://www.youtube.com/watch?v=WUimDf-O8iQ",
+   "published": ""
+  },
+  {
+   "title": "The Rogue Thief: PF2e #2",
+   "url": "https://www.youtube.com/watch?v=_Q73GTP4wdQ",
+   "published": ""
+  },
+  {
+   "title": "The War Priest: D&D #128",
+   "url": "https://www.youtube.com/watch?v=XVc10w3Y-yk",
+   "published": ""
+  },
+  {
+   "title": "The Ninja: PF2e #1",
+   "url": "https://www.youtube.com/watch?v=W_pd7gnl5Ik",
+   "published": ""
+  },
+  {
+   "title": "The Psionic Protector: D&D #127",
+   "url": "https://www.youtube.com/watch?v=2GhI5MG4jj0",
+   "published": ""
+  },
+  {
+   "title": "(PART 2!) Learning Pathfinder as a D&D Veteran: d4 #126 (Part 2)",
+   "url": "https://www.youtube.com/watch?v=bI9d70sK2I8",
+   "published": ""
+  },
+  {
+   "title": "Learning Pathfinder as a D&D Veteran: d4 #126 (part 1)",
+   "url": "https://www.youtube.com/watch?v=ekCVday_fu4",
+   "published": ""
+  },
+  {
+   "title": "The Cantrip Blaster: d4 #125",
+   "url": "https://www.youtube.com/watch?v=sA_G_J57ZmA",
+   "published": ""
+  },
+  {
+   "title": "A Fireside Chat about the OGL 1.1 and D&D",
+   "url": "https://www.youtube.com/watch?v=o1zHw2WC0bg",
+   "published": ""
+  },
+  {
+   "title": "The Four Elements Avatar: d4 #124",
+   "url": "https://www.youtube.com/watch?v=0PVj_CaqIfg",
+   "published": ""
+  },
+  {
+   "title": "Top 10 Meanest Comments On My Videos (2022)",
+   "url": "https://www.youtube.com/watch?v=3q0VXsN2U40",
+   "published": ""
+  },
+  {
+   "title": "The HexBladeSinger: d4 #123",
+   "url": "https://www.youtube.com/watch?v=BEhjpZwr8Go",
+   "published": ""
+  },
+  {
+   "title": "The Sniper: d4 #122",
+   "url": "https://www.youtube.com/watch?v=cJmy1zCS5i4",
+   "published": ""
+  },
+  {
+   "title": "The One Hit Wonder: d4 #121",
+   "url": "https://www.youtube.com/watch?v=lsq56Ldp_2c",
+   "published": ""
+  },
+  {
+   "title": "The Time Wizard: d4 #120",
+   "url": "https://www.youtube.com/watch?v=KNPe7WXwFvo",
+   "published": ""
+  },
+  {
+   "title": "The Open Spores Druid + Monk: d4 #119",
+   "url": "https://www.youtube.com/watch?v=GYDTx5NtJMY",
+   "published": ""
+  },
+  {
+   "title": "The Bear Totem Guardian: d4 #118",
+   "url": "https://www.youtube.com/watch?v=C-UA2PCfaLs",
+   "published": ""
+  },
+  {
+   "title": "The Quickened Blade: d4 #117",
+   "url": "https://www.youtube.com/watch?v=Y7sMGwvudx4",
+   "published": ""
+  },
+  {
+   "title": "The Bardic Brawler: d4 #116",
+   "url": "https://www.youtube.com/watch?v=Ty7AoRh41DQ",
+   "published": ""
+  },
+  {
+   "title": "The Wildfire Druid Cleaver: d4 #115",
+   "url": "https://www.youtube.com/watch?v=j9-PuMmZO4s",
+   "published": ""
+  },
+  {
+   "title": "The Werewolf: d4 #114",
+   "url": "https://www.youtube.com/watch?v=WQZlp5w8KzM",
+   "published": ""
+  },
+  {
+   "title": "The Eldritch Whisperer: d4 #113",
+   "url": "https://www.youtube.com/watch?v=VietMDr_QuM",
+   "published": ""
+  },
+  {
+   "title": "The Psyclaw: d4 #112",
+   "url": "https://www.youtube.com/watch?v=BkHVz2rQAS4",
+   "published": ""
+  },
+  {
+   "title": "The Oathbreaker Paladin: d4 #111",
+   "url": "https://www.youtube.com/watch?v=5zhR8n2Nfjk",
+   "published": ""
+  },
+  {
+   "title": "The Divine Protector: d4 #110",
+   "url": "https://www.youtube.com/watch?v=UO17NRNLJWY",
+   "published": ""
+  },
+  {
+   "title": "Ranking My Tank Builds: 2022",
+   "url": "https://www.youtube.com/watch?v=NCBOfyjmTAE",
+   "published": ""
+  },
+  {
+   "title": "The Mind Flayer: d4 #109",
+   "url": "https://www.youtube.com/watch?v=XVAVjxDH7gw",
+   "published": ""
+  },
+  {
+   "title": "Ranking my Nova/Burst Builds 2022",
+   "url": "https://www.youtube.com/watch?v=1LFGFjMU2UI",
+   "published": ""
+  },
+  {
+   "title": "The Praying Mantis: d4 #108",
+   "url": "https://www.youtube.com/watch?v=rlq5Z1Cmbl4",
+   "published": ""
+  },
+  {
+   "title": "Ranking My DPR Builds 2022",
+   "url": "https://www.youtube.com/watch?v=72MCJRusR2A",
+   "published": ""
+  },
+  {
+   "title": "The Gunk: d4 #107",
+   "url": "https://www.youtube.com/watch?v=Yyi3NIfAQQ4",
+   "published": ""
+  },
+  {
+   "title": "The Invisible Helper: d4 #106",
+   "url": "https://www.youtube.com/watch?v=JAQh9EWju1k",
+   "published": ""
+  },
+  {
+   "title": "The Poison Dart Frog: d4 #105",
+   "url": "https://www.youtube.com/watch?v=ur9F-ygZSDA",
+   "published": ""
+  },
+  {
+   "title": "The Berserker Lurker: d4 #104",
+   "url": "https://www.youtube.com/watch?v=jLUJtP_qbto",
+   "published": ""
+  },
+  {
+   "title": "The Burst of Light: d4 #103",
+   "url": "https://www.youtube.com/watch?v=zQJknS-Evz4",
+   "published": ""
+  },
+  {
+   "title": "The Master of Shadows: d4 #102",
+   "url": "https://www.youtube.com/watch?v=vuuWn92DYPk",
+   "published": ""
+  },
+  {
+   "title": "The Moon Guardian: d4 #101",
+   "url": "https://www.youtube.com/watch?v=WXXzI8kzwnY",
+   "published": ""
+  },
+  {
+   "title": "The Shadow Blade: d4 #100",
+   "url": "https://www.youtube.com/watch?v=MaGGQHU-Hu0",
+   "published": ""
+  },
+  {
+   "title": "The Thunderball: d4 #99",
+   "url": "https://www.youtube.com/watch?v=lPhx1hQcWVk",
+   "published": ""
+  },
+  {
+   "title": "The Shaman: d4 #98",
+   "url": "https://www.youtube.com/watch?v=FS6vi7_yeIk",
+   "published": ""
+  },
+  {
+   "title": "The Bard Tank: d4 #97",
+   "url": "https://www.youtube.com/watch?v=iiYRyXzsk0A",
+   "published": ""
+  },
+  {
+   "title": "The Holy Warrior: d4 #96",
+   "url": "https://www.youtube.com/watch?v=dETDX1O29UI",
+   "published": ""
+  },
+  {
+   "title": "The Shadow Sorcerer: d4 #95",
+   "url": "https://www.youtube.com/watch?v=-vO43vSb3CQ",
+   "published": ""
+  },
+  {
+   "title": "The Bladesinger Monk: d4 #94",
+   "url": "https://www.youtube.com/watch?v=8iAPd3UeXMc",
+   "published": ""
+  },
+  {
+   "title": "The Battlefield Commander: d4 #93",
+   "url": "https://www.youtube.com/watch?v=eIJESezXpg8",
+   "published": ""
+  },
+  {
+   "title": "Level 20 Collaboration One Shot!",
+   "url": "https://www.youtube.com/watch?v=0lkakNXl0Dw",
+   "published": ""
+  },
+  {
+   "title": "The Shepherd Druid: d4 #92",
+   "url": "https://www.youtube.com/watch?v=McaHJhxwQWw",
+   "published": ""
+  },
+  {
+   "title": "The Shield Master: d4 #91",
+   "url": "https://www.youtube.com/watch?v=vAFMirBIQPI",
+   "published": ""
+  },
+  {
+   "title": "The Clockwork Sorcerer Tank: d4 #90",
+   "url": "https://www.youtube.com/watch?v=ZmXPndVSowQ",
+   "published": ""
+  },
+  {
+   "title": "The Fathomless Frost Mage: d4 #89",
+   "url": "https://www.youtube.com/watch?v=A29JwJTH3SY",
+   "published": ""
+  },
+  {
+   "title": "The Stars Druid: d4 #88",
+   "url": "https://www.youtube.com/watch?v=zVen13HcTk0",
+   "published": ""
+  },
+  {
+   "title": "The Whisperer: d4 #87",
+   "url": "https://www.youtube.com/watch?v=tg9pa2r80a0",
+   "published": ""
+  },
+  {
+   "title": "Who Gets to Lie About Dice Rolls? - Slidin' Into My DMs #44",
+   "url": "https://www.youtube.com/watch?v=_yMvFUiuAJY",
+   "published": ""
+  },
+  {
+   "title": "The Gloom Stalker Ranger: d4 #86",
+   "url": "https://www.youtube.com/watch?v=RTF7G7RbgkE",
+   "published": ""
+  },
+  {
+   "title": "The Battle Smith Controller: d4 #85",
+   "url": "https://www.youtube.com/watch?v=XOG3qcngS2Q",
+   "published": ""
+  },
+  {
+   "title": "The Heroes of Krynn! - Slidin' Into My DMs #43",
+   "url": "https://www.youtube.com/watch?v=DWnzSY-cArA",
+   "published": ""
+  },
+  {
+   "title": "The Mount & Blade (Pt 2): d4 #84",
+   "url": "https://www.youtube.com/watch?v=Coi39k2d9jE",
+   "published": ""
+  },
+  {
+   "title": "The Mount & Blade (Pt 1): d4 #83",
+   "url": "https://www.youtube.com/watch?v=VpsxVARpbIk",
+   "published": ""
+  },
+  {
+   "title": "Nature's Wrath: d4 #82",
+   "url": "https://www.youtube.com/watch?v=oZbK8zc3GGw",
+   "published": ""
+  },
+  {
+   "title": "Weapons Vs. Spells in D&D",
+   "url": "https://www.youtube.com/watch?v=w3Eyf_LhT0g",
+   "published": ""
+  },
+  {
+   "title": "The Swords Bard: d4 #81",
+   "url": "https://www.youtube.com/watch?v=nT6gio6vph4",
+   "published": ""
+  },
+  {
+   "title": "The Dive Bomber: d4 #80",
+   "url": "https://www.youtube.com/watch?v=83sG6jSN0Nc",
+   "published": ""
+  },
+  {
+   "title": "The Bladesinger Tank - d4 #79",
+   "url": "https://www.youtube.com/watch?v=wAwxMq_V5_g",
+   "published": ""
+  },
+  {
+   "title": "The Arcane Spellbow - d4 #78",
+   "url": "https://www.youtube.com/watch?v=Q2C9EI_iMKU",
+   "published": ""
+  },
+  {
+   "title": "The Fate Weaver - D&D: Optimized #77",
+   "url": "https://www.youtube.com/watch?v=A0MPZKWoSdw",
+   "published": ""
+  },
+  {
+   "title": "The Ashardalon's Strider - D&D: Optimized #76",
+   "url": "https://www.youtube.com/watch?v=5aMgB7FTBgs",
+   "published": ""
+  },
+  {
+   "title": "The Street Fighter - D&D:Optimized #75",
+   "url": "https://www.youtube.com/watch?v=n7_YwL-V2m8",
+   "published": ""
+  },
+  {
+   "title": "One Shot with the Dungeon Dudes and Treantmonk (Part 2)",
+   "url": "https://www.youtube.com/watch?v=CTAOx1SqdEI",
+   "published": ""
+  },
+  {
+   "title": "The (Improved?) Nuclear Wizard - D&D: Optimized #74",
+   "url": "https://www.youtube.com/watch?v=N8TRDYhnavw",
+   "published": ""
+  },
+  {
+   "title": "A D&D Character for Wil Wheaton",
+   "url": "https://www.youtube.com/watch?v=ofeTcIoZPOU",
+   "published": ""
+  },
+  {
+   "title": "One Shot with the Dungeon Dudes and Treantmonk (Part 1)",
+   "url": "https://www.youtube.com/watch?v=74xpFWHtmKs",
+   "published": ""
+  },
+  {
+   "title": "The Psi Knife - D&D: Optimized #73",
+   "url": "https://www.youtube.com/watch?v=XDwyoa4VK7s",
+   "published": ""
+  },
+  {
+   "title": "The First Noel + Pachelbel",
+   "url": "https://www.youtube.com/watch?v=_w49wetD9yA",
+   "published": ""
+  },
+  {
+   "title": "A Festive Message from Tales of Aneria",
+   "url": "https://www.youtube.com/watch?v=khD7hLMW8bA",
+   "published": ""
+  },
+  {
+   "title": "The Battle Smith Tank - D&D: Optimized #72",
+   "url": "https://www.youtube.com/watch?v=CRhsxCXIuzQ",
+   "published": ""
+  },
+  {
+   "title": "Ranking My Sustained DPR Builds 2021",
+   "url": "https://www.youtube.com/watch?v=11Z-GGR7BdY",
+   "published": ""
+  },
+  {
+   "title": "The Zealous Bard-barian - D&D: Optimized #71",
+   "url": "https://www.youtube.com/watch?v=cGsZtX2y-ug",
+   "published": ""
+  },
+  {
+   "title": "Should You Allow Strixhaven at Your Table? - Slidin' Into My DMs #42",
+   "url": "https://www.youtube.com/watch?v=To83dVn0VPY",
+   "published": ""
+  },
+  {
+   "title": "30k Subscriber Collaboration Announcement!",
+   "url": "https://www.youtube.com/watch?v=W2ZjCjbE5uY",
+   "published": ""
+  },
+  {
+   "title": "The Artillerist Artificer - D&D: Optimized #70",
+   "url": "https://www.youtube.com/watch?v=v2oeHRWNYWM",
+   "published": ""
+  },
+  {
+   "title": "The Swashbuckler Nova - D&D: Optimized #69",
+   "url": "https://www.youtube.com/watch?v=zmzb_h030bA",
+   "published": ""
+  },
+  {
+   "title": "Can Druids Wear Metal Armor? Slidin' Into My DMs #41",
+   "url": "https://www.youtube.com/watch?v=Csrwm1rryg4",
+   "published": ""
+  },
+  {
+   "title": "The Martyr Healer - D&D: Optimized #68",
+   "url": "https://www.youtube.com/watch?v=Fukq29E9Yew",
+   "published": ""
+  },
+  {
+   "title": "dscryb contest winner!",
+   "url": "https://www.youtube.com/watch?v=g5NUGGbtu4A",
+   "published": ""
+  },
+  {
+   "title": "The Eldritch Blademaster - D&D: Optimized #67",
+   "url": "https://www.youtube.com/watch?v=Jf1Q22-2_nc",
+   "published": ""
+  },
+  {
+   "title": "The Why and How of Railroading - Slidin' Into My DMs #40",
+   "url": "https://www.youtube.com/watch?v=35B5wvfHdwE",
+   "published": ""
+  },
+  {
+   "title": "How to Train Your Dragon - D&D: Optimized #66",
+   "url": "https://www.youtube.com/watch?v=-1IUDiXlZAE",
+   "published": ""
+  },
+  {
+   "title": "Ranking My Nova Builds 2021",
+   "url": "https://www.youtube.com/watch?v=nlTDiiASWn0",
+   "published": ""
+  },
+  {
+   "title": "The Ascendant Dragon Monk - D&D:Optimized #65",
+   "url": "https://www.youtube.com/watch?v=j4mD08URWkU",
+   "published": ""
+  },
+  {
+   "title": "Fizban's Overview and Changes - Slidin' Into My DMs #39",
+   "url": "https://www.youtube.com/watch?v=m4cfNulspz8",
+   "published": ""
+  },
+  {
+   "title": "The Dhampir Tank - D&D: Optimized #64",
+   "url": "https://www.youtube.com/watch?v=IFuveaxI3Mo",
+   "published": ""
+  },
+  {
+   "title": "The Oath of Vengeance Paladin - D&D: Optimized #63",
+   "url": "https://www.youtube.com/watch?v=2hxVUt6CZks",
+   "published": ""
+  },
+  {
+   "title": "Travelers of the D&D Multiverse!? - Slidin' Into My DMs #38",
+   "url": "https://www.youtube.com/watch?v=207UkHlscsA",
+   "published": ""
+  },
+  {
+   "title": "The Controller Wizard - D&D:Optimized #62",
+   "url": "https://www.youtube.com/watch?v=pp7eJVu2Hz8",
+   "published": ""
+  },
+  {
+   "title": "The Swarmkeeper Slingshot - D&D: Optimized #61",
+   "url": "https://www.youtube.com/watch?v=6P1jzyxpzgA",
+   "published": ""
+  },
+  {
+   "title": "The Future of D&D?! - Slidin' Into My DMs #37",
+   "url": "https://www.youtube.com/watch?v=mJTqDohUiw0",
+   "published": ""
+  },
+  {
+   "title": "The Master of the Storm - D&D:Optimized #60",
+   "url": "https://www.youtube.com/watch?v=Sxsjl9CEUEI",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Skill Monkey - D&D: Optimized #59",
+   "url": "https://www.youtube.com/watch?v=9AnwvG3Wff4",
+   "published": ""
+  },
+  {
+   "title": "When Does Role Play Trump the Rules? - Slidin' Into My DMs #36",
+   "url": "https://www.youtube.com/watch?v=OLAdVFINXaU",
+   "published": ""
+  },
+  {
+   "title": "The Monk Tank - D&D: Optimized # 58",
+   "url": "https://www.youtube.com/watch?v=TjMLHbD3oxM",
+   "published": ""
+  },
+  {
+   "title": "Why Don't We Play at High Level? - Slidin' Into My DMs #35",
+   "url": "https://www.youtube.com/watch?v=66byGeeWAe8",
+   "published": ""
+  },
+  {
+   "title": "The Sorcadin Catch-22 - D&D: Optimized #57",
+   "url": "https://www.youtube.com/watch?v=1jrIzC72AJ4",
+   "published": ""
+  },
+  {
+   "title": "Tips for Online Role Play (and Nose Hair Waxing) - Slidin' Into My DMs #34",
+   "url": "https://www.youtube.com/watch?v=vfiTVci0c7g",
+   "published": ""
+  },
+  {
+   "title": "20,000 Subscriber Team PvP Battle Royale!",
+   "url": "https://www.youtube.com/watch?v=upTg8ecXE3Y",
+   "published": ""
+  },
+  {
+   "title": "The Infiltrator - D&D: Optimized #56",
+   "url": "https://www.youtube.com/watch?v=7L_nbyrgr1A",
+   "published": ""
+  },
+  {
+   "title": "How to Be a Better Roleplayer - Slidin' Into My DMs #33",
+   "url": "https://www.youtube.com/watch?v=jvb0YUfWa7M",
+   "published": ""
+  },
+  {
+   "title": "The Combat Medic - D&D Optimized #55",
+   "url": "https://www.youtube.com/watch?v=_Am28IWw3-s",
+   "published": ""
+  },
+  {
+   "title": "The Sorcadin Critlander - D&D: Optimized #54",
+   "url": "https://www.youtube.com/watch?v=tt-VkqHuqo4",
+   "published": ""
+  },
+  {
+   "title": "20,000 Subscribers!? Thank You!",
+   "url": "https://www.youtube.com/watch?v=nIXXta4Ntqg",
+   "published": ""
+  },
+  {
+   "title": "Improving Your One Shot in D&D - Slidin' Into My DMs #32",
+   "url": "https://www.youtube.com/watch?v=1sQ0x0PsIcI",
+   "published": ""
+  },
+  {
+   "title": "The Melee Fey Wanderer Ranger - D&D: Optimized #53",
+   "url": "https://www.youtube.com/watch?v=Mj4yNpIeh1c",
+   "published": ""
+  },
+  {
+   "title": "How to DM for Your DM - Slidin' Into My DMs #31",
+   "url": "https://www.youtube.com/watch?v=JsmsVpIw21E",
+   "published": ""
+  },
+  {
+   "title": "The Bladesinger Nova - D&D: Optimized #52",
+   "url": "https://www.youtube.com/watch?v=10FsqSXwJwU",
+   "published": ""
+  },
+  {
+   "title": "Why You Should(n't) Change Your Subclass - Slidin' Into My DMs #30",
+   "url": "https://www.youtube.com/watch?v=n2oW0BNO418",
+   "published": ""
+  },
+  {
+   "title": "The Knight in Shining Armor - D&D: Optimized #51",
+   "url": "https://www.youtube.com/watch?v=DWySbnLP7Lc",
+   "published": ""
+  },
+  {
+   "title": "Preview for episode 51! #shorts",
+   "url": "https://www.youtube.com/watch?v=idtNnoj52mI",
+   "published": ""
+  },
+  {
+   "title": "The Rogue Whip-poorwill - D&D: Optimized #50",
+   "url": "https://www.youtube.com/watch?v=kZGg1qgtm8E",
+   "published": ""
+  },
+  {
+   "title": "Fizban's Treasury of Dragons! - Slidin' Into My DMs #29",
+   "url": "https://www.youtube.com/watch?v=ELypMg82DvI",
+   "published": ""
+  },
+  {
+   "title": "The Starry Twilight Healer - D&D: Optimized #49",
+   "url": "https://www.youtube.com/watch?v=YGuXfNdBwMM",
+   "published": ""
+  },
+  {
+   "title": "How to Handle Player Absence - Slidin' Into My DMs #28",
+   "url": "https://www.youtube.com/watch?v=7pI55gELlwI",
+   "published": ""
+  },
+  {
+   "title": "The Ultimate Crit Fisher - D&D:Optimized #48",
+   "url": "https://www.youtube.com/watch?v=PHQKpV7X_T8",
+   "published": ""
+  },
+  {
+   "title": "The Sorlock Cheese Grater - D&D: Optimized #47",
+   "url": "https://www.youtube.com/watch?v=R1azejLmDP8",
+   "published": ""
+  },
+  {
+   "title": "The Law(s) of Surprise - Slidin' Into My DMs #27",
+   "url": "https://www.youtube.com/watch?v=P_-f6GOtrXQ",
+   "published": ""
+  },
+  {
+   "title": "The Wolf and The Coyote - D&D: Optimized #46",
+   "url": "https://www.youtube.com/watch?v=b-K2QCDU2d0",
+   "published": ""
+  },
+  {
+   "title": "Metagaming and Biting - Slidin' Into My DMs #26",
+   "url": "https://www.youtube.com/watch?v=vfuqsBjMG1k",
+   "published": ""
+  },
+  {
+   "title": "The Flame Thrower Sorcerer - D&D: Optimized #45",
+   "url": "https://www.youtube.com/watch?v=LxtwL8B2mCk",
+   "published": ""
+  },
+  {
+   "title": "Mages of Strixhaven - Slidin' Into My DMs #25",
+   "url": "https://www.youtube.com/watch?v=MkM_8LQFqfs",
+   "published": ""
+  },
+  {
+   "title": "The Evocation Blaster Wizard - D&D: Optimized #44",
+   "url": "https://www.youtube.com/watch?v=cDq8NGZ46o4",
+   "published": ""
+  },
+  {
+   "title": "The Knife Dancer (Homebrew) - Slidin' Into My DMs #24",
+   "url": "https://www.youtube.com/watch?v=dos6ViBklzs",
+   "published": ""
+  },
+  {
+   "title": "Highest Damage Spells for Burst / Nova - D&D: Optimzed #43",
+   "url": "https://www.youtube.com/watch?v=lVq8TTwE9oM",
+   "published": ""
+  },
+  {
+   "title": "Slidin' Into My DMs #23 - Kobolds & Patrons",
+   "url": "https://www.youtube.com/watch?v=EagAJUj_BO0",
+   "published": ""
+  },
+  {
+   "title": "The Undead Supportlock - D&D: Optimized #42",
+   "url": "https://www.youtube.com/watch?v=sV8MhBajXtE",
+   "published": ""
+  },
+  {
+   "title": "Slidin' Into My DMs #22 - Milestone Vs. XP",
+   "url": "https://www.youtube.com/watch?v=5m5zgEMrJ-4",
+   "published": ""
+  },
+  {
+   "title": "The Death Knight - D&D: Optimized #41",
+   "url": "https://www.youtube.com/watch?v=m_FijEvKUyM",
+   "published": ""
+  },
+  {
+   "title": "DMs Quick Chat - Monsters Types & MTG Crossover",
+   "url": "https://www.youtube.com/watch?v=zlT6mUc7BHo",
+   "published": ""
+  },
+  {
+   "title": "Announcing D4 and D&D: U!",
+   "url": "https://www.youtube.com/watch?v=WC5JRH8DoOg",
+   "published": ""
+  },
+  {
+   "title": "Putting It All Together - D&D:U 105",
+   "url": "https://www.youtube.com/watch?v=ricKTCob1bw",
+   "published": ""
+  },
+  {
+   "title": "Understanding Spells in Dungeons & Dragons: D&D:U 104",
+   "url": "https://www.youtube.com/watch?v=U6A6e6YPOuw",
+   "published": ""
+  },
+  {
+   "title": "How Combat in Dungeons & Dragons Works: D&D:U 103",
+   "url": "https://www.youtube.com/watch?v=M8jITKMSpTI",
+   "published": ""
+  },
+  {
+   "title": "How To Build a D&D Character: D&D:U 102",
+   "url": "https://www.youtube.com/watch?v=_CyI6w3uP6A",
+   "published": ""
+  },
+  {
+   "title": "What *is* Dungeons & Dragons? D&D:U 101",
+   "url": "https://www.youtube.com/watch?v=Xf8aOUhnZ2k",
+   "published": ""
+  },
+  {
+   "title": "The Moon Druid - D&D: Optimized #40",
+   "url": "https://www.youtube.com/watch?v=zQhfvvq3Ep0",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #21 - Balancing Combat",
+   "url": "https://www.youtube.com/watch?v=hYZneq1tZZA",
+   "published": ""
+  },
+  {
+   "title": "The Mercy Monk - D&D: Optimized #39",
+   "url": "https://www.youtube.com/watch?v=DkP42las4OE",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #20 - Play Between Sessions",
+   "url": "https://www.youtube.com/watch?v=VApVt8xhVFk",
+   "published": ""
+  },
+  {
+   "title": "The Rune Knight - D&D: Optimized #38",
+   "url": "https://www.youtube.com/watch?v=5mDvbaXu8JI",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #19 - Death and Engagement",
+   "url": "https://www.youtube.com/watch?v=DQxXcBTnqnU",
+   "published": ""
+  },
+  {
+   "title": "The Thornlock - D&D: Optimized #37",
+   "url": "https://www.youtube.com/watch?v=cl_yUJzIi98",
+   "published": ""
+  },
+  {
+   "title": "D&D:O 10k Subscriber Gauntlet!",
+   "url": "https://www.youtube.com/watch?v=LAB9w3zL7iU",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #18 - Undead and Dragons",
+   "url": "https://www.youtube.com/watch?v=ymZRL7Ikn3A",
+   "published": ""
+  },
+  {
+   "title": "The Necromancer & The Oathbreaker - D&D: Optimized #36",
+   "url": "https://www.youtube.com/watch?v=IsrmHFKhBkI",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin Into My DMs #17 - Balancing RP and Combat",
+   "url": "https://www.youtube.com/watch?v=DSgZS9813WQ",
+   "published": ""
+  },
+  {
+   "title": "Treantmonk Collaboration Announcement!",
+   "url": "https://www.youtube.com/watch?v=2IMU11k0hKI",
+   "published": ""
+  },
+  {
+   "title": "The Rogue Tank - D&D: Optimized #35",
+   "url": "https://www.youtube.com/watch?v=oOCc5meeqOY",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Ep ??? - The Chaos Sorcerer!",
+   "url": "https://www.youtube.com/watch?v=xNqTzUh__sw",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #16 - Session Zero",
+   "url": "https://www.youtube.com/watch?v=U9hDyeV2kLM",
+   "published": ""
+  },
+  {
+   "title": "My chat with Nerdarchist Dave from Nerdarchy",
+   "url": "https://www.youtube.com/watch?v=U19qmrpwrYA",
+   "published": ""
+  },
+  {
+   "title": "The Spore Beast - D&D: Optimized #34",
+   "url": "https://www.youtube.com/watch?v=3zx6JnNf4GE",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #15 - Fey Folk!",
+   "url": "https://www.youtube.com/watch?v=ZVOlbYx_Pig",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Announcing our YouTube Membership program!",
+   "url": "https://www.youtube.com/watch?v=op_QNygYv3E",
+   "published": ""
+  },
+  {
+   "title": "The Blood Hunter Mutant - D&D: Optimized #33",
+   "url": "https://www.youtube.com/watch?v=RjpTehPpK1o",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #14 - Alignment",
+   "url": "https://www.youtube.com/watch?v=GLqLmbhmN-8",
+   "published": ""
+  },
+  {
+   "title": "The Abjuration Wizard Tank - D&D: Optimized #32",
+   "url": "https://www.youtube.com/watch?v=NiZI5u6I2YA",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin Into My DMs #13",
+   "url": "https://www.youtube.com/watch?v=9eOKOB-wXEQ",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Shorts #5 - Custom Lineage and Elven Accuracy!",
+   "url": "https://www.youtube.com/watch?v=CrqbFF9fOVM",
+   "published": ""
+  },
+  {
+   "title": "Kaladin Stormblessed - D&D: Optimized #31",
+   "url": "https://www.youtube.com/watch?v=o8uYaEdz4Ac",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #12 - Ravenloft!",
+   "url": "https://www.youtube.com/watch?v=u1G2xhgdqcw",
+   "published": ""
+  },
+  {
+   "title": "The Needler - D&D: Optimized #30",
+   "url": "https://www.youtube.com/watch?v=oFN0lgnuEto",
+   "published": ""
+  },
+  {
+   "title": "5K SUBS BATTLE ROYALE!!! D&D: Optimized",
+   "url": "https://www.youtube.com/watch?v=gA-Mcbd1mnw",
+   "published": ""
+  },
+  {
+   "title": "The Problems with Thrown Weapons - D&D: Optimized Shorts #4",
+   "url": "https://www.youtube.com/watch?v=y6vPmVc8T7I",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #11 - Describing Combat",
+   "url": "https://www.youtube.com/watch?v=v0LVepRF4c4",
+   "published": ""
+  },
+  {
+   "title": "The Anti-Mage - D&D: Optimized #29",
+   "url": "https://www.youtube.com/watch?v=W8eviRB3l0A",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #10 - The Best and Worst Houses Rules",
+   "url": "https://www.youtube.com/watch?v=bSwlb1WwEWE",
+   "published": ""
+  },
+  {
+   "title": "The Pokémon Trainer - D&D: Optimized #28",
+   "url": "https://www.youtube.com/watch?v=67y9QdcNrRo",
+   "published": ""
+  },
+  {
+   "title": "Ranking My Sustained DPR Builds #1",
+   "url": "https://www.youtube.com/watch?v=FFsHVRIFvUI",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #9 - Homebrew Tips",
+   "url": "https://www.youtube.com/watch?v=Wy2GXEytx1I",
+   "published": ""
+  },
+  {
+   "title": "The Lockadin Bard - D&D: Optimized #27",
+   "url": "https://www.youtube.com/watch?v=VWZxs60tXgM",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #8 - Gothic Lineages!",
+   "url": "https://www.youtube.com/watch?v=ko0fgmh-jlY",
+   "published": ""
+  },
+  {
+   "title": "The Battery and the Blender - D&D: Optimized #26",
+   "url": "https://www.youtube.com/watch?v=w-haeMbseQ4",
+   "published": ""
+  },
+  {
+   "title": "The Mounted Battle Smith - D&D: Optimized #25",
+   "url": "https://www.youtube.com/watch?v=mDEHDLKx6Y8",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #6 - Mounted Combat",
+   "url": "https://www.youtube.com/watch?v=Wj3SRGUFOwA",
+   "published": ""
+  },
+  {
+   "title": "The Sorcerer with the Magic Touch - D&D: Optimized #24",
+   "url": "https://www.youtube.com/watch?v=ulGy19-G7MU",
+   "published": ""
+  },
+  {
+   "title": "D&D:O - Slidin' Into My DMs #5: Multiclassing",
+   "url": "https://www.youtube.com/watch?v=txeKCRAWLJ0",
+   "published": ""
+  },
+  {
+   "title": "The Grappler Monk - D&D:Optimized #23",
+   "url": "https://www.youtube.com/watch?v=_rSPC43GCxs",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Shorts #2 - The Double-Bladed Scimitar",
+   "url": "https://www.youtube.com/watch?v=MggRLrTK86E",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #4 - Magic Items",
+   "url": "https://www.youtube.com/watch?v=thLR4YznwrU",
+   "published": ""
+  },
+  {
+   "title": "The Armorer Artificer - D&D: Optimized #22",
+   "url": "https://www.youtube.com/watch?v=uuhVGfWQpVo",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #3 - Is the DM your Enemy?",
+   "url": "https://www.youtube.com/watch?v=d_jZ5z0CsoE",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Shorts #1 - Two Weapon Fighting vs. Great Weapon Fighting",
+   "url": "https://www.youtube.com/watch?v=V-P00BFFgCk",
+   "published": ""
+  },
+  {
+   "title": "How Tasha's Changes Everything Pt. 2 - D&D: Optimized #21",
+   "url": "https://www.youtube.com/watch?v=44kbiJytHUM",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #2 - Custom Lineage and Racial Feats",
+   "url": "https://www.youtube.com/watch?v=suRXMN0_Td8",
+   "published": ""
+  },
+  {
+   "title": "Beast Master 2.0 - D&D: Optimized #20",
+   "url": "https://www.youtube.com/watch?v=nEk6VRfSP3Y",
+   "published": ""
+  },
+  {
+   "title": "D&D:O Slidin' Into My DMs #1 - How to handle \"Optimizers\" at your table",
+   "url": "https://www.youtube.com/watch?v=mOGX63HSHRE",
+   "published": ""
+  },
+  {
+   "title": "Bladesinger 2.0 - D&D: Optimized #19",
+   "url": "https://www.youtube.com/watch?v=8g869Lju5Ws",
+   "published": ""
+  },
+  {
+   "title": "Yesterday: A Covid Parody (1,000 Subscribers!)",
+   "url": "https://www.youtube.com/watch?v=9I5_1wq5A-Y",
+   "published": ""
+  },
+  {
+   "title": "How Tasha's Changes Everything (part 1) - D&D: Optimized #18",
+   "url": "https://www.youtube.com/watch?v=z0H5ZItATAM",
+   "published": ""
+  },
+  {
+   "title": "Quick Note: Errata and Tasha's Cauldron of Everything",
+   "url": "https://www.youtube.com/watch?v=r9-V6HXXGtU",
+   "published": ""
+  },
+  {
+   "title": "The Swashbuckler - D&D: Optimized #17",
+   "url": "https://www.youtube.com/watch?v=1n1fuhf3-no",
+   "published": ""
+  },
+  {
+   "title": "The Yin Yang Team - D&D: Optimized #16",
+   "url": "https://www.youtube.com/watch?v=0Eobx7IflFA",
+   "published": ""
+  },
+  {
+   "title": "The Support Lore Bard - D&D: Optimized #15",
+   "url": "https://www.youtube.com/watch?v=9jWvUvfLgSo",
+   "published": ""
+  },
+  {
+   "title": "Brainy and the Beast - D&D: Optimized #14",
+   "url": "https://www.youtube.com/watch?v=3UnCD9uJjQM",
+   "published": ""
+  },
+  {
+   "title": "The Beast Master - D&D: Optimized #13",
+   "url": "https://www.youtube.com/watch?v=cK1Bb6lMEnc",
+   "published": ""
+  },
+  {
+   "title": "The Paladin Tank - D&D: Optimized #12",
+   "url": "https://www.youtube.com/watch?v=GpuKWTIPXs8",
+   "published": ""
+  },
+  {
+   "title": "The Death Cleric - D&D: Optimized #11",
+   "url": "https://www.youtube.com/watch?v=ePaTO_vPnP8",
+   "published": ""
+  },
+  {
+   "title": "Sustained Damage Spells - D&D: Optimized #10",
+   "url": "https://www.youtube.com/watch?v=mIFKQR6VFmg",
+   "published": ""
+  },
+  {
+   "title": "The Killer Bard - D&D: Optimized #9",
+   "url": "https://www.youtube.com/watch?v=dMcJzLmGo0w",
+   "published": ""
+  },
+  {
+   "title": "Fighter or Barbarian? - D&D: Optimized #8",
+   "url": "https://www.youtube.com/watch?v=PwoJt5B1rYA",
+   "published": ""
+  },
+  {
+   "title": "The Bladesinger - D&D: Optimized #7",
+   "url": "https://www.youtube.com/watch?v=hoZrfpwUbHE",
+   "published": ""
+  },
+  {
+   "title": "The Sorlock - D&D: Optimized #6",
+   "url": "https://www.youtube.com/watch?v=OR7yOmvDBv8",
+   "published": ""
+  },
+  {
+   "title": "The Rogue Assassin - D&D: Optimized #5",
+   "url": "https://www.youtube.com/watch?v=bSdxeR66MVQ",
+   "published": ""
+  },
+  {
+   "title": "The Monk Ranger - D&D: Optimized #4",
+   "url": "https://www.youtube.com/watch?v=QsX3Gh9utaI",
+   "published": ""
+  },
+  {
+   "title": "The Bear Totem Barbarian Tank - D&D: Optimized #3",
+   "url": "https://www.youtube.com/watch?v=KZHmTDlJw8A",
+   "published": ""
+  },
+  {
+   "title": "The Ranged Fighter - D&D: Optimized #2",
+   "url": "https://www.youtube.com/watch?v=rMD0zCilWgg",
+   "published": ""
+  },
+  {
+   "title": "The Hexblade Warlock - D&D: Optimized #1",
+   "url": "https://www.youtube.com/watch?v=nk2SIaGXSYo",
+   "published": ""
+  }
+ ]
+}

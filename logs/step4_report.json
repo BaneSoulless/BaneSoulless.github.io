@@ -1,0 +1,142 @@
+{
+ "generato": "2026-10-08T00:49:30",
+ "target": "tools/rules_solver.py",
+ "totale_test_unici": 13,
+ "PASS": 13,
+ "FAIL": 0,
+ "BLOCKED": 0,
+ "bilancio_ok": true,
+ "durata_s": 0.4,
+ "test": [
+  {
+   "id": "TEST-001",
+   "metodologia": "Property-Based (payload sintetici)",
+   "target": "rules_solver.check_feat × 24.000 chiamate",
+   "azione": "400 personaggi sintetici (seed 20260929) × 60 talenti",
+   "strumentazione": "random(seed) + rules_solver",
+   "criterio": "0 eccezioni e ogni verdetto e' ok/fail/unresolved",
+   "esito": "PASS",
+   "note": "verdetti={'ok': 18988, 'fail': 5012, 'unresolved': 0} crash=0"
+  },
+  {
+   "id": "TEST-002",
+   "metodologia": "Property-Based (invariante di soglia)",
+   "target": "check_multiclass su tutte le coppie",
+   "azione": "692 valutazioni esaustive sulle coppie di classi al confine 12/13",
+   "strumentazione": "rules_solver (esaustivo)",
+   "criterio": "score 12 => rifiuto, score 13 => accettazione, senza eccezioni",
+   "esito": "PASS",
+   "note": "violazioni=0"
+  },
+  {
+   "id": "TEST-003",
+   "metodologia": "Functional Invariant (feat tree)",
+   "target": "check_feat sui talenti con prereq di talento",
+   "azione": "per ogni talento con clausola feat (OR): forniti i prereq la via si deve aprire",
+   "strumentazione": "rules_solver",
+   "criterio": "forniti i prereq, il talento diventa ottenibile (OR rispettato)",
+   "esito": "PASS",
+   "note": "catene verificate=45 incoerenti=0"
+  },
+  {
+   "id": "TEST-004",
+   "metodologia": "Mutation Testing sintattico",
+   "target": "rules_solver.py (soglia 13->12)",
+   "azione": "mutazione della soglia multiclasse + ast.parse",
+   "strumentazione": "ast.parse + diff testuale",
+   "criterio": "il mutante resta sintatticamente valido e altera la soglia (killing)",
+   "esito": "PASS",
+   "note": "mutante_valido=True soglia_alterata=True"
+  },
+  {
+   "id": "TEST-005",
+   "metodologia": "Combinatorial Stress",
+   "target": "enumerazione gusci multiclasse",
+   "azione": "3211 build valutate (13 classi × 13 × 19 split)",
+   "strumentazione": "time.perf_counter",
+   "criterio": "valutazione completa senza eccezioni e con throughput documentato",
+   "esito": "PASS",
+   "note": "n=3211 tempo=6ms (533035 build/s)"
+  },
+  {
+   "id": "TEST-006",
+   "metodologia": "Concurrency & Thread-Safety",
+   "target": "24 istanze RuleSet su 8 thread",
+   "azione": "caricamento+validazione concorrente",
+   "strumentazione": "concurrent.futures",
+   "criterio": "0 errori, esito uniforme",
+   "esito": "PASS",
+   "note": "ok=24/24 uniforme=True"
+  },
+  {
+   "id": "TEST-007",
+   "metodologia": "Resource Profiling (heap)",
+   "target": "RuleSet + 50 validate_build",
+   "azione": "tracemalloc start/snapshot/compare",
+   "strumentazione": "tracemalloc",
+   "criterio": "delta heap < 20 MB (nessuna crescita patologica)",
+   "esito": "PASS",
+   "note": "delta=+1.22 MB"
+  },
+  {
+   "id": "TEST-008",
+   "metodologia": "Unmocked Integration (build reali)",
+   "target": "validate_build su 179 build dal file",
+   "azione": "validazione del codex completo data/novel_builds.json",
+   "strumentazione": "rules_solver",
+   "criterio": "tutte le build legalmente costruite risultano valide",
+   "esito": "PASS",
+   "note": "valide=179/179"
+  },
+  {
+   "id": "TEST-009",
+   "metodologia": "Gestione UNRESOLVED",
+   "target": "prereq non decidibili su 258 talenti",
+   "azione": "conteggio prereq illeggibili + verifica che i vincoli in prosa siano dichiarati",
+   "strumentazione": "json.loads + rules_solver",
+   "criterio": "0 prereq illeggibili E i vincoli in prosa riportati come non risolti",
+   "esito": "PASS",
+   "note": "illeggibili=0 prosa_dichiarata=2/2"
+  },
+  {
+   "id": "TEST-010",
+   "metodologia": "Functional Invariant (edizioni)",
+   "target": "indice feats_by_src",
+   "azione": "conteggio: 305 per (nome,fonte) vs 258 per nome",
+   "strumentazione": "rules_solver",
+   "criterio": "l'indice per (nome,fonte) conserva piu' voci di quello per nome",
+   "esito": "PASS",
+   "note": "Skulker in: ['PHB', 'XPHB'] | 305 vs 258"
+  },
+  {
+   "id": "TEST-011",
+   "metodologia": "Regression Guard (normalizzazione)",
+   "target": "check_feat con prereq in Proper Case",
+   "azione": "per ogni catena: il prereq fornito come l'umano lo scriverebbe deve soddisfare",
+   "strumentazione": "rules_solver",
+   "criterio": "0 falsi rifiuti dovuti a differenze di maiuscole",
+   "esito": "PASS",
+   "note": "catene=0 rifiutate per sola capitalizzazione (nessuna)"
+  },
+  {
+   "id": "TEST-012",
+   "metodologia": "Regression Guard (sottoclassi)",
+   "target": "check_subclass su 21 build + 1 caso negativo",
+   "azione": "verifica che ogni sottoclasse appartenga alla classe dichiarata",
+   "strumentazione": "rules_solver",
+   "criterio": "0 sottoclassi fuori classe nelle 21 build E il caso negativo respinto",
+   "esito": "PASS",
+   "note": "build=179 fuori_classe=0 caso_negativo_respinto=True"
+  },
+  {
+   "id": "TEST-013",
+   "metodologia": "Regression Guard (competenze)",
+   "target": "check_feat `proficiency` + derive_proficiencies",
+   "azione": "Fighter(ha martial) vs Wizard(no) + derivazione multiclasse",
+   "strumentazione": "rules_solver",
+   "criterio": "il vincolo scatta (Fighter ok, Wizard no) e la derivazione multiclasse conserva le competenze",
+   "esito": "PASS",
+   "note": "Fighter=True Wizard=False classi_senza_competenze=0 mc_Fighter/Wizard=True"
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+/* ============================================================
+   VETRO ARCANO — override di preview, iniettato sulle pagine reali
+   Font di sistema usati: Old English Text MT (brand), Castellar
+   (display), Felix Titling (label), Copperplate Gothic Light (card),
+   Segoe UI Historic (rune Elder Futhark — presente su Windows 10+)
+   ============================================================ */
+
+:root { color-scheme: dark; }
+:root {
+  --accent: #c9a227 !important;
+  --accent-glow: rgba(201,162,39,.16) !important;
+  --bg-card: rgba(255,255,255,.035) !important;
+  --border: rgba(255,255,255,.13) !important;
+  --border-hover: rgba(201,162,39,.42) !important;
+}
+body { background:#07080d !important; }
+
+/* ---------- FONT ARCANI ---------- */
+.brand > span, header .brand {
+  font-family:'Old English Text MT', serif !important;
+  font-size:20px !important; letter-spacing:.05em !important;
+}
+.logo-icon { font-family:'Felix Titling', serif !important; }
+h1 {
+  font-family:'Castellar', serif !important;
+  letter-spacing:.05em !important;
+  text-shadow:0 0 46px rgba(201,162,39,.20) !important;
+}
+h2, .section-title {
+  font-family:'Castellar', serif !important;
+  letter-spacing:.07em !important;
+}
+.card h3, .cal-card h3 {
+  font-family:'Copperplate Gothic Light','Felix Titling', serif !important;
+  letter-spacing:.09em !important;
+}
+.eyebrow, .kicker, .va-label {
+  font-family:'Felix Titling', serif !important;
+  letter-spacing:.24em !important; text-transform:uppercase !important;
+}
+[class*="stat"] strong {
+  font-family:'Castellar', serif !important;
+  text-shadow:0 0 24px rgba(201,162,39,.35) !important;
+}
+/* rune: font storico di Windows che copre l'Unicode Runic */
+.va-runecol, .va-runeband {
+  font-family:'Segoe UI Historic','Noto Sans Runic', sans-serif !important;
+}
+
+/* ---------- SIMMETRIA CENTRALE ---------- */
+header {
+  background:rgba(10,11,17,.55) !important;
+  backdrop-filter:blur(22px) saturate(150%) !important;
+  -webkit-backdrop-filter:blur(22px) saturate(150%) !important;
+  border-bottom:1px solid rgba(255,255,255,.13) !important;
+}
+.nav-wrap {
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:9px !important;
+  text-align:center;
+}
+.nav-wrap .brand { justify-content:center !important; }
+.nav-wrap nav { margin:0 auto; }
+.nav-wrap nav ul, .nav-links { justify-content:center !important; flex-wrap:wrap; }
+.nav-links a {
+  border:1px solid transparent; border-radius:9px; padding:6px 13px;
+  transition:background .18s ease, border-color .18s ease, color .18s ease;
+}
+.nav-links a:hover { background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.14); }
+.nav-links a.active {
+  background:rgba(201,162,39,.10);
+  border-color:rgba(201,162,39,.38);
+  color:var(--gold, #e8c95a) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+footer {
+  background:rgba(8,9,14,.55) !important;
+  backdrop-filter:blur(20px) !important;
+  border-top:1px solid rgba(255,255,255,.13) !important;
+  text-align:center !important;
+}
+
+/* ---------- VETRO: alta trasparenza ---------- */
+.card, .cal-card {
+  background:rgba(255,255,255,.035) !important;
+  backdrop-filter:blur(30px) saturate(180%) brightness(1.10) !important;
+  -webkit-backdrop-filter:blur(30px) saturate(180%) brightness(1.10) !important;
+  border:1px solid rgba(255,255,255,.13) !important;
+  border-radius:16px !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.10), 0 12px 40px rgba(0,0,0,.38) !important;
+  position:relative; overflow:hidden;
+  transition:transform .16s ease, border-color .2s ease, box-shadow .2s ease;
+  will-change:transform;
+}
+.card::after, .cal-card::after {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  opacity:0; transition:opacity .25s ease;
+  background:radial-gradient(240px 240px at var(--mx,50%) var(--my,50%),
+    rgba(232,201,90,.15), transparent 65%);
+}
+.card:hover::after, .cal-card:hover::after { opacity:1; }
+.card:hover, .cal-card:hover {
+  border-color:rgba(201,162,39,.42) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.13),
+    0 18px 52px rgba(0,0,0,.45), 0 0 0 1px rgba(201,162,39,.12) !important;
+}
+
+/* ---------- AMBIENTE INIETTATO (orbs) ---------- */
+.va-ambient { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
+.va-orb { position:absolute; border-radius:50%; filter:blur(62px); }
+.va-orb.o1 { width:430px; height:430px; left:5%;  top:28%; background:radial-gradient(circle, rgba(201,162,39,.30), transparent 70%); animation:va-drift1 26s ease-in-out infinite alternate; }
+.va-orb.o2 { width:380px; height:380px; left:46%; top:44%; background:radial-gradient(circle, rgba(138,107,255,.25), transparent 70%); animation:va-drift2 32s ease-in-out infinite alternate; }
+.va-orb.o3 { width:400px; height:400px; right:3%; top:24%; background:radial-gradient(circle, rgba(56,120,220,.23), transparent 70%); animation:va-drift1 38s ease-in-out infinite alternate-reverse; }
+.va-orb.o4 { width:300px; height:300px; left:24%; top:66%; background:radial-gradient(circle, rgba(232,201,90,.16), transparent 70%); animation:va-drift2 30s ease-in-out infinite alternate-reverse; }
+@keyframes va-drift1 { from { transform:translate(0,0); } to { transform:translate(60px,-40px); } }
+@keyframes va-drift2 { from { transform:translate(0,0); } to { transform:translate(-50px,36px); } }
+
+/* ---------- SIGILLO ARCANO (dentro .hero, dietro il testo) ---------- */
+.va-sigil { position:absolute; left:50%; top:46%; width:560px; height:560px;
+  transform:translate(-50%,-50%); z-index:0; pointer-events:none; }
+.va-sigil .ring { position:absolute; border-radius:50%; }
+.va-sigil .r1 { inset:0; border:1px solid rgba(232,201,90,.24); }
+.va-sigil .r2 { inset:34px; border:1px dashed rgba(232,201,90,.34); animation:va-spin 120s linear infinite; }
+.va-sigil .r3 { inset:64px;
+  background:repeating-conic-gradient(from 0deg, rgba(232,201,90,.40) 0deg 1.6deg, transparent 1.6deg 11deg);
+  -webkit-mask:radial-gradient(farthest-side, transparent calc(100% - 16px), #000 calc(100% - 15px));
+  mask:radial-gradient(farthest-side, transparent calc(100% - 16px), #000 calc(100% - 15px));
+  animation:va-spin 90s linear infinite reverse; }
+.va-sigil .r4 { inset:118px; border:1px solid rgba(138,107,255,.30); animation:va-spin 140s linear infinite; }
+.va-sigil .gem { position:absolute; width:9px; height:9px; background:#0b0c12;
+  border:1px solid rgba(232,201,90,.55); transform:rotate(45deg);
+  box-shadow:0 0 10px rgba(232,201,90,.45); }
+.va-sigil .g1 { top:-5px; left:calc(50% - 5px); } .va-sigil .g2 { bottom:-5px; left:calc(50% - 5px); }
+.va-sigil .g3 { left:-5px; top:calc(50% - 5px); } .va-sigil .g4 { right:-5px; top:calc(50% - 5px); }
+.va-sigil .inscribed {
+  position:absolute; inset:96px; animation:va-spin 160s linear infinite;
+  font-family:'Segoe UI Historic','Noto Sans Runic', sans-serif;
+  font-size:16px; letter-spacing:.4em; color:rgba(232,201,90,.42);
+  display:flex; justify-content:center;
+}
+.va-sigil .inscribed span { transform-origin:center 136px; position:absolute; top:0; }
+@keyframes va-spin { to { transform:rotate(360deg); } }
+.hero > *:not(.va-sigil) { position:relative; z-index:1; }
+
+/* ---------- RUNE-CRITTE: vere scritte Elder Futhark ---------- */
+.va-runecol {
+  position:fixed; z-index:1; top:50%; transform:translateY(-50%);
+  writing-mode:vertical-rl; font-size:19px; letter-spacing:.55em;
+  color:rgba(232,201,90,.52); cursor:help;
+  transition:color .3s ease, text-shadow .3s ease;
+}
+.va-runecol:hover { color:rgba(232,201,90,.9); text-shadow:0 0 16px rgba(232,201,90,.6); }
+.va-runecol .hint {
+  position:absolute; writing-mode:horizontal-tb; white-space:nowrap;
+  font-family:'Felix Titling', serif; font-size:12px; letter-spacing:.18em;
+  color:#e8c95a; background:rgba(10,11,17,.85); border:1px solid rgba(201,162,39,.35);
+  padding:6px 12px; border-radius:8px; opacity:0; transition:opacity .25s ease;
+  pointer-events:none; box-shadow:0 8px 28px rgba(0,0,0,.5);
+}
+.va-runecol:hover .hint { opacity:1; }
+.va-runecol.l { left:12px; } .va-runecol.l .hint { left:34px; top:46%; }
+.va-runecol.r { right:12px; } .va-runecol.r .hint { right:34px; top:46%; }
+
+/* fascia runica centrata sopra il footer */
+.va-runeband {
+  position:relative; z-index:2; text-align:center;
+  padding:12px 20px; font-size:15px; letter-spacing:.6em;
+  color:rgba(232,201,90,.5);
+  border-top:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.02);
+  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  user-select:none;
+}
+.va-runeband b { font-family:'Felix Titling', serif; font-size:11.5px; letter-spacing:.3em;
+  color:rgba(232,201,90,.85); font-weight:400; margin:0 14px; }
+
+/* fade-up on reveal */
+.va-reveal { opacity:0; transform:translateY(22px); transition:opacity .6s ease, transform .6s ease; }
+.va-reveal.va-in { opacity:1; transform:none; }
+
+@media (max-width: 900px) {
+  .va-runecol, .va-sigil { display:none; }
+  .va-runeband { letter-spacing:.3em; }
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Il Grimorio dei Reami — reindirizzamento…</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/lookup.html">
+<script>
+/* cerca.html era la pagina scheda del v1: tutti i link profondi (cat + q) sono
+   inoltrati al lookup v2, che esegue la ricerca e apre la scheda automaticamente. */
+(function () {
+  var sp = new URLSearchParams(location.search);
+  sp.set('open', '1');
+  location.replace('lookup.html?' + sp.toString());
+})();
+</script>
+<style>body{background:#0b0d11;color:#c9a227;font-family:Georgia,serif;display:grid;place-items:center;min-height:100vh;margin:0}</style>
+</head>
+<body>Reindirizzamento alla consultazione…<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

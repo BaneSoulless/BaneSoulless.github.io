@@ -1,0 +1,2531 @@
+{
+ "nota": "Tassonomia a 6 assi del ruolo taunt/lockdown, misurata sul TESTO reale del manuale (subclass-features.json + talenti). Una build e' taunter solo con almeno una sorgente B (blocco del movimento) o C (attrazione): A da sola e' la versione debole e non soddisfa «costringerli a restare/avvicinarsi».",
+ "assi": {
+  "A": "aggro soft",
+  "B": "hard lock",
+  "C": "attraction",
+  "D": "punishment",
+  "E": "blocking aura",
+  "F": "physical lock"
+ },
+ "sottoclassi": {
+  "totale_con_assi": 120,
+  "taunter_ammissibili": 10
+ },
+ "taunter_ammissibili": [
+  {
+   "nome": "Cavalier",
+   "s": "XGE",
+   "manuale": "Xanathar's Guide to Everything",
+   "assi": [
+    "B",
+    "D",
+    "F"
+   ],
+   "prove": {
+    "B": [
+     "speed is reduced to 0"
+    ],
+    "D": [
+     "opportunity attack",
+     "reaction"
+    ],
+    "F": [
+     "prone"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "B",
+    "D",
+    "F"
+   ]
+  },
+  {
+   "nome": "Oath of Conquest",
+   "s": "XGE",
+   "manuale": "Xanathar's Guide to Everything",
+   "assi": [
+    "B",
+    "D",
+    "E"
+   ],
+   "prove": {
+    "B": [
+     "speed is reduced to 0"
+    ],
+    "D": [
+     "hits you"
+    ],
+    "E": [
+     "while in the aura"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "B",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "nome": "Phantom",
+   "s": "TCE",
+   "manuale": "Tasha's Cauldron of Everything",
+   "assi": [
+    "C",
+    "D",
+    "E"
+   ],
+   "prove": {
+    "C": [
+     "drawn to you"
+    ],
+    "D": [
+     "reaction",
+     "when a creature"
+    ],
+    "E": [
+     "difficult terrain"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "C",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "nome": "Phantom",
+   "s": "RHW",
+   "manuale": "Ravenloft: The Horrors Within",
+   "assi": [
+    "C",
+    "D",
+    "E"
+   ],
+   "prove": {
+    "C": [
+     "drawn to you"
+    ],
+    "D": [
+     "reaction",
+     "when a creature"
+    ],
+    "E": [
+     "difficult terrain"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "C",
+    "D",
+    "E"
+   ]
+  },
+  {
+   "nome": "Chronurgy Magic",
+   "s": "EGW",
+   "manuale": "Explorer's Guide to Wildemount",
+   "assi": [
+    "B",
+    "C",
+    "D"
+   ],
+   "prove": {
+    "B": [
+     "speed of 0"
+    ],
+    "C": [
+     "pull"
+    ],
+    "D": [
+     "reaction"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "B",
+    "C",
+    "D"
+   ]
+  },
+  {
+   "nome": "Armorer",
+   "s": "EFA",
+   "manuale": "Eberron: Forge of the Artificer",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "prove": {
+    "C": [
+     "pull"
+    ],
+    "D": [
+     "reaction"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "C",
+    "D"
+   ]
+  },
+  {
+   "nome": "Aberrant Mind",
+   "s": "TCE",
+   "manuale": "Tasha's Cauldron of Everything",
+   "assi": [
+    "C",
+    "F"
+   ],
+   "prove": {
+    "C": [
+     "pull"
+    ],
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "C",
+    "F"
+   ]
+  },
+  {
+   "nome": "Aberrant Sorcery",
+   "s": "XPHB",
+   "manuale": "Player's Handbook (2024)",
+   "assi": [
+    "C",
+    "F"
+   ],
+   "prove": {
+    "C": [
+     "pull"
+    ],
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "C",
+    "F"
+   ]
+  },
+  {
+   "nome": "Graviturgy Magic",
+   "s": "EGW",
+   "manuale": "Explorer's Guide to Wildemount",
+   "assi": [
+    "B",
+    "D"
+   ],
+   "prove": {
+    "B": [
+     "speed is reduced to 0"
+    ],
+    "D": [
+     "reaction"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "B",
+    "D"
+   ]
+  },
+  {
+   "nome": "Order of the Soul Knife",
+   "s": "UATheMysticClass",
+   "manuale": "Unearthed Arcana: The Mystic Class",
+   "assi": [
+    "C"
+   ],
+   "prove": {
+    "C": [
+     "approach"
+    ]
+   },
+   "ammissibile_taunter": true,
+   "classi_taunt": [
+    "C"
+   ]
+  }
+ ],
+ "talenti": [
+  {
+   "nome": "Sentinel",
+   "s": "PHB",
+   "assi": [
+    "A",
+    "B",
+    "D"
+   ],
+   "ammissibile_taunter": true,
+   "prove": {
+    "A": [
+     "other than you"
+    ],
+    "B": [
+     "speed becomes 0"
+    ],
+    "D": [
+     "opportunity attack",
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Sentinel",
+   "s": "XPHB",
+   "assi": [
+    "A",
+    "B",
+    "D"
+   ],
+   "ammissibile_taunter": true,
+   "prove": {
+    "A": [
+     "other than you"
+    ],
+    "B": [
+     "speed becomes 0"
+    ],
+    "D": [
+     "opportunity attack"
+    ]
+   }
+  },
+  {
+   "nome": "Strike of the Giants",
+   "s": "BGG",
+   "assi": [
+    "A",
+    "B",
+    "F"
+   ],
+   "ammissibile_taunter": true,
+   "prove": {
+    "A": [
+     "has disadvantage on attack rolls"
+    ],
+    "B": [
+     "speed is reduced to 0"
+    ],
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Elemental Familiar",
+   "s": "AU",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Fury of the Frost Giant",
+   "s": "BGG",
+   "assi": [
+    "B",
+    "D"
+   ],
+   "ammissibile_taunter": true,
+   "prove": {
+    "B": [
+     "speed is reduced to 0"
+    ],
+    "D": [
+     "reaction",
+     "hits you"
+    ]
+   }
+  },
+  {
+   "nome": "Greater Mark of Sentinel",
+   "s": "EFA",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "unarmed strike"
+    ]
+   }
+  },
+  {
+   "nome": "Lordly Resolve",
+   "s": "FRHoF",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Mist Walker",
+   "s": "RHW",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   }
+  },
+  {
+   "nome": "Mobile",
+   "s": "PHB",
+   "assi": [
+    "D",
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "opportunity attack"
+    ],
+    "E": [
+     "difficult terrain"
+    ]
+   }
+  },
+  {
+   "nome": "Protection",
+   "s": "XPHB",
+   "assi": [
+    "A",
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "A": [
+     "other than you"
+    ],
+    "D": [
+     "reaction",
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Shield Master",
+   "s": "XPHB",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Speedy",
+   "s": "XPHB",
+   "assi": [
+    "D",
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "opportunity attack"
+    ],
+    "E": [
+     "difficult terrain"
+    ]
+   }
+  },
+  {
+   "nome": "Tyro of the Gauntlet",
+   "s": "FRHoF",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "ammissibile_taunter": true,
+   "prove": {
+    "C": [
+     "pull"
+    ],
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Vampire Hunter",
+   "s": "ABH",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   }
+  },
+  {
+   "nome": "Vigor of the Hill Giant",
+   "s": "BGG",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ],
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Aberrant Dragonmark",
+   "s": "EFA",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Adept of the Black Robes",
+   "s": "DSotDQ",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Adept of the White Robes",
+   "s": "DSotDQ",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Agent of Order",
+   "s": "SatO",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "restrained"
+    ]
+   }
+  },
+  {
+   "nome": "Arcane Omens",
+   "s": "AU",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Athlete",
+   "s": "PHB",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Athlete",
+   "s": "XPHB",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Boon of Energy Resistance",
+   "s": "XPHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Boon of Erupting Spellpower",
+   "s": "AU",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Boon of Speed",
+   "s": "XPHB",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   }
+  },
+  {
+   "nome": "Boon of Terror",
+   "s": "FRHoF",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Boon of the Night Spirit",
+   "s": "XPHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Boon of the Soul Drinker",
+   "s": "FRHoF",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Bountiful Luck",
+   "s": "XGE",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Cloying Mists",
+   "s": "ABH",
+   "assi": [
+    "A"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "A": [
+     "other than you"
+    ]
+   }
+  },
+  {
+   "nome": "Defensive Duelist",
+   "s": "PHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "hits you"
+    ]
+   }
+  },
+  {
+   "nome": "Defensive Duelist",
+   "s": "XPHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "hits you"
+    ]
+   }
+  },
+  {
+   "nome": "Delicious Pain",
+   "s": "ABH",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Divination Adept",
+   "s": "AU",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Dragon Fear",
+   "s": "XGE",
+   "assi": [
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "E": [
+     "each creature of your choice"
+    ]
+   }
+  },
+  {
+   "nome": "Dragon Hide",
+   "s": "XGE",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "unarmed strike"
+    ]
+   }
+  },
+  {
+   "nome": "Echoing Soul",
+   "s": "RHW",
+   "assi": [
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "E": [
+     "speed is halved"
+    ]
+   }
+  },
+  {
+   "nome": "Ember of the Fire Giant",
+   "s": "BGG",
+   "assi": [
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "E": [
+     "each creature of your choice"
+    ]
+   }
+  },
+  {
+   "nome": "Emerald Enclave Fledgling",
+   "s": "FRHoF",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "opportunity attack"
+    ]
+   }
+  },
+  {
+   "nome": "Fade Away",
+   "s": "XGE",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Fairy Trickster",
+   "s": "FRHoF",
+   "assi": [
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "E": [
+     "difficult terrain"
+    ]
+   }
+  },
+  {
+   "nome": "Flames of Phlegethos",
+   "s": "XGE",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "hits you"
+    ]
+   }
+  },
+  {
+   "nome": "Gathered Whispers",
+   "s": "RHW",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Gift of the Chromatic Dragon",
+   "s": "FTD",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Gift of the Gem Dragon",
+   "s": "FTD",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Gift of the Metallic Dragon",
+   "s": "FTD",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Grappler",
+   "s": "PHB",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   }
+  },
+  {
+   "nome": "Grappler",
+   "s": "XPHB",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "grappled",
+     "grapple"
+    ]
+   }
+  },
+  {
+   "nome": "Greater Mark of Handling",
+   "s": "EFA",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Greater Mark of Hospitality",
+   "s": "EFA",
+   "assi": [
+    "E"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "E": [
+     "each creature of your choice"
+    ]
+   }
+  },
+  {
+   "nome": "Greater Mark of Passage",
+   "s": "EFA",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Greater Mark of Warding",
+   "s": "EFA",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Guile of the Cloud Giant",
+   "s": "BGG",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "hits you"
+    ]
+   }
+  },
+  {
+   "nome": "Interception",
+   "s": "XPHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Keenness of the Stone Giant",
+   "s": "BGG",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Knight of the Crown",
+   "s": "DSotDQ",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction"
+    ]
+   }
+  },
+  {
+   "nome": "Living Shadow",
+   "s": "RHW",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "prone"
+    ]
+   }
+  },
+  {
+   "nome": "Love Bites",
+   "s": "ABH",
+   "assi": [
+    "F"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "F": [
+     "unarmed strike"
+    ]
+   }
+  },
+  {
+   "nome": "Lucky",
+   "s": "XPHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "when a creature"
+    ]
+   }
+  },
+  {
+   "nome": "Mage Slayer",
+   "s": "PHB",
+   "assi": [
+    "D"
+   ],
+   "ammissibile_taunter": false,
+   "prove": {
+    "D": [
+     "reaction",
+     "when a creature"
+    ]
+   }
+  }
+ ],
+ "incantesimi_con_assi": {
+  "totale": 165,
+  "ammissibili_taunter": 28,
+  "migliori": [
+   {
+    "nome": "Ravenous Void",
+    "s": "EGW",
+    "livello": 9,
+    "assi": [
+     "C",
+     "E",
+     "F"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Whirlwind",
+    "s": "XGE",
+    "livello": 7,
+    "assi": [
+     "C",
+     "D",
+     "F"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Transfix",
+    "s": "AU",
+    "livello": 7,
+    "assi": [
+     "C",
+     "D"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Command",
+    "s": "XPHB",
+    "livello": 1,
+    "assi": [
+     "C",
+     "F"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Compelled Duel",
+    "s": "XPHB",
+    "livello": 1,
+    "assi": [
+     "A",
+     "B"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Control Water",
+    "s": "XPHB",
+    "livello": 4,
+    "assi": [
+     "C",
+     "D"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Grasping Vine",
+    "s": "XPHB",
+    "livello": 4,
+    "assi": [
+     "C",
+     "F"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Telekinesis",
+    "s": "XPHB",
+    "livello": 5,
+    "assi": [
+     "C",
+     "F"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Maelstrom",
+    "s": "XGE",
+    "livello": 5,
+    "assi": [
+     "C",
+     "E"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Transmute Rock",
+    "s": "XGE",
+    "livello": 5,
+    "assi": [
+     "C",
+     "F"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Incite Greed",
+    "s": "AI",
+    "livello": 3,
+    "assi": [
+     "C"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Linked Glyphs",
+    "s": "AitFR-AVT",
+    "livello": 3,
+    "assi": [
+     "C"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Gravity Fissure",
+    "s": "EGW",
+    "livello": 6,
+    "assi": [
+     "C"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Gravity Sinkhole",
+    "s": "EGW",
+    "livello": 4,
+    "assi": [
+     "C"
+    ],
+    "ammissibile_taunter": true
+   },
+   {
+    "nome": "Pulse Wave",
+    "s": "EGW",
+    "livello": 3,
+    "assi": [
+     "C"
+    ],
+    "ammissibile_taunter": true
+   }
+  ]
+ },
+ "mie_build": [
+  {
+   "id": "B01",
+   "nome": "Ombra della Selva",
+   "categoria_dichiarata": "Scout/stealth",
+   "sottoclasse": "thief",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Boon of the Night Spirit: ['D']"
+   ]
+  },
+  {
+   "id": "B02",
+   "nome": "Araldo delle Due Voci",
+   "categoria_dichiarata": "Leader di gruppo",
+   "sottoclasse": "college of glamour",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of glamour: ['D']",
+    "War Caster: ['D']"
+   ]
+  },
+  {
+   "id": "B03",
+   "nome": "Il Carapace che Ride",
+   "categoria_dichiarata": "Tank (EHP per giornata)",
+   "sottoclasse": "path of the wild heart",
+   "assi": [
+    "A",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "path of the wild heart: ['A', 'F']"
+   ]
+  },
+  {
+   "id": "B04",
+   "nome": "La Mano che non Molla",
+   "categoria_dichiarata": "Grappler/lockdown",
+   "sottoclasse": "warrior of the open hand",
+   "assi": [
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "warrior of the open hand: ['F']",
+    "Tavern Brawler: ['F']",
+    "Grappler: ['F']"
+   ]
+  },
+  {
+   "id": "B05",
+   "nome": "Il Primo Sangue",
+   "categoria_dichiarata": "Reattivita/velocita",
+   "sottoclasse": "assassin",
+   "assi": [
+    "D",
+    "E",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Speedy: ['D', 'E']",
+    "Boon of Speed: ['F']"
+   ]
+  },
+  {
+   "id": "B06",
+   "nome": "Il Congegno che Corregge",
+   "categoria_dichiarata": "Support (buff di gruppo)",
+   "sottoclasse": "college of lore",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "B07",
+   "nome": "Il Terrore che non Corre",
+   "categoria_dichiarata": "Battlefield controller",
+   "sottoclasse": "oath of conquest",
+   "assi": [
+    "B",
+    "D",
+    "E"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "oath of conquest: ['B', 'D', 'E']",
+    "War Caster: ['D']"
+   ]
+  },
+  {
+   "id": "B08",
+   "nome": "Colui che non Cade",
+   "categoria_dichiarata": "Survivor (senza risorse)",
+   "sottoclasse": "way of the long death",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "B09",
+   "nome": "La Voce che Convince",
+   "categoria_dichiarata": "Face (sociale)",
+   "sottoclasse": "college of eloquence",
+   "assi": [
+    "A",
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of eloquence: ['A', 'D']"
+   ]
+  },
+  {
+   "id": "B10",
+   "nome": "Paladino Zhentarim",
+   "categoria_dichiarata": "Danno (DPR) - NON top-5",
+   "sottoclasse": "",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Zhentarim Ruffian: ['D']",
+    "Zhentarim Tactics: ['D']"
+   ]
+  },
+  {
+   "id": "B11",
+   "nome": "Il Duellante che non Ti Molla",
+   "categoria_dichiarata": "Taunter (aggro forzata)",
+   "sottoclasse": "swashbuckler [xge]",
+   "assi": [
+    "A",
+    "B"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "Compelled Duel (inc): ['A', 'B']"
+   ]
+  },
+  {
+   "id": "B12",
+   "nome": "Il Sogno che Cura",
+   "categoria_dichiarata": "Healer (PF ripristinati)",
+   "sottoclasse": "circle of dreams [xge]",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "B13",
+   "nome": "Il Cavaliere del Drago",
+   "categoria_dichiarata": "Summoner (corpi controllati)",
+   "sottoclasse": "drakewarden [ftd]",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "B14",
+   "nome": "L'Incendio che Cammina",
+   "categoria_dichiarata": "Piu distruttivo AoE",
+   "sottoclasse": "circle of wildfire [tce]",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "B15",
+   "nome": "Il Sigillo di Drow",
+   "categoria_dichiarata": "Anti-caster",
+   "sottoclasse": "abjurer",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "abjurer: ['D']",
+    "War Caster: ['D']",
+    "Counterspell (inc): ['D']"
+   ]
+  },
+  {
+   "id": "B16",
+   "nome": "Il Libro che Cambia Pelle",
+   "categoria_dichiarata": "Ritual / utility caster",
+   "sottoclasse": "order of scribes [tce]",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "War Caster: ['D']"
+   ]
+  },
+  {
+   "id": "B17",
+   "nome": "Il Fuoco che non si Resiste",
+   "categoria_dichiarata": "Efficienza risorse (danno/slot)",
+   "sottoclasse": "order of scribes [tce]",
+   "assi": [
+    "D",
+    "E"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "War Caster: ['D']",
+    "Conjure Minor Elementals (inc): ['E']"
+   ]
+  },
+  {
+   "id": "B18",
+   "nome": "Il Gigante che Lancia Raggi",
+   "categoria_dichiarata": "Danno (DPR sostenuto)",
+   "sottoclasse": "rune knight [tce]",
+   "assi": [
+    "D",
+    "E"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "War Caster: ['D']",
+    "Conjure Minor Elementals (inc): ['E']"
+   ]
+  },
+  {
+   "id": "B19",
+   "nome": "L'Occhio che Deduce",
+   "categoria_dichiarata": "Skill monkey",
+   "sottoclasse": "scout [xge]",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "B20",
+   "nome": "Il Passo di Fey",
+   "categoria_dichiarata": "Piu mobilita (tattica)",
+   "sottoclasse": "bladesinger",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "bladesinger: ['D']",
+    "War Caster: ['D']"
+   ]
+  },
+  {
+   "id": "B21",
+   "nome": "Il Critico dell'Alleanza",
+   "categoria_dichiarata": "One-shotter (colpo singolo)",
+   "sottoclasse": "oath of vengeance",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "oath of vengeance: ['D']"
+   ]
+  },
+  {
+   "id": "T01",
+   "nome": "Il Custode che non Lascia Andare",
+   "categoria_dichiarata": "Tank — difensore",
+   "sottoclasse": "oath of conquest",
+   "assi": [
+    "A",
+    "B",
+    "D",
+    "E"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "oath of conquest: ['B', 'D', 'E']",
+    "Sentinel: ['A', 'B', 'D']",
+    "War Caster: ['D']",
+    "Compelled Duel (inc): ['A', 'B']"
+   ]
+  },
+  {
+   "id": "T02",
+   "nome": "La Marea che Tira Dentro",
+   "categoria_dichiarata": "Battlefield Controller",
+   "sottoclasse": "circle of the land",
+   "assi": [
+    "C",
+    "D",
+    "E",
+    "F"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "circle of the land: ['E']",
+    "War Caster: ['D']",
+    "Transfix (inc): ['C', 'D']",
+    "Grasping Vine (inc): ['C', 'F']",
+    "Spirit Guardians (inc): ['E']",
+    "Thorn Whip (inc): ['C']"
+   ]
+  },
+  {
+   "id": "T03",
+   "nome": "Le Mani che Chiudono il Cerchio",
+   "categoria_dichiarata": "Lottatore e controllo fisico",
+   "sottoclasse": "cavalier",
+   "assi": [
+    "A",
+    "B",
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "cavalier: ['B', 'D', 'F']",
+    "Grappler: ['F']",
+    "Sentinel: ['A', 'B', 'D']",
+    "Tavern Brawler: ['F']"
+   ]
+  },
+  {
+   "id": "GA36301",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "categoria_dichiarata": "DPS — danno a bersaglio singolo",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA36302",
+   "nome": "Armorer — DPS — danno a bersaglio singolo",
+   "categoria_dichiarata": "DPS — danno a bersaglio singolo",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']"
+   ]
+  },
+  {
+   "id": "GA36303",
+   "nome": "Battle Smith — DPS — danno a bersaglio singolo",
+   "categoria_dichiarata": "DPS — danno a bersaglio singolo",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA10701",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "categoria_dichiarata": "Blaster ad area (AOE)",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA10702",
+   "nome": "Armorer — Blaster ad area (AOE)",
+   "categoria_dichiarata": "Blaster ad area (AOE)",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']"
+   ]
+  },
+  {
+   "id": "GA10703",
+   "nome": "Battle Smith — Blaster ad area (AOE)",
+   "categoria_dichiarata": "Blaster ad area (AOE)",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA52701",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "categoria_dichiarata": "Tiratore (ranged)",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA52702",
+   "nome": "Armorer — Tiratore (ranged)",
+   "categoria_dichiarata": "Tiratore (ranged)",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']"
+   ]
+  },
+  {
+   "id": "GA52703",
+   "nome": "Battle Smith — Tiratore (ranged)",
+   "categoria_dichiarata": "Tiratore (ranged)",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA81501",
+   "nome": "Battle Smith — Combattente in mischia",
+   "categoria_dichiarata": "Combattente in mischia",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA81502",
+   "nome": "Armorer — Combattente in mischia",
+   "categoria_dichiarata": "Combattente in mischia",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']"
+   ]
+  },
+  {
+   "id": "GA81503",
+   "nome": "Battle Smith — Combattente in mischia",
+   "categoria_dichiarata": "Combattente in mischia",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA55501",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "categoria_dichiarata": "Duellante (uno contro uno)",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA55502",
+   "nome": "Armorer — Duellante (uno contro uno)",
+   "categoria_dichiarata": "Duellante (uno contro uno)",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']"
+   ]
+  },
+  {
+   "id": "GA55503",
+   "nome": "Battle Smith — Duellante (uno contro uno)",
+   "categoria_dichiarata": "Duellante (uno contro uno)",
+   "sottoclasse": "battle smith",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA12601",
+   "nome": "School of Transmutation — Supporto e potenziamenti",
+   "categoria_dichiarata": "Supporto e potenziamenti",
+   "sottoclasse": "school of transmutation",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA12602",
+   "nome": "Grave Domain — Supporto e potenziamenti",
+   "categoria_dichiarata": "Supporto e potenziamenti",
+   "sottoclasse": "grave domain",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "grave domain: ['D']"
+   ]
+  },
+  {
+   "id": "GA12603",
+   "nome": "Order of the Immortal — Supporto e potenziamenti",
+   "categoria_dichiarata": "Supporto e potenziamenti",
+   "sottoclasse": "order of the immortal",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "order of the immortal: ['D']"
+   ]
+  },
+  {
+   "id": "GA39301",
+   "nome": "School of Transmutation — Protettore del gruppo",
+   "categoria_dichiarata": "Protettore del gruppo",
+   "sottoclasse": "school of transmutation",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA39302",
+   "nome": "Grave Domain — Protettore del gruppo",
+   "categoria_dichiarata": "Protettore del gruppo",
+   "sottoclasse": "grave domain",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "grave domain: ['D']"
+   ]
+  },
+  {
+   "id": "GA39303",
+   "nome": "Order of the Immortal — Protettore del gruppo",
+   "categoria_dichiarata": "Protettore del gruppo",
+   "sottoclasse": "order of the immortal",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "order of the immortal: ['D']"
+   ]
+  },
+  {
+   "id": "GA40801",
+   "nome": "College of Whispers — Indebolimento (debuff)",
+   "categoria_dichiarata": "Indebolimento (debuff)",
+   "sottoclasse": "college of whispers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of whispers: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Lordly Resolve: ['D', 'F']"
+   ]
+  },
+  {
+   "id": "GA40802",
+   "nome": "Circle of Dreams — Indebolimento (debuff)",
+   "categoria_dichiarata": "Indebolimento (debuff)",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Lordly Resolve: ['D', 'F']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA40803",
+   "nome": "Circle of Spores — Indebolimento (debuff)",
+   "categoria_dichiarata": "Indebolimento (debuff)",
+   "sottoclasse": "circle of spores",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "circle of spores: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA23101",
+   "nome": "College of Whispers — Illusionista",
+   "categoria_dichiarata": "Illusionista",
+   "sottoclasse": "college of whispers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of whispers: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Lordly Resolve: ['D', 'F']"
+   ]
+  },
+  {
+   "id": "GA23102",
+   "nome": "Circle of Dreams — Illusionista",
+   "categoria_dichiarata": "Illusionista",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Lordly Resolve: ['D', 'F']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA23103",
+   "nome": "Circle of Spores — Illusionista",
+   "categoria_dichiarata": "Illusionista",
+   "sottoclasse": "circle of spores",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "circle of spores: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA81101",
+   "nome": "College of Whispers — Ammaliatore e manipolatore",
+   "categoria_dichiarata": "Ammaliatore e manipolatore",
+   "sottoclasse": "college of whispers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of whispers: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Lordly Resolve: ['D', 'F']"
+   ]
+  },
+  {
+   "id": "GA81102",
+   "nome": "Circle of Dreams — Ammaliatore e manipolatore",
+   "categoria_dichiarata": "Ammaliatore e manipolatore",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Lordly Resolve: ['D', 'F']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA81103",
+   "nome": "Circle of Spores — Ammaliatore e manipolatore",
+   "categoria_dichiarata": "Ammaliatore e manipolatore",
+   "sottoclasse": "circle of spores",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "circle of spores: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA91601",
+   "nome": "Circle of the Shepherd — Negromante",
+   "categoria_dichiarata": "Negromante",
+   "sottoclasse": "circle of the shepherd",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Adept of the Black Robes: ['D']"
+   ]
+  },
+  {
+   "id": "GA91602",
+   "nome": "Clockwork Sorcery — Negromante",
+   "categoria_dichiarata": "Negromante",
+   "sottoclasse": "clockwork sorcery",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Adept of the Black Robes: ['D']"
+   ]
+  },
+  {
+   "id": "GA91603",
+   "nome": "Conjurer — Negromante",
+   "categoria_dichiarata": "Negromante",
+   "sottoclasse": "conjurer",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Aberrant Dragonmark: ['D']"
+   ]
+  },
+  {
+   "id": "GA58101",
+   "nome": "Way of the Astral Self — Esperto di abilità",
+   "categoria_dichiarata": "Esperto di abilità",
+   "sottoclasse": "way of the astral self",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "way of the astral self: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "GA58102",
+   "nome": "College of Whispers — Esperto di abilità",
+   "categoria_dichiarata": "Esperto di abilità",
+   "sottoclasse": "college of whispers",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of whispers: ['D']",
+    "Symbiotic Being: ['D']",
+    "Boon of Terror: ['D']"
+   ]
+  },
+  {
+   "id": "GA58103",
+   "nome": "College of Creation — Esperto di abilità",
+   "categoria_dichiarata": "Esperto di abilità",
+   "sottoclasse": "college of creation",
+   "assi": [
+    "C",
+    "D"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "college of creation: ['D']",
+    "Symbiotic Being: ['D']",
+    "Creation (inc): ['C']"
+   ]
+  },
+  {
+   "id": "GA28901",
+   "nome": "Circle of Dreams — Esploratore",
+   "categoria_dichiarata": "Esploratore",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA28902",
+   "nome": "Way of the Ascendant Dragon — Esploratore",
+   "categoria_dichiarata": "Esploratore",
+   "sottoclasse": "way of the ascendant dragon",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA28903",
+   "nome": "Path of the World Tree — Esploratore",
+   "categoria_dichiarata": "Esploratore",
+   "sottoclasse": "path of the world tree",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "path of the world tree: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA93101",
+   "nome": "Circle of Dreams — Combattente a cavallo",
+   "categoria_dichiarata": "Combattente a cavallo",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA93102",
+   "nome": "Way of the Ascendant Dragon — Combattente a cavallo",
+   "categoria_dichiarata": "Combattente a cavallo",
+   "sottoclasse": "way of the ascendant dragon",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "GA93103",
+   "nome": "Path of the World Tree — Combattente a cavallo",
+   "categoria_dichiarata": "Combattente a cavallo",
+   "sottoclasse": "path of the world tree",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "path of the world tree: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA43701",
+   "nome": "Armorer — Gish — lama e magia",
+   "categoria_dichiarata": "Gish — lama e magia",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']",
+    "Aberrant Dragonmark: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA43702",
+   "nome": "Oath of the Watchers — Gish — lama e magia",
+   "categoria_dichiarata": "Gish — lama e magia",
+   "sottoclasse": "oath of the watchers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "oath of the watchers: ['D']",
+    "Keenness of the Stone Giant: ['F']",
+    "Mythal Touched: ['D']"
+   ]
+  },
+  {
+   "id": "GA43703",
+   "nome": "Bladesinging — Gish — lama e magia",
+   "categoria_dichiarata": "Gish — lama e magia",
+   "sottoclasse": "bladesinging",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "bladesinging: ['D']"
+   ]
+  },
+  {
+   "id": "GA62901",
+   "nome": "Armorer — Supporto tecnico (utility)",
+   "categoria_dichiarata": "Supporto tecnico (utility)",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']",
+    "Aberrant Dragonmark: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA62902",
+   "nome": "Oath of the Watchers — Supporto tecnico (utility)",
+   "categoria_dichiarata": "Supporto tecnico (utility)",
+   "sottoclasse": "oath of the watchers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "oath of the watchers: ['D']",
+    "Keenness of the Stone Giant: ['F']",
+    "Mythal Touched: ['D']"
+   ]
+  },
+  {
+   "id": "GA62903",
+   "nome": "Bladesinging — Supporto tecnico (utility)",
+   "categoria_dichiarata": "Supporto tecnico (utility)",
+   "sottoclasse": "bladesinging",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "bladesinging: ['D']"
+   ]
+  },
+  {
+   "id": "GA91101",
+   "nome": "Armorer — Specialista multiclasse",
+   "categoria_dichiarata": "Specialista multiclasse",
+   "sottoclasse": "armorer",
+   "assi": [
+    "C",
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": true,
+   "fonti": [
+    "armorer: ['C', 'D']",
+    "Aberrant Dragonmark: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "GA91102",
+   "nome": "Oath of the Watchers — Specialista multiclasse",
+   "categoria_dichiarata": "Specialista multiclasse",
+   "sottoclasse": "oath of the watchers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "oath of the watchers: ['D']",
+    "Keenness of the Stone Giant: ['F']",
+    "Mythal Touched: ['D']"
+   ]
+  },
+  {
+   "id": "GA91103",
+   "nome": "Bladesinging — Specialista multiclasse",
+   "categoria_dichiarata": "Specialista multiclasse",
+   "sottoclasse": "bladesinging",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "bladesinging: ['D']"
+   ]
+  },
+  {
+   "id": "HEA01",
+   "nome": "School of Transmutation — Guaritore",
+   "categoria_dichiarata": "Guaritore",
+   "sottoclasse": "school of transmutation",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "HEA02",
+   "nome": "Grave Domain — Guaritore",
+   "categoria_dichiarata": "Guaritore",
+   "sottoclasse": "grave domain",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "grave domain: ['D']",
+    "Aberrant Dragonmark: ['D']"
+   ]
+  },
+  {
+   "id": "HEA03",
+   "nome": "Order of the Immortal — Guaritore",
+   "categoria_dichiarata": "Guaritore",
+   "sottoclasse": "order of the immortal",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "order of the immortal: ['D']",
+    "Gift of the Metallic Dragon: ['D']"
+   ]
+  },
+  {
+   "id": "SUA01",
+   "nome": "Circle of the Shepherd — Evocatore",
+   "categoria_dichiarata": "Evocatore (summoner)",
+   "sottoclasse": "circle of the shepherd",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Adept of the Black Robes: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "SUA02",
+   "nome": "Clockwork Sorcery — Evocatore",
+   "categoria_dichiarata": "Evocatore (summoner)",
+   "sottoclasse": "clockwork sorcery",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Adept of the Black Robes: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "SUA03",
+   "nome": "Conjurer — Evocatore",
+   "categoria_dichiarata": "Evocatore (summoner)",
+   "sottoclasse": "conjurer",
+   "assi": [
+    "D",
+    "E"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Aberrant Dragonmark: ['D']",
+    "Otherworldly Familiar: ['E']"
+   ]
+  },
+  {
+   "id": "FAA01",
+   "nome": "Way of the Astral Self — Volto sociale",
+   "categoria_dichiarata": "Volto sociale (negoziatore)",
+   "sottoclasse": "way of the astral self",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "way of the astral self: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "FAA02",
+   "nome": "College of Creation — Volto sociale",
+   "categoria_dichiarata": "Volto sociale (negoziatore)",
+   "sottoclasse": "college of creation",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of creation: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "FAA03",
+   "nome": "College of Eloquence — Volto sociale",
+   "categoria_dichiarata": "Volto sociale (negoziatore)",
+   "sottoclasse": "college of eloquence",
+   "assi": [
+    "A",
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of eloquence: ['A', 'D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "DPA01",
+   "nome": "Battle Smith — Danno",
+   "categoria_dichiarata": "DPS — danno a bersaglio singolo",
+   "sottoclasse": "battle smith",
+   "assi": [
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Agent of Order: ['F']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "DPA02",
+   "nome": "Battle Smith — Danno",
+   "categoria_dichiarata": "DPS — danno a bersaglio singolo",
+   "sottoclasse": "battle smith",
+   "assi": [
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Agent of Order: ['F']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "DPA03",
+   "nome": "Way of the Astral Self — Danno",
+   "categoria_dichiarata": "DPS — danno a bersaglio singolo",
+   "sottoclasse": "way of the astral self",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "way of the astral self: ['D']",
+    "Agent of Order: ['F']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "COA01",
+   "nome": "College of Whispers — Controllo",
+   "categoria_dichiarata": "Battlefield Controller",
+   "sottoclasse": "college of whispers",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "college of whispers: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Lordly Resolve: ['D', 'F']"
+   ]
+  },
+  {
+   "id": "COA02",
+   "nome": "Circle of Dreams — Controllo",
+   "categoria_dichiarata": "Battlefield Controller",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Lordly Resolve: ['D', 'F']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "COA03",
+   "nome": "Circle of Spores — Controllo",
+   "categoria_dichiarata": "Battlefield Controller",
+   "sottoclasse": "circle of spores",
+   "assi": [
+    "D"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "circle of spores: ['D']",
+    "Boon of the Night Spirit: ['D']",
+    "Symbiotic Being: ['D']"
+   ]
+  },
+  {
+   "id": "SCA01",
+   "nome": "Circle of Dreams — Esplorazione",
+   "categoria_dichiarata": "Esploratore",
+   "sottoclasse": "circle of dreams",
+   "assi": [
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  },
+  {
+   "id": "SCA02",
+   "nome": "Way of the Ascendant Dragon — Esplorazione",
+   "categoria_dichiarata": "Esploratore",
+   "sottoclasse": "way of the ascendant dragon",
+   "assi": [],
+   "taunter_ammissibile": false,
+   "fonti": []
+  },
+  {
+   "id": "SCA03",
+   "nome": "Path of the World Tree — Esplorazione",
+   "categoria_dichiarata": "Esploratore",
+   "sottoclasse": "path of the world tree",
+   "assi": [
+    "D",
+    "F"
+   ],
+   "taunter_ammissibile": false,
+   "fonti": [
+    "path of the world tree: ['D']",
+    "Keenness of the Stone Giant: ['F']"
+   ]
+  }
+ ]
+}

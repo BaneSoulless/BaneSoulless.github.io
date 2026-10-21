@@ -1,0 +1,123 @@
+{
+ "a_css_inventory": {
+  "index.html": {
+   "kb": 182.4,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "display_grid": 4,
+   "display_flex": 22,
+   "media_queries": 26,
+   "safe_area": 0,
+   "contrast_tokens": 409
+  },
+  "personaggi.html": {
+   "kb": 177.6,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>",
+   "display_grid": 5,
+   "display_flex": 20,
+   "media_queries": 27,
+   "safe_area": 0,
+   "contrast_tokens": 183
+  },
+  "cerca.html": {
+   "kb": 122.9,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>",
+   "display_grid": 3,
+   "display_flex": 24,
+   "media_queries": 26,
+   "safe_area": 0,
+   "contrast_tokens": 177
+  },
+  "risorse.html": {
+   "kb": 440.6,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "display_grid": 1,
+   "display_flex": 22,
+   "media_queries": 25,
+   "safe_area": 0,
+   "contrast_tokens": 144
+  },
+  "tavolo.html": {
+   "kb": 151.9,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>",
+   "display_grid": 4,
+   "display_flex": 23,
+   "media_queries": 27,
+   "safe_area": 0,
+   "contrast_tokens": 165
+  },
+  "stats.html": {
+   "kb": 135.8,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "display_grid": 4,
+   "display_flex": 16,
+   "media_queries": 26,
+   "safe_area": 0,
+   "contrast_tokens": 135
+  },
+  "widgets.html": {
+   "kb": 177.2,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>",
+   "display_grid": 10,
+   "display_flex": 33,
+   "media_queries": 32,
+   "safe_area": 0,
+   "contrast_tokens": 232
+  },
+  "lfg.html": {
+   "kb": 136.5,
+   "viewport_meta": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+   "display_grid": 3,
+   "display_flex": 20,
+   "media_queries": 27,
+   "safe_area": 0,
+   "contrast_tokens": 152
+  }
+ },
+ "b_viewport_plan": {
+  "pages": [
+   "index.html",
+   "personaggi.html",
+   "cerca.html",
+   "risorse.html",
+   "tavolo.html",
+   "stats.html",
+   "widgets.html",
+   "lfg.html"
+  ],
+  "viewports": [
+   [
+    320,
+    480
+   ],
+   [
+    375,
+    667
+   ],
+   [
+    414,
+    896
+   ],
+   [
+    768,
+    1024
+   ],
+   [
+    1024,
+    768
+   ],
+   [
+    1366,
+    768
+   ],
+   [
+    1920,
+    1080
+   ],
+   [
+    3840,
+    2160
+   ]
+  ],
+  "probe": "_scratch/viewport_probe.js (evaluated by the headless browser per viewport)"
+ }
+}

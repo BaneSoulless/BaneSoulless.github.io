@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strumenti del Tavolo — Il Grimorio dei Reami</title>
+<link rel="canonical" href="https://grimorio-dei-reami.serveousercontent.com/v2/tavolo.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Strumenti del Tavolo — Il Grimorio dei Reami">
+<meta property="og:description" content="Dadi, iniziativa, tesori, oracolo sì/no e strumenti da tavolo per D&D, tutto offline.">
+<meta property="og:url" content="https://grimorio-dei-reami.serveousercontent.com/v2/tavolo.html">
+<meta property="og:site_name" content="Il Grimorio dei Reami">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Strumenti del Tavolo — Il Grimorio dei Reami">
+<meta name="twitter:description" content="Dadi, iniziativa, tesori, oracolo sì/no e strumenti da tavolo per D&D, tutto offline.">
+<meta name="description" content="Strumenti da tavolo per D&D: dadi con vantaggio/svantaggio, ordine di iniziativa, tesori casuali, generatore di nomi e PNG, oracolo sì/no, contatore di turni. Tutto offline.">
+<link rel="stylesheet" href="assets/grimorio.css">
+<link rel="stylesheet" href="tavolo-theme.css">
+</head>
+<body>
+  <a class="skip-link" href="#tavolo-app">Vai al contenuto</a>
+
+<header>
+  <a class="brand" href="index.html"><span class="d20">✦</span>Il Grimorio dei Reami</a>
+  <nav aria-label="principale">
+    <a href="index.html">Home</a>
+    <a href="lookup.html">Consultazione</a>
+    <a href="mappa.html">Mappa</a>
+    <a href="tavolo.html" class="on">Strumenti del Tavolo</a>
+    <a href="widgets.html">Widget</a>
+    <a href="personaggi.html">Personaggi</a>
+    <a href="risorse.html">Risorse</a>
+    <a href="stats.html">Statistiche</a>
+    <a href="lfg.html">Trova Gruppo</a>
+    <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+  </nav>
+</header>
+
+<main class="container" id="tavolo-app">
+
+  <div class="cal-hero hero" style="margin-bottom:26px;">
+    <div class="kicker">Strumenti · Offline-first</div>
+    <h1>Strumenti del <em>Tavolo</em>.</h1>
+    <p class="sub">
+      Tutto ciò che serve durante la partita, senza cambiare applicazione: dadi, ordine di
+      iniziativa, tesori tirati sul momento, nomi e PNG improvvisati, oracolo per le decisioni
+      e contatore dei turni. Funziona anche senza rete; l'unica cosa che legge dal sito è
+      l'elenco degli oggetti magici, usato per i tesori.
+    </p>
+  </div>
+
+  <!-- ============ DADI: card protagonista ============ -->
+  <section class="cal-card tv-card" id="tool-dadi">
+    <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᚦ</span>Dadi del destino</h2>
+    <div class="dice-stage">
+      <div class="dice-visual-wrap">
+        <div class="dice-visual" id="dice-visual" aria-hidden="true"><span class="dv-face">20</span></div>
+        <div class="dice-kind" id="dice-kind">d20</div>
+      </div>
+      <div class="dice-main">
+        <div class="dice-grid" id="dice-grid" role="group" aria-label="Selezione del dado"></div>
+        <div class="dice-panel">
+          <div><label class="dl" for="dice-n">Quantità</label><input id="dice-n" type="number" min="1" max="20" value="1"></div>
+          <div><label class="dl" for="dice-mod">Modificatore</label><input id="dice-mod" type="number" min="-10" max="10" value="0"></div>
+          <div><label class="dl" for="dice-mode">Modalità</label><select id="dice-mode"><option value="n">Normale</option><option value="adv">Vantaggio</option><option value="dis">Svantaggio</option></select></div>
+        </div>
+        <button id="dice-roll" class="btn dice-roll-btn">Tira i dadi</button>
+        <div class="dice-out" id="dice-out" aria-live="polite">—</div>
+        <div class="dice-detail" id="dice-detail"></div>
+        <div class="dice-prob" id="dice-prob" aria-live="polite"></div>
+        <div class="dice-log" id="dice-log" aria-label="Cronologia tiri"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INIZIATIVA ============ -->
+  <section class="cal-card tv-card" id="tool-iniziativa">
+    <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᚨ</span>Ordine di iniziativa</h2>
+    <form id="ini-add" class="tv-form">
+      <input id="ini-name" type="text" placeholder="Nome del combattente" aria-label="Nome del combattente" maxlength="40">
+      <input id="ini-mod" type="number" value="0" min="-10" max="15" aria-label="Modificatore di iniziativa" style="max-width:96px;">
+      <button type="submit" class="btn">Aggiungi e tira</button>
+    </form>
+    <div class="tv-chips" id="ini-quick"><button type="button" class="tv-chip" data-preset="Goblin" data-mod="2">Goblin +2</button><button type="button" class="tv-chip" data-preset="Orco" data-mod="2">Orco +2</button><button type="button" class="tv-chip" data-preset="Bandito" data-mod="1">Bandito +1</button><button type="button" class="tv-chip" data-preset="Scheletro" data-mod="0">Scheletro +0</button><button type="button" class="tv-chip" data-preset="Lupo" data-mod="2">Lupo +2</button><button type="button" class="tv-chip" data-preset="Ogre" data-mod="0">Ogre +0</button><button type="button" class="tv-chip" data-preset="Drago" data-mod="5">Drago +5</button><button type="button" class="tv-chip" data-preset="Capo banda" data-mod="3">Capo banda +3</button></div>
+    <ol class="ini-list" id="ini-list"></ol>
+    <div class="tv-actions">
+      <button type="button" id="ini-next" class="btn">Prossimo turno</button>
+      <button type="button" id="ini-rollall" class="btn">Ritira tutto</button>
+      <button type="button" id="ini-reset" class="btn">Azzera</button>
+      <span class="tv-meta" id="ini-round"></span>
+    </div>
+  </section>
+
+  <div class="tv-grid2">
+    <div>
+      <section class="cal-card tv-card" id="tool-incontro">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᛉ</span>Calcolatore di incontro 5e</h2>
+        <p style="color:var(--muted); max-width:78ch; margin-top:0;">
+          Budget XP dell'incontro con le regole <b>2014</b> (soglie + moltiplicatore per numero di
+          mostri) e <b>2024</b> (budget per carattere, niente moltiplicatore). Numeri dalle tabelle
+          ufficiali, non stime.
+        </p>
+        <div class="tv-form" style="display:flex; flex-wrap:wrap; gap:10px; align-items:end;">
+          <label class="dl-wrap" style="display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted);">
+            Personaggi
+            <input id="enc-party" type="number" min="1" max="12" value="4" inputmode="numeric" style="min-width:84px; min-height:40px;">
+          </label>
+          <label class="dl-wrap" style="display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted);">
+            Livello
+            <input id="enc-liv" type="number" min="1" max="20" value="5" inputmode="numeric" style="min-width:84px; min-height:40px;">
+          </label>
+          <label class="dl-wrap" style="display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted);">
+            Mostri
+            <input id="enc-n" type="number" min="1" max="30" value="2" inputmode="numeric" style="min-width:84px; min-height:40px;">
+          </label>
+          <label class="dl-wrap" style="display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted);">
+            CR medio
+            <input id="enc-cr" type="number" min="0" max="30" step="0.5" value="3" inputmode="decimal" style="min-width:84px; min-height:40px;">
+          </label>
+          <label class="dl-wrap" style="display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted);">
+            Regole
+            <select id="enc-ed" style="min-width:96px; min-height:40px;">
+              <option value="2024">2024</option>
+              <option value="2014">2014</option>
+            </select>
+          </label>
+        </div>
+        <div class="dice-out enc-out" id="enc-out" aria-live="polite" style="margin-top:12px;">—</div>
+        <p style="color:var(--muted); font-size:12px; margin:10px 0 0;">
+          Regole 2024: i budget per liv. 2, 4 e 6-20 sono interpolati sui valori pubblicati
+          (liv. 1, 3, 5, 10 — SRD 5.2.1). Dichiarato, non inventato.
+        </p>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-slot">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᛊ</span>Slot d'incantesimo per livello</h2>
+        <p style="color:var(--muted); max-width:78ch; margin-top:0;">Slot per classe incantatrice per livello (recuperi al riposo lungo). Classi con incantesimi "pact" (warlock) hanno slot diversi.</p>
+        <div class="tv-form" style="display:flex; flex-wrap:wrap; gap:10px; align-items:end;">
+          <label style="display:flex; flex-direction:column; gap:4px; font-size:12.5px; color:var(--muted);">Livello lanciatore
+            <select id="slot-liv" style="min-width:96px; min-height:40px;"></select>
+          </label>
+        </div>
+        <div class="slot-row" id="slot-out" aria-live="polite" style="margin-top:12px;">—</div>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-condizioni">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᛝ</span>Condizioni 5e (2024)</h2>
+        <p style="color:var(--muted); max-width:78ch; margin-top:0;">Le 15 condizioni con la regola completa e un segnaposto per chi ha cosa.</p>
+        <div id="cond-lista" style="display:grid; gap:6px;"></div>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-viaggio">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᚱ</span>Viaggi e visibilità</h2>
+        <p style="color:var(--muted); max-width:78ch; margin-top:0;">Velocità a piedi/cavallo per ritmo, e quanto si vede per condizione del cielo (DMG 2024).</p>
+        <div id="viaggio-out"></div>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-crafting">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᚷ</span>Prezzi e crafting di oggetti magici</h2>
+        <p style="color:var(--muted); max-width:78ch; margin-top:0;">Costo d'acquisto e giorni di lavoro per rarità (DMG 2024: costo/10, 25 mo al giorno).</p>
+        <div id="crafting-out"></div>
+      </section>
+    </div>
+
+    <div>
+      <section class="cal-card tv-card" id="tool-tesoro">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᛟ</span>Tesoro sul momento</h2>
+        <div class="tv-form">
+          <label class="dl" for="tre-tier">Fascia</label>
+          <select id="tre-tier">
+            <option value="1-4">livelli 1-4</option>
+            <option value="5-10">livelli 5-10</option>
+            <option value="11-16">livelli 11-16</option>
+            <option value="17+">livelli 17+</option>
+          </select>
+          <button type="button" id="tre-roll" class="btn">Tira il tesoro</button>
+        </div>
+        <div id="tre-out" class="tre-out" aria-live="polite"></div>
+        <p class="tv-meta">Le quantità di monete sono una riduzione pratica per tirare al volo, non le tabelle ufficiali del Manuale del Dungeon Master. L'oggetto magico è estratto dal database del sito.</p>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-nomi">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᚾ</span>Nomi e PNG improvvisati</h2>
+        <div class="tv-form">
+          <label class="dl" for="nom-culture">Cultura del nome</label>
+          <select id="nom-culture"></select>
+          <button type="button" id="nom-roll" class="btn">Genera nomi</button>
+        </div>
+        <div class="tv-form" style="margin-top:10px;">
+          <label class="dl" for="npc-razza">Specie del PNG</label>
+          <select id="npc-razza"><option value="">casuale</option></select>
+          <label class="dl" for="npc-tono">Tono</label>
+          <select id="npc-tono">
+            <option value="qualsiasi">qualsiasi</option>
+            <option value="comune">comune</option>
+            <option value="nobile">nobile</option>
+            <option value="misterioso">misterioso</option>
+          </select>
+          <button type="button" id="npc-roll" class="btn">Genera un PNG</button>
+        </div>
+        <div id="nom-out" class="tv-out" aria-live="polite"></div>
+        <div id="npc-out" class="tv-out npc-out" aria-live="polite"></div>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-oracolo">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᛞ</span>Oracolo del destino</h2>
+        <div class="ora-mode">
+          <button type="button" class="ora-tab on" data-om="syno">Sì / No</button>
+          <button type="button" class="ora-tab" data-om="scelta">Scelta multipla</button>
+          <button type="button" class="ora-tab" data-om="autore">Chi o che cosa?</button>
+        </div>
+        <div class="tv-form ora-form">
+          <input id="ora-q" type="text" placeholder="La domanda che fai al destino" aria-label="Domanda per l'oracolo" maxlength="120">
+          <input id="ora-opt" type="text" placeholder="Opzioni separate da virgola (modalità scelta)" aria-label="Opzioni" maxlength="200" style="display:none">
+        </div>
+        <div class="ora-prob-row" id="ora-prob-row">
+          <label class="dl" for="ora-prob">Probabilità</label>
+          <select id="ora-prob" aria-label="Probabilità dichiarata"></select>
+          <input id="ora-slider" type="range" min="5" max="95" step="5" value="50" aria-label="Probabilità fine" style="display:none">
+          <span class="ora-pct" id="ora-pct">50%</span>
+        </div>
+        <div class="tv-form" style="margin-top:10px;">
+          <button type="button" id="ora-ask" class="btn">Chiedi al destino</button>
+          <label style="display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--muted);">
+            <input type="checkbox" id="ora-pendolo"> Destinoguide (il destino influenza la prossima risposta)
+          </label>
+        </div>
+        <div id="ora-out" class="ora-out" aria-live="polite"></div>
+        <p class="tv-meta">La probabilità la dichiari tu, il tiro è trasparente. Con Destinoguide attiva, ogni risposta sposta la prossima (pendolo narrativo). Le complicazioni escono sui tiri estremi.</p>
+      </section>
+
+      <section class="cal-card tv-card" id="tool-tempo">
+        <h2 class="tv-sec"><span class="tv-rune" aria-hidden="true">ᛏ</span>Turni e tempo</h2>
+        <div class="tv-actions">
+          <span class="tim-out" id="tim-out" aria-live="off">0:00</span>
+          <button type="button" id="tim-start" class="btn">Avvia</button>
+          <button type="button" id="tim-stop" class="btn">Pausa</button>
+          <button type="button" id="tim-reset" class="btn">Azzera</button>
+        </div>
+        <p class="tv-meta">Un minuto di sabbia per il turno: utile per tenere il ritmo quando il tavolo si distrae.</p>
+        <div class="tv-form" style="margin-top:14px;">
+          <span class="tv-out" id="rnd-out2" style="min-width:110px; text-align:center;">Round 0</span>
+          <button type="button" id="rnd-plus" class="btn">+1 Round</button>
+          <button type="button" id="rnd-reset" class="btn">Azzera round</button>
+        </div>
+        <div class="tv-form" style="margin-top:10px;">
+          <input id="eff-nome" type="text" placeholder="Effetto (es. Incastro, Avvelenato)" aria-label="Nome effetto" maxlength="40">
+          <input id="eff-giri" type="number" min="1" max="99" value="2" aria-label="Durata in round" style="max-width:90px;">
+          <button type="button" id="eff-add" class="btn">Traccia</button>
+        </div>
+        <div id="eff-list" class="tv-out" aria-live="polite" style="margin-top:8px;"></div>
+        <p class="tv-meta">Il combattimento vive in ROUND: ogni "+1 Round" scala i countdown degli effetti e toglie gli scaduti.</p>
+      </section>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <b>IL GRIMORIO DEI REAMI</b> — strumenti da tavolo offline-first
+</footer>
+
+<script src="i18n-bi.js"></script>
+<script src="../assets/i18n-auto.js"></script>
+<script>/* Rune per il runtime */
+window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
+window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
+window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
+<script src="assets/grimorio.js"></script>
+<script src="assets/arcana.js"></script>
+<script src="assets/lang-menu.js"></script>
+<script src="assets/collapse.js"></script>
+<script src="assets/wx-app.js"></script>
+<script src="assets/tavolo-app.js"></script>
+<script src="assets/npc-deep.js"></script>
+<script src="assets/strumenti-quick.js"></script>
+<script src="assets/music-player.js"></script>
+<script src="assets/soft-router.js"></script>
+</body>
+</html>

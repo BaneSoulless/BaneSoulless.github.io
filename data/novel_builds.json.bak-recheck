@@ -1,0 +1,1027 @@
+{
+ "meta": {
+  "scopo": "Build inedite create in questa sessione, validate dal solver deterministico delle regole",
+  "novita_misurata_su": 2730,
+  "novita_metodo": "co-occorrenza del nucleo meccanico sui documenti indicizzati (1130 fonti web + 1504 trascritti video)",
+  "regola_novita": "meno di 2 documenti citano il nucleo = inedita",
+  "validazione": "tools/rules_solver.py (multiclasse + prerequisiti + invarianti)",
+  "novita_status": "CONFUTATA_ESTERNAMENTE su 21/21",
+  "causa_radice": "il corpus locale (1.130 fonti web + 1.504 trascritti video) NON conteneva Reddit, GiantITP, D&D Beyond forums ne' YouTube: proprio le piattaforme dove vivono le build. La misura '0 documenti' era quindi un falso negativo sistematico, non una prova di novita.",
+  "cosa_resta_valido": "la LEGALITA (21/21 dal solver, indipendente dalla novita) e le QUANTIFICAZIONI (DPR, EHP, iniziativa, CD lotta) come calcoli riproducibili.",
+  "sensibilita_corpus": {
+   "doc_community_aggiunti": 14,
+   "crescita_corpus": "0,5%",
+   "misure_cambiate": "4/21 (19%)",
+   "build_oltre_soglia": [
+    "B05",
+    "B20",
+    "B21"
+   ],
+   "conclusione": "misurare la novita' su un corpus che esclude le piattaforme della community produce falsi negativi; 0,5% di fonti giuste sposta il 19% delle misure"
+  }
+ },
+ "builds": [
+  {
+   "id": "B01",
+   "categoria": "Scout/stealth",
+   "nome": "Ombra della Selva",
+   "classi": "Rogue 20 (Thief)",
+   "specie": "Elf (linea Wood Elf)",
+   "background": "Criminal",
+   "novita_docs": 0,
+   "nucleo": "wood elf + thief + stealth attack",
+   "piazzamento": "TOP-1 (31 vs podio 22)",
+   "level": 20,
+   "classes": {
+    "Rogue": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 20,
+    "con": 14,
+    "int": 14,
+    "wis": 13,
+    "cha": 10
+   },
+   "race": "Elf",
+   "subrace": "Wood Elf",
+   "feats": [
+    "Alert",
+    "Skulker",
+    "Elven Accuracy",
+    "Wood Elf Magic",
+    "Skill Expert",
+    "Boon of the Night Spirit"
+   ],
+   "features": [],
+   "ac_sources": [
+    "Armor (light)"
+   ],
+   "spellcasting": false,
+   "novita_esterna": "esiste: 'My thoughts on the DND 2024 Wood Elf Rogue' (r/DnD, 2024-09-12)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Rogue": "Thief"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B02",
+   "categoria": "Leader di gruppo",
+   "nome": "Araldo delle Due Voci",
+   "classi": "Paladino 6 / Bardo 14 (College of Glamour)",
+   "specie": "Human",
+   "background": "Noble",
+   "novita_docs": 1,
+   "nucleo": "inspiring leader + mantle of inspiration",
+   "piazzamento": "podio Leader (batte il 5o a 72)",
+   "level": 20,
+   "classes": {
+    "Paladin": 6,
+    "Bard": 14
+   },
+   "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Alert",
+    "Inspiring Leader",
+    "War Caster",
+    "Skill Expert",
+    "Boon of Fate"
+   ],
+   "features": [
+    "Aura of Protection",
+    "Extra Attack",
+    "Bardic Inspiration"
+   ],
+   "ac_sources": [
+    "Armor (medium) + shield"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Paladin + Bard 2024?' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Bardo": "College of Glamour"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 1
+  },
+  {
+   "id": "B03",
+   "categoria": "Tank (EHP per giornata)",
+   "nome": "Il Carapace che Ride",
+   "classi": "Barbaro 20 (Wild Heart - Bear)",
+   "specie": "Thri-kreen",
+   "background": "Soldier",
+   "novita_docs": 0,
+   "nucleo": "chameleon carapace + barbarian",
+   "piazzamento": "EHP ~810 nel podio Tank",
+   "level": 20,
+   "classes": {
+    "Barbarian": 20
+   },
+   "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 18,
+    "int": 8,
+    "wis": 10,
+    "cha": 8
+   },
+   "race": "Thri-kreen",
+   "subrace": "",
+   "feats": [
+    "Savage Attacker",
+    "Tough",
+    "Crusher",
+    "Boon of Fortitude"
+   ],
+   "features": [
+    "Rage",
+    "Extra Attack",
+    "Unarmored Defense"
+   ],
+   "ac_sources": [
+    "Unarmored Defense (Barbarian)"
+   ],
+   "spellcasting": false,
+   "novita_esterna": "esiste: 'Thri-Kreen Rogue Tank' (r/3d6, 2022) — 'centers around maximizing AC through the combination of Chameleon Carapace'",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Barbaro": "Wild Heart - Bear"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B04",
+   "categoria": "Grappler/lockdown",
+   "nome": "La Mano che non Molla",
+   "classi": "Monaco 20 (Warrior of the Open Hand)",
+   "specie": "Plasmoid",
+   "background": "Sailor",
+   "novita_docs": 1,
+   "nucleo": "plasmoid + grapple + squeeze (0 doc per plasmoid+grappler feat)",
+   "piazzamento": "CD lotta +17 con vantaggio, nel podio Grappler",
+   "level": 20,
+   "classes": {
+    "Monk": 20
+   },
+   "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 14,
+    "int": 8,
+    "wis": 12,
+    "cha": 8
+   },
+   "race": "Plasmoid",
+   "subrace": "",
+   "feats": [
+    "Tavern Brawler",
+    "Grappler",
+    "Skill Expert",
+    "Crusher",
+    "Boon of Irresistible Offense"
+   ],
+   "features": [
+    "Extra Attack",
+    "Flurry of Blows",
+    "Unarmored Defense"
+   ],
+   "ac_sources": [
+    "Unarmored Defense (Monk)"
+   ],
+   "spellcasting": false,
+   "novita_esterna": "esiste: 'The Way of the Ooze (Plasmoid Grappler Build)' (r/3d6) + video 'Plasmoid Monk Grapple'",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Monaco": "Warrior of the Open Hand"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B05",
+   "categoria": "Reattivita/velocita",
+   "nome": "Il Primo Sangue",
+   "classi": "Rogue 20 (Assassin)",
+   "specie": "Harengon",
+   "background": "Criminal",
+   "novita_docs": 1,
+   "nucleo": "hare-trigger + alert feat",
+   "piazzamento": "iniziativa +17 = top-1 reattivita",
+   "level": 20,
+   "classes": {
+    "Rogue": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 20,
+    "con": 14,
+    "int": 10,
+    "wis": 13,
+    "cha": 10
+   },
+   "race": "Harengon",
+   "subrace": "",
+   "feats": [
+    "Alert",
+    "Skulker",
+    "Skill Expert",
+    "Speedy",
+    "Boon of Speed"
+   ],
+   "features": [],
+   "ac_sources": [
+    "Armor (light)"
+   ],
+   "spellcasting": false,
+   "novita_esterna": "esiste: 'Harengon Assassin Rogues' (r/dndnext, 2022-06-28) — stessa meccanica di iniziativa",
+   "novita_status": "CONFUTATA_ESTERNAMENTE",
+   "subclass_by_class": {
+    "Rogue": "Assassin"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 2
+  },
+  {
+   "id": "B06",
+   "categoria": "Support (buff di gruppo)",
+   "nome": "Il Congegno che Corregge",
+   "classi": "Bardo 20 (College of Lore)",
+   "specie": "Autognome",
+   "background": "Sage",
+   "novita_docs": 1,
+   "nucleo": "built for success + bardic inspiration",
+   "piazzamento": "podio Support potenziato (3 correttori di dado)",
+   "level": 20,
+   "classes": {
+    "Bard": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 12,
+    "cha": 20
+   },
+   "race": "Autognome",
+   "subrace": "",
+   "feats": [
+    "Magic Initiate",
+    "Healer",
+    "Skill Expert",
+    "Inspiring Leader",
+    "Boon of Fate"
+   ],
+   "features": [
+    "Bardic Inspiration",
+    "Cutting Words"
+   ],
+   "ac_sources": [
+    "Armor (light)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Need help building an Autognome Bard' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Bardo": "College of Lore"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 1
+  },
+  {
+   "id": "B07",
+   "categoria": "Battlefield controller",
+   "nome": "Il Terrore che non Corre",
+   "classi": "Paladino 7 (Oath of Conquest) / Warlock 1 / Bardo 12",
+   "specie": "Human",
+   "background": "Noble",
+   "novita_docs": 1,
+   "nucleo": "stunning strike + aura of conquest",
+   "piazzamento": "lockdown senza TS ripetuto, fascia alta del podio Controller",
+   "level": 20,
+   "classes": {
+    "Paladin": 7,
+    "Warlock": 1,
+    "Bard": 12
+   },
+   "abilities": {
+    "str": 13,
+    "dex": 10,
+    "con": 14,
+    "int": 8,
+    "wis": 10,
+    "cha": 20
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Alert",
+    "War Caster",
+    "Inspiring Leader",
+    "Boon of Fate"
+   ],
+   "features": [
+    "Aura of Protection",
+    "Extra Attack",
+    "Aura of Conquest",
+    "Conquering Presence"
+   ],
+   "ac_sources": [
+    "Armor (medium) + shield"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: discussione su Aura of Conquest / lockdown (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Paladino": "Oath of Conquest"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 1
+  },
+  {
+   "id": "B08",
+   "categoria": "Survivor (senza risorse)",
+   "nome": "Colui che non Cade",
+   "classi": "Monaco 11 (Way of the Long Death) / Barbaro 2 / Chierico 7",
+   "specie": "Human",
+   "background": "Soldier",
+   "novita_docs": 0,
+   "nucleo": "animate dead + mastery of death",
+   "piazzamento": "sopravvivenza personale, fascia alta del podio Survivor",
+   "level": 20,
+   "classes": {
+    "Monk": 11,
+    "Barbarian": 2,
+    "Cleric": 7
+   },
+   "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 14,
+    "int": 8,
+    "wis": 16,
+    "cha": 8
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Tough",
+    "Crusher",
+    "Boon of Fortitude"
+   ],
+   "features": [
+    "Extra Attack",
+    "Rage",
+    "Unarmored Defense",
+    "Mastery of Death",
+    "Touch of Death"
+   ],
+   "ac_sources": [
+    "Unarmored Defense (Monk)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Way of the Long Death ... is broken' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Monaco": "Way of the Long Death"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B09",
+   "categoria": "Face (sociale)",
+   "nome": "La Voce che Convince",
+   "classi": "Bardo 20 (College of Eloquence)",
+   "specie": "Human",
+   "background": "Charlatan",
+   "novita_docs": 0,
+   "nucleo": "ever hospitable + persuasion",
+   "piazzamento": "pavimento Persuasion 27-28, top del podio Face",
+   "level": 20,
+   "classes": {
+    "Bard": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Skilled",
+    "Mark of Hospitality",
+    "Skill Expert",
+    "Inspiring Leader",
+    "Boon of Skill"
+   ],
+   "features": [
+    "Bardic Inspiration",
+    "Silver Tongue",
+    "Unsettling Words"
+   ],
+   "ac_sources": [
+    "Armor (light)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Eloquence Bard persuasion DCs' (r/DMAcademy)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Bardo": "College of Eloquence"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B10",
+   "categoria": "Danno (DPR) - NON top-5",
+   "nome": "Paladino Zhentarim",
+   "classi": "Paladino 20",
+   "specie": "Human",
+   "background": "Zhentarim Mercenary",
+   "novita_docs": 3,
+   "nucleo": "zhentarim tactics + divine smite",
+   "piazzamento": "NON nel top-5 DPR (81,4 vs soglia 140,7) - dichiarato",
+   "level": 20,
+   "classes": {
+    "Paladin": 20
+   },
+   "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 14,
+    "int": 8,
+    "wis": 12,
+    "cha": 18
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Zhentarim Ruffian",
+    "Zhentarim Tactics",
+    "Great Weapon Master",
+    "Boon of Irresistible Offense"
+   ],
+   "features": [
+    "Aura of Protection",
+    "Extra Attack",
+    "Divine Smite",
+    "Radiant Strikes"
+   ],
+   "ac_sources": [
+    "Armor (heavy)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Zhentarim Tactics + Divine Smite' 3 doc nel corpus",
+   "novita_status": "CONFUTATA_ESTERNAMENTE",
+   "subclass_by_class": {},
+   "novita_originaria": 3,
+   "novita_ricorpus": 3
+  },
+  {
+   "id": "B11",
+   "categoria": "Taunter (aggro forzata)",
+   "nome": "Il Duellante che non Ti Molla",
+   "classi": "Rogue 20 (Swashbuckler [XGE])",
+   "specie": "Human",
+   "background": "Charlatan",
+   "novita_docs": 1,
+   "nucleo": "compelled duel + panache",
+   "piazzamento": "podio Taunter (Panache = taunt con TS)",
+   "level": 20,
+   "classes": {
+    "Rogue": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 20,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 16
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Skilled",
+    "Alert",
+    "Skill Expert",
+    "Resilient",
+    "Boon of Skill"
+   ],
+   "features": [
+    "Panache",
+    "Sneak Attack",
+    "Cunning Action"
+   ],
+   "ac_sources": [
+    "Armor (light)"
+   ],
+   "spellcasting": false,
+   "novita_esterna": "esiste: guida rpgbot Swashbuckler + 'Remastered Swashbuckler for 2024' (r/DnDHomebrew)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Rogue": "Swashbuckler [XGE]"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 1
+  },
+  {
+   "id": "B12",
+   "categoria": "Healer (PF ripristinati)",
+   "nome": "Il Sogno che Cura",
+   "classi": "Druid 20 (Circle of Dreams [XGE])",
+   "specie": "Human",
+   "background": "Hermit",
+   "novita_docs": 0,
+   "nucleo": "mass cure wounds + balm of the summer court",
+   "piazzamento": "podio Healer (pozza di d6 senza slot)",
+   "level": 20,
+   "classes": {
+    "Druid": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 20,
+    "cha": 10
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Healer",
+    "Inspiring Leader",
+    "Resilient",
+    "Boon of Fate"
+   ],
+   "features": [
+    "Balm of the Summer Court",
+    "Wild Shape",
+    "Mass Cure Wounds"
+   ],
+   "ac_sources": [
+    "Armor (medium) + shield"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Best way to optimise circle of dreams druid?' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Druid": "Circle of Dreams [XGE]"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B13",
+   "categoria": "Summoner (corpi controllati)",
+   "nome": "Il Cavaliere del Drago",
+   "classi": "Ranger 20 (Drakewarden [FTD])",
+   "specie": "Human",
+   "background": "Soldier",
+   "novita_docs": 0,
+   "nucleo": "animate dead + drakewarden",
+   "piazzamento": "podio Summoner (drago compagno che scala)",
+   "level": 20,
+   "classes": {
+    "Ranger": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 20,
+    "con": 16,
+    "int": 10,
+    "wis": 16,
+    "cha": 10
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Savage Attacker",
+    "Sharpshooter",
+    "Tough",
+    "Boon of Irresistible Offense"
+   ],
+   "features": [
+    "Extra Attack",
+    "Drakewarden Companion",
+    "Favored Foe"
+   ],
+   "ac_sources": [
+    "Armor (medium) + shield"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: discussione Drakewarden summoner (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Ranger": "Drakewarden [FTD]"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B14",
+   "categoria": "Piu distruttivo AoE",
+   "nome": "L'Incendio che Cammina",
+   "classi": "Druid 20 (Circle of Wildfire [TCE])",
+   "specie": "Human",
+   "background": "Hermit",
+   "novita_docs": 0,
+   "nucleo": "meteor swarm + wildfire spirit",
+   "piazzamento": "podio AoE (spirito che fa danno in area ogni round)",
+   "level": 20,
+   "classes": {
+    "Druid": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 20,
+    "cha": 10
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Elemental Adept",
+    "Resilient",
+    "Inspiring Leader",
+    "Boon of Fate"
+   ],
+   "features": [
+    "Wildfire Spirit",
+    "Enhanced Bond",
+    "Wild Shape"
+   ],
+   "ac_sources": [
+    "Armor (medium) + shield"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Wildfire Druid is the Best Damage Dealer in the Game?' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Druid": "Circle of Wildfire [TCE]"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B15",
+   "categoria": "Anti-caster",
+   "nome": "Il Sigillo di Drow",
+   "classi": "Wizard 20 (Abjurer)",
+   "specie": "Elf (linea Drow)",
+   "background": "Sage",
+   "novita_docs": 0,
+   "nucleo": "counterspell + drow high magic",
+   "piazzamento": "podio Anti-caster (4 strumenti anti-magia)",
+   "level": 20,
+   "classes": {
+    "Wizard": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 10,
+    "cha": 10
+   },
+   "race": "Elf",
+   "subrace": "Drow",
+   "feats": [
+    "Magic Initiate",
+    "Drow High Magic",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "features": [
+    "Counterspell",
+    "Dispel Magic",
+    "Ritual Adept"
+   ],
+   "ac_sources": [
+    "Mage Armor"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'I want to play a mage hunter with a Wizard as base class' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Wizard": "Abjurer"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B16",
+   "categoria": "Ritual / utility caster",
+   "nome": "Il Libro che Cambia Pelle",
+   "classi": "Wizard 20 (Order of Scribes [TCE])",
+   "specie": "Human",
+   "background": "Sage",
+   "novita_docs": 0,
+   "nucleo": "ritual adept + awakened spellbook",
+   "piazzamento": "podio Ritual (rituali + cambio del tipo di danno)",
+   "level": 20,
+   "classes": {
+    "Wizard": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 10,
+    "cha": 10
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Magic Initiate",
+    "Ritual Caster",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "features": [
+    "Ritual Adept",
+    "Awakened Spellbook",
+    "Manifest Mind"
+   ],
+   "ac_sources": [
+    "Mage Armor"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Showcasing a build for every subclass: Order of Scribes Wizard' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Wizard": "Order of Scribes [TCE]"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B17",
+   "categoria": "Efficienza risorse (danno/slot)",
+   "nome": "Il Fuoco che non si Resiste",
+   "classi": "Wizard 20 (Order of Scribes [TCE])",
+   "specie": "Human",
+   "background": "Sage",
+   "novita_docs": 0,
+   "nucleo": "conjure minor elementals + awakened spellbook",
+   "piazzamento": "podio Efficienza (un solo slot, CME non resistito)",
+   "level": 20,
+   "classes": {
+    "Wizard": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 10,
+    "cha": 10
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Magic Initiate",
+    "Spell Sniper",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "features": [
+    "Ritual Adept",
+    "Awakened Spellbook"
+   ],
+   "ac_sources": [
+    "Mage Armor"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: analisi 'absurdity of the new Conjure Minor Elementals' (r/dndnext)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Wizard": "Order of Scribes [TCE]"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B18",
+   "categoria": "Danno (DPR sostenuto)",
+   "nome": "Il Gigante che Lancia Raggi",
+   "classi": "Fighter 3 (Rune Knight [TCE]) / Wizard 17",
+   "specie": "Goliath",
+   "background": "Soldier",
+   "novita_docs": 0,
+   "nucleo": "conjure minor elementals + giant's might",
+   "piazzamento": "podio DPR (CME + +1d6 per colpo + taglia Grande)",
+   "level": 20,
+   "classes": {
+    "Fighter": 3,
+    "Wizard": 17
+   },
+   "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 10,
+    "cha": 10
+   },
+   "race": "Goliath",
+   "subrace": "",
+   "feats": [
+    "Savage Attacker",
+    "Great Weapon Master",
+    "War Caster",
+    "Spell Sniper",
+    "Boon of Spell Recall"
+   ],
+   "features": [
+    "Giant's Might",
+    "Action Surge",
+    "Extra Attack",
+    "Ritual Adept"
+   ],
+   "ac_sources": [
+    "Armor (heavy)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Rune Knight/Warrior of the Elements multiclass' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Fighter": "Rune Knight [TCE]"
+   },
+   "novita_originaria": 0,
+   "novita_ricorpus": 0
+  },
+  {
+   "id": "B19",
+   "categoria": "Skill monkey",
+   "nome": "L'Occhio che Deduce",
+   "classi": "Rogue 20 (Scout [XGE])",
+   "specie": "Human",
+   "background": "Sage",
+   "novita_docs": 1,
+   "nucleo": "deductive intuition + investigation",
+   "piazzamento": "podio Skill monkey (6 expertise vs 4 del podio)",
+   "level": 20,
+   "classes": {
+    "Rogue": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 20,
+    "con": 14,
+    "int": 16,
+    "wis": 14,
+    "cha": 10
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Mark of Detection",
+    "Skill Expert",
+    "Alert",
+    "Resilient",
+    "Boon of Skill"
+   ],
+   "features": [
+    "Survivalist",
+    "Expertise",
+    "Reliable Talent",
+    "Deductive Intuition"
+   ],
+   "ac_sources": [
+    "Armor (light)"
+   ],
+   "spellcasting": false,
+   "novita_esterna": "esiste: discussione Scout 'Survivalist' (r/3d6)",
+   "novita_status": "SUPERATA_DA_1_DOC_COMMUNITY",
+   "subclass_by_class": {
+    "Rogue": "Scout [XGE]"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 1
+  },
+  {
+   "id": "B20",
+   "categoria": "Piu mobilita (tattica)",
+   "nome": "Il Passo di Fey",
+   "classi": "Wizard 20 (Bladesinger)",
+   "specie": "Elf (linea High Elf)",
+   "background": "Sage",
+   "novita_docs": 1,
+   "nucleo": "misty step + fey teleportation",
+   "piazzamento": "podio Mobilita (3 fonti di teletrasporto)",
+   "level": 20,
+   "classes": {
+    "Wizard": 20
+   },
+   "abilities": {
+    "str": 8,
+    "dex": 20,
+    "con": 14,
+    "int": 20,
+    "wis": 10,
+    "cha": 10
+   },
+   "race": "Elf",
+   "subrace": "High Elf",
+   "feats": [
+    "Fey Teleportation",
+    "Skill Expert",
+    "War Caster",
+    "Resilient",
+    "Boon of Dimensional Travel"
+   ],
+   "features": [
+    "Bladesong",
+    "Ritual Adept",
+    "Misty Step"
+   ],
+   "ac_sources": [
+    "Bladesong (Int to AC)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'Misty step misty step everywhere' (r/3d6)",
+   "novita_status": "CONFUTATA_ESTERNAMENTE",
+   "subclass_by_class": {
+    "Wizard": "Bladesinger"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 2
+  },
+  {
+   "id": "B21",
+   "categoria": "One-shotter (colpo singolo)",
+   "nome": "Il Critico dell'Alleanza",
+   "classi": "Paladin 20 (Oath of Vengeance)",
+   "specie": "Human",
+   "background": "Soldier",
+   "novita_docs": 1,
+   "nucleo": "inspiring strike + critical hit",
+   "piazzamento": "podio One-shotter (il critico e' la meccanica del colpo singolo)",
+   "level": 20,
+   "classes": {
+    "Paladin": 20
+   },
+   "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "race": "Human",
+   "subrace": "",
+   "feats": [
+    "Savage Attacker",
+    "Lords' Alliance Agent",
+    "Great Weapon Master",
+    "Resilient",
+    "Boon of Irresistible Offense"
+   ],
+   "features": [
+    "Divine Smite",
+    "Extra Attack",
+    "Radiant Strikes",
+    "Vow of Enmity"
+   ],
+   "ac_sources": [
+    "Armor (heavy)"
+   ],
+   "spellcasting": true,
+   "novita_esterna": "esiste: 'This build might be truly broken. Maybe.' (fonte con Lords' Alliance Agent)",
+   "novita_status": "CONFUTATA_ESTERNAMENTE",
+   "subclass_by_class": {
+    "Paladin": "Oath of Vengeance"
+   },
+   "novita_originaria": 1,
+   "novita_ricorpus": 2
+  }
+ ]
+}

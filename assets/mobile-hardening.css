@@ -1,0 +1,148 @@
+/* ==========================================================================
+   mobile-hardening.css — Fix overflow orizzontale su viewport strette.
+   Causa radice diagnosticata a 375px:
+     - body e' `display:flex; flex-direction:column`: i wrapper di pagina che non
+       hanno `width:100%` (es. .lookup-app) si dimensionano a max-content e
+       sfondano il viewport. Va forzato width:100% + min-width:0 per permettere
+       ai figli di restringersi.
+     - .nav-wrap ha height:64px fissa e .nav-links non va a capo -> la nav
+       (409px) deborda su tutte le pagine.
+     - le tabelle larghe (.audit-table, .comparison-table, .class-table) non
+       hanno scroll orizzontale su mobile.
+   Inlinato in SHARED_CSS (build_site.py). !important necessario perche' il CSS
+   specifico di pagina viene emesso DOPO SHARED_CSS nello stesso <style>.
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* 1. wrapper di pagina: mai max-content */
+  .lookup-app,
+  .cal-app,
+  .container,
+  main,
+  #app-root {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  .lookup-app,
+  .cal-app {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  .lookup-hero,
+  .card,
+  .stat-bezel,
+  .search-bezel,
+  .chip-row,
+  .result-list,
+  .result-meta,
+  .card-grid,
+  .stats-bar,
+  .wx-grid,
+  .wx-live-grid,
+  .dice-panel,
+  figure {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* 2. navigazione: va a capo invece di sfondare */
+  .nav-wrap {
+    height: auto !important;
+    min-height: 64px;
+    flex-wrap: wrap !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    row-gap: 8px;
+  }
+  .nav-links {
+    flex-wrap: wrap !important;
+    row-gap: 6px;
+    min-width: 0 !important;
+  }
+  .nav-links a {
+    padding: 7px 11px !important;
+    font-size: 13px !important;
+  }
+  .brand { min-width: 0 !important; }
+  .brand span { font-size: 14px !important; }
+
+  /* 3. tabelle larghe: scroll interno, non sfondano la pagina */
+  table,
+  .audit-table,
+  .comparison-table,
+  .class-table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* 4. media e contenitori generici */
+  img,
+  svg,
+  video,
+  iframe {
+    max-width: 100% !important;
+    height: auto;
+  }
+  pre,
+  code {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  /* 5. tour introduttivo su schermo stretto */
+  .tour-overlay { padding: 12px !important; }
+  .tour-card { max-width: 100% !important; }
+}
+
+/* 6. righe di filtro (input + select con etichette lunghe) su mobile:
+   vanno impilate, altrimenti il select non si restringe sotto il testo
+   dell'opzione piu' lunga e sfonda la pagina. */
+@media (max-width: 767px) {
+  .search-row,
+  .controls-bar .search-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+  .search-row > *,
+  .filters-row > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  select,
+  input[type="search"],
+  input[type="text"],
+  input[type="number"] {
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+  .filters-row { width: 100% !important; min-width: 0 !important; }
+}
+
+/* 7. griglie con minimo rigido (.card-grid 320px, .chart-grid 360px, .module-grid 280px):
+   su schermi stretti la colonna non puo' restringersi sotto il minimo e sfonda la
+   pagina. Si forza colonna singola sotto 768px e l'idioma minmax(min(100%, Xpx), 1fr)
+   sotto 420px, che non puo' mai eccedere il contenitore. */
+@media (max-width: 767px) {
+  .card-grid,
+  .chart-grid,
+  .module-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 420px) {
+  .card-grid,
+  .chart-grid,
+  .module-grid,
+  .wx-grid,
+  .stat-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)) !important;
+  }
+}

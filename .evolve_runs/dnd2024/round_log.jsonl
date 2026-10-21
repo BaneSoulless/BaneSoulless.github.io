@@ -1,0 +1,6 @@
+{"timestamp": "2026-10-05T14:36:00.618547", "event": "db_record", "payload": {"node_id": 0, "name": "baseline", "score": 95.637, "step_name": "baseline"}}
+{"timestamp": "2026-10-05T14:37:41.103170", "event": "db_sample", "payload": {"n": 3, "algorithm": "ucb1"}}
+{"timestamp": "2026-10-05T14:41:49.794986", "event": "db_record", "payload": {"node_id": 1, "name": "axes_def-su-disco", "score": 95.637, "step_name": "round-1"}}
+{"timestamp": "2026-10-05T14:44:37.065457", "event": "db_record", "payload": {"node_id": 2, "name": "identita-stop", "score": 95.637, "step_name": "round-2"}}
+{"timestamp": "2026-10-05T14:45:46.391402", "event": "db_record", "payload": {"node_id": 3, "name": "delta-su-due-metriche", "score": 95.637, "step_name": "round-3"}}
+{"timestamp": "2026-10-05T14:45:46.606773", "event": "db_sample", "payload": {"n": 3, "algorithm": "ucb1"}}

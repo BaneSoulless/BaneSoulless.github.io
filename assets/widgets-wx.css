@@ -1,0 +1,118 @@
+/* ==========================================================================
+   widgets-wx.css — Meteo dei Signori del Tempo + Dadi (Faerûn Tools)
+   Inlinato in widgets.html da build_site.py/build_widgets().
+   ========================================================================== */
+.wx-now {
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+}
+.wx-head { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.wx-temp {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 40px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.wx-desc { color: var(--accent); font-weight: 700; font-size: 15px; }
+.wx-narr {
+  font-size: 13px;
+  color: var(--fg-muted);
+  line-height: 1.6;
+  margin-top: 8px;
+  font-style: italic;
+}
+.wx-meta {
+  font-size: 12px;
+  color: var(--fg-dim);
+  font-variant-numeric: tabular-nums;
+}
+.wx-live-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+.wx-day {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.wx-day:hover { border-color: var(--border-hover); background: rgba(255, 255, 255, 0.07); }
+.wx-day.act { border-color: var(--accent); background: var(--accent-glow); }
+.wx-day .wd-name {
+  font-size: 11px;
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.wx-day .wd-ico { font-size: 26px; margin: 6px 0; line-height: 1.2; }
+.wx-day .wd-t {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.wx-day .wd-sub { font-size: 11px; color: var(--fg-dim); margin-top: 2px; }
+.wx-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 14px; }
+.wx-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--fg-muted);
+}
+.wx-badge.off { border-color: rgba(201, 138, 138, 0.5); color: var(--danger); }
+
+/* Dadi */
+.dice-grid { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+.dice-btn { min-height: 40px; min-width: 54px; padding: 8px 12px; }
+.dice-btn.act { border-color: var(--accent); background: var(--accent-glow); color: var(--fg); }
+.dice-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 16px;
+}
+label.dl { font-size: 12px; color: var(--fg-muted); display: block; margin-bottom: 4px; }
+.dice-out {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 46px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  line-height: 1;
+  transition: transform 0.16s var(--ease-spring, ease-out);
+}
+.dice-out.pop { transform: scale(1.14); }
+.dice-detail { font-size: 13px; color: var(--fg-muted); margin-top: 10px; min-height: 20px; }
+.dice-log { font-size: 12px; color: var(--fg-dim); margin-top: 12px; }
+.dice-log div { padding: 3px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.04); font-variant-numeric: tabular-nums; }
+.dice-log .crit { color: var(--success); font-weight: 700; }
+.dice-log .fail { color: var(--danger); font-weight: 700; }
+
+/* Glassmorphism coerente col resto del sito */
+@supports (backdrop-filter: blur(1px)) {
+  .wx-now, .wx-day {
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    background: rgba(20, 22, 26, 0.6);
+  }
+}
+
+@media (max-width: 767px) {
+  .cal-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .wx-temp { font-size: 32px; }
+  .dice-out { font-size: 38px; }
+  .wx-live-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dice-out, .wx-day { transition: none; }
+}

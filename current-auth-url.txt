@@ -1,0 +1,8 @@
+URL di autorizzazione VIVO — generato 2026-10-02 16:22:54
+Apri questo indirizzo, accedi (Google/GitHub/email), premi Authorize:
+
+https://dash.cloudflare.com/argotunnel?aud=&callback=https%3A%2F%2Flogin.cloudflareaccess.org%2FhjQfCw_bvUx1FqVvCGRHB9KZdYV1YfCEogqj4qXUMzU%3D
+
+Dopo l'autorizzazione il tunnel con nome viene creato da solo e l'indirizzo
+FISSO e' https://<id-del-tunnel>.cfargotunnel.com — dedicato a questo sito,
+gratuito, senza dominio da comprare e senza toccare il sito su Wix.

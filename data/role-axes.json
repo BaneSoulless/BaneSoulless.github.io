@@ -1,0 +1,2100 @@
+{
+ "nota": "Assi di ruolo misurati sul testo reale da TRE contenitori (sottoclassi, talenti, incantesimi). Ogni ruolo ha una regola di ammissione: contiene chi copre il ruolo, non chi lo sfiora.",
+ "ruoli": {
+  "healer": {
+   "nome": "Guaritore",
+   "assi": {
+    "H1 cura diretta": "H1 cura diretta",
+    "H2 prevenzione": "H2 prevenzione",
+    "H3 rianimazione": "H3 rianimazione",
+    "H4 condizioni": "H4 condizioni",
+    "H5 economia": "H5 economia"
+   },
+   "regola": "almeno un asse fra prevenzione (H2), rianimazione (H3) o rimozione di condizioni (H4): la cura grezza da sola e' la versione debole",
+   "sottoclassi": {
+    "con_assi": 94,
+    "ammissibili": 27,
+    "migliori": [
+     {
+      "nome": "School of Transmutation",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "H1",
+       "H2",
+       "H3",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Grave Domain",
+      "s": "RHW",
+      "manuale": "Ravenloft: The Horrors Within",
+      "assi": [
+       "H1",
+       "H3",
+       "H5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Order of the Immortal",
+      "s": "UATheMysticClass",
+      "manuale": "Unearthed Arcana: The Mystic Class",
+      "assi": [
+       "H1",
+       "H2",
+       "H5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Shadow Magic",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "H1",
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Transmuter",
+      "s": "AU",
+      "manuale": "Arcana Unleashed",
+      "assi": [
+       "H1",
+       "H3",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Vestige Patron",
+      "s": "AU",
+      "manuale": "Arcana Unleashed",
+      "assi": [
+       "H1",
+       "H2",
+       "H3"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Alchemist",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Battle Smith",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "H1",
+       "H3"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Celestial Patron",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Circle of the Shepherd",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Drakewarden",
+      "s": "FTD",
+      "manuale": "Fizban's Treasury of Dragons",
+      "assi": [
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Echo Knight",
+      "s": "EGW",
+      "manuale": "Explorer's Guide to Wildemount",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Grave Domain",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "H1",
+       "H5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Life Domain",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Life Domain",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Lunar Sorcery",
+      "s": "DSotDQ",
+      "manuale": "Dragonlance: Shadow of the Dragon Queen",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Oath of Redemption",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Order of the Wu Jen",
+      "s": "UATheMysticClass",
+      "manuale": "Unearthed Arcana: The Mystic Class",
+      "assi": [
+       "H2",
+       "H5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Path of the Battlerager",
+      "s": "SCAG",
+      "manuale": "Sword Coast Adventurer's Guide",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "The Celestial",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     }
+    ]
+   },
+   "talenti": {
+    "con_assi": 64,
+    "ammissibili": 19,
+    "migliori": [
+     {
+      "nome": "Abjuration Adept",
+      "s": "AU",
+      "assi": [
+       "H1",
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Chef",
+      "s": "TCE",
+      "assi": [
+       "H1",
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Chef",
+      "s": "XPHB",
+      "assi": [
+       "H1",
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Aberrant Dragonmark",
+      "s": "EFA",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Aberrant Dragonmark",
+      "s": "ERLW",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Arcane Safeguard",
+      "s": "AU",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Boon of Bountiful Health",
+      "s": "FRHoF",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Boon of Fluid Forms",
+      "s": "FRHoF",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Gift of the Metallic Dragon",
+      "s": "FTD",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Greater Aberrant Mark",
+      "s": "EFA",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Greater Mark of Healing",
+      "s": "EFA",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Greater Mark of Hospitality",
+      "s": "EFA",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Healer",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H3"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Inspiring Leader",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Inspiring Leader",
+      "s": "XPHB",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     }
+    ]
+   },
+   "incantesimi": {
+    "con_assi": 182,
+    "ammissibili": 19,
+    "migliori": [
+     {
+      "nome": "Antipathy/Sympathy",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Aura of Life",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Cure Wounds",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Cure Wounds",
+      "s": "XPHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Hallow",
+      "s": "PHB",
+      "assi": [
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Heroism",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Mass Cure Wounds",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Mass Cure Wounds",
+      "s": "XPHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Mass Heal",
+      "s": "PHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Mass Heal",
+      "s": "XPHB",
+      "assi": [
+       "H1",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Mass Polymorph",
+      "s": "XGE",
+      "assi": [
+       "H1",
+       "H2"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Raise Dead",
+      "s": "PHB",
+      "assi": [
+       "H3",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Raise Dead",
+      "s": "XPHB",
+      "assi": [
+       "H3",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Resurrection",
+      "s": "PHB",
+      "assi": [
+       "H3",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     },
+     {
+      "nome": "Shadow of Moil",
+      "s": "XGE",
+      "assi": [
+       "H2",
+       "H4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno due fra H1, H2, H3, H4, H5"
+     }
+    ]
+   }
+  },
+  "summoner": {
+   "nome": "Evocatore",
+   "assi": {
+    "S1 evocazione": "S1 evocazione",
+    "S2 comando": "S2 comando",
+    "S3 potenziamento": "S3 potenziamento",
+    "S4 quantita": "S4 quantita",
+    "S5 persistenza": "S5 persistenza"
+   },
+   "regola": "evocazione (S1) piu' almeno un asse fra comando (S2), potenziamento (S3) o persistenza (S5): un summon che costa l'azione ogni turno e' la versione debole",
+   "sottoclassi": {
+    "con_assi": 136,
+    "ammissibili": 73,
+    "migliori": [
+     {
+      "nome": "Circle of the Shepherd",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "S1",
+       "S2",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Clockwork Sorcery",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "S1",
+       "S2",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Conjurer",
+      "s": "AU",
+      "manuale": "Arcana Unleashed",
+      "assi": [
+       "S1",
+       "S2",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Clockwork Soul",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S1",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Great Old One Patron",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Illusionist",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "S1",
+       "S2",
+       "S3"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Necromancer",
+      "s": "AU",
+      "manuale": "Arcana Unleashed",
+      "assi": [
+       "S1",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Oath of Glory",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "S2",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Order of Scribes",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Rune Knight",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S3",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "School of Necromancy",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "S1",
+       "S2",
+       "S3"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Vestige Patron",
+      "s": "AU",
+      "manuale": "Arcana Unleashed",
+      "assi": [
+       "S1",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Way of the Astral Self",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Winter Walker",
+      "s": "FRHoF",
+      "manuale": "Forgotten Realms: Heroes of Faerûn",
+      "assi": [
+       "S2",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Aberrant Sorcery",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Alchemist",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Armorer",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Armorer",
+      "s": "EFA",
+      "manuale": "Eberron: Forge of the Artificer",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Champion",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Circle of Spores",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     }
+    ]
+   },
+   "talenti": {
+    "con_assi": 101,
+    "ammissibili": 29,
+    "migliori": [
+     {
+      "nome": "Boon of the Bright Sun",
+      "s": "FRHoF",
+      "assi": [
+       "S2",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Transmutation Adept",
+      "s": "AU",
+      "assi": [
+       "S3",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Aberrant Dragonmark",
+      "s": "ERLW",
+      "assi": [
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Adept of the Black Robes",
+      "s": "DSotDQ",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Boon of Misty Escape",
+      "s": "ABH",
+      "assi": [
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Charger",
+      "s": "XPHB",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Elemental Familiar",
+      "s": "AU",
+      "assi": [
+       "S1",
+       "S2"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Keenness of the Stone Giant",
+      "s": "BGG",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Knight of the Rose",
+      "s": "DSotDQ",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Otherworldly Familiar",
+      "s": "AU",
+      "assi": [
+       "S1",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Purple Dragon Commandant",
+      "s": "FRHoF",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Quicksmithing",
+      "s": "PSK",
+      "assi": [
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Soul of the Storm Giant",
+      "s": "BGG",
+      "assi": [
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Transmuted Anatomy",
+      "s": "AU",
+      "assi": [
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Abjuration Adept",
+      "s": "AU",
+      "assi": [
+       "S3"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     }
+    ]
+   },
+   "incantesimi": {
+    "con_assi": 296,
+    "ammissibili": 151,
+    "migliori": [
+     {
+      "nome": "Conjure Animals",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Conjure Minor Elementals",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Conjure Woodland Beings",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S3",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Heroes' Feast",
+      "s": "XPHB",
+      "assi": [
+       "S1",
+       "S3",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Animate Dead",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Animate Dead",
+      "s": "XPHB",
+      "assi": [
+       "S1",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Conjure Celestial",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Conjure Elemental",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Conjure Fey",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Create Undead",
+      "s": "PHB",
+      "assi": [
+       "S1",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Create Undead",
+      "s": "XPHB",
+      "assi": [
+       "S1",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S5"
+     },
+     {
+      "nome": "Druid Grove",
+      "s": "XGE",
+      "assi": [
+       "S2",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Find Familiar",
+      "s": "XPHB",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     },
+     {
+      "nome": "Heroes' Feast",
+      "s": "PHB",
+      "assi": [
+       "S3",
+       "S4",
+       "S5"
+      ],
+      "ammissibile": true,
+      "perche": "copre S3"
+     },
+     {
+      "nome": "Infernal Calling",
+      "s": "XGE",
+      "assi": [
+       "S1",
+       "S2",
+       "S4"
+      ],
+      "ammissibile": true,
+      "perche": "copre S2"
+     }
+    ]
+   }
+  },
+  "dps": {
+   "nome": "Danno",
+   "assi": {
+    "D1 singolo": "D1 singolo",
+    "D2 area": "D2 area",
+    "D3 critico": "D3 critico",
+    "D4 ripetibile": "D4 ripetibile",
+    "D5 esplosivo": "D5 esplosivo",
+    "D6 multiattacco": "D6 multiattacco"
+   },
+   "regola": "almeno due fra area (D2), ripetibilita' (D4), scala (D5); oppure critico (D3) o multiattacco (D6): il solo danno singolo e' la versione stretta",
+   "sottoclassi": {
+    "con_assi": 197,
+    "ammissibili": 26,
+    "migliori": [
+     {
+      "nome": "Armorer",
+      "s": "EFA",
+      "manuale": "Eberron: Forge of the Artificer",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Battle Smith",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Battle Smith",
+      "s": "EFA",
+      "manuale": "Eberron: Forge of the Artificer",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Way of the Astral Self",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Armorer",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "D2",
+       "D4",
+       "D5",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Beast Master",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Champion",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "D2",
+       "D3",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Circle of the Moon",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Grave Domain",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "D1",
+       "D2",
+       "D3",
+       "D4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Grave Domain",
+      "s": "RHW",
+      "manuale": "Ravenloft: The Horrors Within",
+      "assi": [
+       "D1",
+       "D2",
+       "D3",
+       "D4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Graviturgy Magic",
+      "s": "EGW",
+      "manuale": "Explorer's Guide to Wildemount",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Inquisitive",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Oath of Glory",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Oath of Glory",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Path of the Giant",
+      "s": "BGG",
+      "manuale": "Bigby Presents: Glory of the Giants",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "The Undead",
+      "s": "VRGR",
+      "manuale": "Van Richten's Guide to Ravenloft",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Undead Patron",
+      "s": "RHW",
+      "manuale": "Ravenloft: The Horrors Within",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Warrior of the Elements",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Artillerist",
+      "s": "EFA",
+      "manuale": "Eberron: Forge of the Artificer",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Champion",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "D2",
+       "D3",
+       "D4"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     }
+    ]
+   },
+   "talenti": {
+    "con_assi": 185,
+    "ammissibili": 10,
+    "migliori": [
+     {
+      "nome": "Agent of Order",
+      "s": "SatO",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Charger",
+      "s": "XPHB",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Keenness of the Stone Giant",
+      "s": "BGG",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Quicksmithing",
+      "s": "PSK",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Strike of the Giants",
+      "s": "BGG",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Boon of Fortitude",
+      "s": "XPHB",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Gift of the Chromatic Dragon",
+      "s": "FTD",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Tough",
+      "s": "PHB",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Tough",
+      "s": "XPHB",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Transmuted Anatomy",
+      "s": "AU",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     }
+    ]
+   },
+   "incantesimi": {
+    "con_assi": 828,
+    "ammissibili": 5,
+    "migliori": [
+     {
+      "nome": "Blade of Disaster",
+      "s": "FRHoF",
+      "assi": [
+       "D1",
+       "D2",
+       "D3",
+       "D6"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Call Lightning",
+      "s": "PHB",
+      "assi": [
+       "D1",
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Wish",
+      "s": "PHB",
+      "assi": [
+       "D1",
+       "D2",
+       "D3",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Wish",
+      "s": "XPHB",
+      "assi": [
+       "D1",
+       "D2",
+       "D3",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     },
+     {
+      "nome": "Delayed Blast Fireball",
+      "s": "XPHB",
+      "assi": [
+       "D2",
+       "D4",
+       "D5"
+      ],
+      "ammissibile": true,
+      "perche": "almeno tre fra D2, D3, D4, D5, D6"
+     }
+    ]
+   }
+  },
+  "face": {
+   "nome": "Volto sociale",
+   "assi": {
+    "F1 persuasione": "F1 persuasione",
+    "F2 inganno": "F2 inganno",
+    "F3 intimidazione": "F3 intimidazione",
+    "F4 lettura": "F4 lettura",
+    "F5 economia sociale": "F5 economia sociale",
+    "F6 fuori dal combattimento": "F6 fuori dal combattimento"
+   },
+   "regola": "almeno due fra persuasione/inganno/intimidazione, oppure una via sociale piu' lettura (F4) o economia sociale (F5): una sola via e' specialismo, non presenza sociale",
+   "sottoclassi": {
+    "con_assi": 102,
+    "ammissibili": 18,
+    "migliori": [
+     {
+      "nome": "Way of the Astral Self",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "F3",
+       "F4",
+       "F5",
+       "F6"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "College of Creation",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "F1",
+       "F4",
+       "F6"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "College of Eloquence",
+      "s": "TCE",
+      "manuale": "Tasha's Cauldron of Everything",
+      "assi": [
+       "F1",
+       "F4",
+       "F6"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "College of Whispers",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "F2",
+       "F4",
+       "F6"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Illusionist",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "F2",
+       "F4",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Light Domain",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "F2",
+       "F4",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Purple Dragon Knight (Banneret)",
+      "s": "SCAG",
+      "manuale": "Sword Coast Adventurer's Guide",
+      "assi": [
+       "F1",
+       "F3",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "due vie sociali su tre"
+     },
+     {
+      "nome": "Grave Domain",
+      "s": "RHW",
+      "manuale": "Ravenloft: The Horrors Within",
+      "assi": [
+       "F2",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Hollow Warden",
+      "s": "RHW",
+      "manuale": "Ravenloft: The Horrors Within",
+      "assi": [
+       "F3",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Inquisitive",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "F2",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Light Domain",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "F2",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Mastermind",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "F2",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Necromancer",
+      "s": "AU",
+      "manuale": "Arcana Unleashed",
+      "assi": [
+       "F3",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Path of the Berserker",
+      "s": "XPHB",
+      "manuale": "Player's Handbook (2024)",
+      "assi": [
+       "F3",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Samurai",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "School of Necromancy",
+      "s": "PHB",
+      "manuale": "Player's Handbook (2014)",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Swashbuckler",
+      "s": "XGE",
+      "manuale": "Xanathar's Guide to Everything",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Way of the Long Death",
+      "s": "SCAG",
+      "manuale": "Sword Coast Adventurer's Guide",
+      "assi": [
+       "F3",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     }
+    ]
+   },
+   "talenti": {
+    "con_assi": 86,
+    "ammissibili": 9,
+    "migliori": [
+     {
+      "nome": "Symbiotic Being",
+      "s": "RHW",
+      "assi": [
+       "F1",
+       "F2",
+       "F3",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "due vie sociali su tre"
+     },
+     {
+      "nome": "Arcane Eloquence",
+      "s": "AU",
+      "assi": [
+       "F1",
+       "F2",
+       "F3"
+      ],
+      "ammissibile": true,
+      "perche": "due vie sociali su tre"
+     },
+     {
+      "nome": "Actor",
+      "s": "PHB",
+      "assi": [
+       "F2",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Actor",
+      "s": "XPHB",
+      "assi": [
+       "F2",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Boon of Terror",
+      "s": "FRHoF",
+      "assi": [
+       "F3",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Initiate of High Sorcery",
+      "s": "DSotDQ",
+      "assi": [
+       "F2",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Purple Dragon Rook",
+      "s": "FRHoF",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Street Justice",
+      "s": "FRHoF",
+      "assi": [
+       "F1",
+       "F3"
+      ],
+      "ammissibile": true,
+      "perche": "due vie sociali su tre"
+     },
+     {
+      "nome": "Svirfneblin Magic",
+      "s": "MTF",
+      "assi": [
+       "F2",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     }
+    ]
+   },
+   "incantesimi": {
+    "con_assi": 221,
+    "ammissibili": 17,
+    "migliori": [
+     {
+      "nome": "Infernal Calling",
+      "s": "XGE",
+      "assi": [
+       "F1",
+       "F2",
+       "F3",
+       "F4",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "due vie sociali su tre"
+     },
+     {
+      "nome": "Conjure Elemental",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5",
+       "F6"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Conjure Fey",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5",
+       "F6"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Awaken",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Awaken",
+      "s": "XPHB",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Calm Emotions",
+      "s": "XPHB",
+      "assi": [
+       "F1",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Cause Fear",
+      "s": "XGE",
+      "assi": [
+       "F3",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Conjure Animals",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Conjure Celestial",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Conjure Minor Elementals",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Conjure Woodland Beings",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Dominate Beast",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Dominate Monster",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Dominate Person",
+      "s": "PHB",
+      "assi": [
+       "F1",
+       "F5"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     },
+     {
+      "nome": "Eyebite",
+      "s": "PHB",
+      "assi": [
+       "F3",
+       "F4"
+      ],
+      "ammissibile": true,
+      "perche": "una via sociale + lettura/economia"
+     }
+    ]
+   }
+  }
+ }
+}

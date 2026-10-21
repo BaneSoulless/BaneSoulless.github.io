@@ -1,0 +1,646 @@
+[
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Calendar%20of%20Harptos&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 5710,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Calendar of Harptos\",\"pageid\":1837,\"wikitext\":{\"*\":\"[[File:Harptos-4e.jpg|thumb|right|250px|''The Calendar of Harptos with holidays and seasonal depictions.'']]\\nThe '''Calendar of "
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Marking%20the%20years&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 8683,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Marking the years\",\"pageid\":63,\"wikitext\":{\"*\":\"{{Roll of years|1|Sunrise|nocat=true}}\\n''Example conversion between the years for [[1 DR]]''\\n\\nYears (winters)<ref name=\\\"GTotR-p22"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Roll%20of%20Years&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 120,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Roll of Years\",\"pageid\":49012,\"wikitext\":{\"*\":\"#REDIRECT [[Marking the years#Names_of_the_Years]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Time%20of%20Troubles&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 25742,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Time of Troubles\",\"pageid\":1564,\"wikitext\":{\"*\":\"{{Event\\n| image       = AvatarCrisis.png\\n| caption     = Depiction of the Arrival of the avatars to Toril.\\n| name        = Time o"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Spellplague&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 24763,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Spellplague\",\"pageid\":11386,\"wikitext\":{\"*\":\"{{Event\\n| image       = Sanitorium - Mark Winters.jpg\\n| caption     = Victims of the Spellplague.\\n| name        = Spellplague\\n| part"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Second%20Sundering&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 31428,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Second Sundering\",\"pageid\":34638,\"wikitext\":{\"*\":\"{{Otheruses4|the cataclysmic events of the 15{{th}} century DR|other uses|Sundering (disambiguation)}}\\n{{Event\\n| image       = Su"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Era%20of%20Upheaval&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 8303,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Era of Upheaval\",\"pageid\":11387,\"wikitext\":{\"*\":\"The '''Era of Upheaval''' was the time period between [[Time of Troubles]] of [[1358 DR]] and the [[Second Sundering]] of the decade"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Portal%3AHistory&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 360,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Portal:History\",\"pageid\":3222,\"wikitext\":{\"*\":\"{{Portals}}\\n{|width=\\\"100%\\\" cellpadding=\\\"0\\\" cellspacing=\\\"0\\\"\\n|-\\n<!-- HEADER -->\\n|colspan=\\\"2\\\" width=\\\"100%\\\"|{{/Header}}\\n|-\\"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Ahghairon%27s%20Day&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1822,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Ahghairon's Day\",\"pageid\":84948,\"wikitext\":{\"*\":\"{{Event\\n| image       = \\n| caption     = \\n| name        = Ahghairon's Day\\n| partof      = \\n| othernames  = \\n| type        = Ho"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Auril%27s%20Blesstide&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 4339,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Auril's Blesstide\",\"pageid\":103132,\"wikitext\":{\"*\":\"{{Event\\n| image       = \\n| caption     = \\n| name        = Auril's Blesstide\\n| partof      = \\n| othernames  = Auril's Day\\n| "
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Brightswords&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 2499,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Brightswords\",\"pageid\":106607,\"wikitext\":{\"*\":\"{{Event\\n| image       = \\n| caption     = \\n| name        = Brightswords\\n| partof      = \\n| othernames  = \\n| type        = Holiday"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Midwinter&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 7196,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Midwinter\",\"pageid\":2682,\"wikitext\":{\"*\":\"{{datepage|031}}\\n{{Roll of months}}\\n'''Midwinter''' (also known as '''Deadwinter Day''') was a festival to mark the midpoint of winter in"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Greengrass&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 9490,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Greengrass\",\"pageid\":2685,\"wikitext\":{\"*\":\"{{datepage|122}}\\n{{Roll of months}}\\n'''Greengrass''' was a festival to mark the official first day of spring in the [[Calendar of Harpto"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Midsummer&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 15710,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Midsummer\",\"pageid\":9387,\"wikitext\":{\"*\":\"{{datepage|213}}\\n{{Roll of months}}\\n'''Midsummer''' was an annual holiday that customarily occurred between [[Flamerule 30]] and [[Eleasi"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Shieldmeet&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 5994,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Shieldmeet\",\"pageid\":2691,\"wikitext\":{\"*\":\"{{datepage|214}}\\n{{Roll of months}}\\n'''Shieldmeet''' was the equivalent of a leap year day in the [[Calendar of Harptos]], occurring onc"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Highharvestide&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 9539,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Highharvestide\",\"pageid\":2690,\"wikitext\":{\"*\":\"{{datepage|275}}\\n{{Roll of months}}\\n__NOTOC__\\n'''Highharvestide''' was an annual festival in the [[Calendar of Harptos]], taking pl"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Feast%20of%20the%20Moon&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 10450,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Feast of the Moon\",\"pageid\":2689,\"wikitext\":{\"*\":\"{{datepage|336}}\\n{{Otheruses4|the calendar date|the Vilhon Reach festival of the same name|Feast of the Moon (Vilhon Reach)}}\\n{{R"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Spring%20Equinox&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 115,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Spring Equinox\",\"pageid\":2692,\"wikitext\":{\"*\":\"#REDIRECT[[Ches 19]]\\n[[Category:Chronology]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Summer%20Solstice&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 119,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Summer Solstice\",\"pageid\":2693,\"wikitext\":{\"*\":\"#REDIRECT[[Kythorn 20]]\\n[[Category:Chronology]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Winter%20Solstice&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 120,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Winter Solstice\",\"pageid\":26465,\"wikitext\":{\"*\":\"#REDIRECT[[Nightal 20]]\\n[[Category:Chronology]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Autumn%20Equinox&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 117,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Autumn Equinox\",\"pageid\":2688,\"wikitext\":{\"*\":\"#REDIRECT[[Eleint 21]]\\n[[Category:Chronology]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Hammer%201&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 2643,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Hammer 1\",\"pageid\":40021,\"wikitext\":{\"*\":\"{{datepage|001}}\\n{{Roll of months}}\\n==On This Day==\\n*Worshipers of the [[halfling]] deity [[Cyrrollalee]] celebrate [[Hearthday]].<ref n"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Alturiak%201&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 758,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Alturiak 1\",\"pageid\":40055,\"wikitext\":{\"*\":\"{{datepage|032}}\\n{{Roll of months}}\\n==On This Day==\\n*Worshipers of the [[halfling]] deity [[Cyrrollalee]] celebrate [[Hearthday]].<ref"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Ches%2019&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 3217,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Ches 19\",\"pageid\":40063,\"wikitext\":{\"*\":\"{{datepage|080}}\\n{{Roll of months}}\\n==On This Day==\\n*It is the Vernal (Spring) Equinox.<ref name=\\\"FRCS3e-77\\\">{{Cite book/Forgotten Real"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Kythorn%2020&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 4337,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Kythorn 20\",\"pageid\":40142,\"wikitext\":{\"*\":\"{{datepage|172}}\\n{{Roll of months}}\\n==On This Day==\\n* It is the [[Summer Solstice]].<ref name=\\\"FRCS3e-77\\\">{{Cite book/Forgotten Real"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Eleasis%201&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1009,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Eleasis 1\",\"pageid\":40152,\"wikitext\":{\"*\":\"{{datepage|215}}\\n{{Roll of months}}\\n==On This Day==\\n\\n*Worshipers of the [[halfling]] deity [[Cyrrollalee]] celebrate [[Hearthday]].<re"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Eleint%2021&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 2224,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Eleint 21\",\"pageid\":40174,\"wikitext\":{\"*\":\"{{datepage|265}}\\n{{Roll of months}}\\n==On This Day==\\n\\n*It is the Autumnal (Autumn) Equinox.<ref name=\\\"FRCS3e-77\\\">{{Cite book/Forgotte"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Uktar%2010&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 963,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Uktar 10\",\"pageid\":40185,\"wikitext\":{\"*\":\"{{datepage|315}}\\n{{Roll of months}}\\n==On This Day==\\n\\n* Worshipers of [[Waukeen]] observe [[Tehennteahan]] (the Night of Hammers and Nai"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Marpenoth%203&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 680,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Marpenoth 3\",\"pageid\":40551,\"wikitext\":{\"*\":\"{{datepage|278}}\\n{{Roll of months}}\\n\\n==On This Day==\\n* In [[1369 DR]], [[Manshoon]] tried to mend ties with Lord [[Orgauth]] by send"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Mirtul%203&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1280,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Mirtul 3\",\"pageid\":40298,\"wikitext\":{\"*\":\"{{datepage|125}}\\n{{Roll of months}}\\n\\n==On This Day==\\n*In [[1367 DR]], [[Zaranda Star]] and the members of [[Star Protective Services]] "
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Flamerule%2030&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1156,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Flamerule 30\",\"pageid\":40151,\"wikitext\":{\"*\":\"{{Datepage|212}}\\n{{Roll of months}}\\n==On This Day==\\n* [[Midsummer]]'s Eve is known as the Celebration of the Moon to worshipers of ["
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1358%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 20204,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1358 DR\",\"pageid\":2415,\"wikitext\":{\"*\":\"{{Roll of years|1358|Shadows}}\\n\\n{{Yearbox\\n| age  = Era of Upheaval\\n| year = 1358\\n}}\\n\\n{{LunarCalendarBox}}\\n\\n<div style=\\\"font-size:la"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1385%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 11601,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1385 DR\",\"pageid\":12731,\"wikitext\":{\"*\":\"{{Roll of years|1385|Blue Fire}}\\n\\n{{Yearbox\\n|age=Era of Upheaval\\n|year=1385\\n}}\\n{{LunarCalendarBox}}\\n<div style=\\\"font-size:large; fon"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1487%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 6603,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1487 DR\",\"pageid\":25419,\"wikitext\":{\"*\":\"{{Roll of years|1487|the Rune Lords Triumphant}}\\n\\n{{Yearbox\\n| year = 1487\\n| age = Era of Upheaval\\n}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1492%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 10533,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1492 DR\",\"pageid\":25665,\"wikitext\":{\"*\":\"{{Roll of years|1492|Three Ships Sailing}}\\n\\n{{Yearbox\\n| year = 1492\\n| age = Present Age\\n}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox/in-confli"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1372%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 14699,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1372 DR\",\"pageid\":2748,\"wikitext\":{\"*\":\"{{Roll of years|1372|Wild Magic}}\\n\\n{{Yearbox\\n|age  = Era of Upheaval\\n|year = 1372\\n}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox/in-conflicts}}\\n"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1479%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 17104,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1479 DR\",\"pageid\":14391,\"wikitext\":{\"*\":\"{{Roll of years|1479|the Ageless One}}\\n\\n{{Yearbox\\n|age=Era of Upheaval\\n|year=1479\\n}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox/in-conflicts}}\\"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1508%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 472,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1508 DR\",\"pageid\":30679,\"wikitext\":{\"*\":\"{{Roll of years|1508|the Legend Reborn}}\\n\\n{{Yearbox\\n| year = 1508\\n| age = Present Age\\n}}\\n{{LunarCalendarBox}}\\n==Appendix==\\n===Refere"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1039,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"1 DR\",\"pageid\":38957,\"wikitext\":{\"*\":\"{{Roll of years|1|Sunrise}}\\n\\n{{Yearbox\\n| age  = Age of Humanity\\n| year = 1\\n}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox/in-politics}}\\n* The [[St"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=0%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 713,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"0 DR\",\"pageid\":23577,\"wikitext\":{\"*\":\"{{Roll of years|0|the Rising Flame}}\\n\\n{{Yearbox\\n|year=0\\n|age=Age of Humanity}}\\n{{LunarCalendarBox}}\\n\\n{{Yearbox/in-deities}}\\n* [[Mystra]"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=-1000%20DR&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 747,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"-1000 DR\",\"pageid\":99676,\"wikitext\":{\"*\":\"{{Roll of years|-1000}}\\n\\n{{Yearbox\\n|age=Age of Humanity\\n|yp5=-1020\\n|yp4=-1015\\n|yp3=-1014\\n|yp2=-1009\\n|yp1=-1005\\n|year=-1000\\n|yf1=-"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=The%20Grand%20History%20of%20the%20Realms&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 38540,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"The Grand History of the Realms\",\"pageid\":10528,\"wikitext\":{\"*\":\"{{otheruses4|the real-world sourcebook|the in-universe book|Grand History of the Realms (in-universe)}}\\n{{DEFAULTSO"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Year%20of%20Shadows&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 94,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Year of Shadows\",\"pageid\":170445,\"wikitext\":{\"*\":\"#Redirect [[1358 DR]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Tenday&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 1484,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Tenday\",\"pageid\":15418,\"wikitext\":{\"*\":\"A '''tenday''' was a [[Faer\\u00fbn]]ian unit of time. The [[Calendar of Harptos]] divided the thirty-day months into three blocks of ten days"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Waterdeep&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 58680,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Waterdeep\",\"pageid\":1388,\"wikitext\":{\"*\":\"{{GA}}\\n{{otheruses4|the city|other uses|Waterdeep (disambiguation)}}\\n{{redirect|Waterdhavian|the cheese|Waterdhavian cheese}}\\n{{Location"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Cormyr&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 33623,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Cormyr\",\"pageid\":1848,\"wikitext\":{\"*\":\"{{otheruses4|the kingdom|the sourcebook|Cormyr (sourcebook)}}\\n{{State\\n| image              = Cormyr_symbol.jpg\\n| caption            = The s"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Dale%20Reckoning&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 101,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"parse\":{\"title\":\"Dale Reckoning\",\"pageid\":1829,\"wikitext\":{\"*\":\"#REDIRECT [[Marking the years]]\"}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Northreckoning&prop=wikitext&format=json",
+  "status": 200,
+  "bytes": 353,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"error\":{\"code\":\"missingtitle\",\"info\":\"The page you specified doesn't exist.\",\"*\":\"See https://forgottenrealms.fandom.com/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list a"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3AYears&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 20538,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"cmcontinue\":\"page|207b7b235041443a33353530307c357c307c4c4546547d7d0a353030204452|8502\",\"continue\":\"-||\"},\"query\":{\"categorymembers\":[{\"pageid\":23577,\"ns\":0,\"title\":\"0 "
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3AEvents&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 26187,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"cmcontinue\":\"page|574152204f4620474f4c4420414e4420474c4f4f4d|35756\",\"continue\":\"-||\"},\"query\":{\"categorymembers\":[{\"pageid\":8811,\"ns\":0,\"title\":\"Abraxus affair\"},{\"pag"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3AHolidays&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 2902,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":84948,\"ns\":0,\"title\":\"Ahghairon's Day\"},{\"pageid\":60689,\"ns\":0,\"title\":\"Ascension Day\"},{\"pageid\":103132,\"ns\":0,\"title\":\"Auril's Blesstide\"},{"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3ABattles&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 4553,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":181977,\"ns\":0,\"title\":\"Ambril's Bane\"},{\"pageid\":116677,\"ns\":0,\"title\":\"Assault on Myth Nantar\"},{\"pageid\":145024,\"ns\":0,\"title\":\"Banedeath\"},"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3ATreaties&cmlimit=500&format=json",
+  "status": 200,
+  "bytes": 595,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[{\"pageid\":136952,\"ns\":0,\"title\":\"Articles of the Compact\"},{\"pageid\":132804,\"ns\":0,\"title\":\"Compact of Yuireshanyaar\"},{\"pageid\":191263,\"ns\":0,\"title\":\""
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apprefix=Hammer%20&aplimit=100&format=json",
+  "status": 200,
+  "bytes": 2725,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"allpages\":[{\"pageid\":191330,\"ns\":0,\"title\":\"Hammer & Nails\"},{\"pageid\":191594,\"ns\":0,\"title\":\"Hammer (chant)\"},{\"pageid\":2645,\"ns\":0,\"title\":\"Hammer (month)\"},{\"pageid\":4"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apprefix=Nightal%20&aplimit=100&format=json",
+  "status": 200,
+  "bytes": 1384,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"allpages\":[{\"pageid\":40189,\"ns\":0,\"title\":\"Nightal 1\"},{\"pageid\":40605,\"ns\":0,\"title\":\"Nightal 10\"},{\"pageid\":40606,\"ns\":0,\"title\":\"Nightal 11\"},{\"pageid\":40607,\"ns\":0,\"t"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=Eleasis%201&srlimit=20&format=json",
+  "status": 200,
+  "bytes": 2455,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":20,\"continue\":\"-||\"},\"query\":{\"search\":[{\"ns\":0,\"title\":\"Eleasis 1\",\"pageid\":40152,\"size\":923,\"wordcount\":129,\"snippet\":\"\",\"timestamp\":\"2020-07-25T18:13:06Z\""
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=Midwinter&srlimit=20&format=json",
+  "status": 200,
+  "bytes": 2498,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":20,\"continue\":\"-||\"},\"query\":{\"search\":[{\"ns\":0,\"title\":\"Midwinter\",\"pageid\":2682,\"size\":6998,\"wordcount\":1011,\"snippet\":\"\",\"timestamp\":\"2022-01-20T16:06:59Z"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=embeddedin&eititle=Template%3AEvent&eilimit=100&format=json",
+  "status": 200,
+  "bytes": 5332,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"eicontinue\":\"0|63471\",\"continue\":\"-||\"},\"query\":{\"embeddedin\":[{\"pageid\":1564,\"ns\":0,\"title\":\"Time of Troubles\"},{\"pageid\":1738,\"ns\":0,\"title\":\"Silence of Lolth\"},{\"pa"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=backlinks&bltitle=Calendar%20of%20Harptos&bllimit=200&format=json",
+  "status": 200,
+  "bytes": 9950,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"blcontinue\":\"0|40118\",\"continue\":\"-||\"},\"query\":{\"backlinks\":[{\"pageid\":63,\"ns\":0,\"title\":\"Marking the years\"},{\"pageid\":87,\"ns\":0,\"title\":\"Forgotten Realms Campaign S"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&prop=revisions&titles=1358%20DR&rvprop=content&rvslots=main&format=json",
+  "status": 200,
+  "bytes": 20327,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"pages\":{\"2415\":{\"pageid\":2415,\"ns\":0,\"title\":\"1358 DR\",\"revisions\":[{\"slots\":{\"main\":{\"contentmodel\":\"wikitext\",\"contentformat\":\"text/x-wiki\",\"*\":\"{{Roll of years|1358|Sh"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&meta=siteinfo&siprop=statistics&format=json",
+  "status": 200,
+  "bytes": 164,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"statistics\":{\"pages\":172702,\"articles\":62210,\"edits\":1107814,\"images\":38075,\"users\":43715417,\"activeusers\":115,\"admins\":14,\"jobs\":0}}}"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=harptos&srlimit=30&format=json",
+  "status": 200,
+  "bytes": 3698,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":30,\"continue\":\"-||\"},\"query\":{\"search\":[{\"ns\":0,\"title\":\"Harptos\",\"pageid\":140860,\"size\":2838,\"wordcount\":313,\"snippet\":\"\",\"timestamp\":\"2024-08-17T20:47:52Z\""
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Calendar&cmlimit=100&format=json",
+  "status": 200,
+  "bytes": 51,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"query\":{\"categorymembers\":[]}}"
+ },
+ {
+  "url": "https://en.wikipedia.org/wiki/Forgotten_Realms",
+  "status": 200,
+  "bytes": 300000,
+  "ctype": "text/html; charset=UTF-8",
+  "snippet": "<!DOCTYPE html> <html class=\"client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-pag"
+ },
+ {
+  "url": "https://en.wikipedia.org/wiki/Faer%C3%AAn",
+  "status": 404,
+  "bytes": 0,
+  "ctype": "",
+  "snippet": "HTTP 404 Not Found"
+ },
+ {
+  "url": "https://en.wikipedia.org/wiki/Ed_Greenwood",
+  "status": 200,
+  "bytes": 283050,
+  "ctype": "text/html; charset=UTF-8",
+  "snippet": "<!DOCTYPE html> <html class=\"client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-pag"
+ },
+ {
+  "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Forgotten%20Realms%20timeline&srlimit=20&format=json",
+  "status": 200,
+  "bytes": 7962,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"sroffset\":20,\"continue\":\"-||\"},\"query\":{\"searchinfo\":{\"totalhits\":833},\"search\":[{\"ns\":0,\"title\":\"Forgotten Realms\",\"pageid\":46928,\"size\":92909,\"wordcount\":9568,\"snipp"
+ },
+ {
+  "url": "https://www.candlekeep.com/",
+  "status": 200,
+  "bytes": 931,
+  "ctype": "text/html",
+  "snippet": "<html>\r \r <head profile=\"http://www.w3.org/2005/10/profile\">\r <title>Candlekeep</title>\r <meta name=\"description\" content=\"Forgotten Realms Library\">\r <meta name=\"keywords\"\r content=\"forgotten realms,"
+ },
+ {
+  "url": "https://www.candlekeep.com/library/library.htm",
+  "status": 200,
+  "bytes": 8871,
+  "ctype": "text/html",
+  "snippet": "<html>\r \r <head>\r <title>Alaundos Library</title>\r </head>\r \r <body text=\"#FFFFFF\" link=\"#6699FF\" vlink=\"#0099FF\" alink=\"#6699FF\" background=\"../images/sitegfx/backgr.jpg\" bgproperties=\"fixed\">\r <font"
+ },
+ {
+  "url": "https://www.realmshelps.net/faerun/history/",
+  "status": 200,
+  "bytes": 50973,
+  "ctype": "text/html",
+  "snippet": "<!DOCTYPE html> <html lang='en'> <head>     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">     <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />     <title>Hi"
+ },
+ {
+  "url": "https://www.realmshelps.net/faerun/lore/gods/godsmain.shtml",
+  "status": 404,
+  "bytes": 0,
+  "ctype": "",
+  "snippet": "HTTP 404 Not Found"
+ },
+ {
+  "url": "https://www.realmshelps.net/monsters/monsters.shtml",
+  "status": 404,
+  "bytes": 0,
+  "ctype": "",
+  "snippet": "HTTP 404 Not Found"
+ },
+ {
+  "url": "https://www.dmsguild.com/product/28850/Grand-History-of-the-Realms",
+  "status": 403,
+  "bytes": 0,
+  "ctype": "",
+  "snippet": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://www.kaggle.com/api/v1/datasets/list?search=dungeons%20dragons",
+  "status": 200,
+  "bytes": 20535,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://www.google.com/recaptcha/challengepage/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><s"
+ },
+ {
+  "url": "https://www.kaggle.com/datasets?search=dnd",
+  "status": 200,
+  "bytes": 20417,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "<!doctype html><html lang=\"en-US\" dir=\"ltr\"><head><base href=\"https://www.google.com/recaptcha/challengepage/\"><link rel=\"preconnect\" href=\"//www.gstatic.com\"><meta name=\"referrer\" content=\"origin\"><s"
+ },
+ {
+  "url": "https://archive.org/metadata/forgotten-realms-campaign-setting",
+  "status": 200,
+  "bytes": 7475,
+  "ctype": "application/json",
+  "snippet": "{\"created\":1790455721,\"d1\":\"ia601606.us.archive.org\",\"d2\":\"ia801606.us.archive.org\",\"dir\":\"/12/items/forgotten-realms-campaign-setting\",\"files\":[{\"name\":\"Forgotten Realms Campaign Setting.epub\",\"sourc"
+ },
+ {
+  "url": "https://archive.org/advancedsearch.php?q=subject%3A%22Forgotten+Realms%22&fl%5B%5D=identifier&fl%5B%5D=title&rows=100&page=1&output=json",
+  "status": 200,
+  "bytes": 10531,
+  "ctype": "application/json",
+  "snippet": "{\"responseHeader\":{\"status\":0,\"QTime\":358,\"params\":{\"query\":\"subject:&quot;Forgotten Realms&quot;\",\"qin\":\"subject:&quot;Forgotten Realms&quot;\",\"fields\":\"identifier,title\",\"wt\":\"json\",\"rows\":100,\"star"
+ },
+ {
+  "url": "https://web.archive.org/web/20240101000000*/forgottenrealms.fandom.com/wiki/1358_DR",
+  "status": 200,
+  "bytes": 145191,
+  "ctype": "text/html",
+  "snippet": "<!DOCTYPE html> <html lang=\"en\">   <head>     <title>Wayback Machine</title>     <script>     /*     @licstart  The following is the entire license notice for the JavaScript code in this page.      Co"
+ },
+ {
+  "url": "https://web.archive.org/cdx/search/cdx?url=forgottenrealms.fandom.com/wiki/1358_DR&output=json&limit=20",
+  "status": 200,
+  "bytes": 3558,
+  "ctype": "application/json",
+  "snippet": "[[\"urlkey\",\"timestamp\",\"original\",\"mimetype\",\"statuscode\",\"digest\",\"length\"], [\"com,fandom,forgottenrealms)/wiki/1358_dr\",\"20190417110249\",\"https://forgottenrealms.fandom.com/wiki/1358_DR\",\"text/html\""
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/wiki/Special:RecentChanges?feed=atom",
+  "status": 403,
+  "bytes": 0,
+  "ctype": "",
+  "snippet": "HTTP 403 Forbidden"
+ },
+ {
+  "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=recentchanges&rclimit=50&format=json",
+  "status": 200,
+  "bytes": 8125,
+  "ctype": "application/json; charset=utf-8",
+  "snippet": "{\"batchcomplete\":\"\",\"continue\":{\"rccontinue\":\"20260926161638|1128336\",\"continue\":\"-||\"},\"query\":{\"recentchanges\":[{\"type\":\"edit\",\"ns\":1,\"title\":\"Talk:Melvaunt\",\"pageid\":66899,\"revid\":1108333,\"old_revi"
+ },
+ {
+  "url": "https://fantasycalendar.com/api/calendars",
+  "status": 404,
+  "bytes": 0,
+  "ctype": "",
+  "snippet": "HTTP 404 Not Found"
+ },
+ {
+  "url": "https://github.com/geospatial-grimoire/forgotten-realms-wiki-parser",
+  "status": 200,
+  "bytes": 284482,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://github.com/SillyTavern/SillyTavern-Fandom-Scraper",
+  "status": 200,
+  "bytes": 268051,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://github.com/dilaouid/FandomScraper",
+  "status": 200,
+  "bytes": 300000,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://github.com/digitalsadhu/harptos-epoch",
+  "status": 200,
+  "bytes": 258741,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://github.com/efupw/harptos-date",
+  "status": 200,
+  "bytes": 244174,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://github.com/geospatial-grimoire/toril-gis",
+  "status": 200,
+  "bytes": 268992,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://github.com/5etools-mirror-3/5etools-src",
+  "status": 200,
+  "bytes": 300000,
+  "ctype": "text/html; charset=utf-8",
+  "snippet": "        <!DOCTYPE html> <html   lang=\"en\"      data-color-mode=\"auto\" data-light-theme=\"light\" data-dark-theme=\"dark\"   data-a11y-animated-images=\"system\" data-a11y-link-underlines=\"true\"      >      "
+ },
+ {
+  "url": "https://raw.githubusercontent.com/geospatial-grimoire/forgotten-realms-wiki-parser/main/README.md",
+  "status": 200,
+  "bytes": 6127,
+  "ctype": "text/plain; charset=utf-8",
+  "snippet": "# Forgotten Realms Wiki Parser  A script to parse the Forgotten Realms Wiki XML dump into a single, clean Markdown file.  ## Overview  This script is designed to parse the large XML dump from the [For"
+ },
+ {
+  "url": "https://raw.githubusercontent.com/SillyTavern/SillyTavern-Fandom-Scraper/main/README.md",
+  "status": 200,
+  "bytes": 625,
+  "ctype": "text/plain; charset=utf-8",
+  "snippet": "# SillyTavern Fandom/MediaWiki Scraper  Server plugin to scrape Fandom and MediaWiki wiki pages and export to JSON documents.  ## How to install  1. Before you begin, make sure you set a config `enabl"
+ },
+ {
+  "url": "https://raw.githubusercontent.com/digitalsadhu/harptos-epoch/master/README.md",
+  "status": 200,
+  "bytes": 513,
+  "ctype": "text/plain; charset=utf-8",
+  "snippet": "# Harptos Epoch  Converts Calendar of Harptos dates to and from an epoch.   ## Installation  ``` npm install harptos-epoch ```  ## Basic Usage  ### Import module  ```js import { toEpoch, fromEpoch } f"
+ }
+]

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabrizio Marzano — Sito personale</title>
+<meta name="description" content="Sito personale di Fabrizio Marzano, servito in locale e accessibile dal web.">
+<style>
+  :root {
+    --bg: #0b0e14;
+    --card: #12161f;
+    --border: #232a36;
+    --fg: #e6e9ef;
+    --muted: #8b94a3;
+    --accent: #5eead4;
+    --accent2: #818cf8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 64px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--border); border-radius: 999px;
+    padding: 6px 14px; font-size: 13px; color: var(--muted);
+    background: var(--card); margin-bottom: 28px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 8px #34d399; }
+  h1 {
+    font-size: clamp(30px, 5vw, 46px); font-weight: 800; letter-spacing: -0.02em;
+    line-height: 1.15; margin-bottom: 14px;
+  }
+  h1 .grad {
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .lead { color: var(--muted); font-size: 18px; max-width: 640px; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px;
+  }
+  .card h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
+  .card p { color: var(--muted); font-size: 15px; }
+  .card code { color: var(--fg); background: #1a2130; padding: 2px 6px; border-radius: 6px; font-size: 13px; }
+  footer {
+    margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  #clock { font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="badge"><span class="dot"></span> Server online — servito direttamente dal PC dell'host</div>
+  <h1>Fabrizio Marzano<br><span class="grad">Master Technical Operator & Systems Architect</span></h1>
+  <p class="lead">Roma, Italia. Multi-vertical: hospitality, AI/automation, community/gaming, design, trading. Questo sito è servito da una macchina domestica e reso raggiungibile dal web tramite tunnel crittografato.</p>
+  <div class="grid">
+    <div class="card">
+      <h2>Architettura</h2>
+      <p>Origine statica su <code>127.0.0.1:8777</code> esposta via reverse tunnel SSH su porta 443. Nessun dato lascia la rete di origine se non il traffico HTTP verso questa pagina.</p>
+    </div>
+    <div class="card">
+      <h2>Stack</h2>
+      <p><code>python http.server</code> (stdlib, zero dipendenze) + <code>OpenSSH</code> + Pinggy. Tutto gratuito, nessun account, nessun servizio cloud a pagamento.</p>
+    </div>
+    <div class="card">
+      <h2>Stato</h2>
+      <p id="status">Connessione attiva. La sessione è viva finché il tunnel resta aperto.</p>
+    </div>
+  </div>
+  <footer>
+    <span>© 2026 Fabrizio Marzano</span>
+    <span id="clock"></span>
+  </footer>
+</div>
+<script>
+  function tick() {
+    document.getElementById('clock').textContent =
+      new Date().toLocaleString('it-IT', { timeZone: 'Europe/Rome' }) + ' CEST';
+  }
+  tick(); setInterval(tick, 1000);
+</script>
+</body>
+</html>

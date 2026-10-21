@@ -1,0 +1,1505 @@
+{
+ "sources": [
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3AYears&cmlimit=500&format=json",
+   "titolo": "FR Wiki API — Category:Years (paginate)",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. 1000+ pagine-anno; con cmlimit=500 e cmcontinue si enumera tutto. Base del contesto per anno."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3AEvents&cmlimit=500&format=json",
+   "titolo": "FR Wiki API — Category:Events",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Enumerazione completa = 535 voci (misurato con paginazione cmcontinue)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3AHolidays&cmlimit=500&format=json",
+   "titolo": "FR Wiki API — Category:Holidays",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200. 57 voci; 30 contengono giorno+mese espliciti (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3ABattles&cmlimit=500&format=json",
+   "titolo": "FR Wiki API — Category:Battles",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. 81 voci; molte con anno nel testo."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category%3ATreaties&cmlimit=500&format=json",
+   "titolo": "FR Wiki API — Category:Treaties",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. 10 voci."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apprefix=Hammer%20&aplimit=100&format=json",
+   "titolo": "FR Wiki API — pagine-giorno (prefisso mese)",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200. apprefix=<Mese >+aplimit=100 enumera le pagine «Mese N»: 360 pagine su 12 mesi (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=allpages&apprefix=Nightal%20&aplimit=100&format=json",
+   "titolo": "FR Wiki API — pagine-giorno Nightal",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200. Stessa tecnica per l'ultimo mese dell'anno."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=Eleasis%201&srlimit=20&format=json",
+   "titolo": "FR Wiki API — ricerca su titoli/data (srsearch)",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200: la ricerca per «Eleasis 1» restituisce la pagina-giorno omonima (pageid reale). Alternativa a allpages."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=Midwinter&srlimit=20&format=json",
+   "titolo": "FR Wiki API — ricerca testuale (srsearch)",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200. Utile per trovare festività/eventi per nome."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=search&srsearch=harptos&srlimit=30&format=json",
+   "titolo": "FR Wiki API — ricerca «harptos»",
+   "tipo": "api",
+   "copre": "era",
+   "note": "Verificato 200. Ricade su calendario e voci di ambientazione."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=embeddedin&eititle=Template%3AEvent&eilimit=100&format=json",
+   "titolo": "FR Wiki API — pagine che usano Template:Event",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200. elenca le voci-evento con campo strutturato «date»: estrazione diretta di giorno/mese."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=backlinks&bltitle=Calendar%20of%20Harptos&bllimit=200&format=json",
+   "titolo": "FR Wiki API — backlinks di Calendar of Harptos",
+   "tipo": "api",
+   "copre": "era",
+   "note": "Verificato 200. Utile per trovare tutte le date/festività che rimandano al calendario."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&prop=revisions&titles=1358%20DR&rvprop=content&rvslots=main&format=json",
+   "titolo": "FR Wiki API — revisions (contenuto in blocco, 50 titoli/richiesta)",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Metodo più veloce: 50 pagine per richiesta → le 2402 pagine-anno dell'intervallo in 49 richieste (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&meta=siteinfo&siprop=statistics&format=json",
+   "titolo": "FR Wiki API — siteinfo/statistics",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Conteggio reale delle voci della wiki, per dichiarare la copertura."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=recentchanges&rclimit=50&format=json",
+   "titolo": "FR Wiki API — recentchanges",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Per mantenere il dataset aggiornato."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=query&list=categorymembers&cmtitle=Category:Calendar&cmlimit=100&format=json",
+   "titolo": "FR Wiki API — Category:Calendar",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200."
+  },
+  {
+   "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Forgotten%20Realms%20timeline&srlimit=20&format=json",
+   "titolo": "Wikipedia API — ricerca (confronto/controllo)",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Non canonica per FR, ma utile come fonte secondaria verificabile."
+  },
+  {
+   "url": "https://archive.org/advancedsearch.php?q=subject%3A%22Forgotten+Realms%22&fl%5B%5D=identifier&fl%5B%5D=title&rows=100&page=1&output=json",
+   "titolo": "Archive.org API — ricerca per soggetto",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200 (JSON). Elenca i manuali scansionati, incluse edizioni del Campaign Setting."
+  },
+  {
+   "url": "https://archive.org/metadata/forgotten-realms-campaign-setting",
+   "titolo": "Archive.org API — metadata item (FRCS)",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Metadati del Campaign Setting originale 1e."
+  },
+  {
+   "url": "https://web.archive.org/cdx/search/cdx?url=forgottenrealms.fandom.com/wiki/1358_DR&output=json&limit=20",
+   "titolo": "Wayback CDX API — storico revisioni pagina",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200. Recupera versioni archiviate delle pagine-anno anche se la wiki cambia."
+  },
+  {
+   "url": "https://openlibrary.org/search.json?q=grand+history+of+the+realms",
+   "titolo": "OpenLibrary API — Grand History of the Realms",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200, numFound=48. Identifica le edizioni del libro-cronaca canonico."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Calendar%20of%20Harptos&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Calendar of Harptos» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Struttura canonica del calendario: 12 mesi da 30 giorni, 5 feste intercalari, date di equinozi/solstizi (Ches 19, Kythorn 20...)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Marking%20the%20years&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Marking the years» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Pagina «Roll of Years»: come si nominano gli anni e la conversione tra ere."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Roll%20of%20Years&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Roll of Years» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Redirect dichiarato verso Marking the years#Names_of_the_Years — verificato 200."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Time%20of%20Troubles&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Time of Troubles» (via API parse)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Evento cardine 1358 DR."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Spellplague&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Spellplague» (via API parse)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Evento cardine 1385 DR."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Second%20Sundering&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Second Sundering» (via API parse)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Evento cardine 1480-1487 DR."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Era%20of%20Upheaval&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Era of Upheaval» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Contenitore d'era per 1358-1487 DR; usato dal campo «age» delle Yearbox."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Portal%3AHistory&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Portal:History» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Portale di raccordo della cronologia."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Ahghairon%27s%20Day&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Ahghairon's Day» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festività: Eleasis 1."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Auril%27s%20Blesstide&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Auril's Blesstide» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festività: Uktar 10."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Brightswords&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Brightswords» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festività: Eleint 21."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Midwinter&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Midwinter» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festa intercalare tra Hammer 30 e Alturiak 1."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Greengrass&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Greengrass» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festa intercalare tra Tarsakh 30 e Mirtul 1."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Midsummer&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Midsummer» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festa intercalare tra Flamerule 30 e Eleasis 1."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Shieldmeet&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Shieldmeet» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Giorno aggiuntivo ogni 4 anni dopo Midsummer."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Highharvestide&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Highharvestide» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festa intercalare dopo Eleint."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Feast%20of%20the%20Moon&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Feast of the Moon» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Festa di fine anno, Uktar 30 / Nightal 1."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Spring%20Equinox&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Spring Equinox» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Ches 19 (da Calendar of Harptos)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Summer%20Solstice&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Summer Solstice» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Kythorn 20 (da Calendar of Harptos)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Winter%20Solstice&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Winter Solstice» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Nightal 20 circa (da Calendar of Harptos)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Autumn%20Equinox&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Autumn Equinox» (via API parse)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Eleint 21 circa (da Calendar of Harptos)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Tenday&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Tenday» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Unità di dieci giorni: granularità interna al mese."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Dale%20Reckoning&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Dale Reckoning» (via API parse)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Sistema di datazione alternativo (DR) da gestire nel generatore."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=The%20Grand%20History%20of%20the%20Realms&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «The Grand History of the Realms» (via API parse)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Il libro-cronaca canonico: le citazioni nelle pagine-anno puntano qui (es. p.144 per il 1358 DR)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Waterdeep&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Waterdeep» (via API parse)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Ambientazione con cronologia cittadina dettagliata."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Cormyr&prop=wikitext&format=json",
+   "titolo": "FR Wiki — voce «Cormyr» (via API parse)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Regno con cronologia per anno molto densa."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Hammer%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Hammer 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Hammer%2030&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Hammer 30» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Alturiak%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Alturiak 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Ches%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Ches 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Ches%2019&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Ches 19» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Tarsakh%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Tarsakh 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Tarsakh%2030&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Tarsakh 30» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Mirtul%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Mirtul 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Kythorn%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Kythorn 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Kythorn%2020&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Kythorn 20» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Flamerule%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Flamerule 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Flamerule%2030&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Flamerule 30» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Eleasis%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Eleasis 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Eleint%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Eleint 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Eleint%2021&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Eleint 21» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Marpenoth%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Marpenoth 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Marpenoth%203&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Marpenoth 3» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Uktar%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Uktar 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Uktar%2010&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Uktar 10» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Uktar%2030&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Uktar 30» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Nightal%201&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Nightal 1» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Nightal%2030&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Nightal 30» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Eleint%2015&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Eleint 15» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=Mirtul%2015&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-giorno «Mirtul 15» (On This Day)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Sezione «On This Day» con eventi datati e citazione del manuale ({{Cite book/...}})."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=-1000%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «-1000 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=-500%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «-500 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=-100%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «-100 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=0%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «0 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=124%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «124 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=241%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «241 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=429%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «429 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=714%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «714 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=882%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «882 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=902%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «902 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1019%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1019 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1081%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1081 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1150%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1150 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1182%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1182 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1235%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1235 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1280%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1280 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1300%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1300 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1310%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1310 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1320%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1320 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1330%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1330 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1340%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1340 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1350%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1350 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1358%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1358 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1360%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1360 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1370%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1370 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1380%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1380 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1385%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1385 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1390%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1390 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1400%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1400 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1420%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1420 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1440%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1440 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1460%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1460 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1470%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1470 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1480%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1480 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1487%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1487 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1490%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1490 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1492%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1492 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1500%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1500 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1510%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1510 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1520%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1520 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/api.php?action=parse&page=1600%20DR&prop=wikitext&format=json",
+   "titolo": "FR Wiki — pagina-anno «1600 DR»",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contiene {{Roll of years|anno|nome}}, {{Yearbox|age=Era…}} e sezioni conflitti/morti; mediana 679 caratteri nell'intervallo (misurato)."
+  },
+  {
+   "url": "https://github.com/geospatial-grimoire/forgotten-realms-wiki-parser",
+   "titolo": "forgotten-realms-wiki-parser",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Converte il DUMP XML della FR Wiki in un unico Markdown pulito: strada più diretta a un corpus locale completo."
+  },
+  {
+   "url": "https://raw.githubusercontent.com/geospatial-grimoire/forgotten-realms-wiki-parser/main/README.md",
+   "titolo": "README forgotten-realms-wiki-parser",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Istruzioni reali di parsing del dump (verificato 200)."
+  },
+  {
+   "url": "https://github.com/SillyTavern/SillyTavern-Fandom-Scraper",
+   "titolo": "SillyTavern-Fandom-Scraper",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Plugin server che scarica pagine Fandom e le esporta in JSON: pipeline riusabile."
+  },
+  {
+   "url": "https://raw.githubusercontent.com/SillyTavern/SillyTavern-Fandom-Scraper/main/README.md",
+   "titolo": "README SillyTavern-Fandom-Scraper",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Verificato 200."
+  },
+  {
+   "url": "https://github.com/dilaouid/FandomScraper",
+   "titolo": "FandomScraper (Node/TS)",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Libreria di scraping Fandom, 54 stelle."
+  },
+  {
+   "url": "https://github.com/Otis-Laboratory/WikiFandomScraper",
+   "titolo": "WikiFandomScraper",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Scraper generico di wiki Fandom per dataset testuali."
+  },
+  {
+   "url": "https://github.com/Nidelon/SillyTavern-Fandom-API-Scraper",
+   "titolo": "SillyTavern-Fandom-API-Scraper",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Usa l'API parse di Fandom: stesso canale usato qui (api.php)."
+  },
+  {
+   "url": "https://github.com/ObsidianTTRPGProject/Obsidian-TTRPG-Atlas",
+   "titolo": "Obsidian-TTRPG-Atlas (root repo)",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Repo con la conversione della FR Wiki in Markdown (verificato 200)."
+  },
+  {
+   "url": "https://github.com/ObsidianTTRPGProject/Obsidian-TTRPG-Atlas/blob/main/Forgotten%20Realms%20Wiki/FR_Wiki_Readme.md",
+   "titolo": "FR_Wiki_Readme (Obsidian-TTRPG-Atlas)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Verificato 200: descrive la conversione della wiki in vault Obsidian."
+  },
+  {
+   "url": "https://github.com/WikiTeam/wikiteam",
+   "titolo": "WikiTeam",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Toolkit per scaricare dump di wiki (incluso Fandom) e archiviarli su Archive.org."
+  },
+  {
+   "url": "https://github.com/fantasycalendar/Fantasy-Calendar",
+   "titolo": "Fantasy-Calendar",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "147 stelle. Supporta calendari custom (Harptos): riferimento per mesi/intercalari."
+  },
+  {
+   "url": "https://github.com/5etools-mirror-3/5etools-src",
+   "titolo": "5etools-src (mirror dati)",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Fonte dei JSON 5e già in data/5etools: date di ambientazione degli adventure."
+  },
+  {
+   "url": "https://github.com/5etools-mirror-3/5etools-2014-src",
+   "titolo": "5etools-2014-src",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Variante edizione 2014."
+  },
+  {
+   "url": "https://github.com/TheGiddyLimit/5etools-utils",
+   "titolo": "5etools-utils",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Utilità ecosistema 5e.tools (validazione/parsing JSON)."
+  },
+  {
+   "url": "https://github.com/ebullient/ttrpg-convert-cli",
+   "titolo": "ttrpg-convert-cli",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Converte i JSON 5e.tools in Markdown/Obsidian: testo delle avventure datate."
+  },
+  {
+   "url": "https://github.com/rogueturnip/5eApi",
+   "titolo": "5eApi",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "API REST/GraphQL sui JSON 5e."
+  },
+  {
+   "url": "https://github.com/oganm/dnddata",
+   "titolo": "dnddata",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Dataset D&D 5e (123 stelle): formato dataset di riferimento."
+  },
+  {
+   "url": "https://github.com/oganm/dndstats",
+   "titolo": "dndstats",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Statistiche derivate, 38 stelle."
+  },
+  {
+   "url": "https://github.com/geospatial-grimoire/toril-gis",
+   "titolo": "toril-gis",
+   "tipo": "dataset",
+   "copre": "era",
+   "note": "Mappa offline editabile dei Forgotten Realms: contesto geografico degli eventi."
+  },
+  {
+   "url": "https://github.com/Bg3-Lore/Bg3Lore",
+   "titolo": "Bg3Lore",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Corpus lore di BG3, ambientato nel 1492 DR."
+  },
+  {
+   "url": "https://github.com/digitalsadhu/harptos-epoch",
+   "titolo": "harptos-epoch",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Converte date Harptos da/verso un epoch: implementazione di riferimento."
+  },
+  {
+   "url": "https://raw.githubusercontent.com/digitalsadhu/harptos-epoch/master/README.md",
+   "titolo": "README harptos-epoch",
+   "tipo": "docs",
+   "copre": "giorno",
+   "note": "Verificato 200."
+  },
+  {
+   "url": "https://github.com/efupw/harptos-date",
+   "titolo": "harptos-date",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Micro-pacchetto per il nome della data Harptos."
+  },
+  {
+   "url": "https://github.com/jmosul/harptos-js",
+   "titolo": "harptos-js",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Libreria stile MomentJS per le date di Faerûn."
+  },
+  {
+   "url": "https://github.com/solmsted/harptos",
+   "titolo": "harptos (classe data)",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Implementazione a classe del calendario."
+  },
+  {
+   "url": "https://github.com/asimone/calendarofharptos",
+   "titolo": "calendarofharptos",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Festività e stagioni di Faerûn."
+  },
+  {
+   "url": "https://github.com/esSarah/faerun_calendar",
+   "titolo": "faerun_calendar",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Calendario Faerûn (progetto separato dal nostro sito)."
+  },
+  {
+   "url": "https://github.com/Cantilux/faerun-date",
+   "titolo": "faerun-date",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Conversione date reali → Faerûn."
+  },
+  {
+   "url": "https://github.com/peltos/forgotten-realms-calendar",
+   "titolo": "forgotten-realms-calendar",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Calendario FR."
+  },
+  {
+   "url": "https://github.com/JoshDrentlaw/faerun-calendar",
+   "titolo": "faerun-calendar",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "App calendario FR."
+  },
+  {
+   "url": "https://github.com/Julexar/Faerun-Calendar",
+   "titolo": "Faerun-Calendar (Roll20)",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Implementazione per Roll20."
+  },
+  {
+   "url": "https://github.com/RKuerten/Calendar-of-Harptos",
+   "titolo": "Calendar-of-Harptos",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Implementazione aggiuntiva del calendario."
+  },
+  {
+   "url": "https://github.com/wzbillings/harptos",
+   "titolo": "harptos (wzbillings)",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Date del calendario di Harptos."
+  },
+  {
+   "url": "https://github.com/wolf81/Harptos",
+   "titolo": "Harptos (wolf81)",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Libreria AD&D per date e orari."
+  },
+  {
+   "url": "https://github.com/rjhoff/harptos",
+   "titolo": "harptos (rjhoff)",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Calendario FR."
+  },
+  {
+   "url": "https://github.com/nfrugier/calendarconverter",
+   "titolo": "calendarconverter",
+   "tipo": "dataset",
+   "copre": "giorno",
+   "note": "Convertitore Harptos → gregoriano."
+  },
+  {
+   "url": "http://ws-forgottenrealms.wikidot.com/roll-of-years",
+   "titolo": "Roll of Years (Forgotten Realms Wikidot)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Pagina dedicata ai nomi degli anni; verificata 200 con contenuto reale."
+  },
+  {
+   "url": "https://www.realmshelps.net/faerun/history/faerun.shtml",
+   "titolo": "Abbreviated Timeline of Faerûn (RealmsHelps)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Cronologia sintetica ma datata; sito storico non protetto: verificato 200."
+  },
+  {
+   "url": "https://www.realmshelps.net/faerun/history/",
+   "titolo": "RealmsHelps — sezione History",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Indice della sezione storica (verificato 200)."
+  },
+  {
+   "url": "https://www.realmshelps.net/faerun/lore/life/time.shtml",
+   "titolo": "Life in the Realms — Time and Seasons",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Mesi, tenday, feste: struttura del calendario vista da una fonte storica."
+  },
+  {
+   "url": "https://alphastream.org/index.php/2020/04/09/the-official-timeline-for-the-forgotten-realms-and-its-adventures/",
+   "titolo": "The Official Timeline for the Forgotten Realms and Its Adventures",
+   "tipo": "blog",
+   "copre": "anno",
+   "note": "Mappa avventure ufficiali → anni DR; verificata 200."
+  },
+  {
+   "url": "https://www.enworld.org/threads/fr-official-timeline-roll-of-years.480310/",
+   "titolo": "EN World — FR official timeline / roll of years",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Discussione con elenchi di anni; verificata 200."
+  },
+  {
+   "url": "https://www.enworld.org/threads/campaign-setting-resources-online.688698/",
+   "titolo": "EN World — Campaign Setting Resources Online",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Indice di risorse FR."
+  },
+  {
+   "url": "https://www.enworld.org/threads/forgotten-realms-books-tables-of-contents.715949/page-16",
+   "titolo": "EN World — FR Books Tables of Contents",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Indici dei romanzi con date di ambientazione."
+  },
+  {
+   "url": "https://www.dndbeyond.com/forums/dungeons-dragons-discussion/story-lore/2788-the-roll-of-years-in-the-forgotten-realms",
+   "titolo": "D&D Beyond — The Roll of Years in the Forgotten Realms",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Thread ufficiale sui nomi degli anni (verificato 200)."
+  },
+  {
+   "url": "https://www.dndbeyond.com/forums/dungeons-dragons-discussion/story-lore/15339-time-of-troubles-spellplague-and-a-certain-dark",
+   "titolo": "D&D Beyond — Time of Troubles, Spellplague…",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Discussione sugli eventi cardine 1358/1385 DR."
+  },
+  {
+   "url": "https://forums.larian.com/ubbthreads.php?ubb=showflat&Number=823882",
+   "titolo": "Larian Forums — Forgotten Realms Chronology 3.0",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Cronologia lunga e datata, verificata 200."
+  },
+  {
+   "url": "https://pdfcoffee.com/forgotten-realms-timeline-pdf-free.html",
+   "titolo": "Forgotten Realms Timeline (PDF Coffee)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Copia pubblica di una cronologia PDF, verificata 200."
+  },
+  {
+   "url": "https://www.scribd.com/document/703017152/Forgotten-Realms-Timeline",
+   "titolo": "Faerûn Historical Timeline (Scribd)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Documento pubblico, verificato 200."
+  },
+  {
+   "url": "https://fr.scribd.com/document/395984707/D-D-Forgotten-Realms-Timeline",
+   "titolo": "Timeline of Faerûn History (Scribd FR)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Variante francese, verificata 200."
+  },
+  {
+   "url": "https://fantasy-calendar.com/",
+   "titolo": "Fantasy Calendar (app)",
+   "tipo": "docs",
+   "copre": "giorno",
+   "note": "Calendari custom con supporto Harptos: modello dati di riferimento."
+  },
+  {
+   "url": "https://5e.tools/adventures.html",
+   "titolo": "5e.tools — Adventures",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Elenco avventure con metadati; il JSON è già in data/5etools/adventures.json."
+  },
+  {
+   "url": "https://5e.tools/index.html",
+   "titolo": "5e.tools — indice",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Porta d'ingresso ai dataset 5e."
+  },
+  {
+   "url": "https://snowtools.nivosus.net/books.html",
+   "titolo": "SnowTools — Books (mirror 5e.tools)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Mirror alternativo dei dati 5e, verificato 200."
+  },
+  {
+   "url": "https://www.mediawiki.org/wiki/API:Categorymembers",
+   "titolo": "MediaWiki — API:Categorymembers",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Documentazione della query usata per enumerare Years/Events/Holidays."
+  },
+  {
+   "url": "https://www.mediawiki.org/wiki/API:Search",
+   "titolo": "MediaWiki — API:Search",
+   "tipo": "docs",
+   "copre": "giorno",
+   "note": "Documentazione di srsearch (usata per le pagine-giorno)."
+  },
+  {
+   "url": "https://www.mediawiki.org/wiki/API:Parsing_wikitext",
+   "titolo": "MediaWiki — API:Parsing wikitext",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Documentazione di action=parse: l'unico canale che su Fandom risponde 200."
+  },
+  {
+   "url": "https://www.mediawiki.org/wiki/Help:CirrusSearch",
+   "titolo": "MediaWiki — Help:CirrusSearch",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Sintassi avanzata (insource:), da verificare caso per caso su Fandom."
+  },
+  {
+   "url": "https://meta.wikimedia.org/wiki/Data_dumps/Dump_format",
+   "titolo": "Wikimedia — Data dumps/Dump format",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Formato dei dump XML per un eventuale import locale."
+  },
+  {
+   "url": "https://wiki.archiveteam.org/index.php/Fandom",
+   "titolo": "ArchiveTeam — Fandom",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Stato dell'archiviazione dei wiki Fandom."
+  },
+  {
+   "url": "https://pypi.org/project/mediawiki-dump/",
+   "titolo": "mediawiki-dump (PyPI)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Libreria Python per leggere i dump MediaWiki."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Forgotten_Realms",
+   "titolo": "Wikipedia — Forgotten Realms",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Contesto generale e bibliografia (non fonte di date al giorno)."
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Ed_Greenwood",
+   "titolo": "Wikipedia — Ed Greenwood",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Autore del setting; contesto delle fonti primarie."
+  },
+  {
+   "url": "https://www.candlekeep.com/",
+   "titolo": "Candlekeep (sito storico FR)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Sito di riferimento della comunità FR; verificato 200."
+  },
+  {
+   "url": "https://www.candlekeep.com/library/library.htm",
+   "titolo": "Candlekeep — Library",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Raccolta di saggi/cronologie della comunità."
+  },
+  {
+   "url": "https://archive.org/details/forgotten-realms-campaign-setting",
+   "titolo": "Archive.org — Forgotten Realms Campaign Setting",
+   "tipo": "dataset",
+   "copre": "anno",
+   "note": "Scansione del Campaign Setting, verificata 200."
+  },
+  {
+   "url": "https://web.archive.org/web/2023/https://forgottenrealms.fandom.com/wiki/1358_DR",
+   "titolo": "Wayback Machine — 1358 DR (snapshot 2023)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Copia archiviata della pagina-anno: fallback se la wiki cambia."
+  },
+  {
+   "url": "https://dnd-wiki.org/wiki/Main_Page",
+   "titolo": "dnd-wiki.org",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Wiki D&D alternativa (MediaWiki aperto), verificata 200."
+  },
+  {
+   "url": "https://www.dandwiki.com/wiki/Main_Page",
+   "titolo": "dandwiki.com",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Seconda wiki D&D aperta, verificata 200."
+  },
+  {
+   "url": "https://api.github.com/search/repositories?q=forgotten-realms&per_page=30",
+   "titolo": "GitHub API — ricerca «forgotten-realms»",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "187 repository trovati (misurato): mappa del panorama dataset."
+  },
+  {
+   "url": "https://www.kaggle.com/api/v1/datasets/list?search=dungeons%20dragons",
+   "titolo": "Kaggle API — ricerca dataset D&D",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200: verifica esistenza di dataset FR pubblici."
+  },
+  {
+   "url": "https://www.reddit.com/r/DnD/comments/cmt7bv/forgotten_realms_lore_40000_years/",
+   "titolo": "Reddit — Forgotten Realms Lore (40.000 anni)",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Discussione con cronologia ampia; verificata 200."
+  },
+  {
+   "url": "https://www.reddit.com/r/Forgotten_Realms/comments/fvrcbf/year_names/",
+   "titolo": "Reddit — Year names",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Elenco dei nomi degli anni."
+  },
+  {
+   "url": "https://www.reddit.com/r/Forgotten_Realms/comments/hkehzs/events/",
+   "titolo": "Reddit — Events",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Discussione elencante eventi datati."
+  },
+  {
+   "url": "https://www.reddit.com/r/Forgotten_Realms/comments/b39n7j/spreadsheet_with_fr_locations_and_details/",
+   "titolo": "Reddit — Spreadsheet FR locations",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Foglio dati della comunità."
+  },
+  {
+   "url": "https://www.reddit.com/r/DataHoarder/comments/1rwsqaw/how_to_download_fandom_wikis_and_others/",
+   "titolo": "Reddit — come scaricare wiki Fandom",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Metodo pratico di dump dei wiki Fandom."
+  },
+  {
+   "url": "https://api.github.com/search/repositories?q=forgotten+realms&per_page=20",
+   "titolo": "GitHub API — ricerca «forgotten realms»",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200: 185 repository (conteggio reale)."
+  },
+  {
+   "url": "https://api.github.com/search/repositories?q=fandom+scraper+wiki&per_page=30",
+   "titolo": "GitHub API — ricerca scraper Fandom",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200: 56 repository (conteggio reale)."
+  },
+  {
+   "url": "https://api.github.com/search/repositories?q=harptos&per_page=30",
+   "titolo": "GitHub API — ricerca «harptos»",
+   "tipo": "api",
+   "copre": "giorno",
+   "note": "Verificato 200: 16 repository (conteggio reale)."
+  },
+  {
+   "url": "https://api.github.com/search/repositories?q=5etools&per_page=30",
+   "titolo": "GitHub API — ricerca «5etools»",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200: 333 repository (conteggio reale)."
+  },
+  {
+   "url": "https://api.github.com/search/repositories?q=dnd+5e+dataset&per_page=30",
+   "titolo": "GitHub API — ricerca dataset D&D 5e",
+   "tipo": "api",
+   "copre": "anno",
+   "note": "Verificato 200: 5 repository (conteggio reale)."
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Calendar_of_Harptos",
+   "titolo": "FR Wiki — Calendar of Harptos (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Pagina canonica del calendario: il contenuto È stato ottenuto e verificato via api.php (vedi voce API «Calendar of Harptos»). [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Marking_the_years",
+   "titolo": "FR Wiki — Marking the years (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Elenco dei nomi degli anni: contenuto ottenuto via api.php. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/1358_DR",
+   "titolo": "FR Wiki — 1358 DR (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Pagina-anno più ricca (Time of Troubles): contenuto ottenuto via api.php; copia archiviata su Wayback in elenco. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Second_Sundering",
+   "titolo": "FR Wiki — Second Sundering (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Evento 1480-1487 DR: contenuto via api.php. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Time_of_Troubles",
+   "titolo": "FR Wiki — Time of Troubles (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Contenuto via api.php. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Portal:History",
+   "titolo": "FR Wiki — Portal:History (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "era",
+   "note": "Portale cronologia: contenuto via api.php. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Category:Years",
+   "titolo": "FR Wiki — Category:Years (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Enumerazione ottenuta via API categorymembers. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Category:Holidays",
+   "titolo": "FR Wiki — Category:Holidays (URL pubblica)",
+   "tipo": "wiki",
+   "copre": "giorno",
+   "note": "Enumerazione ottenuta via API categorymembers (57 voci). [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://forgottenrealms.fandom.com/wiki/Special:RecentChanges?feed=atom",
+   "titolo": "FR Wiki — feed Atom RecentChanges",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Feed di aggiornamento: bloccato al client automatico; il polling va fatto con api.php?list=recentchanges (in elenco). [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://rpg.stackexchange.com/questions/50627/when-does-hoard-of-the-dragon-queen-start",
+   "titolo": "RPG StackExchange — inizio di Hoard of the Dragon Queen",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Domanda/risposta sulle date in-world dell'avventura; non leggibile da client automatico. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://www.worldanvil.com/w/forgotten-realms-hrethnar/t/timeline-of-events-timeline",
+   "titolo": "World Anvil — Timeline of Events (FR Hrethnar)",
+   "tipo": "blog",
+   "copre": "anno",
+   "note": "Timeline pubblica della comunità; protetta. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://community.fandom.com/wiki/Help:Database_download",
+   "titolo": "Fandom — Help:Database download",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Documentazione ufficiale sui dump Fandom: protetta al client automatico; da aprire manualmente per confermare il formato. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://www.dmsguild.com/product/28850/Grand-History-of-the-Realms",
+   "titolo": "DMs Guild — Grand History of the Realms",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Fonte canonica a pagamento (PDF): la cronologia più densa di date esistente, ma richiede acquisto/accesso manuale. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://1d6chan.miraheze.org/wiki/Doomed_Forgotten_Realms",
+   "titolo": "1d6chan — Doomed Forgotten Realms",
+   "tipo": "wiki",
+   "copre": "anno",
+   "note": "Wiki della comunità; protetta al client automatico. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://eilistraee.com/forums/viewtopic.php?t=978",
+   "titolo": "Eilistraee — Magic and the Spellplague",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Discussione sugli effetti della Spellplague; protetta. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://webapps.stackexchange.com/questions/41233/how-to-download-a-wikia",
+   "titolo": "WebApps SE — How to download a Wikia",
+   "tipo": "forum",
+   "copre": "anno",
+   "note": "Metodo di dump dei wiki Wikia/Fandom; protetto al client automatico. [NON ACCESSIBILE a client automatico: HTTP 403 — nessun bypass tentato]"
+  },
+  {
+   "url": "https://www.yumpu.com/en/document/view/53229297/the-forgotten-realms-timeline",
+   "titolo": "THE FORGOTTEN REALMS TIMELINE (Yumpu)",
+   "tipo": "docs",
+   "copre": "anno",
+   "note": "Documento sfogliabile: risponde 202 a client automatici, contenuto reso via JS — accessibile solo da browser umano. [NON ACCESSIBILE a client automatico: HTTP 202 — nessun bypass tentato]"
+  }
+ ],
+ "plan": [
+  "FASE 0 — Setup: una sola sessione HTTP con User-Agent browser. Su forgottenrealms.fandom.com SOLO api.php risponde 200 agli script: /wiki/... e ?action=raw restituiscono 403 (Cloudflare). Non tentare bypass: usare l'API.",
+  "FASE 1 (giorno, alta resa) — Enumerare le pagine-giorno: action=query&list=allpages&apprefix=<Mese >&aplimit=100 per i 12 mesi. Misurato: 360 pagine reali («Hammer 1» … «Nightal 30»).",
+  "FASE 2 (giorno) — Scaricare il wikitext delle 360 pagine con action=query&prop=revisions&rvprop=content&rvslots=main&titles=A|B|C (50 titoli per richiesta → 8 richieste). Misurato: 565 voci «On This Day», di cui 367 con anno DR esplicito (60 anni distinti, da 1 DR a 1492 DR).",
+  "FASE 3 (giorno) — Parsing: ogni riga «*» della sezione «On This Day» diventa una riga del dataset con (mese, giorno, anno_evento, testo, citazione). Estrarre la citazione con regex su {{Cite book/(...)|pagina}} e {{Cite dungeon/...}}: sono le tre ref che rendono la voce verificabile.",
+  "FASE 4 (giorno) — Festività: action=parse delle 57 voci di Category:Holidays. Misurato: 30 contengono giorno+mese (Ahghairon's Day → Eleasis 1, Auril's Blesstide → Uktar 10, Brightswords → Eleint 21, Crowning Day → Mirtul 3, Day of Wonders → Marpenoth 3, Dragondown → Kythorn 20, Feast of the Stags → Marpenoth 1, Feast of the Moon → Uktar 30/Nightal 1).",
+  "FASE 5 (giorno) — Feste intercalari e giorni speciali da Calendar of Harptos: Midwinter (Hammer 30→Alturiak 1), Greengrass (Tarsakh 30→Mirtul 1), Midsummer (Flamerule 30→Eleasis 1), Shieldmeet (ogni 4 anni dopo Midsummer), Highharvestide, Feast of the Moon; più Spring Equinox (Ches 19) e Summer Solstice (Kythorn 20). Sono 5-6 date fisse che il generatore deve calcolare, non inventare.",
+  "FASE 6 (anno, copertura totale) — Enumerare le pagine-anno con action=query&list=allpages&apprefix=<-|0..9> e filtro ^-?\\d+ DR$. Misurato: 2.991 pagine-anno totali, 2.402 nell'intervallo [-1000, +1600] (801 negative, 1000 nel I millennio, 300 nel 1000-1299, 200 nel 1300-1499, 101 nel 1500-1600).",
+  "FASE 7 (anno) — Scaricare il wikitext di tutte le 2.402 pagine-anno con revisions in blocchi da 50: misurato 19,2 s per l'intero intervallo (49 richieste). Il file completo è già in cache: data/_frcache/yearpages_all.json.",
+  "FASE 8 (anno) — Tre campi strutturati da ogni pagina-anno, presenti in modo sistematico: {{Roll of years|ANNO|NOME}} (nome dell'anno — presente in 2.299/2.402) e {{Yearbox|age=ERA}} (presente in 2.402/2.402; valori reali: Age of Humanity 2146, Era of Upheaval 133, Present Age 122). Questi sono il «contesto storico per anno» che il generatore deve usare.",
+  "FASE 9 (anno) — Estrazione eventi dalle sezioni {{Yearbox/in-conflicts}}, /deaths e simili: sono elenchi puntati con anno certo. Attenzione: la mediana della pagina-anno nell'intervallo è di soli 679 caratteri; 1.565 pagine superano 500 char, 633 superano 1.000, 138 superano 2.000, 36 superano 5.000. Il dettaglio si concentra su 1358, 1372-1385, 1479-1490.",
+  "FASE 10 (anno) — Precisione mensile dentro l'anno: misurato che solo 78 pagine-anno su 2.402 nominano un mese nel testo (es. «Kythorn: End of the Ruathym-Luskan wars» nel 1358 DR). Il mese va quindi preso dai prefissi «<Mese>:» dei bullet, non dalle tabelle.",
+  "FASE 11 (anno) — Eventi e guerre come entità: 535 voci in Category:Events, 81 in Category:Battles, 10 in Category:Treaties, con anno nel testo. Incrociare con action=query&list=embeddedin&eititle=Template:Event che restituisce le voci con campo strutturato «date».",
+  "FASE 12 (era) — Gerarchia delle ere per il selettore d'epoca: Calendar of Harptos + Era of Upheaval + Portal:History. Le ere restituite dal campo «age» coprono di fatto tutto l'intervallo richiesto.",
+  "FASE 13 (verifica) — Ogni riga generata deve portare (a) la pagina sorgente (URL api.php o /wiki/ con nota), (b) la citazione del manuale se presente, (c) un flag di provenienza: «citato» (con ref), «wiki» (senza ref), «derivato». Il generatore deve saper dichiarare quando sta interpolando invece di citare.",
+  "FASE 14 (determinismo) — Per i 915.000 giorni senza dato reale, la funzione data→contenuto deve usare solo: anno (nome dell'anno + era), mese/giorno (festività fisse del calendario di Harptos), e gli eventi reali dell'anno più vicino. Nessuna invenzione di eventi datati: per quei giorni si generano meteo, festività e riferimenti d'era, non «accadde X».",
+  "FASE 15 (cache e freschezza) — Salvare tutto in JSON locale versionato e aggiornare con api.php?list=recentchanges. Per le parti bloccate usare Wayback (CDX API) invece di combattere Cloudflare.",
+  "FASE 16 (fallback dump) — Se serve il corpus completo (tutte le 2.991 pagine-anno più gli eventi), la strada è il dump XML della wiki + forgotten-realms-wiki-parser (in elenco), oppure WikiTeam/Archive.org. Non è necessario per l'intervallo -1000/+1600: l'API copre già tutto in poche decine di richieste."
+ ],
+ "gaps": [
+  "Incoerenza di misura sulle festività: nelle 57 voci di Category:Holidays solo 30 espongono giorno+mese nel testo (52,6%); le altre 27 vanno datate a mano o escluse. Il campo strutturato «date» di Template:Event non è compilato ovunque.",
+  "Buco di granularità mensile/giornaliera negli anni: solo 78 pagine-anno su 2.402 nominano un mese e le pagine-giorno coprono 360 date con soli 367 eventi complessivi datati per anno. Fuori da ~60 anni distinti non esiste NESSUN evento datato a livello giorno: qualunque «evento del giorno X dell'anno Y» fuori da quella lista è per forza generato.",
+  "Post-1506 DR la wiki è quasi vuota (la pagina 1508 DR ha pochissimo testo) e le pagine-anno oltre il 1500 sono solo 101: la finestra «presente» 1506-1600 non ha cronologia reale, quindi va coperta con contenuto dichiaratamente derivato (era + regnanti noti), non con eventi citati. Resta inoltre chiuso l'accesso automatico alle fonti primarie a pagamento (Grand History of the Realms su DMs Guild, 403) e alle discussioni su StackExchange/GiantITP/WorldAnvil (403), quindi le date più fini di quelle già citate nelle pagine-giorno non sono recuperabili senza intervento umano."
+ ]
+}

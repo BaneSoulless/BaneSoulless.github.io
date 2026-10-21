@@ -1,0 +1,84 @@
+/* ==========================================================================
+   onboarding.css — Sistema introduttivo (tour guidato + pulsante ?)
+   Inlinato in ogni pagina via SHARED_CSS (build_site.py).
+   ========================================================================== */
+.tour-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 90;
+  width: 46px;
+  height: 46px;
+  min-height: 46px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(20, 22, 26, 0.78);
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+  transition: transform 0.16s var(--ease-out, ease-out), border-color 0.16s ease;
+}
+.tour-fab:hover { transform: translateY(-2px); border-color: var(--border-hover); }
+.tour-fab:focus-visible { outline: 2px solid var(--border-focus); outline-offset: 2px; }
+@supports (backdrop-filter: blur(1px)) {
+  .tour-fab { backdrop-filter: blur(14px) saturate(150%); -webkit-backdrop-filter: blur(14px) saturate(150%); }
+}
+
+.tour-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(6, 8, 12, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.tour-overlay[hidden] { display: none; }
+.tour-card {
+  width: 100%;
+  max-width: 560px;
+  background: rgba(20, 22, 26, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 26px 24px 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+@supports (backdrop-filter: blur(1px)) {
+  .tour-card { backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); }
+}
+.tour-ico { font-size: 34px; line-height: 1; margin-bottom: 10px; }
+.tour-card h2 { font-size: 21px; font-weight: 800; margin-bottom: 8px; text-wrap: balance; }
+.tour-card p { color: var(--fg-muted); font-size: 14.5px; line-height: 1.7; }
+.tour-card ul { margin: 10px 0 0 18px; color: var(--fg-muted); font-size: 14px; line-height: 1.7; }
+.tour-card a { color: var(--accent); }
+.tour-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.tour-dots { display: flex; gap: 6px; }
+.tour-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+.tour-dots span.act { background: var(--accent); }
+.tour-actions { display: flex; gap: 8px; }
+.tour-actions .btn { min-height: 40px; }
+@media (max-width: 767px) {
+  .tour-card { padding: 20px 16px 16px; }
+  .tour-fab { width: 42px; height: 42px; right: 12px; bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tour-fab { transition: none; }
+}

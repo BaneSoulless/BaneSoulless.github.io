@@ -1,0 +1,27 @@
+{
+ "data": "2026-10-12",
+ "fonte": "clickthrough_1920_v2.py (il click-through dell'utente, non il mio)",
+ "difetto_1_CHIUSO": {
+  "nome": "nav 'Strumenti del Tavolo' portava alla pagina vecchia (widgets.html)",
+  "causa_radice": "tre sorgenti di etichetta: la tupla nav (build_site.py:421-422), il dizionario bilingue (i18n_bi.py:122,125) che riscrive i link a runtime, e il breadcrumb (build_site.py:505). Il dizionario riassegnava il nome alla pagina sbagliata.",
+  "fix": "navTable -> ('Strumenti del Tavolo','Table Tools'); navWidgets -> ('Widget (calendario e meteo)','Widgets (calendar & weather)'); idem nella tupla nav. backup: .hermes/backups/*nav.bak",
+  "verifica_runtime": "click-by-role su 'Strumenti del Tavolo' -> tavolo.html (era widgets.html). Entrambi i link mostrano l'etichetta giusta nel DOM vivo."
+ },
+ "difetto_2_RESIDUO_con_percorso_meccanico": {
+  "nome": "le schede del lookup NON hanno le icone delle azioni (svg=0 nel blocco AZIONI, misurato)",
+  "evidenza": "grep 'ACT_ICON|actionIcon|Attack.webp|48 azioni' su build_site.py e assets/*.js: ZERO occorrenze — le 14 icone SVG e la mappa delle 48 azioni dichiarate in una sessione precedente NON sono nel codice: perse in un rebuild/restore successivo. L'utente lo vedeva ('le immagini nelle schede') e la mia verifica passata era su uno stato che non e' quello corrente.",
+  "dove_attaccarle": "build_site.py, function featureBlock(title, list) alla riga ~2651: e' il render di AZIONI/TRATTI/REAZIONI. Per ogni item con nome (childName), emettere un <svg> inline davanti al nome, scelto da una mappa nome->glifo.",
+  "come_riprenderlo": [
+   "1. creare la mappa ICONE_AZIONI (nome azione inglese -> path SVG 20x20) nel generatore: le 14 classi gia' progettate (attacco due-armi, concentrazione, scudo, guarigione, identificare, improvvisare, magia, marcare, oltrepassare, stabilizzare, zufolare, arrampicarsi, svegliare, altra)",
+   "2. in featureBlock, davanti al <strong> del nome: icona se presente nella mappa, niente altrimenti (mai un quadratino generico)",
+   "3. rebuild + verifica: aprire cerca.html?q=Aboleth, cliccare la riga, e contare svg>0 nel blocco AZIONI (il check esiste gia' in clickthrough_1920_v2.py passo 5)",
+   "4. rieseguire la suite: le stringhe estratte cambiano (nuovi alt/aria) -> riestrarre i bundle i18n se servono"
+  ],
+  "owner": "prossimo run (lavoro da turno dedicato: 14 glifi + mappa + verifica)"
+ },
+ "falsi_positivi_della_sonda_chiariti": {
+  "dadi": "il bottone si chiama 'Aggiungi e tira' (iniziativa) — il tiro d20 appare (d20:15 misurato). Il rotolatore di dadi usa altri controlli: nomi da scoprire dal DOM, non inventare.",
+  "personaggi_build": "0 details con 'select, a[href*=pdf], .rc-liv-per-build': la classe .rc-liv-per-build NON esiste (era mia). I 108 details delle build esistono: trovare il selettore reale prima di ritestare."
+ },
+ "lezione": "tre sorgenti per la stessa etichetta (tupla, dizionario runtime, breadcrumb): cambiare una sola delle tre produce un fix che appare landed nell'HTML statico e viene riscritto a runtime. La verifica deve sempre essere sul DOM VIVO."
+}

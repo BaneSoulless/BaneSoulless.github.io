@@ -1,0 +1,47 @@
+{
+ "months": [
+  {
+   "name": "Hammer",
+   "festival_after": "Midwinter"
+  },
+  {
+   "name": "Alturiak"
+  },
+  {
+   "name": "Ches"
+  },
+  {
+   "name": "Tarsakh",
+   "festival_after": "Greengrass"
+  },
+  {
+   "name": "Mirtul"
+  },
+  {
+   "name": "Kythorn"
+  },
+  {
+   "name": "Flamerule",
+   "festival_after": "Midsummer"
+  },
+  {
+   "name": "Eleasias"
+  },
+  {
+   "name": "Eleint",
+   "festival_after": "Highharvestide"
+  },
+  {
+   "name": "Marpenoth"
+  },
+  {
+   "name": "Uktar",
+   "festival_after": "Feast of the Moon"
+  },
+  {
+   "name": "Nightal"
+  }
+ ],
+ "days_per_month": 30,
+ "moon_cycle": 30
+}

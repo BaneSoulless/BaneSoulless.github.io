@@ -1,0 +1,140 @@
+{
+ "total": 12,
+ "pass": 12,
+ "fail": 0,
+ "blocked": 0,
+ "results": [
+  {
+   "id": "T01",
+   "methodology": "API Contract & System Testing",
+   "target": "origin :8777 / 12 resources",
+   "action": "GET each path, read ETag header",
+   "tooling": "urllib.request",
+   "success_criterion": "12/12 resources return 200 with an ETag",
+   "outcome": "PASS",
+   "note": "12/12 advertise an ETag",
+   "elapsed_ms": 118.9
+  },
+  {
+   "id": "T02",
+   "methodology": "Property-Based Testing (invariant)",
+   "target": "origin :8777",
+   "action": "re-request each path with If-None-Match",
+   "tooling": "urllib.request",
+   "success_criterion": "every conditional request returns 304 with an empty body",
+   "outcome": "PASS",
+   "note": "12/12 -> 304 with 0 bytes",
+   "elapsed_ms": 137.0
+  },
+  {
+   "id": "T03",
+   "methodology": "Property-Based Testing (invariant)",
+   "target": "origin :8777/index.html",
+   "action": "two independent GETs, compare ETag",
+   "tooling": "urllib.request",
+   "success_criterion": "an unchanged file yields an identical ETag",
+   "outcome": "PASS",
+   "note": "\"2e615-18d9c1cd6dd9c1ac\" == \"2e615-18d9c1cd6dd9c1ac\"",
+   "elapsed_ms": 310.7
+  },
+  {
+   "id": "T04",
+   "methodology": "Property-Based Testing (invariant)",
+   "target": "origin :8777/_qa_probe_etag.txt",
+   "action": "create, conditionally re-fetch, edit, conditionally re-fetch",
+   "tooling": "urllib.request + pathlib",
+   "success_criterion": "unchanged -> 304; changed -> 200 with a NEW ETag (no stale 304)",
+   "outcome": "PASS",
+   "note": "v1: 200->304 | v2: 200 with a NEW ETag (\"15-18d9cba8f3cb3e3c\" != \"24-18d9cba8f3e25590\")",
+   "elapsed_ms": 4.3
+  },
+  {
+   "id": "T05",
+   "methodology": "API Contract & System Testing",
+   "target": "origin :8777/index.html",
+   "action": "inspect Cache-Control",
+   "tooling": "urllib.request",
+   "success_criterion": "no-store absent (client may store) AND no-cache present (must revalidate)",
+   "outcome": "PASS",
+   "note": "Cache-Control='no-cache, must-revalidate'",
+   "elapsed_ms": 5.3
+  },
+  {
+   "id": "T06",
+   "methodology": "Unmocked Integration Testing",
+   "target": "origin :8777 allowlist",
+   "action": "request internals and dotfiles",
+   "tooling": "urllib.request",
+   "success_criterion": "every blocked path returns 403",
+   "outcome": "PASS",
+   "note": "7/7 -> 403",
+   "elapsed_ms": 17.0
+  },
+  {
+   "id": "T07",
+   "methodology": "Unmocked Integration Testing",
+   "target": "origin :8777 directories",
+   "action": "GET /tools/",
+   "tooling": "urllib.request",
+   "success_criterion": "directory listing is refused (403)",
+   "outcome": "PASS",
+   "note": "root=200 tools/=403",
+   "elapsed_ms": 5.9
+  },
+  {
+   "id": "T08",
+   "methodology": "Concurrency & Thread-Safety Testing",
+   "target": "origin :8777 (ThreadingHTTPServer)",
+   "action": "40 parallel threads issuing conditional GETs",
+   "tooling": "threading + urllib.request",
+   "success_criterion": "40/40 return 304 with no body and no exception",
+   "outcome": "PASS",
+   "note": "40/40 concurrent conditional requests returned 304/0B",
+   "elapsed_ms": 1539.4
+  },
+  {
+   "id": "T09",
+   "methodology": "Stress & Breakpoint Analysis + Resource Profiling",
+   "target": "origin process RSS",
+   "action": "200 fetch cycles, sample RSS before/after",
+   "tooling": "psutil",
+   "success_criterion": "0 transport errors and RSS growth < 30 MB",
+   "outcome": "PASS",
+   "note": "200 cycles, errors=0, RSS delta=-0.05 MB",
+   "elapsed_ms": 4049.8
+  },
+  {
+   "id": "T10",
+   "methodology": "API Contract & System Testing",
+   "target": "origin :8777/index.html",
+   "action": "HEAD request",
+   "tooling": "urllib.request",
+   "success_criterion": "HEAD returns 200 and advertises the ETag",
+   "outcome": "PASS",
+   "note": "HEAD 200 etag=yes",
+   "elapsed_ms": 1.0
+  },
+  {
+   "id": "T11",
+   "methodology": "API Contract & System Testing",
+   "target": "origin :8777/risorse.html",
+   "action": "GET with Accept-Encoding: gzip",
+   "tooling": "urllib.request",
+   "success_criterion": "Content-Encoding gzip + Vary: Accept-Encoding + wire bytes < raw",
+   "outcome": "PASS",
+   "note": "enc=gzip vary=Accept-Encoding wire=133597B raw=454631B",
+   "elapsed_ms": 13.8
+  },
+  {
+   "id": "T12",
+   "methodology": "Chaos & Resilience Injection",
+   "target": "origin :8777/index.html",
+   "action": "send a syntactically odd If-None-Match",
+   "tooling": "urllib.request",
+   "success_criterion": "server answers 200, never 5xx",
+   "outcome": "PASS",
+   "note": "malformed If-None-Match -> 200 (must not 5xx)",
+   "elapsed_ms": 5.7
+  }
+ ]
+}

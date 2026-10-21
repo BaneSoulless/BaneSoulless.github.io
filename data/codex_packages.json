@@ -1,0 +1,385 @@
+{
+ "nota": "Classe, sottoclasse e livelli sono DERIVATI dalla descrizione della fonte. Specie, background, punteggi e talenti NON sono dichiarati dalla fonte: sono DEFAULT DICHIARATI, scelti coerenti con la build (primaria a 20, point-buy + background + ASI).",
+ "builds": {
+  "wiz": {
+   "classes": {
+    "Wizard": 20
+   },
+   "sub": {
+    "Wizard": "Evoker"
+   },
+   "sp": "Human",
+   "bg": "Sage",
+   "ab": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 12,
+    "cha": 10
+   },
+   "feats": [
+    "Spell Sniper",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "Spell Sniper (dichiarato obbligatorio dalla fonte)"
+  },
+  "bard": {
+   "classes": {
+    "Bard": 20
+   },
+   "sub": {
+    "Bard": "College of Valor"
+   },
+   "sp": "Human",
+   "bg": "Entertainer",
+   "ab": {
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "Dual Wielder",
+    "Skill Expert",
+    "War Caster",
+    "Boon of Fate"
+   ],
+   "feat_chiave": "Dual Wielder (fonte)"
+  },
+  "barb": {
+   "classes": {
+    "Barbarian": 20
+   },
+   "sub": {
+    "Barbarian": "Path of the Berserker"
+   },
+   "sp": "Goliath",
+   "bg": "Soldier",
+   "ab": {
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 8,
+    "wis": 10,
+    "cha": 8
+   },
+   "feats": [
+    "Great Weapon Master",
+    "Tough",
+    "Crusher",
+    "Boon of Fortitude"
+   ],
+   "feat_chiave": "Great Weapon Master (fonte)"
+  },
+  "monk": {
+   "classes": {
+    "Monk": 20
+   },
+   "sub": {
+    "Monk": "Warrior of the Open Hand"
+   },
+   "sp": "Human",
+   "bg": "Sailor",
+   "ab": {
+    "str": 12,
+    "dex": 20,
+    "con": 14,
+    "int": 8,
+    "wis": 18,
+    "cha": 8
+   },
+   "feats": [
+    "Speedy",
+    "Crusher",
+    "Skill Expert",
+    "Boon of Speed"
+   ],
+   "feat_chiave": "— (la fonte cita la weapon mastery Nick)"
+  },
+  "sm": {
+   "classes": {
+    "Paladin": 11,
+    "Warlock": 2,
+    "Sorcerer": 7
+   },
+   "sub": {
+    "Paladin": "Oath of Devotion"
+   },
+   "sp": "Human",
+   "bg": "Soldier",
+   "ab": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "Great Weapon Master",
+    "War Caster",
+    "Resilient",
+    "Boon of Irresistible Offense"
+   ],
+   "feat_chiave": "Agonizing Blast (invocazione, fonte)"
+  },
+  "6_w3": {
+   "classes": {
+    "Wizard": 20
+   },
+   "sub": {
+    "Wizard": "Necromancer"
+   },
+   "sp": "Human",
+   "bg": "Sage",
+   "ab": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 12,
+    "cha": 10
+   },
+   "feats": [
+    "War Caster",
+    "Resilient",
+    "Spell Sniper",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "—"
+  },
+  "7_w3": {
+   "classes": {
+    "Rogue": 20
+   },
+   "sub": {
+    "Rogue": "Thief"
+   },
+   "sp": "Human",
+   "bg": "Criminal",
+   "ab": {
+    "str": 8,
+    "dex": 20,
+    "con": 14,
+    "int": 12,
+    "wis": 12,
+    "cha": 10
+   },
+   "feats": [
+    "Skulker",
+    "Alert",
+    "Skill Expert",
+    "Boon of the Night Spirit"
+   ],
+   "feat_chiave": "—"
+  },
+  "8_w3": {
+   "classes": {
+    "Warlock": 20
+   },
+   "sub": {
+    "Warlock": "Vestige Patron"
+   },
+   "sp": "Human",
+   "bg": "Charlatan",
+   "ab": {
+    "str": 8,
+    "dex": 16,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "Spell Sniper",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "Agonizing Blast + Hex (fonte)"
+  },
+  "9_w3": {
+   "classes": {
+    "Paladin": 20
+   },
+   "sub": {
+    "Paladin": "Oath of Devotion"
+   },
+   "sp": "Human",
+   "bg": "Noble",
+   "ab": {
+    "str": 20,
+    "dex": 10,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "Mounted Combatant",
+    "Great Weapon Master",
+    "War Caster",
+    "Boon of Irresistible Offense"
+   ],
+   "feat_chiave": "Mounted Combatant (fonte)"
+  },
+  "10_w3": {
+   "classes": {
+    "Fighter": 20
+   },
+   "sub": {
+    "Fighter": "Eldritch Knight"
+   },
+   "sp": "Human",
+   "bg": "Soldier",
+   "ab": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 20,
+    "wis": 10,
+    "cha": 8
+   },
+   "feats": [
+    "War Caster",
+    "Spell Sniper",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "—"
+  },
+  "15_legion": {
+   "classes": {
+    "Wizard": 13,
+    "Paladin": 7
+   },
+   "sub": {
+    "Wizard": "Necromancer",
+    "Paladin": "Oathbreaker"
+   },
+   "sp": "Human",
+   "bg": "Soldier",
+   "ab": {
+    "str": 13,
+    "dex": 10,
+    "con": 16,
+    "int": 20,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "War Caster",
+    "Inspiring Leader",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "Aura of Hate (Oathbreaker 7) + Withering Strike (fonte)"
+  },
+  "11_d4": {
+   "classes": {
+    "Bard": 20
+   },
+   "sub": {
+    "Bard": "College of Valor"
+   },
+   "sp": "Human",
+   "bg": "Entertainer",
+   "ab": {
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "Dual Wielder",
+    "Skill Expert",
+    "War Caster",
+    "Boon of Fate"
+   ],
+   "feat_chiave": "Dual Wielder + True Strike + CME da Magical Secrets (fonte)"
+  },
+  "12_d4": {
+   "classes": {
+    "Wizard": 20
+   },
+   "sub": {
+    "Wizard": "Bladesinger"
+   },
+   "sp": "Elf",
+   "subrace": "High Elf",
+   "bg": "Sage",
+   "ab": {
+    "str": 8,
+    "dex": 20,
+    "con": 14,
+    "int": 20,
+    "wis": 10,
+    "cha": 10
+   },
+   "feats": [
+    "Dual Wielder",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "Dual Wielder + Shadow Blade (fonte)"
+  },
+  "13_d4": {
+   "classes": {
+    "Sorcerer": 20
+   },
+   "sub": {
+    "Sorcerer": "Draconic Sorcery"
+   },
+   "sp": "Human",
+   "bg": "Sage",
+   "ab": {
+    "str": 8,
+    "dex": 16,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 20
+   },
+   "feats": [
+    "Elemental Adept",
+    "War Caster",
+    "Resilient",
+    "Boon of Spell Recall"
+   ],
+   "feat_chiave": "Elemental Adept + Spirit Shroud (fonte)"
+  },
+  "14_d4": {
+   "classes": {
+    "Paladin": 20
+   },
+   "sub": {
+    "Paladin": "Oath of Glory"
+   },
+   "sp": "Goliath",
+   "bg": "Soldier",
+   "ab": {
+    "str": 20,
+    "dex": 10,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 18
+   },
+   "feats": [
+    "Great Weapon Master",
+    "War Caster",
+    "Tough",
+    "Boon of Irresistible Offense"
+   ],
+   "feat_chiave": "martello + CME rider + summon (fonte)"
+  }
+ }
+}
