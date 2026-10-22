@@ -19,6 +19,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/grimorio.css?v=20261022b">
 <link rel="stylesheet" href="tavolo-theme.css?v=20261022b">
+<style>
+    .lfg-pane { display: none; animation: fadein .25s ease; }
+    .lfg-pane.on { display: block; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .lfg-pane h2 { margin-top: 6px !important; }
+    .lfg-pane > *:first-child { margin-top: 0; }
+    #lfg-tabs { margin-bottom: 18px; }
+    .lfg-pane .cal-card, .lfg-pane section { margin-bottom: 16px; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -35,20 +44,17 @@
     <a href="risorse.html">Risorse</a>
     <a href="stats.html">Statistiche</a>
     <a href="lfg.html">Trova Gruppo</a>
-      <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+      <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+
   </nav>
 </header>
 
-<main id="main">
-
-
-  <div class="hero">
-<div class="kicker">Trova Gruppo · 10 piattaforme analizzate</div>
-<h1>Trova il tuo <em>tavolo</em>.</h1>
-</div>
-
-  <div class="lfg-form-card" id="lfg-card">
-    <h2 style="font-size:20px; font-weight:800; margin-bottom:6px;">Candidatura per una sessione</h2>
+<main id="main"><div class="rc-tabs" role="tablist" id="lfg-tabs">
+      <button class="rc-tab on" data-pane="pane-candidatura" role="tab" aria-selected="true">Candidatura</button>
+      <button class="rc-tab" data-pane="pane-piattaforme" role="tab" aria-selected="false">Piattaforme</button>
+      <button class="rc-tab" data-pane="pane-scena" role="tab" aria-selected="false">Scena GDR Italia</button>
+    </div>
+    <div class="lfg-pane" id="pane-candidatura">Candidatura per una sessione</h2>
     <p style="color:var(--fg-muted); font-size:14px; margin-bottom:18px;">
       Compila la scheda per proporti a un tavolo. <strong>I dati restano in questo browser</strong>
       (nessun invio automatico): puoi copiare il riepilogo o aprirlo nel tuo client di posta.
@@ -157,7 +163,7 @@
   </div>
 
   <div class="guide-box">
-    <h2 style="color:var(--accent); font-size:18px; margin-bottom:10px;">Come Scegliere la Piattaforma Ideale</h2>
+    <h2 style="color:var(--accent); font-size:18px; margin-bottom:10px;"></div><div class="lfg-pane" id="pane-piattaforme">Come Scegliere la Piattaforma Ideale</h2>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; font-size:14px; color:var(--fg-muted);">
       <div>
         <strong style="color:var(--fg);">Sessioni a Pagamento (Paid GM):</strong><br>
@@ -224,7 +230,7 @@
     </tbody>
   </table>
 
-  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;">Scena GDR Italiana &amp; Risorse in Lingua IT</h2>
+  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;"></div><div class="lfg-pane" id="pane-scena">Scena GDR Italiana &amp; Risorse in Lingua IT</h2>
   <div class="card-grid" style="margin-bottom:48px;">
     <div class="card" style="border-color: rgba(201,162,39,.45);"><div class="badge badge-free" style="margin-bottom:10px;">Locale Fisico · Roma (verificato)</div><h3><a href="https://www.odinludopub.it/" target="_blank" rel="noopener">Odin Ludopub — Via Laurentina 62A</a></h3><p style="color:var(--fg-muted); font-size:14px;">Il ludopub romano dedicato a giochi di ruolo, da tavolo, di carte e simulazione: tavoli con prenotazione (tel. 333 8077899 o DM), serate D&D settimanali e parcheggio gratuito. Il modo più diretto per sedersi a un tavolo D&D dal vivo a Roma.</p></div><div class="card">
       <div class="badge badge-free" style="margin-bottom:10px;">Festival &amp; Eventi Ufficiali</div>
@@ -253,7 +259,7 @@
   </div><!-- /dettagli tecnici -->
 
 
-</main>
+</div></main>
 
 <footer>
   <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · offline-first
@@ -277,5 +283,24 @@ window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</scri
 <script src="assets/activity-log.js?v=20261022b"></script>
 
 <script src="assets/soft-router.js?v=20261022b"></script>
+<script>
+  (function () {
+    var tabs = document.getElementById('lfg-tabs');
+    if (!tabs) return;
+    tabs.addEventListener('click', function (ev) {
+      var btn = ev.target.closest('.rc-tab');
+      if (!btn) return;
+      document.querySelectorAll('#lfg-tabs .rc-tab').forEach(function (t) {
+        t.classList.toggle('on', t === btn);
+        t.setAttribute('aria-selected', t === btn ? 'true' : 'false');
+      });
+      document.querySelectorAll('.lfg-pane').forEach(function (p) {
+        p.classList.toggle('on', p.id === btn.dataset.pane);
+      });
+    });
+    var first = document.querySelector('.lfg-pane');
+    if (first) first.classList.add('on');
+  })();
+</script>
 </body>
 </html>
