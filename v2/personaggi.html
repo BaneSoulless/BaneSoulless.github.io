@@ -145,6 +145,10 @@
 .rc-pdf-ok::before { content: "✔ "; }
 .rc-pdf-vuoto { color: var(--muted); }
 .rc-pdf-vuoto::before { content: "▢ "; }
+.rc-det { border: 1px solid var(--line); border-radius: 12px; margin-top: 14px; background: rgba(255,255,255,.02); }
+.rc-det-sum { cursor: pointer; padding: 12px 16px; font-weight: 700; color: var(--gold-hi); user-select: none; }
+.rc-det[open] .rc-det-sum { border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.rc-det > *:not(summary) { padding: 0 16px 12px; }
 </style>
 </head>
 <body>

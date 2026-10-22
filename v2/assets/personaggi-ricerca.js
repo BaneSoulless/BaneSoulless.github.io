@@ -66,6 +66,16 @@
   /* TASSONOMIE AD ASSI (2026-10-02): ogni categoria del sito ha una FAMIGLIA di assi con
      una regola di ammissione, cosi' contiene chi copre il ruolo e non chi lo sfiora. La
      calibrazione (banda 10-60%) e' misurata: un tasso troppo alto = regola permissiva. */
+  /* P8: sezioni pesanti chiuse di default — la pagina non deve essere un muro */
+  function sezioneChiusa(titolo, nodo) {
+    if (!nodo) return null;
+    var det = el("details", "rc-det");
+    var sum = el("summary", "rc-det-sum", titolo);
+    det.appendChild(sum);
+    det.appendChild(nodo);
+    return det;
+  }
+
   function tassonomieHtml() {
     var T = DATA.tassonomie, B = DATA.build_assi;
     if (!T && !(B && B.length)) return null;
@@ -282,9 +292,9 @@
       + "co-occorrenza del nucleo meccanico sui documenti indicizzati: <2 = inedita. "
       + "Clicca una scheda per aprirla."));
     box.appendChild(accBuilds(list, true));
-    var _tx = tassonomieHtml();
+    var _tx = sezioneChiusa("Tassonomie ad assi e calibrazione", tassonomieHtml());
     if (_tx) box.appendChild(_tx);
-    var _rc = ricontrolloHtml();
+    var _rc = sezioneChiusa("Ricontrollo e anomalie", ricontrolloHtml());
     if (_rc) box.appendChild(_rc);
     var tro = DATA.build_trovate;
     if (tro && tro.length) {
@@ -410,8 +420,10 @@
     });
     host.appendChild(acc);
 
-    var fg = forgeHtml(); if (fg) host.appendChild(fg);
-    var ined = inediteHtml(); if (ined) host.appendChild(ined);
+    var fg = sezioneChiusa("Forge — build generate dal motore", forgeHtml());
+    if (fg) host.appendChild(fg);
+    var ined = sezioneChiusa("Build inedite (co-occorrenza < 2)", inediteHtml());
+    if (ined) host.appendChild(ined);
   }
 
   function viewRuoli(host) {
