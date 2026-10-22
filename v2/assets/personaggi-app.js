@@ -463,7 +463,7 @@
     ABIL_ORDER.forEach(function (k) {
       var v = ab[k] || 0;
       var mod = Math.floor((v - 10) / 2);
-      abCells += '<div class="pg-ab"><span class="pg-ab-nome">' + esc(ABIL_LABEL[k] || k) + '</span>' +
+      abCells += '<div class="pg-ab" title="' + esc(ABIL_LABEL[k] || k) + '"><span class="pg-ab-nome">' + esc(ABIL_SHORT[k] || k) + '</span>' +
         '<span class="pg-ab-val">' + v + '</span><span class="pg-ab-mod">' + (mod >= 0 ? "+" : "") + mod + '</span></div>';
     });
     var badge = '<div class="pg-badges">' +
@@ -511,6 +511,9 @@
 
   var ABIL_ORDER = ["str", "dex", "con", "int", "wis", "cha"];
   var ABIL_LABEL = { str: "Forza", dex: "Destrezza", con: "Costituzione", int: "Intelligenza", wis: "Saggezza", cha: "Carisma" };
+  /* abbreviazioni standard D&D per la griglia statistiche: evitano lo sbordo
+     min-content nelle card strette della griglia a 3 colonne */
+  var ABIL_SHORT = { str: "FOR", dex: "DES", con: "COS", int: "INT", wis: "SAG", cha: "CAR" };
   var SKILLS = [
     ["acrobatics", "Acrobazia", "dex"], ["animal handling", "Addestrare animali", "wis"],
     ["arcana", "Arcano", "int"], ["athletics", "Atletica", "str"],
