@@ -28,6 +28,10 @@
     if (salvato && typeof salvato.mese === "number") cal = salvato;
   } catch (e) {}
 
+  /* P6: corrispondenza col calendario reale (30 gg per mese -> arrotondata) */
+  var EQ_REALE = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
+    "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+
   function isShieldmeet(anno) { return anno % 4 === 0; }
   function totaleGiorni(anno) { return 360 + 5 + (isShieldmeet(anno) ? 1 : 0); }
   function dataAssoluta(c) { return (c.anno - 1) * totaleGiorni(c.anno) + c.mese * 30 + c.giorno - 1; }
@@ -43,7 +47,8 @@
     var griglia = $("cal-grid");
     if (!griglia) return;
     var mese = MESI[cal.mese] || { name: "Hammer" };
-    $("cal-mese").textContent = mese.name + (mese.festival_after ? " ‹" + mese.festival_after + "›" : "");
+    var eq = cal.mese >= 0 && cal.mese < 12 ? "  —  equivale a " + EQ_REALE[cal.mese] : "";
+    $("cal-mese").textContent = mese.name + (mese.festival_after ? " ‹" + mese.festival_after + "›" : "") + eq;
     var celle = "";
     var g;
     for (g = 1; g <= 30; g++) {
@@ -164,6 +169,15 @@
     faseEl.textContent = fase[0];
     det.textContent = "Giorno " + (ciclo + 1) + " del ciclo · " + illum + "% illuminata. " + fase[1];
     fill.style.width = illum + "%";
+    /* P6: per i master — quando arriva la prossima luna piena e la nuova */
+    var pl = $("luna-prossima");
+    if (pl) {
+      var aPiena = (4 * 30 / 8 - ciclo + 30) % 30;   /* fase 4 = piena */
+      var aNuova = (30 - ciclo) % 30;
+      pl.textContent = "Prossima luna piena tra " + (aPiena === 0 ? "STANOTTE" : aPiena + " gg") +
+        " · luna nuova tra " + (aNuova === 0 ? "STANOTTE" : aNuova + " gg") +
+        " (licantropi: D20 fortuna in forma a luna piena).";
+    }
   }
 
   /* ================= METEO NARRATIVO ================= */

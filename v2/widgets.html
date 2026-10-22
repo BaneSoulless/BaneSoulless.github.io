@@ -14,7 +14,7 @@
 <meta name="twitter:title" content="Widget del Reame — Il Grimorio dei Reami">
 <meta name="twitter:description" content="Calendario di Harptos, fase di Selûne, meteo narrativo e orologio di Faerûn.">
 <meta name="description" content="Widget vivi per il tavolo: calendario di Harptos con festività, fase lunare di Selûne, meteo narrativo per stagione e orologio di Faerûn.">
-<link rel="stylesheet" href="assets/grimorio.css?v=20261022b">
+<link rel="stylesheet" href="assets/grimorio.css?v=20261023">
 <style>
 /* ============ widget del reame — Vetro Arcano ============ */
 .wg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; align-items: start; }
@@ -40,7 +40,11 @@
 }
 .cal-nav button:hover { border-color: rgba(201,162,39,.5); color: var(--gold-hi); }
 .cal-mese { font-family: 'Castellar', Georgia, serif; font-size: 19px; color: var(--gold-hi); letter-spacing: .04em; text-align: center; }
-.cal-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px; }
+.cal-grid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; }
+  .wg-wide { grid-column: span 2; }
+  @media (max-width: 900px) { .wg-wide { grid-column: span 1; } }
+  .cal-cella { aspect-ratio: 1.35; display: grid; place-items: center; font-size: 15px; }
+  .cal-cella.oggi { box-shadow: 0 0 0 2px rgba(201,162,39,.55) inset; }
 .cal-cella {
   aspect-ratio: 1; display: grid; place-items: center; font-size: 12px; border-radius: 8px;
   border: 1px solid var(--line); background: rgba(255,255,255,.03); color: var(--fg);
@@ -131,7 +135,7 @@
   </div>
 
   <div class="wg-grid">
-    <div class="wg-card" id="wg-calendario">
+    <div class="wg-card wg-wide" id="wg-calendario">
       <div class="wg-head"><span class="wg-rune" aria-hidden="true">ᚲ</span>
         <div><div class="wg-title">Calendario di Harptos</div><div class="wg-sub">12 mesi da 30 giorni · 5 festività</div></div>
       </div>
@@ -158,6 +162,7 @@
         <svg class="luna-svg" id="luna-svg" width="110" height="110" viewBox="0 0 110 110" aria-hidden="true"></svg>
         <div class="luna-info">
           <div class="luna-fase" id="luna-fase">—</div>
+          <p class="luna-det" id="luna-prossima" style="color:var(--muted);font-size:12.5px;margin:6px 0 2px"></p>
           <div class="luna-det" id="luna-det"></div>
           <div class="luna-bar"><i id="luna-fill" style="width:0%"></i></div>
         </div>
@@ -197,19 +202,20 @@
   <b>IL GRIMORIO DEI REAMI</b> — widget offline-first per il tavolo
 </footer>
 
-<script src="i18n-bi.js?v=20261022b"></script>
-<script src="../assets/i18n-auto.js?v=20261022b"></script>
+<script src="i18n-bi.js?v=20261023"></script>
+<script src="../assets/i18n-auto.js?v=20261023"></script>
 <script>/* Rune per il runtime */
 window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
 window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
 window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
-<script src="assets/grimorio.js?v=20261022b"></script>
-<script src="assets/arcana.js?v=20261022b"></script>
-<script src="assets/lang-menu.js?v=20261022b"></script>
-<script src="assets/calendar-data.js?v=20261022b"></script>
-<script src="assets/widget-app.js?v=20261022b"></script>
-<script src="assets/music-player.js?v=20261022b"></script>
-<script src="assets/activity-log.js?v=20261022b"></script>
-<script src="assets/soft-router.js?v=20261022b"></script>
+<script src="assets/grimorio.js?v=20261023"></script>
+<script src="assets/arcana.js?v=20261023"></script>
+<script src="assets/lang-menu.js?v=20261023"></script>
+<script src="assets/calendar-data.js?v=20261023"></script>
+<script src="assets/widget-app.js?v=20261023"></script>
+<script src="assets/music-player.js?v=20261023"></script>
+<script src="assets/activity-log.js?v=20261023"></script>
+
+<script src="assets/soft-router.js?v=20261023"></script>
 </body>
 </html>
