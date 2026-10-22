@@ -35,7 +35,8 @@
     <a href="risorse.html">Risorse</a>
     <a href="stats.html">Statistiche</a>
     <a href="lfg.html">Trova Gruppo</a>
-      <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+      <div id="tr-lang-wrap" class="tr-menu"><label class="tr-label" for="tr-lang" style="position:absolute;left:-9999px">Lingua</label><select id="tr-lang" aria-label="Lingua / Language"></select></div>
+
   </nav>
 </header>
 
@@ -67,20 +68,7 @@
     <section class="cal-card cmp-card"><div id="cmp-fatti"></div></section>
   </div>
 
-  <h2 class="section-title" style="margin-top:34px;">Dettagli tecnici del sito</h2>
-  <p style="color:var(--fg-dim); font-size:12.5px; max-width:78ch; margin-bottom:10px;">
-    Disponibilità delle risorse esterne, punteggi di verifica e metriche FAMS: servono alla
-    manutenzione del sito, non al tavolo. Sono qui sotto, chiusi.
-  </p>
-  <div id="det-tecnici" data-collapse="420"
-       data-collapse-label="Mostra i dettagli tecnici" data-collapse-label-open="Comprimi i dettagli tecnici">
-  <p style="color:var(--fg-muted); font-size:16px; margin-bottom:32px;">
-    Rappresentazione grafica e verifica formale dei 228 siti D&D analizzati su 11 batch distribuiti. Grafici renderizzati in SVG puro (zero dipendenze JS esterne).
-  </p>
-
-  <div class="chart-grid">
-    <div class="chart-card">
-      <h2>Distribuzione Risorse per Categoria (OK / Totale)</h2>
+  <h2>Distribuzione Risorse per Categoria (OK / Totale)</h2>
       <svg width="100%" height="320" viewBox="0 0 640 320" style="overflow:visible;">
         
         <text x="10" y="34" fill="#94a3b8" font-size="12" font-family="sans-serif">LFG / Iscrizione Sessioni</text>
@@ -186,310 +174,8 @@
     </div>
   </div>
 
-  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;">Risultati Analisi FAMS-v4 &amp; Mitigazioni Ingegneristiche</h2>
-  <table class="audit-table" style="margin-bottom:48px;">
-    <thead>
-      <tr>
-        <th>Codice FM</th>
-        <th>Modalità di Guasto Mitigata</th>
-        <th>RPN Pre</th>
-        <th>RPN Post</th>
-        <th>Soluzione Implementata sul Sito</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>FM-01 / FM-02</strong></td>
-        <td>Downtime origine o scadenza quick tunnel</td>
-        <td>192</td>
-        <td><span class="badge badge-free">24</span></td>
-        <td>Cron Watchdog 15m autonomo (<code>site-watchdog.py</code>) su loop continuo</td>
-      </tr>
-      <tr>
-        <td><strong>FM-03</strong></td>
-        <td>Screening page "Caution" di Pinggy</td>
-        <td>120</td>
-        <td><span class="badge badge-free">0</span></td>
-        <td>Migrazione a Cloudflare Quick Tunnel (nessun interstitial browser)</td>
-      </tr>
-      <tr>
-        <td><strong>FM-04</strong></td>
-        <td>URL effimero non rintracciabile</td>
-        <td>126</td>
-        <td><span class="badge badge-free">18</span></td>
-        <td>Persistenza atomica su <code>current-url.json</code> via watchdog</td>
-      </tr>
-      <tr>
-        <td><strong>FM-05</strong></td>
-        <td>Degrado interfaccia con JavaScript disabilitato</td>
-        <td>90</td>
-        <td><span class="badge badge-free">12</span></td>
-        <td>Blocco <code>&lt;noscript&gt;</code> statico con tutte le 134 risorse iniettate al build</td>
-      </tr>
-      <tr>
-        <td><strong>FM-08</strong></td>
-        <td>Blocco I/O con richieste simultanee</td>
-        <td>80</td>
-        <td><span class="badge badge-free">8</span></td>
-        <td>Server multi-thread dedicato <code>ThreadingHTTPServer</code> su porta 8777</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="chart-card" style="margin-top:24px;">
-    <h3>FAMS-v4 — Pareto &amp; Indice di Confidenza Epistemica</h3>
-    <p style="color:var(--fg-muted); font-size:13.5px; margin-bottom:16px;">
-      Sintesi della verifica sistemica del sito (report <code>fams-v4-report.md</code>): modi di
-      guasto quantificati, frontiera di Pareto sulle azioni residue e confidenza epistemica
-      calcolata sulle variabili di sistema dichiarate.
-    </p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap:12px;">
-      <div class="stat-box">
-        <div class="num">90.0%</div>
-        <div class="lbl">ECI (4 variabili ignote su 40)</div>
-      </div>
-      <div class="stat-box">
-        <div class="num">11</div>
-        <div class="lbl">Modi di guasto (FMEA)</div>
-      </div>
-      <div class="stat-box">
-        <div class="num">4</div>
-        <div class="lbl">Azioni non dominate (Pareto)</div>
-      </div>
-      <div class="stat-box">
-        <div class="num">288 &rarr; 2</div>
-        <div class="lbl">RPN peggiore, prima &rarr; dopo</div>
-      </div>
-    </div>
-    <p style="color:var(--fg-dim); font-size:12.5px; margin-top:14px;">
-      Frontiera di Pareto (impatto massimo, costo e rischio minimi): <strong>A · C · D · G</strong>.
-      Criterio formale: una soluzione è dominata se un'altra è pari su tutti i criteri e superiore
-      su almeno uno. Le variabili epistemiche ignote (rendering su dispositivi fisici, stabilità
-      dell'URL pubblico, screen reader reali, Core Web Vitals con throttling) sono dichiarate, non stimate.
-    </p>
-  </div>
-<script>/* compendio.js — Compendio dei Reami: i numeri del database, per chi gioca.
- *
- * REQUISITO: la pagina delle statistiche deve diventare interessante e interattiva
- * per i giocatori, «non con info che non gli interessano minimamente». Quindi via i
- * tassi di disponibilità dei siti (roba da manutenzione, spostati in fondo e chiusi)
- * e dentro i numeri che servono al tavolo: quanti mostri per Grado di Sfida, quali
- * scuole di magia sono più affollate, come si distribuiscono le rarità, quanto pesa
- * ogni manuale.
- *
- * TUTTO È CALCOLATO dai campi dell'indice (`cr`, `sch`, `r`, `s`, `t`, `p`), nessun
- * numero scritto a mano: se il database cambia, i grafici cambiano con lui.
- *
- * INTERATTIVITÀ: ogni barra è cliccabile e porta alla consultazione già filtrata; il
- * pulsante «Sorprendimi» apre una scheda a caso. I grafici hanno ruolo e descrizione
- * accessibili: barra visiva + valore numerico scritto.
- */
-(function () {
-  "use strict";
-
-  var idx = null;
-  var ids = ["cmp-tipi", "cmp-cr", "cmp-scuole", "cmp-rarita", "cmp-fonti", "cmp-fatti"];
-  var schoolName = { A: "Abiurazione", C: "Evocazione", D: "Divinazione", E: "Ammaliamento",
-                     V: "Invocazione", I: "Illusione", N: "Necromanzia", T: "Trasmutazione" };
-  var crBands = [
-    { label: "0 – 1/8", test: function (v) { return v <= 0.125; } },
-    { label: "1/4 – 1/2", test: function (v) { return v > 0.125 && v <= 0.5; } },
-    { label: "1 – 4", test: function (v) { return v > 0.5 && v <= 4; } },
-    { label: "5 – 10", test: function (v) { return v > 4 && v <= 10; } },
-    { label: "11 – 16", test: function (v) { return v > 10 && v <= 16; } },
-    { label: "17 – 20", test: function (v) { return v > 16 && v <= 20; } },
-    { label: "21+", test: function (v) { return v > 20; } },
-  ];
-
-  function el(id) { return document.getElementById(id); }
-  function esc(s) {
-    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
-  }
-  function num(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, "."); }
-
-  /* cr può essere numero o frazione testuale ("1/2"): va interpretato. */
-  function crValue(v) {
-    if (v == null) return null;
-    if (typeof v === "number") return v;
-    var s = String(v).trim();
-    var m = s.match(/^(\d+)\s*\/\s*(\d+)$/);
-    if (m) return parseInt(m[1], 10) / parseInt(m[2], 10);
-    var f = parseFloat(s);
-    return isNaN(f) ? null : f;
-  }
-
-  /* Riga di un grafico: barra proporzionale + etichetta + valore, tutto cliccabile. */
-  function bar(label, value, max, href, tone) {
-    var pct = max ? Math.round(value * 100 / max) : 0;
-    var inner = '<span class="cb-label">' + esc(label) + "</span>" +
-      '<span class="cb-bar"><span class="cb-fill' + (tone ? " " + tone : "") +
-      '" style="width:' + Math.max(2, pct) + '%"></span></span>' +
-      '<span class="cb-num">' + num(value) + "</span>";
-    return href
-      ? '<li><a class="cb-row" href="' + esc(href) + '">' + inner + "</a></li>"
-      : '<li><span class="cb-row">' + inner + "</span></li>";
-  }
-
-  function chart(containerId, title, rows, nota) {
-    var box = el(containerId);
-    if (!box) return;
-    var max = rows.reduce(function (m, r) { return Math.max(m, r.value); }, 0);
-    box.innerHTML = '<h2 class="cmp-h3">' + esc(title) + "</h2>" +
-      '<ul class="cmp-chart" role="list">' +
-      rows.map(function (r) { return bar(r.label, r.value, max, r.href, r.tone); }).join("") +
-      "</ul>" + (nota ? '<p class="tv-meta">' + esc(nota) + "</p>" : "");
-  }
-
-  function render() {
-    var e = idx.entries || [];
-    var vis = e.filter(function (x) { return !x.sup; });
-
-    /* --- entità per tipo (cliccabile: filtra la consultazione) --- */
-    var perTipo = {};
-    vis.forEach(function (x) { perTipo[x.t] = (perTipo[x.t] || 0) + 1; });
-    var tipi = Object.keys(perTipo).map(function (k) {
-      return { label: (idx.types && idx.types[k] && idx.types[k].label) || k, value: perTipo[k],
-               href: "cerca.html?cat=" + encodeURIComponent(k) };
-    }).sort(function (a, b) { return b.value - a.value; }).slice(0, 14);
-
-    /* --- mostri per fascia di Grado di Sfida --- */
-    var mostri = vis.filter(function (x) { return x.t === "monster" && !x.sup; });
-    var bande = crBands.map(function (b) {
-      return { label: b.label, value: 0, href: "", tone: "" };
-    });
-    var crCount = 0;
-    mostri.forEach(function (m) {
-      var v = crValue(m.cr);
-      if (v === null) return;
-      crCount++;
-      for (var i = 0; i < crBands.length; i++) {
-        if (crBands[i].test(v)) { bande[i].value++; break; }
-      }
-    });
-
-    /* --- incantesimi per scuola --- */
-    var perScuola = {};
-    vis.forEach(function (x) {
-      if (x.t !== "spell" || !x.sch) return;
-      perScuola[x.sch] = (perScuola[x.sch] || 0) + 1;
-    });
-    var scuole = Object.keys(perScuola).map(function (k) {
-      return { label: schoolName[k] || k, value: perScuola[k] };
-    }).sort(function (a, b) { return b.value - a.value; });
-
-    /* --- oggetti per rarità --- */
-    var perRarita = {};
-    vis.forEach(function (x) {
-      if (x.t !== "item" || !x.r) return;
-      perRarita[x.r] = (perRarita[x.r] || 0) + 1;
-    });
-    var ORDINE = ["common", "uncommon", "rare", "very rare", "legendary", "artifact", "varies"];
-    var rarita = Object.keys(perRarita).map(function (k) {
-      return { label: k, value: perRarita[k] };
-    }).sort(function (a, b) {
-      var ia = ORDINE.indexOf(a.label), ib = ORDINE.indexOf(b.label);
-      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
-    });
-
-    /* --- fonti più rappresentate, con l'anno --- */
-    var perFonte = {};
-    vis.forEach(function (x) { perFonte[x.s] = (perFonte[x.s] || 0) + 1; });
-    var fonti = Object.keys(perFonte).map(function (k) {
-      var conData = vis.filter(function (x) { return x.s === k && x.p; })[0];
-      var anno = conData && conData.p ? conData.p.slice(0, 4) : "";
-      return { label: k + (anno ? " (" + anno + ")" : ""), value: perFonte[k] };
-    }).sort(function (a, b) { return b.value - a.value; }).slice(0, 12);
-
-    chart("cmp-tipi", "Entità per tipo (clicca per consultarle)", tipi, null);
-    chart("cmp-cr", "Mostri per Grado di Sfida", bande,
-          crCount + " mostri su " + mostri.length + " hanno un Grado di Sfida dichiarato.");
-    chart("cmp-scuole", "Incantesimi per scuola di magia", scuole, null);
-    chart("cmp-rarita", "Oggetti magici per rarità", rarita, null);
-    chart("cmp-fonti", "Fonti più rappresentate (con anno di pubblicazione)", fonti,
-          "Le ristampe sono già raggruppate: qui si conta la voce visibile, cioè la più recente.");
-
-    /* --- curiosità calcolate --- */
-    var draghi = vis.filter(function (x) { return x.t === "monster" && /dragon/i.test(x.n); }).length;
-    var leggendari = vis.filter(function (x) { return x.t === "item" && x.r === "legendary"; }).length;
-    var artefatti = vis.filter(function (x) { return x.t === "item" && x.r === "artifact"; }).length;
-    var trucchetti = 0, alti = 0;
-    vis.forEach(function (x) {
-      if (x.t !== "spell") return;
-      var lv = x.lv;
-      if (lv === 0) trucchetti++;
-      if (typeof lv === "number" && lv >= 8) alti++;
-    });
-    var piuComune = tipi.length ? tipi[0] : { label: "—", value: 0 };
-    var banda = bande.slice().sort(function (a, b) { return b.value - a.value; })[0] || { label: "—", value: 0 };
-    var scuolaTop = scuole.length ? scuole[0] : { label: "—", value: 0 };
-    var raritaTop = rarita.length ? rarita[0] : { label: "—", value: 0 };
-
-    var fatti = el("cmp-fatti");
-    if (fatti) {
-      var righe = [
-        ["Entità consultabili", num(vis.length) + " (su " + num(e.length) + " incluse le ristampe)"],
-        ["Tipo più rappresentato", piuComune.label + " — " + num(piuComune.value)],
-        ["Fascia di Grado di Sfida più affollata", banda.label + " — " + num(banda.value) + " mostri"],
-        ["Scuola di magia più ricca", scuolaTop.label + " — " + num(scuolaTop.value) + " incantesimi"],
-        ["Rarità più diffusa", raritaTop.label + " — " + num(raritaTop.value) + " oggetti"],
-        ["Draghi nel database", num(draghi)],
-        ["Oggetti leggendari", num(leggendari)],
-        ["Artefatti", num(artefatti)],
-        ["Incantesimi di 8° e 9° livello", num(alti)],
-      ];
-      fatti.innerHTML = '<h2 class="cmp-h3">Curiosità dal database</h2><dl class="cmp-facts">' +
-        righe.map(function (r) {
-          return "<dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd>";
-        }).join("") + "</dl>";
-    }
-  }
-
-  /* «Sorprendimi»: apre una scheda a caso nella consultazione. */
-  function initSorprendi() {
-    var b = el("cmp-random");
-    if (!b) return;
-    b.addEventListener("click", function () {
-      if (!idx) return;
-      var vis = (idx.entries || []).filter(function (x) { return !x.sup; });
-      if (!vis.length) return;
-      var x = vis[Math.floor(Math.random() * vis.length)];
-      var out = el("cmp-random-out");
-      if (out) {
-        out.innerHTML = 'Scheda estratta: <a href="lookup.html?cat=' + esc(x.t) + "&q=" +
-          encodeURIComponent(x.n) + '"><strong>' + esc(x.n) + "</strong></a> " +
-          '<span class="tv-meta">(' + esc((idx.types && idx.types[x.t] && idx.types[x.t].label) || x.t) +
-          " · " + esc(x.s || "") + ")</span>";
-      }
-      window.open("cerca.html?cat=" + encodeURIComponent(x.t) + "&q=" + encodeURIComponent(x.n), "_blank");
-    });
-  }
-
-  function boot() {
-    if (!el("cmp-tipi")) return;
-    var x = new XMLHttpRequest();
-    x.open("GET", "../data/lookup-index.json", true);
-    x.onreadystatechange = function () {
-      if (x.readyState !== 4) return;
-      if (x.status !== 200) {
-        var box = el("cmp-fatti");
-        if (box) box.innerHTML = '<p class="tv-meta">Dati non disponibili: il compendio si popola quando l\'indice è raggiungibile.</p>';
-        return;
-      }
-      try { idx = JSON.parse(x.responseText); } catch (e) { idx = null; }
-      if (idx) { render(); initSorprendi(); }
-    };
-    x.send();
-  }
-
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
-  else boot();
-})();
-</script>
-
-
-</main>
+  <section class="cal-card" id="uso-sito"></section>
+  </main>
 
 <footer>
   <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · offline-first
@@ -513,5 +199,30 @@ window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</scri
 <script src="assets/activity-log.js?v=20261022b"></script>
 
 <script src="assets/soft-router.js?v=20261022b"></script>
+<script>
+  /* P10: statistiche d'uso reali dal logger (localStorage gdr-log) */
+  (function () {
+    var box = document.getElementById('uso-sito');
+    if (!box) return;
+    var log = [];
+    try { log = JSON.parse(localStorage.getItem('gdr-log') || '[]'); } catch (e) {}
+    var pv = log.filter(function (e) { return e.kind === 'pageview'; });
+    var err = log.filter(function (e) { return e.kind === 'jserror' || e.kind === 'fetch-fail'; });
+    var top = {};
+    pv.forEach(function (e) { var p = (e.page || '?').replace('.html', ''); top[p] = (top[p] || 0) + 1; });
+    var topList = Object.keys(top).sort(function (a, b) { return top[b] - top[a]; }).slice(0, 5);
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&', '<': '<', '>': '>', '"': '"' }[c]; }); };
+    box.innerHTML = '<h2 class="section-title">Il tuo uso del Grimorio</h2>' +
+      '<p class="muted">Registrato in questo browser dal pannello Log debug (Ctrl+Alt+L).</p>' +
+      '<div class="cmp-grid">' +
+      '<div class="cal-card cmp-card"><div class="cmp-h3">Visite pagina</div><div style="font-size:30px;font-weight:700;color:#e8c95a">' + pv.length + '</div></div>' +
+      '<div class="cal-card cmp-card"><div class="cmp-h3">Errori registrati</div><div style="font-size:30px;font-weight:700;color:' + (err.length ? '#d95c5c' : '#7fbf6a') + '">' + err.length + '</div></div>' +
+      '<div class="cal-card cmp-card" style="grid-column:1/-1"><div class="cmp-h3">Pagine più visitate</div>' +
+      (topList.length ? '<ul style="list-style:none;padding:0;margin:0">' + topList.map(function (p) {
+        return '<li style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(201,162,39,.12)"><span>' + esc(p) + '</span><b style="color:#e8c95a">' + top[p] + '</b></li>';
+      }).join('') + '</ul>' : '<p class="muted">Nessuna visita registrata: apri qualche pagina e torna qui.</p>') +
+      '</div></div>';
+  })();
+</script>
 </body>
 </html>

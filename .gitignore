@@ -6,3 +6,4 @@ node_modules/
 pdf/levels/
 *.log
 current-url.json
+.deploy-gh/
