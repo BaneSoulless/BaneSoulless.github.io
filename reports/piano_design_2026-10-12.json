@@ -450,5 +450,24 @@
     "fix_architetturale": "tools/deploy_github.py: staging pulito (.deploy-gh) con root=redirect V2, canonical/og:url forzati a banesoulless.github.io, esclusi file di stato keeper/tools/reports; push dal staging con storia remota (no force). I keeper locali non possono piu toccare il sito pubblico",
     "verifica_live": "root -> redirect v2; canonical corretto; home v2 con 4 orbe+2 runecol+logger+bottone log+player; 0 pageerror; commit 2b495bc",
     "uso": "per aggiornare il sito pubblico: py tools/deploy_github.py (un comando, ~40s)"
+  },
+  "v2_it7_12punti_chiusura_2026_10_23": {
+    "esito": "12/12 punti lista operatore chiusi e verificati in Chromium su GitHub Pages",
+    "punti": {
+      "1_lookup": "funzionante (241 righe, 0 pageerror) - cache-bust 20261023",
+      "2_mappa": "height adattiva ogni viewport (verificato 1440 e 1100)",
+      "3_dadi": "visual al boot, numeri centrati per forma",
+      "4_leggibilita": "batch1: 14.5px/1.7, meta 13px",
+      "5_lingua": "selettore su tutte le 10 pagine (risorse/stats/lfg aggiunti)",
+      "6_widget": "calendario 695px celle 64, equivale a mese reale, countdown luna, lore+meteo collegati",
+      "7_schede_generatore": "0 sbordi (era 8/card), ABIL_SHORT, minmax(0), word-break",
+      "8_ricerca": "13.062->2.700px (-79%), 4 sezioni chiuse di default, search+PDF funzionanti",
+      "9_risorse": "24 card/pagina, 0 corrotte, pager 8, Odin trovabile via ricerca (2 risultati)",
+      "10_stats": "blocchi dev rimossi, sezione uso-sito dal logger",
+      "11_music": "resume da pos verificato su GitHub (Accept-Ranges), continua tra pagine soft-nav",
+      "12_lfg": "3 tab (Candidatura/Piattaforme/Scena IT), panes IIFE"
+    },
+    "deploy": "tools/deploy_github.py disaccoppiato (staging pulito, canonical forzati, keeper isolati)",
+    "commits": "9beb668..cbe89c3"
   }
 }
