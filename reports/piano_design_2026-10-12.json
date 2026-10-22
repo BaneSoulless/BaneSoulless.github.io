@@ -1,0 +1,454 @@
+{
+  "data": "2026-10-12",
+  "chiuso_oggi_verificato": {
+    "gap_schede": "0 -> 20px (stats.html a 2560x1440)",
+    "tabelle_fuori_dalle_schede": "audit-table riceve scheda (bordo+vetro+padding) - True",
+    "qualita_lettura": "interlinea 1.62 (28.25px), colonna 74ch, --fs-body up",
+    "viewport_2K": "2560x1440 testato, nessun difetto nuovo",
+    "caricamento": "cerca.html load 125ms a 2K + content-visibility:auto sulle sezioni sotto la piega",
+    "#6 immagini azioni": "20 glifi game-icons.net (CC BY 3.0) scaricati in assets/actions/ + sprite ICONE_AZIONI nel generatore + euristica per categoria in iconaAzione() + CSS .act-ic (oro 1.05em, drop-shadow). Verificato nel browser: 4 icone nel blocco AZIONI di Aboleth, fill rgb(212,175,55), 15px visibili. Difetto intermedio corretto: i glifi usavano doppi apici (SyntaxError 'M0' in cerca-app.js) -> apici singoli (120 sequenze).",
+    "nav": "'Strumenti del Tavolo' ora apre tavolo.html (era widgets.html). Tre sorgenti di etichetta corrette: tupla nav (build_site.py:421-422), dizionario bilingue (i18n_bi.py:122,125), breadcrumb invariato.",
+    "#7c oracolo": "tiro d100 mostrato, sfumature narrative (estremi <=5/>=96 -> conseguenze; d20 18+/3- -> 'e subito'/'ma a un costo'), storia degli ultimi 5 oracoli in pagina, escaping XSS sul testo utente. Verificato nel browser: 2 domande -> esito + sfumatura + storia con 2 voci, 0 errori JS.",
+    "#7d turni": "contatore di Round (+1/Azzera) + Traccia Effetti (nome, durata in round, countdown che scende a ogni round, marcatore SCADUTO, rimozione manuale x). Verificato nel browser: 2 effetti con durate diverse, 3 round simulati, countdown corretto e scadenza, 0 errori JS. tavolo.js initRoundi() + markup in build_site.py."
+  },
+  "nota": "ogni voce ha il percorso esatto per essere ripresa senza ri-derivare nulla; le stime sono indicative",
+  "lavori_grandi_restanti": [
+    {
+      "id": "#7a Tesoro homebrewery",
+      "stima": "1 turno",
+      "dove": "sezione tesoro in tavolo.html (tavolo.js initTesoro)"
+    },
+    {
+      "id": "#7b PNG -> scheda completa",
+      "stima": "1 turno",
+      "dove": "tavolo.js initPng"
+    },
+    {
+      "id": "#8 personaggi Ricerca ottimizzata (20 opzioni gia' elencate nel piano)",
+      "stima": "2 turni",
+      "dove": "assets/ricerca.js + build_site.py"
+    },
+    {
+      "id": "#3 guida + diagramma architettura",
+      "stima": "1/2 turno",
+      "dove": "SVG build_site.py:973 + tour"
+    }
+  ],
+  "loop_learning": {
+    "data": "2026-10-12/13",
+    "loop_1_peso": {
+      "misura": "8 pagine 2.098.403 B -> 1.824.099 B",
+      "delta": "-13.1%",
+      "fix": "_minifica_css() nel generatore (via commenti+indentazione, righe separate)",
+      "appreso": "il CSS inline e' la voce dominante (~87KB/pagina); minificazione sicura = righe separate, mai token fusi",
+      "regressione": "design 8/8, cerca-app.js ok"
+    },
+    "loop_2_contrasto": {
+      "misura": "6183 nodi testo su 8 pagine a 2K: 1 sotto 4.5:1 = 0.0%",
+      "delta": "0% (nessun margine)",
+      "appreso": "il probe di contrasto deve risalire la catena dei FONDI: un bottone oro con testo scuro misurato contro la pagina e' un falso rosso (ratio 1:1 inventato)"
+    },
+    "loop_3_immagini": {
+      "misura": "64 copertine 14.764 KB -> 1.714 KB (-88.4%); HOME al load 14.023 KB -> 47 KB (-99.7%)",
+      "delta": "-88.4% payload immagini / -99.7% home al load",
+      "fix": "60/64 copertine oversize ridotte a 2x resa (webp q82) + data-src + IntersectionObserver",
+      "appreso": "loading=lazy nativo NON basta: Chromium pre-fetcha ~3000px e scarica comunque 14MB; il lazy vero e' data-src + observer con rootMargin stretto",
+      "qualita": "vision: copertine nitide e leggibili, 0 rotte, naturalWidth medio 341 (2x resa)",
+      "rollback": "originali a piena risoluzione in .hermes/backups/covers_orig (65 file): copiarle su data/covers per tornare al peso precedente"
+    },
+    "convergenza": "NO_GAIN dichiarato: le metriche misurabili (peso, contrasto, layout, gate, copertura icone) sono tutte sotto il 10% di margine residuo; il rimanente e' FEATURE work pianificato (#7a, #7b, #3, #8), non loop-learning misurabile in %"
+  },
+  "loop_4_cache_headers": {
+    "misura": "ogni asset (64 copertine, 20 svg, css, js) portava Cache-Control: no-cache -> 1 round-trip di riconvalida per sessione fredda su serveo (~0,7s RTT x ~95 asset)",
+    "fix": "server.py end_headers(): asset statici (css/js/webp/svg/ico/txt) -> public, max-age=3600; HTML e rotte dinamiche -> no-cache (una pagina ricostruita non serve mai stantia, entro 1h il browser rivede il rebuild)",
+    "verifica_header": "SVG/WEBP: public, max-age=3600 | HTML: no-cache, must-revalidate (server riavviato, origine 200)",
+    "delta_protocollo": "sessione fredda: riconvalide ~95 -> ~2 (solo HTML) = -98% dei round-trip di riconvalida",
+    "tunnel": "rotato: speeds-patrol-blogs-eagle.trycloudflare.com (serveo fisso intatto: 200 in 663ms)",
+    "appreso": "un header applicato a TUTTO in end_headers() non distingue il documento dall'asset: la semantica giusta e' per-tipo, e il commento nel codice (2026-09-29) descriveva il bisogno delle PAGINE, non degli asset"
+  },
+  "simp_music_glass_port": {
+    "fonte": "maxrave-dev/SimpMusic (GPL-3.0) — RELAZIONI estratte, ZERO codice copiato",
+    "relazioni_trovate": {
+      "haze 2.0.1 + haze-material": "glassSurface(tint, blurRadius, alpha) — vetro Compose con tinta e blur per strato",
+      "liquid-glass (kyant0:backdrop)": "backdrop con refraction + lens 24dp sul bordo — gia' nostro: feDisplacementMap #lg-refract",
+      "kmpalette 3.1.0": "tinta UI estratta dall'artwork — ERA IL PEZZO MANCANTE",
+      "GlassLuminance": "campiona i pixel dietro il vetro -> luminanza -> blur adattivo lerp(2..16dp)",
+      "colorControls": "brightness 0.05 neutro, saturation 1.5x"
+    },
+    "implementato_nel_sito": {
+      "tinta dinamica": "glass-tint.js: canvas 8x8 sulla copertina -> hsl -> --card-tint per card (6 tinte distinte su 6 card misurate)",
+      "blur adattivo": "--card-blur 19..23px modulato dalla luminanza della copertina (relazione GlassLuminance, mappata 10..26px del tema)",
+      "saturazione": "saturate(1.5) come SimpMusic (nostro strato era gia' 1.65)",
+      "oscuramento": "nel bg del vetro (onDrawSurface-equivalente), non nel filtro"
+    },
+    "verifica": "vision: tinte distinte tra card, tutte scure e coerenti, titoli leggibili, 0 rotte | design 8/8 | a11y 35/35 | 0 errori JS",
+    "licenza": "GPL-3.0: relazioni e valori numerici (blur 8-16dp, saturation 1.5, luminance quadratic) non sono copyrightabili; nessun testo di codice Kotlin riutilizzato",
+    "regressione_trovata_e_chiusa": "l'inserimento dello script lazy aveva SOSTITUITO </footer> (il tag di chiusura sparito da 8/8 pagine, design gate 7/8). Causa: insert at index di '</footer>' con slice che lo eliminava. Fix: </footer> ripristinato prima dello script. Verifica: design 8/8, a11y 35/35, footer+nota FCP presenti, 5/5 tinte attive."
+  },
+  "ripristino_utente_2026_10_13": {
+    "foto_utente": "2 screenshot: icone disegnini + card grigie piatte + testo disallineato su 'Activate an Item'",
+    "causa_scostamento": "le correzioni ambiente/oro/badge erano state applicate DOPO le foto dell'utente e verify su una pagina diversa (q=attack invece dell'item); riprodotta la PAGINA ESATTA dell'utente: tutti e 5 i punti confermati corretti",
+    "verifica_vision_punto_per_punto": "1 medaglie circolari dorate ✓ 2 ambiente con bagliori ✓ 3 vetro con blur visibile ✓ 4 oro profondo ✓ 5 testo uniforme ✓ — 'cambiato rispetto a prima'",
+    "regressione_footer_trovata_e_chiusa": "l'insert dello script lazy aveva cancellato </footer> su 8/8 pagine -> design gate 7/8. </footer> ripristinato, design 8/8, a11y 35/35",
+    "lezione_persistita": "quando l'utente manda uno screenshot, riprodurre LA PAGINA ESATTA e LO STATO ESATTO dello screenshot prima di dichiarare il fix verificato"
+  },
+  "icone_semantiche_2026_10_13": {
+    "difetto": "activate_an_item usava lorc/potion-ball (una pozione) - semanticamente sbagliato per 'Activate an Item'; grapple/help/withdraw/dodge anch'esse approssimative",
+    "fix": "5 glifi sostituiti con glifi semanticamente corretti da game-icons.net (magic-lamp, claw, handshake, backwards-clock, broken-shield); icona iniettata anche nel TITOLO della scheda locale (riga 2467 build_site.py) oltre a featureBlock",
+    "verifica_browser": "Activate an Item 30px OK, Grapple 30px OK, Dash 30px OK, Cast a Spell 30px OK, Help 0px KO (percorso diverso - residuo)",
+    "vision": "il glifo non e' piu' una pozione: 'qualcosa di diverso, come una lampada magica'",
+    "residuo": "Help: icona 0px, il renderer di quella scheda passa per un terzo percorso - prossimo turno"
+  },
+  "help_rangeerror_2026_10_14": {
+    "difetto_di_classe": "TAG_RE regex /g CONDIVISA + re-entrante: renderTag fa .replace(TAG_RE) dentro il ciclo exec() di tags() -> lastIndex azzerato -> ciclo infinito -> RangeError 'Invalid string length' -> il catch di loadEntity maschera il crash come fallbackSRD -> badge 'non trovato in file'",
+    "sintomo": "ricerca 'Help' -> scheda 'non trovato' (l'entita' c'era, nell'indice E nel file, ma il render esplodeva)",
+    "fix": "2 livelli: (1) depth cap 3 nella ricorsione renderTag (tag ciclici), (2) regex LOCALE per chiamata in tags() via new RegExp(TAG_RE.source,'g') - root cause",
+    "verifica": "Gate 9/9: Help, Withdraw, Activate an Item, Grapple, Dodge, Dash, Cast a Spell, Disengage, Attack - tutti icona 30px + scheda completa; Fireball tag-link=4 (i link inline rendono ancora)",
+    "impatto": "ogni scheda con tag annidati (variantrule/note/book) era a rischio esplosione silenziosa - classe chiusa",
+    "glifi_semantici": "help=lorc/pawn, withdraw=lorc/backup (seconda ondata: i primi 4 slug erano 404)"
+  },
+  "tunnel_zero_touch_2026_10_15": {
+    "outage_utente": "tunnel serveo caduto per ore: keeper legato alla sessione morto, ssh zombie (PID 7492) teneva il bind porta 80, ogni rilancio falliva con 'remote port forwarding failed', il fisso serviva 'Serveo - Warning' ai browser",
+    "classi_chiuse": [
+      "C1 zombie-bind: serveo_keeper ora ripulisce gli ssh orfani '-R grimorio-dei-reami' PRIMA di ogni tentativo (kill per PID, mai indiscriminato)",
+      "C2 supervisore duplicato: il mio ensure_serveo_keeper.py era ridondante rispetto al guard-cron b115871a1c6 (5m, 891 run) — ELIMINATO",
+      "C3 single-instance: probe PowerShell fail-open creava keeper multipli in kill-reciproco -> sostituito con lockfile atomico O_EXCL + touch per ciclo + steal stantio >300s",
+      "C4 guard uccideva keeper in bind (5s di vita='bloccato') -> grazia 180s via CreationDate CIM (fix parse: stringa /Date(ms)/ non dict)",
+      "C5 lock orfano bloccava il rilancio del guard per 5' -> guard unlinka il lock sia nel ramo kill sia in 'demone assente'",
+      "C6 wmic RIMOSSO su questo host (0 righe sempre): ogni enumerazione ora via PowerShell CIM + ConvertTo-Json"
+    ],
+    "lezione_processo": "i keeper lanciati da tool-call muoiono (reaping del job del tool): il solo spawner affidabile e' il cron guard. Mai rm manuale di un lock senza verificare che il proprietario sia morto.",
+    "verifica_end_to_end": "guard 01:40:29 intervento #7 -> kill+unlink+relaunch -> keeper bind 01:41:58 (fisso=True 200) -> guard 01:46:21 'URL fisso tornato vivo dopo 7 interventi' -> stato finale: 1 keeper (29560), 1 ssh (22192), fisso 151546B SITO OK, eta probe 775s reale",
+    "residuo": "interstitial 'Serveo - Warning' per visitatori browser (1 click 'Continue to Site'): non eliminabile su serveo free — decisione operatore pendente (fisso+1click vs cloudflared variabile senza click)"
+  },
+  "mappa_faerun_rea_2026_10_15": {
+    "rea_livello": "web runtime (Playwright DOM+network): REA/binari non applicabile a sito JS pubblico per contratto della skill stessa",
+    "blueprint_loremaps": "Leaflet CRS default; NZ=ceil(log2(4763/256))=5; maxZoom=6; maxBounds=bounds.pad(.1); tileLayer(noWrap,bounds,maxNativeZoom=5); marker=map.unproject([x,y],5) px immagine 4763x3185; mpp=1287.473; pin SVG 26x34; 8 layer GeoJSON; config completo serializzato in pagina (script JSON)",
+    "asset_derivati": [
+      "data/loremaps-{cities,ports,ruins,capitals,portcapitals,temples,sites,fortresses}.json (297 luoghi)",
+      "join coordinate: 166/423 citta nostre (data/faerun-map-markers.json)",
+      "data/faerun-map-layers.json"
+    ],
+    "implementazione": "mappa.html: tiles GitHub Pages LoreMaps + attribuzione PPG/FRWiki/LoreMaps; Leaflet self-hosted in assets/vendor (147552B js + 14806B css, sha256 misurati); binding locale LM immune alla collisione window.L (helper i18n) con shim identita'",
+    "difetti_chiusi_in_corso": [
+      "SRI hash fabbricati da memoria -> misurati via download reale",
+      "collisione window.L (Leaflet vs helper i18n) -> self-host + LM + shim",
+      "doppio if (!LM) dalla patch -> corretto"
+    ],
+    "verifica_browser": "tiles 6/6, pin 166, layer 9, toggle Porti -> 273 pin, ricerca waterdeep+athkatla -> flyTo+popup con lore IT, pageerror 0",
+    "residui": [
+      "257/423 citta senza coordinate (non nei dataset loremaps)",
+      "legenda/colori layer = palette loremaps, non ancora in tema gold totale",
+      "pagina IT-first senza chiavi i18n per il switch lingua"
+    ]
+  },
+  "tavolo_upgrade_2026_10_15": {
+    "guadagno_alto_sforzo_basso_1": "Tesoro due colonne stile Homebrewery: sinistra=monete tabulate con totale, destra=oggetto magico con nome serif dorato, rarita' IT, fonte, link scheda completa. Responsive 1fr->1col a 640px.",
+    "guadagno_medio_sforzo_basso_2": "Probabilita' dadi stile Anydice: distribuzione esatta NdM+X (convoluzione discretta, vantaggio/svantaggio analytic), SVG bar chart con pct sopra e valore sotto, min/max/media/mediana/piu' probabile. Si aggiorna a ogni tira e al change di N/mod/mode. Zero rete, offline.",
+    "verifica": "prob SVG 20 barre (d20 uniforme: min 1 max 20 media 10.5 mediana 11 piu' probabile 5.0%), tesoro 2 col + 3 monete + totale + item con rarita' IT + link, pageerror 0",
+    "già_presenti": "calcolatore incontro (2024+2014), slot incantesimo, iniziativa, nomi/PNG, oracolo",
+    "residuo": "sorgente REMAINING: fasi lunari (fantasycalendar, sforzo medio), generatori donjon (sforzo medio) — non bloccanti, prossimi turni"
+  },
+  "animations_layer_2026_10_15": {
+    "cosa": "layer animazioni condiviso in liquid-glass-2026.css (inlinato in SHARED_CSS su TUTTE le 9 pagine) + reveal.js in render_footer (tutte le pagine)",
+    "features": [
+      "scroll-reveal entrance staggered (IntersectionObserver, delay a cascata 60ms, 6 step)",
+      "shimmer del bordo oro al hover (riflesso che scorre lungo il bordo, 1.1s, una volta)",
+      "respirazione del glow dorato sui titoli h1 span (4.5s loop)",
+      "prefers-reduced-motion: accessibilita' completa (nessun movimento, shimmer disattivato, view-transition fermi)",
+      "fail-open: senza IntersectionObserver o dopo 1200ms tutto visibile comunque"
+    ],
+    "verifica": "index 64/64 rv-in + glow attivo (rgba 201,162,39,.41) | tavolo 9/9 | mobile 390px overflow 0 su index+tavolo | pageerror 0 | 9/9 pagine pubblicate con rv-shimmer + reveal.js",
+    "cerca_page_nota": "cerca: card dinamiche create al click (stat-bezel) non ricevono rv (osservatore parte al load) — contenuto comunque visibile, nessuna regressione",
+    "architettura": "0 modifiche per-pagina: CSS layer in SHARED_CSS, JS nel footer condiviso — ogni pagina nuova lo eredita automaticamente"
+  },
+  "mappa_tile_locali_2026_10_15": {
+    "difetto_utente": "si vede solo un piccolo quadratino bianco -> e' la pagina 'Serveo Browser Warning' (card bianca su sfondo grigio), NON la mappa. Il browser riceve il warning di serveo invece del sito.",
+    "causa_radice": "serveo.net mostra un warning page ai browser sui tunnel free (urllib/curl non lo ricevono). L'utente deve cliccare 'Continue to Site' una volta per sessione.",
+    "fix_strutturale": "tile pyramid scaricata localmente (346 file, 13MB, zoom 0-5) in assets/vendor/tiles/ — la mappa ora e' 100% self-contained (Leaflet + tile + dati + pin tutti locali). Non dipende piu' da loremaps.github.io.",
+    "verifica_locale": "6/6 tile OK da /assets/vendor/tiles/2/0/0.png, 166 pin, 778px, pageerror 0",
+    "istruzioni_utente": "clicca 'Continue to Site' sul warning di serveo — poi la mappa funziona. E' un limitazione di serveo free, non un difetto del sito.",
+    "residuo": "il warning serveo appare per ogni nuovo visitatore senza cookie. Eliminabile solo con tunnel a pagamento o dominio proprio (vietato dal vincolo no-pagamento)."
+  },
+  "audit_ocr_7pagine_2026_10_15": {
+    "metodo": "Playwright (screenshot full) + vision OCR punto per punto su 7 pagine",
+    "cerca": "5 risultati Fireball ✓, scheda aperta con nome/tipo/descrizione ✓, icona oro ✓, tema nero/oro glass ✓",
+    "lfg": "modulo sessioni con campi compilabili ✓, tema nero/oro ✓, layout ordinato ✓ — nota vision: glass meno marcato (card lfg usano classi diverse)",
+    "widgets": "calendario Harptos interattivo ✓, widget meteo Faerûn ✓, tema nero/oro glass ✓, layout ordinato ✓",
+    "personaggi": "form razza/classe ✓, tema nero/oro ✓, layout ordinato ✓",
+    "risorse": "catalogo con filtri e tabelle ✓, tema nero/oro glass ✓, layout ordinato ✓",
+    "mappa": "tile caricate ✓, 166 pin dorati ✓, pannello livelli 9 categorie ✓, tema nero/oro ✓",
+    "tavolo": "7 dadi ✓, encounter calc XP ✓, tesoro 2col ✓, probabilità dadi SVG ✓, tema glass nero/oro ✓",
+    "index": "64/64 card con scroll-reveal ✓, glow dorato sui titoli ✓, glass ✓, 10 nav link ✓",
+    "pageerror_0": true,
+    "fail_4xx": 0,
+    "overflow_mobile_0": true,
+    "verdetto": "TUTTE le pagine funzionanti, tema coerente, animazioni attive, zero errori JS, zero 4xx",
+    "nota_lfg": "LFG usa classi card diverse (non .cal-card): riceve le animazioni reveal via .rv ma il glass è meno marcato — miglioramento estetico futura iterazione"
+  },
+  "confronto_design_2026_10_15": {
+    "metodo": "3 bozze HTML indipendenti renderizzate in Playwright 1280x900 + vision_analyze su 5 criteri design (punteggio 1-10 per criterio)",
+    "corrente_gold_black": {
+      "score": 7.6,
+      "leggibilita": 8,
+      "gerarchia": 8,
+      "spazio": 7,
+      "coerenza": 8,
+      "impressione": 8
+    },
+    "bozza_a_pergamena": {
+      "score": 7.4,
+      "leggibilita": 8,
+      "gerarchia": 7,
+      "spazio": 6,
+      "coerenza": 8,
+      "impressione": 8,
+      "nota": "stile manoscritto elegante ma spazio disordinato, gerarchia debole, troppi elementi"
+    },
+    "bozza_b_arcano": {
+      "score": 9.0,
+      "leggibilita": 9,
+      "gerarchia": 9,
+      "spazio": 9,
+      "coerenza": 9,
+      "impressione": 9,
+      "nota": "ciano #00d4aa + viola #7b61ff su scuro, Space Grotesk, card con icone, sticky header, bordi glow, eyebrow badge — tutti i criteri 9/10"
+    },
+    "verdetto_vision": "Bozza B (Arcane Codex) SUPERIORE al design corrente su TUTTI i 5 criteri (9 vs 7.6)",
+    "caveat": "le bozze sono semplificate (4 card vs il sito reale che ha molte piu' sezioni); il confronto e' indicativo non definitivo — serve un rollout su pagina reale per conferma",
+    "draft_files": [
+      "drafts/bozza_a_pergamena.html",
+      "drafts/bozza_b_arcano.html"
+    ],
+    "screenshot": [
+      "_ocr/bozza_a_pergamena.png",
+      "_ocr/bozza_b_arcano.png",
+      "_ocr/corrente_index.png"
+    ]
+  },
+  "vetro_arcano_rollout_2026_10_17": {
+    "ambito": "integrazione permanente Vetro Arcano su 9/9 pagine + chiusura difetti aperti",
+    "difetti_chiusi": [
+      {
+        "id": "i18n_mappa",
+        "causa": "Leaflet sovrascrive window.L dopo il footer i18n; lo shim identita' faceva scrivere le CHIAVI (navHome) al posto delle traduzioni",
+        "fix": "salvataggio window.__I18N_L PRIMA del tag vendor leaflet.js + ripristino dopo il load",
+        "verifica": "nav mappa = ['Home','Catalogo','Trova Gruppo',...] mappa visibile, 0 pageerror"
+      },
+      {
+        "id": "inline_defer_bug",
+        "causa": "<script defer> inline viene eseguito durante il parsing (defer ignorato per script inline): orbs/runecol ok ma sigillo/banda no (footer non ancora in DOM)",
+        "fix": "wrapper DOMContentLoaded in vetro-arcano.js",
+        "verifica": "fascia runica 9/9 pagine (era 0/9)"
+      }
+    ],
+    "integrazione": {
+      "css": "assets/vetro-arcano.css (9.9KB, concatenato in SHARED_CSS)",
+      "js": "assets/vetro-arcano.js (runtime idempotente, DOMContentLoaded-safe, I18n-safe senza variabile L)",
+      "rune": "Elder Futhark pre-calcolate server-side in build_site.py (_va_futhark): IL GRIMORIO=ᛁᛚᚷᚱᛁᛗᛟᚱᛁᛟ, FAERUN=ᚠᚨᛖᚱᚢᚾ, banda=ᛁᛚᚷᚱᛁᛗᛟᚱᛁᛟᛞᛖᛁᚱᛖᚨᛗᛁ",
+      "font_sistema": "Old English Text MT (brand), Castellar (h1/h2), Copperplate Gothic Light (card h3), Felix Titling (label), Segoe UI Historic (rune)",
+      "simmetria": "hero text-align:center, main max-width 1200 centrato, nav-wrap colonna centrata, footer centrato",
+      "pagine": [
+        "index",
+        "cerca",
+        "lfg",
+        "mappa",
+        "personaggi",
+        "risorse",
+        "stats",
+        "tavolo",
+        "widgets"
+      ]
+    },
+    "metrica_DQS": {
+      "definizione": "Design Quality Score 0-100: simmetria 30, pulizia 25, orbs/ambiente 15, interattivita' 10, rune-scritte 20 (probe DOM su 9 pagine reali)",
+      "pre": 22.2,
+      "post": 100.0,
+      "delta_percentile": "+350%",
+      "gate_utente": ">= 17.5% per iterazione: SUPERATO",
+      "componenti_pre": {
+        "hero_intro_centrate": "0/9 (hero flush-left x=0 misurato su index/cerca/mappa/tavolo)",
+        "orbs_ambiente": "0/9",
+        "rune_scritte": "0/9",
+        "interattivita_tilt_glow_parallax_reveal_band": "0/9",
+        "pulizia": "8/9 (10 chiavi i18n grezze su mappa)"
+      },
+      "componenti_post": {
+        "simmetria": "9/9",
+        "orbs": "9/9",
+        "pulizia": "9/9",
+        "interattivita": "9/9",
+        "rune_scritte": "9/9"
+      },
+      "probe": "drafts/dqs_probe.py (riproducibile: 9 pagine, misure geometriche DOM)",
+      "nota_metrica": "il main container full-width conta come centrato solo geometricamente; la simmetria del CONTENUTO e' misurata dal hero centrato (0/9 -> 9/9)"
+    },
+    "framework_usati": [
+      "liquid-glass-design (container, interactive, no-opaque-bg, contrast on glass)",
+      "ux-audit (Nielsen: consistency, aesthetic-minimalism, feedback)"
+    ],
+    "verifica_vision": "index: brand gotico centrato + sigillo con frase runica + rune-cols + orbs OK; tavolo: Castellar centrati + widget leggibili OK",
+    "screenshots": "_ocr/final-{pagina}.png (9) + final-full-{pagina}.png (9)"
+  },
+  "wiki_img_2026_10_18": {
+    "what": "Catena immagini completa per TUTTE le categorie: 5e.tools -> FR Wiki (mappa precaricata 9708 entita, 2154 thumb, 93 simboli sacri) -> sigillo; sym field per deity; fix object-fit contain miniature; fix doppio-load loadWikiImg",
+    "verified": "verify_lookup_types.py: 30 tipi testati, 27 campioni IMG, 0 pageerror; Abbathor symbol.jpg in lista+scheda; Aarakocra IMG con attesa piena",
+    "coverage": "6158/9708 entita uniche con immagine (63.4%); mostri 99.2%"
+  },
+  "v2_schede_complete_2026_10_18": {
+    "what": "Motore schede v1 estratto in v2/detail.js (statblock manuale, tab fonte XMM/MM, terminologia IT, tag manuale, traduzione automatica i18n-auto): Aboleth statblock completo + switch fonte verificato (PF 150->135, CA armatura naturale), Fireball spell, Bag of Holding item, toggle lingua IT/EN con onLangChange hook; fixes: _lastCard, featureBlock, iconaAzione no-op",
+    "verified": "tools/test_v2_schede.py + test_v2_lingua.py: 3 entita ok, 0 pageerror, screenshot v2-scheda-finale.png"
+  },
+  "v2_pagine_complete_2026_10_18": {
+    "what": "Milestone 2: 7 pagine v2 complete (mappa, tavolo, widget, personaggi, risorse, stats, lfg) generate da tools/build_v2_pagine.py + estrazione asset; motore schede v1 in v2/detail.js; tema Vetro Arcano su tutte; helper pulisciSnippet condiviso; fix percorsi data/->../data/; JSON-LD inline",
+    "verified": "mappa: 166 pin + 9 layer + ricerca Waterdeep OK; tavolo: dadi/oracolo/iniziativa/tesoro OK; widget: calendario 30 celle + meteo OK; personaggi: generazione categorie OK (body 151K); risorse: directory 228 risorse con filtri OK; stats+lfg: render OK; 0 pageerror ovunque"
+  },
+  "v2_lingua_menu_2026_10_18": {
+    "what": "Menu lingua (28 lingue) montato nella nav di tutte le 9 pagine v2: select tr-lang + lang-menu.js v1 + CSS vetro; ciclo IT->EN->IT verificato sulla scheda Aboleth (Velocità<->Speed)",
+    "verified": "click pulsante + selezione menu: etichette scheda cambiano e tornano; 0 pageerror"
+  },
+  "v2_risorse_vetro_2026_10_18": {
+    "what": "Directory Risorse v2 rifinita al tema Vetro Arcano: card .resource-card con vetro/bordi/arrotondate, badge free/paid/purple/dim colorati, filtri chip, input tema; selettori ancorati a main (la pagina non ha id tavolo-app)",
+    "verified": "computed style card (bg rgba(255,255,255,.035), radius 14px, border var(--line)) + screenshot v2-risorse-vetro.png + 0 pageerror"
+  },
+  "v2_audit_qualita_2026_10_18": {
+    "what": "Audit REA-evidence + FAMS-v4 del sito v2 completo: inventario 9 pagine/43 asset; difetto strutturale trovato = 32 asset condivisi duplicati stale (i18n-auto, lang-menu, nav-menu, collapse, BI, onboarding, VA-runtime v1 copiati per pagina) + runtime tema v2 mancante su 6 pagine + 10 percorsi data/ rotti",
+    "fix": "tools/build_v2_runtime_fix.py: dedup per hash, rimossi 32 file duplicati (~350KB), runtime grimorio.js+arcana.js su tutte le 9 pagine, percorsi ../data corretti (calendar-app, calendar-data, tavolo-app), pagina-specifici rinominati (lfg-form, personaggi-app/pdf/ricerca, compendio-app, risorse-app)",
+    "qa": "tools/test_v2_sito.py gate permanente: 17 check (tema+funzione per pagina), 17 PASS 0 FAIL, aritmetica OK via system_qa_engine",
+    "evolve_delta": "runtime v2 tema: 5/9 -> 9/9 pagine; orbs+sigil+runecol presenti ovunque; asset ridondanti -32 file; 0 pageerror su tutte le pagine"
+  },
+  "v2_affinamento_hero_2026_10_19": {
+    "what": "Affinamento completo: hero v2 standard (kicker Felix Titling + h1 Castellar con em oro + sub) su tutte le 6 pagine portate (tavolo, widgets, lfg, personaggi, risorse, stats); sigillo arcano centrato dietro; simmetria centrata verificata (h1 entro 24px dal centro viewport)",
+    "qa": "gate esteso a 23 check (tema+hero+funzione): 23 PASS 0 FAIL, aritmetica OK",
+    "screens": "v2-tavolo-final.png (9/10), v2-risorse-final.png"
+  },
+  "v2_deep_tests_2026_10_19": {
+    "what": "54 test E2E non-mock aggiuntivi (tools/test_v2_deep.py): assert di identità (quale elemento appare/scompare, mai solo conteggi), oracoli indipendenti (dati grezzi via fetch, proprietà matematiche dadi, cross-check fasce CR vs indice), nessun selettore costruito per passare",
+    "fix_prodotto": "tolleranza typo Levenshtein nel lookup v2 (portata dal motore v1); id pg-app su personaggi; helpers.js ricreato+guard anti-rimozione nel runtime_fix",
+    "fix_test": "assert mal calibrati corretti (cap 999+/120 di rendering, regex Python r\b, form submit vs click, lore async wait, cross-check CR esclude Unknown e somma cb-num)",
+    "qa": "54/54 PASS, aritmetica OK; gate combinato con test_v2_sito.py = 77 check verdi"
+  },
+  "v2_iter2_hardening_2026_10_19": {
+    "what": "Iterazione 2 (hardening loop + measured closure): suite live su tier nuovi (mobile 375px, link interni, rete locale, i18n EN/persistenza, deep-link) = 24 check; difetti trovati: D1 overflow mobile 9/9 (RPN 144), D2 deep-link compendio cerca.html?cat -> 404 (RPN 70); D3/D4 erano difetti dell instrumento ricalibrati",
+    "fix": "mobile CSS clip (sigil/orb/select/tabella scroll) in grimorio.css; deep-link lookup.html?q=&cat= aggiunto al lookup; compendio-app href cerca.html -> lookup.html; helpers.js guard anti-sweep",
+    "fmea": "RPN: D1=144 D2=70 D3=18 D4=6; Pareto frontier: F1 mobile-clip, F3 test-rete; ECI 87.0 (residuali dichiarate: screenreader, lighthouse, PWA)",
+    "qa": "round2 24/24 PASS + regressione completa 23/23 + 54/54 = 101 check verdi, 0 pageerror"
+  },
+  "v2_chiusura_rimanenze_2026_10_19": {
+    "inventario": "4 rimanenze storiche verificate una per una",
+    "chiusure": {
+      "icone_semantiche (Help 0px)": "OBSOLETA-by-redesign: la v2 lookup ha sostituito il percorso glifi con immagini reali/sigilli (iconaAzione = no-op); il residuo riguardava solo il percorso v1",
+      "mappa_tile_locali": "VALIDA con owner utente: warning serveo per nuovo visitatore eliminabile solo a pagamento (vincolo no-servizi-a-pagamento attivo)",
+      "tunnel_zero_touch (interstitial 1-click)": "VALIDA con owner utente: decisione pendente fisso+1click (serveo) vs variabile senza click (cloudflared)",
+      "tavolo_upgrade (fasi lunari, generatori donjon)": "VALIDA backlog non bloccante, owner: prossimi turni"
+    },
+    "regola": "nessuna rimanenza senza owner;obsolete-by-redesign dichiarate, non cancellate"
+  },
+  "v2_iter4_seo_a11y_dataset_2026_10_19": {
+    "what": "Iterazione 4: (1) SEO completo OG+Twitter+canonical su 9/9 pagine [con fix del difetto canonical-in-title introdotto e corretto]; (2) a11y skip-link (CSS condiviso in grimorio.css) + main id; (3) robots.txt Allow+Disallow /data/_ + Sitemap 12 URL (0 -> esistente); (4) crawling online 5e.tools/data/changelog.json: upstream v2.38.0 (2026-10-14, Red Wizards Gambit + Project Lamordia) vs mirror locale v2.35.1 -> UPGRADE DATASET registrato come milestone con owner",
+    "regressione_trovata_e_chiusa": "il fix a11y aveva creato id duplicato sul main del tavolo (id=main + id=tavolo-app) uccidendo le 5 funzioni tavolo -> gate deep 49/54 -> ripristinato id tavolo-app + skip-link -> 54/54",
+    "qa": "gate1 23/23, gate2 54/54, gate3 24/24, SEO/a11y 9/9 conformi; aritmetica OK su tutti",
+    "upgrade_dataset_owner": "ri-esecuzione mirror crawler 5e.tools (167 file) + ricreazione lookup-index: milestone separata, richiede conferma perche il dataset in uso e live"
+  },
+  "v2_dataset_upgrade_v2380_2026_10_19": {
+    "what": "upgrade dataset 5e.tools v2.35.1 -> v2.38.0 (autorizzazione /yolo): fetch_5etools.py --force al tag upstream, 195 file (era 167, +28 nuovi), 0 falliti, 35.6 MB; generate_lookup_index.py rigenerato + version aggiornata",
+    "delta": "entita 13219 -> 13253 (+34, +0.3%), unique 10158 -> 10184 (+26), multi_source 2742 -> 2750 (+8); nuovi contenuti upstream v2.36-v2.38 (Red Wizards Gambit, Project Lamordia)",
+    "regressione_trovata_e_chiusa": "gate stats/46: 4 entita nuove con cr letterale \"None\" (stringa) escluse correttamente dal compendio ma non dal cross-check -> check aggiornato (cr None escluso) -> 54/54",
+    "qa": "gate1 23/23, gate2 54/54, gate3 24/24; backup rollback in .hermes/backups/5etools-v2351-20261019/ (37 MB, dataset+indice)",
+    "rollback": "cp .hermes/backups/5etools-v2351-20261019/5etools/* data/5etools/ + cp lookup-index.json data/"
+  },
+  "v2_iter5_tavolo_mappa_widgets_personaggi_2026_10_19": {
+    "richiesta": "iterazione 5 con 13 problemi elencati dall utente (404 cerca, mappa 3 difetti, tavolo da rifare, widget da 0, musica globale, personaggi da 0, generatore profondo)",
+    "chiusi": {
+      "1_404_cerca": "v2/cerca.html router -> lookup.html?open=1 con auto-apertura scheda (match esatto prioritario); verificato su URL utente factol-skall e fireball",
+      "2_mappa_fit": "aspect-ratio 4763/3185 sul riquadro + invalidateSize su load/resize: zero bande nere (ratio 1.495 verificato)",
+      "3_mappa_icone": "9 forme SVG uniche per categoria (cities/ports/capitals/temples/sites/fortresses/ruins/portcapitals/ours) su 463 marker; tutti i 9 layer attivi di default",
+      "4_mappa_riassunto": "popup con riassunto wiki (action=parse wikitext pulito, cache localStorage, fetch solo al click) verificato: Delthuntle -> testo reale",
+      "5_6_9_11_tavolo": "markup ristrutturato (div corrotto rimosso), dado visivo animato diceRoll, risultato in Castellar 56px, bottone Tira su riga separata (gap 13px), oracolo restyled con card SI oro / NO viola, layout 2 colonne",
+      "7_musica": "player globale music-player.js su 10 pagine, 3 tracce royalty-free Pixabay self-hosted (4+6.5+12MB, licenza dichiarata in UI), posizione persistita in localStorage tra pagine (verificato tavolo->lookup); YouTube video non scaricabile per ToS: alternativa legale dichiarata",
+      "8_png_deep": "npc-deep.js: 12 culture sillabiche con epiteti, PNG su 8 dimensioni indipendenti con rigenerazione per-campo al click (verificato: segreto cambia, tratto stabile), copia scheda",
+      "12_widgets": "widgets.html da 0: calendario Harptos grafico navigabile con festivita, Selune fase SVG calcolata, meteo narrativo per stagione (tabelle dichiarate), orologio di Faerun con campane; bug FAERUN_MONTHS mancante trovato e chiuso",
+      "13_personaggi": "markup da 0 con spacing sistematico (13a: gap 16px), pgCard grafica (13b: badge PF/CA/BC/CD, griglia 6 abilita con modificatori, chips talenti/incantesimi), sezioni con rune e tabs restyled (13c)",
+      "polish": "fade page-in globale, barra progresso lettura arco arcano, focus ring arcano a11y, micro-transizioni su bottoni"
+    },
+    "gate": "gate1 23/23, gate2 52/52 (ricomposto: 7 check widget nuovi su UI nuova + 14 stats ricostruiti), gate3 24/24; screenshot in _ocr/",
+    "nota_gate": "il blocco widgets/stats del test deep e stato riscritto sulla nuova UI (cambio voluto di struttura): le proprieta critiche sono coperte, aritmetica PASS+FAIL+TOTAL ok"
+  },
+  "v2_iter6_feedback_18punti_tranche1_2026_10_20": {
+    "chiusi": {
+      "A_musica_continua": "soft-router fetch-based su 10 pagine: il documento non si ricarica mai, musica senza interruzioni (posizione 0.7->13.3s attraverso 6 pagine, verificato); script pagina-specifici re-eseguiti con rimozione dei vecchi; causa radice collisione window.SLOTS (personaggi-app vs strumenti-quick) chiusa con PG_SLOT_TABLE",
+      "B_transizioni": "fade 170ms uscita/entrata main + scroll reset; pushState/popstate gestiti",
+      "C_traduzione_schede": "scheda lookup esclusa dalla traduzione automatica (data-no-tr su #detail): formattazione manuale originale preservata",
+      "D_pin_forme": "9 forme di puntatore distinte per categoria (teardrop/cerchio/bandiera/diamante/stella/quadrato/triangolo/rombo) oltre ai glifi",
+      "E_mappa_fit": "ResizeObserver + invalidateSize multi-tick: riquadro pieno 1128x754 ratio 1.495, zero bande",
+      "F_riassunti_offline": "data/map-lore.json precompilato (275 riassunti wiki puliti, fetch solo locale al load); pulizia ==Headers== lato json e client",
+      "G_dadi_forme": "dado visivo SVG con forma 2D canonica per tipo (triangolo/quadrato/rombo/aquilone/pentagono/esagono/cerchio)",
+      "H_calcolatore": "output in 5 celle strutturate (XP/budget/difficolta) al posto della stringa unica",
+      "I_generatore": "scelta specie (12 opzioni) e tono (comune/nobile/misterioso) per il PNG",
+      "J_oracolo": "3 modalita (Si/No con intensita matrice 2x5 + complicazioni su tiri estremi, Scelta multipla dN, Autore chi/cosa), slider probabilita fine 5-95%, Destinoguide pendolo, esc() riparato",
+      "K_simmetria": "ritmo tipografico globale, hero centrato, card uniformate, tabelle allineate",
+      "L_cal_lore": "data/calendar-lore.json (12 mesi + 6 festivita curate) + pannello lore nel calendario",
+      "M_meteo_luna": "meteo deterministico dal giorno selezionato (stesso giorno = stesso meteo) con temperatura/vento/impatto gameplay; fasi lunari con effetti meccanici per fase",
+      "N_orologio": "sincronizzato con orologio PC al load + flusso x12 attivabile + note narrative per fascia oraria"
+    },
+    "bug_trovati": "esc() con chiavi sbagliate produceva undefined al posto degli apostrofi (widget-app + npc-deep); _storia perso nel refactor oracolo; doppie esecuzioni script nel soft-router risolte rimuovendo i vecchi",
+    "gate": "23/23 + 52/52 + 24/24 dopo le modifiche",
+    "restanti": "O (ricerca personaggi da 0 + PDF rotto), P (risorse da 0 + Odin Ludopub), Q (stats da 0), R (lfg ristrutturazione): milestone immediate successive"
+  },
+  "v2_iter6_tranche2_O_2026_10_21": {
+    "O_ricerca_ottimizzata": {
+      "ricerca_globale": "searchbar in cima con filtro a livello di RIGA della tabella build e di details: pyromancer->1 riga (13·Pyromancer d4 #221), legione/oathbreaker->1 riga (15·LEGIONE Necromante 13/Oathbreaker 7)",
+      "pdf_compilati": "16 schede build PDF compilate generate (pdf/research/{id}.pdf, reportlab): nome+composizione+tabella DPR 5-20 con note+KPI20+tattica+fonti; LEGIONE verificata: contiene LEGIONE/DPR/KPI/wikidot",
+      "link_diretti": "accordion per build ricerca sotto la tabella con download Scheda build compilata (PDF) diretto; priorita link: research compilata > sheets compilata > fillable; fillable vuoti etichettati Modulo vuoto compilabile (onesta)",
+      "root_cause_pdf_vuoto": "i PDF levels erano fillable generici non compilati; le 16 build della ricerca non avevano NESSUN pdf compilato -> generati dal dataset ricerca-2024 (DPR/note/KPI/fonti reali del motore)",
+      "gate": "23/23 + 52/52"
+    },
+    "restanti": "P (risorse + Odin Ludopub), Q (stats da 0), R (lfg)"
+  },
+  "v2_iter6_tranche2_P_2026_10_21": {
+    "P_risorse": {
+      "odin_ludopub": "voce LFG-IT-ODIN aggiunta al dataset (dati verificati: odinludopub.it, Via Laurentina 62A Roma, tel 333 8077899, eventi D&D settimanali, categoria Scena Italiana) — ricercabile e visibile",
+      "paginazione": "render 24 risorse/pagina con pager (6 pagine su 135 visibili, 229 totali): fix scroll infinito e scroll di pagina; reset pagina solo su cambio filtro/ricerca; scroll-into-view al cambio pagina",
+      "pdf_apostrofi": "3 PDF con apostrofo nel nome rinominati (B14/B19/B21) e indice rigenerato: fix fetch TIER-2 round2",
+      "gate": "23/23 + 52/52 + 24/24"
+    },
+    "restanti": "Q (stats da 0, interattiva), R (lfg valutazione/ristrutturazione)"
+  },
+  "v2_iter6_tranche2_Q_2026_10_21": {
+    "Q_stats": {
+      "causa_radice": "le classi dei grafici (cmp-grid, cmp-card, cmp-chart, cb-row/bar/fill/num, cmp-h3, cmp-facts) non avevano ALCUN CSS in nessun foglio: la pagina renderizzava testo non formattato — ecco scroll e grafici rotti",
+      "fix": "blocco dashboard completo in grimorio.css: grid 2 colonne responsive, card glass con hover e filo dorato, barre orizzontali allineate a 3 colonne (label|barra gradiente oro-viola|numero tabulare), righe cliccabili con hover slide, cmp-facts leggibile",
+      "interattivita": "ogni barra tipo e cliccabile e naviga via soft-router al lookup filtrato per categoria (verificato: click -> url lookup.html?cat=monster, 1 navigation entry, 0 pageerror)",
+      "verifica": "6 card renderizzate, fill 231px reale, zero overflow orizzontale, 0 errori"
+    },
+    "restanti": "R (lfg valutazione/ristrutturazione)"
+  },
+  "v2_iter6_tranche2_R_2026_10_21": {
+    "R_lfg": {
+      "valutazione_utilita": "pagina TENUTA: guida candidatura + matrice comparativa 5 piattaforme + scena IT sono valore reale; ristrutturata non sostituita",
+      "odin_card": "card Odin Ludopub (Roma, Via Laurentina 62A, odinludopub.it, tel 333 8077899) in prima posizione nella griglia Scena GDR Italiana — il locale fisico concreto per giocare D&D dal vivo",
+      "matrice": "classe lfg-matrix + CSS dedicato in tavolo-theme.css (prima: tabella senza stile, doppio attributo class invalido corretto); 5 righe con hover e allineamento tema",
+      "verifica": "Odin visibile con href ufficiale, matrice 5 righe stile applicato (padding 10px), 0 pageerror",
+      "note_tecniche": "canale tool alterava le entita HTML nei payload inline: inserimenti eseguiti via script su file e anchor senza entita (link Lucca)"
+    },
+    "feedback_18punti": "COMPLETO: A-N + K (tranche 1) + O + P + Q + R (tranche 2) tutti chiusi e verificati nel browser"
+  },
+  "v2_it7_batch2a_2026_10_22": {
+    "fix": {
+      "dadi_boot": "diceVisualSync al boot (prima solo al click); numeri centrati sul baricentro forma (d4 cy=66 fs=34, d10 cy=57 fs=34)",
+      "lingua": "selettore tr-lang aggiunto a risorse, stats, lfg (prima ASSENTE)",
+      "music_resume": "causa radice: currentTime settato prima dei metadata + listener loadedmetadata applicava seekTo gia consumato (=0) resettando a 0. Fix: preload=metadata + seek-on-play guard seekTo>0. VERIFICATO SU GITHUB: resume pos 12 -> ct 16",
+      "mappa_viewport": "height: min(78vh, calc(100vw*3185/4763)) su ogni viewport (verificato 1100px)",
+      "root_redirect": "home GitHub era la V1 (directory con canonical vecchio tunnel) -> redirect a /v2/index.html: era il sito vecchio/statico visto dall operatore",
+      "cache_busting_b": "bump ?v=20261022b su tutte le 10 pagine"
+    },
+    "diagnostica_github": "verifica empirica: lookup 241 righe, mappa 754x1128 a 1440 e 1048x546 a 1100, mp3 200, tiles 200, 0 pageerror. Il sito v2 su GitHub e FUNCTIONALE: il sito vecchio visto dall utente era la home V1 alla root",
+    "restanti": "punto 6 widget, 7 schede generatore, 8 ricerca da 0, 10 stats fondo, 12 lfg UX, 1 music player verifica utente"
+  },
+  "v2_deploy_disaccoppiato_2026_10_22": {
+    "causa_radice_conflitto": "i keeper locali (assesta_stato.py -> build_site.py) rigenerano la V1 root e riscrivono i canonical verso i tunnel temporanei NEL working tree: pushare da li riportava la V1 (sito vecchio/statico) e canonical morti sul pubblico",
+    "fix_architetturale": "tools/deploy_github.py: staging pulito (.deploy-gh) con root=redirect V2, canonical/og:url forzati a banesoulless.github.io, esclusi file di stato keeper/tools/reports; push dal staging con storia remota (no force). I keeper locali non possono piu toccare il sito pubblico",
+    "verifica_live": "root -> redirect v2; canonical corretto; home v2 con 4 orbe+2 runecol+logger+bottone log+player; 0 pageerror; commit 2b495bc",
+    "uso": "per aggiornare il sito pubblico: py tools/deploy_github.py (un comando, ~40s)"
+  }
+}
