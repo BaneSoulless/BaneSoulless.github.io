@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://coaches-you-off-kijiji.trycloudflare.com/sitemap.xml
+Sitemap: https://tactics-recipe-ozone-cube.trycloudflare.com/sitemap.xml
