@@ -54,14 +54,20 @@
     document.head.appendChild(css);
 
     var audio = new Audio();
-    audio.preload = "none";
+    audio.preload = "metadata"; /* P11: metadata subito per applicare la posizione salvata */
     var idx = s.idx || 0;
     var vol = typeof s.vol === "number" ? s.vol : 0.45;
     var wasPlaying = s.playing === true;
     var seekTo = s.pos || 0;
     audio.volume = vol;
     audio.src = TRACCE[idx].f;
-    if (seekTo > 0) { try { audio.currentTime = seekTo; } catch (e) {} }
+    if (seekTo > 0) {
+      /* la posizione si applica DOPO il caricamento dei metadata, altrimenti viene scartata */
+      audio.addEventListener("loadedmetadata", function () {
+        /* applica il seek SOLO se non gia' consumato dal primo gesto */
+        if (seekTo > 0) { try { audio.currentTime = seekTo; seekTo = 0; } catch (e) {} }
+      }, { once: true });
+    }
 
     var box = document.createElement("div");
     box.id = "gdr-player";
@@ -75,6 +81,7 @@
       '<input type="range" id="mp-vol" min="0" max="100" value="' + Math.round(vol * 100) + '" title="Volume">';
     document.body.appendChild(box);
 
+    window.__gdrAudio = audio;
     var disc = box.querySelector("#mp-disc");
     var fill = box.querySelector("#mp-fill");
     var tEl = box.querySelector("#mp-title");
@@ -121,6 +128,13 @@
     });
     audio.addEventListener("play", refresh);
     audio.addEventListener("pause", refresh);
+    /* seek-on-play: quando la riproduzione parte, salta alla posizione salvata (una volta) */
+    audio.addEventListener("play", function () {
+      if (seekTo > 0) {
+        try { audio.currentTime = seekTo; } catch (e) {}
+        seekTo = 0;
+      }
+    });
 
     function statoCorrente() {
       return { idx: idx, vol: audio.volume, playing: !audio.paused, pos: audio.currentTime || 0, t: Date.now() };
@@ -132,7 +146,19 @@
     });
 
     refresh();
-    if (wasPlaying && seekTo > 0) { play(); } /* riprendi se era in riproduzione */
+    /* P11: ripresa automatica — autoplay policy richiede un gesto: il primo
+       click/tasto qualsiasi sulla pagina (non solo sul player) fa ripartire
+       la musica se era in riproduzione alla chiusura della pagina precedente. */
+    if (wasPlaying) {
+      var primeGesto = function () {
+        window.GDRLog && window.GDRLog.log('music-resume', 'seekTo=' + seekTo + ' cur=' + (audio.currentTime || 0) + ' ready=' + audio.readyState);
+                if (audio.paused) play();
+        document.removeEventListener("pointerdown", primeGesto);
+        document.removeEventListener("keydown", primeGesto);
+      };
+      document.addEventListener("pointerdown", primeGesto);
+      document.addEventListener("keydown", primeGesto);
+    }
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);

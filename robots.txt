@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://banesoulless.github.io/sitemap.xml
+Sitemap: https://coaches-you-off-kijiji.trycloudflare.com/sitemap.xml

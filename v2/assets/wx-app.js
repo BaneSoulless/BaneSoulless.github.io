@@ -217,6 +217,10 @@
 
   function d(n) { return Math.floor(Math.random() * n) + 1; }
 
+  /* P3: il visual del dado deve essere presente AL BOOT, non solo al click */
+  const _origRenderButtons = diceRenderButtons;
+  diceRenderButtons = function () { _origRenderButtons(); diceVisualSync(); };
+
   function diceSyncMode() {
     // Vantaggio/svantaggio è meccanica del d20: su altri dadi la modalità va
     // disabilitata e riportata a "Normale", altrimenti l'etichetta dichiarava
@@ -254,10 +258,10 @@
   /* forme 2D canoniche dei dadi (punto G): triangolo d4, quadrato d6, rombo d8,
      aquilone d10, pentagono d12, esagono d20, cerchio d100 */
   const DICE_SHAPE = {
-    4: { pts: "60,14 104,92 16,92", cy: 68 },
+    4: { pts: "60,14 104,92 16,92", cy: 66 },
     6: { rect: true, cy: 60 },
     8: { pts: "60,12 104,60 60,108 16,60", cy: 60 },
-    10: { pts: "60,10 96,48 60,110 24,48", cy: 58 },
+    10: { pts: "60,10 96,48 60,110 24,48", cy: 57 },
     12: { pts: "60,10 102,40 86,96 34,96 18,40", cy: 60 },
     20: { pts: "60,8 104,34 104,86 60,112 16,86 16,34", cy: 60 },
     100: { circle: true, cy: 60 }
@@ -275,14 +279,15 @@
     } else {
       inner = '<polygon points="' + sh.pts + '" fill="' + fill + '" stroke="' + stroke + '" stroke-width="2" stroke-linejoin="round"/>';
     }
-    return '<svg viewBox="0 0 120 120" width="150" height="150" aria-hidden="true">' +
+    const fs = (sel === 4 || sel === 10) ? 34 : 42;
+    return '<svg viewBox="0 0 120 120" width="170" height="170" aria-hidden="true">' +
       '<defs><linearGradient id="dvGrad" x1="0" y1="0" x2="1" y2="1">' +
       '<stop offset="0" stop-color="rgba(138,107,255,.42)"/>' +
       '<stop offset=".55" stop-color="rgba(201,162,39,.22)"/>' +
       '<stop offset="1" stop-color="rgba(20,17,10,.55)"/></linearGradient></defs>' +
       inner +
       '<text x="60" y="' + sh.cy + '" text-anchor="middle" dominant-baseline="central" ' +
-      'font-family="Castellar, Georgia, serif" font-size="42" font-weight="700" ' +
+      'font-family="Castellar, Georgia, serif" font-size="' + fs + '" font-weight="700" ' +
       'fill="#e8c95a">' + sel + "</text></svg>";
   }
 

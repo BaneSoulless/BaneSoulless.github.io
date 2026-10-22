@@ -17,13 +17,13 @@
 <meta name="description" content="Mappa interattiva di Faerûn: città, porti, capitali, rovine e luoghi dei Forgotten Realms con schede informative, ricerca e livelli attivabili.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/vendor/leaflet.css?v=20261022">
-<link rel="stylesheet" href="assets/grimorio.css?v=20261022">
+<link rel="stylesheet" href="../assets/vendor/leaflet.css?v=20261022b">
+<link rel="stylesheet" href="assets/grimorio.css?v=20261022b">
 <style>
 /* mappa v2 — tema Vetro Arcano */
 #faerun-map {
   aspect-ratio: 4763 / 3185;   /* proporzioni esatte dell'immagine: zero bande */
-  width: 100%; max-height: 82vh; min-height: 380px;
+  width: 100%; height: min(78vh, calc(100vw * 3185 / 4763)); min-height: 340px; max-height: 82vh;
   border-radius: 18px; border: 1px solid var(--line-hi, rgba(255,255,255,.14));
   background: #0b0d11; overflow: hidden;
   box-shadow: 0 18px 44px rgba(0,0,0,.5), 0 0 24px rgba(232,201,90,.06);
@@ -128,13 +128,13 @@ main[id="main"] { scroll-margin-top: 90px; }
 
 <script>/* salva l'helper i18n L() PRIMA che Leaflet (vendor) sovrascriva window.L */
 window.__I18N_L = (typeof window.L === 'function') ? window.L : null;</script>
-<script src="../assets/vendor/leaflet.js?v=20261022"></script>
+<script src="../assets/vendor/leaflet.js?v=20261022b"></script>
 <script>/* Rune per il runtime */
 window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
 window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
 window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
-<script src="assets/grimorio.js?v=20261022"></script>
-<script src="assets/arcana.js?v=20261022"></script>
+<script src="assets/grimorio.js?v=20261022b"></script>
+<script src="assets/arcana.js?v=20261022b"></script>
 <script>
 (function () {
   var LM = (typeof window.L !== 'undefined' && typeof window.L.map === 'function') ? window.L : null;
@@ -318,8 +318,9 @@ window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</scri
   setTimeout(function () { map.invalidateSize(); }, 900);
 })();
 </script>
-<script src="assets/music-player.js?v=20261022"></script>
-<script src="assets/activity-log.js?v=20261022"></script>
-<script src="assets/soft-router.js?v=20261022"></script>
+<script src="assets/music-player.js?v=20261022b"></script>
+<script src="assets/activity-log.js?v=20261022b"></script>
+
+<script src="assets/soft-router.js?v=20261022b"></script>
 </body>
 </html>
