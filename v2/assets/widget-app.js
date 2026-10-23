@@ -72,6 +72,8 @@
     renderLuna(dataAssoluta(cal));
     /* punto L: lore del mese + festivita' dal file calendar-lore.json */
     renderCalLore();
+    /* punto P4: il giorno nel Reame */
+    renderGiorno();
     /* punto M: il meteo narrativo segue il giorno selezionato */
     renderMeteoGiorno();
   }
@@ -84,6 +86,91 @@
       .then(function (j) { CAL_LORE = j || {}; renderCalLore(); })
       .catch(function () { CAL_LORE = {}; });
   }
+  /* ================= P4: IL GIORNO NEL REAME =================
+     Pannello per il giorno selezionato: data completa + lore wiki
+     (Calendar of Harptos) con cache 7 giorni + fallback locale. */
+  var WIKI_CAL_CACHE = "gdr-wiki-calendario";
+
+  function wikiCalCacheLeggi() {
+    try {
+      var c = JSON.parse(localStorage.getItem(WIKI_CAL_CACHE) || "null");
+      if (c && c.t && Date.now() - c.t < 7 * 864e5 && c.sezioni) return c.sezioni;
+    } catch (e) {}
+    return null;
+  }
+
+  function wikiCalSezioneMese(nomeMese) {
+    /* dal wikitext di Calendar_of_Harptos estrae il paragrafo del mese */
+    return fetch("https://forgottenrealms.fandom.com/api.php?action=parse&page=Calendar_of_Harptos&format=json&prop=wikitext&redirects=1&origin=*")
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        var wikitext = (d.parse && d.parse.wikitext && d.parse.wikitext["*"]) || "";
+        var sezioni = {};
+        /* ogni mese inizia con === Nome === (o ===Heading): si splitta */
+        var blocchi = wikitext.split(/\n==+ ?([^=\n]+) ?==+/);
+        for (var i = 1; i < blocchi.length; i += 2) {
+          sezioni[blocchi[i].trim()] = blocchi[i + 1];
+        }
+        try { localStorage.setItem(WIKI_CAL_CACHE, JSON.stringify({ t: Date.now(), sezioni: sezioni })); } catch (e) {}
+        return sezioni;
+      })
+      .catch(function () { return null; });
+  }
+
+  function wikiPulisci(t) {
+    if (!t) return "";
+    return String(t)
+      .replace(/\{\{[^}]*\}\}/g, "")
+      .replace(/\[\[([^|\]]*)\|([^\]]*)\]\]/g, "$2")
+      .replace(/\[\[([^\]]*)\]\]/g, "$1")
+      .replace(/\'{2,3}/g, "")
+      .replace(/<[^>]*>/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 640);
+  }
+
+  var WIKI_QUESTA_PAGINA = null; /* sezioni caricate una volta per pagina */
+
+  function renderGiorno() {
+    var box = document.getElementById("cal-giorno");
+    if (!box) return;
+    var mese = MESI[cal.mese] || { name: "Hammer" };
+    var L = calLore();
+    var m = (L.mesi || {})[mese.name] || {};
+    var stag = m.stagione || "";
+    var eq = cal.mese >= 0 && cal.mese < 12 ? EQ_REALE[cal.mese] : "";
+    var dataTxt = cal.giorno + " " + mese.name + " " + cal.anno + " DR" +
+      (eq ? "  ·  equivale a " + eq : "") + (stag ? "  ·  " + stag : "");
+
+    var fest = esFesta(cal);
+    var festTxt = fest ? "Festività: " + (NOMI_FESTA_IT[fest] || fest) : "";
+
+    /* fase lunare del giorno: ricalcolo testuale */
+    var ga = dataAssoluta(cal);
+    var ciclo = ((ga % 30) + 30) % 30;
+    var idx = Math.floor(ciclo / 30 * 8) % 8;
+    var lunaTxt = "Selûne: " + FASI[idx][0] + " (giorno " + (ciclo + 1) + " del ciclo).";
+
+    var html = '<h4 class="cl-tit">Il giorno nel Reame <span class="cl-stag">selezionato</span></h4>' +
+      '<p class="cl-txt"><b>' + esc(dataTxt) + "</b></p>" +
+      (festTxt ? '<div class="cl-fest cl-fest-oggi">' + esc(festTxt) + "</div>" : "") +
+      '<p class="cl-txt">' + esc(lunaTxt) + "</p>" +
+      '<p class="cl-txt gdr-wiki-lore">' + esc((m.txt || "") + " " + wikiPulisci(WIKI_QUESTA_PAGINA ? (WIKI_QUESTA_PAGINA[mese.name] || "") : "")) + "</p>" +
+      '<p class="cl-src" style="font-size:10.5px;color:var(--dim);margin-top:6px">Lore: Forgotten Realms Wiki «Calendar of Harptos» — CC BY-SA</p>';
+    box.innerHTML = html;
+
+    /* carica la wiki una sola volta, poi ri-renderizza con la lore */
+    if (WIKI_QUESTA_PAGINA === null) {
+      WIKI_QUESTA_PAGINA = wikiCalCacheLeggi();
+      if (WIKI_QUESTA_PAGINA) { renderGiorno(); return; }
+      wikiCalSezioneMese(mese.name).then(function (sez) {
+        WIKI_QUESTA_PAGINA = sez || {};
+        if (sez) renderGiorno();
+      });
+    }
+  }
+
   function renderCalLore() {
     var box = document.getElementById("cal-lore");
     if (!box) return;
