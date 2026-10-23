@@ -315,8 +315,87 @@
     });
   }
 
+  /* ============ P7: RICERCA OTTIMIZZATA RIFATTA ============
+     UX: lista a card compatte (una per build) con i 3 DPR chiave sempre
+     visibili (liv 5/10/20); il dettaglio completo si apre INLINE con un
+     click (tutti i 16 livelli, KPI, fonti, PDF compilato quando esiste).
+     Niente slider e niente muri di accordion: 16 build = 16 card.
+     Le analisi del motore vivono in UN unico blocco collassato in fondo. */
+  function dprLivello(b, lv) { var v = (b.dpr || [])[lv - 5]; return (v === null || v === undefined) ? 0 : v; }
+
+  function metricaDpr(label, valore) {
+    var m = el("div", "rc-bmetric");
+    m.appendChild(el("span", "rc-bmetric-v", String(Math.round(valore))));
+    m.appendChild(el("span", "rc-bmetric-l", label));
+    return m;
+  }
+
+  function dettaglioBuild(b) {
+    var det = el("div", "rc-bdet");
+    var dt = el("table", "rc-table rc-bdet-table");
+    var dh = el("thead"), dhr = el("tr");
+    ["Liv.", "DPR", "Nova", "Nota"].forEach(function (h) { dhr.appendChild(el("th", null, h)); });
+    dh.appendChild(dhr); dt.appendChild(dh);
+    var db = el("tbody");
+    (b.dpr || []).forEach(function (v, i) {
+      var rr = el("tr");
+      var nova = (b.nova || [])[i];
+      [String(i + 5), (v || 0).toFixed(1), nova === null || nova === undefined ? "—" : nova.toFixed(0),
+       (b.note && b.note[i]) ? b.note[i] : ""].forEach(function (c, ci) {
+        rr.appendChild(el("td", ci >= 2 ? "rc-note" : null, String(c)));
+      });
+      db.appendChild(rr);
+    });
+    dt.appendChild(db);
+    det.appendChild(dt);
+    if (b.kpi20 && b.kpi20.length) {
+      var k = el("div", "rc-bkpi");
+      b.kpi20.forEach(function (kv) { k.appendChild(el("span", "rc-chip", kv[0] + ": " + kv[1])); });
+      det.appendChild(k);
+    }
+    var act = el("div", "rc-acc-act");
+    var scheda = (window.__RESEARCH_PDF_JSON__ || {})[b.id];
+    if (scheda) {
+      var lk = document.createElement("a");
+      lk.className = "rc-pdf rc-pdf-ok rc-fonti-lnk";
+      lk.href = "/" + scheda; lk.target = "_blank"; lk.rel = "noopener";
+      lk.textContent = "Scheda build compilata (PDF)";
+      act.appendChild(lk);
+    } else {
+      act.appendChild(el("span", "tv-meta", "Nessuna scheda PDF compilata per questa build."));
+    }
+    det.appendChild(act);
+    det.appendChild(fontiHtml(b.fonti));
+    return det;
+  }
+
+  function buildCard(b) {
+    var card = el("article", "rc-bcard");
+    var head = el("div", "rc-bcard-head");
+    head.appendChild(el("h3", "rc-bnome", b.nome));
+    var tg = el("button", "rc-btoggle");
+    tg.type = "button"; tg.textContent = "Apri scheda"; tg.setAttribute("aria-expanded", "false");
+    head.appendChild(tg);
+    card.appendChild(head);
+    card.appendChild(el("p", "rc-bdesc", (b.descrizione || "").replace(/\s+/g, " ").slice(0, 150)));
+    var met = el("div", "rc-bmetrics");
+    met.appendChild(metricaDpr("DPR liv 5", dprLivello(b, 5)));
+    met.appendChild(metricaDpr("DPR liv 10", dprLivello(b, 10)));
+    met.appendChild(metricaDpr("DPR liv 20", dprLivello(b, 20)));
+    card.appendChild(met);
+    var det = dettaglioBuild(b);
+    det.classList.add("off");
+    card.appendChild(det);
+    tg.addEventListener("click", function () {
+      var aperto = det.classList.toggle("off") === false;
+      tg.textContent = aperto ? "Chiudi scheda" : "Apri scheda";
+      tg.setAttribute("aria-expanded", aperto ? "true" : "false");
+    });
+    return card;
+  }
+
   function viewBuild(host) {
-    host.textContent = "";            // svuota: i cambi di filtro/slider non devono accumulare
+    host.textContent = "";
     var s = DATA.sintesi;
     var kpi = el("div", "rc-kpi-grid");
     renderKpi(kpi, [["Build calcolate", s.build], ["Combo verificate", s.combo], ["Ruoli classificati", s.ruoli],
@@ -324,106 +403,34 @@
       ["Fonti", s.fonti_web + " + " + s.trascritti_video + " video"]]);
     host.appendChild(kpi);
 
-    var ctrl = el("div", "rc-ctrl");
-    ctrl.appendChild(el("label", "dl", "Livello"));
-    var sl = el("input");
-    sl.type = "range"; sl.min = "5"; sl.max = "20"; sl.value = String(lvl); sl.id = "rc-liv"; sl.setAttribute("aria-label", "Livello del personaggio");
-    var out = el("span", "rc-num", "liv " + lvl);
-    sl.addEventListener("input", function () { lvl = parseInt(sl.value, 10); out.textContent = "liv " + lvl; viewBuild(host); });
-    ctrl.appendChild(sl); ctrl.appendChild(out);
-    host.appendChild(ctrl);
+    var q = "";
+    var inp = document.getElementById("rc-search");
+    if (inp) q = (inp.value || "").toLowerCase().trim();
 
-    var idx = lvl - 5;
-    var rows = DATA.build.slice().sort(function (a, b) { return b.dpr[idx] - a.dpr[idx]; });
-    var t = el("table", "rc-table");
-    var thead = el("thead"), tr = el("tr");
-    ["#", "Build", "DPR sost.", "DPR all-in", "Dettaglio (dal motore)"].forEach(function (h) { tr.appendChild(el("th", null, h)); });
-    thead.appendChild(tr); t.appendChild(thead);
-    var tb = el("tbody");
-    rows.forEach(function (b, i) {
-      var r = el("tr");
-      if (i === 0) r.className = "rc-top";
-      [String(i + 1), b.nome, (b.dpr[idx] || 0).toFixed(0), (b.nova[idx] === null ? "—" : b.nova[idx].toFixed(0)), b.note[idx] || ""]
-        .forEach(function (c, ci) {
-          var td = el("td", ci === 4 ? "rc-note" : null, c);
-          if (ci === 4) td.appendChild(fontiHtml(b.fonti));
-          r.appendChild(td);
-        });
-      tb.appendChild(r);
-    });
-    t.appendChild(tb);
-    host.appendChild(t);
-    host.appendChild(el("p", "tv-meta", "Valori dal motore deterministico (AC per fascia 16/17/18/19, critico ×2 sui dadi, nessun oggetto magico). " +
-      "Il dettaglio per ogni livello riporta slot e raggi usati. Build #15 = armata di non-morti, rinnovabile."));
+    var lista = el("div", "rc-blist");
+    var visibili = DATA.build.slice()
+      .filter(function (b) { return !q || b.nome.toLowerCase().indexOf(q) >= 0; })
+      .sort(function (a, b) { return dprLivello(b, 10) - dprLivello(a, 10); });
+    visibili.forEach(function (b) { lista.appendChild(buildCard(b)); });
+    host.appendChild(lista);
 
-    /* Punto O: accordion per ogni build della ricerca con scheda PDF compilata scaricabile.
-       Niente piu' "cercare a mano sotto + slider": il dettaglio e il download sono qui. */
-    var acc = el("div", "rc-acc");
-    DATA.build.slice().sort(function (a, b) {
-      return String(a.id).localeCompare(String(b.id), "it");
-    }).forEach(function (b) {
-      var det = document.createElement("details");
-      det.className = "rc-acc-item";
-      var sum = document.createElement("summary");
-      sum.appendChild(el("span", "rc-acc-id", String(b.id)));
-      sum.appendChild(el("span", "rc-acc-nome", b.nome || ""));
-      det.appendChild(sum);
-      var body = el("div", "rc-acc-body");
+    if (!visibili.length) host.appendChild(el("p", "tv-meta", "Nessuna build corrisponde alla ricerca."));
 
-      if (b.descrizione) {
-        var pd = el("p", null, b.descrizione);
-        pd.style.cssText = "font-size:13.5px;line-height:1.6;";
-        body.appendChild(pd);
-      }
-      /* mini-tabella DPR 5-20 con note */
-      var dt = el("table", "rc-table");
-      var dh = el("thead"), dhr = el("tr");
-      ["Liv.", "DPR", "Nota"].forEach(function (h) { dhr.appendChild(el("th", null, h)); });
-      dh.appendChild(dhr); dt.appendChild(dh);
-      var db = el("tbody");
-      (b.dpr || []).forEach(function (v, i) {
-        var rr = el("tr");
-        [String(i + 5), (v || 0).toFixed(1), b.note && b.note[i] ? b.note[i] : ""]
-          .forEach(function (c, ci) {
-            var td = el("td", ci === 2 ? "rc-note" : null, String(c));
-            rr.appendChild(td);
-          });
-        db.appendChild(rr);
-      });
-      dt.appendChild(db);
-      body.appendChild(dt);
-
-      var act = el("div", "rc-acc-act");
-      var scheda = (window.__RESEARCH_PDF_JSON__ || {})[b.id];
-      if (scheda) {
-        var lk = document.createElement("a");
-        lk.className = "rc-pdf rc-pdf-ok rc-fonti-lnk";
-        lk.href = "/" + scheda;
-        lk.target = "_blank"; lk.rel = "noopener";
-        lk.textContent = "Scheda build compilata (PDF)";
-        act.appendChild(lk);
-      }
-      if (b.fonti && b.fonti.length) {
-        var fl = el("span", "rc-fonti-lab", "Fonti:");
-        act.appendChild(fl);
-        b.fonti.forEach(function (f) {
-          var fa = document.createElement("a");
-          fa.className = "rc-fonti-lnk";
-          fa.href = f.url || "#"; fa.target = "_blank"; fa.rel = "noopener nofollow";
-          fa.textContent = (f.titolo || f.url || "").slice(0, 60);
-          act.appendChild(fa);
-        });
-      }
-      body.appendChild(act);
-      det.appendChild(body);
-      acc.appendChild(det);
-    });
-    host.appendChild(acc);
-
-    var fg = sezioneChiusa("Forge — build generate dal motore", forgeHtml());
-    if (fg) host.appendChild(fg);
-    var ined = sezioneChiusa("Build inedite (co-occorrenza < 2)", inediteHtml());
-    if (ined) host.appendChild(ined);
+    /* analisi del motore: UNICO blocco collassato */
+    var an = el("details", "rc-analisi rc-det");
+    an.appendChild(el("summary", "rc-det-sum", "Analisi del motore — tassonomie, ricontrollo, forge, build inedite"));
+    var anBox = el("div");
+    var _tx = tassonomieHtml(); if (_tx) anBox.appendChild(_tx);
+    var _rc = ricontrolloHtml(); if (_rc) anBox.appendChild(_rc);
+    var tro = DATA.build_trovate;
+    if (tro && tro.length) {
+      anBox.appendChild(el("h3", null, "Trovate dal canale (" + tro.length + ")"));
+      anBox.appendChild(accBuilds(tro, false));
+    }
+    var fg = forgeHtml(); if (fg) anBox.appendChild(fg);
+    var ined = inediteHtml(); if (ined) anBox.appendChild(ined);
+    an.appendChild(anBox);
+    host.appendChild(an);
   }
 
   function viewRuoli(host) {
@@ -581,7 +588,17 @@
       var view = document.getElementById("rc-view");
       if (!view) return;
       var visibili = 0;
+      /* P7: la LISTA A CARD si filtra a livello di singola card */
+      var blist = view.querySelector(".rc-blist");
+      if (blist) {
+        Array.prototype.forEach.call(blist.querySelectorAll(".rc-bcard"), function (c) {
+          var okc = !q || (c.textContent || "").toLowerCase().indexOf(q) !== -1;
+          c.style.display = okc ? "" : "none";
+          if (okc) visibili++;
+        });
+      }
       Array.prototype.forEach.call(view.children, function (blocco) {
+        if (blocco.classList && blocco.classList.contains("rc-blist")) return; /* gia' filtrata sopra */
         /* il blocco TABELLA (tab build) si filtra a livello di riga */
         if (blocco.tagName === "TABLE") {
           var righe2 = blocco.querySelectorAll("tbody tr");

@@ -17,8 +17,8 @@
 <meta name="description" content="Mappa interattiva di Faerûn: città, porti, capitali, rovine e luoghi dei Forgotten Realms con schede informative, ricerca e livelli attivabili.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/vendor/leaflet.css?v=20261025">
-<link rel="stylesheet" href="assets/grimorio.css?v=20261025">
+<link rel="stylesheet" href="../assets/vendor/leaflet.css?v=20261026">
+<link rel="stylesheet" href="assets/grimorio.css?v=20261026">
 <style>
 /* mappa v2 — tema Vetro Arcano */
 #faerun-map {
@@ -128,13 +128,13 @@ main[id="main"] { scroll-margin-top: 90px; }
 
 <script>/* salva l'helper i18n L() PRIMA che Leaflet (vendor) sovrascriva window.L */
 window.__I18N_L = (typeof window.L === 'function') ? window.L : null;</script>
-<script src="../assets/vendor/leaflet.js?v=20261025"></script>
+<script src="../assets/vendor/leaflet.js?v=20261026"></script>
 <script>/* Rune per il runtime */
 window.__RUNE_LEFT__ = "ᚡᛚᚷᚱᛗᛖᛚᚡ";
 window.__RUNE_RIGHT__ = "ᚠᛖᛖᚱᚢᚾ";
 window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</script>
-<script src="assets/grimorio.js?v=20261025"></script>
-<script src="assets/arcana.js?v=20261025"></script>
+<script src="assets/grimorio.js?v=20261026"></script>
+<script src="assets/arcana.js?v=20261026"></script>
 <script>
 (function () {
   var LM = (typeof window.L !== 'undefined' && typeof window.L.map === 'function') ? window.L : null;
@@ -325,9 +325,9 @@ window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</scri
   setTimeout(function () { map.invalidateSize(); }, 900);
 })();
 </script>
-<script src="assets/music-player.js?v=20261025"></script>
-<script src="assets/activity-log.js?v=20261025"></script>
+<script src="assets/music-player.js?v=20261026"></script>
+<script src="assets/activity-log.js?v=20261026"></script>
 
-<script src="assets/soft-router.js?v=20261025"></script>
+<script src="assets/soft-router.js?v=20261026"></script>
 </body>
 </html>
