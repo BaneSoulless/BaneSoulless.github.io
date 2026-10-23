@@ -461,7 +461,8 @@
     /* scheda grafica v2: badge, griglia abilita', chips (punto 13b) */
     var abCells = "";
     ABIL_ORDER.forEach(function (k) {
-      var v = ab[k] || 0;
+      /* P6: la fonte e' pg.abilita — la variabile ab qui e' la stringa HTML sopra */
+      var v = (pg.abilita && typeof pg.abilita[k] === "number") ? pg.abilita[k] : 10;
       var mod = Math.floor((v - 10) / 2);
       abCells += '<div class="pg-ab" title="' + esc(ABIL_LABEL[k] || k) + '"><span class="pg-ab-nome">' + esc(ABIL_SHORT[k] || k) + '</span>' +
         '<span class="pg-ab-val">' + v + '</span><span class="pg-ab-mod">' + (mod >= 0 ? "+" : "") + mod + '</span></div>';

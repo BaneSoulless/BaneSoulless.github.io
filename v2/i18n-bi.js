@@ -55,6 +55,27 @@ var LABELS = {"it": {"speed": "Velocità", "ac": "CA", "hp": "PF", "cr": "Grado 
   }
   function toggleLang() { setLang(LANG === "it" ? "en" : "it"); }
 
+  /* P5: il selettore #tr-lang (menu pagina) viene popolato QUI: unico motore
+     lingua condiviso. Il menu grafico (lang-menu.js) si aggancia da solo. */
+  (function () {
+    function popolaSelettore() {
+      var sel = null;
+      try { sel = document.getElementById("tr-lang"); } catch (e) {}
+      if (!sel || sel.options.length >= 2) return;
+      var o1 = document.createElement("option");
+      o1.value = "it"; o1.textContent = "Italiano";
+      var o2 = document.createElement("option");
+      o2.value = "en"; o2.textContent = "English";
+      sel.appendChild(o1); sel.appendChild(o2);
+      sel.value = LANG;
+      sel.addEventListener("change", function () { setLang(sel.value); });
+      sel.setAttribute("aria-label", "Lingua / Language");
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", popolaSelettore);
+    } else { popolaSelettore(); }
+  })();
+
   /* ---------- TRADUZIONE AUTOMATICA SU RICHIESTA (MyMemory) ----------
    * La fonte è in inglese: la traduzione è un'azione esplicita dell'utente.
    * Limite misurato: 500 caratteri per richiesta → blocchi da <=480 sulle frasi.

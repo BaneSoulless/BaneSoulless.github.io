@@ -9,10 +9,24 @@
  */
 (function () {
   "use strict";
+  function esc(t) {
+    var M = {};
+    M["&"] = "&amp;";
+    M["<"] = "&lt;";
+    M[">"] = "&gt;";
+    M["'"] = "&#39;";
+    M["\""] = "&quot;";
+    return String(t == null ? "" : t).replace(/[&<>"']/g, function (c) { return M[c]; });
+  }
   var TRACCE = [
-    { f: "assets/music/moonlight-fantasy.mp3", t: "Moonlight Fantasy", a: "alex-morgan" },
-    { f: "assets/music/taverna-ambient.mp3", t: "Taverna Ambient", a: "leberch" },
-    { f: "assets/music/foreste-antiche.mp3", t: "Foreste Antiche", a: "The_Mountain" }
+    { f: "assets/music/moonlight-fantasy.mp3", t: "Moonlight Fantasy", a: "alex-morgan", l: "Pixabay" },
+    { f: "assets/music/taverna-ambient.mp3", t: "Taverna Ambient", a: "leberch", l: "Pixabay" },
+    { f: "assets/music/foreste-antiche.mp3", t: "Foreste Antiche", a: "The_Mountain", l: "Pixabay" },
+    { f: "assets/music/canto-gregoriano.ogg", t: "Canto Gregoriano", a: "Kevin MacLeod", l: "CC BY 4.0" },
+    { f: "assets/music/angevin-medievale.ogg", t: "Angevin", a: "Kevin MacLeod", l: "CC BY 4.0" },
+    { f: "assets/music/riflessi-invernali.ogg", t: "Riflessi Invernali", a: "Kevin MacLeod", l: "CC BY 4.0" },
+    { f: "assets/music/relent-oscuro.ogg", t: "Relent", a: "Kevin MacLeod", l: "CC BY 4.0" },
+    { f: "assets/music/sinfonia-arcano.ogg", t: "Sinfonia", a: "Kevin MacLeod", l: "CC BY 4.0" }
   ];
   var LS = "gdr-music";
   function stato() {
@@ -78,24 +92,68 @@
       '<div class="mp-bar" id="mp-bar" title="Posizione"><i id="mp-fill"></i></div></div>' +
       '<button class="mp-btn" id="mp-prev" title="Traccia precedente">⏮</button>' +
       '<button class="mp-btn" id="mp-next" title="Traccia successiva">⏭</button>' +
+      '<button class="mp-btn" id="mp-pl-btn" title="Playlist (8 brani)">☰</button>' +
       '<input type="range" id="mp-vol" min="0" max="100" value="' + Math.round(vol * 100) + '" title="Volume">';
     document.body.appendChild(box);
 
     window.__gdrAudio = audio;
+
+    /* P2: playlist cliccabile — click sul titolo del brano apre/chiude la lista */
+    var pl = document.createElement("div");
+    pl.id = "mp-playlist";
+    pl.style.cssText = "position:fixed;right:14px;bottom:74px;z-index:991;background:rgba(12,10,16,.96);" +
+      "border:1px solid rgba(201,162,39,.35);border-radius:12px;padding:8px;display:none;max-height:44vh;overflow:auto;" +
+      "min-width:220px;box-shadow:0 10px 30px rgba(0,0,0,.5);backdrop-filter:blur(8px);";
+    pl.innerHTML = TRACCE.map(function (tr, i) {
+      return '<button data-i="' + i + '" style="display:block;width:100%;text-align:left;background:none;border:0;color:' +
+        (i === idx ? "#e8c95a" : "#cfc7b8") + ';padding:7px 10px;border-radius:8px;cursor:pointer;font:12.5px Georgia,serif">' +
+        (i === idx ? "❚❚ " : "♪ ") + esc(tr.t) + '<span style="color:#8d8478;font-size:11px"> · ' + esc(tr.a) + "</span></button>";
+    }).join("");
+    document.body.appendChild(pl);
+    pl.addEventListener("click", function (ev) {
+      var b = ev.target.closest("button[data-i]");
+      if (!b) return;
+      idx = parseInt(b.getAttribute("data-i"), 10);
+      audio.src = TRACCE[idx].f;
+      play(); refresh();
+      pl.style.display = "none";
+    });
+    window.__mpToggle = function () {
+      pl.style.display = (pl.style.display === "none" || !pl.style.display) ? "block" : "none";
+    };
     var disc = box.querySelector("#mp-disc");
     var fill = box.querySelector("#mp-fill");
     var tEl = box.querySelector("#mp-title");
     var aEl = box.querySelector("#mp-artist");
 
+    /* P2: i toggle della playlist si agganciano QUI (tEl esiste da adesso) */
+    tEl.addEventListener("click", window.__mpToggle);
+    tEl.style.cursor = "pointer";
+    tEl.title = "Clicca per la playlist";
+    var plBtn = document.getElementById("mp-pl-btn");
+    if (plBtn) plBtn.addEventListener("click", window.__mpToggle);
+
     function TRACTE_SAFE(i) { return TRACCE[i % TRACCE.length]; }
     function refresh() {
       tEl.textContent = TRACCE[idx].t;
-      aEl.textContent = TRACCE[idx].a + " · Pixabay (royalty-free)";
+      aEl.textContent = TRACCE[idx].a + " · " + TRACCE[idx].l;
       disc.textContent = audio.paused ? "♪" : "❚❚";
       box.classList.toggle("playing", !audio.paused);
       box.classList.toggle("min", audio.paused);
     }
     function play() {
+      /* P2: fade-in morbido — parte silenzioso e sale al volume scelto in 0.8s */
+      try {
+        var vFin = vol;
+        audio.volume = 0;
+        var t0 = Date.now();
+        (function fade() {
+          var k = Math.min(1, (Date.now() - t0) / 800);
+          audio.volume = vFin * k;
+          if (k < 1 && !audio.paused) setTimeout(fade, 90);
+          else audio.volume = vFin;
+        })();
+      } catch (e) {}
       var p = audio.play();
       if (p && p.catch) p.catch(function () { /* autoplay negato: resta in pausa */ });
     }
@@ -151,7 +209,8 @@
        la musica se era in riproduzione alla chiusura della pagina precedente. */
     if (wasPlaying) {
       var primeGesto = function () {
-        window.GDRLog && window.GDRLog.log('music-resume', 'seekTo=' + seekTo + ' cur=' + (audio.currentTime || 0) + ' ready=' + audio.readyState);
+        window.GDRLog && window.GDRLog.log('music-resume', 'seekTo=' + seekTo + ' cur=' + (audio.currentTime || 0) + ' ready=' + audio.readyState);
+
                 if (audio.paused) play();
         document.removeEventListener("pointerdown", primeGesto);
         document.removeEventListener("keydown", primeGesto);

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tactics-recipe-ozone-cube.trycloudflare.com/sitemap.xml
+Sitemap: https://pole-saturn-switch-mazda.trycloudflare.com/sitemap.xml

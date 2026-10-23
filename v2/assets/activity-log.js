@@ -4,6 +4,7 @@
  * Lettura: window.GDRLog.dump() in console, oppure pannello con Ctrl+Alt+L
  * e bottone "Log debug" nel footer. Nessuna rete: tutto locale. */
 (function () {
+
   "use strict";
   var MAX = 600;
   var buf = [];

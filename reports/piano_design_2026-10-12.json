@@ -469,5 +469,12 @@
     },
     "deploy": "tools/deploy_github.py disaccoppiato (staging pulito, canonical forzati, keeper isolati)",
     "commits": "9beb668..cbe89c3"
+  },
+  "loop_analysis_loop1_2026_10_23": {
+    "pipeline": "LOOP-ANALYSIS-IMPROVEMENT-EVOLUTION v1.2",
+    "baseline": "96/99 check (3 FAIL: check obsoleti vs p10/p12)",
+    "loop1": "check aggiornati al nuovo contratto consumer -> 99/99 verdi, aritmetica OK",
+    "no_gain": "tile mappa accertate sane (residuo obsoleto); coord città = nuova fonte esterna (owner Fabrizio)",
+    "ledger": "LOOP-LEDGER.md su disco nel target"
   }
 }
