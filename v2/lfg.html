@@ -28,6 +28,23 @@
     #lfg-tabs { margin-bottom: 18px; }
     .lfg-pane .cal-card, .lfg-pane section { margin-bottom: 16px; }
   </style>
+<style>
+    .lfg-hero { text-align: center; padding: 34px 0 8px; }
+    .lfg-hero h1 { font-family: 'Castellar', Georgia, serif; font-size: 34px; color: var(--gold-hi); margin: 6px 0 10px; }
+    .lfg-hero .sub { color: var(--muted); max-width: 620px; margin: 0 auto; font-size: 14.5px; line-height: 1.65; }
+    .lfg-scelte { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 22px 0 8px; }
+    .lfg-scelta { display: block; text-decoration: none; color: inherit; background: var(--glass);
+      border: 1px solid var(--line); border-radius: 16px; padding: 22px 20px; position: relative;
+      transition: transform .2s, border-color .2s, box-shadow .2s; }
+    .lfg-scelta:hover { transform: translateY(-3px); border-color: rgba(201,162,39,.5);
+      box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+    .lfg-scelta-ico { font-size: 26px; display: block; margin-bottom: 10px; }
+    .lfg-scelta h3 { font-family: 'Castellar', Georgia, serif; font-size: 17px; color: var(--gold-hi); margin: 0 0 8px; }
+    .lfg-scelta p { font-size: 13px; color: var(--muted); line-height: 1.6; margin: 0 0 14px; }
+    .lfg-scelta-cta { color: #b9a5ff; font-size: 13px; font-weight: 600; }
+    .lfg-det { margin-top: 16px; }
+    .lfg-det[open] { scroll-margin-top: 96px; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -49,12 +66,40 @@
   </nav>
 </header>
 
-<main id="main"><div class="rc-tabs" role="tablist" id="lfg-tabs">
-      <button class="rc-tab on" data-pane="pane-candidatura" role="tab" aria-selected="true">Candidatura</button>
-      <button class="rc-tab" data-pane="pane-piattaforme" role="tab" aria-selected="false">Piattaforme</button>
-      <button class="rc-tab" data-pane="pane-scena" role="tab" aria-selected="false">Scena GDR Italia</button>
+<main id="main">
+  <section class="hero lfg-hero">
+    <div class="hero-inner">
+      <p class="kicker">ᚠ trova gruppo</p>
+      <h1>Trova il tuo tavolo</h1>
+      <p class="sub">Tre strade per sederti a un tavolo di D&D: online subito, dal vivo a Roma, o candidati alla campagna del Grimorio.</p>
     </div>
-    <div class="lfg-pane" id="pane-candidatura">Candidatura per una sessione</h2>
+  </section>
+
+  <div class="lfg-scelte">
+    <a class="lfg-scelta" href="#lfg-det-piattaforme" data-open="lfg-det-piattaforme">
+      <span class="lfg-scelta-ico">🖥</span>
+      <h3>Gioca online, subito</h3>
+      <p>StartPlaying, Warhorn, Adventurers League: centinaia di tavoli a distanza con GM professionali e amatoriali.</p>
+      <span class="lfg-scelta-cta">Confronta le piattaforme →</span>
+    </a>
+    <a class="lfg-scelta" href="#lfg-det-scena" data-open="lfg-det-scena">
+      <span class="lfg-scelta-ico">🍺</span>
+      <h3>Dal vivo, a Roma</h3>
+      <p>Odin Ludopub (Via Laurentina 62A): serate D&D settimanali, prenotazione al 333 8077899. E la scena italiana.</p>
+      <span class="lfg-scelta-cta">Vedi la scena italiana →</span>
+    </a>
+    <a class="lfg-scelta" href="#lfg-det-candidatura" data-open="lfg-det-candidatura">
+      <span class="lfg-scelta-ico">📜</span>
+      <h3>La campagna del Grimorio</h3>
+      <p>Compila la scheda: i dati restano nel tuo browser e tu decidi come inviarla al Master.</p>
+      <span class="lfg-scelta-cta">Candidati →</span>
+    </a>
+  </div>
+
+  <details class="rc-det lfg-det" id="lfg-det-candidatura">
+    <summary class="rc-det-sum">Candidati alla campagna</summary>
+<h2>Candidatura per una sessione</h2>
+    <div id="lfg-candidatura">
     <p style="color:var(--fg-muted); font-size:14px; margin-bottom:18px;">
       Compila la scheda per proporti a un tavolo. <strong>I dati restano in questo browser</strong>
       (nessun invio automatico): puoi copiare il riepilogo o aprirlo nel tuo client di posta.
@@ -163,7 +208,13 @@
   </div>
 
   <div class="guide-box">
-    <h2 style="color:var(--accent); font-size:18px; margin-bottom:10px;"></div><div class="lfg-pane" id="pane-piattaforme">Come Scegliere la Piattaforma Ideale</h2>
+    <h2 style="color:var(--accent); font-size:18px; margin-bottom:10px;"></div>
+    </div>
+  </details>
+
+  <details class="rc-det lfg-det" id="lfg-det-piattaforme">
+    <summary class="rc-det-sum">Confronto delle piattaforme online</summary>
+<div id="lfg-piattaforme">Come Scegliere la Piattaforma Ideale</h2>
     <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px; font-size:14px; color:var(--fg-muted);">
       <div>
         <strong style="color:var(--fg);">Sessioni a Pagamento (Paid GM):</strong><br>
@@ -230,7 +281,12 @@
     </tbody>
   </table>
 
-  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;"></div><div class="lfg-pane" id="pane-scena">Scena GDR Italiana &amp; Risorse in Lingua IT</h2>
+  <h2 style="font-size:22px; font-weight:700; margin-bottom:16px;"></div>
+  </details>
+
+  <details class="rc-det lfg-det" id="lfg-det-scena">
+    <summary class="rc-det-sum">Scena GDR italiana e tavoli dal vivo</summary>
+<div id="lfg-scena">Scena GDR Italiana &amp; Risorse in Lingua IT</h2>
   <div class="card-grid" style="margin-bottom:48px;">
     <div class="card" style="border-color: rgba(201,162,39,.45);"><div class="badge badge-free" style="margin-bottom:10px;">Locale Fisico · Roma (verificato)</div><h3><a href="https://www.odinludopub.it/" target="_blank" rel="noopener">Odin Ludopub — Via Laurentina 62A</a></h3><p style="color:var(--fg-muted); font-size:14px;">Il ludopub romano dedicato a giochi di ruolo, da tavolo, di carte e simulazione: tavoli con prenotazione (tel. 333 8077899 o DM), serate D&D settimanali e parcheggio gratuito. Il modo più diretto per sedersi a un tavolo D&D dal vivo a Roma.</p></div><div class="card">
       <div class="badge badge-free" style="margin-bottom:10px;">Festival &amp; Eventi Ufficiali</div>
@@ -259,7 +315,9 @@
   </div><!-- /dettagli tecnici -->
 
 
-</div></main>
+</div>
+  </details>
+</main>
 
 <footer>
   <b>IL GRIMORIO DEI REAMI</b> — dati 5e.tools (SRD 5.1, CC BY 4.0) · offline-first
@@ -299,6 +357,21 @@ window.__RUNE_BAND__ = "ᚡᛚᚷᚱᛗᛖᛚᚡᛞᛖᛖᚡᚢᛖᛗᛖ";</scri
     });
     var first = document.querySelector('.lfg-pane');
     if (first) first.classList.add('on');
+  })();
+</script>
+<script>
+  (function () {
+    /* P9: le card aprono il details corrispondente e ci scorrono sopra */
+    document.querySelectorAll('.lfg-scelta').forEach(function (a) {
+      a.addEventListener('click', function (ev) {
+        var id = a.getAttribute('data-open');
+        var d = document.getElementById(id);
+        if (!d) return;
+        ev.preventDefault();
+        d.open = true;
+        d.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
   })();
 </script>
 </body>

@@ -25,7 +25,7 @@ ulteriori gain dipendono da nuovo input operatore (nuove segnalazioni o nuove fe
 --- ciclo v1.3 (2026-10-23) ---
 BASELINE | metric altezza_ricerca_px | value 2700 | source tools/_p7_ui_test.py + Playwright misura sezione #ricerca
 BASELINE | metric ricerca_items_visibili | value 1667 (muro accordion) | source Playwright census
-LOOP 2 | metric altezza_ricerca_px [PRIMARY] | before 2700 | after MISURATO SOTTO | delta % | verdict da misurare
+LOOP 2 | metric altezza_ricerca_px [PRIMARY] | before 2700 | after 2254 | delta -16.5% | verdict PASS
 LOOP 2 note | P7 Ricerca Ottimizzata RIFATTA: 16 card compatte con 3 DPR chiave (liv 5/10/20), dettaglio
   inline per build (16 livelli + KPI20 + fonti + PDF compilato), slider ELIMINATO, analisi in UN details.
   Ricerca globale filtra le card (Legione=1, Pyromancer=1, reset=16). Regressione 23+52 verdi.
