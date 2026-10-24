@@ -29,3 +29,9 @@ LOOP 2 | metric altezza_ricerca_px [PRIMARY] | before 2700 | after 2254 | delta 
 LOOP 2 note | P7 Ricerca Ottimizzata RIFATTA: 16 card compatte con 3 DPR chiave (liv 5/10/20), dettaglio
   inline per build (16 livelli + KPI20 + fonti + PDF compilato), slider ELIMINATO, analisi in UN details.
   Ricerca globale filtra le card (Legione=1, Pyromancer=1, reset=16). Regressione 23+52 verdi.
+LOOP 3 | metric lfg_struttura_azione [PRIMARY] | before tab-passivi 3 | after 3 card-scelta azione + 3 details collegati | delta struttura-rifatta | verdict PASS
+LOOP 3 note | P9 LFG ricostruita: hero 3 percorsi (online/locale/campagna) con click->details collegato,
+  form/matrice/scena conservati e ora raggiungibili dall'azione. Regressione 23+52 verdi (check lfg/hero
+  aggiornato al contratto card). FIX INCIDENTE: la prima rimozione del vecchio tab-js con regex greedy
+  ha cancellato TUTTI gli script runtime (grimorio/music/logger) -> ripristino da git e rimozione MIRATA.
+  Verificato live: orbs 4, sigil, player, logger attivi, Odin nel percorso locale. Commit f6375a7.
